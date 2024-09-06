@@ -105,7 +105,7 @@ const Header = () => {
             className={`w-full z-50 backdrop-blur-sm shadow-md transition-colors duration-300 ${isScrolled ? "bg-white" : "bg-[white]"
                 } ${isScrolled ? "text-white" : "text-black"} border-b-2 border-[#2A675C]`}
         >
-            <div className="container py-2 px-2 mx-auto flex justify-between items-center">
+            <div className="container py-2 px-2 lg:mx-[110px] flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex flex-col w-3/5 transition-transform duration-300 ease-in-out">
                     <div className="glow-container">
