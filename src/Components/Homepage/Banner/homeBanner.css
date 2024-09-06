@@ -1,0 +1,32 @@
+/* HomeBanner.css */
+
+/* Apply the zoom-in effect only to the active (selected) carousel item */
+.carousel .slide.selected {
+    animation: zoomIn 5s ease-in-out infinite;
+    background-size: cover;
+  }
+  
+  /* Add fade effect to each slide */
+  .carousel .slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* When the slide is selected, make it fully visible */
+  .carousel .slide.selected {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
