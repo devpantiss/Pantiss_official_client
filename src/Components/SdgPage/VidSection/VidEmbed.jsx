@@ -4,7 +4,7 @@ const VidEmbed = () => {
   return (
     <section className="flex flex-col mx-auto items-center py-12 bg-white">
       {/* Section Heading */}
-      <h2 className="text-2xl md:text-3xl w-[700px] font-bold text-pink-600 mb-6 text-center">
+      <h2 className="text-2xl md:text-3xl lg:w-[700px] font-bold text-pink-600 mb-6 text-center">
         How is PANTISS supporting the Government to achieve the Sustainable Development Goals?
       </h2>
 

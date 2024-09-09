@@ -15,7 +15,7 @@ const slides = [
     description: 'The Sustainable Development Goals (SDGs) constitute the core of the 2030 Agenda for Sustainable Development and guide all global, regional and national development endeavours until the year 2030.',
     bgImage: 'https://res.cloudinary.com/du3i8e0se/image/upload/v1725794695/wp12016993-sdg-wallpapers_qyjfym.jpg',
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725876308/vecteezy_sustainable-development-goals-logo-template-illustration_5412443-1-removebg-preview_ueykb8.png',
-    textBgColor: 'black',
+    textBgColor: 'bg-black',
     gif: false,
   },
   {
@@ -25,7 +25,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725875000/Goal_1_ztbv1x.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725875004/Goal_1_GDU_trvacm.gif",
     gif: true,
-    textBgColor: '#e81f2d',
+    textBgColor: 'bg-[#e81f2d]',
   },
   {
     title: 'Goal 2: Zero Hunger',
@@ -34,7 +34,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874995/Goal_2_gzyhxw.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725875006/Goal_2_GDU_is65nb.gif",
     gif: true,
-    textBgColor: '#d09f2d', // Yellow
+    textBgColor: 'bg-[#d09f2d]', // Yellow
   },
   {
     title: 'Goal 3: Good Health and Well-Being',
@@ -43,7 +43,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874995/Goal_3_orzwqd.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874997/Goal_3_GDU_yzqibk.gif",
     gif: true,
-    textBgColor: '#2b9b4a', // Green
+    textBgColor: 'bg-[#2b9b4a]', // Green
   },
   {
     title: 'Goal 4: Quality Education',
@@ -52,7 +52,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874989/Goal_4_kjq5if.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874989/Goal_4_GDU_rshmdw.gif",
     gif: true,
-    textBgColor: '#c42738', // Dark Red
+    textBgColor: 'bg-[#c42738]', // Dark Red
   },
   {
     title: 'Goal 5: Gender Equality',
@@ -61,7 +61,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874989/Goal_5_e3jnf4.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874995/Goal_5_GDU_tpml38.gif",
     gif: true,
-    textBgColor: '#ed422b', // Bright Red
+    textBgColor: 'bg-[#ed422b]', // Bright Red
   },
   {
     title: 'Goal 6: Clean water and Sanitation',
@@ -70,7 +70,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874983/Goal_6_j3mbwk.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874987/Goal_6_GDU_ipw1ih.gif",
     gif: true,
-    textBgColor: '#00acd8', // Cyan
+    textBgColor: 'bg-[#00acd8]', // Cyan
   },
   {
     title: 'Goal 7: Affordable and Clean energy',
@@ -79,7 +79,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874976/Goal_7_enj3as.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874983/Goal_7_GDU_wqarkm.gif",
     gif: true,
-    textBgColor: '#fbb617', // Yellow-Orange
+    textBgColor: 'bg-[#fbb617]', // Yellow-Orange
   },
   {
     title: 'Goal 8: Decent work and Economic Growth',
@@ -88,7 +88,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874978/Goal_8_saoq0b.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874980/Goal_8_GDU_ivcg0b.gif",
     gif: true,
-    textBgColor: '#972e47', // Dark Red-Violet
+    textBgColor: 'bg-[#972e47]', // Dark Red-Violet
   },
   {
     title: 'Goal 9: Industry, Innovation and Infrastructure',
@@ -97,7 +97,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874967/Goal_9_c0uud3.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874977/Goal_9_GDU_rbntk2.gif",
     gif: true,
-    textBgColor: '#f16d22', // Orange
+    textBgColor: 'bg-[#f16d22]', // Orange
   },
   {
     title: 'Goal 10: Reduced Inequalities',
@@ -106,7 +106,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874965/Goal_10_s6xraq.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874969/Goal_10_GDU_yjkti0.gif",
     gif: true,
-    textBgColor: '#de1c84', // Pink
+    textBgColor: 'bg-[#de1c84]', // Pink
   },
   {
     title: 'Goal 11: Sustainable cities and Communities',
@@ -115,7 +115,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874961/Goal_11_gw4ilj.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874964/Goal_11_GDU_vdtz1o.gif",
     gif: true,
-    textBgColor: '#f79c26', // Orange-Yellow
+    textBgColor: 'bg-[#f79c26]', // Orange-Yellow
   },
   {
     title: 'Goal 12: Responsible consumption and production',
@@ -124,7 +124,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874966/Goal_12_jhbwva.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874968/Goal_12_GDU_hrxfka.gif",
     gif: true,
-    textBgColor: '#cd8c2e', // Dark Yellow
+    textBgColor: 'bg-[#cd8c2e]', // Dark Yellow
   },
   {
     title: 'Goal 13: Climate action',
@@ -133,7 +133,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874960/Goal_13_bprlxz.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874959/Goal_13_GDU_snyse3.gif",
     gif: true,
-    textBgColor: '#4e7a47', // Dark Green
+    textBgColor: 'bg-[#4e7a47]', // Dark Green
   },
   {
     title: 'Goal 14: Life below water',
@@ -142,7 +142,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874953/Goal_14_dork5r.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874955/Goal_14_GDU_rvrhpi.gif",
     gif: true,
-    textBgColor: '#007cbb', // Blue
+    textBgColor: 'bg-[#007cbb]', // Blue
   },
   {
     title: 'Goal 15: Life on Land',
@@ -151,7 +151,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874951/Goal_15_lfbqkj.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874955/Goal_15_GDU_sdt25d.gif",
     gif: true,
-    textBgColor: '#3dae4a', // Green
+    textBgColor: 'bg-[#3dae4a]', // Green
   },
   {
     title: 'Goal 16: Peace, justice and strong institutions',
@@ -160,7 +160,7 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874944/Goal_16_feir8f.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874946/Goal_16_GDU_yutbba.gif",
     gif: true,
-    textBgColor: '#00578b', // Blue-Dark
+    textBgColor: 'bg-[#00578b]', // Blue-Dark
   },
   {
     title: 'Goal 17: Partnerships for the goals',
@@ -169,14 +169,13 @@ const slides = [
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874944/Goal_17_ngnox2.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874943/Goal_17_GDU_pje92e.gif",
     gif: true,
-    textBgColor: '#28426e', // Dark Blue
+    textBgColor: 'bg-[#28426e]', // Dark Blue
   },
 ];
 
 const SDGBanner = () => {
   const swiperRef = useRef(null);
 
-  // Handle scrolling to the next section when the button is clicked
   const handleScrollDown = () => {
     const scrollPosition = window.scrollY + window.innerHeight;
     window.scrollTo({
@@ -195,6 +194,7 @@ const SDGBanner = () => {
         pagination={{ clickable: true }}
         modules={[Mousewheel, Pagination]}
         className="h-[85vh]"
+        onReachEnd={() => handleScrollDown()} 
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -206,26 +206,25 @@ const SDGBanner = () => {
             >
               {/* Content box on the slide */}
               <div
-                className="absolute bottom-0 gap-x-3 flex left-0 lg:w-[800px] p-6 rounded-lg text-center"
-                style={{
-                  backgroundColor: slide.textBgColor,
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                }}
+                className={`absolute bottom-0 left-0 flex flex-col items-center gap-3 p-4 lg:p-6 lg:w-[800px] w-full h-full lg:h-auto rounded-none lg:rounded-lg
+                lg:flex-row lg:bg-opacity-100 bg-opacity-40 ${slide.textBgColor} text-center lg:text-left`}
               >
-                <div>
-                  <img src={slide.logo} alt="logo" className='lg:h-32 w-full' />
+                <div className="w-36 h-36 lg:w-32 lg:h-32 flex-shrink-0">
+                  <img src={slide.logo} alt="logo" className="w-full h-full object-contain" />
                 </div>
-                <p className="text-lg w-[500px] text-white">{slide.description}</p>
-                {slide.gif && <div>
-                  <img src={slide.gifUrl} alt="gif" className='lg:h-36 w-full' />
-                </div>}
+                <p className="text-sm lg:text-lg text-white flex-grow">{slide.description}</p>
+                {slide.gif && (
+                  <div className="w-60 h-60 lg:w-36 lg:h-36 flex-shrink-0">
+                    <img src={slide.gifUrl} alt="gif" className="w-full h-full object-contain" />
+                  </div>
+                )}
               </div>
             </div>
           </SwiperSlide>
         ))}
 
         {/* Bouncing down arrow button */}
-        <div className="absolute bottom-8 right-10 z-50"> {/* Make sure z-index is high here */}
+        <div className="absolute bottom-8 right-10 z-50">
           <button
             className="bounce-arrow w-10 h-10 flex items-center justify-center rounded-full bg-white text-black shadow-lg"
             onClick={handleScrollDown}
