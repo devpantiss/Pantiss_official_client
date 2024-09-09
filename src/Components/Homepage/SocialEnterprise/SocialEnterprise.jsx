@@ -68,7 +68,7 @@ const OurEnterprise = () => {
     return (
         <section
             className="relative py-12 bg-fixed bg-cover bg-center"
-            style={{ backgroundImage: "url('https://pantiss.com/wp-content/uploads/2022/08/socialenterprises.jpeg')" }} // Replace with your image URL
+            style={{ backgroundImage: "url('https://i.postimg.cc/V6JHqQzZ/arun-kv-s-Gx-JK1a6-Nds-unsplash.jpg')" }} // Replace with your image URL
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50"></div>

@@ -95,7 +95,7 @@ const EventsSlider = () => {
 
             {/* Content */}
             <div className="relative z-10 container flex flex-col justify-center items-center lg:mx-auto px-4">
-                <Heading text="OUR ADVISORY BOARD" color="text-white" bgColor="bg-red-500"/>
+                <Heading text="OUR ADVISORY BOARD" color="text-white" bgColor="bg-red-600"/>
 
                 {/* Slider */}
                 <div className="w-full lg:w-[1300px] md:w-[768px]">
@@ -105,9 +105,9 @@ const EventsSlider = () => {
                         className="lg:py-8 w-full bg-transparent"
                     >
                         {data.map((ad, index) => (
-                            <div key={index} className="flex items-center">
-                                <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-transparent ring-1 ring-white">
-                                    <div className="flex justify-center mt-6">
+                            <div key={index} className="flex items-center p-5">
+                                <div className="max-w-sm rounded-lg shadow-lg bg-transparent ring-1 ring-white">
+                                    <div className="flex justify-center pt-5">
                                         <img
                                             className="w-24 h-24 rounded-full border-2 border-gray-300"
                                             src={ad.img}

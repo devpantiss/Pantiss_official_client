@@ -4,3 +4,24 @@
 
 
 
+.outline-text {
+    color: transparent; /* Makes the inner part of the text transparent */
+    -webkit-text-stroke: 1px white; /* Creates the outline effect */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .group-hover2\:outline-text-hover {
+    color: transparent;
+    /* -webkit-text-stroke: 1px red; Change the stroke color to red on hover */
+  }
+  
+  .group2:hover .outline-text {
+    -webkit-text-stroke: 1px red;
+  }
+  
+  .group2:hover p,
+  .group2:hover span,
+  .group2:hover .text-4xl {
+    color: red !important; 
+  }
+  

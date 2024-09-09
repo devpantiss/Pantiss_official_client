@@ -1,172 +1,83 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee"; // We'll use this for the scrolling effect
 import Heading from "../../Common/Heading";
 
-
 const OurPartners = () => {
-  // Slick slider settings
-  const settings = {
-    dots: false, // Set to true if you want pagination dots
-    infinite: true,
-    speed: 500,
-    slidesToShow: 7, // Show 4 logos at a time
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // 2 seconds delay
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // Array of partner logos categorized into sections
+  const governmentPartners = [
+    "https://pantiss.com/wp-content/uploads/2023/07/CYSD_LOGO-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/Dev-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__21_-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/giz-standard-logo_0-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1-1.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/images__1_-removebg-preview.png",
+  ];
+
+  const marketPartners = [
+    "https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1-1.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/images__1_-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/CYSD_LOGO-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/Dev-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/download__21_-removebg-preview.png",
+    "https://pantiss.com/wp-content/uploads/2023/07/giz-standard-logo_0-removebg-preview.png",
+  ];
 
   return (
     <div className="bg-white py-10 px-12 flex flex-col justify-center items-center">
       <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-[#2A675C]" />
 
-      <div className="container w-full pt-4">
-        <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
-          <div className="px-4"> {/* Added padding to create space between slides */}
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/CYSD_LOGO-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
+      {/* Section for Government Partners */}
+      <div className="flex justify-center items-center pt-10 pb-10">
+        <div className="w-full relative">
+          <div className="flex flex-col items-center justify-center">
+            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
+              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                <span className="text-xl text-white font-bold">Government</span>
+              </div>
+            </div>
           </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/Dev-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
+          <Marquee 
+            gradient={false} 
+            speed={50} 
+            className="overflow-hidden" 
+            loop={0} // This allows continuous scrolling without stopping
+          >
+            {governmentPartners.map((logo, index) => (
+              <div key={index} className="flex justify-center items-center mx-6">
+                <img src={logo} alt={`Government Partner ${index + 1}`} className="h-20" />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+
+      {/* Section for Market Partners */}
+      <div className="flex justify-center items-center pt-10">
+        <div className="w-full relative">
+          <div className="flex flex-col items-center justify-center">
+            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
+              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                <span className="text-xl text-white font-bold">Markets</span>
+              </div>
+            </div>
           </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__21_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/giz-standard-logo_0-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1-1.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png"
-              alt="https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/images__1_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__27_-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__26_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__25_-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__24_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/WhatsApp_Image_2023-02-16_at_10.29.11_AM-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__23_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/WhatsApp_Image_2023-01-13_at_1.02.59_PM-removebg-preview-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__20_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-          <div className="px-4">
-            <img
-              src="https://pantiss.com/wp-content/uploads/2023/07/download__18_-removebg-preview.png"
-              alt="j"
-              className="h-16 mx-auto"
-            />
-          </div>
-        </Slider>
+          <Marquee 
+            gradient={false} 
+            speed={50} 
+            className="overflow-hidden" 
+            loop={0} // Continuous scrolling without stopping
+          >
+            {marketPartners.map((logo, index) => (
+              <div key={index} className="flex justify-center items-center mx-6">
+                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20" />
+              </div>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
   );

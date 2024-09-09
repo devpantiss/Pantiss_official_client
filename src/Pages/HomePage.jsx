@@ -14,7 +14,8 @@ import Footer from '../Components/Common/Footer';
 import ReachSection from '../Components/Homepage/Reach/ReachSection';
 import Impact from '../Components/Homepage/Impact/Impact';
 import Highlights from '../Components/Homepage/Highlights/Highlights';
-
+import Impact2 from '../Components/Homepage/Impact2/Impact2';
+import Newsletter from '../Components/Homepage/NewsLetter/NewsLetter';
 
 const HomePage = () => {
   return (
@@ -25,13 +26,14 @@ const HomePage = () => {
         <Founders />
         <AdvisoryBoard />
         <Projects />
-        <Impact />
-        <ReachSection />
+        <Impact2 />
         <SocialEnterprise />
         <AsSeenOn />
         <Highlights />
-        <Careers />
+        <Newsletter />
         <OurPartners />
+        <Careers />
+        <ReachSection />
         <Footer />
     </div>
   )

@@ -24,67 +24,67 @@ const Footer = () => {
                             groups of the world.
                         </p>
                         <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                            <a href="#" className="text-white text-[18px] bg-[#2A675C] hover:text-[#2A675C] hover:bg-white rounded-full p-3">
+                            <a href="#" className="text-white text-[18px] bg-red-600 hover:text-red-600 hover:bg-white rounded-full p-3">
                                 <FaFacebookF />
                             </a>
-                            <a href="#" className="text-white text-[18px] bg-[#2A675C] hover:text-[#2A675C] hover:bg-white rounded-full p-3">
+                            <a href="#" className="text-white text-[18px] bg-red-600 hover:text-red-600 hover:bg-white rounded-full p-3">
                                 <FaTwitter />
                             </a>
-                            <a href="#" className="text-white text-[18px] bg-[#2A675C] hover:text-[#2A675C] hover:bg-white rounded-full p-3">
+                            <a href="#" className="text-white text-[18px] bg-red-600 hover:text-red-600 hover:bg-white rounded-full p-3">
                                 <FaInstagram />
                             </a>
-                            <a href="#" className="text-white text-[18px] bg-[#2A675C] hover:text-[#2A675C] hover:bg-white rounded-full p-3">
+                            <a href="#" className="text-white text-[18px] bg-red-600 hover:text-red-600 hover:bg-white rounded-full p-3">
                                 <FaLinkedin />
                             </a>
                         </div>
                     </div>
 
                     {/* Middle Section: Quick Links */}
-                    <div>
-                        <p className="text-[#2A675C] text-lg font-semibold mb-4">Quick Links</p>
+                    {/* <div>
+                        <p className="text-red-600 text-lg font-semibold mb-4">Quick Links</p>
                         <ul className="text-white space-y-2">
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Precision Skills in Global Mining & Allied Industries
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Multi-Stakeholder Platform in Mining & Industrial section
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Alternative Green Livelihoods around Mining Industries
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Artisanal mining & indigenous people empowerment
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Water, Sanitation & hygienic around mines
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Health & Wellness for Mining affected communities
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Climate & Sustainable in Mining periphery
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Fostering Impact evolution & Research in Mining zones
                             </li>
                             <li className="relative pl-6">
-                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-[#2A675C]"></span>
+                                <span className="absolute left-0 top-2 h-0 w-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-red-600"></span>
                                 Social workforce solution dedication for Mining Periphery
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
 
                     {/* Right Section: Contact Info */}
-                    <div>
-                        <p className="text-[#2A675C] text-lg font-semibold mb-4">Get in Touch</p>
+                    <div className="lg:text-left text-center">
+                        <p className="text-red-600 text-lg font-semibold mb-4">Get in Touch</p>
                         <ul className="text-white space-y-2">
                             <li className="flex items-start">
                                 <FaMapMarkerAlt className="mr-2 mt-1" />
@@ -109,10 +109,10 @@ const Footer = () => {
                             © 2022 PANTISS Foundation |
                         </p>
                         <div className="flex justify-center space-x-4 mt-2 md:mt-0">
-                            <a href="#" className="hover:underline hover:text-[#2A675C]">Home</a>
-                            <a href="#" className="hover:underline hover:text-[#2A675C]">About Us</a>
-                            <a href="#" className="hover:underline hover:text-[#2A675C]">Contact Us</a>
-                            <a href="#" className="hover:underline hover:text-[#2A675C]">Privacy Policy</a>
+                            <a href="#" className="hover:underline hover:text-red-600">Home</a>
+                            <a href="#" className="hover:underline hover:text-red-600">About Us</a>
+                            <a href="#" className="hover:underline hover:text-red-600">Contact Us</a>
+                            <a href="#" className="hover:underline hover:text-red-600">Privacy Policy</a>
                         </div>
                     </div>
                 </div>

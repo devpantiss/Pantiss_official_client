@@ -16,7 +16,7 @@ const founders = [
 
 const FoundersSection = () => {
   return (
-    <section className="py-12 bg-[#71dfcb]/30">
+    <section className="py-12 bg-red-400/30">
       {/* Section Title */}
       <div className="text-center mb-8">
         <Heading text="OUR FOUNDERS" colors="text-white" bgColor="bg-[#2A675C]"/> 

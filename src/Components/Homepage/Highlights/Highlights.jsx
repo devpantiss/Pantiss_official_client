@@ -40,25 +40,28 @@ const Highlights = () => {
                 {newsItems.map((item, index) => (
                     <div
                         key={index}
-                        className={`ring-1 ring-[#2A675C] flex flex-col justify-between rounded-lg overflow-hidden shadow-2xl ${item.special ? "md:row-span-2 bg-blue-100" : "bg-white"}`}
+                        className="group ring-1 ring-[#2A675C] flex flex-col justify-between rounded-lg overflow-hidden shadow-2xl bg-white hover:bg-red-600 transition-all duration-300"
                     >
                         {/* Content Section */}
-                        <div className="p-6">
-                            <p className="text-xs font-bold uppercase text-gray-600 mb-2">{item.category}</p>
-                            <h2 className="text-xl font-semibold mb-4">{item.title}</h2>
-                            <p className="text-gray-700 mb-6">{item.description}</p>
-                            <a href="#" className="text-sm font-semibold text-gray-900 hover:underline">
+                        <div className="p-6 transition-all duration-300 group-hover:bg-red-600">
+                            <p className="text-xs font-bold uppercase text-gray-600 group-hover:text-white mb-2 transition-all duration-300">
+                                {item.category}
+                            </p>
+                            <h2 className="text-xl font-semibold mb-4 text-red-600 group-hover:text-white transition-all duration-300">
+                                {item.title}
+                            </h2>
+                            <p className="text-gray-700 group-hover:text-white mb-6 transition-all duration-300">
+                                {item.description}
+                            </p>
+                            <a href="#" className="text-sm font-semibold text-gray-900 group-hover:text-white hover:underline transition-all duration-300">
                                 {item.linkText} →
                             </a>
-
-                            {/* Larger Triangle pointing downwards */}
-
                         </div>
 
                         {/* Image Section */}
                         <div className="h-48 relative bg-cover bg-center" style={{ backgroundImage: `url(${item.imageUrl})` }}>
                             <div
-                                className="absolute top-[0] left-[10%] w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-white"
+                                className="absolute top-0 left-[10%] w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-white group-hover:border-t-red-600 transition-all duration-300"
                             ></div>
                         </div>
                     </div>

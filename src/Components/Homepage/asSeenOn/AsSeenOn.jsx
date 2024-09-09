@@ -4,17 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../../Common/Heading";
 
-
 const AsSeenOn = () => {
   // Slick slider settings
   const settings = {
-    dots: false, // Set to true if you want pagination dots
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 5000, // Speed increased for smoother effect
     slidesToShow: 4, // Show 4 logos at a time
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // 2 seconds delay
+    autoplaySpeed: 0, // This will keep the slider moving continuously
+    cssEase: "linear", // For smooth continuous scrolling
     arrows: false,
     responsive: [
       {
@@ -42,12 +42,21 @@ const AsSeenOn = () => {
   };
 
   return (
-    <div className="bg-[#71dfcb]/30 flex py-10 px-12 justify-center gap-x-16 items-center">
-      <Heading text="AS SEEN ON" color="text-black" bgColor="bg-[#2A675C]" />
+    <div className="relative bg-red-400/30 flex flex-col lg:flex-row py-10 px-12 justify-center gap-x-16 items-center">
+      {/* Image positioned at the top-left corner and rotated */}
+      <div className="relative">
+        <img
+          src="https://i.postimg.cc/bw5S3YQ7/newspaper.png" // Sample image URL
+          alt="Top Left Icon"
+          className="absolute top-5 left-0 w-16 h-16 -translate-x-1/2 -translate-y-1/2 transform rotate-[-60deg]" // Rotate the image by -30 degrees
+        />
+        <Heading text="AS SEEN ON" color="text-black" bgColor="bg-[#2A675C]" />
+      </div>
 
-      <div className="container w-[800px] ">
+      <div className="container w-[800px]">
+        {/* Slider with Marquee Effect */}
         <Slider {...settings} className="gap-x-8"> {/* Added gap using Tailwind */}
-          <div className="px-4"> {/* Added padding to create space between slides */}
+          <div className="px-4">
             <img
               src="https://i.postimg.cc/Wz1vNkPX/DTE.png"
               alt="Down To Earth"
