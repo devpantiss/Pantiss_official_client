@@ -56,60 +56,60 @@ const AsSeenOn = () => {
       <div className="container w-[800px]">
         {/* Slider with Marquee Effect */}
         <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
-          <div className="px-4">
+          <div className="px-2">
             <img
               src="https://i.postimg.cc/Wz1vNkPX/DTE.png"
               alt="Down To Earth"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/wTb6B0MJ/iforest-removebg-preview.png"
               alt="CBC"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/qvP4sq8v/Orissapost-removebg-preview.png"
               alt="The Telegraph"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/hjq4Bvj5/tele-removebg-preview.png"
               alt="Thomson Reuters"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/Y9k7PPDc/Thetimesofindia-removebg-preview.png"
               alt="Thomson Reuters"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/wvVzYkn1/thomson-removebg-preview.png"
               alt="Thomson Reuters"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/43pZBG5b/unicef-removebg-preview.png"
               alt="Thomson Reuters"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
           <div className="px-4">
             <img
               src="https://i.postimg.cc/C1gs3CVn/cbc-removebg-preview.png"
               alt="Thomson Reuters"
-              className="h-16 mx-auto"
+              className="h-24 w-full"
             />
           </div>
         </Slider>
