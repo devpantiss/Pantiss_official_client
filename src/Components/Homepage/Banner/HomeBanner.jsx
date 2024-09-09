@@ -2,7 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import './HomeBanner.css'; // Import the CSS file for the animation
+import './homeBanner.css'; // Import the CSS file for the animation
 
 const HomeBanner = () => {
   const carouselImages = [
