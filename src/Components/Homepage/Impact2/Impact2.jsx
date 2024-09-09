@@ -10,12 +10,18 @@ const Impact2 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        // Add logs for debugging to check if the observer is triggered
+        console.log("Observed entry:", entries[0]);
         if (entries[0].isIntersecting) {
           setInView(true);
           observer.unobserve(entries[0].target); // Stop observing once counters start
+          console.log("Section in view: counter started");
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      {
+        threshold: 0.1, // Lower threshold for mobile
+        rootMargin: "0px 0px -20% 0px", // Trigger earlier when scrolling into view
+      }
     );
 
     if (sectionRef.current) {

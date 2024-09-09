@@ -17,6 +17,8 @@ const Header = () => {
     const [isCourseOpen, setIsCourseOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isBannerVisible, setIsBannerVisible] = useState(true);
+    const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false); // New state for dropdown
+
 
 
     useEffect(() => {
@@ -76,6 +78,7 @@ const Header = () => {
         setIsEventsOpen(false);
         setIsCourseOpen(false);
         setIsProfileOpen(false);
+        setIsAccessibilityOpen(false); // Close accessibility dropdown when other dropdowns are closed
     };
 
     const handleOptionSelect = () => {
@@ -91,6 +94,10 @@ const Header = () => {
 
     const hideBanner = () => {
         setIsBannerVisible(false);
+    };
+
+    const toggleAccessibilityMenu = () => {
+        setIsAccessibilityOpen(!isAccessibilityOpen); // Toggle accessibility menu
     };
 
     return (
@@ -394,13 +401,46 @@ const Header = () => {
                     </nav>
 
                     {/* Disability key */}
-                    <div className="flex justify-between gap-x-8">
+                    <div className="flex justify-between gap-x-8 relative">
                         <Link
                             className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 text-[16px] ring-2 ring-[white] rounded-md ${isScrolled ? "text-[white]" : "text-[white]"
                                 } transition duration-300`}
+                            onClick={toggleAccessibilityMenu} // Add click event to toggle dropdown
                         >
                             <TbDisabled className="text-[26px] font-open" /> Divyanjan Friendly
                         </Link>
+
+                        {/* Dropdown for Accessibility Options */}
+                        {isAccessibilityOpen && (
+                            <div className="absolute w-[550px] right-[-100px] top-12 mt-2 bg-white p-4 shadow-lg rounded-lg z-50">
+                                <ul className="grid grid-cols-2 gap-3">
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Increase Font Size</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Decrease Font Size</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Highlight Links</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Underline Links</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Invert Images</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Greyscale images</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Go to Standard Site</button>
+                                    </li>
+                                    <li>
+                                        <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Download Screen Reader</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
                     </div>
                 </div>
 
@@ -481,9 +521,31 @@ const Header = () => {
                             Mining Villages Summit
                         </Link> */}
 
-                        <Link className="flex text-[16px] items-center gap-x-2 text-[white]">
-                            <TbDisabled className="text-[26px] font-open" /> Divyanjan Friendly
-                        </Link>
+
+                        <div className="relative">
+                            <button
+                                onClick={toggleAccessibilityMenu}
+                                className="flex items-center text-[16px] gap-x-2  text-[white]"
+                            >
+                                <TbDisabled className="text-[26px] font-open" /> Divyanjan Friendly
+                                <AiOutlineDownCircle
+                                    className={`ml-1 transition-transform duration-300 ease-in-out ${isAccessibilityOpen ? "rotate-180" : ""
+                                        }`}
+                                />
+                            </button>
+                            {isAccessibilityOpen && (
+                                <div className="flex flex-col pl-10 space-y-2">
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Increase Font Size</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Decrease Font Size</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Highlight Links</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Underline Links</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Invert Images</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Greyscale images</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Go to Standard Site</Link>
+                                    <Link className="hover:underline text-[white]" onClick={handleOptionSelect}>Download Screen Reader</Link>
+                                </div>
+                            )}
+                        </div>
                     </nav>
                 </div>
             </div>
