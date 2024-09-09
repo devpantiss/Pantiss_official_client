@@ -27,17 +27,16 @@ const locations = [
 
 const MapComponent = () => {
     return (
-        <MapContainer 
-            center={[22.9734, 78.6569]} 
-            zoom={5} 
-            style={{ height: '600px', width: '100%' }} 
+        <MapContainer
+            center={[22.9734, 78.6569]}
+            zoom={5}
+            style={{ height: '600px', width: '100%' }}
             scrollWheelZoom={false}
-             // Disable scroll zoom
         >
-            {/* Replace TileLayer with CartoDB Positron */}
+            {/* Use Stamen Watercolor for a colorful map */}
             <TileLayer
-                url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>'
             />
             {locations.map((location, index) => (
                 <Marker key={index} position={location.coords} icon={customMarker}>

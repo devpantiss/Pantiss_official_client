@@ -181,6 +181,7 @@ const Header = () => {
                     }`}>
                     <nav className="flex flex-col space-y-4 p-4">
                         <Link
+                            to="/sdg-pantiss"
                             className="flex items-center text-[16px] gap-x-2 hover:underline text-red-600"
                             onClick={handleOptionSelect}
                         >
