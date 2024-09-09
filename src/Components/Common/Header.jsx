@@ -413,7 +413,7 @@ const Header = () => {
 
                         {/* Dropdown for Accessibility Options */}
                         {isAccessibilityOpen && (
-                            <div className="absolute w-[550px] right-[-100px] top-12 mt-2 bg-white p-4 shadow-lg rounded-lg z-50">
+                            <div className="hidden lg:block absolute w-[550px] right-[-100px] top-12 mt-2 bg-white p-4 shadow-lg rounded-lg z-50">
                                 <ul className="grid grid-cols-2 gap-3">
                                     <li>
                                         <button className="w-full text-center hover:bg-white hover:ring-1 hover:ring-red-600 hover:text-red-600 text-sm py-2 px-4 bg-red-600 text-white rounded">Increase Font Size</button>

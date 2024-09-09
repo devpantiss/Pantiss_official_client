@@ -53,7 +53,7 @@ const AsSeenOn = () => {
         <Heading text="AS SEEN ON" color="text-black" bgColor="bg-[#2A675C]" />
       </div>
 
-      <div className="container w-[800px]">
+      <div className="container w-[400px] lg:w-[800px]">
         {/* Slider with Marquee Effect */}
         <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
           <div className="px-2">
