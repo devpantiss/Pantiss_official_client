@@ -55,7 +55,7 @@ const AsSeenOn = () => {
 
       <div className="container w-[800px]">
         {/* Slider with Marquee Effect */}
-        <Slider {...settings} className="gap-x-8"> {/* Added gap using Tailwind */}
+        <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
           <div className="px-4">
             <img
               src="https://i.postimg.cc/Wz1vNkPX/DTE.png"
