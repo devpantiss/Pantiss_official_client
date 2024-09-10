@@ -96,18 +96,18 @@ const Impact2 = () => {
       label: "Aquaculture Sites created in Mining periphery",
       imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
     },
-    {
-      id: 11,
-      value: 8768,
-      label: "Employed in Mining & Allied Industries",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    },
-    {
-      id: 12,
-      value: 18,
-      label: "Mines and Allied Industry Supplychain Mapping",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    },
+    // {
+    //   id: 11,
+    //   value: 8768,
+    //   label: "Employed in Mining & Allied Industries",
+    //   imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
+    // },
+    // {
+    //   id: 12,
+    //   value: 18,
+    //   label: "Mines and Allied Industry Supplychain Mapping",
+    //   imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
+    // },
     {
       id: 13,
       value: 136,

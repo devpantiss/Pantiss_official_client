@@ -20,7 +20,6 @@ import Newsletter from '../Components/Homepage/NewsLetter/NewsLetter';
 const HomePage = () => {
   return (
     <div>
-        <Header />
         <HomeBanner2 />
         <WhatWeDo />
         <Founders />
@@ -34,7 +33,6 @@ const HomePage = () => {
         <OurPartners />
         <Careers />
         <ReachSection />
-        <Footer />
     </div>
   )
 }

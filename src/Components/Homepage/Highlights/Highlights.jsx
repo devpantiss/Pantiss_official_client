@@ -40,7 +40,7 @@ const Highlights = () => {
                 {newsItems.map((item, index) => (
                     <div
                         key={index}
-                        className="group ring-1 ring-[#2A675C] flex flex-col justify-between rounded-lg overflow-hidden shadow-2xl bg-white hover:bg-red-600 transition-all duration-300"
+                        className="group ring-1 ring-red-600 flex flex-col justify-between rounded-lg overflow-hidden shadow-2xl hover:ring-white bg-white hover:bg-red-600 transition-all duration-300"
                     >
                         {/* Content Section */}
                         <div className="p-6 transition-all duration-300 group-hover:bg-red-600">

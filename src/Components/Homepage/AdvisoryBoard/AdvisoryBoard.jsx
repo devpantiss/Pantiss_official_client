@@ -106,7 +106,7 @@ const EventsSlider = () => {
                     >
                         {data.map((ad, index) => (
                             <div key={index} className="flex items-center p-5">
-                                <div className="max-w-sm rounded-lg shadow-lg bg-transparent ring-1 ring-white">
+                                <div className="max-w-sm h-[280px] rounded-lg shadow-lg bg-transparent ring-1 ring-white">
                                     <div className="flex justify-center pt-5">
                                         <img
                                             className="w-24 h-24 rounded-full border-2 border-gray-300"

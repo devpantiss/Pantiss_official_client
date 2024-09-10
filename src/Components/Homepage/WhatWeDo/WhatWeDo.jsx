@@ -27,7 +27,7 @@ const newsData = [
 const NewsCardSection = () => {
     return (
         <section className='container mx-auto py-8 mb-4'>
-            <Heading text="WHAT WE DO" color="text-[black]" bgColor="bg-[#2A675C]" />
+            <Heading text="WHAT WE DO" color="text-[black]" bgColor="bg-red-600" />
             <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
                     <div className="relative overflow-hidden rounded-lg shadow-lg">

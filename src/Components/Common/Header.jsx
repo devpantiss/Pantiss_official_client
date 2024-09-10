@@ -281,7 +281,8 @@ const Header = () => {
 
                         {/* HOME */}
                         <Link
-                            className={`flex items-center gap-x-2 font-open font-bold text-[16px] ${isScrolled ? "text-[white]" : "text-[white]"
+                            to="/"
+                            className={`cursor-pointer flex items-center gap-x-2 font-open font-bold text-[16px] ${isScrolled ? "text-[white]" : "text-[white]"
                                 } ${isActive("/") ? "text-[white] underline" : ""} transition duration-300`}
                             onClick={handleOptionSelect}
                         >
@@ -304,19 +305,21 @@ const Header = () => {
                             {isAboutOpen && (
                                 <div className="absolute mt-6 w-[200px] text-black bg-red-600 border rounded shadow-lg z-40">
                                     <Link
-
+                                        to="/whoweare/about"
                                         className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                                         onClick={handleOptionSelect}
                                     >
                                         <span className="text-[16px]">About</span>
                                     </Link>
                                     <Link
+                                        to="/whoweare/team"
                                         className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                                         onClick={handleOptionSelect}
                                     >
                                         <span className="text-[16px]">Our Team</span>
                                     </Link>
                                     <Link
+                                        to="/whoweare/advisory-board"
                                         className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                                         onClick={handleOptionSelect}
                                     >
@@ -460,13 +463,13 @@ const Header = () => {
                     }`}>
                     <nav className="flex flex-col space-y-4 p-4">
                         <Link
-                            className="flex items-center text-[16px] gap-x-2 hover:underline text-[white]"
+                            to="/"
+                            className="cursor-pointer flex items-center text-[16px] gap-x-2 hover:underline text-[white]"
                             onClick={handleOptionSelect}
                         >
                             <GrHomeRounded />
                             Home
                         </Link>
-
 
                         {/* Who We are */}
                         <div className="relative">
