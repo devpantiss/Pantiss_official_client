@@ -16,9 +16,9 @@ const HomeBanner2 = () => {
 
       {/* Translucent Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 flex items-center justify-center">
-        <div className="text-center text-white">
+        <div className="text-center text-white ">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Pantiss Group!</h1>
-          <p className="text-xl md:text-2xl">Your trusted partner in social development and enterprises</p>
+          <p className="text-xl md:text-2xl">Empowering Communities around <span className='text-red-600'>Mines</span> Across <span className='text-green-400'>Globe</span>.</p>
         </div>
       </div>
     </div>

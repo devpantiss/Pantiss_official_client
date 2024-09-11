@@ -27,8 +27,8 @@ const OurPartners = () => {
   ];
 
   return (
-    <div className="bg-white py-10 px-12 flex flex-col justify-center items-center">
-      <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-[#2A675C]" />
+    <div className="bg-white container mx-auto py-10 px-12">
+      <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-red-600" />
 
       {/* Section for Government Partners */}
       <div className="flex justify-center items-center pt-10 pb-10">
@@ -56,12 +56,38 @@ const OurPartners = () => {
       </div>
 
       {/* Section for Market Partners */}
+      <div className="flex justify-center items-center pt-10 pb-10">
+        <div className="w-full relative">
+          <div className="flex flex-col items-center justify-center">
+            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
+              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                <span className="text-xl text-white font-bold">Corporate</span>
+              </div>
+            </div>
+          </div>
+          <Marquee 
+            gradient={false} 
+            speed={50} 
+            className="overflow-hidden" 
+            loop={0} // Continuous scrolling without stopping
+          >
+            {marketPartners.map((logo, index) => (
+              <div key={index} className="flex justify-center items-center mx-6">
+                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20" />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+
+
+      {/* Section for Market Partners */}
       <div className="flex justify-center items-center pt-10">
         <div className="w-full relative">
           <div className="flex flex-col items-center justify-center">
             <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
               <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
-                <span className="text-xl text-white font-bold">Markets</span>
+                <span className="text-xl text-white font-bold">Multilaterals</span>
               </div>
             </div>
           </div>

@@ -50,7 +50,7 @@ const AsSeenOn = () => {
           alt="Top Left Icon"
           className="absolute top-5 left-0 w-16 h-16 -translate-x-1/2 -translate-y-1/2 transform rotate-[-60deg]" // Rotate the image by -30 degrees
         />
-        <Heading text="AS SEEN ON" color="text-black" bgColor="bg-[#2A675C]" />
+        <Heading text="AS SEEN ON" color="text-black" bgColor="bg-red-600" />
       </div>
 
       <div className="container w-[400px] lg:w-[800px]">
@@ -58,58 +58,58 @@ const AsSeenOn = () => {
         <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
           <div className="px-2">
             <img
-              src="https://i.postimg.cc/Wz1vNkPX/DTE.png"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/330px-DTE_pic_hrwr2q.jpg"
               alt="Down To Earth"
-              className="h-24 w-full"
+              className="h-full w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/wTb6B0MJ/iforest-removebg-preview.png"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/CBC_logo.svg_ixkcmg.png"
               alt="CBC"
-              className="h-24 w-full"
+              className="h-full w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/qvP4sq8v/Orissapost-removebg-preview.png"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055539/the-telegraph-logo-vector-removebg-preview_ovbazt.png"
               alt="The Telegraph"
-              className="h-24 w-full"
+              className="h-12 w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/hjq4Bvj5/tele-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-24 w-full"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/pngwing.com_7_ixeqav.png"
+              alt="TOI"
+              className="h-16 w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/Y9k7PPDc/Thetimesofindia-removebg-preview.png"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/Thomson_Reuters_logo.svg_hrphwf.png"
               alt="Thomson Reuters"
-              className="h-24 w-full"
+              className="h-16 w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/wvVzYkn1/thomson-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-24 w-full"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/iForest-Global-Black-Logo-and-Text_kvvqjw.png"
+              alt="IForest"
+              className="h-16 w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/43pZBG5b/unicef-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-24 w-full"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/Orissapost_qczf45.png"
+              alt="OrissaPost"
+              className="h-full w-full"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://i.postimg.cc/C1gs3CVn/cbc-removebg-preview.png"
-              alt="Thomson Reuters"
-              className="h-24 w-full"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/1200px-UNICEF_Logo_g3gwyz.png"
+              alt="Unicef"
+              className="h-full w-full"
             />
           </div>
         </Slider>

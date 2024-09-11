@@ -1,12 +1,17 @@
 import React from 'react';
 
-const Heading = ({ text,color,bgColor }) => {
+const Heading = ({ text, bgColor, color }) => {
   return (
-    <div className="text-center my-10">
-      <h2 className={`text-4xl font-bold ${color}`}>{text}</h2>
-      <div className={`w-16 h-1 bg-red-600 mx-auto mt-2`}></div>
+    <div className="flex items-center my-10">
+      {/* Vertical Line */}
+      <div className={`h-6 w-1 ${bgColor} mr-3`}></div>
+      
+      {/* Heading Text */}
+      <h2 className={`text-2xl md:text-3xl font-semibold ${color}`}>
+        {text}
+      </h2>
     </div>
   );
 };
-// ${bgColor}
+
 export default Heading;

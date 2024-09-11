@@ -25,6 +25,28 @@
     color: red !important; 
   }
 
+
+  .outline-text2 {
+    color: transparent; /* Makes the inner part of the text transparent */
+    -webkit-text-stroke: 1px rgb(255, 0, 0); /* Creates the outline effect */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .group-hover2\:outline-text2-hover {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    /* -webkit-text-stroke: 1px red; Change the stroke color to red on hover */
+  }
+
+
+
+
+
+
+
+
+
+
   .bounce-arrow {
     animation: bounce 2s infinite;
     font-size: 24px;

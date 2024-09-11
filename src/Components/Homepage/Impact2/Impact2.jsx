@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 import Heading from "../../Common/Heading";
+import { Link } from "react-router-dom";
 
 const Impact2 = () => {
   const [inView, setInView] = useState(false);
@@ -96,30 +97,6 @@ const Impact2 = () => {
       label: "Aquaculture Sites created in Mining periphery",
       imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
     },
-    // {
-    //   id: 11,
-    //   value: 8768,
-    //   label: "Employed in Mining & Allied Industries",
-    //   imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    // },
-    // {
-    //   id: 12,
-    //   value: 18,
-    //   label: "Mines and Allied Industry Supplychain Mapping",
-    //   imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    // },
-    {
-      id: 13,
-      value: 136,
-      label: "Tonnes of Mining Waste Recycling",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    },
-    {
-      id: 14,
-      value: 12000,
-      label: "Youths connected to a network of WASH & Climate Change",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
-    },
   ];
 
   const rowStructure = [2, 3, 2, 3, 2]; // Row structure as defined earlier
@@ -205,9 +182,31 @@ const Impact2 = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-white py-10">
+    <section ref={sectionRef} className="bg-white py-10 container mx-auto items-center">
       <Heading text="OUR IMPACT" color="text-black" bgColor="bg-red-500" />
       <div className="container mx-auto">{renderGrid()}</div>
+      {/* Section with GIF and Button */}
+      <div className="flex items-center justify-center mt-6 space-x-4">
+      <img
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054316/Web_designer_with_idea_frjboi.gif"
+          alt="Advanced Dashboard GIF"
+          className="w-80 h-80 lg:block hidden"
+        />
+        {/* View Advanced Dashboard Button */}
+        <Link
+          to="#"
+          className="px-4 py-2 rounded-md bg-red-600 hover:bg-white text-white hover:text-red-600 hover:ring-1 hover:ring-red-600"
+        >
+          View Advanced Dashboard
+        </Link>
+        {/* GIF */}
+        <img
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054125/Web_Design_Layout_traglx.gif"
+          alt="Advanced Dashboard GIF"
+          className="w-80 h-80 lg:block hidden"
+        />
+      </div>
+
     </section>
   );
 };

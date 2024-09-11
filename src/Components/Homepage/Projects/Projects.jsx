@@ -155,10 +155,10 @@ const Projects = () => {
 
     return (
         <section className="container mx-auto px-4 py-10">
-            <Heading text="OUR PROJECTS" color="text-black" bgColor="bg-[#2A675C]" />
+            <Heading text="OUR PROJECTS" color="text-black" bgColor="bg-red-600" />
 
             {/* Tab Buttons */}
-            <div className="flex justify-center relative">
+            <div className="flex justify-start relative">
                 <button
                     onClick={() => setActiveTab("completed")}
                     className={`relative h-[70px] px-6 py-2 font-semibold text-lg ${activeTab === "completed"

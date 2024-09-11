@@ -4,8 +4,8 @@ import HomePage from './Pages/HomePage'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import PantissSdgPage from './Pages/PantissSdgPage'
 import Header from './Components/Common/Header'
-import Footer from './Components/Common/Footer'
 import AbiutPage from './Pages/AbiutPage'
+import Footer2 from './Components/Common/Footer2'
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
         <Route path="/whoweare/*" element={<AbiutPage />} />
       </Routes>
-      {!hideHeaderFooter && <Footer />}
+      {!hideHeaderFooter && <Footer2 />}
     </>
   )
 }

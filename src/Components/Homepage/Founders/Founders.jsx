@@ -18,11 +18,12 @@ const FoundersSection = () => {
   return (
     <section className="py-12 bg-red-400/30">
       {/* Section Title */}
-      <div className="text-center mb-8">
-        <Heading text="OUR FOUNDERS" colors="text-white" bgColor="bg-[#2A675C]"/> 
-      </div>
+
 
       <div className="container mx-auto">
+        <div className="text-center mb-8">
+          <Heading text="OUR FOUNDERS" colors="text-white" bgColor="bg-red-600" />
+        </div>
         {/* Founder Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* First Card */}

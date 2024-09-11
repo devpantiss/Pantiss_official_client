@@ -3,12 +3,12 @@ import React from "react";
 const Newsletter = () => {
   return (
     <section className="bg-gray-100 py-10 px-4 rounded-lg">
-      <div className="container mx-auto text-left">
+      <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-red-600 mb-4">PANTISS Newsletter</h2>
         <p className="text-lg text-gray-700 mb-6">
           Please provide your email address to subscribe to our newsletter
         </p>
-        <form className="flex justify-left items-center max-w-full mx-auto">
+        <form className="flex justify-center items-center max-w-full mx-auto">
           <input
             type="email"
             placeholder="Enter your email"
