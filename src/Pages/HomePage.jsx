@@ -17,6 +17,7 @@ const HomePage = () => {
   return (
     <div>
         <HomeBanner2 />
+        <SDGBanner />
         <WhatWeDo />
         <Founders />
         <AdvisoryBoard />
@@ -26,7 +27,6 @@ const HomePage = () => {
         <AsSeenOn />
         <Highlights />
         <Newsletter />
-        <SDGBanner />
         <OurPartners />
         <Careers />
     </div>

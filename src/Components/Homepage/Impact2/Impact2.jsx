@@ -130,28 +130,30 @@ const Impact2 = () => {
         </div>
       </div>
     ) : (
-      <div
-        key={index}
-        className="flex flex-col md:flex-row-reverse items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
-      >
+      <div>
         <div
-          className="h-40 w-full md:w-1/2 bg-cover bg-center"
-          style={{ backgroundImage: `url(${stat.imageUrl})` }}
-        ></div>
+          key={index}
+          className="flex flex-col md:flex-row-reverse items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
+        >
+          <div
+            className="h-40 w-full md:w-1/2 bg-cover bg-center"
+            style={{ backgroundImage: `url(${stat.imageUrl})` }}
+          ></div>
 
-        <div className="p-4 text-center w-full md:w-1/2">
-          {inView ? (
-            <CountUp
-              start={0}
-              end={stat.value}
-              duration={2}
-              className="text-4xl font-bold outline-text group-hover2:outline-text-hover"
-            />
-          ) : (
-            <span className="text-4xl font-bold">0</span>
-          )}
-          {shouldHavePlus(stat.id) && <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">+</span>}
-          <p className="text-md mt-2">{stat.label}</p>
+          <div className="p-4 text-center w-full md:w-1/2">
+            {inView ? (
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={2}
+                className="text-4xl font-bold outline-text group-hover2:outline-text-hover"
+              />
+            ) : (
+              <span className="text-4xl font-bold">0</span>
+            )}
+            {shouldHavePlus(stat.id) && <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">+</span>}
+            <p className="text-md mt-2">{stat.label}</p>
+          </div>
         </div>
       </div>
     );
@@ -184,31 +186,31 @@ const Impact2 = () => {
   return (
     <div className="bg-black">
       <section ref={sectionRef} className="py-10 container mx-auto items-center">
-      <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-500" />
-      <div className="container mx-auto">{renderGrid()}</div>
-      {/* Section with GIF and Button */}
-      <div className="flex items-center justify-center mt-6 space-x-4">
-      <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054316/Web_designer_with_idea_frjboi.gif"
-          alt="Advanced Dashboard GIF"
-          className="w-80 h-80 lg:block hidden"
-        />
-        {/* View Advanced Dashboard Button */}
-        <Link
-          to="#"
-          className="px-4 py-2 rounded-md bg-red-600 hover:bg-white text-white hover:text-red-600 hover:ring-1 hover:ring-red-600"
-        >
-          View Advanced Dashboard
-        </Link>
-        {/* GIF */}
-        <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054125/Web_Design_Layout_traglx.gif"
-          alt="Advanced Dashboard GIF"
-          className="w-80 h-80 lg:block hidden"
-        />
-      </div>
+        <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-500" />
+        <div className="container mx-auto">{renderGrid()}</div>
+        {/* Section with GIF and Button */}
+        <div className="flex items-center justify-center mt-6 space-x-4">
+          <img
+            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054316/Web_designer_with_idea_frjboi.gif"
+            alt="Advanced Dashboard GIF"
+            className="w-80 h-80 lg:block hidden"
+          />
+          {/* View Advanced Dashboard Button */}
+          <Link
+            to="#"
+            className="px-4 py-2 rounded-md bg-red-600 hover:bg-white text-white hover:text-red-600 hover:ring-1 hover:ring-red-600"
+          >
+            View Advanced Dashboard
+          </Link>
+          {/* GIF */}
+          <img
+            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726054125/Web_Design_Layout_traglx.gif"
+            alt="Advanced Dashboard GIF"
+            className="w-80 h-80 lg:block hidden"
+          />
+        </div>
 
-    </section>
+      </section>
     </div>
   );
 };

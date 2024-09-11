@@ -94,7 +94,7 @@ const EventsSlider = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto lg:mx-auto px-4">
+            <div className="relative z-10 container mx-auto flex flex-col justify-center items-center lg:mx-auto px-4">
                 <Heading text="OUR ADVISORY BOARD" color="text-white" bgColor="bg-red-600"/>
 
                 {/* Slider */}

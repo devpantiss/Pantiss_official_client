@@ -73,7 +73,7 @@ const Highlights = () => {
                         >
                             {/* Content Section */}
                             <div className="p-6 transition-all duration-300 group-hover:bg-red-600">
-                                <p className="text-2xl outline-text2 outline-text2-hover font-bold uppercase text-gray-600 group-hover:text-white mb-2 transition-all duration-300">
+                                <p className="text-2xl font-bold uppercase text-red-600 group-hover:text-white mb-2 transition-all duration-300">
                                     {item.category}
                                 </p>
                                 <h2 className="text-lg font-semibold mb-4 text-red-600 group-hover:text-white transition-all duration-300">

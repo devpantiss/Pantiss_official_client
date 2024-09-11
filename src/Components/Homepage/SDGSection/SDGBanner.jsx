@@ -23,15 +23,15 @@ const SDGBanner = () => {
     ];
 
     return (
-        <div className='bg-red-600 py-4'>
-            <div className='container mx-auto flex justify-center items-center gap-x-8'>
+        <div className='bg-red-600 py-8'>
+            <div className='container mx-auto flex justify-center items-center gap-x-12'>
                 <div className='flex justify-center items-center'>
                     <SDGSectionLogo />
                 </div>
                 {/* Grid of images in the center */}
                 <div className="grid grid-cols-6 mx-8">
                     {imageUrls.map((url, index) => (
-                        <div key={index} className="w-24 h-24 bg-white p-2 rounded-md shadow-md">
+                        <div key={index} className="w-20 h-20 bg-white p-1 rounded-md shadow-md">
                             <img src={url} alt={`SDG ${index + 1}`} className="w-full h-full object-cover rounded-md" />
                         </div>
                     ))}
