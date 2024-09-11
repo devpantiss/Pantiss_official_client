@@ -44,11 +44,11 @@ const OurPartners = () => {
             gradient={false} 
             speed={50} 
             className="overflow-hidden" 
-            loop={0} // This allows continuous scrolling without stopping
+            loop={0} // Continuous scrolling without stopping
           >
             {governmentPartners.map((logo, index) => (
               <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Government Partner ${index + 1}`} className="h-20" />
+                <img src={logo} alt={`Government Partner ${index + 1}`} className="h-20 w-48 object-contain" />
               </div>
             ))}
           </Marquee>
@@ -73,15 +73,14 @@ const OurPartners = () => {
           >
             {marketPartners.map((logo, index) => (
               <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20" />
+                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
               </div>
             ))}
           </Marquee>
         </div>
       </div>
 
-
-      {/* Section for Market Partners */}
+      {/* Section for Multilateral Partners */}
       <div className="flex justify-center items-center pt-10">
         <div className="w-full relative">
           <div className="flex flex-col items-center justify-center">
@@ -99,7 +98,7 @@ const OurPartners = () => {
           >
             {marketPartners.map((logo, index) => (
               <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20" />
+                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
               </div>
             ))}
           </Marquee>

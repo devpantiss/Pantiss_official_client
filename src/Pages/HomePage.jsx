@@ -11,6 +11,7 @@ import ReachSection from '../Components/Homepage/Reach/ReachSection';
 import Highlights from '../Components/Homepage/Highlights/Highlights';
 import Impact2 from '../Components/Homepage/Impact2/Impact2';
 import Newsletter from '../Components/Homepage/NewsLetter/NewsLetter';
+import SDGBanner from '../Components/Homepage/SDGSection/SDGBanner';
 
 const HomePage = () => {
   return (
@@ -22,10 +23,10 @@ const HomePage = () => {
         <Projects />
         <Impact2 />
         <ReachSection />
-        {/* <SocialEnterprise /> */}
         <AsSeenOn />
         <Highlights />
         <Newsletter />
+        <SDGBanner />
         <OurPartners />
         <Careers />
     </div>
