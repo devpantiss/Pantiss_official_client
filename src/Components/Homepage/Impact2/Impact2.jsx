@@ -182,8 +182,9 @@ const Impact2 = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-black py-10 container mx-auto items-center">
-      <Heading text="OUR IMPACT" color="text-black" bgColor="bg-red-500" />
+    <div className="bg-black">
+      <section ref={sectionRef} className="py-10 container mx-auto items-center">
+      <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-500" />
       <div className="container mx-auto">{renderGrid()}</div>
       {/* Section with GIF and Button */}
       <div className="flex items-center justify-center mt-6 space-x-4">
@@ -208,6 +209,7 @@ const Impact2 = () => {
       </div>
 
     </section>
+    </div>
   );
 };
 
