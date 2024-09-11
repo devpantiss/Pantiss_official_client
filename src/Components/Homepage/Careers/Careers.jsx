@@ -10,7 +10,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Careers = () => {
     return (
-            <div className="container mx-auto py-8">
+            <div className="container mx-auto py-8 flex flex-col justify-center items-center">
                 <Heading text="JOIN THE BIGGEST NON-PROFIT FOR MINING VILLAGES" colors="text-white" bgColor="bg-red-600" />
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
                     {/* Partner With Us */}

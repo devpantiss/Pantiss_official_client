@@ -27,7 +27,7 @@ const OurPartners = () => {
   ];
 
   return (
-    <div className="bg-white container mx-auto py-10 px-12">
+    <div className="bg-white flex flex-col justify-center items-center container mx-auto py-14 px-12">
       <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-red-600" />
 
       {/* Section for Government Partners */}

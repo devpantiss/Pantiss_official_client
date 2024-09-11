@@ -42,7 +42,7 @@ const AsSeenOn = () => {
   };
 
   return (
-    <div className="relative bg-red-400/30 flex flex-col lg:flex-row py-10 px-12 justify-center gap-x-16 items-center">
+    <div className="relative bg-white flex flex-col lg:flex-row py-10 px-12 justify-center gap-x-16 items-center">
       {/* Image positioned at the top-left corner and rotated */}
       <div className="relative">
         <img

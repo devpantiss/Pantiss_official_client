@@ -103,7 +103,7 @@ const Header = () => {
     return (
         <header
             className={`w-full sticky z-50 backdrop-blur-sm shadow-md transition-colors duration-300 ${isScrolled ? "bg-white" : "bg-[white]"
-                } ${isScrolled ? "text-white" : "text-black"} border-b-2 border-[#2A675C]`}
+                } ${isScrolled ? "text-white" : "text-black"}]`}
         >
             <div className="container py-2 px-2 lg:mx-[110px] flex justify-between items-center">
                 {/* Logo */}

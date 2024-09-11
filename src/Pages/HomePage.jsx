@@ -17,17 +17,17 @@ const HomePage = () => {
   return (
     <div>
         <HomeBanner2 />
-        <SDGBanner />
         <WhatWeDo />
+        <SDGBanner />
         <Founders />
         <AdvisoryBoard />
         <Projects />
         <Impact2 />
+        <OurPartners />
         <ReachSection />
         <AsSeenOn />
         <Highlights />
         <Newsletter />
-        <OurPartners />
         <Careers />
     </div>
   )

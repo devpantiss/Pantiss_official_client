@@ -33,10 +33,10 @@ const MapComponent = () => {
             style={{ height: '600px', width: '100%' }}
             scrollWheelZoom={false}
         >
-            {/* Use Stamen Watercolor for a colorful map */}
+            {/* Use a dark-themed tile layer */}
             <TileLayer
-                url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>'
+                url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>'
             />
             {locations.map((location, index) => (
                 <Marker key={index} position={location.coords} icon={customMarker}>
