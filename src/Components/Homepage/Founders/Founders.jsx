@@ -25,20 +25,20 @@ const FoundersSection = () => {
           <Heading text="OUR FOUNDERS" colors="text-white" bgColor="bg-red-600" />
         </div>
         {/* Founder Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="flex justify-center items-center gap-8">
           {/* First Card */}
-          <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+          <div className="flex flex-col items-center bg-white rounded-lg p-6">
             <img
               src={founders[0].image}
               alt={founders[0].name}
-              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 border-white shadow-md"
+              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 "
             />
             <h3 className="text-2xl font-bold mb-2">{founders[0].name}</h3>
             <h4 className="text-lg text-gray-600 mb-4">{founders[0].title}</h4>
           </div>
 
           {/* Text Block */}
-          <div className="text-center px-6">
+          <div className="text-center px-6 w-[500px]">
             <p className="text-gray-800 italic leading-relaxed mb-4">
               “We believe that through social impact consulting and effective social impact management, we can elevate long-term sustainable change created by social investments. Our passion for community-based initiatives and understanding of the socio-cultural underpinnings of socio-economic development in India has played a guiding role in their work.”
             </p>
@@ -48,11 +48,11 @@ const FoundersSection = () => {
           </div>
 
           {/* Second Card */}
-          <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+          <div className="flex flex-col items-center bg-white rounded-lg p-6">
             <img
               src={founders[1].image}
               alt={founders[1].name}
-              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 border-white shadow-md"
+              className="w-56 h-56 object-cover rounded-lg mb-4 border-4"
             />
             <h3 className="text-2xl font-bold mb-2">{founders[1].name}</h3>
             <h4 className="text-lg text-gray-600 mb-4">{founders[1].title}</h4>

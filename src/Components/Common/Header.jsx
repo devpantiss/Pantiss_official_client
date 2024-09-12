@@ -415,7 +415,7 @@ const Header = () => {
                             <TbDisabled className="text-[26px] font-open" /> Divyanjan Friendly
                         </Link>
 
-                        <div className="relative group">
+                        {/* <div className="relative group">
                             <Link
                                 className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 text-[16px] ring-2 ring-[white] rounded-md ${isScrolled ? "text-[white]" : "text-[white]"
                                     } transition duration-300`}
@@ -423,11 +423,10 @@ const Header = () => {
                                 Apply
                             </Link>
 
-                            {/* Popup div that appears on hover */}
                             <div className="absolute top-[50px] left-[-80px] mt-2 px-4 py-2 text-white bg-red-600 rounded shadow-lg w-[250px] hidden group-hover:block z-50">
                                 Click the above to Apply for PANTISS Fellowship for Mining Villages
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Dropdown for Accessibility Options */}
                         {isAccessibilityOpen && (
@@ -570,16 +569,13 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
-                        <button
+                        {/* <button
                             onClick={toggleAccessibilityMenu}
                             className="flex items-center text-[16px] gap-y-3  text-[white]"
                         >
                             Apply-PANTISS fellowship for Mining Villages
-                            {/* <AiOutlineDownCircle
-                                    className={`ml-1 transition-transform duration-300 ease-in-out ${isAccessibilityOpen ? "rotate-180" : ""
-                                        }`}
-                                /> */}
-                        </button>
+
+                        </button> */}
                     </nav>
                 </div>
             </div>
