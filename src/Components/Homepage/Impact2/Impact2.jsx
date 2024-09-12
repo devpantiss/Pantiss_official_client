@@ -105,35 +105,39 @@ const Impact2 = () => {
 
   const renderStatCard = (stat, index, isEvenRow) => {
     return isEvenRow ? (
-      <div
-        key={index}
-        className="flex flex-col md:flex-row items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
-      >
+      <div key={index}>
         <div
-          className="h-44 w-full md:w-1/2 bg-cover bg-center"
-          style={{ backgroundImage: `url(${stat.imageUrl})` }}
-        ></div>
+          className="flex flex-col md:flex-row items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
+        >
+          <div
+            className="h-44 w-full md:w-1/2 bg-cover bg-center"
+            style={{ backgroundImage: `url(${stat.imageUrl})` }}
+          ></div>
 
-        <div className="p-4 text-center w-full md:w-1/2">
-          {inView ? (
-            <CountUp
-              start={0}
-              end={stat.value}
-              duration={2}
-              className="text-4xl font-bold outline-text group-hover:outline-text-hover"
-            />
-          ) : (
-            <span className="text-4xl font-bold">0</span>
-          )}
-          {shouldHavePlus(stat.id) && <span className="text-4xl font-bold outline-text group-hover:outline-text-hover">+</span>}
-          <p className="text-md mt-2">{stat.label}</p>
+          <div className="p-4 text-center w-full md:w-1/2">
+            {inView ? (
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={2}
+                className="text-4xl font-bold outline-text group-hover:outline-text-hover"
+              />
+            ) : (
+              <span className="text-4xl font-bold">0</span>
+            )}
+            {shouldHavePlus(stat.id) && (
+              <span className="text-4xl font-bold outline-text group-hover:outline-text-hover">
+                +
+              </span>
+            )}
+            <p className="text-md mt-2">{stat.label}</p>
+          </div>
         </div>
       </div>
     ) : (
-      <div>
+      <div key={index}>
         <div
-          key={index}
-          className="flex flex-col md:flex-row-reverse items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
+          className="flex flex-col md:flex-row-reverse items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
         >
           <div
             className="h-40 w-full md:w-1/2 bg-cover bg-center"
@@ -151,13 +155,18 @@ const Impact2 = () => {
             ) : (
               <span className="text-4xl font-bold">0</span>
             )}
-            {shouldHavePlus(stat.id) && <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">+</span>}
+            {shouldHavePlus(stat.id) && (
+              <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">
+                +
+              </span>
+            )}
             <p className="text-md mt-2">{stat.label}</p>
           </div>
         </div>
       </div>
     );
   };
+
 
   const renderGrid = () => {
     let currentIndex = 0;

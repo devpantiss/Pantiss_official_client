@@ -43,6 +43,16 @@
 
 
 
+  .leaflet-tooltip.state-label {
+    color: red;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+
+
+
 
 
 

@@ -16,7 +16,7 @@ const founders = [
 
 const FoundersSection = () => {
   return (
-    <section className="py-12 bg-red-400/30">
+    <section className="py-12">
       {/* Section Title */}
 
 

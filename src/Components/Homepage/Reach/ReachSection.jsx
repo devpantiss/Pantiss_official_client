@@ -4,10 +4,10 @@ import ReachMap from './ReachMap'
 
 const ReachSection = () => {
     return (
-        <div className='bg-gray-100 py-4'>
+        <div className='bg-black py-12'>
             <section className='w-full'>
                 <div className='container mx-auto flex justify-center items-center w-full'>
-                    <Heading text="OUR REACH" color="text-black" bgColor="bg-red-600" />
+                    <Heading text="OUR REACH" color="text-white" bgColor="bg-red-600" />
                 </div>
                 <div className='flex justify-center items-center'>
                     <ReachMap />
