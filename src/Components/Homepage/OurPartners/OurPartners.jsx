@@ -35,12 +35,15 @@ const OurPartners = () => {
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-[3px] h-[480px] border-l-[3px] border-dashed border-red-600 z-10"></div>
 
         {/* Section for Government Partners */}
-        <div className="relative flex justify-center items-center pb-16">
+        <div className="relative flex justify-center items-center pb-24">
           {/* Solid Semicircle */}
-          
+
           <div className="w-full relative">
             <div className="flex flex-col items-center justify-center">
-              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
+              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full border-r-4 border-red-600 rounded-full"></div> {/* Half ring */}
+                <div className="absolute -top-[5px] h-3 w-3 rounded-full bg-red-600"></div>
+                <div className="absolute -bottom-[5px] h-3 w-3 rounded-full bg-red-600"></div>
                 <div className="w-32 h-32 z-30 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
                   <span className="text-xl text-white font-bold">Government</span>
                 </div>
@@ -62,12 +65,19 @@ const OurPartners = () => {
         </div>
 
         {/* Section for Market Partners */}
-        <div className="relative flex justify-center items-center py-16">
+        <div className="relative flex justify-center items-center py-24">
           {/* Solid Semicircle */}
           <div className="w-full relative z-10">
             <div className="flex flex-col items-center justify-center">
-              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
-                <div className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
+              <div
+                className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center"
+              >
+                <div className="absolute top-0 left-0 w-full h-full border-l-4 border-red-600 rounded-full"></div> {/* Half ring */}
+                <div className="absolute -top-[5px] h-3 w-3 rounded-full bg-red-600"></div>
+                <div className="absolute -bottom-[5px] h-3 w-3 rounded-full bg-red-600"></div>
+                <div
+                  className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center"
+                >
                   <span className="text-xl text-white font-bold">Corporate</span>
                 </div>
               </div>
@@ -88,11 +98,14 @@ const OurPartners = () => {
         </div>
 
         {/* Section for Multilateral Partners */}
-        <div className="relative flex justify-center items-center pt-16">
+        <div className="relative flex justify-center items-center pt-24">
           {/* Solid Semicircle */}
           <div className="w-full relative z-10">
             <div className="flex flex-col items-center justify-center">
-              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
+              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full border-r-4 border-red-600 rounded-full"></div> {/* Half ring */}
+                <div className="absolute -top-[5px] h-3 w-3 rounded-full bg-red-600"></div>
+                <div className="absolute -bottom-[5px] h-3 w-3 rounded-full bg-red-600"></div>
                 <div className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
                   <span className="text-xl text-white font-bold">Multilaterals</span>
                 </div>
