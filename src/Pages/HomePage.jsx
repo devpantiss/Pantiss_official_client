@@ -33,6 +33,7 @@ const HomePage = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <SummitBanner />
       </Suspense>
+      <AsSeenOn />
 
       {/* Uncomment when you need Impact2 */}
       <Suspense fallback={<div>Loading...</div>}>
@@ -41,7 +42,6 @@ const HomePage = () => {
 
       <OurPartners />
       <ReachSection />
-      <AsSeenOn />
       <Highlights />
       <Newsletter />
       <Careers />
