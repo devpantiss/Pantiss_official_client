@@ -25,6 +25,9 @@ const locations = [
     { name: 'Kolar Gold mines, Karnataka', coords: [13.1360, 78.2772], details: 'Kolar was one of the largest gold mines in India.' },
 ];
 
+// API Key
+const api_key = "8f741830-1254-408f-a58c-cdbbf7deba3c"; // Replace with your actual API key
+
 const MapComponent = () => {
     return (
         <MapContainer
@@ -33,15 +36,10 @@ const MapComponent = () => {
             style={{ height: '600px', width: '100%' }}
             scrollWheelZoom={false}
         >
-            {/* Use a dark-themed tile layer */}
+            {/* Use a dark-themed tile layer and inject the API key */}
             <TileLayer
                 attribution='&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
-                url="https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png
-"
-                // https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png
-                // https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png
-                // https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png
-                // https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}.jpg
+                url={`https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key=${api_key}`} // Use template literal to insert API key
             />
             {locations.map((location, index) => (
                 <Marker key={index} position={location.coords} icon={customMarker}>
