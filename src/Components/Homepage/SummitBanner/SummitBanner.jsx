@@ -16,7 +16,7 @@ const SummitBanner = () => {
       />
       
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-30 p-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-5 p-4">
         <div className="text-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 text-lg sm:text-xl">
             <div className="flex flex-col items-center">
