@@ -16,7 +16,7 @@ const SummitBanner = () => {
       />
       
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-20 p-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-30 p-4">
         <div className="text-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 text-lg sm:text-xl">
             <div className="flex flex-col items-center">
@@ -28,7 +28,7 @@ const SummitBanner = () => {
               <span className="text-4xl font-bold">PANTISS MINING FELLOWSHIP</span>
               <img 
                 src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726138831/Screenshot_2024-09-12_162917-removebg-preview_i4rukm.png"
-                className="absolute -top-8 left-1 h-16 w-16"  
+                className="absolute -top-9 -left-7 h-16 w-16"  
               />
               <Link className="mt-4 px-4 py-2 bg-transparent ring-2 ring-white text-white hover:text-red-600">
                 Explore More
