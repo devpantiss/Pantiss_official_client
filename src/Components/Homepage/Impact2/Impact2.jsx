@@ -109,11 +109,20 @@ const Impact2 = () => {
         <div
           className="flex flex-col md:flex-row items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
         >
-          <div
-            className="h-44 w-full md:w-1/2 bg-cover bg-center"
-            style={{ backgroundImage: `url(${stat.imageUrl})` }}
-          ></div>
-
+          {/* Video instead of background image */}
+          <div className="h-44 w-full md:w-1/2">
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+            >
+              <source src="https://res.cloudinary.com/du3i8e0se/video/upload/v1725774824/New_Project_-_Made_with_Clipchamp_kmplxn.mp4" type="video/mp4" />
+              {/* Fallback if video format isn't supported */}
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
           <div className="p-4 text-center w-full md:w-1/2">
             {inView ? (
               <CountUp
@@ -139,11 +148,20 @@ const Impact2 = () => {
         <div
           className="flex flex-col md:flex-row-reverse items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 group2"
         >
-          <div
-            className="h-40 w-full md:w-1/2 bg-cover bg-center"
-            style={{ backgroundImage: `url(${stat.imageUrl})` }}
-          ></div>
-
+          {/* Video instead of background image */}
+          <div className="h-40 w-full md:w-1/2">
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+            >
+              <source src="https://res.cloudinary.com/du3i8e0se/video/upload/v1725774824/New_Project_-_Made_with_Clipchamp_kmplxn.mp4" type="video/mp4" />
+              {/* Fallback if video format isn't supported */}
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
           <div className="p-4 text-center w-full md:w-1/2">
             {inView ? (
               <CountUp
@@ -166,6 +184,7 @@ const Impact2 = () => {
       </div>
     );
   };
+  
 
 
   const renderGrid = () => {
