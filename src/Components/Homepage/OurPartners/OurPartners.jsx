@@ -30,80 +30,90 @@ const OurPartners = () => {
     <div className="bg-white flex flex-col justify-center items-center container mx-auto py-14 px-12">
       <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-red-600" />
 
-      {/* Section for Government Partners */}
-      <div className="flex justify-center items-center pt-10 pb-10">
-        <div className="w-full relative">
-          <div className="flex flex-col items-center justify-center">
-            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
-              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
-                <span className="text-xl text-white font-bold">Government</span>
+      <div className="relative my-12">
+        {/* Central Dotted Line */}
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-[3px] h-[480px] border-l-[3px] border-dashed border-red-600 z-10"></div>
+
+        {/* Section for Government Partners */}
+        <div className="relative flex justify-center items-center pb-16">
+          {/* Solid Semicircle */}
+          
+          <div className="w-full relative">
+            <div className="flex flex-col items-center justify-center">
+              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
+                <div className="w-32 h-32 z-30 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                  <span className="text-xl text-white font-bold">Government</span>
+                </div>
               </div>
             </div>
+            <Marquee
+              gradient={false}
+              speed={50}
+              className="overflow-hidden"
+              loop={0} // Continuous scrolling without stopping
+            >
+              {governmentPartners.map((logo, index) => (
+                <div key={index} className="flex justify-center items-center mx-2">
+                  <img src={logo} alt={`Government Partner ${index + 1}`} className="h-20 w-48 object-contain" />
+                </div>
+              ))}
+            </Marquee>
           </div>
-          <Marquee 
-            gradient={false} 
-            speed={50} 
-            className="overflow-hidden" 
-            loop={0} // Continuous scrolling without stopping
-          >
-            {governmentPartners.map((logo, index) => (
-              <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Government Partner ${index + 1}`} className="h-20 w-48 object-contain" />
+        </div>
+
+        {/* Section for Market Partners */}
+        <div className="relative flex justify-center items-center py-16">
+          {/* Solid Semicircle */}
+          <div className="w-full relative z-10">
+            <div className="flex flex-col items-center justify-center">
+              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
+                <div className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                  <span className="text-xl text-white font-bold">Corporate</span>
+                </div>
               </div>
-            ))}
-          </Marquee>
+            </div>
+            <Marquee
+              gradient={false}
+              speed={50}
+              className="overflow-hidden"
+              loop={0} // Continuous scrolling without stopping
+            >
+              {marketPartners.map((logo, index) => (
+                <div key={index} className="flex justify-center items-center mx-2">
+                  <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
+                </div>
+              ))}
+            </Marquee>
+          </div>
+        </div>
+
+        {/* Section for Multilateral Partners */}
+        <div className="relative flex justify-center items-center pt-16">
+          {/* Solid Semicircle */}
+          <div className="w-full relative z-10">
+            <div className="flex flex-col items-center justify-center">
+              <div className="absolute z-10 h-44 w-44 rounded-full bg-white -top-10 flex flex-col justify-center items-center ring-1 ring-red-600">
+                <div className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
+                  <span className="text-xl text-white font-bold">Multilaterals</span>
+                </div>
+              </div>
+            </div>
+            <Marquee
+              gradient={false}
+              speed={50}
+              className="overflow-hidden"
+              loop={0} // Continuous scrolling without stopping
+            >
+              {marketPartners.map((logo, index) => (
+                <div key={index} className="flex justify-center items-center mx-2">
+                  <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
+                </div>
+              ))}
+            </Marquee>
+          </div>
         </div>
       </div>
 
-      {/* Section for Market Partners */}
-      <div className="flex justify-center items-center pt-10 pb-10">
-        <div className="w-full relative">
-          <div className="flex flex-col items-center justify-center">
-            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
-              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
-                <span className="text-xl text-white font-bold">Corporate</span>
-              </div>
-            </div>
-          </div>
-          <Marquee 
-            gradient={false} 
-            speed={50} 
-            className="overflow-hidden" 
-            loop={0} // Continuous scrolling without stopping
-          >
-            {marketPartners.map((logo, index) => (
-              <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
-              </div>
-            ))}
-          </Marquee>
-        </div>
-      </div>
-
-      {/* Section for Multilateral Partners */}
-      <div className="flex justify-center items-center pt-10">
-        <div className="w-full relative">
-          <div className="flex flex-col items-center justify-center">
-            <div className="absolute z-10 top-0 flex flex-col justify-center items-center h-full">
-              <div className="w-32 h-32 py-12 px-8 bg-red-600 rounded-full flex justify-center items-center">
-                <span className="text-xl text-white font-bold">Multilaterals</span>
-              </div>
-            </div>
-          </div>
-          <Marquee 
-            gradient={false} 
-            speed={50} 
-            className="overflow-hidden" 
-            loop={0} // Continuous scrolling without stopping
-          >
-            {marketPartners.map((logo, index) => (
-              <div key={index} className="flex justify-center items-center mx-6">
-                <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
-              </div>
-            ))}
-          </Marquee>
-        </div>
-      </div>
     </div>
   );
 };

@@ -1,7 +1,25 @@
 import React from "react";
 import Heading from "../../Common/Heading";
+import { MdEventAvailable, MdCampaign } from "react-icons/md";
+import { SiStorybook, SiGooglepodcasts } from "react-icons/si";
+import { HiNewspaper } from "react-icons/hi2";
+import { HiDocumentReport } from "react-icons/hi";
+import { FaAward } from "react-icons/fa6";
+import { FaBlog } from "react-icons/fa";
+
 
 const Highlights = () => {
+    const categoryIcons = {
+        Events: <MdEventAvailable className="inline-block mr-2 text-xl" />,
+        Stories: <SiStorybook className="inline-block mr-2 text-xl" />,
+        Campaigns: <MdCampaign className="inline-block mr-2 text-xl" />,
+        Podcasts: <SiGooglepodcasts className="inline-block mr-2 text-xl" />,
+        News: <HiNewspaper className="inline-block mr-2 text-xl" />,
+        Reports: <HiDocumentReport className="inline-block mr-2 text-xl" />,
+        Awards: <FaAward className="inline-block mr-2 text-xl" />,
+        Blogs: <FaBlog className="inline-block mr-2 text-xl" />,
+    };  
+
     const newsItems = [
         {
             category: "Events",
@@ -73,8 +91,8 @@ const Highlights = () => {
                         >
                             {/* Content Section */}
                             <div className="p-6 transition-all duration-300 group-hover:bg-red-600">
-                                <p className="text-2xl font-bold uppercase text-red-600 group-hover:text-white mb-2 transition-all duration-300">
-                                    {item.category}
+                                <p className="text-2xl font-bold flex justify-start items-center uppercase text-red-600 group-hover:text-white mb-2 transition-all duration-300">
+                                    {categoryIcons[item.category]}{item.category}
                                 </p>
                                 <h2 className="text-lg font-semibold mb-4 text-red-600 group-hover:text-white transition-all duration-300">
                                     {item.title}

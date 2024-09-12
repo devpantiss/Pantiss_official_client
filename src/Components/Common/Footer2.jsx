@@ -24,7 +24,7 @@ const Footer2 = () => {
                             E-mail: <a href="mailto:info@brac.net" className="text-white underline">info@pantiss.org</a>.
                             Phone: <a href="tel" className="text-white underline">06743588734</a>
                         </address>
-                        
+
                     </div>
 
                     <div className="flex justify-center items-center space-x-4 mt-2 md:mt-0">
@@ -71,12 +71,11 @@ const Footer2 = () => {
                 <div className="border-t border-white mt-8 pt-4">
                     <div className="flex flex-col md:flex-row justify-between text-sm text-center md:text-left">
                         <div className="text-white">
-                            © 2024 PANTISS Foundation |  PANTISS Communication (ADITYA SAHU)                      
+                            © 2024 PANTISS Foundation |  PANTISS Communication
                         </div>
-                        {/* <div className="flex justify-center space-x-4 mt-2 md:mt-0">
-                            <a href="#" className="hover:underline">Privacy Policy</a>
-                            <a href="#" className="hover:underline">Terms of Use</a>
-                        </div> */}
+                        <div className="flex justify-center space-x-4 mt-2 md:mt-0">
+                           Developed by-(ADITYA SAHU)
+                        </div>
                     </div>
                 </div>
             </div>
