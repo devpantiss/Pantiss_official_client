@@ -57,9 +57,9 @@ const Footer2 = () => {
                     </div>
                 </div>
                 {/* What We Do Section */}
-                <div className="border-t border-white mt-8 pt-4">
-                    <h3 className="text-lg font-bold mb-4">What we do</h3>
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="border-t border-white mt-8 pt-4 flex flex-col justify-center items-center">
+                    <h3 className="text-lg font-bold mb-4 text-center">What we do</h3>
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <Link className="hover:underline hover:text-red-600">Social Development</Link>
                         <Link className="hover:underline hover:text-red-600">Social Enterprises</Link>
                         <Link className="hover:underline hover:text-red-600">PANTISS MINEX SIM</Link>
