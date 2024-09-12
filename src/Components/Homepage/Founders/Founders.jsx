@@ -31,7 +31,7 @@ const FoundersSection = () => {
             <img
               src={founders[0].image}
               alt={founders[0].name}
-              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 "
+              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 border-red-600"
             />
             <h3 className="text-2xl font-bold mb-2">{founders[0].name}</h3>
             <h4 className="text-lg text-gray-600 mb-4">{founders[0].title}</h4>
@@ -52,7 +52,7 @@ const FoundersSection = () => {
             <img
               src={founders[1].image}
               alt={founders[1].name}
-              className="w-56 h-56 object-cover rounded-lg mb-4 border-4"
+              className="w-56 h-56 object-cover rounded-lg mb-4 border-4 border-red-600"
             />
             <h3 className="text-2xl font-bold mb-2">{founders[1].name}</h3>
             <h4 className="text-lg text-gray-600 mb-4">{founders[1].title}</h4>
