@@ -19,7 +19,7 @@ const FoundersSection = () => {
     <section className="py-12">
       {/* Section Title */}
       <div className="container mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center flex justify-center items-center mb-2">
           <Heading text="OUR FOUNDERS" colors="text-white" bgColor="bg-red-600" />
         </div>
         {/* Founder Cards */}
