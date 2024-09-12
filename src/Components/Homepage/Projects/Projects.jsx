@@ -162,25 +162,25 @@ const Projects = () => {
                 <button
                     onClick={() => setActiveTab("completed")}
                     className={`relative h-[70px] px-6 py-2 font-semibold text-lg ${activeTab === "completed"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-black text-white"
                         : "bg-red-600 text-white"
                         }`}
                 >
                     Completed Projects
                     {activeTab === "completed" && (
-                        <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[32px] border-l-transparent border-r-[32px] border-r-transparent border-t-[20px] border-t-blue-600"></div>
+                        <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[32px] border-l-transparent border-r-[32px] border-r-transparent border-t-[20px] border-t-black"></div>
                     )}
                 </button>
                 <button
                     onClick={() => setActiveTab("ongoing")}
                     className={`relative px-6 py-2 font-semibold text-lg ${activeTab === "ongoing"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-black text-white"
                         : "bg-red-600 text-white"
                         }`}
                 >
                     Ongoing Projects
                     {activeTab === "ongoing" && (
-                        <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[32px] border-l-transparent border-r-[32px] border-r-transparent border-t-[20px] border-t-blue-600"></div>
+                        <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[32px] border-l-transparent border-r-[32px] border-r-transparent border-t-[20px] border-t-black"></div>
                     )}
                 </button>
             </div>

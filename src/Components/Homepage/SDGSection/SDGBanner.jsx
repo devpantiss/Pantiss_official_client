@@ -24,8 +24,8 @@ const SDGBanner = () => {
 
     return (
         <div className='bg-red-600 py-8'>
-            <div className='container mx-auto flex justify-center items-center gap-x-12'>
-                <div className='flex justify-center items-center'>
+            <div className='container mx-auto flex lg:flex-row flex-col justify-center items-center gap-y-12 gap-x-32'>
+                <div className='flex items-center'>
                     <SDGSectionLogo />
                 </div>
                 {/* Grid of images in the center */}
