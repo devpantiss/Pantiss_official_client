@@ -12,15 +12,15 @@ import Certifications from '../Components/AboutPage/Certifications/Certification
 const AboutPage = () => {
   return (
     <div>
-        <AboutBanner />
-        <FoundersSection />
-        <Missions />
-        <Goals />
-        <Milestones />
-        <AwardsSlider />
-        <Certifications />
-        <TestimonialCarousel />
-        <Careers />
+      <AboutBanner />
+      <Missions />
+      <FoundersSection />
+      <Goals />
+      <Milestones />
+      <AwardsSlider />
+      <Certifications />
+      <TestimonialCarousel />
+      <Careers />
     </div>
   )
 }
