@@ -1,3 +1,7 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,4 +77,40 @@
       transform: translateY(10px);
     }
   }
-  
+
+
+
+  /* //milestone */    
+  .custom-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;/* Adds space between the years */
+}
+
+.custom-dots li.slick-active button {
+    color: #FF8800; 
+    font-size: 22px;
+    font-weight: bold; /* Make the active year bold */
+}
+
+.custom-dots li button {
+    color: #888888;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Dots styling */
+.custom-dots li {
+    position: relative;
+}
+
+
+
+.custom-dots li.slick-active::before {
+    background-color: #FF8800; /* Active dot color */
+}

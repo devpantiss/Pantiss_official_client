@@ -1,16 +1,20 @@
 import React from 'react'
-import AboutPageBanner from '../Components/AboutPage/AboutBanner/AboutBanner'
-import FoundersSection from '../Components/AboutPage/FoundersSection/FoundersSection'
+import FoundersSection from '../Components/AboutPage/Founders/Founders';
 import Careers from '../Components/Homepage/Careers/Careers'
 import Goals from '../Components/AboutPage/Goals/Goals'
 import TestimonialCarousel from '../Components/AboutPage/Testimonial/TestimonialCarousel'
+import AboutBanner from '../Components/AboutPage/AboutBanner2/AboutBanner'
+import Missions from '../Components/AboutPage/Missions/Missions';
+import Milestones from '../Components/AboutPage/Milestones/Milestones';
 
 const AboutPage = () => {
   return (
     <div>
-        <AboutPageBanner />
+        <AboutBanner />
         <FoundersSection />
         <Goals />
+        <Missions />
+        <Milestones />
         <TestimonialCarousel />
         <Careers />
     </div>
