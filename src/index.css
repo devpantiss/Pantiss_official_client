@@ -90,13 +90,13 @@
 }
 
 .custom-dots li.slick-active button {
-    color: #FF8800; 
+    color: red; 
     font-size: 22px;
     font-weight: bold; /* Make the active year bold */
 }
 
 .custom-dots li button {
-    color: #888888;
+    color: red;
     font-size: 18px;
     transition: all 0.3s ease;
     border: none;
@@ -112,5 +112,5 @@
 
 
 .custom-dots li.slick-active::before {
-    background-color: #FF8800; /* Active dot color */
+    background-color: #ff0000; /* Active dot color */
 }

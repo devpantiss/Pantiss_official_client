@@ -34,13 +34,13 @@ const milestonesData = [
 // Custom arrows for navigation
 const PreviousArrow = ({ onClick }) => (
     <div className="custom-arrow absolute -bottom-12 cursor-pointer left-[35%]" onClick={onClick}>
-        <FaChevronLeft className="text-orange-500 hover:text-orange-700 text-[30px] transition-all duration-300" />
+        <FaChevronLeft className="text-red-600 hover:text-red-700 text-[30px] transition-all duration-300" />
     </div>
 );
 
 const NextArrow = ({ onClick }) => (
     <div className="custom-arrow absolute -bottom-12 cursor-pointer right-[31%]" onClick={onClick}>
-        <FaChevronRight className="text-orange-500 hover:text-orange-700 text-[30px] transition-all duration-300" />
+        <FaChevronRight className="text-red-600 hover:text-red-700 text-[30px] transition-all duration-300" />
     </div>
 );
 
@@ -52,7 +52,7 @@ const Milestones = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         customPaging: i => (
-            <button className="text-lg mx-3 text-gray-600 hover:text-orange-500 transition-all duration-300">
+            <button className="text-lg mx-3 text-gray-600 hover:text-red-600 transition-all duration-300">
                 {milestonesData[i].year}
             </button>
         ),
@@ -64,7 +64,7 @@ const Milestones = () => {
     return (
         <div className="bg- p-8 flex flex-col justify-center items-center container mx-auto">
         <Heading text="Milestones" color="text-black" bgColor="bg-red-600" />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
                 <Slider {...settings} className='w-[1200px]'>
                     {milestonesData.map((milestone, index) => (
                         <div key={index} className="flex justify-center items-center w-[900px] mx-auto">
