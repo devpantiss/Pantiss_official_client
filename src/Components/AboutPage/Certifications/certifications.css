@@ -1,0 +1,37 @@
+.certifications-slider .slick-track {
+    display: flex !important;
+    gap: 0px !important; /* Remove gaps between the slides */
+  }
+  
+  .certifications-slider .slick-slide {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .certifications-slider .slick-list {
+    padding: 0 !important; /* Remove padding from the slider */
+    margin: 0 !important;
+  }
+  
+
+  /* Custom styles for the dots in the certifications-slider */
+.certifications-slider .slick-dots {
+    bottom: -30px; /* Adjust position if needed */
+  }
+  
+  .certifications-slider .slick-dots li button:before {
+    font-size: 12px; /* Change the size of the dots */
+    color: gray; /* Default color for dots */
+    opacity: 0.5; /* Make it slightly transparent */
+  }
+  
+  .certifications-slider .slick-dots li.slick-active button:before {
+    color: red; /* Change the color of the active dot */
+    opacity: 1; /* Fully opaque for active dot */
+  }
+  
+  /* Optional: Change the spacing between dots */
+  .certifications-slider .slick-dots li {
+    margin: 0 5px; /* Adjust spacing between dots */
+  }
+  

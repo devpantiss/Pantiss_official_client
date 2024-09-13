@@ -78,7 +78,8 @@ const AwardsSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
+    arrows: false,
     prevArrow: <PreviousArrow />,
     nextArrow: <NextArrow />,
     responsive: [
@@ -100,23 +101,25 @@ const AwardsSlider = () => {
   };
 
   return (
-    <div className="relative bg-black p-10">
+    <div className="relative bg-black">
       <div className="flex justify-center items-center">
         <Heading text="Awards" color="text-white" bgColor="bg-red-600" />
       </div>
       <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
         Our commitment to quality and reliability has brought us many awards and accolades. We see these awards as the manifestation of the strong reputation we have worked so hard to build.
       </p>
-      <Slider {...settings} className="h-[350px] pt-12">
+      <Slider {...settings} className="h-[300px] pt-6">
         {awardsData.map((award, index) => (
-          <div key={index} className="relative flex flex-col justify-center items-center text-center py-10 h-[350px] px-12">
+          <div key={index} className="relative flex flex-col justify-center items-center text-center py-10 h-[250px] px-12">
             <img
               src={award.imageUrl}
               alt={award.title}
-              className="absolute -top-32 left-2 mx-auto w-[450px] h-[450px] mb-4 object-contain"
+              className="absolute -top-32 left-2 mx-auto w-[450px] h-[450px] my-4 object-contain"
             />
-            <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
-            <p className="text-gray-300 mt-2">{award.description}</p>
+            <div className="flex flex-col justify-center items-center">
+              <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
+              <p className="text-gray-300 mt-2 w-[200px]">{award.description}</p> 
+            </div>
           </div>
         ))}
       </Slider>

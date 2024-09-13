@@ -7,17 +7,19 @@ import AboutBanner from '../Components/AboutPage/AboutBanner2/AboutBanner'
 import Missions from '../Components/AboutPage/Missions/Missions';
 import Milestones from '../Components/AboutPage/Milestones/Milestones';
 import AwardsSlider from '../Components/AboutPage/Awards/AwardsSlider';
+import Certifications from '../Components/AboutPage/Certifications/Certifications';
 
 const AboutPage = () => {
   return (
     <div>
         <AboutBanner />
         <FoundersSection />
-        <Goals />
         <Missions />
+        <Goals />
         <Milestones />
-        <TestimonialCarousel />
         <AwardsSlider />
+        <Certifications />
+        <TestimonialCarousel />
         <Careers />
     </div>
   )
