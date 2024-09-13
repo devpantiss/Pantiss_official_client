@@ -6,6 +6,7 @@ import TestimonialCarousel from '../Components/AboutPage/Testimonial/Testimonial
 import AboutBanner from '../Components/AboutPage/AboutBanner2/AboutBanner'
 import Missions from '../Components/AboutPage/Missions/Missions';
 import Milestones from '../Components/AboutPage/Milestones/Milestones';
+import AwardsSlider from '../Components/AboutPage/Awards/AwardsSlider';
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
         <Missions />
         <Milestones />
         <TestimonialCarousel />
+        <AwardsSlider />
         <Careers />
     </div>
   )

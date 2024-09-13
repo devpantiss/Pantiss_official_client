@@ -65,9 +65,9 @@ const Milestones = () => {
     };
 
     return (
-        <div className="bg- p-8 flex flex-col justify-center items-center container mx-auto">
+        <div className="flex flex-col justify-center items-center container mx-auto">
         <Heading text="Milestones" color="text-black" bgColor="bg-red-600" />
-        <div className="flex justify-center items-center ">
+        <div className="flex py-12 justify-center items-center ">
                 <Slider {...settings} className='w-[1200px]'>
                     {milestonesData.map((milestone, index) => (
                         <div key={index} className="flex justify-center items-center w-[900px] mx-auto">

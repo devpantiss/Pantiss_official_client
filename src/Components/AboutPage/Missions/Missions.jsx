@@ -2,7 +2,7 @@ import React from 'react';
 
 const Missions = () => {
     return (
-        <div className="max-w-7xl mx-auto flex lg:flex-row flex-col justify-center items-center py-12 px-4 lg:gap-x-12 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex lg:flex-row flex-col justify-center items-center py-6 px-4 lg:gap-x-12 sm:px-6 lg:px-8">
             {/* Mission Section */}
             <div className="mb-12">
                 <h2 className="text-4xl pl-3 font-bold text-left text-red-600 -mb-2">Mission</h2>

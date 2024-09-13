@@ -90,12 +90,6 @@ const TestimonialCarousel = () => {
     autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    // customPaging: (i) => <div className="w-8 h-1 bg-red-600 mx-1"></div>,
-    // appendDots: (dots) => (
-    //   <div>
-    //     <ul className="flex justify-center mt-4">{dots}</ul>
-    //   </div>
-    // ),
     responsive: [
       {
         breakpoint: 1024,
@@ -113,14 +107,14 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div>
+    <div className="relative container mx-auto py-10">
       <Heading text="OUR WELL-WISHERS" color="text-[black]" bgColor="bg-red-600" />
-      <div className="container flex justify-center items-center lg:mx-auto px-4 relative">
-        <Slider {...settings} className="lg:py-16 w-[400px] md:w-[768px] lg:w-[1400px]">
+      <div className="flex justify-center items-center px-4">
+        <Slider {...settings} className="py-12 w-[400px] md:w-[768px] lg:w-[1400px]">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className={`testimonial bg-gradient-to-r from-red-600 to-red-700 m-4 flex flex-col justify-center items-center relative p-4 rounded-tr-none rounded-bl-none rounded-br-[25px] rounded-tl-[25px]`}
+              className={`testimonial bg-gradient-to-r from-red-600 to-red-700 m-4 flex flex-col justify-center items-center p-4 rounded-tr-none rounded-bl-none rounded-br-[25px] rounded-tl-[25px]`}
             >
               <div className="review flex justify-center items-center h-full">
                 <p className="text-white font-open">{testimonial.text}</p>
