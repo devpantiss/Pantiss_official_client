@@ -79,9 +79,9 @@ const TeamTabs = () => {
             <div className='flex justify-center items-center'>
                 <div className="grid grid-cols-1 justify-center md:grid-cols-4 gap-12">
                     {filteredTeam.map((member, index) => (
-                        <div key={index} className="w-[300px] bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <div key={index} className="w-[300px] group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
                             {/* Image Section */}
-                            <div className="h-64 w-full z-10 overflow-hidden">
+                            <div className="h-64 w-full z-10 overflow-hidden group-hover:ring-red-600">
                                 <img
                                     src={member.image}
                                     alt={`${member.name}`}
