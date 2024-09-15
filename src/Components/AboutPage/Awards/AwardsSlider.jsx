@@ -110,15 +110,17 @@ const AwardsSlider = () => {
       </p>
       <Slider {...settings} className="h-[300px] pt-6">
         {awardsData.map((award, index) => (
-          <div key={index} className="relative flex flex-col justify-center items-center text-center py-10 h-[250px] px-12">
-            <img
-              src={award.imageUrl}
-              alt={award.title}
-              className="absolute -top-32 left-2 mx-auto w-[450px] h-[450px] my-4 object-contain"
-            />
-            <div className="flex flex-col justify-center items-center">
-              <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
-              <p className="text-gray-300 mt-2 w-[200px]">{award.description}</p> 
+          <div key={index}>
+            <div className="relative flex flex-col justify-center items-center text-center py-10 h-[250px] px-12">
+              <img
+                src={award.imageUrl}
+                alt={award.title}
+                className="absolute -top-32 right-[0px] mx-auto w-[450px] h-[450px] my-4 object-contain"
+              />
+              <div className="flex flex-col justify-start items-center">
+                <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
+                <p className="text-gray-300 mt-2 w-[200px]">{award.description}</p>
+              </div>
             </div>
           </div>
         ))}
