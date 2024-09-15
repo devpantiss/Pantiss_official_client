@@ -23,6 +23,23 @@ const locations = [
     { name: 'Koida & Bonai, Sundargarh, Odisha', coords: [21.8396, 85.1601], details: 'Known for mining iron ore and manganese.' },
     { name: 'Bisamcuttack, Rayagada, Odisha', coords: [19.1574, 83.3905], details: 'A key region for aluminum mining and indigenous communities.' },
     { name: 'Kolar Gold mines, Karnataka', coords: [13.1360, 78.2772], details: 'Kolar was one of the largest gold mines in India.' },
+    { name: 'Kodarma, Jharkhand', coords: [24.4676, 85.5933], details: 'Known for its mica mining.' },
+    { name: 'Kalahandi, Odisha', coords: [19.9137, 83.1649], details: 'A tribal region known for bauxite and other minerals.' },
+    { name: 'Jajpur, Odisha', coords: [20.8378, 86.3377], details: 'Known for its chromite deposits.' },
+    { name: 'Cuttack, Odisha', coords: [20.4625, 85.8828], details: 'A major city and industrial area.' },
+    { name: 'Khordha, Odisha', coords: [20.1825, 85.6162], details: 'Rich in industrial activities and natural resources.' },
+    { name: 'Nayagarh, Odisha', coords: [20.1285, 85.1095], details: 'Known for its scenic beauty and emerging industries.' },
+    { name: 'Kendrapara, Odisha', coords: [20.5016, 86.4221], details: 'Agricultural and industrial growth area.' },
+    { name: 'Jharsuguda, Odisha', coords: [21.8569, 84.0063], details: 'A growing industrial area in Odisha.' },
+    { name: 'Sundargarh, Odisha', coords: [22.1167, 84.0306], details: 'An important area for iron ore mining.' },
+    { name: 'Nuapada, Odisha', coords: [20.8333, 82.6294], details: 'Known for its natural resources.' },
+    { name: 'Kendujhar, Odisha', coords: [21.6287, 85.5817], details: 'Famous for its iron ore deposits.' },
+    { name: 'Chaiwasa, Jharkhand', coords: [22.5563, 85.6315], details: 'A key area for mining and minerals.' },
+    { name: 'Nagaland', coords: [26.1584, 94.5624], details: 'Rich in oil, natural gas, and minerals.' },
+    { name: 'Neyveli, Tamil Nadu', coords: [11.5975, 79.4861], details: 'Known for lignite mining and thermal power generation.' },
+    { name: 'Ratnagiri, Maharashtra', coords: [16.9902, 73.3120], details: 'A coastal town with important mining and industrial activities.' },
+    { name: 'Chandrapur, Maharashtra', coords: [19.9506, 79.2961], details: 'Known for coal mining and power plants.' },
+    { name: 'Singrauli, Madhya Pradesh', coords: [24.1994, 82.6645], details: 'An important region for coal mining and power generation.' },
 ];
 
 // API Key
