@@ -101,7 +101,7 @@ const AwardsSlider = () => {
   };
 
   return (
-    <div className="relative bg-black">
+    <div className="relative px-10 bg-black">
       <div className="flex justify-center items-center">
         <Heading text="Awards" color="text-white" bgColor="bg-red-600" />
       </div>
@@ -115,9 +115,9 @@ const AwardsSlider = () => {
               <img
                 src={award.imageUrl}
                 alt={award.title}
-                className="absolute -top-32 right-[0px] mx-auto w-[450px] h-[450px] my-4 object-contain"
+                className="absolute -top-32 lg:right-[50px] right-[38px] mx-auto w-[350px] lg:w-[450px] h-[450px] my-4 object-contain"
               />
-              <div className="flex flex-col justify-start items-center">
+              <div className="flex flex-col justify-center items-center">
                 <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
                 <p className="text-gray-300 mt-2 w-[200px]">{award.description}</p>
               </div>

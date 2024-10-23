@@ -110,7 +110,7 @@ const AdvisoryLayout = () => {
     return (
         <div className="container mx-auto px-4 py-8">
             <Heading text="OUR ADVISORY BOARD" color="text-black" bgColor="bg-red-600" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {data.map((advisor, index) => (
                     <AdvisorCard
                         key={index}

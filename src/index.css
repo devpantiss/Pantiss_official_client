@@ -3,7 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global zoom level set to 80% */
+html {
+  zoom: 0.8; /* This sets the zoom level to 80% */
+}
 
+/* For browsers that don't support zoom, we can use transform scaling */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    transform: scale(0.8); /* For IE and Edge */
+    transform-origin: 0 0;
+  }
+}
 
 .outline-text {
     color: transparent; /* Makes the inner part of the text transparent */
