@@ -36,11 +36,11 @@ const FoundersSection = () => {
           </div>
 
           {/* Text Block */}
-          <div className="text-center px-6 w-[500px]">
-            <p className="text-gray-800 italic leading-relaxed mb-4">
+          <div className="text-center px-10 w-[500px]">
+            <p className="text-gray-800 px-6 italic leading-relaxed mb-4">
               “We believe that through social impact consulting and effective social impact management, we can elevate long-term sustainable change created by social investments. Our passion for community-based initiatives and understanding of the socio-cultural underpinnings of socio-economic development in India has played a guiding role in their work.”
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 px-6 leading-relaxed">
               We are skilling people to get an income generating source for themselves, strengthening the community for social enterprises, making the youths aware of sustainable changes in our environment, educating them on WASH, etc. We are dreaming for a better future for Odisha and her youths.
             </p>
           </div>

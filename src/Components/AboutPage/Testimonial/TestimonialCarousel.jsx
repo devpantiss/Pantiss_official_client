@@ -107,10 +107,10 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="relative container mx-auto py-10">
+    <div className="relative container mx-auto py-10 px-10">
       <Heading text="OUR WELL-WISHERS" color="text-[black]" bgColor="bg-red-600" />
       <div className="flex justify-center items-center px-4">
-        <Slider {...settings} className="py-12 w-[400px] md:w-[768px] lg:w-[1400px]">
+        <Slider {...settings} className="py-12 w-[380px] md:w-[768px] lg:w-[1400px]">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}

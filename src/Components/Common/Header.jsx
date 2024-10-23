@@ -192,7 +192,7 @@ const Header = () => {
         {/* sub-Navbar Mobile Navigation */}
         <div
           className={`fixed top-[170px] right-0 w-full h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
-            isMenuOpen2 ? 'translate-x-0' : 'translate-x-full'
+            isMenuOpen2 ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
@@ -444,7 +444,9 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div
           className={`fixed top-[170px] right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
-            isMenuOpen ? 'translate-x-0 opacity-1' : 'translate-x-full opacity-0'
+            isMenuOpen
+              ? "translate-x-0 opacity-1"
+              : "translate-x-full opacity-0"
           }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
@@ -474,24 +476,28 @@ const Header = () => {
               {isAboutOpen && (
                 <div className="flex flex-col pl-6 space-y-2">
                   <Link
+                    to="/whoweare/about"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
                     About
                   </Link>
                   <Link
+                    to="/whoweare/team"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
                     Our Team
                   </Link>
                   <Link
+                    to="/whoweare/advisory-board"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
                     Our Advisory Board
                   </Link>
                   <Link
+                    to="/whoweare/reports-and-financials"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -619,13 +625,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-            {/* <button
-                            onClick={toggleAccessibilityMenu}
-                            className="flex items-center text-[16px] gap-y-3  text-[white]"
-                        >
-                            Apply-PANTISS fellowship for Mining Villages
-
-                        </button> */}
           </nav>
         </div>
       </div>
