@@ -80,7 +80,7 @@ const Highlights = () => {
     ];
 
     return (
-        <div className="bg-red-600">
+        <div className="bg-red-600 px-10">
             <section className="container mx-auto py-10">
                 <Heading text="SPOTLIGHT" color="text-white" bgColor="bg-[white]" />
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-8">

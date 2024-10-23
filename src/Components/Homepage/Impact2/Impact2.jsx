@@ -212,7 +212,7 @@ const Impact2 = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black px-10">
       <section ref={sectionRef} className="py-10 container mx-auto items-center">
         <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-500" />
         <div className="container mx-auto">{renderGrid()}</div>

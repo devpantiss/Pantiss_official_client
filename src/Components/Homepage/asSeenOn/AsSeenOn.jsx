@@ -60,56 +60,56 @@ const AsSeenOn = () => {
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/330px-DTE_pic_hrwr2q.jpg"
               alt="Down To Earth"
-              className="h-36 w-full object-contain" // Set height and use object-contain for proper fit
+              className="lg:h-36 h-[50px] w-full object-contain" // Set height and use object-contain for proper fit
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/CBC_logo.svg_ixkcmg.png"
               alt="CBC"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055539/the-telegraph-logo-vector-removebg-preview_ovbazt.png"
               alt="The Telegraph"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/pngwing.com_7_ixeqav.png"
               alt="TOI"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/Thomson_Reuters_logo.svg_hrphwf.png"
               alt="Thomson Reuters"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/iForest-Global-Black-Logo-and-Text_kvvqjw.png"
               alt="IForest"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/Orissapost_qczf45.png"
               alt="OrissaPost"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/1200px-UNICEF_Logo_g3gwyz.png"
               alt="Unicef"
-              className="h-36 w-full object-contain"
+              className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
         </Slider>
