@@ -31,7 +31,7 @@ const Footer2 = () => {
                         <a href="#" className="hover:underline hover:text-red-600">Home</a>
                         <a href="#" className="hover:underline hover:text-red-600">About Us</a>
                         <a href="#" className="hover:underline hover:text-red-600">Contact Us</a>
-                        <a href="#" className="hover:underline hover:text-red-600">Career</a>
+                        <a href="/careers" className="hover:underline hover:text-red-600">Career</a>
                     </div>
 
                     {/* Social Media and Links Section */}
@@ -59,11 +59,11 @@ const Footer2 = () => {
                 {/* What We Do Section */}
                 <div className="border-t border-white mt-8 pt-4 flex flex-col justify-center items-center">
                     <h3 className="text-lg font-bold mb-4 text-center">What we do</h3>
-                    <div className="grid grid-cols-2 lg:grid-cols-4">
-                        <Link className="hover:underline hover:text-red-600">Social Development</Link>
-                        <Link className="hover:underline hover:text-red-600">Social Enterprises</Link>
-                        <Link className="hover:underline hover:text-red-600">PANTISS MINEX SIM</Link>
-                        <Link className="hover:underline hover:text-red-600">PANTISS Happiness Professionals</Link>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5">
+                        <Link className="hover:underline hover:text-red-600 text-center">Social Development</Link>
+                        <Link className="hover:underline hover:text-red-600 text-center">Social Enterprises</Link>
+                        <Link className="hover:underline hover:text-red-600 text-center">PANTISS MINEX SIM</Link>
+                        <Link className="hover:underline hover:text-red-600 text-center">PANTISS Happiness Professionals</Link>
                     </div>
                 </div>
 
