@@ -1,7 +1,7 @@
 import React from "react";
+import { TbFileReport } from "react-icons/tb";
 import Heading from "../Common/Heading";
 
-// Update the reportsData to include Google Drive direct download links
 const reportsData = [
   {
     title: "Annual Reports",
@@ -106,34 +106,45 @@ const reportsData = [
 ];
 
 const ReportButton = ({ label, link }) => (
-  <a href={link} download>
-    <button className="bg-gradient-to-r from-red-500 to-orange-400 text-white font-semibold py-2 px-4 rounded-lg w-full mb-3">
-      {label}
-    </button>
+  <a
+    href={link}
+    download
+    className="flex items-center justify-between border-b border-gray-300 py-3 hover:text-orange-600"
+  >
+    <span className="text-gray-700 font-medium">{label}</span>
+    <TbFileReport className="text-red-600 w-6 h-6" />
   </a>
 );
 
 const ReportsListing = () => {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-10">
-      <div className="text-center flex justify-start items-center mb-2">
+    <div className="max-w-5xl mx-auto px-6 py-10">
+      <div className="text-center mb-6">
         <Heading
           text="REPORTS & FINANCIALS"
-          colors="text-white"
-          bgColor="bg-red-600"
+          colors="text-gray-900"
+          bgColor="bg-red-500"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 px-4">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {reportsData.map((category) => (
-          <div key={category.title}>
-            <h2 className="font-semibold text-xl mb-4">{category.title}</h2>
-            {category.items.map((item) => (
-              <ReportButton
-                key={item.label}
-                label={item.label}
-                link={item.link}
-              />
-            ))}
+          <div
+            key={category.title}
+            className="bg-white shadow-md rounded-lg p-6"
+          >
+            <h2 className="text-lg font-semibold mb-4 text-gray-800 border-b pb-2">
+              {category.title}
+            </h2>
+            <div>
+              {category.items.map((item) => (
+                <ReportButton
+                  key={item.label}
+                  label={item.label}
+                  link={item.link}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>

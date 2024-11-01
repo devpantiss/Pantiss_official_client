@@ -6,4 +6,4 @@ const SocialEnterprisePage = () => {
   )
 }
 
-export default SocialEnterprisePage
+export default SocialEnterprisePage;

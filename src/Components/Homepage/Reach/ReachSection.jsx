@@ -18,4 +18,4 @@ const ReachSection = () => {
     )
 }
 
-export default ReachSection
+export default ReachSection;

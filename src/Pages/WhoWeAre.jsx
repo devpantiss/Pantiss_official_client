@@ -5,7 +5,7 @@ import OutTeamPage from './OutTeamPage';
 import OurAdvisoryBoardPage from './OurAdvisoryBoardPage';
 import ReportsAndFinancials from './ReportsAndFinancials';
 
-const AbiutPage = () => {
+const WhoWeAre = () => {
   return (
     <div>
       <Routes>
@@ -18,4 +18,4 @@ const AbiutPage = () => {
   )
 }
 
-export default AbiutPage
+export default WhoWeAre

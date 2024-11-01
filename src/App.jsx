@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import HomePage from './Pages/HomePage'
-import { Routes, Route, useLocation } from 'react-router-dom'
-import PantissSdgPage from './Pages/PantissSdgPage'
-import Header from './Components/Common/Header'
-import AbiutPage from './Pages/AbiutPage'
-import Footer2 from './Components/Common/Footer2'
-import CareersPage from './Pages/CareersPage'
+import { useState } from 'react';
+import './App.css';
+import HomePage from './Pages/HomePage';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import PantissSdgPage from './Pages/PantissSdgPage';
+import Header from './Components/Common/Header';
+import WhoWeAre from './Pages/WhoWeAre';
+import Footer2 from './Components/Common/Footer2';
+import CareersPage from './Pages/CareersPage';
+import WhatWeDo from './Pages/WhatWeDo';
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
-        <Route path="/whoweare/*" element={<AbiutPage />} />
+        <Route path="/whoweare/*" element={<WhoWeAre />} />
+        <Route path="/whatwedo/*" element={<WhatWeDo />} />
         <Route path="/careers" element={<CareersPage />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}

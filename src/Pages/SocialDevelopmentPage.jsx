@@ -1,8 +1,13 @@
 import React from 'react'
+import SocialDevBanner from '../Components/SocialDevelopmentPage/SocialDevBanner'
+import SocialDevPrograms from '../Components/SocialDevelopmentPage/SocialDevPrograms'
 
 const SocialDevelopmentPage = () => {
   return (
-    <div>SocialDevelopmentPage</div>
+    <div>
+      <SocialDevBanner />
+      <SocialDevPrograms />
+    </div>
   )
 }
 

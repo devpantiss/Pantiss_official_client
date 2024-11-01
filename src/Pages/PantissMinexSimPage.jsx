@@ -1,8 +1,13 @@
 import React from 'react'
+import SimHero from '../Components/MineXSim/SimHero'
+import CharSocialImpact from '../Components/MineXSim/CharSocialImpact'
 
 const PantissMinexSimPage = () => {
   return (
-    <div>PantissMinexSimPage</div>
+    <div>
+      <SimHero />
+      <CharSocialImpact />
+    </div>
   )
 }
 

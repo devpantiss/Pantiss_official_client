@@ -191,7 +191,7 @@ const Header = () => {
 
         {/* sub-Navbar Mobile Navigation */}
         <div
-          className={`fixed top-[170px] right-0 w-full h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
+          className={`fixed top-[170px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
             isMenuOpen2 ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -320,24 +320,28 @@ const Header = () => {
               {isWhatWeDoOpen && (
                 <div className="absolute mt-6 w-[200px] text-black bg-red-600 border rounded shadow-lg z-20">
                   <Link
+                    to="/whatwedo/social-development"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     <span className="text-[16px]">Social Development</span>
                   </Link>
                   <Link
+                    to="/whatwedo/social-enterprises"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     <span className="text-[16px]">Social Enterprises</span>
                   </Link>
                   <Link
+                    to="/whatwedo/pantiss-mine-x-sim"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[16px]">Pantiss MINEX SIM</span>
+                    <span className="text-[16px]">Pantiss MINE x SIM</span>
                   </Link>
                   <Link
+                    to="/whatwedo/social-development"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -443,7 +447,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed top-[170px] right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
+          className={`fixed top-[170px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
             isMenuOpen
               ? "translate-x-0 opacity-1"
               : "translate-x-full opacity-0"
@@ -523,18 +527,21 @@ const Header = () => {
               {isWhatWeDoOpen && (
                 <div className="flex flex-col pl-6 space-y-2">
                   <Link
+                    to="/whatwedo/social-development"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
                     Social Development
                   </Link>
                   <Link
+                    to="/whatwedo/social-enterprises"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
                     Social Enterprises
                   </Link>
                   <Link
+                    to="/whatwedo/pantiss-mine-x-sim"
                     className="hover:underline text-[white]"
                     onClick={handleOptionSelect}
                   >
