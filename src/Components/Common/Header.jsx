@@ -148,7 +148,7 @@ const Header = () => {
               SDG's & PANTISS
             </Link>
 
-            {/* SERVICES */}
+            {/* CAREER */}
             <Link
               to="/careers"
               className={`flex items-center gap-x-2 font-bold font-open text-[16px] ${
@@ -159,15 +159,21 @@ const Header = () => {
               Career
             </Link>
 
+            {/* TENDERS & EOI */}
             <Link
-              className={`flex items-center gap-x-2 font-open font-bold text-[16px] ${
+              to="/tenders"
+              className={`relative flex items-center gap-x-2 font-open font-bold text-[16px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Tenders & EOI
+              {/* Blipper */}
+              <span className="absolute top-1 -right-2 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
+              <span className="absolute top-1 -right-2 w-3 h-3 bg-red-600 rounded-full"></span>
             </Link>
 
+            {/* CONTACT */}
             <Link
               className={`flex items-center gap-x-2 font-open font-bold text-[16px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
@@ -218,6 +224,7 @@ const Header = () => {
             </Link>
 
             <Link
+              to="/tenders"
               className="flex text-[16px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >

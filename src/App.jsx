@@ -8,6 +8,7 @@ import WhoWeAre from './Pages/WhoWeAre';
 import Footer2 from './Components/Common/Footer2';
 import CareersPage from './Pages/CareersPage';
 import WhatWeDo from './Pages/WhatWeDo';
+import Tenders from './Pages/Tenders';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/whoweare/*" element={<WhoWeAre />} />
         <Route path="/whatwedo/*" element={<WhatWeDo />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/tenders" element={<Tenders />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>
