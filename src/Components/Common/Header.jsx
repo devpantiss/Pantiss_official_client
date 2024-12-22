@@ -225,11 +225,13 @@ const Header = () => {
 
             <Link
               to="/tenders"
-              className="flex text-[16px] items-center gap-x-2 hover:underline text-red-600"
+              className="relative flex text-[16px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
               <GrNotes />
               Tenders & EOI
+              <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
+              <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full"></span>
             </Link>
 
             <Link
