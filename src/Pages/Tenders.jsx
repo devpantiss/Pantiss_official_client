@@ -4,27 +4,11 @@ const Tenders = () => {
   const tenders = [
     {
       id: 1,
-      title: "Construction of School Building",
-      location: "Bhubaneswar, Odisha",
+      title: "Construction of Plastic Waste Recycling Unit",
+      location: "Bokaro, Jharkhand",
+      startDate: "23rd December 2024",
       deadline: "31st December 2024",
-      budget: "₹50,00,000",
-      link: "https://drive.google.com/file/d/12345/view", // Add Google Drive link here
-    },
-    {
-      id: 2,
-      title: "Road Widening Project",
-      location: "Cuttack, Odisha",
-      deadline: "15th January 2025",
-      budget: "₹1,20,00,000",
-      link: "https://drive.google.com/file/d/67890/view", // Add Google Drive link here
-    },
-    {
-      id: 3,
-      title: "Water Supply Installation",
-      location: "Rourkela, Odisha",
-      deadline: "10th February 2025",
-      budget: "₹35,00,000",
-      link: "https://drive.google.com/file/d/11223/view", // Add Google Drive link here
+      link: "https://drive.google.com/file/d/1kDnAKkV-q2fIO3d-QmSxKPEd6Nr4QYnO/view?usp=sharing", // Add Google Drive link here
     },
   ];
 
@@ -62,7 +46,7 @@ const Tenders = () => {
                 {tender.title}
               </h2>
               <p className="text-sm text-gray-600">
-                Location: <span className="font-medium">{tender.location}</span>
+                Start Date: <span className="font-medium">{tender.startDate}</span>
               </p>
               <p className="text-sm text-gray-600">
                 Deadline: <span className="font-medium">{tender.deadline}</span>
@@ -70,9 +54,9 @@ const Tenders = () => {
             </div>
             <div className="mt-4 sm:mt-0 flex flex-col sm:items-end">
               <p className="text-sm text-gray-600">
-                Budget:{" "}
+                Location:{" "}
                 <span className="font-semibold text-green-600">
-                  {tender.budget}
+                  {tender.location}
                 </span>
               </p>
               <a
@@ -81,7 +65,7 @@ const Tenders = () => {
                 rel="noopener noreferrer"
                 className="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600"
               >
-                View PDF
+                View Tender
               </a>
             </div>
           </div>
