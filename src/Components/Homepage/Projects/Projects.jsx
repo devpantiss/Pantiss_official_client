@@ -5,50 +5,50 @@ const completedProjects = [
     {
         id: 1,
         description: "Redeployment & retrenchment of VRS Opted & Abandoned Mines.",
-        logo: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-01-at-10.52.39-PM.jpeg", // Replace with actual image URLs
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041139/HEVY_INDUSTRY_GOVT_OF_INDIA_ecsdwi.jpg", // Replace with actual image URLs
         isReadMore: false,
 
     },
     {
         id: 2,
         description: "Odisha WASHPreneur Fellowship Program",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-23.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/UNICEF_bgidzk.png",
         isReadMore: false,
     },
     {
         id: 3,
         description: "Scopping study for unemployment-free blocks in mining regions of Keonjhar district",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/CYSD-LOGO.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041137/CYSD_iqdqgu.png",
         isReadMore: false,
     },
     {
         id: 4,
         description: "A plan on construction and demolition Waste Management, Bhubaneswar",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/giz-standard-logo_0.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
         isReadMore: false,
     },
     {
         id: 5,
         description: "A study an alternative livelihoods of household in unprofitable mines",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-24.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041152/TERI_yd4rjq.png",
         isReadMore: false,
     },
     {
         id: 6,
         description: "Detailed project report on migration in mining district of India during COVID",
-        logo: "https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041141/GOVT_OF_INDIA_ynsdha.png",
         isReadMore: false,
     },
     {
         id: 7,
         description: "Capacity Building of Woman Miners in Chromites mines of Sukinda region, Jajpur",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/Tata_Steel_Limited_2-removebg.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041151/TATA_STEEL_hoirtn.png",
         isReadMore: false,
     },
     {
         id: 8,
         description: "A survey on household dependency on coal mining in Odisha, Jharkhand, Chhattisgarh",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-27.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041143/mining_cov8j7.png",
         isReadMore: false,
     },
     {
@@ -63,55 +63,55 @@ const ongoingProjects = [
     {
         id: 1,
         description: "Development of miners and operators in periphery of mining area.",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-22.png", // Replace with actual image URLs
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041148/SCMS_phfkhs.png", // Replace with actual image URLs
         isReadMore: false,
 
     },
     {
         id: 2,
         description: "Entrepreneurship, livelihoods & Skilling of Safai Karmachari's in facilities of mining led institutions.",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-25.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041149/RCPSDC_vnbt3g.png",
         isReadMore: false,
 
     },
     {
         id: 3,
         description: "Scopping study for unemployment-free blocks in mining regions of Keonjhar district",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/CYSD-LOGO.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041137/CYSD_iqdqgu.png",
         isReadMore: false,
 
     },
     {
         id: 4,
         description: "Social Impact Assessment of CSR intervention in mining affected district",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-21.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041150/TATA_POWER_uayv1g.png",
         isReadMore: false,
 
     },
     {
         id: 5,
         description: "All Women Mines Training Program",
-        logo: "https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041141/JINDAL_STEEL_wpau1m.png",
         isReadMore: false,
 
     },
     {
         id: 6,
         description: "Developing Abandon Mines in to Inland aquaculture sites",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/giz-standard-logo_0.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
         isReadMore: false,
 
     },
     {
         id: 7,
         description: "Safely Managed water and sanitation",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-20.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041144/NITCON_dxhlde.png",
         isReadMore: false,
     },
     {
         id: 8,
         description: "Recruitment , Train deployment of Youth in Mining , iron & steel Industries",
-        logo: "https://pantiss.com/wp-content/uploads/2023/06/download-26.png",
+        logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041145/NSDC_luqbyd.png",
         isReadMore: false,
     },
     {

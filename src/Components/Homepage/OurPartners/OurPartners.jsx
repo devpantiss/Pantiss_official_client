@@ -5,25 +5,39 @@ import Heading from "../../Common/Heading";
 const OurPartners = () => {
   // Array of partner logos categorized into sections
   const governmentPartners = [
-    "https://pantiss.com/wp-content/uploads/2023/07/CYSD_LOGO-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/Dev-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__21_-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/giz-standard-logo_0-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1-1.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/images__1_-removebg-preview.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042390/Ministry_of_Heavy_Industries_India.svg_fhp1cc.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042389/Ministry_of_Coal_India.svg_fyx0tc.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042390/Ministry_of_Mines_India.svg_hpnvzl.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042391/Ministry_of_Skill_Development_and_Entrepreneurship.svg_sbogu0.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042392/ombadc_rmdidp.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042394/logo_1_gmmcfc.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042395/IISSSc_zizo9i.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042396/scms_arwl5f.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042585/Screenshot_2024-12-24_at_5.37.59_PM_eyqoun.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042586/Screenshot_2024-12-24_at_5.35.44_PM_c0akgs.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041145/NSDC_luqbyd.png"
   ];
 
-  const marketPartners = [
-    "https://pantiss.com/wp-content/uploads/2023/07/download__29_-removebg-preview-1-1.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__17_-removebg-preview-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__28_-removebg-preview-1-1.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/images__1_-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/CYSD_LOGO-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/Dev-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/download__21_-removebg-preview.png",
-    "https://pantiss.com/wp-content/uploads/2023/07/giz-standard-logo_0-removebg-preview.png",
+  const corporatePartners = [
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735042701/asci_xexfdv.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041141/JINDAL_STEEL_wpau1m.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041151/TATA_STEEL_hoirtn.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041150/TATA_POWER_uayv1g.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735043985/Coal_India_Logo.svg_wwns1e.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735043985/Adani_2012_logo_tt0z21.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735044118/mcl_kjvbs7.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735044295/NLC_India_Limited.svg_ks2rjp.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735044515/Tata_Chemicals_Limited_-_Logo.svg_s5e9qn.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735044527/pngwing.com_bt3ngg.png"
+  ];
+
+  const multilateralPartners = [
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/UNICEF_bgidzk.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/United_Nations_Environment_Programme_Logo.svg_rp7oev.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/UNIDO_Logo.svg_khx62n.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/International_Labour_Organization_Logo.svg_fukuuq.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045062/undp-logo-blue_wrebhi.svg"
   ];
 
   return (
@@ -88,7 +102,7 @@ const OurPartners = () => {
               className="overflow-hidden"
               loop={0} // Continuous scrolling without stopping
             >
-              {marketPartners.map((logo, index) => (
+              {corporatePartners.map((logo, index) => (
                 <div key={index} className="flex justify-center items-center mx-2">
                   <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
                 </div>
@@ -117,7 +131,7 @@ const OurPartners = () => {
               className="overflow-hidden"
               loop={0} // Continuous scrolling without stopping
             >
-              {marketPartners.map((logo, index) => (
+              {multilateralPartners.map((logo, index) => (
                 <div key={index} className="flex justify-center items-center mx-2">
                   <img src={logo} alt={`Market Partner ${index + 1}`} className="h-20 w-48 object-contain" />
                 </div>

@@ -7,10 +7,9 @@ import { HiDocumentReport } from "react-icons/hi";
 import { FaAward } from "react-icons/fa6";
 import { FaBlog } from "react-icons/fa";
 
-
 const Highlights = () => {
     const categoryIcons = {
-        Events: <MdEventAvailable className="inline-block mr-2 text-xl" />,
+        Events: <MdEventAvailable className="inline-block mr-2 text-xl" />, 
         Stories: <SiStorybook className="inline-block mr-2 text-xl" />,
         Campaigns: <MdCampaign className="inline-block mr-2 text-xl" />,
         Podcasts: <SiGooglepodcasts className="inline-block mr-2 text-xl" />,
@@ -18,64 +17,53 @@ const Highlights = () => {
         Reports: <HiDocumentReport className="inline-block mr-2 text-xl" />,
         Awards: <FaAward className="inline-block mr-2 text-xl" />,
         Blogs: <FaBlog className="inline-block mr-2 text-xl" />,
-    };  
+    };
 
     const newsItems = [
         {
             category: "Events",
             title: "PAGA 1.0",
             description: "PAGA 1.0 2022, organized by PANTISS and UNICEF, focuses on accelerating climate change adaptation through the convergence of Just Transition and Circular Economy.",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/Untitled-1024-%C3%97-768-px.png", // Replace with the actual image path
+            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/Untitled-1024-%C3%97-768-px.png",
             linkText: "View More",
         },
         {
             category: "Stories",
             title: "Elevating Mining Expertise: Skill Development in Sukinda-Danagadi Chromite Region, Jajpur District",
             description: "A review of evidence, bottlenecks and opportunities to meeting sustainable development Goals for mining workers.",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-6.48.36-PM.jpeg", // Replace with the actual image path
-            linkText: "View More",
-        },
-        {
-            category: "Campaigns",
-            title: "India Book of Record",
-            description: "In a remarkable display of collective hygiene, 5000 youths came together to wash their hands simultaneously on Global Handwashing Day.",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/Untitled-1024-%C3%97-768-px-1.png", // Replace with the actual image path
-            linkText: "View More",
-        },
-        {
-            category: "Podcasts",
-            title: "Youth in action for forest fire in niyamgiri hill",
-            description: "A Story of Hope: Indigenous Communities Leading the Way in Forest Fire Prevention",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-5.28.26-PM.jpeg", // Replace with the actual image path
+            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-6.48.36-PM.jpeg",
             linkText: "View More",
         },
         {
             category: "News",
             title: "Youth in action for forest fire in niyamgiri hill",
             description: "A Story of Hope: Indigenous Communities Leading the Way in Forest Fire Prevention",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-5.28.26-PM.jpeg", // Replace with the actual image path
-            linkText: "View More",
-        },
-        {
-            category: "Reports",
-            title: "Youth in action for forest fire in niyamgiri hill",
-            description: "A Story of Hope: Indigenous Communities Leading the Way in Forest Fire Prevention",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-5.28.26-PM.jpeg", // Replace with the actual image path
+            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-5.28.26-PM.jpeg",
             linkText: "View More",
         },
         {
             category: "Awards",
             title: "PAGA 1.0",
             description: "PAGA 1.0 2022, organized by PANTISS and UNICEF, focuses on accelerating climate change adaptation through the convergence of Just Transition and Circular Economy.",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/Untitled-1024-%C3%97-768-px.png", // Replace with the actual image path
+            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/Untitled-1024-%C3%97-768-px.png",
             linkText: "View More",
         },
         {
             category: "Blogs",
             title: "Elevating Mining Expertise: Skill Development in Sukinda-Danagadi Chromite Region, Jajpur District",
             description: "A review of evidence, bottlenecks and opportunities to meeting sustainable development Goals for mining workers.",
-            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-6.48.36-PM.jpeg", // Replace with the actual image path
+            imageUrl: "https://pantiss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-06-28-at-6.48.36-PM.jpeg",
             linkText: "View More",
+        },
+        {
+            category: "Campaigns",
+        },
+        {
+            category: "Podcasts",
+        },
+        
+        {
+            category: "Reports",
         },
     ];
 
@@ -89,28 +77,37 @@ const Highlights = () => {
                             key={index}
                             className="group ring-1 ring-red-600 flex flex-col justify-between rounded-lg overflow-hidden shadow-2xl hover:ring-white bg-white hover:bg-red-600 transition-all duration-300"
                         >
-                            {/* Content Section */}
                             <div className="p-6 transition-all duration-300 group-hover:bg-red-600">
                                 <p className="text-2xl font-bold flex justify-start items-center uppercase text-red-600 group-hover:text-white mb-2 transition-all duration-300">
                                     {categoryIcons[item.category]}{item.category}
                                 </p>
-                                <h2 className="text-lg font-semibold mb-4 text-red-600 group-hover:text-white transition-all duration-300">
-                                    {item.title}
-                                </h2>
-                                <p className="text-gray-700 group-hover:text-white mb-6 transition-all duration-300">
-                                    {item.description}
-                                </p>
-                                <a href="#" className="text-sm font-semibold text-gray-900 group-hover:text-white hover:underline transition-all duration-300">
-                                    {item.linkText} →
-                                </a>
+                                {item.category === "Podcasts" || item.category === "Reports" || item.category === "Campaigns" ? (
+                                    <p className="text-lg font-semibold text-red-600 group-hover:text-white transition-all duration-300">
+                                        Coming Soon
+                                    </p>
+                                ) : (
+                                    <>
+                                        <h2 className="text-lg font-semibold mb-4 text-red-600 group-hover:text-white transition-all duration-300">
+                                            {item.title}
+                                        </h2>
+                                        <p className="text-gray-700 group-hover:text-white mb-6 transition-all duration-300">
+                                            {item.description}
+                                        </p>
+                                        <a href="#" className="text-sm font-semibold text-gray-900 group-hover:text-white hover:underline transition-all duration-300">
+                                            {item.linkText} →
+                                        </a>
+                                    </>
+                                )}
                             </div>
 
                             {/* Image Section */}
-                            <div className="h-48 relative bg-cover bg-center" style={{ backgroundImage: `url(${item.imageUrl})` }}>
-                                <div
-                                    className="absolute top-0 left-[10%] w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-white group-hover:border-t-red-600 transition-all duration-300"
-                                ></div>
-                            </div>
+                            {item.imageUrl && (
+                                <div className="h-48 relative bg-cover bg-center" style={{ backgroundImage: `url(${item.imageUrl})` }}>
+                                    <div
+                                        className="absolute top-0 left-[10%] w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-white group-hover:border-t-red-600 transition-all duration-300"
+                                    ></div>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

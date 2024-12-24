@@ -121,10 +121,6 @@ const Header = () => {
                 className="h-[60px] w-auto glow-effect"
               />
             </Link>
-            <span className="text-[12px] leading-none text-green-700">
-              Empowering Mining Villages of <br />
-              Chota Nagpur & Eastern Ghats
-            </span>
           </div>
         </div>
 

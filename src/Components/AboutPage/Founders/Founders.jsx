@@ -5,12 +5,12 @@ const founders = [
   {
     name: 'Mr. Stalin Nayak',
     title: 'Director & Chairperson',
-    image: 'https://pantiss.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-28-at-10.31.07-AM-1.jpeg', // Replace with your image URL
+    image: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg', // Replace with your image URL
   },
   {
     name: 'Dr. Sanjay Pradhan',
     title: 'Principal Advisor',
-    image: 'https://pantiss.com/wp-content/uploads/2022/12/Sanjay-Pradhan--e1670426425441.jpeg', // Replace with your image URL
+    image: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/Sanjay_sir_b5cld1.jpg', // Replace with your image URL
   }
 ];
 
