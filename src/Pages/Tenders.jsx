@@ -5,7 +5,7 @@ const Tenders = () => {
     {
       id: 1,
       title: "Construction of Plastic Waste Recycling Unit",
-      location: "Bokaro, Jharkhand",
+      location: "Koderma, Jharkhand",
       startDate: "23rd December 2024",
       deadline: "31st December 2024",
       link: "https://drive.google.com/file/d/1kDnAKkV-q2fIO3d-QmSxKPEd6Nr4QYnO/view?usp=sharing", // Add Google Drive link here
