@@ -13,7 +13,7 @@ const teamData = [
     name: "Mr. Stalin Nayak",
     title: "Founder & Chairperson",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Stalin-Nayak-1-1-e1670426533601.jpeg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg",
     department: "leadership",
   },
   {
@@ -198,23 +198,23 @@ const TeamTabs = () => {
 
       {/* Tab Content */}
       <div className="flex justify-center px-8 items-center">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8">
           {filteredTeam.map((member, index) => (
             <div
               key={index}
               className="bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
             >
               {/* Image Section */}
-              <div className="h-56 z-10 w-full overflow-hidden">
+              <div className="h-60 z-10 w-full overflow-hidden">
                 <img
                   src={member.image}
                   alt={`${member.name}`}
-                  className="w-full h-56 object-cover"
+                  className="w-full h-60 object-cover"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="p-4 z-20 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600 h-[150px]">
+              <div className="p-4 z-20 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600 h-[100px]">
                 <h3 className="font-bold text-lg group-hover:text-red-600 text-white">
                   {member.name}
                 </h3>

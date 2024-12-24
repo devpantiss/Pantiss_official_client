@@ -13,10 +13,10 @@ const TeamBanner1 = () => {
         {/* Left Section: Profile Info */}
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 w-full md:max-w-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Mr. Dhruv M. Sawhney
+            Mr. Stalin Nayak
           </h2>
           <h3 className="text-xl font-medium mb-2">
-            Chairman & Managing Director
+            Founder & Chairperson
           </h3>
           <p className="text-gray-700 mb-6">
             Sawhney is Chairman of Triveni Turbine Ltd. and Triveni Engineering
