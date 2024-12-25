@@ -205,16 +205,16 @@ const TeamTabs = () => {
               className="bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
             >
               {/* Image Section */}
-              <div className="h-60 z-10 w-full overflow-hidden">
+              <div className="h- z-10 w-full overflow-hidden">
                 <img
                   src={member.image}
                   alt={`${member.name}`}
-                  className="w-full h-60 object-cover"
+                  className="w-full h-full object-fit"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="p-4 z-20 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600 h-[100px]">
+              <div className="p-4 z-20 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600">
                 <h3 className="font-bold text-lg group-hover:text-red-600 text-white">
                   {member.name}
                 </h3>
