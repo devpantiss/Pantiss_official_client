@@ -12,7 +12,7 @@ const testimonials = [
     name: "Dr. Kirti Bhushan Pradhan",
     title: 'Senior Adviser(Healthcare Strategy & Mgt)',
     text: "PANTISS have dared to dream about a truly empowered rural India. The Pantiss Foundation is their ambitious endeavour to actualise that dream by creating and executing a holistic and sustainable model of development of rural India. Their approach of connecting rural India with not just urban India but also the world is truly exciting.",
-    avatar: "https://pantiss.com/wp-content/uploads/2022/08/test1-150x150.png",
+    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/keerti_bhusan_fhupvr.jpg",
     bgcolor: "bg-gradient-to-r from-blue-500 to-blue-900",
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Shabaz Khan",
     title: 'Climate Change Specialist, GIZ',
     text: "My main responsibilities include contributing to the operational planning for the implementation of the CSC project, coordinating and managing partnerships with state and city level government authorities, stakeholders, and national and international implementation partners.",
-    avatar: "https://pantiss.com/wp-content/uploads/2022/08/test7-150x150.png",
+    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199413/Shabaz_khan_a3q0mi.jpg",
     bgcolor: "bg-gradient-to-r from-red-500 to-red-900",
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Omm Priyadarshi",
     title: 'National Convenor, Think India',
     text: "I have known PANTISS on both a personal and professional level and over the years have come to understand the passion that drives them. To do what they do, with no regard for applause or reward is something you don’t see very often. I support them wholeheartedly and wish them every success.",
-    avatar: "https://pantiss.com/wp-content/uploads/2022/08/test4-150x150.png",
+    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199409/omm_nqvhsp.webp",
     bgcolor: "bg-gradient-to-r from-green-500 to-green-900",
   },
   // {
@@ -52,7 +52,7 @@ const testimonials = [
     name: "Mrs Aparajita Gocchikar",
     title: 'International Chess Player"',
     text: "The work strategy they brought to the field or community is very much impressive. I am very delighted with PANTISS foundation’s continuous and a great focus on rural development or empowerment. I appreciate their selfless motivation and mission of transforming the lives of 1 million rural India in the next 5 years. I am inspiring their mission and wish them a great achievement.",
-    avatar: "https://pantiss.com/wp-content/uploads/2022/08/test2-150x150.jpg",
+    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/aprajita_gocchikar_zxrm3y.jpg",
     bgcolor: "bg-gradient-to-r from-yellow-500 to-yellow-900",
   },
 ];

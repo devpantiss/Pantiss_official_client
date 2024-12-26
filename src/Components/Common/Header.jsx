@@ -116,7 +116,7 @@ const Header = () => {
           <div className="glow-container">
             <Link onClick={toggleMenu}>
               <img
-                src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
+                src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png"
                 alt="Company Logo"
                 className="h-[60px] w-auto glow-effect"
               />
@@ -130,7 +130,7 @@ const Header = () => {
             {/* HOME */}
             <Link
               to="/sdg-pantiss"
-              className={`flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[#2A675C]" : "text-[#2A675C]"
               } ${
                 isActive("/") ? "text-red-600 underline" : ""
@@ -147,7 +147,7 @@ const Header = () => {
             {/* CAREER */}
             <Link
               to="/careers"
-              className={`flex items-center gap-x-2 font-bold font-open mx-5 text-[24px] ${
+              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
               onClick={handleOptionSelect}
@@ -158,7 +158,7 @@ const Header = () => {
             {/* TENDERS & EOI */}
             <Link
               to="/tenders"
-              className={`relative flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+              className={`relative flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
               onClick={handleOptionSelect}
@@ -171,7 +171,7 @@ const Header = () => {
 
             {/* CONTACT */}
             <Link
-              className={`flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
               onClick={handleOptionSelect}
@@ -200,7 +200,7 @@ const Header = () => {
           <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/sdg-pantiss"
-              className="flex items-center mx-5 text-[24px] gap-x-2 hover:underline text-red-600"
+              className="flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
               <img
@@ -212,7 +212,7 @@ const Header = () => {
 
             <Link
               to="/careers"
-              className="flex mx-5 text-[24px] items-center gap-x-2 hover:underline text-red-600"
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
               <GrBriefcase />
@@ -221,7 +221,7 @@ const Header = () => {
 
             <Link
               to="/tenders"
-              className="relative flex mx-5 text-[24px] items-center gap-x-2 hover:underline text-red-600"
+              className="relative flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
               <GrNotes />
@@ -231,7 +231,7 @@ const Header = () => {
             </Link>
 
             <Link
-              className="flex mx-5 text-[24px] items-center gap-x-2 hover:underline text-red-600"
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
               <GrPhone />
@@ -248,7 +248,7 @@ const Header = () => {
             {/* HOME */}
             <Link
               to="/"
-              className={`cursor-pointer flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+              className={`cursor-pointer flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } ${
                 isActive("/") ? "text-[white] underline" : ""
@@ -262,7 +262,7 @@ const Header = () => {
             <div className="relative group">
               <button
                 onClick={() => toggleDropdown("about")}
-                className={`flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+                className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                   isScrolled ? "text-[white]" : "text-[white]"
                 } transition duration-300`}
               >
@@ -280,28 +280,28 @@ const Header = () => {
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">About</span>
+                    <span className="text-[18px]">About</span>
                   </Link>
                   <Link
                     to="/whoweare/team"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Our Team</span>
+                    <span className="text-[18px]">Our Team</span>
                   </Link>
                   <Link
                     to="/whoweare/advisory-board"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Our Advisory Board</span>
+                    <span className="text-[18px]">Our Advisory Board</span>
                   </Link>
                   <Link
                     to="/whoweare/reports-and-financials"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Reports & Financials</span>
+                    <span className="text-[18px]">Reports & Financials</span>
                   </Link>
                 </div>
               )}
@@ -311,7 +311,7 @@ const Header = () => {
             <div className="relative group">
               <button
                 onClick={() => toggleDropdown("whatWeDo")}
-                className={`flex items-center gap-x-2 font-bold font-open mx-5 text-[24px] ${
+                className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
                   isScrolled ? "text-[white]" : "text-[white]"
                 } transition duration-300`}
               >
@@ -329,28 +329,28 @@ const Header = () => {
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Social Development</span>
+                    <span className="text-[18px]">Social Development</span>
                   </Link>
                   <Link
                     to="/whatwedo/social-enterprises"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Social Enterprises</span>
+                    <span className="text-[18px]">Social Enterprises</span>
                   </Link>
                   <Link
                     to="/whatwedo/pantiss-mine-x-sim"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">Pantiss MINE x SIM</span>
+                    <span className="text-[18px]">Pantiss MINE x SIM</span>
                   </Link>
                   <Link
                     to="/whatwedo/social-development"
                     className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[20px]">
+                    <span className="text-[18px]">
                       Pantiss Happiness Professionals
                     </span>
                   </Link>
@@ -360,7 +360,7 @@ const Header = () => {
 
             {/* Where we work */}
             <Link
-              className={`flex items-center gap-x-2 font-bold font-open mx-5 text-[24px] ${
+              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
               onClick={handleOptionSelect}
@@ -369,7 +369,7 @@ const Header = () => {
             </Link>
 
             <Link
-              className={`flex items-center gap-x-2 font-open font-bold mx-5 text-[24px] ${
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
               onClick={handleOptionSelect}
@@ -381,7 +381,7 @@ const Header = () => {
           {/* Disability key */}
           <div className="flex justify-between gap-x-8 relative">
             <Link
-              className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 mx-5 text-[24px] ring-2 ring-[white] rounded-md ${
+              className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 mx-3 text-[18px] ring-2 ring-[white] rounded-md ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
               onClick={toggleAccessibilityMenu} // Add click event to toggle dropdown
@@ -461,7 +461,7 @@ const Header = () => {
           <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/"
-              className="cursor-pointer flex items-center mx-5 text-[24px] gap-x-2 hover:underline text-[white]"
+              className="cursor-pointer flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
               <GrHomeRounded />
@@ -472,7 +472,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("about")}
-                className="flex items-center mx-5 text-[24px] gap-x-2 text-[white]"
+                className="flex items-center mx-3 text-[18px] gap-x-2 text-[white]"
               >
                 <GrHelpBook />
                 Who We are
@@ -519,7 +519,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("whatWeDo")}
-                className="flex items-center mx-5 text-[24px] gap-x-2  text-[white]"
+                className="flex items-center mx-3 text-[18px] gap-x-2  text-[white]"
               >
                 <GrBriefcase />
                 What We Do
@@ -563,7 +563,7 @@ const Header = () => {
             </div>
 
             <Link
-              className="flex mx-5 text-[24px] items-center gap-x-2 hover:underline text-[white]"
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
               <GrLocation />
@@ -573,7 +573,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={toggleAccessibilityMenu}
-                className="flex items-center mx-5 text-[24px] gap-x-2  text-[white]"
+                className="flex items-center mx-3 text-[18px] gap-x-2  text-[white]"
               >
                 <TbDisabled className="text-[26px] font-open" /> Divyanjan
                 Friendly

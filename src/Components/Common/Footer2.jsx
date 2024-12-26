@@ -13,7 +13,7 @@ const Footer2 = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-4 text-red-600">Contact us</h3>
                         <img
-                            src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
+                            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png"
                             alt="Pantiss Logo"
                             className="w-44 mx-auto md:mx-0 mb-4"
                         />
