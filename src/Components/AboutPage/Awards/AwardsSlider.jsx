@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../../Common/Heading";
@@ -11,43 +11,56 @@ const awardsData = [
     year: "2010",
     title: "Growth Excellence Award",
     description: "CAGR in excess of 70% over the last five years",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
     year: "2010",
     title: "Best WTP Industrial",
-    description: "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+    description:
+      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
 ];
 
@@ -106,20 +119,34 @@ const AwardsSlider = () => {
         <Heading text="Awards" color="text-white" bgColor="bg-red-600" />
       </div>
       <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
-        Our commitment to quality and reliability has brought us many awards and accolades. We see these awards as the manifestation of the strong reputation we have worked so hard to build.
+        Our commitment to quality and reliability has brought us many awards and
+        accolades. We see these awards as the manifestation of the strong
+        reputation we have worked so hard to build.
       </p>
-      <Slider {...settings} className="h-[300px] pt-6">
+      <Slider {...settings} className="h-[450px] pt-6">
         {awardsData.map((award, index) => (
           <div key={index}>
-            <div className="relative flex flex-col justify-center items-center text-center py-10 h-[250px] px-12">
-              <img
+            <div
+              className="relative flex flex-col justify-center items-center text-center py-10 w-full h-[300px] px-12"
+              style={{
+                backgroundImage: `url(${award.imageUrl})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* <img
                 src={award.imageUrl}
                 alt={award.title}
                 className="absolute -top-32 lg:right-[50px] right-[38px] mx-auto w-[350px] lg:w-[450px] h-[450px] my-4 object-contain"
-              />
+              /> */}
               <div className="flex flex-col justify-center items-center">
-                <h3 className="text-white text-xl font-semibold">{award.year} - {award.title}</h3>
-                <p className="text-gray-300 mt-2 w-[200px]">{award.description}</p>
+                <h3 className="text-white text-xl font-semibold">
+                  {award.year} - {award.title}
+                </h3>
+                <p className="text-gray-300 mt-2 w-[200px]">
+                  {award.description}
+                </p>
               </div>
             </div>
           </div>

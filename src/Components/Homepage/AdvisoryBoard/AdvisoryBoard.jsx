@@ -13,20 +13,20 @@ const data = [
         img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/Dr.Narayan_Nayak_jarvun.png",
         org: "IIT, Kharagpur",
     },
-    {
-        id: "2",
-        name: "Prof. Dr. Bhuputra Panda",
-        designation: "Additional Professor, IIPH",
-        img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Bhuputra_svsb7e.png",
-        org: "Ministry of Health & Public Welfare",
-    },
-    {
-        id: "3",
-        name: "Shri Amarendra Khatua, IFS",
-        designation: "Former External Affairs Secretary",
-        img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Amarendra_khatua_p2crrs.png",
-        org: "Govt. of India",
-    },
+    // {
+    //     id: "2",
+    //     name: "Prof. Dr. Bhuputra Panda",
+    //     designation: "Additional Professor, IIPH",
+    //     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Bhuputra_svsb7e.png",
+    //     org: "Ministry of Health & Public Welfare",
+    // },
+    // {
+    //     id: "3",
+    //     name: "Shri Amarendra Khatua, IFS",
+    //     designation: "Former External Affairs Secretary",
+    //     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Amarendra_khatua_p2crrs.png",
+    //     org: "Govt. of India",
+    // },
     {
         id: "4",
         name: "Prof. Bipin Jojo",
@@ -109,7 +109,7 @@ const EventsSlider = () => {
                                 <div className="max-w-sm h-[280px] rounded-lg shadow-lg bg-transparent ring-1 ring-white">
                                     <div className="flex justify-center pt-5">
                                         <img
-                                            className="w-24 h-24 rounded-full border-2 border-gray-300"
+                                            className="w-32 h-32 rounded-full border-2 border-gray-300"
                                             src={ad.img}
                                             alt={ad.name}
                                         />

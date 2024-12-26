@@ -39,9 +39,9 @@ const Impact2 = () => {
   const statsWithImages = [
     {
       id: 1,
-      value: 52000,
-      label: "Trained and Assisted in Mining Shipping Skills",
-      imageUrl: "https://i.postimg.cc/zfDGSS5s/ash-edmonds-0a-WZd-K8n-K2-I-unsplash.jpg", // Replace with actual image path
+      value: 38,
+      label: "SIA, EIA in Open cost Mines",
+      imageUrl: "https://i.postimg.cc/kX8Gngfp/pexels-d-ng-nhan-324384-1529881.jpg", // Replace with actual image path
     },
     {
       id: 2,
@@ -51,51 +51,51 @@ const Impact2 = () => {
     },
     {
       id: 3,
-      value: 12000,
-      label: "Youth connected to a network of WASH & climate change",
-      imageUrl: "https://i.postimg.cc/7Z9x6G7m/pawel-czerwinski-z7prq6-Bt-PE4-unsplash.jpg", // Replace with actual image path
+      value: 18000,
+      label: "Trained and Assisted in Mining Skills",
+      imageUrl: "https://i.postimg.cc/zfDGSS5s/ash-edmonds-0a-WZd-K8n-K2-I-unsplash.jpg", // Replace with actual image path
     },
     {
       id: 4,
-      value: 276,
-      label: "SHG, FPO, Cooperate created on green enterprises",
-      imageUrl: "https://i.postimg.cc/Pfvr4qs5/pexels-billelmoula-540518.jpg", // Replace with actual image path
+      value: 20,
+      label: "Cr.+ Revenue Generated from Established SHGs",
+      imageUrl: "https://i.postimg.cc/7Z9x6G7m/pawel-czerwinski-z7prq6-Bt-PE4-unsplash.jpg", // Replace with actual image path
     },
     {
       id: 5,
-      value: 686,
-      label: "Industries nano contractor in Mining & Shipping Skills",
-      imageUrl: "https://i.postimg.cc/13rzqYx0/pexels-cmonphotography-1809644.jpg", // Replace with actual image path
-    },
-    {
-      id: 6,
-      value: 38,
-      label: "SIA, EIA in Open cost Mines refinery & ports",
-      imageUrl: "https://i.postimg.cc/kX8Gngfp/pexels-d-ng-nhan-324384-1529881.jpg", // Replace with actual image path
-    },
-    {
-      id: 7,
-      value: 26,
+      value: 5,
       label: "Abandoned Mines Reclamated",
       imageUrl: "https://i.postimg.cc/G28rqXf5/pexels-francesco-ungaro-998641.jpg", // Replace with actual image path
     },
     {
+      id: 6,
+      value: 12,
+      label: "MHz Electricity Produced Through Renewable Energy Sources ",
+      imageUrl: "https://i.postimg.cc/Pfvr4qs5/pexels-billelmoula-540518.jpg", // Replace with actual image path
+    },
+    {
+      id: 7,
+      value: 7,
+      label: "Model Mining Villages Created",
+      imageUrl: "https://i.postimg.cc/13rzqYx0/pexels-cmonphotography-1809644.jpg", // Replace with actual image path
+    },
+    {
       id: 8,
-      value: 43,
-      label: "Lost Water Body Rejuvenated",
-      imageUrl: "https://i.postimg.cc/brnyNmHt/pexels-luis-ruiz-991422.jpg", // Replace with actual image path
+      value: 12,
+      label: "Youth Tribal Dormitories Established",
+      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
     },
     {
       id: 9,
-      value: 8000,
-      label: "Portable Water Supply",
+      value: 60,
+      label: "Children Healthcare centers Established",
       imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
     },
     {
-      id: 10,
-      value: 48,
-      label: "Aquaculture Sites created in Mining periphery",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
+      id: 8,
+      value: 43,
+      label: "Lost Water Body Rejuvenated in Mining periphery",
+      imageUrl: "https://i.postimg.cc/brnyNmHt/pexels-luis-ruiz-991422.jpg", // Replace with actual image path
     },
   ];
 

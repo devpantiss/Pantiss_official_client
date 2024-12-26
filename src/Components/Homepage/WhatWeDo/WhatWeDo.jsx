@@ -1,77 +1,144 @@
-import React from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 import Heading from "../../Common/Heading";
 import { Link } from "react-router-dom";
+import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+
+
+
+// Dummy data for the cards
+const cardData = [
+  {
+    title: "EIA/SIA for Land Acquisition@Mines",
+    link: "/whatwedo/social-development",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg",
+  },
+  {
+    title: "Rehabilitation & Resettlement of Mines",
+    link: "/whatwedo/social-enterprises",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+  },
+  {
+    title: "Vocational Training for Mining Affected Youth",
+    link: "/whatwedo/pantiss-mine-x-sim",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
+  },
+  {
+    title: "Enterprise Development in Mining Villages",
+    link: "/whatwedo/health-initiatives",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1730099088/PIC-1_discao.jpg",
+  },
+  {
+    title: "Reclamation in Abandoned Mines",
+    link: "/whatwedo/education",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
+  },
+  {
+    title: "Just Transition for Mining Workers",
+    link: "/whatwedo/environment",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
+  },
+  {
+    title: "Nutrition and Wellbeing in Mining Villages",
+    link: "/whatwedo/women-empowerment",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg",
+  },
+  {
+    title: "Eco-Mine Tourism",
+    link: "/whatwedo/child-welfare",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195893/eco-mine_dvtcgq.avif",
+  },
+  {
+    title: "Model Mining Village in Making",
+    link: "/whatwedo/rural-development",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196020/model_village_dz36fg.jpg",
+  },
+  {
+    title: "Indigenous Community Empowerment",
+    link: "/whatwedo/disaster-relief",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
+  },
+  {
+    title: "Waterbody Restoration & Biodiversity Conservation",
+    link: "/whatwedo/food-security",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196479/aditya-shrivastava-yYPcqVU6IEI-unsplash_adkc8e.jpg",
+  },
+  {
+    title: "Connecting Inaccessible Habitation around Mines",
+    link: "/whatwedo/wash",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196669/inaccessible_hne73u.avif",
+  },
+];
 
 const NewsCardSection = () => {
+  const sliderRef = useRef(null);
+
+  // Slider settings
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false, // Disable default arrows
+    dots: false, // Remove dots
+    responsive: [
+      {
+        breakpoint: 1024, // For tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768, // For mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="container mx-auto py-8 px-10 mb-4">
       <Heading text="WHAT WE DO" color="text-[black]" bgColor="bg-red-600" />
-      <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div className="relative overflow-hidden rounded-lg shadow-lg">
-          <Link to="/whatwedo/social-development">
-            <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729513838/PIC-13_ghirsr.jpg"
-              alt="title"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute left-0 bottom-0">
-              <span
-                className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
-              >
-                SOCIAL <br /> DEVELOPMENT
-              </span>
-            </div>
-          </Link>
-        </div>
+      <div className="py-4 flex justify-center items-center relative">
+        {/* Custom Previous Button */}
+        <button
+          onClick={() => sliderRef.current.slickPrev()}
+          className="absolute flex justify-center items-center bg-white rounded-full -left-[100px] z-10 text-7xl text-red-600 hover:text-red-800"
+        >
+          <FaChevronCircleLeft />
+        </button>
 
-        <div className="relative overflow-hidden rounded-lg shadow-lg">
-          <Link to="/whatwedo/social-enterprises">
-            <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,ar_1:1/v1730099088/PIC-1_discao.jpg"
-              alt="HAT IS HAPPENING IN SUDAN?"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute left-0 bottom-0">
-              <span
-                className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
-              >
-                SOCIAL <br /> ENTERPRISES{" "}
-              </span>
+        <Slider {...settings} ref={sliderRef} className="w-[400px] md:w-[800px] lg:w-[1590px]">
+          {cardData.map((card, index) => (
+            <div key={index} className="px-2">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <Link to={card.link}>
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute left-0 bottom-0">
+                    <span
+                      className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
+                    >
+                      {card.title}
+                    </span>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </Link>
-        </div>
+          ))}
+        </Slider>
 
-        <div className="relative overflow-hidden rounded-lg shadow-lg">
-          <Link to="/whatwedo/pantiss-mine-x-sim">
-            <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,ar_1:1/v1730104339/PIC-35_eodnpq.jpg"
-              alt="THE MISSING CHILDREN OF GAZA"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute left-0 bottom-0">
-              <span
-                className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
-              >
-                PANTISS <br /> MINE x SIM{" "}
-              </span>
-            </div>
-          </Link>
-        </div>
-
-        {/* <div className="relative overflow-hidden rounded-lg shadow-lg">
-          <img
-            src="https://i.stci.uk/sites/www.savethechildren.net/files/webp/page_card/copy-of-missing-children-of-gaza-carousel-facebook-post-thumbnail.webp"
-            alt="THE MISSING CHILDREN OF GAZA"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute left-0 bottom-0">
-            <span
-              className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
-            >
-              PANTISS <br /> HAPPINESS PROFESSIONALS
-            </span>
-          </div>
-        </div> */}
+        {/* Custom Next Button */}
+        <button
+          onClick={() => sliderRef.current.slickNext()}
+          className="absolute flex justify-center items-center bg-white rounded-full -right-[100px] z-10 text-7xl text-red-600 hover:text-red-800"
+        >
+          <FaChevronCircleRight />
+        </button>
       </div>
     </section>
   );

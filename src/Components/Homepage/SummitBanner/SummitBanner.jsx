@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SummitBanner = () => {
   return (
-    <div className="relative w-full lg:h-[400px] h-[700px]">
+    <div className="relative w-full lg:h-[600px] h-[700px]">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
