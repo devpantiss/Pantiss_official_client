@@ -11,7 +11,6 @@ const Impact2 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // Add logs for debugging to check if the observer is triggered
         console.log("Observed entry:", entries[0]);
         if (entries[0].isIntersecting) {
           setInView(true);
@@ -20,7 +19,7 @@ const Impact2 = () => {
         }
       },
       {
-        threshold: 0.1, // Lower threshold for mobile
+        threshold: 0.1,
         rootMargin: "0px 0px -20% 0px", // Trigger earlier when scrolling into view
       }
     );
@@ -41,61 +40,61 @@ const Impact2 = () => {
       id: 1,
       value: 38,
       label: "SIA, EIA in Open cost Mines",
-      imageUrl: "https://i.postimg.cc/kX8Gngfp/pexels-d-ng-nhan-324384-1529881.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221805/EIA_amget2.mp4",
     },
     {
       id: 2,
       value: 800,
       label: "Rehabilitation & Resettlement",
-      imageUrl: "https://i.postimg.cc/k4p3SWXv/ash-edmonds-XZ0x-N0hmpi4-unsplash.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4",
     },
     {
       id: 3,
       value: 18000,
       label: "Trained and Assisted in Mining Skills",
-      imageUrl: "https://i.postimg.cc/zfDGSS5s/ash-edmonds-0a-WZd-K8n-K2-I-unsplash.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223775/Training_1_gveouf.mp4",
     },
     {
       id: 4,
       value: 20,
       label: "Cr.+ Revenue Generated from Established SHGs",
-      imageUrl: "https://i.postimg.cc/7Z9x6G7m/pawel-czerwinski-z7prq6-Bt-PE4-unsplash.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222542/SHG_yj96fp.mp4",
     },
     {
       id: 5,
       value: 5,
       label: "Abandoned Mines Reclamated",
-      imageUrl: "https://i.postimg.cc/G28rqXf5/pexels-francesco-ungaro-998641.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4",
     },
     {
       id: 6,
       value: 12,
       label: "MHz Electricity Produced Through Renewable Energy Sources ",
-      imageUrl: "https://i.postimg.cc/Pfvr4qs5/pexels-billelmoula-540518.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221726/renewable_qcbyiu.mp4",
     },
     {
       id: 7,
       value: 7,
       label: "Model Mining Villages Created",
-      imageUrl: "https://i.postimg.cc/13rzqYx0/pexels-cmonphotography-1809644.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222926/model_village_uthqmr.mp4",
     },
     {
       id: 8,
       value: 12,
       label: "Youth Tribal Dormitories Established",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222296/dormitory_1_gjx4xj.mp4",
     },
     {
       id: 9,
       value: 60,
       label: "Children Healthcare centers Established",
-      imageUrl: "https://i.postimg.cc/J4brfdhw/pexels-seatizen-co-170969-557782.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222160/health_1_ko85fg.mp4",
     },
     {
-      id: 8,
+      id: 10,
       value: 43,
       label: "Lost Water Body Rejuvenated in Mining periphery",
-      imageUrl: "https://i.postimg.cc/brnyNmHt/pexels-luis-ruiz-991422.jpg", // Replace with actual image path
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735219468/Rejuvenation_of_water_bodies_by_local_communities_1_glzqiq.mp4",
     },
   ];
 
@@ -117,12 +116,12 @@ const Impact2 = () => {
               muted
               loop
             >
-              <source src="https://res.cloudinary.com/du3i8e0se/video/upload/v1725774824/New_Project_-_Made_with_Clipchamp_kmplxn.mp4" type="video/mp4" />
+              <source src={stat.videoUrl} type="video/mp4" />
               {/* Fallback if video format isn't supported */}
               Your browser does not support the video tag.
             </video>
           </div>
-  
+
           <div className="p-4 text-center w-full md:w-1/2">
             {inView ? (
               <CountUp
@@ -156,12 +155,12 @@ const Impact2 = () => {
               muted
               loop
             >
-              <source src="https://res.cloudinary.com/du3i8e0se/video/upload/v1725774824/New_Project_-_Made_with_Clipchamp_kmplxn.mp4" type="video/mp4" />
+              <source src={stat.videoUrl} type="video/mp4" />
               {/* Fallback if video format isn't supported */}
               Your browser does not support the video tag.
             </video>
           </div>
-  
+
           <div className="p-4 text-center w-full md:w-1/2">
             {inView ? (
               <CountUp
@@ -184,8 +183,6 @@ const Impact2 = () => {
       </div>
     );
   };
-  
-
 
   const renderGrid = () => {
     let currentIndex = 0;
@@ -237,7 +234,6 @@ const Impact2 = () => {
             className="w-80 h-80 lg:block hidden"
           />
         </div>
-
       </section>
     </div>
   );

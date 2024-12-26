@@ -19,12 +19,12 @@ const cardData = [
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
   },
   {
-    title: "Vocational Training for Mining Affected Youth",
+    title: "Skill Training for Mining-Affected Youth",
     link: "/whatwedo/pantiss-mine-x-sim",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
   },
   {
-    title: "Enterprise Development in Mining Villages",
+    title: "Enterprise Growth in Mining Villages",
     link: "/whatwedo/health-initiatives",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1730099088/PIC-1_discao.jpg",
   },
@@ -59,12 +59,12 @@ const cardData = [
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
   },
   {
-    title: "Waterbody Restoration & Biodiversity Conservation",
+    title: "Waterbody Restoration in Mines",
     link: "/whatwedo/food-security",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196479/aditya-shrivastava-yYPcqVU6IEI-unsplash_adkc8e.jpg",
   },
   {
-    title: "Connecting Inaccessible Habitation around Mines",
+    title: "Connecting Remote Mining Habitations",
     link: "/whatwedo/wash",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196669/inaccessible_hne73u.avif",
   },

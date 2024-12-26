@@ -4,7 +4,7 @@ const TeamBanner1 = () => {
   return (
     <div
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center
-    lg:bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726385840/banner1_jgrrje.webp')] 
+    lg:bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735217111/STALIN_SIR_S_PIC_2_j0cepz.jpg')] 
     bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729677655/dhruv_mobile_img_ootz2j.webp')]"
     >
       {" "}
