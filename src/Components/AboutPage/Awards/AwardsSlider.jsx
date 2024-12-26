@@ -8,57 +8,33 @@ import Heading from "../../Common/Heading";
 // Sample awards data
 const awardsData = [
   {
-    year: "2010",
-    title: "Growth Excellence Award",
-    description: "CAGR in excess of 70% over the last five years",
+    year: "2021",
+    title: "Star Performer Award",
+    description: "#Beat_Plastic_Polution Initiative",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
-    year: "2010",
-    title: "Best WTP Industrial",
+    year: "2022",
+    title: "Wes Innovation Award",
     description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+      "Youth Wes Leadership Award",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
-    year: "2010",
-    title: "Best WTP Industrial",
+    year: "2023",
+    title: "Kutumb Migrants Savior Award",
     description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+      "Hrlping and safeguarding Migrants.",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },
   {
-    year: "2010",
-    title: "Best WTP Industrial",
+    year: "2023",
+    title: "Best Performer Award",
     description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-  },
-  {
-    year: "2010",
-    title: "Best WTP Industrial",
-    description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-  },
-  {
-    year: "2010",
-    title: "Best WTP Industrial",
-    description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
-    imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-  },
-  {
-    year: "2010",
-    title: "Best WTP Industrial",
-    description:
-      "Recycle & Reuse Project of 108 MW Power Plant for NDPL, Delhi",
+      "Striving Towards Making a Difference in Rural Odisha, Odisha Livlihood Mission",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
   },

@@ -11,7 +11,7 @@ const HomeBanner2 = () => {
         loop 
         playsInline
       >
-        <source src="https://res.cloudinary.com/du3i8e0se/video/upload/v1725774824/New_Project_-_Made_with_Clipchamp_kmplxn.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735208301/banner_video_efhq8v.mp4" type="video/mp4" />
       </video>
 
       {/* Translucent Black Overlay */}
