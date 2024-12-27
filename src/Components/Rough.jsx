@@ -1,99 +1,135 @@
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useRef } from "react";
-import Heading from '../../Common/Heading';
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import "./testimonialCarousel.css";
+import Heading from "../../Common/Heading";
 
-
-
-
-const data = [
-    {
-        id: "1",
-        img: "https://pantiss.com/wp-content/uploads/2022/08/mission_img-sm.png",
-        txt: "We envision to accelerate the world's transition to a sustainable development. To inspire healthier communities by connecting people as a leading policy think tank and a knowledge hub for development sector in India.",
-    },
-    {
-        id: "2",
-        img: "https://pantiss.com/wp-content/uploads/2022/08/vision_img-sm.png",
-        txt: "A world where everyone has a decent and equal place to live, have rights to developed own community and nation and have local opportunity, growth, and impact for a better health and wellbeing.",
-    },
-    {
-        id: "3",
-        img: "https://pantiss.com/wp-content/uploads/2022/08/goal-sm.png",
-        txt: "We believe in providing the best out of best services to our clients & partners. Because we Always believe that our beneficiaries’ success is our success. Also, to become a world leader at connecting people to ensure the right to survival, protection, development, and participation.",
-    },
+const testimonials = [
+  {
+    id: 1,
+    name: "Dr. Kirti Bhushan Pradhan",
+    title: 'Senior Adviser(Healthcare Strategy & Mgt)',
+    text: 
+    "PANTISS have dared to dream about a truly empowered rural India. The Pantiss Foundation is their ambitious endeavour to actualise that dream by creating and executing a holistic and sustainable model of development of rural India. Their approach of connecting rural India with not just urban India but also the world is truly exciting.",
+    avatar:
+     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/keerti_bhusan_fhupvr.jpg",
+    bgcolor: "bg-gradient-to-r from-blue-500 to-blue-900",
+  },
+  {
+    id: 2,
+    name: "Shabaz Khan",
+    title: 'Climate Change Specialist, GIZ',
+    text: 
+    "My main responsibilities include contributing to the operational planning for the implementation of the CSC project, coordinating and managing partnerships with state and city level government authorities, stakeholders, and national and international implementation partners.",
+    avatar: 
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199413/Shabaz_khan_a3q0mi.jpg",
+    bgcolor: "bg-gradient-to-r from-red-500 to-red-900",
+  },
+  {
+    id: 3,
+    name: "Omm Priyadarshi",
+    title: 'National Convenor, Think India',
+    text: 
+    "I have known PANTISS on both a personal and professional level and over the years have come to understand the passion that drives them. To do what they do, with no regard for applause or reward is something you don’t see very often. I support them wholeheartedly and wish them every success.",
+    avatar: 
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199409/omm_nqvhsp.webp",
+    bgcolor: "bg-gradient-to-r from-green-500 to-green-900",
+  },
+  {
+    id: 6,
+    name: "Mrs Aparajita Gocchikar",
+    title: 'International Chess Player"',
+    text: 
+    "The work strategy they brought to the field or community is very much impressive. I am very delighted with PANTISS foundation’s continuous and a great focus on rural development or empowerment. I appreciate their selfless motivation and mission of transforming the lives of 1 million rural India in the next 5 years. I am inspiring their mission and wish them a great achievement.",
+    avatar: 
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/aprajita_gocchikar_zxrm3y.jpg",
+    bgcolor: "bg-gradient-to-r from-yellow-500 to-yellow-900",
+  },
 ];
 
-
-const Goals = () => {
-    const sliderRef = useRef(null);
-
-    const settings = {
-        dots: false,
-        arrows:false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    };
-
+const NextArrow = ({ onClick }) => {
   return (
-    <section
-            className="relative py-12 bg-fixed bg-cover bg-center"
-            style={{ backgroundImage: "url('https://pantiss.com/wp-content/uploads/2022/08/testimonials-bg.jpg')" }} // Replace with your image URL
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-70"></div>
-
-            {/* Content */}
-            <div className="relative z-10 container flex flex-col justify-center items-center lg:mx-auto px-4">
-                {/* <Heading text="OUR ADVISORY BOARD" color="text-white" bgColor="bg-red-600"/> */}
-
-                {/* Slider */}
-                <div className="w-full lg:w-[1300px] md:w-[768px]">
-                    <Slider
-                        ref={sliderRef}
-                        {...settings}
-                        className="lg:py-8 w-full bg-transparent"
-                    >
-                        {data.map((ad, index) => (
-                            <div key={index} className="flex items-center p-5">
-                                <div className="max-w-sm rounded-lg h-[350px] shadow-lg bg-transparent ring-1 ring-white">
-                                    <div className="flex justify-center pt-5">
-                                        <img
-                                            className="w-24 h-24"
-                                            src={ad.img}
-                                            alt={ad}
-                                        />
-                                    </div>
-                                    <div className="px-6 py-4 text-center">
-                                        <p className="mt-1 text-white text-justify">{ad.txt}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            </div>
-        </section>
+    <button
+      className="absolute flex justify-center items-center right-[10px] top-[-30px] lg:top-4 lg:right-4 bg-red-600 text-white p-2 rounded-md shadow-lg hover:bg-gray-700 focus:outline-none z-10"
+      onClick={onClick}
+    >
+      <MdKeyboardArrowRight />
+    </button>
   );
 };
 
-export default Goals;
+const PrevArrow = ({ onClick }) => {
+  return (
+    <button
+      className="absolute flex justify-center items-center top-[-30px] right-[60px] lg:top-4 lg:right-16 bg-red-600 text-white p-2 rounded-md shadow-lg hover:bg-gray-700 focus:outline-none z-10"
+      onClick={onClick}
+    >
+      <MdKeyboardArrowLeft />
+    </button>
+  );
+};
+
+const TestimonialCarousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div className="relative container mx-auto py-10 px-10">
+      <Heading text="OUR WELL-WISHERS" color="text-[black]" bgColor="bg-red-600" />
+      <div className="flex justify-center items-center px-4">
+        <Slider {...settings} className="py-12 w-[380px] md:w-[768px] lg:w-[1400px]">
+          {testimonials.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className={`testimonial bg-gradient-to-r from-red-600 to-red-700 m-4 flex flex-col justify-center items-center p-4 rounded-tr-none rounded-bl-none rounded-br-[25px] rounded-tl-[25px]`}
+            >
+              <div className="review flex justify-center items-center h-full">
+                <p className="text-white font-open">{testimonial.text}</p>
+              </div>
+              <div className="reviewer flex items-center gap-x-6 absolute bottom-2 left-40 lg:left-[230px]">
+                <img
+                  src={testimonial.avatar}
+                  className="rounded-full h-[100px]"
+                  alt={testimonial.name}
+                />
+                <div className="text-right leading-none">
+                  <span className=" text-[18px] font-merri text-white">{testimonial.name}
+                    <br />
+                    <span className="text-[12px] font-merri text-white">{testimonial.title}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialCarousel;

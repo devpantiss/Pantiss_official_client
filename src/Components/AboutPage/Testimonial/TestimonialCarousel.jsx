@@ -1,143 +1,159 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import "./testimonialCarousel.css";
-import Heading from "../../Common/Heading";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Dr. Kirti Bhushan Pradhan",
-    title: 'Senior Adviser(Healthcare Strategy & Mgt)',
-    text: "PANTISS have dared to dream about a truly empowered rural India. The Pantiss Foundation is their ambitious endeavour to actualise that dream by creating and executing a holistic and sustainable model of development of rural India. Their approach of connecting rural India with not just urban India but also the world is truly exciting.",
-    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/keerti_bhusan_fhupvr.jpg",
-    bgcolor: "bg-gradient-to-r from-blue-500 to-blue-900",
-  },
-  {
-    id: 2,
-    name: "Shabaz Khan",
-    title: 'Climate Change Specialist, GIZ',
-    text: "My main responsibilities include contributing to the operational planning for the implementation of the CSC project, coordinating and managing partnerships with state and city level government authorities, stakeholders, and national and international implementation partners.",
-    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199413/Shabaz_khan_a3q0mi.jpg",
-    bgcolor: "bg-gradient-to-r from-red-500 to-red-900",
-  },
-  {
-    id: 3,
-    name: "Omm Priyadarshi",
-    title: 'National Convenor, Think India',
-    text: "I have known PANTISS on both a personal and professional level and over the years have come to understand the passion that drives them. To do what they do, with no regard for applause or reward is something you don’t see very often. I support them wholeheartedly and wish them every success.",
-    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199409/omm_nqvhsp.webp",
-    bgcolor: "bg-gradient-to-r from-green-500 to-green-900",
-  },
-  // {
-  //   id: 4,
-  //   name: "Samik Sundar Das",
-  //   title: 'Sr. Rural Development Specialist, World Bank',
-  //   text: "I am deeply inspired by the work being done by PANTISS! It is rare to meet people who find motivation within themselves and create inspiration for others around them. Their determination comes from their deep-routed belief in the cause of Rural Empowerment. Their desire to create an India without barriers; an India free from poverty is beyond remarkable. The work done by their foundation – Pantiss – is commendable and their focus & conviction is unmatched.",
-  //   avatar: "https://pantiss.com/wp-content/uploads/2022/08/test5-150x150.png",
-  //   bgcolor: "bg-gradient-to-r from-yellow-500 to-yellow-900",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Manjir Chatterjee",
-  //   title: 'Founder & CEO Folks India',
-  //   text: "The initiative of PANTISS foundation in rural belt of Odisha, Jharkhand, Chhattisgarh & West Bengal is appreciable. I want to reach and understand rural India as a part of evolving as a player & writer because until we understand rural India we cannot bring about true changes.",
-  //   avatar: "https://pantiss.com/wp-content/uploads/2022/08/test3-150x150.jpg",
-  //   bgcolor: "bg-gradient-to-r from-yellow-500 to-yellow-900",
-  // },
-  {
-    id: 6,
-    name: "Mrs Aparajita Gocchikar",
-    title: 'International Chess Player"',
-    text: "The work strategy they brought to the field or community is very much impressive. I am very delighted with PANTISS foundation’s continuous and a great focus on rural development or empowerment. I appreciate their selfless motivation and mission of transforming the lives of 1 million rural India in the next 5 years. I am inspiring their mission and wish them a great achievement.",
-    avatar: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/aprajita_gocchikar_zxrm3y.jpg",
-    bgcolor: "bg-gradient-to-r from-yellow-500 to-yellow-900",
-  },
-];
+const TestimonialSlider = () => {
+  const sliderRef = useRef(null);
 
-const NextArrow = ({ onClick }) => {
-  return (
-    <button
-      className="absolute flex justify-center items-center right-[10px] top-[-30px] lg:top-4 lg:right-4 bg-red-600 text-white p-2 rounded-md shadow-lg hover:bg-gray-700 focus:outline-none z-10"
-      onClick={onClick}
-    >
-      <MdKeyboardArrowRight />
-    </button>
-  );
-};
+  const testimonials = [
+    {
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/keerti_bhusan_fhupvr.jpg",
+      quote:
+      "PANTISS have dared to dream about a truly empowered rural India. The Pantiss Foundation is their ambitious endeavour to actualise that dream by creating and executing a holistic and sustainable model of development of rural India. Their approach of connecting rural India with not just urban India but also the world is truly exciting.",
+      name: "Dr. Kirti Bhushan Pradhan",
+      title: "Senior Adviser(Healthcare Strategy & Mgt)",
+      location: "-",
+    },
+    {
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199413/Shabaz_khan_a3q0mi.jpg",
+      quote:
+      "My main responsibilities include contributing to the operational planning for the implementation of the CSC project, coordinating and managing partnerships with state and city level government authorities, stakeholders, and national and international implementation partners.",
+      name: "Shabaz Khan",
+        title: 'Climate Change Specialist, GIZ',
+        location: "-",
+    },
+    {
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199409/omm_nqvhsp.webp",
+      quote:
+      "I have known PANTISS on both a personal and professional level and over the years have come to understand the passion that drives them. To do what they do, with no regard for applause or reward is something you don’t see very often. I support them wholeheartedly and wish them every success.",
+      name: "Omm Priyadarshi",
+        title: 'National Convenor, Think India',
+        location: "-",
+    },
+    {
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/aprajita_gocchikar_zxrm3y.jpg",
+      quote:
+      "The work strategy they brought to the field or community is very much impressive. I am very delighted with PANTISS foundation’s continuous and a great focus on rural development or empowerment. I appreciate their selfless motivation and mission of transforming the lives of 1 million rural India in the next 5 years. I am inspiring their mission and wish them a great achievement.",
+      name: "Mrs Aparajita Gocchikar",
+        title: 'International Chess Player"',
+        location: "-",
+    },
+    // {
+    //   image:
+    //     "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009143827.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e58e4c4d217fc2cf9cfbe21320a0f7068358483030ebb90a2566e4ce0e44fb94e3c0945427bc7ecb105521b6683af799aff075a85569301cfbfaffbd5584dfb650489460412fc908557f8c5ac48849e94f9aee16a9adaaa493d4d416712ef73b59131e44e4560fb0a4fb21a7b4cfdaa86fbc52366eb612d13a8167cfcc1f494aa52c194489c021d2dfeb406e77be3b842ee3fd7bb288ca6608a4a4af1e6bba4a08bfa9e593cf51a124f11917d3bdf7890a28aaa2c4c310628ce390a9ef442a9b4bf551d31eabb682a182e0a0c7edef73c47e99cb4d63430bd2cca324a0d39a79696aef609ce6f427df18046c8656e52169b0b28bd341b5ab9ad731e7759a6081", // Replace with another image URL
+    //   quote:
+    //     "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
+    //   name: "John Doe",
+    //   title: "Team Leader, BRAC USA",
+    //   location: "BRAC New York",
+    // },
+    // {
+    //   image:
+    //     "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009145053.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=99ad9f5a213962d5484284eb63ced55c7ed5ddd88cc9a2d86c8639ea16c7f7d6c4643d3b1d74f02be42b2fbb29533b67f50f51a1e560efa1ceec33ad484f80bb6265def439b35c59ad4888fce8bd410c504d0d6a563280b9e6dd16211dbdee2571bb31d94c444aeddfed12ad3890c9ade56e0584cdad7e9547b275aad542db308463857edce5c635c9f49134cfbb1f3d72aa4b445c2333debe44bd728622cfcdde54aa10e7dcf46f896d5d85cf490dbd32a79ec4c49e318a7d6db0634f3d86de307cbad4af49fc4a181204b6ec0249cbc8523858054095c8323c4c6c93c3e9f260fe2f05951a5e4892ae04dd2b274a5a85280971fd3394f09fc8ee6477e53e0a", // Replace with another image URL
+    //   quote:
+    //     "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
+    //   name: "John Doe",
+    //   title: "Team Leader, BRAC USA",
+    //   location: "BRAC New York",
+    // },
+  ];
 
-const PrevArrow = ({ onClick }) => {
-  return (
-    <button
-      className="absolute flex justify-center items-center top-[-30px] right-[60px] lg:top-4 lg:right-16 bg-red-600 text-white p-2 rounded-md shadow-lg hover:bg-gray-700 focus:outline-none z-10"
-      onClick={onClick}
-    >
-      <MdKeyboardArrowLeft />
-    </button>
-  );
-};
-
-const TestimonialCarousel = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    autoplay: true, // Enable auto-scroll
+    autoplaySpeed: 1500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+    arrows: false,
+    customPaging: (i) => (
+      <div className="w-4 h-4 rounded-full transition-colors duration-300"></div>
+    ),
+    appendDots: (dots) => (
+      <div>
+        <ul className="flex justify-center space-x-2 mt-4">
+          {dots.map((dot, index) => (
+            <li
+              key={index}
+              className={`w-4 h-4 rounded-full border transition-all ${
+                dot.props.className.includes("slick-active")
+                  ? "bg-red-500"
+                  : "bg-white border-red-500"
+              }`}
+            >
+              {dot}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
   };
 
   return (
-    <div className="relative container mx-auto py-10 px-10">
-      <Heading text="OUR WELL-WISHERS" color="text-[black]" bgColor="bg-red-600" />
-      <div className="flex justify-center items-center px-4">
-        <Slider {...settings} className="py-12 w-[380px] md:w-[768px] lg:w-[1400px]">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className={`testimonial bg-gradient-to-r from-red-600 to-red-700 m-4 flex flex-col justify-center items-center p-4 rounded-tr-none rounded-bl-none rounded-br-[25px] rounded-tl-[25px]`}
-            >
-              <div className="review flex justify-center items-center h-full">
-                <p className="text-white font-open">{testimonial.text}</p>
-              </div>
-              <div className="reviewer flex items-center gap-x-6 absolute bottom-2 left-40 lg:left-[230px]">
-                <img
-                  src={testimonial.avatar}
-                  className="rounded-full h-[100px]"
-                  alt={testimonial.name}
-                />
-                <div className="text-right leading-none">
-                  <span className=" text-[18px] font-merri text-white">{testimonial.name}
-                    <br />
-                    <span className="text-[12px] font-merri text-white">{testimonial.title}</span>
-                  </span>
+    <div className="max-w-7xl mx-auto mt-16 p-8">
+      <div className="relative">
+        <button
+          className="absolute left-0 lg:-left-16 top-1/2 transform -translate-y-1/2 text-red-500 text-[48px] rounded-full p-2 shadow-lg z-10"
+          onClick={() => sliderRef.current.slickPrev()}
+        >
+          <FaChevronLeft />
+        </button>
+
+        <Slider {...settings} ref={sliderRef}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="flex flex-row items-center">
+              <div className="flex flex-col lg:flex-row">
+                {/* Image Section */}
+                <div className="w-full md:w-1/3 flex justify-center">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Quote Section */}
+                <div className="w-full md:w-2/3 mt-6 md:mt-0 md:ml-12 text-gray-800">
+                  <svg
+                    className="w-44 h-44 text-gray-300 mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 107 96"
+                  >
+                    <path
+                      d="M48 96V47.888H23.887C24.488 32.525 32.526 24.58 48 24.056V0C16 3.672 0 19.635 0 47.888V96h48zm59 0V47.888H82.887C83.488 32.525 91.526 24.58 107 24.056V0C75 3.672 59 19.635 59 47.888V96h48z"
+                      fill="#E3E3E3"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                  <p className="text-lg md:text-2xl italic font-light text-gray-700 leading-relaxed">
+                    {testimonial.quote}
+                  </p>
+                  <h3 className="mt-4 font-bold text-xl text-red-500">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    {testimonial.title} <br /> {testimonial.location}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </Slider>
+
+        <button
+          className="absolute right-0 lg:-right-16 top-1/2 transform -translate-y-1/2 text-red-500 text-[48px] rounded-full p-2 shadow-lg z-10"
+          onClick={() => sliderRef.current.slickNext()}
+        >
+          <FaChevronRight />
+        </button>
       </div>
     </div>
   );
 };
 
-export default TestimonialCarousel;
+export default TestimonialSlider;
