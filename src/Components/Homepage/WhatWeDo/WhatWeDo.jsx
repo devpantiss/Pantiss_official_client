@@ -4,70 +4,45 @@ import Heading from "../../Common/Heading";
 import { Link } from "react-router-dom";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
-
-
-// Dummy data for the cards
+// Dummy data for the cards with gradients
 const cardData = [
   {
     title: "EIA/SIA for Land Acquisition@Mines",
     link: "/whatwedo/social-development",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg",
+    gradient: "from-red-700 via-red-500 to-red-300",
   },
   {
     title: "Rehabilitation & Resettlement of Mines",
     link: "/whatwedo/social-enterprises",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+    gradient: "from-blue-700 via-blue-500 to-blue-300",
   },
   {
     title: "Skill Training for Mining-Affected Youth",
     link: "/whatwedo/pantiss-mine-x-sim",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278481/vocational_msprt8.jpg",
+    gradient: "from-green-700 via-green-500 to-green-300",
   },
   {
     title: "Enterprise Growth in Mining Villages",
     link: "/whatwedo/health-initiatives",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1730099088/PIC-1_discao.jpg",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735280030/SHG-cover_zx4b1p.jpg",
+    gradient: "from-purple-700 via-purple-500 to-purple-300",
   },
   {
     title: "Reclamation in Abandoned Mines",
     link: "/whatwedo/education",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
+    gradient: "from-yellow-700 via-yellow-500 to-yellow-300",
   },
   {
     title: "Just Transition for Mining Workers",
     link: "/whatwedo/environment",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
+    gradient: "from-teal-700 via-teal-500 to-teal-300",
   },
-  {
-    title: "Nutrition and Wellbeing in Mining Villages",
-    link: "/whatwedo/women-empowerment",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg",
-  },
-  {
-    title: "Eco-Mine Tourism",
-    link: "/whatwedo/child-welfare",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195893/eco-mine_dvtcgq.avif",
-  },
-  {
-    title: "Model Mining Village in Making",
-    link: "/whatwedo/rural-development",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196020/model_village_dz36fg.jpg",
-  },
-  {
-    title: "Indigenous Community Empowerment",
-    link: "/whatwedo/disaster-relief",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
-  },
-  {
-    title: "Waterbody Restoration in Mines",
-    link: "/whatwedo/food-security",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196479/aditya-shrivastava-yYPcqVU6IEI-unsplash_adkc8e.jpg",
-  },
-  {
-    title: "Connecting Remote Mining Habitations",
-    link: "/whatwedo/wash",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196669/inaccessible_hne73u.avif",
-  },
+  // Add more cards with unique gradients as needed
 ];
 
 const NewsCardSection = () => {
@@ -104,12 +79,16 @@ const NewsCardSection = () => {
         {/* Custom Previous Button */}
         <button
           onClick={() => sliderRef.current.slickPrev()}
-          className="absolute flex justify-center items-center bg-white rounded-full -left-[100px] z-10 text-7xl text-red-600 hover:text-red-800"
+          className="absolute flex justify-center items-center bg-white rounded-full lg:-left-[100px] left-0 z-10 text-7xl text-red-600 hover:text-red-800"
         >
           <FaChevronCircleLeft />
         </button>
 
-        <Slider {...settings} ref={sliderRef} className="w-[400px] md:w-[800px] lg:w-[1590px]">
+        <Slider
+          {...settings}
+          ref={sliderRef}
+          className="w-[400px] md:w-[800px] lg:w-[1590px]"
+        >
           {cardData.map((card, index) => (
             <div key={index} className="px-2">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -119,9 +98,14 @@ const NewsCardSection = () => {
                     alt={card.title}
                     className="w-full h-[500px] object-cover"
                   />
-                  <div className="absolute left-0 bottom-0">
+                  <div className="absolute left-0 bg-black/70 px-[3px] bottom-0">
                     <span
-                      className={`inline-block bg-white hover:text-[red] px-2 py-1 leading-[1.5] font-bold text-2xl`}
+                      className={`inline-block leading-[1.5] text-lg font-extrabold uppercase bg-clip-text text-transparent bg-gradient-to-r ${card.gradient} drop-shadow-lg animate-shine`}
+                      style={{
+                        backgroundSize: "200%",
+                        backgroundPosition: "0%",
+                        animation: "shine 3s infinite linear",
+                      }}
                     >
                       {card.title}
                     </span>
@@ -135,7 +119,7 @@ const NewsCardSection = () => {
         {/* Custom Next Button */}
         <button
           onClick={() => sliderRef.current.slickNext()}
-          className="absolute flex justify-center items-center bg-white rounded-full -right-[100px] z-10 text-7xl text-red-600 hover:text-red-800"
+          className="absolute flex justify-center items-center bg-white rounded-full lg:-right-[100px] right-0 z-10 text-7xl text-red-600 hover:text-red-800"
         >
           <FaChevronCircleRight />
         </button>

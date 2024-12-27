@@ -59,6 +59,7 @@ const Impact2 = () => {
       value: 20,
       label: "Cr.+ Revenue Generated from Established SHGs",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222542/SHG_yj96fp.mp4",
+      unit: "Cr.",
     },
     {
       id: 5,
@@ -71,6 +72,7 @@ const Impact2 = () => {
       value: 12,
       label: "MHz Electricity Produced Through Renewable Energy Sources ",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221726/renewable_qcbyiu.mp4",
+      unit: "MWatts",
     },
     {
       id: 7,
@@ -94,7 +96,7 @@ const Impact2 = () => {
       id: 10,
       value: 43,
       label: "Lost Water Body Rejuvenated in Mining periphery",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735219468/Rejuvenation_of_water_bodies_by_local_communities_1_glzqiq.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735282584/waterbody.44_afurrs.mp4",
     },
   ];
 
@@ -138,6 +140,11 @@ const Impact2 = () => {
                 +
               </span>
             )}
+            {stat.unit && (
+              <span className="text-4xl font-bold outline-text group-hover:outline-text-hover">
+                {` ${stat.unit}`}
+              </span>
+            )}
             <p className="text-md mt-2">{stat.label}</p>
           </div>
         </div>
@@ -175,6 +182,11 @@ const Impact2 = () => {
             {shouldHavePlus(stat.id) && (
               <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">
                 +
+              </span>
+            )}
+            {stat.unit && (
+              <span className="text-4xl font-bold outline-text group-hover2:outline-text-hover">
+                {` ${stat.unit}`}
               </span>
             )}
             <p className="text-md mt-2">{stat.label}</p>

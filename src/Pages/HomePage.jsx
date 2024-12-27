@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import WhatWeDo from '../Components/Homepage/WhatWeDo/WhatWeDo';
-import Founders from '../Components/Homepage/Founders/Founders';
+// import Founders from '../Components/Homepage/Founders/Founders';
 import AdvisoryBoard from '../Components/Homepage/AdvisoryBoard/AdvisoryBoard';
 import Projects from '../Components/Homepage/Projects/Projects';
 import AsSeenOn from '../Components/Homepage/asSeenOn/AsSeenOn';
@@ -26,7 +26,7 @@ const HomePage = () => {
       
       <WhatWeDo />
       <SDGBanner />
-      <Founders />
+      {/* <Founders /> */}
       <AdvisoryBoard />
       <Projects />
 
