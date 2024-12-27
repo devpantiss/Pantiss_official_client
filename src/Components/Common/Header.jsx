@@ -11,6 +11,8 @@ import {
   GrHelpBook,
   GrLocation,
 } from "react-icons/gr";
+import { FaGraduationCap } from "react-icons/fa";
+import { MdEventAvailable } from "react-icons/md";
 
 const Header = () => {
   const location = useLocation();
@@ -169,6 +171,16 @@ const Header = () => {
               <span className="absolute top-1 -right-2 w-3 h-3 bg-red-600 rounded-full"></span>
             </Link>
 
+            {/* Fellowship */}
+            <Link
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
+                isScrolled ? "text-red-600" : "text-red-600"
+              } transition duration-300`}
+              onClick={handleOptionSelect}
+            >
+              Fellowship
+            </Link>
+
             {/* CONTACT */}
             <Link
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
@@ -193,7 +205,7 @@ const Header = () => {
 
         {/* sub-Navbar Mobile Navigation */}
         <div
-          className={`fixed top-[170px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
+          className={`fixed top-[125px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
             isMenuOpen2 ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -228,6 +240,14 @@ const Header = () => {
               Tenders & EOI
               <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
               <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full"></span>
+            </Link>
+
+            <Link
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              onClick={handleOptionSelect}
+            >
+              <FaGraduationCap />
+              Fellowship
             </Link>
 
             <Link
@@ -374,6 +394,15 @@ const Header = () => {
               } transition duration-300`}
               onClick={handleOptionSelect}
             >
+              Summit
+            </Link>
+
+            <Link
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
+                isScrolled ? "text-[white]" : "text-[white]"
+              } transition duration-300`}
+              onClick={handleOptionSelect}
+            >
               Our Publications
             </Link>
           </nav>
@@ -452,10 +481,10 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed top-[170px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
+          className={`fixed top-[125px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
             isMenuOpen
-              ? "translate-x-0 opacity-1"
-              : "translate-x-full opacity-0"
+              ? "translate-x-0"
+              : "translate-x-full"
           }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
@@ -568,6 +597,14 @@ const Header = () => {
             >
               <GrLocation />
               Where We Work
+            </Link>
+            
+            <Link
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
+              onClick={handleOptionSelect}
+            >
+              <MdEventAvailable />
+              Summit
             </Link>
 
             <div className="relative">

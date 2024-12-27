@@ -42,6 +42,42 @@ const cardData = [
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
     gradient: "from-teal-700 via-teal-500 to-teal-300",
   },
+  {
+    title: "Nutrition and Wellbeing in Mining Villages",
+    link: "/whatwedo/women-empowerment",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg",
+    gradient: "from-orange-700 via-orange-500 to-orange-300",
+  },
+  {
+    title: "Eco-Mine Tourism",
+    link: "/whatwedo/child-welfare",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195893/eco-mine_dvtcgq.avif",
+    gradient: "from-green-700 via-green-500 to-green-300",
+  },
+  {
+    title: "Model Mining Village in Making",
+    link: "/whatwedo/rural-development",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196020/model_village_dz36fg.jpg",
+    gradient: "from-purple-700 via-purple-500 to-purple-300",
+  },
+  {
+    title: "Indigenous Community Empowerment",
+    link: "/whatwedo/disaster-relief",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
+    gradient: "from-pink-700 via-pink-500 to-pink-300",
+  },
+  {
+    title: "Waterbody Restoration in Mines",
+    link: "/whatwedo/food-security",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196479/aditya-shrivastava-yYPcqVU6IEI-unsplash_adkc8e.jpg",
+    gradient: "from-rose-700 via-rose-500 to-rose-300",
+  },
+  {
+    title: "Connecting Remote Mining Habitations",
+    link: "/whatwedo/wash",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278741/diego-jimenez-A-NVHPka9Rk-unsplash_dzcoco.jpg",
+    gradient: "from-amber-700 via-amber-500 to-amber-300",
+  },
   // Add more cards with unique gradients as needed
 ];
 
@@ -79,7 +115,7 @@ const NewsCardSection = () => {
         {/* Custom Previous Button */}
         <button
           onClick={() => sliderRef.current.slickPrev()}
-          className="absolute flex justify-center items-center bg-white rounded-full lg:-left-[100px] left-0 z-10 text-7xl text-red-600 hover:text-red-800"
+          className="absolute flex justify-center items-center bg-white text- rounded-full lg:-left-[100px] left-0 z-10 text-7xl text-red-600 hover:text-red-800"
         >
           <FaChevronCircleLeft />
         </button>

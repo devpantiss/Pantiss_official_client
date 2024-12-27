@@ -122,7 +122,7 @@ const TestimonialCarousel = () => {
               <div className="reviewer flex items-center gap-x-6 absolute bottom-2 left-40 lg:left-[230px]">
                 <img
                   src={testimonial.avatar}
-                  className="rounded-full h-[70px]"
+                  className="rounded-full h-[100px]"
                   alt={testimonial.name}
                 />
                 <div className="text-right leading-none">
