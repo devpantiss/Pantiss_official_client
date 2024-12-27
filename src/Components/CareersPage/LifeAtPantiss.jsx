@@ -3,7 +3,7 @@ import React from "react";
 const cardData = [
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726530883/WhatsApp_Image_2024-09-08_at_18.49.58_a572e0ed_gstqo0.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
     text: "Valuing inclusiveness and diversity",
   },
   {
@@ -42,9 +42,9 @@ const LifeAtBRAC = () => {
       {/* Cards Layout */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
         {/* Large Card on the Left */}
-        <div className="lg:col-span-2 relative bg-white shadow-lg rounded-lg overflow-hidden group">
+        <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <img
-            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729517840/smartworks-coworking-Uz8THWPXwhI-unsplash_j8ospq.jpg"
+            src="https://ohsguide.workplacenl.ca/topic/violence_harassment/161.png"
             alt="Zero Tolerance for Harassment"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
@@ -60,12 +60,12 @@ const LifeAtBRAC = () => {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-lg rounded-lg overflow-hidden group"
+              className="relative shadow-lg rounded-lg overflow-hidden group"
             >
               <img
                 src={card.image}
                 alt={card.text}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
                 <p className="text-white text-sm font-medium">{card.text}</p>

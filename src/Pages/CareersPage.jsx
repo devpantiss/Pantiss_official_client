@@ -8,7 +8,7 @@ import TestimonialSlider from "../Components/CareersPage/Testimonials";
 
 const CareersPage = () => {
   return (
-    <div>
+    <div className="pb-8">
       <Hero />
       <LifeAtPantiss />
       <CareersCategory />
