@@ -39,14 +39,14 @@ const Impact2 = () => {
     {
       id: 1,
       value: 38,
-      label: "SIA, EIA in Open cost Mines",
+      label: "SIA, EIA in Opencast Mines",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221805/EIA_amget2.mp4",
     },
     {
       id: 2,
       value: 800,
       label: "Rehabilitation & Resettlement",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222926/model_village_uthqmr.mp4",
     },
     {
       id: 3,
@@ -57,28 +57,28 @@ const Impact2 = () => {
     {
       id: 4,
       value: 20,
-      label: "Cr.+ Revenue Generated from Established SHGs",
+      label: "Revenue Generated from Established SHGs",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222542/SHG_yj96fp.mp4",
-      unit: "Cr.",
+      unit: "Cr.+",
     },
     {
       id: 5,
       value: 5,
       label: "Abandoned Mines Reclamated",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4",
     },
     {
       id: 6,
       value: 12,
-      label: "MHz Electricity Produced Through Renewable Energy Sources ",
+      label: "Electricity Produced Through Renewable Energy Sources ",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221726/renewable_qcbyiu.mp4",
-      unit: "MWatts",
+      unit: "MW",
     },
     {
       id: 7,
       value: 7,
       label: "Model Mining Villages Created",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222926/model_village_uthqmr.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735296259/Tribal_1_yscl4u.mp4",
     },
     {
       id: 8,
@@ -96,6 +96,7 @@ const Impact2 = () => {
       id: 10,
       value: 43,
       label: "Lost Water Body Rejuvenated in Mining periphery",
+      // videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4",
       videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735282584/waterbody.44_afurrs.mp4",
     },
   ];

@@ -11,6 +11,7 @@ import WhatWeDo from "./Pages/WhatWeDo";
 import Tenders from "./Pages/Tenders";
 import { use } from "react";
 import Loader from "./Components/Common/Loader/Loader";
+import JobsPage from "./Pages/JobsPage";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
         <Route path="/whoweare/*" element={<WhoWeAre />} />
         <Route path="/whatwedo/*" element={<WhatWeDo />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/careers/jobs" element={<JobsPage />} /> {/* Nested Route */}
         <Route path="/tenders" element={<Tenders />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}

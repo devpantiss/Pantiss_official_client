@@ -1,11 +1,11 @@
 import React from "react";
-// import FinancialBanner from "../Components/ReportsAndFinancialsPage/FinancialBanner";
+import FinancialBanner from "../Components/ReportsAndFinancialsPage/FinancialBanner";
 import ReportsListing from "../Components/ReportsAndFinancialsPage/ReportsListing";
 
 const ReportsAndFinancials = () => {
   return (
     <div>
-      {/* <FinancialBanner /> */}
+      <FinancialBanner />
       <ReportsListing />
     </div>
   );

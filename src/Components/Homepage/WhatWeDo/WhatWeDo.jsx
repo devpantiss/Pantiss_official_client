@@ -90,6 +90,8 @@ const NewsCardSection = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Enable auto-scroll
+    autoplaySpeed: 1500,
     arrows: false, // Disable default arrows
     dots: false, // Remove dots
     responsive: [
