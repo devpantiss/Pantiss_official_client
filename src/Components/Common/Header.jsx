@@ -112,7 +112,7 @@ const Header = () => {
         isScrolled ? "bg-white" : "bg-[white]"
       } ${isScrolled ? "text-white" : "text-black"}]`}
     >
-      <div className="container py-2 px-2 lg:mx-[110px] flex justify-between items-center">
+      <div className="py-2 px-2 lg:mx-[110px] flex gap-x-[400px] justify-between items-center">
         {/* Logo */}
         <div className="flex flex-col w-3/5 transition-transform duration-300 ease-in-out">
           <div className="glow-container">
@@ -127,7 +127,7 @@ const Header = () => {
         </div>
 
         {/* Sub-Navbar desktop */}
-        <div className="hidden lg:flex items-center ml-[350px] justify-between w-full">
+        <div className="hidden lg:flex items-center ml-[300px] justify-between w-full">
           <nav className="flex space-x-6">
             {/* HOME */}
             <Link
@@ -165,7 +165,7 @@ const Header = () => {
               } transition duration-300`}
               onClick={handleOptionSelect}
             >
-              Tenders & EOI
+              Tenders
               {/* Blipper */}
               <span className="absolute top-1 -right-2 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
               <span className="absolute top-1 -right-2 w-3 h-3 bg-red-600 rounded-full"></span>
@@ -237,7 +237,7 @@ const Header = () => {
               onClick={handleOptionSelect}
             >
               <GrNotes />
-              Tenders & EOI
+              Tenders
               <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
               <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full"></span>
             </Link>
