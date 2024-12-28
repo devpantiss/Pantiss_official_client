@@ -183,6 +183,7 @@ const Header = () => {
 
             {/* CONTACT */}
             <Link
+              to="/contact-us"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
@@ -251,6 +252,7 @@ const Header = () => {
             </Link>
 
             <Link
+              to="/contact-us"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
@@ -482,9 +484,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div
           className={`fixed top-[125px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
-            isMenuOpen
-              ? "translate-x-0"
-              : "translate-x-full"
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
@@ -598,7 +598,7 @@ const Header = () => {
               <GrLocation />
               Where We Work
             </Link>
-            
+
             <Link
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
