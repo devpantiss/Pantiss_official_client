@@ -105,7 +105,7 @@ const EventsSlider = () => {
                         className="lg:py-8 w-full bg-transparent"
                     >
                         {data.map((ad, index) => (
-                            <div key={index} className="flex items-center p-5">
+                            <div key={index} className="flex items-center justify-center ml-12 lg:ml-0 p-5">
                                 <div className="max-w-sm h-[280px] rounded-lg shadow-lg bg-transparent ring-1 ring-white">
                                     <div className="flex justify-center pt-5">
                                         <img
