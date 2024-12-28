@@ -100,8 +100,8 @@ const PurposeSlider = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
               {/* Overlay */}
-              <div className="absolute inset-y-0 right-0 w-[300px] lg:w-[500px] bg-black bg-opacity-50 flex items-center justify-start">
-                <div className="w-full md:w-1/2 h-full flex flex-col justify-center p-6 md:pl-12 text-white">
+              <div className="absolute inset-y-0 right-2 rounded-md w-[300px] lg:w-[450px] bg-black bg-opacity-50 flex items-center justify-start">
+                <div className="w-full h-full flex flex-col justify-center p-6 md:pl-12 text-white">
                   <div className="flex items-center mb-4">
                     <div className="text-white">{slide.icon}</div>
                     <h3 className="text-xl font-semibold ml-3">
