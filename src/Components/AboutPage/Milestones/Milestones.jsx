@@ -82,7 +82,7 @@ const Milestones = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: (i) => (
@@ -96,12 +96,12 @@ const Milestones = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center container pb-12 mx-auto">
+    <div className="flex flex-col justify-center items-center container pb-12 mb-6 mx-auto">
       <Heading text="Milestones" color="text-black" bgColor="bg-red-600" />
-      <div className="flex py-12 justify-center items-center ">
+      <div className="flex justify-center items-center ">
         <Slider
           {...settings}
-          className="py-12 w-[380px] md:w-[768px] lg:w-[1200px]"
+          className="w-[380px] lg:w-[1200px]"
         >
           {milestonesData.map((milestone, index) => (
             <div
