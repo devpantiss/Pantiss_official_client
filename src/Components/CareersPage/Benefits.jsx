@@ -34,7 +34,7 @@ const BenefitsPantiss = () => {
       </section>
 
       {/* Cards Layout */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
         {/* Large Card on the Left */}
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <img
