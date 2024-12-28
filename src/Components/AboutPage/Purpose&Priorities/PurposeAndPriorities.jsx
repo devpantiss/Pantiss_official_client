@@ -82,7 +82,7 @@ const PurposeSlider = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-white py-8">
       <Heading
-        text="Purpose and Priorities"
+        text="Purpose and Ethics"
         color="text-black"
         bgColor="bg-red-600"
       />
@@ -91,7 +91,7 @@ const PurposeSlider = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="relative h-[400px] md:h-[500px] flex items-center px-2"
+              className="relative h-[500px] md:h-[500px] flex items-center px-2"
             >
               {/* Background Image */}
               <img
@@ -100,7 +100,7 @@ const PurposeSlider = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
               {/* Overlay */}
-              <div className="absolute inset-y-0 right-2 rounded-md w-[300px] lg:w-[450px] bg-black bg-opacity-50 flex items-center justify-start">
+              <div className="absolute inset-y-0 right-2 rounded-md w-[250px] lg:w-[450px] bg-black bg-opacity-50 flex items-center justify-start">
                 <div className="w-full h-full flex flex-col justify-center p-6 md:pl-12 text-white">
                   <div className="flex items-center mb-4">
                     <div className="text-white">{slide.icon}</div>

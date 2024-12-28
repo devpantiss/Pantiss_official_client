@@ -109,16 +109,16 @@ const Milestones = () => {
               className="flex justify-center items-center w-[400px] lg:w-[900px] mx-auto"
             >
               <div className="flex flex-col lg:flex-row justify-center gap-x-10 items-center">
-                <div className="w-full lg:w-1/2 lg:mb-4">
+                <div className="w-full lg:w-2/3 lg:mb-4">
                   <img
                     src={milestone.imageUrl}
                     alt={milestone.year}
-                    className="w-full lg:h-[450px] h-44 object-contain"
+                    className="w-full lg:h-[450px] h-44 object-cover"
                   />
                 </div>
-                <div className="w-full lg:w-1/2 mt-5">
-                  <h3 className="text-2xl font-bold">{milestone.year}</h3>
-                  <p className="text-3xl lg:text-6xl font-bold text-gray-700">
+                <div className="w-full lg:w-1/3 mt-5">
+                  <h3 className="text-lg font-bold">{milestone.year}</h3>
+                  <p className="text-2xl lg:text-5xl font-bold text-gray-700">
                     {milestone.title}
                   </p>
                   <p className="text-md text-gray-500 mt-2">
