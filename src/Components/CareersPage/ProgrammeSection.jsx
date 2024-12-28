@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const StudentsAndGraduatesSection = () => {
   const programmes = [
     { name: "Young Professionals Programme (YPP)", link: "/programmes/young-professionals" },
-    { name: "Management Trainee Programme (MT)", link: "/mt" },
+    // { name: "Management Trainee Programme (MT)", link: "/mt" },
     { name: "Internship Programme", link: "/internship" },
   ];
 

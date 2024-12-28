@@ -13,6 +13,7 @@ import { use } from "react";
 import Loader from "./Components/Common/Loader/Loader";
 import JobsPage from "./Pages/JobsPage";
 import YoungProfessionals from "./Pages/YoungProfessionals";
+import InternshipProgramme from "./Pages/InternshipProgramme";
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
         <Route path="/careers/jobs" element={<JobsPage />} /> {/* Nested Route */}
         <Route path="/tenders" element={<Tenders />} />
         <Route path="/programmes/young-professionals" element={<YoungProfessionals />} />
+        <Route path="/programmes/internships" element={<InternshipProgramme />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>
