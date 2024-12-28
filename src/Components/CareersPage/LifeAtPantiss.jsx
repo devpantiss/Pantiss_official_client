@@ -7,9 +7,8 @@ const cardData = [
     text: "Valuing inclusiveness and diversity",
   },
   {
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729517982/tim-van-der-kuip-CPs2X8JYmS8-unsplash_dmangr.jpg",
-    text: "People at Pantiss",
+    image: "https://ohsguide.workplacenl.ca/topic/violence_harassment/161.png",
+    text: "Ensuring zero tolerance for harassment",
   },
   {
     image:
@@ -40,17 +39,17 @@ const LifeAtBRAC = () => {
       </section>
 
       {/* Cards Layout */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
         {/* Large Card on the Left */}
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <img
-            src="https://ohsguide.workplacenl.ca/topic/violence_harassment/161.png"
+            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390737/WhatsApp_Image_2024-12-28_at_6.28.04_PM_rscd9s.jpg"
             alt="Zero Tolerance for Harassment"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">
             <p className="text-white text-lg font-semibold">
-              Ensuring zero tolerance for harassment
+              People at Pantiss{" "}
             </p>
           </div>
         </div>

@@ -2,19 +2,19 @@ import React from "react";
 
 const cardData = [
   {
-    image: "https://careers.brac.net/benefits/tuition_assistance.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392592/pexels-lalesh-167964_fgtnus.jpg",
     text: "Tution Assistance",
   },
   {
-    image: "https://careers.brac.net/benefits/parenting_benefits.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392306/pexels-william-fortunato-6392819_speall.jpg",
     text: "Parenting Benefits",
   },
   {
-    image: "https://careers.brac.net/benefits/health_insurance.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727161748/Screenshot_2024-09-24_at_12.38.38_PM_kybqfh.png",
     text: "Health Insurance",
   },
   {
-    image: "https://careers.brac.net/benefits/retirement_programmes.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727161475/Screenshot_2024-09-24_at_12.33.55_PM_nbmxej.png",
     text: "Retirement Programmes",
   },
 ];
@@ -38,8 +38,8 @@ const BenefitsPantiss = () => {
         {/* Large Card on the Left */}
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <img
-            src="https://careers.brac.net/benefits/career_development.png"
-            alt="Zero Tolerance for Harassment"
+            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/e_improve/v1735392458/WhatsApp_Image_2024-12-28_at_6.56.50_PM_r6gleo.jpg"
+            alt="Career Development"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">

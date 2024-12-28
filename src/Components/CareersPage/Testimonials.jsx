@@ -8,57 +8,48 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009145402.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=23117f23e2315d0b0cb48885c376e1ff949cef4db18874c567cd396284170408e7d9ec4ef356a4bdd32539916b62f88d28257ee50c5839bfd35125a3769a621df53bd4f8ffb17e2af65065c697b0ee34363f8e1fe1524b7f65a98b839ae535570d62010ab789d6bd73f08e2094b17ff63e1efbcc2a2e85b8e611d61828a579cab61a7793cac7031882b9ef06c43ac31f21a0e982fa5bdfa94c77066b93e835d83835a9eb98e8136cb0076653388cc5beccbe18e5a7296cb4176e15df2ef61aef37c8e5d4672ddea33e890c48b4898623948b4ef833ff855d378140be2753f8998666ef6cf2547e53f76caf8cda342f8b309cabba3b8fa95a4c144c8fdb827255", // Replace with actual image URLs
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389221/dwarka_kfaln7.png", // Replace with actual image URLs
       quote:
-        "Humanity should be a central purpose for which we all should live. Becoming a member of the BRAC family has enabled me to realise that. I have not only felt compelled towards its uncompromising values but have also enjoyed a great deal by living by them.",
-      name: "Isata Samura",
-      title: "Kiva Coordinator, BRAC International Holdings BV",
-      location: "BRAC Sierra Leone",
+        "As the General Manager (Operations) at Pantiss Foundation, I am proud to be part of an organization that is transforming lives through its impactful initiatives. Our commitment to innovation, excellence, and community empowerment drives everything we do. At Pantiss Foundation, every day presents an opportunity to make a meaningful difference, and I am honored to lead a team of passionate individuals dedicated to creating sustainable change.",
+      name: "Dwarka Prasad Bisoyi",
+      title: "General Manager (Operations)",
+      location: "Bhubaneswar, Odisha",
     },
     {
       image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009143639.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b74e74629f02a71b9572a5d1081c70865556691cba0aaa56ffd2a352495839bb2ac50c1002746a27555eb4670e20919ecf16444f0dd00d22f45b1a81dd1b00a14d482eb78644a8619b0ef100229181a250bb7a90926b6a72551a46f39f10834153f490a216413530a8d6b9220a04d509b2ca780ce8246323e8cdd7aa24bb8af93348c51302e723b9c4d5cc64d76f83e9cd4feff909b7cd89f9f0604053973ce470af81012270dfcbc8e01e12fb2128cd4894a28bc85c11a2d67272f0a201a3ea7f5da7e93ff236b08a55f7e0e360f84f7e39433be50943d5268b052b3d6574ea7ce72072fe9f49909c2c7f6219a36fdaf1ae64ac628672a84ff6e1650d917f15", // Replace with another image URL
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389222/rahul_sir_rpw5o7.png",
       quote:
-        "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
-      name: "John Doe",
-      title: "Team Leader, BRAC USA",
-      location: "BRAC New York",
+        "Being the Associate Vice President of Operations at Pantiss Foundation has been an incredibly fulfilling experience. Here, we work with passionate individuals to create meaningful impact and drive sustainable change. The collaborative culture empowers growth, innovation, and a shared purpose. If you're looking to make a difference, Pantiss Foundation is the place to be.",
+      name: "Rahul Nayak",
+      title: "Associate Vice President (Operations)",
+      location: "Bhubaneswar, Odisha",
     },
     {
       image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009145210.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=7a0e21ae7added41c993ecd51a8512583fdb4a4949f84365d18aa7f9712edb75c11af520ef4fb2610eedcb6cf2e4f1bf04dc72a72bafcadbf4350f9bc7b30a5669a034b93b75039ed46572ae800f6ab2e4bbd37959558bc4f2ad6c7de2260e6b93613c38bf9509c8597d85f52ef83cf3f802d5a8059de42d174fad1ea8526c56769e702784c995b54161898e39e99e1e2d8f6aabff500b35b0a30dfe92749164517c8fe18b33d17206c1017c6c96c482abdf48cbeabbb7dc0df01c9278184342d6842948a56716356728438d0dead854b8496a7d38a5e38dd28533f55a19e84efff686ab4974ec37329aeaf5c77f0dd07337ae2320cc6c67b9e58be258a6c389", // Replace with another image URL
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389221/padmini_rue0ch.png", // Replace with another image URL
       quote:
-        "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
-      name: "John Doe",
-      title: "Team Leader, BRAC USA",
-      location: "BRAC New York",
+        "Being a part of Pantiss Foundation has been an incredible journey of driving impactful change. As the General Manager (Industry Engagement), I’ve had the privilege to collaborate with diverse industries, creating meaningful partnerships that empower communities and promote sustainable development. At Pantiss, we are not just building careers; we are shaping futures and transforming lives. It’s truly fulfilling to be part of an organization that aligns business with purpose.",
+      name: "Padmini Kumari Bisoyi",
+      title: "General Manager (Industry Engagement)",
+      location: "Bhubaneswar, Odisha",
     },
     {
       image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009143639.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b74e74629f02a71b9572a5d1081c70865556691cba0aaa56ffd2a352495839bb2ac50c1002746a27555eb4670e20919ecf16444f0dd00d22f45b1a81dd1b00a14d482eb78644a8619b0ef100229181a250bb7a90926b6a72551a46f39f10834153f490a216413530a8d6b9220a04d509b2ca780ce8246323e8cdd7aa24bb8af93348c51302e723b9c4d5cc64d76f83e9cd4feff909b7cd89f9f0604053973ce470af81012270dfcbc8e01e12fb2128cd4894a28bc85c11a2d67272f0a201a3ea7f5da7e93ff236b08a55f7e0e360f84f7e39433be50943d5268b052b3d6574ea7ce72072fe9f49909c2c7f6219a36fdaf1ae64ac628672a84ff6e1650d917f15", // Replace with another image URL
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_151423707_HDR_rj7i83.jpg", // Replace with another image URL
       quote:
-        "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
-      name: "John Doe",
-      title: "Team Leader, BRAC USA",
-      location: "BRAC New York",
+        "As an Assistant Manager in Human Resources at Pantiss Foundation, I’ve had the privilege of working alongside a passionate and dedicated team committed to making a difference in the community. The foundation's inclusive culture, emphasis on growth, and dedication to sustainability provide a rewarding environment for personal and professional development. Every day presents new opportunities to contribute to meaningful change, and I’m proud to be part of an organization that genuinely cares about its people and the communities we serve.",
+      name: "Manasi Behera",
+      title: "Assistant Manager (Human Resource) ",
+      location: "Bhubaneswar, Odisha",
     },
     {
       image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009143827.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e58e4c4d217fc2cf9cfbe21320a0f7068358483030ebb90a2566e4ce0e44fb94e3c0945427bc7ecb105521b6683af799aff075a85569301cfbfaffbd5584dfb650489460412fc908557f8c5ac48849e94f9aee16a9adaaa493d4d416712ef73b59131e44e4560fb0a4fb21a7b4cfdaa86fbc52366eb612d13a8167cfcc1f494aa52c194489c021d2dfeb406e77be3b842ee3fd7bb288ca6608a4a4af1e6bba4a08bfa9e593cf51a124f11917d3bdf7890a28aaa2c4c310628ce390a9ef442a9b4bf551d31eabb682a182e0a0c7edef73c47e99cb4d63430bd2cca324a0d39a79696aef609ce6f427df18046c8656e52169b0b28bd341b5ab9ad731e7759a6081", // Replace with another image URL
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_131503164_HDR_g0slxs.jpg", // Replace with another image URL
       quote:
-        "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
-      name: "John Doe",
-      title: "Team Leader, BRAC USA",
-      location: "BRAC New York",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/prod-erp-hrms/documents/administrator_20211009145053.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=prod-erp-hrms%40brac-main.iam.gserviceaccount.com%2F20241227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241227T093453Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=99ad9f5a213962d5484284eb63ced55c7ed5ddd88cc9a2d86c8639ea16c7f7d6c4643d3b1d74f02be42b2fbb29533b67f50f51a1e560efa1ceec33ad484f80bb6265def439b35c59ad4888fce8bd410c504d0d6a563280b9e6dd16211dbdee2571bb31d94c444aeddfed12ad3890c9ade56e0584cdad7e9547b275aad542db308463857edce5c635c9f49134cfbb1f3d72aa4b445c2333debe44bd728622cfcdde54aa10e7dcf46f896d5d85cf490dbd32a79ec4c49e318a7d6db0634f3d86de307cbad4af49fc4a181204b6ec0249cbc8523858054095c8323c4c6c93c3e9f260fe2f05951a5e4892ae04dd2b274a5a85280971fd3394f09fc8ee6477e53e0a", // Replace with another image URL
-      quote:
-        "Being part of this team has been a transformative experience. The values of integrity and compassion resonate deeply, making it more than just a workplace.",
-      name: "John Doe",
-      title: "Team Leader, BRAC USA",
-      location: "BRAC New York",
+        "As an Assistant Manager in Knowledge Management at Pantiss Foundation, I am proud to be part of an organization that is truly committed to creating lasting social impact. The foundation's dynamic approach to development and its focus on empowering communities through sustainable initiatives have been incredibly inspiring. Here, I have had the opportunity to work alongside passionate individuals who are dedicated to fostering growth and innovation. It’s a place where my skills are valued, and I’m continuously encouraged to learn and grow, both personally and professionally. Joining Pantiss has been a rewarding experience, and I’m excited about the future we are building together.",
+      name: "Monalisha Nayak",
+      title: "Assistant Manager (Knowledge Management)",
+      location: "Bhubaneswar, Odisha",
     },
   ];
 
@@ -109,11 +100,11 @@ const TestimonialSlider = () => {
             <div key={index} className="flex flex-row px-6 items-center">
               <div className="flex flex-col lg:flex-row">
                 {/* Image Section */}
-                <div className="w-full md:w-1/3 flex justify-center">
+                <div className="w-full md:w-1/3 flex rounded-md justify-center">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                    className="rounded-md w-full h-full object-contain"
                   />
                 </div>
 
