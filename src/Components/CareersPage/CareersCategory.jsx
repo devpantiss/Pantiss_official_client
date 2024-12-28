@@ -9,7 +9,7 @@ const CareersCategory = () => {
   const navigate = useNavigate();
   const careerAreas = [
     {
-      title: "M&D",
+      title: "MIS",
       count: 0,
       img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735309951/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_svzntu.jpg", // Replace with the actual image URL
     },

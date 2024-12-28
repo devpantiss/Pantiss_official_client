@@ -96,8 +96,8 @@ const Impact2 = () => {
       id: 10,
       value: 43,
       label: "Lost Water Body Rejuvenated in Mining periphery",
-      // videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735282584/waterbody.44_afurrs.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4",
+      // videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735282584/waterbody.44_afurrs.mp4",
     },
   ];
 
