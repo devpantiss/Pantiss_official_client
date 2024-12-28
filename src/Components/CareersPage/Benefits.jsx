@@ -2,40 +2,34 @@ import React from "react";
 
 const cardData = [
   {
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
-    text: "Valuing inclusiveness and diversity",
+    image: "https://careers.brac.net/benefits/tuition_assistance.png",
+    text: "Tution Assistance",
   },
   {
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729517982/tim-van-der-kuip-CPs2X8JYmS8-unsplash_dmangr.jpg",
-    text: "People at Pantiss",
+    image: "https://careers.brac.net/benefits/parenting_benefits.png",
+    text: "Parenting Benefits",
   },
   {
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729517840/smartworks-coworking-Uz8THWPXwhI-unsplash_j8ospq.jpg",
-    text: "Meet the leaders",
+    image: "https://careers.brac.net/benefits/health_insurance.png",
+    text: "Health Insurance",
   },
   {
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726530883/WhatsApp_Image_2024-09-08_at_18.49.58_a572e0ed_gstqo0.jpg",
-    text: "Investing in mental health",
+    image: "https://careers.brac.net/benefits/retirement_programmes.png",
+    text: "Retirement Programmes",
   },
 ];
 
-const LifeAtBRAC = () => {
+const BenefitsPantiss = () => {
   return (
     <div className="bg-gray-100 py-12 px-8">
       {/* Header Section */}
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">
-          Life at <span className="text-red-500">Pantiss</span>
+          Benefits at <span className="text-red-500">Pantiss</span>
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          We are inclusive, empowering, and gender-transformative. We are a
-          value-driven organisation - our four values (inclusiveness,
-          innovation, integrity, and effectiveness) shape how we work. Learn
-          more about our people, values, and culture.
+          Pantiss’s staff are supported to pursue a rewarding career, with our
+          benefits serving the unique needs of everyone in the Pantiss family.
         </p>
       </section>
 
@@ -44,13 +38,13 @@ const LifeAtBRAC = () => {
         {/* Large Card on the Left */}
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <img
-            src="https://ohsguide.workplacenl.ca/topic/violence_harassment/161.png"
+            src="https://careers.brac.net/benefits/career_development.png"
             alt="Zero Tolerance for Harassment"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">
             <p className="text-white text-lg font-semibold">
-              Ensuring zero tolerance for harassment
+              Career Development{" "}
             </p>
           </div>
         </div>
@@ -78,4 +72,4 @@ const LifeAtBRAC = () => {
   );
 };
 
-export default LifeAtBRAC;
+export default BenefitsPantiss;

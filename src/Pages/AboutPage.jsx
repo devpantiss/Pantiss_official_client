@@ -8,6 +8,7 @@ import Missions from '../Components/AboutPage/Missions/Missions';
 import Milestones from '../Components/AboutPage/Milestones/Milestones';
 import AwardsSlider from '../Components/AboutPage/Awards/AwardsSlider';
 import Certifications from '../Components/AboutPage/Certifications/Certifications';
+import PurposeSlider from '../Components/AboutPage/Purpose&Priorities/PurposeAndPriorities';
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
       <Missions />
       <FoundersSection />
       <Goals />
+      <PurposeSlider />
       <Milestones />
       <AwardsSlider />
       <Certifications />

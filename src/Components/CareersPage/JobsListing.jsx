@@ -1,89 +1,141 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Heading from "../Common/Heading";
+import { useLocation } from "react-router-dom";
 
 const jobsData = [
   {
-    category: "Design",
-    description: "Open positions in our design team.",
+    category: "M&D",
+    description: "Open positions in our M&D team.",
+    jobs: [],
+  },
+  {
+    category: "Social Enterprise",
+    description: "Open positions in our Social Enterprise team.",
     jobs: [
       {
-        title: "Product Designer",
-        category: "Design",
-        location: "Melbourne, Australia",
+        title: "Social Impact Coordinator",
+        category: "Social Enterprise",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "80k - 100k",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8", // Link to Google form
+        salaryRange: "50k - 70k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
       {
-        title: "UX Designer",
-        category: "Design",
-        location: "Melbourne, Australia",
+        title: "Business Development Manager",
+        category: "Social Enterprise",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "80k - 100k",
+        salaryRange: "60k - 80k INR",
         googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
     ],
   },
   {
-    category: "IT",
-    description: "Open positions in our IT team.",
+    category: "Technical, Vocational Education and Training",
+    description: "Open positions in our Vocational Training team.",
     jobs: [
       {
-        title: "System Administrator",
-        category: "IT",
-        location: "Sydney, Australia",
+        title: "Training Specialist",
+        category: "Technical, Vocational Education and Training",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "90k - 110k",
+        salaryRange: "40k - 60k INR",
         googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
       {
-        title: "Backend Developer",
-        category: "IT",
-        location: "Sydney, Australia",
+        title: "Vocational Instructor",
+        category: "Technical, Vocational Education and Training",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "85k - 105k",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
-      },
-    ],
-  },
-  {
-    category: "Trainers",
-    description: "Open positions in our Trainers team.",
-    jobs: [
-      {
-        title: "Technical Trainer",
-        category: "Trainers",
-        location: "Brisbane, Australia",
-        type: "Full-time",
-        salaryRange: "75k - 95k",
+        salaryRange: "35k - 55k INR",
         googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
     ],
   },
   {
-    category: "Center Director",
-    description: "Open positions for Center Directors.",
+    category: "ICT Development",
+    description: "Open positions in our ICT Development team.",
     jobs: [
       {
-        title: "Center Director",
-        category: "Center Director",
-        location: "Perth, Australia",
+        title: "Full Stack Developer",
+        category: "ICT Development",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "100k - 120k",
+        salaryRange: "70k - 90k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+      {
+        title: "Software Engineer",
+        category: "ICT Development",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "65k - 85k INR",
         googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
     ],
   },
   {
-    category: "MIS",
-    description: "Open positions in our MIS team.",
+    category: "Civil Engineering",
+    description: "Open positions in our Civil Engineering team.",
     jobs: [
       {
-        title: "MIS Specialist",
-        category: "MIS",
-        location: "Adelaide, Australia",
+        title: "Site Engineer",
+        category: "Civil Engineering",
+        location: "Bhubaneswar, India",
         type: "Full-time",
-        salaryRange: "85k - 105k",
+        salaryRange: "55k - 75k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+      {
+        title: "Structural Engineer",
+        category: "Civil Engineering",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "60k - 80k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+    ],
+  },
+  {
+    category: "Research and Advocacy",
+    description: "Open positions in our Research and Advocacy team.",
+    jobs: [
+      {
+        title: "Policy Analyst",
+        category: "Research and Advocacy",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "50k - 70k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+      {
+        title: "Advocacy Officer",
+        category: "Research and Advocacy",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "55k - 75k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+    ],
+  },
+  {
+    category: "Development Compliance",
+    description: "Open positions in our Development Compliance team.",
+    jobs: [
+      {
+        title: "Compliance Specialist",
+        category: "Development Compliance",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "60k - 80k INR",
+        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+      },
+      {
+        title: "Audit Officer",
+        category: "Development Compliance",
+        location: "Bhubaneswar, India",
+        type: "Full-time",
+        salaryRange: "50k - 70k INR",
         googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
       },
     ],
@@ -132,8 +184,18 @@ const JobDetails = ({ job, onApply, onBack }) => {
 };
 
 const JobsListing = () => {
+  const location = useLocation();
   const [selectedJob, setSelectedJob] = useState(null);
   const [filter, setFilter] = useState("All");
+
+  // Parse query parameters to get the category filter
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const category = params.get("category");
+    if (category) {
+      setFilter(category);
+    }
+  }, [location.search]);
 
   const handleJobClick = (job) => {
     setSelectedJob(job);
@@ -146,7 +208,7 @@ const JobsListing = () => {
   };
 
   const handleBack = () => {
-    setSelectedJob(null); // Clears the selected job and returns to listing
+    setSelectedJob(null);
   };
 
   const handleFilterChange = (e) => {
@@ -176,13 +238,14 @@ const JobsListing = () => {
           <select
             value={filter}
             onChange={handleFilterChange}
-            className="border mt-5 lg: border-gray-300 pr-6 px-4 py-2 rounded-md text-gray-600"
+            className="border mt-5 lg:border-gray-300 pr-6 px-4 py-2 rounded-md text-gray-600"
           >
             <option value="All">All</option>
-            <option value="IT">IT</option>
-            <option value="Trainers">Trainers</option>
-            <option value="Center Director">Center Director</option>
-            <option value="MIS">MIS</option>
+            {jobsData.map((category) => (
+              <option key={category.category} value={category.category}>
+                {category.category}
+              </option>
+            ))}
           </select>
         </div>
       </div>
@@ -199,15 +262,21 @@ const JobsListing = () => {
             <h2 className="text-xl font-bold">{category.category}</h2>
             <p className="text-gray-500 mb-4">{category.description}</p>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {category.jobs.map((job, idx) => (
-                <JobCard
-                  key={idx}
-                  job={job}
-                  onClick={() => handleJobClick(job)}
-                />
-              ))}
-            </div>
+            {category.jobs.length > 0 ? (
+              <div className="grid md:grid-cols-2 gap-6">
+                {category.jobs.map((job, idx) => (
+                  <JobCard
+                    key={idx}
+                    job={job}
+                    onClick={() => handleJobClick(job)}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="text-gray-500 italic">
+                No active positions at the moment.
+              </p>
+            )}
           </div>
         ))
       )}

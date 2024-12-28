@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const StudentsAndGraduatesSection = () => {
   const programmes = [
-    { name: "Young Professionals Programme (YPP)", link: "/ypp" },
+    { name: "Young Professionals Programme (YPP)", link: "/programmes/young-professionals" },
     { name: "Management Trainee Programme (MT)", link: "/mt" },
     { name: "Internship Programme", link: "/internship" },
   ];
@@ -24,11 +24,10 @@ const StudentsAndGraduatesSection = () => {
             <Link
               to={programme.link}
               key={index}
-              className={`block px-6 py-4 justify-between items-center border-b last:border-b-0 transition-all duration-200 hover:bg-red-100 hover:border-l-4 hover:border-red-500
-                `}
+              className={`block px-6 py-4 justify-between items-center border-b last:border-b-0 transition-all duration-200 hover:bg-red-100 hover:border-l-4 hover:border-red-500 group`}
             >
               <span
-                
+                className="transition-all duration-200 text-lg group-hover:text-xl group-hover:text-red-600"
               >
                 {programme.name}
               </span>

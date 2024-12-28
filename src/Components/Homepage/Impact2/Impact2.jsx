@@ -52,7 +52,7 @@ const Impact2 = () => {
       id: 3,
       value: 18000,
       label: "Trained and Assisted in Mining Skills",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223775/Training_1_gveouf.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735308655/Practical_VIdeo_1_stehrd.mp4",
     },
     {
       id: 4,
@@ -84,7 +84,7 @@ const Impact2 = () => {
       id: 8,
       value: 12,
       label: "Youth Tribal Dormitories Established",
-      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222296/dormitory_1_gjx4xj.mp4",
+      videoUrl: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735296259/Tribal_1_yscl4u.mp4",
     },
     {
       id: 9,
