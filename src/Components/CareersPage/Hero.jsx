@@ -36,7 +36,7 @@ const Hero = () => {
       {/* Overlay Content */}
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold">
-          JOIN THE WORLD'S BIGGEST FAMILY
+          JOIN THE BIGGEST NON-PROFIT FAMILY
         </h1>
         <p className="mt-4 text-lg md:text-xl">Pantiss Careers</p>
         <div className="mt-8 flex">

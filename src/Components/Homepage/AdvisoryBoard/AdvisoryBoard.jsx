@@ -88,7 +88,7 @@ const EventsSlider = () => {
     return (
         <section
             className="relative py-12 bg-fixed bg-cover bg-center"
-            style={{ backgroundImage: "url('https://pantiss.com/wp-content/uploads/2022/08/special.jpg')" }} // Replace with your image URL
+            style={{ backgroundImage: "url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg')" }} // Replace with your image URL
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50"></div>

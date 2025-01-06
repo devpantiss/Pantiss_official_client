@@ -15,6 +15,8 @@ import JobsPage from "./Pages/JobsPage";
 import YoungProfessionals from "./Pages/YoungProfessionals";
 import InternshipProgramme from "./Pages/InternshipProgramme";
 import ContactPage from "./Pages/ContactPage";
+import Fellowship from "./Pages/Fellowship";
+import SummitPage from "./Pages/SummitPage";
 
 
 function App() {
@@ -63,6 +65,8 @@ function App() {
         <Route path="/tenders" element={<Tenders />} />
         <Route path="/programmes/young-professionals" element={<YoungProfessionals />} />
         <Route path="/programmes/internships" element={<InternshipProgramme />} />
+        <Route path="/fellowship" element={<Fellowship />} />
+        <Route path="/summit" element={<SummitPage />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>

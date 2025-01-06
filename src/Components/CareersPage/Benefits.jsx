@@ -10,11 +10,11 @@ const cardData = [
     text: "Parenting Benefits",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727161748/Screenshot_2024-09-24_at_12.38.38_PM_kybqfh.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736148776/Screenshot_2025-01-06_at_1.02.25_PM_dzgfly.png",
     text: "Health Insurance",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727161475/Screenshot_2024-09-24_at_12.33.55_PM_nbmxej.png",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736151874/Screenshot_2025-01-06_at_1.54.11_PM_mdvxxy.png",
     text: "Retirement Programmes",
   },
 ];

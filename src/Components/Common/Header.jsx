@@ -173,6 +173,7 @@ const Header = () => {
 
             {/* Fellowship */}
             <Link
+            to="/fellowship"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
@@ -244,6 +245,7 @@ const Header = () => {
             </Link>
 
             <Link
+            to="/fellowship"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
@@ -391,6 +393,7 @@ const Header = () => {
             </Link>
 
             <Link
+            to="/summit"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
@@ -600,6 +603,7 @@ const Header = () => {
             </Link>
 
             <Link
+            to="/summit"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
