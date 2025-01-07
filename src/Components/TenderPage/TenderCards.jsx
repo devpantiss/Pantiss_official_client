@@ -8,23 +8,23 @@ const TenderSection = () => {
           LIVE <br /> TENDER
         </div>
       ),
-      total: 1,
+      total: 0,
       color: "bg-orange-500",
       items: [
-        { name: "Koderma", count: 1 },
+        { name: "Koderma", count: 0 },
         // { name: "Bokaro", count: 1 },
       ],
     },
     {
       title: (
         <div className="text-center lg:text-left">
-          CLOSING <br /> TODAY
+          CLOSED <br />
         </div>
       ),
-      total: 0,
+      total: 1,
       color: "bg-purple-500",
       items: [
-        { name: "Head Office", count: 0 },
+        { name: "Koderma", count: 1 },
         // { name: "HCMP - Cox's Bazar", count: 0 },
       ],
     },

@@ -45,11 +45,11 @@ const TendersListing = () => {
       </div>
 
       {/* Tender List */}
-      <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 space-y-4">
         {tenders.map((tender) => (
           <div
             key={tender.id}
-            className="bg-white shadow rounded-lg p-6 flex flex-col sm:flex-row sm:justify-between sm:items-center"
+            className="bg-white shadow rounded-lg p-6 flex flex-col"
           >
             <div className="space-y-1">
               <h2 className="text-lg font-semibold text-gray-800">
@@ -62,7 +62,7 @@ const TendersListing = () => {
                 Deadline: <span className="font-medium">{tender.deadline}</span>
               </p>
             </div>
-            <div className="mt-4 sm:mt-0 flex flex-col sm:items-end">
+            <div className="mt-4 sm:mt-0 flex flex-col">
               <p className="text-sm text-gray-600">
                 Location: <span className="font-semibold text-green-600">{tender.location}</span>
               </p>
