@@ -33,7 +33,7 @@ const SummitBanner = () => {
                 upliftment of mining-affected communities.
               </p>
               <Link
-                to="/"
+                to="/summit"
                 className="mt-4 px-4 py-2 bg-transparent ring-2 ring-white text-white hover:text-red-600"
               >
                 Explore More

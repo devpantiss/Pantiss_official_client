@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const TabsSection = () => {
-  const [activeTab, setActiveTab] = useState("SESSION_PLAN");
+  const [activeTab, setActiveTab] = useState("MINING_VILLAGES");
 
   // Session plans and Resource book data
   const sessionPlans = [2024, 2023, 2021, 2020, 2019, 2017, 2016, 2015, 2011];
@@ -83,10 +83,15 @@ const TabsSection = () => {
             <h2 className="text-xl font-bold text-brown-700 mb-4">
               Summit Reports
             </h2>
-            <p className="text-gray-700">
-              This section will display the available summit reports for
-              download and review. Content can be added dynamically.
-            </p>
+            <div className="flex flex-col justify-center items-center">
+              <img
+                src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736229671/excavator-3908_256_wdazr5.gif"
+                alt="exca"
+              />
+              <p className="text-red-700 font-bold text-2xl text-center">
+                Coming Soon
+              </p>
+            </div>
           </div>
         )}
 
@@ -95,10 +100,15 @@ const TabsSection = () => {
             <h2 className="text-xl font-bold text-brown-700 mb-4">
               Soil Reports
             </h2>
-            <p className="text-gray-700">
-              This section will display the soil reports and related details.
-              Content can be customized as needed.
-            </p>
+            <div className="flex flex-col justify-center items-center">
+              <img
+                src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736229671/excavator-3908_256_wdazr5.gif"
+                alt="exca"
+              />
+              <p className="text-red-700 font-bold text-2xl text-center">
+                Coming Soon
+              </p>
+            </div>{" "}
           </div>
         )}
 
