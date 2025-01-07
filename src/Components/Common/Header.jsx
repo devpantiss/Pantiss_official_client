@@ -456,7 +456,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white hover:rounded-md text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     {" "}

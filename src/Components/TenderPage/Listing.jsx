@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TendersListing = () => {
+  const [isTenderClosed, setIsTenderClosed] = useState(true)
   const tenders = [
     {
       id: 1,
@@ -8,9 +9,16 @@ const TendersListing = () => {
       location: "Koderma, Jharkhand",
       startDate: "23rd December 2024",
       deadline: "31st December 2024",
-      link: "https://drive.google.com/file/d/1kDnAKkV-q2fIO3d-QmSxKPEd6Nr4QYnO/view?usp=sharing", // Add Google Drive link here
+      link: "https://drive.google.com/file/d/1kDnAKkV-q2fIO3d-QmSxKPEd6Nr4QYnO/view?usp=sharing",
     },
   ];
+
+  // Function to check if the tender is closed
+  // const isTenderClosed = (deadline) => {
+  //   const currentDate = new Date();
+  //   const tenderDeadline = new Date(deadline);
+  //   return currentDate > tenderDeadline;
+  // };
 
   return (
     <div className="bg-gray-100 p-8">
@@ -48,8 +56,7 @@ const TendersListing = () => {
                 {tender.title}
               </h2>
               <p className="text-sm text-gray-600">
-                Start Date:{" "}
-                <span className="font-medium">{tender.startDate}</span>
+                Start Date: <span className="font-medium">{tender.startDate}</span>
               </p>
               <p className="text-sm text-gray-600">
                 Deadline: <span className="font-medium">{tender.deadline}</span>
@@ -57,19 +64,20 @@ const TendersListing = () => {
             </div>
             <div className="mt-4 sm:mt-0 flex flex-col sm:items-end">
               <p className="text-sm text-gray-600">
-                Location:{" "}
-                <span className="font-semibold text-green-600">
-                  {tender.location}
-                </span>
+                Location: <span className="font-semibold text-green-600">{tender.location}</span>
               </p>
-              <a
-                href={tender.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600"
-              >
-                View Tender
-              </a>
+              {isTenderClosed ? (
+                <p className="mt-2 text-red-500 font-bold">Tender Closed</p>
+              ) : (
+                <a
+                  href={tender.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600"
+                >
+                  View Tender
+                </a>
+              )}
             </div>
           </div>
         ))}
