@@ -13,6 +13,7 @@ const awardsData = [
     description: "#Beat_Plastic_Polution Initiative",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736231881/switch_on_foundation_y8gdr1.png",
   },
   {
     year: "2022",
@@ -21,6 +22,7 @@ const awardsData = [
       "Youth Wes Leadership Award",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736232331/IIT_Madras_Logo.svg-removebg-preview_caneim.png"
   },
   {
     year: "2023",
@@ -29,6 +31,7 @@ const awardsData = [
       "Hrlping and safeguarding Migrants.",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736232659/Screenshot_2025-01-07_at_12.19.42_PM-removebg-preview_fpgnkb.png"
   },
   {
     year: "2023",
@@ -37,6 +40,7 @@ const awardsData = [
       "Striving Towards Making a Difference in Rural Odisha, Odisha Livlihood Mission",
     imageUrl:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
+      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736231879/OLM_vffnrt.png"
   },
 ];
 
@@ -123,6 +127,7 @@ const AwardsSlider = () => {
                 <p className="text-gray-300 mt-2 w-[200px]">
                   {award.description}
                 </p>
+                <img className="h-28 mt-6" src={award.orgLogo}/>
               </div>
             </div>
           </div>

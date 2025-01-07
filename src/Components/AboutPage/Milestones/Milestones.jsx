@@ -11,49 +11,54 @@ const milestonesData = [
     year: "2021",
     title: (
       <>
-        Mining Programme-<span className="text-red-600">150</span>
+        <span className="text-red-600">Rehabilitation</span> &{" "}
+        <span className="text-red-600">Resettlement</span>
       </>
     ),
     description:
-      "In our first milestone, we successfully mobilized, trained, and assessed 150 candidates as part of the Mining Skill Development Program in Jajpur. These candidates were equipped with specialized skills and knowledge, leading to their successful placement in the mining industry. This achievement marks a significant step toward enhancing livelihoods and fostering sustainable development in the region.",
+      "We conducted an extensive Need Assessment Survey, Spatial Planning, and GIA Survey to facilitate the Rehabilitation and Resettlement (R&R) of 7,000 households across seven mines in the Chotanagpur Plateau. This initiative focused on understanding the unique needs of displaced families, planning sustainable resettlement strategies, and ensuring equitable access to resources and opportunities. Our efforts aimed to create holistic, inclusive solutions that address the social, economic, and infrastructural challenges faced by the affected communities, paving the way for a better quality of life and sustainable development in the region.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735385555/2021_oikylf.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736238709/2021_1_g9iuyr.jpg",
   },
   {
     year: "2022",
     title: (
       <>
-        RPL Programme-<span className="text-red-600">1000</span>
+        <span className="text-red-600">RPL</span> &{" "}
+        <span className="text-red-600">Mining Skill</span> Development Program
       </>
     ),
     description:
-      "In a significant achievement, we successfully conducted Recognition of Prior Learning (RPL) sessions in the mining sector for 1,000 individuals in Jajpur. This initiative aimed to validate their skills, enhance their employability, and provide them with certifications that recognize their expertise, paving the way for better opportunities and professional growth.",
+      "We successfully mobilized, trained, and assessed 150 candidates as part of the Mining Skill Development Program in Jajpur, equipping them with essential skills to thrive in the mining sector. Additionally, we conducted Recognition of Prior Learning (RPL) sessions for 1,000 individuals in the mining industry, validating and enhancing their existing knowledge and expertise. These initiatives aim to uplift the workforce by creating opportunities for skill enhancement, certification, and improved employability in the mining sector, fostering both individual growth and regional development.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735385555/01_2022_odywzq.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736238709/2022_wpier2.jpg",
   },
   {
     year: "2023",
     title: (
       <>
-        Plastic Waste Segregation-<span className="text-red-600">2500</span>
+        <span className="text-red-600">Fisheries</span> Cluster in{" "}
+        <span className="text-red-600">Mining Pits.</span>
       </>
     ),
     description:
-      "We successfully mobilized, trained, and assessed over 3,000 candidates for the role of sanitation workers in Anugul. Through dedicated efforts, these individuals were equipped with the skills and resources needed for sustainable employment, contributing to improved sanitation and community development in the region.",
+      "We proudly celebrate the establishment of fisheries clusters within mining pits, a pioneering initiative transforming livelihoods for 300 families. By repurposing mining pits into sustainable aquaculture hubs, we’ve empowered communities with tools, training, and market access to enhance productivity and ensure environmental regeneration. This initiative not only promotes economic independence but also fosters long-term socio-economic development, turning ecological challenges into opportunities. Together, we’re building a resilient and self-reliant future for these families.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735385555/2023_aiamda.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736238710/2023_new_zczfx5.jpg",
   },
   {
     year: "2024",
     title: (
       <>
-        FCP-<span className="text-red-600">3000</span>
+        <span className="text-red-600">Guava Plantation</span>
+        {" "} in Abandoned Mining land in {" "}
+        <span className="text-red-600">Sukinda Chromite Region.</span>
       </>
     ),
     description:
-      "We proudly celebrate the establishment of 3,000 Fishing Producer Companies, transforming livelihoods and fostering sustainable growth. Through this initiative, we’ve empowered fishing communities with the tools, resources, and organizational support needed to enhance productivity, ensure fair market access, and promote long-term socio-economic development. Together, we’re building a stronger, self-reliant future for thousands of fishing families.",
+      "We take pride in transforming 350 acres of abandoned mining land in the Sukinda Chromite Region into thriving guava plantations. This initiative not only replenishes degraded land but also empowers local communities with sustainable livelihoods. By combining ecological restoration with economic growth, we are turning barren landscapes into green, productive ecosystems that promise a brighter, self-reliant future.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735385555/02024_atudg3.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736238711/2024_f5lobx.jpg",
   },
 ];
 
@@ -99,10 +104,7 @@ const Milestones = () => {
     <div className="flex flex-col justify-center items-center container pb-12 mb-6 mx-auto">
       <Heading text="Milestones" color="text-black" bgColor="bg-red-600" />
       <div className="flex justify-center items-center ">
-        <Slider
-          {...settings}
-          className="w-[380px] lg:w-[1200px]"
-        >
+        <Slider {...settings} className="w-[380px] lg:w-[1200px]">
           {milestonesData.map((milestone, index) => (
             <div
               key={index}

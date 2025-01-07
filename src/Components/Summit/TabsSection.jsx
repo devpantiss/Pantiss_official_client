@@ -4,7 +4,7 @@ const TabsSection = () => {
   const [activeTab, setActiveTab] = useState("MINING_VILLAGES");
 
   // Session plans and Resource book data
-  const sessionPlans = [2024, 2023, 2021, 2020, 2019, 2017, 2016, 2015, 2011];
+  const sessionPlans = [2024, 2023, 2021];
   const resourceBooks = [
     {
       year: 2024,

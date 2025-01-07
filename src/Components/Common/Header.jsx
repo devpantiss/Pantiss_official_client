@@ -13,6 +13,8 @@ import {
 } from "react-icons/gr";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdEventAvailable } from "react-icons/md";
+import { BiRightArrow } from "react-icons/bi";
+import { FaPersonDigging } from "react-icons/fa6";
 
 const Header = () => {
   const location = useLocation();
@@ -173,7 +175,7 @@ const Header = () => {
 
             {/* Fellowship */}
             <Link
-            to="/fellowship"
+              to="/fellowship"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-red-600" : "text-red-600"
               } transition duration-300`}
@@ -245,7 +247,7 @@ const Header = () => {
             </Link>
 
             <Link
-            to="/fellowship"
+              to="/fellowship"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
               onClick={handleOptionSelect}
             >
@@ -292,7 +294,7 @@ const Header = () => {
               >
                 Who We are
                 <AiOutlineDownCircle
-                  className={`ml-1 transition-transform duration-300 ease-in-out ${
+                  className={`ml-1 text-[26px] transition-transform duration-300 ease-in-out ${
                     isAboutOpen ? "rotate-180" : ""
                   }`}
                 />
@@ -301,30 +303,37 @@ const Header = () => {
                 <div className="absolute mt-6 w-[200px] text-black bg-red-600 border rounded shadow-lg z-40">
                   <Link
                     to="/whoweare/about"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
+                    <FaPersonDigging className="text-[28px]"/>
                     <span className="text-[18px]">About</span>
                   </Link>
                   <Link
                     to="/whoweare/team"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
                     <span className="text-[18px]">Our Team</span>
                   </Link>
                   <Link
                     to="/whoweare/advisory-board"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
                     <span className="text-[18px]">Our Advisory Board</span>
                   </Link>
                   <Link
                     to="/whoweare/reports-and-financials"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
                     <span className="text-[18px]">Reports & Financials</span>
                   </Link>
                 </div>
@@ -341,41 +350,129 @@ const Header = () => {
               >
                 What We Do
                 <AiOutlineDownCircle
-                  className={`ml-1 transition-transform duration-300 ease-in-out ${
+                  className={`ml-1 text-[26px] transition-transform duration-300 ease-in-out ${
                     isWhatWeDoOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
               {isWhatWeDoOpen && (
-                <div className="absolute mt-6 w-[200px] text-black bg-red-600 border rounded shadow-lg z-20">
+                <div className="absolute mt-6 grid grid-cols-3 w-[1000px] text-black bg-red-600 border rounded shadow-lg z-20">
                   <Link
-                    to="/whatwedo/social-development"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <span className="text-[18px]">Social Development</span>
-                  </Link>
-                  <Link
-                    to="/whatwedo/social-enterprises"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    <span className="text-[18px]">Social Enterprises</span>
-                  </Link>
-                  <Link
-                    to="/whatwedo/pantiss-mine-x-sim"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    <span className="text-[18px]">Pantiss MINE x SIM</span>
-                  </Link>
-                  <Link
-                    to="/whatwedo/social-development"
-                    className="block px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
                     <span className="text-[18px]">
-                      Pantiss Happiness Professionals
+                      EIA/SIA for Land Acquisition@Mines
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Rehabilitation & Resettlement of Mines
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Skill Training for Mining affected Youth
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Enterprise Growth in Mining Villages
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Reclamation in Abandoned Mines
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Just Transition for Mining Workers
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Nutrition & Wellbeing in Mining Villages
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">Eco-Mine Tourism</span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Model Mining Village in Making
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Indegenous Community Empowerment
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Waterbody Restoration in Mines
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
+                    onClick={handleOptionSelect}
+                  >
+                    {" "}
+                    <FaPersonDigging className="text-[28px]"/>
+                    <span className="text-[18px]">
+                      Connecting Remote Mining Habitations
                     </span>
                   </Link>
                 </div>
@@ -393,7 +490,7 @@ const Header = () => {
             </Link>
 
             <Link
-            to="/summit"
+              to="/summit"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
@@ -518,30 +615,38 @@ const Header = () => {
                 <div className="flex flex-col pl-6 space-y-2">
                   <Link
                     to="/whoweare/about"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <BiRightArrow />
                     About
                   </Link>
                   <Link
                     to="/whoweare/team"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <BiRightArrow />
                     Our Team
                   </Link>
                   <Link
                     to="/whoweare/advisory-board"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <BiRightArrow />
                     Our Advisory Board
                   </Link>
                   <Link
                     to="/whoweare/reports-and-financials"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
+                    {" "}
+                    <BiRightArrow />
                     Reports & Financials
                   </Link>
                 </div>
@@ -562,33 +667,90 @@ const Header = () => {
                 />
               </button>
               {isWhatWeDoOpen && (
-                <div className="flex flex-col pl-6 space-y-2">
+                <div className="grid grid-cols-2 pl-6 mt-4 gap-y-4 gap-x-4">
                   <Link
-                    to="/whatwedo/social-development"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
-                    Social Development
+                    <BiRightArrow />
+                    EIA/SIA for Land Acquisition@Mines
                   </Link>
                   <Link
-                    to="/whatwedo/social-enterprises"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
-                    Social Enterprises
+                    <BiRightArrow />
+                    Rehabilation & Resettlement of Mines
                   </Link>
                   <Link
-                    to="/whatwedo/pantiss-mine-x-sim"
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
-                    Pantiss MINEX SIM
+                    <BiRightArrow />
+                    Skill Training for Mining affected Youth
                   </Link>
                   <Link
-                    className="hover:underline text-[white]"
+                    className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
-                    Pantiss Hapiness Professionals
+                    <BiRightArrow />
+                    Enterprise Growth in Mining Villages
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Reclamation in Abandoned Mines
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Just Transition for Mining Workers
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Nutrition & Wellbeing in Mining Villages
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Eco-Mine Tourism
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Model Mining Village in Making
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Indegenous Community Empowerment
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Waterbody Restoration in Mines
+                  </Link>
+                  <Link
+                    className="hover:underline flex gap-x-2 text-[white]"
+                    onClick={handleOptionSelect}
+                  >
+                    <BiRightArrow />
+                    Connecting Remote Mining Habitations
                   </Link>
                 </div>
               )}
@@ -603,7 +765,7 @@ const Header = () => {
             </Link>
 
             <Link
-            to="/summit"
+              to="/summit"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
