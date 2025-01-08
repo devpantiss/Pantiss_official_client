@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="relative bg-gray-50">
       {/* Background Image Section */}
       <div
-        className="relative w-full h-[900px] bg-cover bg-center"
+        className="relative w-full h-[40vh] lg:h-[900px] bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736163175/Program_Pntiss_1_lriujq.jpg')",
