@@ -32,7 +32,7 @@ const AboutProgram = () => {
           THE <span className="text-red-600">PROGRAMME</span>
         </h2>
         <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
-          The Regular Internship Programme offers a wide range of opportunities
+          The Internship Programme offers a wide range of opportunities
           for graduate and post-graduate students. Interns benefit from exposure
           to an array of projects and initiatives in social development over a
           period of three months. Complete with hands-on learning, the programme

@@ -30,7 +30,7 @@ const AboutProgram = () => {
         {/* Heading and Description */}
         <h2 className="text-3xl md:text-4xl font-bold mb-6">THE <span className="text-red-600">PROGRAMME</span></h2>
         <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
-          The Young Professional Programme is crafted to develop BRAC’s next
+          The Young Professional Programme is crafted to develop Pantiss's next
           generation of leaders. Challenging and purposeful opportunities
           accelerate professionals’ readiness to take on diverse roles and
           demonstrate strong leadership capabilities with innovation and
