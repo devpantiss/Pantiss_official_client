@@ -12,7 +12,12 @@ import { Link } from "react-router-dom";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="relative bg-black text-white pb-8">
+      <img
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736516332/Untitled_design_10_euwrpe.png"
+          alt="img"
+          className="w-full"
+        />
       <div className="container mx-auto px-4">
         {/* What We Do Section */}
         <div className="border-t border-white mt-8 pt-4 flex flex-col justify-center items-center">
