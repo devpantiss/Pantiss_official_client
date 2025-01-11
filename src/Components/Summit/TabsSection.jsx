@@ -29,7 +29,7 @@ const TabsSection = () => {
   ];
 
   return (
-    <div className="flex container mx-auto flex-col h-[50vh] lg:flex-row p-8 bg-gray-50">
+    <div className="flex container mx-auto flex-col h-full lg:h-[50vh] lg:flex-row p-8 bg-gray-50">
       {/* Left Section - Dynamic Content */}
       <div className="lg:w-2/3">
         <h1 className="text-3xl font-bold text-red-600 mb-6">
