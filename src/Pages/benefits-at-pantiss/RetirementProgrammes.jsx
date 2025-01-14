@@ -14,10 +14,8 @@ const RetirementProgrammes = () => {
           <li>
             <span className="mx-2">/</span>
           </li>
-          <li>
-            <a href="/initiatives" className="font-semibold hover:underline">
+          <li className="text-gray-800 font-semibold">
               Benefits
-            </a>
           </li>
           <li>
             <span className="mx-2">/</span>
