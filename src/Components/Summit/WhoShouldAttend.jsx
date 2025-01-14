@@ -1,36 +1,38 @@
 import React from "react";
+import {
+  FaUserTie,
+  FaHandsHelping,
+  FaBuilding,
+  FaLightbulb,
+  FaBook,
+  FaUsers,
+} from "react-icons/fa";
 
 const WhoShouldAttend = () => {
   const attendees = [
     {
       title: "Policy Makers and Government Officials",
-      description:
-        "For those involved in crafting policies and initiatives for rural and mining-affected communities, this summit provides invaluable insights into effective governance strategies.",
+      icon: <FaUserTie />,
     },
     {
       title: "Non-Governmental Organizations (NGOs)",
-      description:
-        "NGOs working in areas like education, health, and livelihood in mining villages can leverage this summit to enhance their impact and collaborations.",
+      icon: <FaHandsHelping />,
     },
     {
       title: "CSR Heads and Sustainability Managers",
-      description:
-        "Corporate leaders managing CSR initiatives will discover innovative ways to drive social and economic upliftment in mining areas.",
+      icon: <FaBuilding />,
     },
     {
       title: "Social Entrepreneurs",
-      description:
-        "Entrepreneurs focused on community development and sustainable enterprises will find this summit a platform for inspiration and networking.",
+      icon: <FaLightbulb />,
     },
     {
       title: "Academic and Research Professionals",
-      description:
-        "Researchers studying mining's socio-economic and environmental impacts will gain valuable data and case studies.",
+      icon: <FaBook />,
     },
     {
       title: "Community Leaders and Activists",
-      description:
-        "Local leaders and activists striving to improve living conditions in mining villages can connect with resources and advocates at the summit.",
+      icon: <FaUsers />,
     },
   ];
 
@@ -52,13 +54,15 @@ const WhoShouldAttend = () => {
               key={index}
               className="bg-red-600 ring-2 ring-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
             >
-              <div className="flex items-center mb-4">
+              <div className="flex flex-col items-center justify-center mb-4">
                 <div className="bg-white text-red-600 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold">
                   {index + 1}
                 </div>
-                <h3 className="ml-4 text-xl font-semibold">{attendee.title}</h3>
+                <div className="text-6xl flex justify-center my-4">
+                  {attendee.icon}
+                </div>
+                <h3 className="ml-4 text-xl text-center font-semibold">{attendee.title}</h3>
               </div>
-              <p>{attendee.description}</p>
             </div>
           ))}
         </div>

@@ -17,6 +17,16 @@ import InternshipProgramme from "./Pages/InternshipProgramme";
 import ContactPage from "./Pages/ContactPage";
 import Fellowship from "./Pages/Fellowship";
 import SummitPage from "./Pages/SummitPage";
+import ZeroToleranceToHarassment from "./Pages/life-at-pantiss/ZeroToleranceToHarassment";
+import PeopleAtPantiss from "./Pages/life-at-pantiss/PeopleAtPantiss";
+import InclusivenessAndDiversity from "./Pages/life-at-pantiss/InclusivenessAndDiversity";
+import MeetTheLeaders from "./Pages/life-at-pantiss/MeetTheLeaders";
+import InvestingInMentalHealth from "./Pages/life-at-pantiss/InvestingInMentalHealth";
+import CareerDevelopment from "./Pages/benefits-at-pantiss/CareerDevelopment";
+import TutionAssistance from "./Pages/benefits-at-pantiss/TutionAssistance";
+import ParentingBenefits from "./Pages/benefits-at-pantiss/ParentingBenefits";
+import HealthInsurance from "./Pages/benefits-at-pantiss/HealthInsurance";
+import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgrammes";
 
 
 function App() {
@@ -67,6 +77,21 @@ function App() {
         <Route path="/programmes/internships" element={<InternshipProgramme />} />
         <Route path="/fellowship" element={<Fellowship />} />
         <Route path="/summit" element={<SummitPage />} />
+
+        {/* Life-at-pantiss */}
+        <Route path="/life-at-pantiss/people-at-pantiss" element={<PeopleAtPantiss />} />
+        <Route path="/life-at-pantiss/inclusiveness-and-diversity" element={<InclusivenessAndDiversity />} />
+        <Route path="/life-at-pantiss/zero-tolerance-for-harassment" element={<ZeroToleranceToHarassment />} />
+        <Route path="/life-at-pantiss/meet-the-leaders" element={<MeetTheLeaders />} />
+        <Route path="/life-at-pantiss/investing-in-mental-health" element={<InvestingInMentalHealth />} />
+
+
+        {/* Benefits */}
+        <Route path="/benefits-at-pantiss/career-development" element={<CareerDevelopment />} />
+        <Route path="/benefits-at-pantiss/tution-assistance" element={<TutionAssistance />} />
+        <Route path="/benefits-at-pantiss/parenting-benefits" element={<ParentingBenefits />} />
+        <Route path="/benefits-at-pantiss/health-insurance" element={<HealthInsurance />} />
+        <Route path="/benefits-at-pantiss/retirement-programmes" element={<RetirementProgrammes />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>

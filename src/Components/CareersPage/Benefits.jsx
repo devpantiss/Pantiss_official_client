@@ -1,21 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const cardData = [
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392592/pexels-lalesh-167964_fgtnus.jpg",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392592/pexels-lalesh-167964_fgtnus.jpg",
     text: "Tution Assistance",
+    path: "/benefits-at-pantiss/tution-assistance",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392306/pexels-william-fortunato-6392819_speall.jpg",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735392306/pexels-william-fortunato-6392819_speall.jpg",
     text: "Parenting Benefits",
+    path: "/benefits-at-pantiss/parenting-benefits",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736148776/Screenshot_2025-01-06_at_1.02.25_PM_dzgfly.png",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736148776/Screenshot_2025-01-06_at_1.02.25_PM_dzgfly.png",
     text: "Health Insurance",
+    path: "/benefits-at-pantiss/health-insurance",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736151874/Screenshot_2025-01-06_at_1.54.11_PM_mdvxxy.png",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736151874/Screenshot_2025-01-06_at_1.54.11_PM_mdvxxy.png",
     text: "Retirement Programmes",
+    path: "/benefits-at-pantiss/retirement-programmes",
   },
 ];
 
@@ -37,16 +46,18 @@ const BenefitsPantiss = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4">
         {/* Large Card on the Left */}
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
-          <img
-            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/e_improve/v1735392458/WhatsApp_Image_2024-12-28_at_6.56.50_PM_r6gleo.jpg"
-            alt="Career Development"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-          />
-          <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">
-            <p className="text-white text-lg font-semibold">
-              Career Development{" "}
-            </p>
-          </div>
+          <Link to="/benefits-at-pantiss/career-development">
+            <img
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/e_improve/v1735392458/WhatsApp_Image_2024-12-28_at_6.56.50_PM_r6gleo.jpg"
+              alt="Career Development"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">
+              <p className="text-white text-lg font-semibold">
+                Career Development{" "}
+              </p>
+            </div>
+          </Link>
         </div>
 
         {/* Small Cards Grid on the Right */}
@@ -56,14 +67,16 @@ const BenefitsPantiss = () => {
               key={index}
               className="relative shadow-lg rounded-lg overflow-hidden group"
             >
-              <img
-                src={card.image}
-                alt={card.text}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
-                <p className="text-white text-sm font-medium">{card.text}</p>
-              </div>
+              <Link to={card.path}>
+                <img
+                  src={card.image}
+                  alt={card.text}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
+                  <p className="text-white text-sm font-medium">{card.text}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

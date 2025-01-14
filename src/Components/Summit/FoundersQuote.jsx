@@ -6,7 +6,7 @@ const EventSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         {/* Quote */}
         <blockquote className="relative text-gray-700 italic text-lg sm:text-xl mb-6">
-          <div className="text-red-600 text-5xl lg:text-7xl absolute -top-8 -left-0">
+          <div className="text-red-600 text-5xl lg:text-7xl absolute -top-8 -left-8">
             &ldquo;
           </div>
           <p className="relative z-10 bg-transparent inline-block px-4 sm:px-0 py-4">
@@ -20,11 +20,11 @@ const EventSection = () => {
             and drive impactful change for the people, the environment, and
             future generations.
           </p>
-          <div className="text-red-600 text-5xl lg:text-7xl absolute -bottom-8 right-0">
+          <div className="text-red-600 text-5xl lg:text-7xl absolute -bottom-12 right-0">
             &rdquo;
           </div>
         </blockquote>
-        <cite className="block mt-6 text-gray-500 font-medium">
+        <cite className="block mt-6 text-gray-500 font-bold">
           &mdash; Stalin Nayak, Founder and CEO, Pantiss Foundation
         </cite>
 

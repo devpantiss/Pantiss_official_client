@@ -9,7 +9,7 @@ const CareersCategory = () => {
   const navigate = useNavigate();
   const careerAreas = [
     {
-      title: "MIS",
+      title: "M&E",
       count: 0,
       img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735309951/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_svzntu.jpg", // Replace with the actual image URL
     },
@@ -41,7 +41,7 @@ const CareersCategory = () => {
     {
       title: "Development Compliance",
       count: 2,
-      img: "https://careers.brac.net/category/3.png", // Replace with the actual image URL
+      img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736749059/compliance_l5dhmw.jpg", // Replace with the actual image URL
     },
   ];
 
