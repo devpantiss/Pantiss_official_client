@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu, FiX, FiUser } from "react-icons/fi";
+import { FiMenu, FiX, FiUser, FiFile } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineDownCircle } from "react-icons/ai";
 import { TbDisabled } from "react-icons/tb";
@@ -15,6 +15,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { MdEventAvailable } from "react-icons/md";
 import { BiRightArrow } from "react-icons/bi";
 import { FaPersonDigging } from "react-icons/fa6";
+
 
 const Header = () => {
   const location = useLocation();
@@ -500,6 +501,7 @@ const Header = () => {
             </Link>
 
             <Link
+              to="/publications"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
@@ -771,6 +773,15 @@ const Header = () => {
             >
               <MdEventAvailable />
               Summit
+            </Link>
+            
+            <Link
+              to="/publications"
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
+              onClick={handleOptionSelect}
+            >
+              <FiFile />
+              Our Publications
             </Link>
 
             <div className="relative">

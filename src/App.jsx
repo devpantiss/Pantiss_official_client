@@ -27,6 +27,7 @@ import TutionAssistance from "./Pages/benefits-at-pantiss/TutionAssistance";
 import ParentingBenefits from "./Pages/benefits-at-pantiss/ParentingBenefits";
 import HealthInsurance from "./Pages/benefits-at-pantiss/HealthInsurance";
 import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgrammes";
+import Publications from "./Pages/Publications";
 
 
 function App() {
@@ -77,6 +78,8 @@ function App() {
         <Route path="/programmes/internships" element={<InternshipProgramme />} />
         <Route path="/fellowship" element={<Fellowship />} />
         <Route path="/summit" element={<SummitPage />} />
+        <Route path="/publications" element={<Publications />} />
+
 
         {/* Life-at-pantiss */}
         <Route path="/life-at-pantiss/people-at-pantiss" element={<PeopleAtPantiss />} />
