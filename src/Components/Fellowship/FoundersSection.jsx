@@ -2,14 +2,14 @@ import React from "react";
 
 const FoundersSection = () => {
   return (
-    <section className="bg-red-600 flex justify-center items-center">
-      <div className="flex flex-col lg:flex-row items-center justify-between container gap-x-12 p-10">
+    <section className="bg-gradient-to-br from-red-700 via-red-600 to-red-500 flex justify-center items-center py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto gap-x-12 px-6 lg:px-16">
         {/* Left Section */}
-        <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
-          <h2 className="text-2xl font-bold text-white mb-4">
+        <div className="lg:w-1/3 w-full mb-10 lg:mb-0 text-center lg:text-left">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-6">
             MEET THE FOUNDERS
           </h2>
-          <p className="text-gray-200 text-lg leading-relaxed">
+          <p className="text-gray-100 text-lg leading-relaxed">
             The Pantiss Mining Fellowship, inspired by the struggles of the
             region, has been co-founded by Mr. Sanjay Pradhan and Mr. Stalin
             Nayak.
@@ -17,19 +17,19 @@ const FoundersSection = () => {
         </div>
 
         {/* Divider */}
-        <div className="hidden lg:block w-[5px] bg-white h-[350px] mx-8"></div>
+        <div className="hidden lg:block w-[3px] bg-gradient-to-b from-white via-gray-300 to-white h-[350px] mx-8 rounded-lg"></div>
 
         {/* Right Section */}
-        <div className="lg:w-2/3 w-full flex flex-col justify-center items-center lg:flex-row gap-y-4 gap-x-6">
+        <div className="lg:w-2/3 w-full flex flex-col lg:flex-row gap-y-8 gap-x-6">
           <img
             src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg"
             alt="Mr. Stalin Nayak"
-            className="h-[500px] w-full rounded-lg object-cover"
+            className="h-auto max-h-[550px] w-full lg:w-[68%] rounded-lg object-cover shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           />
           <img
             src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/Sanjay_sir_b5cld1.jpg"
             alt="Mr. Sanjay Pradhan"
-            className="h-[500px] w-full rounded-lg object-cover"
+            className="h-auto max-h-[550px] w-full lg:w-[68%] rounded-lg object-cover shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           />
         </div>
       </div>
