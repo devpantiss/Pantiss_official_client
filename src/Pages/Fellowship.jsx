@@ -3,6 +3,7 @@ import Hero from "../Components/Fellowship/Hero";
 import ProgrammesSection from "../Components/Fellowship/ProgrammesSection";
 import FoundersSection from "../Components/Fellowship/FoundersSection";
 import VideoSection from "../Components/Fellowship/VideoSection";
+import ReachSection from "../Components/Fellowship/reach/ReachSection";
 
 const Fellowship = () => {
   return (
@@ -11,6 +12,7 @@ const Fellowship = () => {
       <FoundersSection />
       <ProgrammesSection />
       <VideoSection />
+      <ReachSection />
     </div>
   );
 };

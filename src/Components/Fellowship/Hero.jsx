@@ -9,24 +9,26 @@ const Hero = () => {
     {
       video:
         "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1726137056/niyamgiri_j8uqux.mp4",
-      title: "FOSTERING SUSTAINABLE PROGRESS FOR RESURGENT HIMALAYAS",
+      title: "TRANSFORMING LIVES IN KALAHANDI",
       subtitle:
-        "To develop leaders of tomorrow who will create meaningful impact in Ladakh and the Himalayan region.",
-      buttonText: "Read More",
+        "Promoting sustainable mining practices and empowering tribal communities with livelihood opportunities.",
+      buttonText: "Explore Initiatives",
     },
     {
       video:
         "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1726137056/niyamgiri_j8uqux.mp4",
-      title: "EMPOWERING COMMUNITIES THROUGH EDUCATION",
-      subtitle: "Focusing on sustainable development and skill-building.",
-      buttonText: "Discover More",
-    },
-    {
-      video:
-        "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1726137056/niyamgiri_j8uqux.mp4",
-      title: "CONNECTING WITH CULTURE AND HERITAGE",
-      subtitle: "Promoting initiatives for cultural preservation and growth.",
+      title: "BUILDING FUTURES IN BASTAR",
+      subtitle:
+        "Fostering skill development and education to uplift the socio-economic status of mining-affected communities.",
       buttonText: "Learn More",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1726137056/niyamgiri_j8uqux.mp4",
+      title: "CULTIVATING HERITAGE IN KODERMA",
+      subtitle:
+        "Preserving cultural traditions while advancing development initiatives in resource-rich regions.",
+      buttonText: "Discover More",
     },
   ];
 

@@ -6,24 +6,24 @@ const cardData = [
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
     text: "Valuing inclusiveness and diversity",
-    path: "/life-at-pantiss/inclusiveness-and-diversity"
+    path: "/life-at-pantiss/inclusiveness-and-diversity",
   },
   {
     image: "https://ohsguide.workplacenl.ca/topic/violence_harassment/161.png",
     text: "Ensuring zero tolerance for harassment",
-    path: "/life-at-pantiss/zero-tolerance-for-harassment"
+    path: "/life-at-pantiss/zero-tolerance-for-harassment",
   },
   {
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1729517840/smartworks-coworking-Uz8THWPXwhI-unsplash_j8ospq.jpg",
     text: "Meet the leaders",
-    path: "/life-at-pantiss/meet-the-leaders"
+    path: "/life-at-pantiss/meet-the-leaders",
   },
   {
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726530883/WhatsApp_Image_2024-09-08_at_18.49.58_a572e0ed_gstqo0.jpg",
     text: "Investing in mental health",
-    path: "/life-at-pantiss/investing-in-mental-health"
+    path: "/life-at-pantiss/investing-in-mental-health",
   },
 ];
 
@@ -53,8 +53,8 @@ const LifeAtBRAC = () => {
               alt="Zero Tolerance for Harassment"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
-            <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-4 py-2 rounded">
-              <p className="text-white text-lg font-semibold">
+            <div className="absolute bottom-0 left-0 bg-white px-4 py-2 rounded">
+              <p className="text-red-600 lg:text-3xl text-xl font-semibold">
                 People at Pantiss{" "}
               </p>
             </div>
@@ -74,8 +74,8 @@ const LifeAtBRAC = () => {
                   alt={card.text}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
-                  <p className="text-white text-sm font-medium">{card.text}</p>
+                <div className="absolute bottom-0 left-0 bg-white px-3 py-2 rounded">
+                  <p className="text-red-600 text-xl font-semibold">{card.text}</p>
                 </div>
               </Link>
             </div>
