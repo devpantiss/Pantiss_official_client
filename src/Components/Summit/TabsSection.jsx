@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
 
 const TabsSection = () => {
   const [activeTab, setActiveTab] = useState("MINING_VILLAGES");
@@ -28,8 +29,29 @@ const TabsSection = () => {
     },
   ];
 
+  const miningImages = [
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007535/WhatsApp_Image_2025-01-15_at_7.50.27_PM_isreux.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.45.13_PM_rudz4r.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.49.04_PM_bs7fwk.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.25_PM_v3ned2.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.48.31_PM_gon918.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.31_PM_gms50c.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737008646/WhatsApp_Image_2025-01-16_at_11.52.30_AM_fnv3iz.jpg"
+  ];
+
+  // Slider settings for React Slick
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+  };
+
   return (
-    <div className="flex container mx-auto flex-col h-full lg:h-[50vh] lg:flex-row p-8 bg-gray-50">
+    <div className="flex container mx-auto flex-col-reverse h-full lg:flex-row p-8 bg-gray-50">
       {/* Left Section - Dynamic Content */}
       <div className="lg:w-2/3">
         <h1 className="text-3xl font-bold text-red-600 mb-6">
@@ -78,7 +100,7 @@ const TabsSection = () => {
           </div>
         )}
 
-        {activeTab === "SUMMIT_REPORTS" && (
+        {/* {activeTab === "SUMMIT_REPORTS" && (
           <div>
             <h2 className="text-xl font-bold text-brown-700 mb-4">
               Summit Reports
@@ -110,33 +132,53 @@ const TabsSection = () => {
               </p>
             </div>{" "}
           </div>
-        )}
+        )} */}
 
         {activeTab === "MINING_VILLAGES" && (
           <div>
-            <h2 className="text-xl font-bold text-brown-700 mb-4">
-              Mining Villages Summit
-            </h2>
-            <p className="text-gray-700">
-              The Mining Villages Summit aims to address the socio-economic
-              challenges faced by communities in mining regions. The summit
-              brings together policymakers, industry leaders, and community
-              representatives to explore sustainable development strategies,
-              enhance livelihood opportunities, and ensure environmental
-              preservation in these areas.
-            </p>
-            <p className="text-gray-700 mt-4">
-              Participants will discuss themes like skill development,
-              alternative livelihoods, environmental restoration, and community
-              engagement to create a holistic framework for empowering mining
-              villages.
-            </p>
+            <div>
+              <h2 className="text-xl font-bold text-brown-700 mb-4">
+                Mining Villages Summit
+              </h2>
+              <p className="text-gray-700">
+                The Mining Villages Summit aims to address the socio-economic
+                challenges faced by communities in mining regions. The summit
+                brings together policymakers, industry leaders, and community
+                representatives to explore sustainable development strategies,
+                enhance livelihood opportunities, and ensure environmental
+                preservation in these areas.
+              </p>
+              <p className="text-gray-700 mt-4">
+                Participants will discuss themes like skill development,
+                alternative livelihoods, environmental restoration, and
+                community engagement to create a holistic framework for
+                empowering mining villages.
+              </p>
+            </div>
+
+            {/* React Slick Slider */}
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold text-gray-700 mb-4">
+                Highlights of Mining Villages
+              </h3>
+              <Slider {...sliderSettings}>
+                {miningImages.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={image}
+                      alt={`Mining Village Highlight ${index + 1}`}
+                      className="w-full h-[450px] object-cover rounded-lg"
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
         )}
       </div>
 
       {/* Right Section - Tabs */}
-      <div className="lg:w-1/3 mt-8 lg:mt-0 lg:ml-8 bg-white shadow-md border border-gray-200">
+      <div className="lg:w-1/3 mb-8 h-[40vh] lg:mt-0 lg:ml-8 bg-white shadow-md border border-gray-200">
         <div className="bg-brown-700 text-red-600 text-lg font-bold p-4">
           MINING VILLAGES SUMMIT
         </div>
@@ -145,8 +187,6 @@ const TabsSection = () => {
             "MINING_VILLAGES",
             "SESSION_PLAN",
             "RESOURCE_BOOK",
-            "SUMMIT_REPORTS",
-            "SOIL_REPORTS",
           ].map((tab) => (
             <button
               key={tab}

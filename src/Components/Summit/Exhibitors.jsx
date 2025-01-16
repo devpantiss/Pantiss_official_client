@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee"; // We'll use this for the scrolling ef
 
 const Exhibitors = () => {
   const multilateralPartners = [
-    "https://indiacsrsummit.in/uploaded_files/35027bcc3624964f0c1387e6e031c4c2.jpg",
     "https://indiacsrsummit.in/uploaded_files/f15d935fdcd3f27ceda4d000070257eb.jpeg",
     "https://indiacsrsummit.in/uploaded_files/573e22af9ba527e5ed727676d73687af.png",
     "https://indiacsrsummit.in/uploaded_files/0334da765d56eee831c40d21a33a5cae.png",

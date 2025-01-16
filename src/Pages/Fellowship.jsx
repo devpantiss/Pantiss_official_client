@@ -10,9 +10,9 @@ const Fellowship = () => {
     <div>
       <Hero />
       <FoundersSection />
-      <ProgrammesSection />
       <VideoSection />
       <ReachSection />
+      <ProgrammesSection />
     </div>
   );
 };

@@ -48,7 +48,7 @@ const VideoSection = () => {
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
           alt="Pantiss Fellows"
-          className="w-full h-[450px] object-cover"
+          className="w-full h-[450px] bg-fixed object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center">
           <h3 className="text-2xl font-bold">
