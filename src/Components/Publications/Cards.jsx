@@ -35,7 +35,7 @@ const Cards = () => {
   ];
 
   return (
-    <div className="bg-white p-4">
+    <div className="bg-white px-6 py-8 mt-4">
       <div className="container mx-auto">
         {/* Filters and Sorting Section */}
         <div className="flex justify-between mb-6">
