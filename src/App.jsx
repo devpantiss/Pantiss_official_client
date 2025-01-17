@@ -29,6 +29,7 @@ import HealthInsurance from "./Pages/benefits-at-pantiss/HealthInsurance";
 import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgrammes";
 import Publications from "./Pages/Publications";
 import WhereWeWorkPage from "./Pages/WhereWeWorkPage";
+import Dashboard from "./Pages/Dashboard";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
       {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
         <Route path="/whoweare/*" element={<WhoWeAre />} />
         <Route path="/whatwedo/*" element={<WhatWeDo />} />
