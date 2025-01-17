@@ -28,6 +28,7 @@ import ParentingBenefits from "./Pages/benefits-at-pantiss/ParentingBenefits";
 import HealthInsurance from "./Pages/benefits-at-pantiss/HealthInsurance";
 import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgrammes";
 import Publications from "./Pages/Publications";
+import WhereWeWorkPage from "./Pages/WhereWeWorkPage";
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/careers/jobs" element={<JobsPage />} /> {/* Nested Route */}
         <Route path="/tenders" element={<Tenders />} />
+        <Route path="/where-we-work" element={<WhereWeWorkPage />} />
         <Route path="/programmes/young-professionals" element={<YoungProfessionals />} />
         <Route path="/programmes/internships" element={<InternshipProgramme />} />
         <Route path="/fellowship" element={<Fellowship />} />

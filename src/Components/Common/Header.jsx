@@ -16,7 +16,6 @@ import { MdEventAvailable } from "react-icons/md";
 import { BiRightArrow } from "react-icons/bi";
 import { FaPersonDigging } from "react-icons/fa6";
 
-
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -307,7 +306,7 @@ const Header = () => {
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">About</span>
                   </Link>
                   <Link
@@ -316,7 +315,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Our Team</span>
                   </Link>
                   <Link
@@ -325,7 +324,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Our Advisory Board</span>
                   </Link>
                   <Link
@@ -334,7 +333,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Reports & Financials</span>
                   </Link>
                 </div>
@@ -363,7 +362,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       EIA/SIA for Land Acquisition@Mines
                     </span>
@@ -373,7 +372,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Rehabilitation & Resettlement of Mines
                     </span>
@@ -383,7 +382,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Skill Training for Mining affected Youth
                     </span>
@@ -393,7 +392,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Enterprise Growth in Mining Villages
                     </span>
@@ -403,7 +402,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Reclamation in Abandoned Mines
                     </span>
@@ -413,7 +412,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Just Transition for Mining Workers
                     </span>
@@ -423,7 +422,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Nutrition & Wellbeing in Mining Villages
                     </span>
@@ -433,7 +432,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Eco-Mine Tourism</span>
                   </Link>
                   <Link
@@ -441,7 +440,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Model Mining Village in Making
                     </span>
@@ -451,7 +450,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Indegenous Community Empowerment
                     </span>
@@ -461,7 +460,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Waterbody Restoration in Mines
                     </span>
@@ -471,7 +470,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     {" "}
-                    <FaPersonDigging className="text-[28px]"/>
+                    <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
                       Connecting Remote Mining Habitations
                     </span>
@@ -482,6 +481,7 @@ const Header = () => {
 
             {/* Where we work */}
             <Link
+              to="/where-we-work"
               className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
@@ -759,6 +759,7 @@ const Header = () => {
             </div>
 
             <Link
+              to="/where-we-work"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
@@ -774,7 +775,7 @@ const Header = () => {
               <MdEventAvailable />
               Summit
             </Link>
-            
+
             <Link
               to="/publications"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
