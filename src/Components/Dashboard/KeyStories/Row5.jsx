@@ -191,7 +191,7 @@ const Row5 = () => {
             {data.map((item, index) => (
               <tr
                 key={index}
-                className={`${index % 2 === 0 ? "bg-gray-700" : "bg-gray-800"}`}
+                className={`${index % 2 === 0 ? "bg-transparent" : "bg-transparent"}`}
               >
                 <td className="border border-red-600 p-2 text-left">
                   <a
