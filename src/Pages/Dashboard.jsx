@@ -1,18 +1,26 @@
-import React from 'react'
-import DashHeader from '../Components/Dashboard/DashHeader'
-import Row1 from '../Components/Dashboard/Row1'
-import Row2 from '../Components/Dashboard/Row2'
-import Row3 from '../Components/Dashboard/Row3'
+import React from "react";
+import DashHeader from "../Components/Dashboard/DashHeader";
+import Row1 from "../Components/Dashboard/Results/Row1";
+import Row2 from "../Components/Dashboard/Results/Row2";
+import Row3 from "../Components/Dashboard/Results/Row3";
+import Row4 from "../Components/Dashboard/Results/Row4";
+import Row5 from "../Components/Dashboard/Results/Row5";
+import Row6 from "../Components/Dashboard/Results/Row6";
 
 const Dashboard = () => {
   return (
-    <div className='container mx-auto'>
+    <div className="bg-black py-6">
+      <div className="container mx-auto ring-2 ring-red-600 rounded-md">
         <DashHeader />
         <Row1 />
         <Row2 />
         <Row3 />
+        <Row4 />
+        <Row5 />
+        <Row6 />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

@@ -31,7 +31,7 @@ const Row1 = () => {
   ];
 
   return (
-    <div className="bg-white p-6">
+    <div className="bg-black p-6">
       {/* Tabs Section */}
       <div className="flex flex-wrap gap-4 mb-6">
         {tabs.map((tab) => (
@@ -52,7 +52,7 @@ const Row1 = () => {
       {/* Filter Section */}
       <div className="flex flex-wrap gap-4 items-center mb-6">
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-white">
             Result level
           </label>
           <select className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-600 focus:ring-red-600 sm:text-sm">
@@ -62,7 +62,7 @@ const Row1 = () => {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-white">
             Indicator category
           </label>
           <select className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-600 focus:ring-red-600 sm:text-sm">
@@ -77,22 +77,23 @@ const Row1 = () => {
       </div>
 
       {/* Summary Heading */}
-      <h2 className="text-lg font-bold mb-4">Summary</h2>
-      <p className="text-gray-600 mb-6">
+      <h2 className="text-lg font-bold text-white border-b-2 border-red-600 mb-4">Summary</h2>
+      <p className="text-white mb-6">
         This overview encompasses both the results reported by the initiative
         itself and its contributions to other results reported by different
         initiatives.
       </p>
 
       {/* Statistics Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-4">
         {statistics.map((stat) => (
           <div
             key={stat.label}
-            className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-md shadow-md"
+            className="flex flex-col text-center items-center justify-center bg-transparent ring-2 ring-red-600 p-4 rounded-md shadow-md"
           >
-            <div className="text-2xl font-bold">{stat.value}</div>
-            <div className="text-sm text-gray-600">{stat.label}</div>
+            <div className="text-4xl">{stat.icon}</div>
+            <div className="text-xl text-white mt-2 font-bold">{stat.value}</div>
+            <div className="text-sm text-gray-100">{stat.label}</div>
           </div>
         ))}
       </div>

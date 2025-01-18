@@ -12,6 +12,13 @@ const Row2 = () => {
     { id: 8, title: "Goal 8: Decent Work and Economic Growth", value: 321, img: "https://reporting.cgiar.org/assets/sdg/8.png" },
     { id: 9, title: "Goal 9: Industry, Innovation, and Infrastructure", value: 321, img: "https://reporting.cgiar.org/assets/sdg/9.png" },
     { id: 10, title: "Goal 10: Reducing Inequalities", value: 321, img: "https://reporting.cgiar.org/assets/sdg/10.png" },
+    { id: 11, title: "Goal 11: Sustainable Cities and Communities", value: 321, img: "https://reporting.cgiar.org/assets/sdg/11.png" },
+    { id: 12, title: "Goal 12: Responsible Consumption and Production", value: 321, img: "https://reporting.cgiar.org/assets/sdg/12.png" },
+    { id: 13, title: "Goal 13: Climate Action", value: 321, img: "https://reporting.cgiar.org/assets/sdg/13.png" },
+    { id: 14, title: "Goal 14: Life Below Water", value: 321, img: "https://reporting.cgiar.org/assets/sdg/14.png" },
+    { id: 15, title: "Goal 15: Life on Land", value: 321, img: "https://reporting.cgiar.org/assets/sdg/15.png" },
+    { id: 16, title: "Goal 16: Peace, Justice and Strong Institutions", value: 321, img: "https://reporting.cgiar.org/assets/sdg/16.png" },
+    { id: 17, title: "Goal 17: Partnerships for the Goals", value: 321, img: "https://reporting.cgiar.org/assets/sdg/17.png" },
   ];
 
   const actionAreaData = [
@@ -55,10 +62,10 @@ const Row2 = () => {
   const maxReportingUnitValue = Math.max(...reportingUnitData.map((d) => d.value));
 
   return (
-    <div className="p-6 bg-gray-100 grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <div className="p-6 bg-black grid grid-cols-1 lg:grid-cols-4 gap-6">
       {/* SDG Contributions */}
-      <div className="bg-white shadow-md rounded-lg p-4">
-        <h3 className="font-bold text-lg mb-4">SDG Contributions</h3>
+      <div className="bg-transparent text-white ring-2 ring-red-600 shadow-md rounded-lg p-4">
+        <h3 className="font-bold text-lg border-b-2 border-red-600 mb-4">SDG Contributions</h3>
         <div className="max-h-[450px] overflow-y-auto space-y-4">
           {sdgData.map((sdg) => (
             <div key={sdg.id} className="flex items-center gap-4">
@@ -74,8 +81,8 @@ const Row2 = () => {
       </div>
 
       {/* Action Area Contributions */}
-      <div className="bg-white shadow-md rounded-lg p-4">
-        <h3 className="font-bold text-lg mb-4">Action Area Contributions</h3>
+      <div className="bg-transparent text-white ring-2 ring-red-600 shadow-md rounded-lg p-4">
+        <h3 className="font-bold text-lg border-b-2 border-red-600 mb-4">Action Area Contributions</h3>
         {actionAreaData.map((area) => (
           <div key={area.title} className="flex items-center gap-4 mb-4">
             <img src={area.img} alt={area.title} className="w-12 h-12" />
@@ -89,8 +96,8 @@ const Row2 = () => {
       </div>
 
       {/* Impact Area Contributions */}
-      <div className="bg-white shadow-md rounded-lg p-4">
-        <h3 className="font-bold text-lg mb-4">Impact Area Contributions</h3>
+      <div className="bg-transparent text-white ring-2 ring-red-600 shadow-md rounded-lg p-4">
+        <h3 className="font-bold text-lg border-b-2 border-red-600 mb-4">Impact Area Contributions</h3>
         {impactAreaData.map((impact) => (
           <div key={impact.title} className="flex items-center gap-4 mb-4">
             <img src={impact.img} alt={impact.title} className="w-12 h-12" />
@@ -104,8 +111,8 @@ const Row2 = () => {
       </div>
 
       {/* Reporting Unit Contributions */}
-      <div className="bg-white shadow-md rounded-lg p-4">
-        <h3 className="font-bold text-lg mb-4">Number of Results by Reporting Unit</h3>
+      <div className="bg-transparent text-white ring-2 ring-red-600 shadow-md rounded-lg p-4">
+        <h3 className="font-bold text-lg border-b-2 border-red-600 mb-4">Number of Results by Reporting Unit</h3>
         {reportingUnitData.map((unit) => (
           <div key={unit.title} className="mb-4">
             <div className="text-sm font-medium">{unit.title}</div>
