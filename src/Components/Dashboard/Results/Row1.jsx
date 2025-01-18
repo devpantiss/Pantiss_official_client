@@ -5,13 +5,13 @@ const Row1 = () => {
 
   const tabs = [
     { id: "summary", label: "Summary" },
-    { id: "outputs", label: "Outputs" },
-    { id: "capacity", label: "Capacity sharing for development" },
-    { id: "innovationDev", label: "Innovation development" },
-    { id: "knowledge", label: "Knowledge products" },
-    { id: "outcomes", label: "Outcomes" },
-    { id: "policyChange", label: "Policy change" },
-    { id: "capacityChange", label: "Capacity change" },
+    // { id: "outputs", label: "Outputs" },
+    // { id: "capacity", label: "Capacity sharing for development" },
+    // { id: "innovationDev", label: "Innovation development" },
+    // { id: "knowledge", label: "Knowledge products" },
+    // { id: "outcomes", label: "Outcomes" },
+    // { id: "policyChange", label: "Policy change" },
+    // { id: "capacityChange", label: "Capacity change" },
   ];
 
   const handleTabClick = (tabId) => {
@@ -31,14 +31,14 @@ const Row1 = () => {
   ];
 
   return (
-    <div className="bg-black p-6">
+    <div className="bg-black p-6 border-t-2 border-red-600">
       {/* Tabs Section */}
-      <div className="flex flex-wrap gap-4 mb-6">
+      <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabClick(tab.id)}
-            className={`px-4 py-2 text-black font-semibold ${
+            className={`px-4 py-2 text-3xl text-black font-semibold ${
               activeTab === tab.id
                 ? "bg-red-600 text-white rounded-md shadow-md"
                 : "bg-gray-100 hover:bg-gray-200 rounded-md"

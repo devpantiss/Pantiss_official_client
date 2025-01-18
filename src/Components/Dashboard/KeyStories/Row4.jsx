@@ -4,7 +4,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const Row5 = () => {
+const Row4 = () => {
   const data = [
     {
       tag: "Gender equality tag",
@@ -80,4 +80,4 @@ const Row5 = () => {
   );
 };
 
-export default Row5;
+export default Row4;

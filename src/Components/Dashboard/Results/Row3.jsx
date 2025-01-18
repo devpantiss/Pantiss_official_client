@@ -136,7 +136,7 @@ const Row3 = () => {
           <div className="h-2 bg-yellow-600 w-full rounded"></div>
         </div>
 
-        <h2 className="font-bold text-lg mt-6 mb-4">Outcomes</h2>
+        <h2 className="font-bold text-lg mt-6 border-b-2 border-red-600 mb-4">Outcomes</h2>
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <span>Innovation use</span>
@@ -185,8 +185,8 @@ const Row3 = () => {
       {/* Right Section */}
       <div className="flex flex-col bg-transparent text-white ring-2 ring-red-600 rounded shadow p-4 w-full md:w-1/4">
         <h2 className="font-bold text-lg border-b-2 border-red-600 mb-4">Total Focus Results</h2>
-        <div className="text-lg font-bold mb-2">295</div>
-        <h2 className="font-bold text-lg mb-4">Results by region</h2>
+        <div className="text-3xl font-bold mb-2">295</div>
+        <h2 className="font-bold text-lg border-b-2 border-red-600 mb-4">Results by region</h2>
         <div className="overflow-y-auto h-96 space-y-2">
           {locations.map((location, index) => (
             <div key={index}>

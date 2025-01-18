@@ -122,7 +122,7 @@ const Row6 = () => {
 
   return (
     <div className="p-6 bg-black text-white">
-      <h2 className="text-xl font-bold mb-4">Result Details</h2>
+      <h2 className="text-xl font-bold border-b-2 border-red-600 mb-4">Result Details</h2>
       <p className="text-sm text-gray-200 mb-2">
         For evidence, only links that lead to CGSpace are included. If you would
         like to view additional evidence that is unavailable here, please

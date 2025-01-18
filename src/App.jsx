@@ -69,7 +69,7 @@ function App() {
       {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
         <Route path="/whoweare/*" element={<WhoWeAre />} />
         <Route path="/whatwedo/*" element={<WhatWeDo />} />

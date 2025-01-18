@@ -1,18 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const DashHeader = () => {
-  const [activeTab, setActiveTab] = useState("results");
+  const [activeTab, setActiveTab] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const tabs = [
-    { id: "results", label: "Results" },
-    { id: "partnerships", label: "Partnerships" },
-    { id: "keyStories", label: "Key result stories" },
-    { id: "genebanks", label: "Genebanks" },
-    { id: "glossary", label: "Glossary and Results Framework" },
+    { id: "results", label: "Results", path: "/dashboard/results" },
+    {
+      id: "partnerships",
+      label: "Partnerships",
+      path: "/dashboard/partnerships",
+    },
+    {
+      id: "keyStories",
+      label: "Key result stories",
+      path: "/dashboard/key-result-stories",
+    },
+    // { id: "genebanks", label: "Genebanks", path: "/dashboard/genebanks" },
+    // {
+    //   id: "glossary",
+    //   label: "Glossary and Results Framework",
+    //   path: "/dashboard/frameworks",
+    // },
   ];
 
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
+  // Update active tab based on the current location
+  useEffect(() => {
+    const activeTab = tabs.find((tab) => tab.path === location.pathname);
+    setActiveTab(activeTab?.id || "");
+  }, [location.pathname]);
+
+  const handleTabClick = (id, path) => {
+    setActiveTab(id); // Set active tab manually when clicked
+    navigate(path); // Navigate to the tab's path
   };
 
   const getHeaderContent = () => {
@@ -23,36 +45,36 @@ const DashHeader = () => {
         return "Partnerships";
       case "keyStories":
         return "Key Result Stories";
-      case "genebanks":
-        return "Genebanks";
-      case "glossary":
-        return "Glossary and Results Framework";
+    //   case "genebanks":
+    //     return "Genebanks";
+    //   case "glossary":
+    //     return "Glossary and Results Framework";
       default:
         return "Results Dashboard";
     }
   };
 
   return (
-    <div className="bg-black p-4">
+    <div className="bg-black border-b-2 border-red-600 p-4">
       <div className="flex flex-col lg:flex-row lg:justify-between">
         <div className="mb-4 w-[200px]">
-          <img src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png" />
+          <img src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png" alt="Logo" />
         </div>
         <div className="py-6 px-0 lg:px-4">
-            <h1 className="text-3xl text-white">{getHeaderContent()}</h1>
+          <h1 className="text-3xl text-white">{getHeaderContent()}</h1>
         </div>
       </div>
 
       {/* Tabs Section */}
-      <div className="flex flex-wrap border-t-2 border-red-600 pt-6 gap-4 ">
+      <div className="flex flex-wrap border-t-2 border-red-600 pt-6 gap-4">
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => handleTabClick(tab.id)}
-            className={`px-4 py-2  font-semibold ${
+            onClick={() => handleTabClick(tab.id, tab.path)}
+            className={`px-4 py-2 font-semibold ${
               activeTab === tab.id
                 ? "bg-white text-red-600 rounded-md shadow-md"
-                : "bg-gray-100 hover:bg-gray-200 rounded-md"
+                : "bg-gray-100 text-black hover:bg-gray-200 rounded-md"
             }`}
           >
             {tab.label}
