@@ -30,6 +30,14 @@ import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgramm
 import Publications from "./Pages/Publications";
 import WhereWeWorkPage from "./Pages/WhereWeWorkPage";
 import Dashboard from "./Pages/Dashboard";
+import Odisha from "./Pages/WhereWeWorkPages/Odisha";
+import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
+import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
+import MadhyaPradesh from "./Pages/WhereWeWorkPages/MadhyaPradesh";
+import Maharashtra from "./Pages/WhereWeWorkPages/Maharashtra";
+import Karnataka from "./Pages/WhereWeWorkPages/Karnataka";
+import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
+import Nagaland from "./Pages/WhereWeWorkPages/Nagaland";
 
 
 function App() {
@@ -99,6 +107,17 @@ function App() {
         <Route path="/benefits-at-pantiss/parenting-benefits" element={<ParentingBenefits />} />
         <Route path="/benefits-at-pantiss/health-insurance" element={<HealthInsurance />} />
         <Route path="/benefits-at-pantiss/retirement-programmes" element={<RetirementProgrammes />} />
+
+
+        {/* Where We Work */}
+        <Route path="/where-we-work/odisha" element={<Odisha />} />
+        <Route path="/where-we-work/chhattisgarh" element={<Chattisgarh />} />
+        <Route path="/where-we-work/jharkhand" element={<Jharkhand />} />
+        <Route path="/where-we-work/madhya-pradesh" element={<MadhyaPradesh />} />
+        <Route path="/where-we-work/maharashtra" element={<Maharashtra />} />
+        <Route path="/where-we-work/karnataka" element={<Karnataka />} />
+        <Route path="/where-we-work/tamil-nadu" element={<TamilNadu />} />
+        <Route path="/where-we-work/nagaland" element={<Nagaland />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>
