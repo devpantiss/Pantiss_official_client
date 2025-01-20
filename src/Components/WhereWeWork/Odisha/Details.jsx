@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../Common/Heading";
 
-const DetailsSection = () => {
+const Details = () => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row w-full relative">
       {/* Left Content Section */}
@@ -40,4 +40,4 @@ const DetailsSection = () => {
   );
 };
 
-export default DetailsSection;
+export default Details;
