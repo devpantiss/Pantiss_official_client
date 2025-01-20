@@ -7,27 +7,27 @@ const HelpingSection = () => {
 
   const items = [
     {
-      title: "Skilling",
+      title: "Emergency response",
       description:
-        "We have successfully trained over 8,500 candidates in various streams, including the mining industry, dumper operators, plumbers, security guards, and facility management, among others. These skill development initiatives have empowered individuals in Madhya Pradesh to secure sustainable livelihoods, diversify their skills, and contribute meaningfully to their communities, particularly in mining-affected areas.",
+        "During times of crisis, our emergency response initiatives provide immediate relief to those affected. This includes distributing essential supplies like food, water, and medical aid to communities facing natural disasters, conflicts, or other emergencies. By acting swiftly, we aim to save lives and reduce suffering while setting the stage for longer-term recovery efforts.",
     },
     {
-      title: "Reclamation",
+      title: "Healthcare",
       description:
-        "In our reclamation efforts, we have reclaimed over 300 acres of mining waste land by establishing a Guava plantation. This initiative not only restores ecological balance but also creates new economic opportunities for local communities. The plantation provides a sustainable source of income while mitigating environmental degradation caused by mining activities.",
+        "Our healthcare initiatives focus on improving access to essential medical services for underprivileged communities. From maternal and child health programs to combating malnutrition and diseases, we work with local healthcare providers to strengthen systems and deliver quality care. Education and awareness campaigns also play a vital role in promoting better health practices.",
     },
     {
-      title: "Waste Management",
+      title: "Livelihoods & food security",
       description:
-        "Our waste management initiatives have successfully handled waste management across 15 blocks in 3 districts, improving sanitation and environmental conditions. Additionally, we have trained professionals in facility management, equipping them with the skills needed to maintain and manage waste disposal systems efficiently, ensuring long-term sustainability in waste management practices.",
+        "Sustainable livelihoods and food security are at the heart of our development efforts. We support vulnerable communities by providing agricultural training, access to resources, and livelihood programs to ensure long-term resilience. These initiatives empower individuals and families to break the cycle of poverty and achieve self-sufficiency.",
     },
   ];
 
   const contentRefs = useRef([]);
 
   useEffect(() => {
-    const calculatedHeights = contentRefs.current.map((ref) =>
-      ref ? ref.scrollHeight : 0
+    const calculatedHeights = contentRefs.current.map(
+      (ref) => (ref ? ref.scrollHeight : 0)
     );
     setHeights(calculatedHeights);
   }, []);
@@ -41,15 +41,9 @@ const HelpingSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <Heading
-            text="HOW WE’RE WORKING IN ODISHA"
-            color="text-white"
-            bgColor="bg-white"
-          />
+          <Heading text="HOW WE’RE WORKING IN ODISHA" color="text-white" bgColor="bg-white" />
           <p className="text-lg text-white">
-            Our response in Odisha focuses on tackling the structural causes of
-            extreme conditions in mining-affected areas through health,
-            nutrition, and livelihood support.
+            Our response in Odisha focuses on tackling the structural causes of extreme conditions in mining-affected areas through health, nutrition, and livelihood support.
           </p>
         </div>
 
@@ -80,8 +74,7 @@ const HelpingSection = () => {
                 <div
                   ref={(el) => (contentRefs.current[index] = el)}
                   style={{
-                    height:
-                      activeIndex === index ? `${heights[index]}px` : "0px",
+                    height: activeIndex === index ? `${heights[index]}px` : "0px",
                   }}
                   className="overflow-hidden transition-all duration-500 ease-in-out"
                 >

@@ -7,27 +7,28 @@ const HelpingSection = () => {
 
   const items = [
     {
-      title: "Skilling",
+      title: "Mining Skilling Programs",
       description:
-        "We have successfully trained over 8,500 candidates in various streams, including the mining industry, dumper operators, plumbers, security guards, and facility management, among others. These skill development initiatives have empowered individuals in Madhya Pradesh to secure sustainable livelihoods, diversify their skills, and contribute meaningfully to their communities, particularly in mining-affected areas.",
+        "In Jharkhand, we have launched skilling programs aimed at equipping individuals with the necessary expertise in mining operations, safety protocols, and alternative livelihood options. Over 1,000 youths have been trained to increase employment opportunities and foster community resilience.",
     },
     {
-      title: "Reclamation",
+      title: "Waste Recycling Initiatives",
       description:
-        "In our reclamation efforts, we have reclaimed over 300 acres of mining waste land by establishing a Guava plantation. This initiative not only restores ecological balance but also creates new economic opportunities for local communities. The plantation provides a sustainable source of income while mitigating environmental degradation caused by mining activities.",
+        "Our waste recycling initiatives in Jharkhand focus on setting up efficient recycling plants to manage industrial and domestic waste. These plants not only promote environmental sustainability but also provide jobs for over 500 local residents, contributing to the region's economic growth.",
     },
     {
-      title: "Waste Management",
+      title: "Community-Based Development",
       description:
-        "Our waste management initiatives have successfully handled waste management across 15 blocks in 3 districts, improving sanitation and environmental conditions. Additionally, we have trained professionals in facility management, equipping them with the skills needed to maintain and manage waste disposal systems efficiently, ensuring long-term sustainability in waste management practices.",
+        "Community-based projects in Jharkhand emphasize access to clean drinking water, healthcare, and education. With our initiatives, over 3,500 households have been provided with improved water sources, while health and education programs are empowering families to achieve long-term self-sufficiency.",
     },
   ];
+
 
   const contentRefs = useRef([]);
 
   useEffect(() => {
-    const calculatedHeights = contentRefs.current.map((ref) =>
-      ref ? ref.scrollHeight : 0
+    const calculatedHeights = contentRefs.current.map(
+      (ref) => (ref ? ref.scrollHeight : 0)
     );
     setHeights(calculatedHeights);
   }, []);
@@ -41,15 +42,9 @@ const HelpingSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <Heading
-            text="HOW WE’RE WORKING IN ODISHA"
-            color="text-white"
-            bgColor="bg-white"
-          />
+          <Heading text="HOW WE’RE WORKING IN ODISHA" color="text-white" bgColor="bg-white" />
           <p className="text-lg text-white">
-            Our response in Odisha focuses on tackling the structural causes of
-            extreme conditions in mining-affected areas through health,
-            nutrition, and livelihood support.
+            Our response in Odisha focuses on tackling the structural causes of extreme conditions in mining-affected areas through health, nutrition, and livelihood support.
           </p>
         </div>
 
@@ -80,8 +75,7 @@ const HelpingSection = () => {
                 <div
                   ref={(el) => (contentRefs.current[index] = el)}
                   style={{
-                    height:
-                      activeIndex === index ? `${heights[index]}px` : "0px",
+                    height: activeIndex === index ? `${heights[index]}px` : "0px",
                   }}
                   className="overflow-hidden transition-all duration-500 ease-in-out"
                 >

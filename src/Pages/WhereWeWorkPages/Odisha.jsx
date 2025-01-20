@@ -5,6 +5,7 @@ import Achievements from '../../Components/WhereWeWork/Odisha/Achievements'
 import HelpingSection from '../../Components/WhereWeWork/Odisha/HelpingSection'
 import Locations from '../../Components/WhereWeWork/Odisha/Locations'
 import Details from '../../Components/WhereWeWork/Odisha/Details'
+import ImpactSection from '../../Components/WhereWeWork/Odisha/Impact'
 
 const Odisha = () => {
   return (
@@ -15,6 +16,7 @@ const Odisha = () => {
         <Locations />
         {/* <CardsSection /> */}
         <HelpingSection />
+        <ImpactSection />
     </div>
   )
 }

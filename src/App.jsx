@@ -9,7 +9,6 @@ import Footer2 from "./Components/Common/Footer2";
 import CareersPage from "./Pages/CareersPage";
 import WhatWeDo from "./Pages/WhatWeDo";
 import Tenders from "./Pages/Tenders";
-import { use } from "react";
 import Loader from "./Components/Common/Loader/Loader";
 import JobsPage from "./Pages/JobsPage";
 import YoungProfessionals from "./Pages/YoungProfessionals";
@@ -33,11 +32,8 @@ import Dashboard from "./Pages/Dashboard";
 import Odisha from "./Pages/WhereWeWorkPages/Odisha";
 import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
 import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
-import MadhyaPradesh from "./Pages/WhereWeWorkPages/MadhyaPradesh";
-import Maharashtra from "./Pages/WhereWeWorkPages/Maharashtra";
-import Karnataka from "./Pages/WhereWeWorkPages/Karnataka";
+import Assam from "./Pages/WhereWeWorkPages/Assam";
 import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
-import Nagaland from "./Pages/WhereWeWorkPages/Nagaland";
 
 
 function App() {
@@ -113,11 +109,8 @@ function App() {
         <Route path="/where-we-work/odisha" element={<Odisha />} />
         <Route path="/where-we-work/chhattisgarh" element={<Chattisgarh />} />
         <Route path="/where-we-work/jharkhand" element={<Jharkhand />} />
-        <Route path="/where-we-work/madhya-pradesh" element={<MadhyaPradesh />} />
-        <Route path="/where-we-work/maharashtra" element={<Maharashtra />} />
-        <Route path="/where-we-work/karnataka" element={<Karnataka />} />
         <Route path="/where-we-work/tamil-nadu" element={<TamilNadu />} />
-        <Route path="/where-we-work/nagaland" element={<Nagaland />} />
+        <Route path="/where-we-work/assam" element={<Assam />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>

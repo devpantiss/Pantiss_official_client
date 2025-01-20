@@ -36,18 +36,18 @@ const LocationCards = () => {
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
     },
     {
-      name: "Madhya Pradesh",
-      position: [22.9734, 78.6569],
-      path: "/where-we-work/madhya-pradesh",
+      name: "Tamil Nadu",
+      position: [11.1271, 78.6569],
+      path: "/where-we-work/tamil-nadu",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737363813/mp_dbfkkq.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364635/tamilnadu_vd888x.jpg",
     },
     {
-      name: "Maharashtra",
-      position: [19.7515, 75.7139],
-      path: "/where-we-work/maharashtra",
+      name: "Assam",
+      position: [26.2447, 92.5376],
+      path: "/where-we-work/assam",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364096/Gateway_of_India_uhufmp.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364708/mohamed-abdul-rasheed-En_YGRzonpE-unsplash_epgixj.jpg", // Replace with the appropriate image URL if needed
     },
     {
       name: "Chhattisgarh",
@@ -56,28 +56,8 @@ const LocationCards = () => {
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364380/Chattisgarh_zoaot8.jpg",
     },
-    {
-      name: "Karnataka",
-      position: [15.3173, 75.7139],
-      path: "/where-we-work/karnataka",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364485/bangalore_aveug5.jpg",
-    },
-    {
-      name: "Tamil Nadu",
-      position: [11.1271, 78.6569],
-      path: "/where-we-work/tamil-nadu",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364635/tamilnadu_vd888x.jpg",
-    },
-    {
-      name: "Nagaland",
-      position: [26.1584, 94.5624],
-      path: "/where-we-work/nagaland",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364708/mohamed-abdul-rasheed-En_YGRzonpE-unsplash_epgixj.jpg",
-    },
   ];
+  
 
   const locations = states.map((state) => ({
     name: state.name,
