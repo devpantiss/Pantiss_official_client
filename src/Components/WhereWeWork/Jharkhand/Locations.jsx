@@ -27,20 +27,28 @@ const Locations = () => {
 
   const states = [
     {
-      name: "Guwahati",
-      position: [26.1445, 91.7362],
-      path: "/where-we-work/guwahati",
+      name: "Bokaro",
+      position: [23.6693, 86.1511],
+      path: "/where-we-work/bokaro",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450493/TNIE_import_2023_3_6_original_Illegalcoalmining_cthtx2.avif",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737445215/bokaro_bbtz81.jpg", // Replace with actual image URL if needed
     },
     {
-      name: "Dispur",
-      position: [26.1402, 91.7880],
-      path: "/where-we-work/dispur",
+      name: "Koderma",
+      position: [24.4692, 85.5932],
+      path: "/where-we-work/koderma",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450575/mining_kg3nig.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737445180/koderma2_txdz5o.jpg", // Replace with actual image URL if needed
+    },
+    {
+      name: "Dhanbad",
+      position: [23.7957, 86.4304],
+      path: "/where-we-work/dhanbad",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737445286/dhanbad_wbmxrl.jpg", // Replace with actual image URL if needed
     },
   ];
+  
   
 
   const locations = states.map((state) => ({
@@ -65,17 +73,17 @@ const Locations = () => {
       <div className="text-center mb-6">
         <div className="flex justify-center items-center">
           <Heading
-            text="OUR PROJECTS ACROSS LOCATIONS"
+            text="OUR PROJECTS ACROSS DISTRICTS"
             color="text-black"
             bgColor="bg-red-600"
           />
         </div>
 
         <p className="text-black mt-4 max-w-2xl mx-auto">
-          With teams working across Guwahati and Dispur, our initiatives are
+          With teams working across various regions, our initiatives are
           dedicated to improving ecosystems, boosting sustainability, and
           empowering local communities. Explore the variety of projects
-          transforming landscapes in Assam.
+          transforming landscapes in India.
         </p>
       </div>
 
@@ -104,7 +112,7 @@ const Locations = () => {
 
       {view === "cards" ? (
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-4 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-4 mt-10">
             {states.map((state) => (
               <div
                 key={state.name}
@@ -123,8 +131,8 @@ const Locations = () => {
         </div>
       ) : (
         <MapContainer
-          center={[26.1445, 91.7362]} // Centered on Guwahati
-          zoom={10}
+          center={[20.9517, 85.0985]} // Centered on Odisha
+          zoom={7}
           scrollWheelZoom={false}
           className="w-full h-[750px] rounded-lg overflow-hidden"
         >
@@ -139,6 +147,7 @@ const Locations = () => {
               icon={redMarkerIcon}
             >
               <Popup className="w-[350px] lg:w-[450px]">
+                {/* <div className="text-center w-full"> */}
                 <img src={location.image} className="h-full w-full" />
                 <p className="font-bold">{location.name}</p>
                 <Link
@@ -147,6 +156,7 @@ const Locations = () => {
                 >
                   View Projects
                 </Link>
+                {/* </div> */}
               </Popup>
             </Marker>
           ))}

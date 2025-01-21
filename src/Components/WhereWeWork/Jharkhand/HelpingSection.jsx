@@ -7,22 +7,21 @@ const HelpingSection = () => {
 
   const items = [
     {
-      title: "Mining Skilling Programs",
+      title: "Skilling in Iron & Steel and Mining Industries",
       description:
-        "In Jharkhand, we have launched skilling programs aimed at equipping individuals with the necessary expertise in mining operations, safety protocols, and alternative livelihood options. Over 1,000 youths have been trained to increase employment opportunities and foster community resilience.",
+        "In Bokaro, we have successfully trained over 1,000 workers in the iron & steel and mining industries. These programs focus on equipment operation, safety protocols, and sustainable practices, empowering youth and addressing unemployment in mining-affected areas.",
     },
     {
-      title: "Waste Recycling Initiatives",
+      title: "Waste Segregation Plant and Training",
       description:
-        "Our waste recycling initiatives in Jharkhand focus on setting up efficient recycling plants to manage industrial and domestic waste. These plants not only promote environmental sustainability but also provide jobs for over 500 local residents, contributing to the region's economic growth.",
+        "In Koderma, we established a waste segregation plant catering to five blocks and trained 500 workers in waste segregation techniques. This initiative not only promotes environmental sustainability but also generates employment opportunities for the local population.",
     },
     {
-      title: "Community-Based Development",
+      title: "Advanced Mining Workforce Development",
       description:
-        "Community-based projects in Jharkhand emphasize access to clean drinking water, healthcare, and education. With our initiatives, over 3,500 households have been provided with improved water sources, while health and education programs are empowering families to achieve long-term self-sufficiency.",
+        "Across Jharkhand, we trained over 3,000 workers in advanced mining techniques and safety measures. This effort has significantly improved employability, enhanced productivity, and empowered communities in mining-affected regions.",
     },
   ];
-
 
   const contentRefs = useRef([]);
 
@@ -42,9 +41,9 @@ const HelpingSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <Heading text="HOW WE’RE WORKING IN ODISHA" color="text-white" bgColor="bg-white" />
+          <Heading text="HOW WE’RE WORKING IN JHARKHAND" color="text-white" bgColor="bg-white" />
           <p className="text-lg text-white">
-            Our response in Odisha focuses on tackling the structural causes of extreme conditions in mining-affected areas through health, nutrition, and livelihood support.
+            In Jharkhand, our focus is on addressing challenges faced by mining-affected regions. We are actively working on skilling, waste management, and community empowerment to ensure sustainable development.
           </p>
         </div>
 

@@ -4,41 +4,48 @@ const CardsSection = () => {
   const cards = [
     {
       image:
-        "https://admin.concern.net/sites/default/files/styles/560x290/public/media/images/2022-05/BurkinaFaso_2021_RS58166__lpr.webp?changed=2022-05-23T11:00:20+00:00",
-      title: "Community Meeting",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737445286/dhanbad_wbmxrl.jpg",
+      title: "Mining Skill Development",
       description:
-        "Engaging with communities to identify challenges and solutions.",
+        "Training 1,000 individuals in mining operations, safety protocols, and equipment handling, empowering the workforce and enhancing job readiness.",
     },
     {
       image:
-        "https://admin.concern.net/sites/default/files/styles/560x290/public/media/images/2022-05/BurkinaFaso_2021_RS58119__lpr.webp?changed=2022-05-23T10:58:37+00:00",
-      title: "Mother and Children",
-      description: "Providing health and nutritional support to families.",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325299/WhatsApp_Image_2025-01-08_at_12.59.45_PM_y05oqs.jpg",
+      title: "Renewable Energy Projects",
+      description:
+        "Supporting the development of solar power plants in Neyveli to promote sustainable energy solutions and reduce carbon footprints.",
     },
     {
       image:
-        "https://admin.concern.net/sites/default/files/styles/1120x630/public/media/images/2024-06/concern-rs58180-burkina-faso-idp.webp?changed=2024-06-24T14:41:15+00:00",
-      title: "Group Session",
-      description: "Promoting awareness and teamwork for sustainable growth.",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325281/WhatsApp_Image_2025-01-08_at_1.03.30_PM_fx0igb.jpg",
+      title: "Waste Management Initiatives",
+      description:
+        "Implementing advanced waste recycling and management techniques, contributing to environmental sustainability and job creation.",
     },
     {
       image:
-        "https://admin.concern.net/sites/default/files/styles/560x290/public/media/images/2024-07/RS84336__lpr_0.webp?changed=2024-07-24T14:30:10+00:00",
-      title: "Food Distribution",
-      description: "Ensuring essential supplies reach those in need.",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325290/WhatsApp_Image_2025-01-08_at_12.55.09_PM_wh2wtb.jpg",
+      title: "Community-Based Projects",
+      description:
+        "Improving access to healthcare, education, and clean drinking water for communities in and around Neyveli.",
     },
     {
       image:
-        "https://admin.concern.net/sites/default/files/styles/180x110/public/media/images/2024-07/RS84353__lpr.jpg?changed=2024-08-12T14:56:37+00:00",
-      title: "Assistance Desk",
-      description: "Providing support and guidance to the local population.",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325280/WhatsApp_Image_2025-01-08_at_1.03.09_PM_e0bqin.jpg",
+      title: "Infrastructure Development",
+      description:
+        "Building essential infrastructure for better transportation, housing, and utilities for workers and their families.",
     },
   ];
 
   return (
     <div className="bg-gray-100">
       <div className="max-w-6xl mx-auto py-12 px-6">
-        <div className="grid grid-cols-2 gap-6">
+        <h2 className="text-2xl font-bold text-center text-black mb-8">
+          Tamil Nadu NLC Initiatives
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}

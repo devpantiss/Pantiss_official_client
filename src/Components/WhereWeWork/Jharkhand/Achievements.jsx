@@ -5,21 +5,21 @@ const Achievements = () => {
   const achievements = [
     {
       number: "1",
-      title: "Mining Skilling Programs",
+      title: "Skilling in Iron & Steel and Mining Industries",
       description:
-        "In 2023, over 1,200 individuals in Jharkhand were trained in mining safety, equipment operation, and alternative livelihoods under skilling programs aimed at empowering youth and reducing unemployment in mining-affected areas.",
+        "In Bokaro, we successfully trained 1,000 workers in the iron & steel and mining industries, equipping them with the skills required for equipment operation, safety protocols, and sustainable practices, in partnership with DMFT and TATA Steel mining.",
     },
     {
       number: "2",
-      title: "Waste Recycling Plants",
+      title: "Waste Segregation Plant and Training",
       description:
-        "Two waste recycling plants were established in key districts of Jharkhand, providing employment to over 500 locals while effectively managing industrial and domestic waste to promote environmental sustainability.",
+        "In Koderma, a waste segregation plant was set up, catering to five blocks. Additionally, 500 workers were trained in waste segregation techniques, contributing to environmental sustainability and employment generation, in partnership with DMFT.",
     },
     {
       number: "3",
-      title: "Community Development",
+      title: "Mining Workforce Development",
       description:
-        "Through targeted community initiatives, over 3,000 households gained access to clean drinking water and healthcare services. Educational programs were launched to improve literacy rates in rural mining-affected regions.",
+        "Over 3,000 workers were trained in advanced mining techniques and safety measures, empowering them to secure employment and improve productivity in mining-affected regions across Jharkhand, in partnership with NSDC and Ministry of Mines.",
     },
   ];
 

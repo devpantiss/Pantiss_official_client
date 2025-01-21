@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="relative h-[100vh] w-full">
       {/* Background Image */}
       <img
-        src="https://admin.concern.net/sites/default/files/styles/hero_tablet/public/media/images/2024-06/concern-rs58168-burkina-faso-idp-distribution.jpg?changed=2024-06-24T14:32:32+00:00"
+        src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737443769/hirakud_fz5s3k.jpg"
         alt="Banner Background"
         className="h-full w-full object-cover"
       />

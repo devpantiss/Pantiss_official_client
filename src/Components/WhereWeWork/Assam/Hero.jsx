@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Hero = () => {
+const HeroAssam = () => {
   return (
     <div className="relative h-[100vh] w-full">
       {/* Background Image */}
       <img
-        src="https://admin.concern.net/sites/default/files/styles/hero_tablet/public/media/images/2024-06/concern-rs58168-burkina-faso-idp-distribution.jpg?changed=2024-06-24T14:32:32+00:00"
+        src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737443556/shane-mclendon-EN1tF2EG-50-unsplash_w3kctq.jpg"
         alt="Banner Background"
         className="h-full w-full object-cover"
       />
@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
         
         {/* Title */}
-        <h1 className="text-4xl lg:text-7xl font-bold mb-4">Odisha</h1>
+        <h1 className="text-4xl lg:text-7xl font-bold mb-4">Assam</h1>
         
         {/* Time Spent */}
         <div className="flex items-center gap-2 bg-red-600 bg-opacity-80 py-2 px-4 rounded-md w-fit">
@@ -49,4 +49,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroAssam;
