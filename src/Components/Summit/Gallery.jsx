@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Heading from "../Common/Heading";
 
 const Gallery = () => {
   // Image URLs and their respective grid spans
-  const images = [
+  const images = useMemo(() => [
     { url: "https://indiacsrsummit.in/new-template/gallery/1.png", span: "" },
     { url: "https://indiacsrsummit.in/new-template/gallery/33.JPG", span: "" },
     { url: "https://indiacsrsummit.in/new-template/gallery/34.JPG", span: "" },
@@ -28,7 +28,7 @@ const Gallery = () => {
       span: "col-span-2",
     },
     { url: "https://indiacsrsummit.in/new-template/gallery/14.JPG", span: "" },
-  ];
+  ], []); // Memoize the image list to avoid re-calculating it on re-renders
 
   return (
     <section className="py-10 px-6 bg-white">
@@ -45,6 +45,7 @@ const Gallery = () => {
                 src={image.url}
                 alt={`Gallery Image ${index + 1}`}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                loading="lazy" // Lazy loading
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity duration-300"></div>
             </div>
