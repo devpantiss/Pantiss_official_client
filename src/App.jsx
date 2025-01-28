@@ -34,7 +34,20 @@ import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
 import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
 import Assam from "./Pages/WhereWeWorkPages/Assam";
 import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
-
+import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
+import Jajapur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajapur";
+import Jharsuguda from "./Pages/WhereWeWorkPages/OdishaDistricts/Jharsuguda";
+import Sundargarh from "./Pages/WhereWeWorkPages/OdishaDistricts/Sundargarh";
+import Keonjhar from "./Pages/WhereWeWorkPages/OdishaDistricts/Keonjhar";
+import Kalahandi from "./Pages/WhereWeWorkPages/OdishaDistricts/Kalahandi";
+import Kandhamal from "./Pages/WhereWeWorkPages/OdishaDistricts/Kandhamal";
+import Mayurbhanj from "./Pages/WhereWeWorkPages/OdishaDistricts/Mayurbhanj";
+import Koderma from "./Pages/WhereWeWorkPages/JharkhandDistricts/Koderma";
+import Dhanbad from "./Pages/WhereWeWorkPages/JharkhandDistricts/Dhanbad";
+import Bokaro from "./Pages/WhereWeWorkPages/JharkhandDistricts/Bokaro";
+import Neyveli from "./Pages/WhereWeWorkPages/TamilNaduDistricts/Neyveli";
+import Guwati from "./Pages/WhereWeWorkPages/AssamDistricts/Guwati";
+import Dispur from "./Pages/WhereWeWorkPages/AssamDistricts/Dispur";
 
 function App() {
   const location = useLocation();
@@ -59,7 +72,6 @@ function App() {
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -79,30 +91,63 @@ function App() {
         <Route path="/whatwedo/*" element={<WhatWeDo />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
-        <Route path="/careers/jobs" element={<JobsPage />} /> {/* Nested Route */}
+        <Route path="/careers/jobs" element={<JobsPage />} />{" "}
+        {/* Nested Route */}
         <Route path="/tenders" element={<Tenders />} />
         <Route path="/where-we-work" element={<WhereWeWorkPage />} />
-        <Route path="/programmes/young-professionals" element={<YoungProfessionals />} />
-        <Route path="/programmes/internships" element={<InternshipProgramme />} />
+        <Route
+          path="/programmes/young-professionals"
+          element={<YoungProfessionals />}
+        />
+        <Route
+          path="/programmes/internships"
+          element={<InternshipProgramme />}
+        />
         <Route path="/fellowship" element={<Fellowship />} />
         <Route path="/summit" element={<SummitPage />} />
         <Route path="/publications" element={<Publications />} />
-
-
         {/* Life-at-pantiss */}
-        <Route path="/life-at-pantiss/people-at-pantiss" element={<PeopleAtPantiss />} />
-        <Route path="/life-at-pantiss/inclusiveness-and-diversity" element={<InclusivenessAndDiversity />} />
-        <Route path="/life-at-pantiss/zero-tolerance-for-harassment" element={<ZeroToleranceToHarassment />} />
-        <Route path="/life-at-pantiss/meet-the-leaders" element={<MeetTheLeaders />} />
-        <Route path="/life-at-pantiss/investing-in-mental-health" element={<InvestingInMentalHealth />} />
-
-
+        <Route
+          path="/life-at-pantiss/people-at-pantiss"
+          element={<PeopleAtPantiss />}
+        />
+        <Route
+          path="/life-at-pantiss/inclusiveness-and-diversity"
+          element={<InclusivenessAndDiversity />}
+        />
+        <Route
+          path="/life-at-pantiss/zero-tolerance-for-harassment"
+          element={<ZeroToleranceToHarassment />}
+        />
+        <Route
+          path="/life-at-pantiss/meet-the-leaders"
+          element={<MeetTheLeaders />}
+        />
+        <Route
+          path="/life-at-pantiss/investing-in-mental-health"
+          element={<InvestingInMentalHealth />}
+        />
         {/* Benefits */}
-        <Route path="/benefits-at-pantiss/career-development" element={<CareerDevelopment />} />
-        <Route path="/benefits-at-pantiss/tution-assistance" element={<TutionAssistance />} />
-        <Route path="/benefits-at-pantiss/parenting-benefits" element={<ParentingBenefits />} />
-        <Route path="/benefits-at-pantiss/health-insurance" element={<HealthInsurance />} />
-        <Route path="/benefits-at-pantiss/retirement-programmes" element={<RetirementProgrammes />} />
+        <Route
+          path="/benefits-at-pantiss/career-development"
+          element={<CareerDevelopment />}
+        />
+        <Route
+          path="/benefits-at-pantiss/tution-assistance"
+          element={<TutionAssistance />}
+        />
+        <Route
+          path="/benefits-at-pantiss/parenting-benefits"
+          element={<ParentingBenefits />}
+        />
+        <Route
+          path="/benefits-at-pantiss/health-insurance"
+          element={<HealthInsurance />}
+        />
+        <Route
+          path="/benefits-at-pantiss/retirement-programmes"
+          element={<RetirementProgrammes />}
+        />
 
 
         {/* Where We Work */}
@@ -111,6 +156,40 @@ function App() {
         <Route path="/where-we-work/jharkhand" element={<Jharkhand />} />
         <Route path="/where-we-work/tamil-nadu" element={<TamilNadu />} />
         <Route path="/where-we-work/assam" element={<Assam />} />
+
+
+        {/* Odisha Districts */}
+        <Route path="/where-we-work/odisha/anugul" element={<Anugul />} />
+        <Route path="/where-we-work/odisha/jajapur" element={<Jajapur />} />
+        <Route
+          path="/where-we-work/odisha/jharsuguda"
+          element={<Jharsuguda />}
+        />
+        <Route
+          path="/where-we-work/odisha/sundargarh"
+          element={<Sundargarh />}
+        />
+        <Route path="/where-we-work/odisha/keonjhar" element={<Keonjhar />} />
+        <Route path="/where-we-work/odisha/kalahandi" element={<Kalahandi />} />
+        <Route path="/where-we-work/odisha/kandhamal" element={<Kandhamal />} />
+        <Route
+          path="/where-we-work/odisha/mayurbhanj"
+          element={<Mayurbhanj />}
+        />
+
+
+        {/* Jharkhand Districts */}
+        <Route path="/where-we-work/jharkhand/koderma" element={<Koderma />} />
+        <Route path="/where-we-work/jharkhand/dhanbad" element={<Dhanbad />} />
+        <Route path="/where-we-work/jharkhand/bokaro" element={<Bokaro />} />
+
+
+        {/* Tamilnadu Districts */}
+        <Route path="/where-we-work/tamil-nadu/neyveli" element={<Neyveli />} />
+
+        {/* Assam Districts */}
+        <Route path="/where-we-work/assam/guwati" element={<Guwati />} />
+        <Route path="/where-we-work/assam/dispur" element={<Dispur />} />
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>
