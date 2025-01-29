@@ -33,7 +33,7 @@ const EventSection = () => {
           See you in October in Niyamgiri
         </div>
         <p className="text-gray-600 mt-2 text-lg">
-          16<sup>th</sup> - 17<sup>th</sup> and 18<sup>th</sup> October 2024
+          16<sup>th</sup> - 17<sup>th</sup> and 18<sup>th</sup> October 2025
         </p>
 
         {/* Download Button */}

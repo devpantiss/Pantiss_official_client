@@ -13,9 +13,9 @@ const Fellowship = () => {
       <Hero />
       <Understand />
       <FoundersSection />
+      <Stats />
       <VideoSection />
       <ReachSection />
-      <Stats />
       <ProgrammesSection />
     </div>
   );

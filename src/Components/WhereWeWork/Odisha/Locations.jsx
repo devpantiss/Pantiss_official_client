@@ -31,7 +31,7 @@ const Locations = () => {
       position: [20.8371, 85.1511],
       path: "/where-we-work/anugul",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325299/WhatsApp_Image_2025-01-08_at_12.59.45_PM_y05oqs.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/08/42/ff/85/satkosia-gorge-wildlife.jpg",
     },
     {
       name: "Jajapur",

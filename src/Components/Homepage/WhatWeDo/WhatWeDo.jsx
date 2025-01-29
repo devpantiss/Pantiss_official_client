@@ -93,7 +93,7 @@ const NewsCard = React.memo(({ card }) => (
         />
         <div className="absolute left-0 bg-black/70 px-[3px] bottom-0">
           <span
-            className={`inline-block leading-[1.5] text-lg font-extrabold uppercase bg-clip-text text-transparent bg-gradient-to-r ${card.gradient} drop-shadow-lg animate-shine`}
+            className={`inline-block leading-[1.5] text-lg lg:text-2xl font-extrabold uppercase bg-clip-text text-transparent bg-gradient-to-r ${card.gradient} drop-shadow-lg animate-shine`}
           >
             {card.title}
           </span>

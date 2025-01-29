@@ -24,6 +24,13 @@ const states = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
   },
   {
+    name: "Chhattisgarh",
+    position: [21.2787, 81.8661],
+    path: "/where-we-work/chhattisgarh",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364380/Chattisgarh_zoaot8.jpg",
+  },
+  {
     name: "Tamil Nadu",
     position: [11.1271, 78.6569],
     path: "/where-we-work/tamil-nadu",
@@ -37,13 +44,6 @@ const states = [
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364708/mohamed-abdul-rasheed-En_YGRzonpE-unsplash_epgixj.jpg",
   },
-  {
-    name: "Chhattisgarh",
-    position: [21.2787, 81.8661],
-    path: "/where-we-work/chhattisgarh",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737364380/Chattisgarh_zoaot8.jpg",
-  },
 ];
 
 const districts = {
@@ -53,7 +53,7 @@ const districts = {
       position: [20.8371, 85.1511],
       path: "/where-we-work/odisha/anugul",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325299/WhatsApp_Image_2025-01-08_at_12.59.45_PM_y05oqs.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/08/42/ff/85/satkosia-gorge-wildlife.jpg",
     },
     {
       name: "Jajapur",
@@ -90,20 +90,20 @@ const districts = {
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.49.04_PM_bs7fwk.jpg",
     },
-    {
-      name: "Kandhamal",
-      position: [20.151, 84.0737],
-      path: "/where-we-work/odisha/kandhamal",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.25_PM_v3ned2.jpg",
-    },
-    {
-      name: "Mayurbhanj",
-      position: [21.75, 86.5],
-      path: "/where-we-work/odisha/mayurbhanj",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737396006/mayurbhanj_bhcvah.jpg",
-    },
+    // {
+    //   name: "Kandhamal",
+    //   position: [20.151, 84.0737],
+    //   path: "/where-we-work/odisha/kandhamal",
+    //   image:
+    //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.25_PM_v3ned2.jpg",
+    // },
+    // {
+    //   name: "Mayurbhanj",
+    //   position: [21.75, 86.5],
+    //   path: "/where-we-work/odisha/mayurbhanj",
+    //   image:
+    //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737396006/mayurbhanj_bhcvah.jpg",
+    // },
   ],
   Jharkhand: [
     {
@@ -341,7 +341,6 @@ const HeroBanner = () => {
       },
     ],
   };
-  
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -401,10 +400,10 @@ const HeroBanner = () => {
       {selectedState && (
         <div className="mt-8 w-full max-w-7xl px-8">
           <Heading
-          text="WHERE WE WORK!"
-          color="text-black"
-          bgColor="bg-red-600"
-        />
+            text="WHERE WE WORK!"
+            color="text-black"
+            bgColor="bg-red-600"
+          />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-8 mb-8">
             {districts[selectedState]?.map((district) => (
               <div

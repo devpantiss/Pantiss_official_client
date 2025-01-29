@@ -39,18 +39,17 @@ const Exhibitors = () => {
               className="overflow-hidden"
               loop={0} // Continuous scrolling without stopping
             >
-              {multilateralPartners.map((logo, index) => (
-                <div
-                  key={index}
-                  className="flex justify-center items-center mx-2"
-                >
-                  <img
-                    src={logo}
-                    alt={`Market Partner ${index + 1}`}
-                    className="h-20 w-48 object-contain"
-                  />
-                </div>
-              ))}
+              <div className="flex space-x-10">
+                {multilateralPartners.map((logo, index) => (
+                  <div key={index} className="mx-4 flex justify-center items-center">
+                    <img
+                      src={logo}
+                      alt={`Market Partner ${index + 1}`}
+                      className="h-20 w-48 object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </Marquee>
           </div>
         </div>

@@ -1,18 +1,49 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Heading from "../../../../Common/Heading";
 
 const Details2 = () => {
+  const galleryImages = [
+    "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0705-400x400.webp",
+    "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0682-400x400.webp",
+    "https://bracinternational.org/wp-content/uploads/2024/09/Kandahar-Myankoh-Check-Dam-after-construction-1-400x400.webp",
+    "https://bracinternational.org/wp-content/uploads/2024/09/MSME-ABADEI-1-400x400.webp",
+    "https://bracinternational.org/wp-content/uploads/2024/09/DSC00496-400x400.webp",
+  ];
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="container mx-auto space-y-12 px-8">
       {/* Latest From Us */}
       <section>
-        <Heading
-          text="LATEST FROM US"
-          color="text-black"
-          bgColor="bg-red-600"
-        />{" "}
+        <Heading text="LATEST FROM US" color="text-black" bgColor="bg-red-600" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Article Cards */}
           {[
             {
               id: 1,
@@ -64,34 +95,25 @@ const Details2 = () => {
         </div>
       </section>
 
-      {/* Photo Gallery */}
+      {/* Photo Gallery with Slider */}
       <section>
-        <Heading text="PHOTO GALLERY" color="text-black" bgColor="bg-red-600" />{" "}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {[
-            "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0705-400x400.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0682-400x400.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/Kandahar-Myankoh-Check-Dam-after-construction-1-400x400.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/MSME-ABADEI-1-400x400.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/DSC00496-400x400.webp",
-          ].map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Gallery ${index + 1}`}
-              className="rounded-lg w-full h-64 object-cover"
-            />
+        <Heading text="PHOTO GALLERY" color="text-black" bgColor="bg-red-600" />
+        <Slider {...sliderSettings} className="mt-6">
+          {galleryImages.map((image, index) => (
+            <div key={index} className="px-2">
+              <img
+                src={image}
+                alt={`Gallery ${index + 1}`}
+                className="rounded-lg w-full h-64 object-cover"
+              />
+            </div>
           ))}
-        </div>
+        </Slider>
       </section>
 
       {/* Donors & Partners */}
       <section>
-        <Heading
-          text="DONORS & PARTNERS"
-          color="text-black"
-          bgColor="bg-red-600"
-        />{" "}
+        <Heading text="DONORS & PARTNERS" color="text-black" bgColor="bg-red-600" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
           {[
             "https://bracinternational.org/wp-content/uploads/2024/09/GAC-Logo.webp",

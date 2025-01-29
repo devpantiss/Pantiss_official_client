@@ -52,48 +52,32 @@ const Speakers = () => {
 
   return (
     <div className="bg-white flex flex-col justify-center items-center container mx-auto py-6 px-12">
-      <div className="relative my-12">
-        {/* Title Section */}
-        <div className="relative flex justify-center items-center">
-          <div className="w-full relative z-10">
-            <div className="flex flex-col items-center justify-center">
-              <div className="absolute z-10 h-44 w-44 rounded-full bg-white top-8 flex flex-col justify-center items-center">
-                <div className="absolute top-0 left-0 w-full h-full border-r-4 border-red-600 rounded-full"></div>
-                <div className="absolute -top-[5px] h-3 w-3 rounded-full bg-red-600"></div>
-                <div className="absolute -bottom-[5px] h-3 w-3 rounded-full bg-red-600"></div>
-                <div className="w-32 h-32 py-16 px-8 bg-red-600 rounded-full flex justify-center items-center">
-                  <span className="text-xl text-white font-bold">Speakers</span>
-                </div>
-              </div>
-            </div>
-            {/* Continuous Scrolling Marquee */}
-            <Marquee
-              gradient={false}
-              speed={50}
-              loop={0}
-              className="overflow-hidden w-[768px]"
+      {/* Title Section */}
+      <h2 className="text-2xl font-bold text-red-600 mb-6">Speakers</h2>
+
+      {/* Scrolling Marquee */}
+      <Marquee gradient={false} speed={50} pauseOnHover={true}>
+        {exhibitors.map((exhibitor, index) => (
+          <div className="py-4">
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center mx-4 p-4 bg-white ring-2 ring-red-600 shadow-md rounded-lg h-[220px] w-[300px]"
             >
-              {[...exhibitors, ...exhibitors].map((exhibitor, index) => (
-                <div key={index} className="h-full py-6">
-                  <div className="flex flex-col items-center justify-center mx-2 p-4 bg-white ring-2 ring-red-600 shadow-md rounded-lg h-[200px] w-[350px]">
-                    <img
-                      src={exhibitor.img}
-                      alt={exhibitor.name}
-                      className="h-28 w-28 object-cover rounded-full border-2 border-gray-200"
-                    />
-                    <h3 className="text-md font-semibold text-gray-800 mt-3 text-center">
-                      {exhibitor.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 text-center">
-                      {exhibitor.designation}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </Marquee>
+              <img
+                src={exhibitor.img}
+                alt={exhibitor.name}
+                className="h-28 w-28 object-cover rounded-full border-2 border-gray-200"
+              />
+              <h3 className="text-md font-semibold text-gray-800 mt-3 text-center">
+                {exhibitor.name}
+              </h3>
+              <p className="text-sm text-gray-600 text-center">
+                {exhibitor.designation}
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
+        ))}
+      </Marquee>
     </div>
   );
 };
