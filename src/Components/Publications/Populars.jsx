@@ -38,14 +38,14 @@ const PopularSection = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-8 px-6">
+    <div className="bg-white py-8 px-6">
       <div className="container mx-auto">
       <Heading text="POPULAR" color="text-black" bgColor="bg-red-500" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-4 bg-white p-4 rounded-lg shadow-md"
+              className="flex flex-col items-center gap-4 ring-2 ring-red-600 bg-white p-4 rounded-lg shadow-md"
             >
               <img
                 src={item.image}

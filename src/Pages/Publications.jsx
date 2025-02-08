@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../Components/Publications/Hero'
-import Cards from '../Components/Publications/Cards'
+// import Cards from '../Components/Publications/Cards'
 import SocialImpact from '../Components/Publications/SocialImpact'
 import ArticleSection1 from '../Components/Publications/ArticleSection1'
 import CommunicationDevelopment from '../Components/Publications/CommunicationDevelopment'
@@ -18,7 +18,7 @@ const Publications = () => {
         <ArticleSection2 />
         <CapacityDevelopment />
         <PopularSection />
-        <Cards />
+        {/* <Cards /> */}
 
     </div>
   )

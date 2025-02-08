@@ -21,7 +21,7 @@ const slides = [
   {
     title: 'Goal 1: No Poverty',
     description: 'PANTISS seeks to ensure that the benefits of industrialization are shared by all, that the living conditions of all are sustainably improved, and that no one is left behind.',
-    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725881560/photorealistic-scene-with-person-taking-care-pig-farm_ga1xpt.jpg',
+    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994534/diverse-people-refugee-camps_uuu6by.jpg',
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725875000/Goal_1_ztbv1x.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725875004/Goal_1_GDU_trvacm.gif",
     gif: true,
@@ -84,7 +84,7 @@ const slides = [
   {
     title: 'Goal 8: Decent work and Economic Growth',
     description: 'PANTISS facilitates structural transformation and economic growth by increasing the capacities of local industries for value addition, economic diversification, and export promotion, as well as supports the creation of decent jobs in industry and industry-related services.',
-    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725882100/jay-bhadreshwara-lux0psvZGLU-unsplash_vc3yje.jpg',
+    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994695/portrait-man-working-as-engineer_bqm3wo.jpg',
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874978/Goal_8_saoq0b.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874980/Goal_8_GDU_ivcg0b.gif",
     gif: true,
@@ -120,7 +120,7 @@ const slides = [
   {
     title: 'Goal 12: Responsible consumption and production',
     description: 'PANTISS promotes green industries, resource efficient management, cleaner production, energy efficiency in industry, reduction of waste and pollution, and environmental sustainability policies in industrial production and consumption, such as the circular economy approach.',
-    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725882108/ashwini-chaudhary-monty-fDY8ag9OCpg-unsplash_otnc5v.jpg',
+    bgImage: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738995045/grains-food-mix-wooden-background_pvpqbi.jpg',
     logo: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874966/Goal_12_jhbwva.jpg',
     gifUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1725874968/Goal_12_GDU_hrxfka.gif",
     gif: true,
@@ -185,7 +185,7 @@ const SDGBanner = () => {
   };
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[100vh]">
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -199,13 +199,13 @@ const SDGBanner = () => {
           }
         }}
         modules={[Mousewheel, Pagination]}
-        className="h-[85vh]"
+        className="h-[115vh]"
         onReachEnd={() => handleScrollDown()}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-screen bg-cover bg-center flex items-center justify-center"
+              className="w-full h-full bg-cover bg-center flex items-center justify-center"
               style={{
                 backgroundImage: `url(${slide.bgImage})`,
               }}

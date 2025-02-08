@@ -6,7 +6,7 @@ const HeroAnugul = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325296/WhatsApp_Image_2025-01-08_at_12.57.41_PM_kkfzkb.jpg" // Replace with your image URL
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325296/WhatsApp_Image_2025-01-08_at_12.57.41_PM_kkfzkb.jpg"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
@@ -19,30 +19,20 @@ const HeroAnugul = () => {
           ANUGUL
         </div>
 
-        {/* Main Description */}
-        <div className="mt-4">
-          <p className="text-gray-800 font-medium">
-            BRAC expanded to Afghanistan in 2002, its first country of
-            operation outside Bangladesh. The nation’s post-conflict
-            humanitarian crisis bore similarities to post-war Bangladesh, and
-            BRAC applied lessons learned from its poverty alleviation efforts to
-            Afghanistan. BRAC Afghanistan continues to serve communities in
-            hard-to-reach areas, reaching approximately 17 million people
-            through programmes in education, health, poverty alleviation, and
-            emergency response.
-          </p>
-        </div>
+        <div className=" flex flex-col lg:flex-row gap-x-5">
+          {/* Main Description */}
+          <div className="mt-4">
+            <p className="text-gray-800 text-xl font-bold">
+              Angul, Odisha, is a strategic hub for mining and industrial activities, making it an ideal location for skilling initiatives. The region hosts major mining and steel industries, providing ample opportunities for workforce development and sustainable livelihood creation. Pantiss Foundation’s skilling programs in Angul focus on equipping local youth and workers with specialized training in mining operations, safety protocols, and allied trades to enhance employability and bridge the skill gap.
+            </p>
+          </div>
 
-        {/* Secondary Description */}
-        <div className="mt-2">
-          <p className="text-gray-700">
-            We drive large-scale transformation by empowering women and their
-            families to overcome poverty, build resilience, and foster
-            resourcefulness. Our cost-effective, evidence-based programmes
-            integrate social development—working across health, education, food
-            security, and livelihoods—with market-based solutions in
-            partnership with local communities.
-          </p>
+          {/* Secondary Description */}
+          <div className="mt-2">
+            <p className="text-gray-700">
+              Our interventions extend beyond mining to include sustainable development projects, addressing environmental concerns and promoting responsible resource management. Through collaborations with industry leaders, government bodies, and community stakeholders, Pantiss Foundation is fostering an ecosystem of inclusive growth, ensuring that the local population benefits from industrial advancements while preserving their cultural and ecological heritage.
+            </p>
+          </div>
         </div>
       </div>
     </div>

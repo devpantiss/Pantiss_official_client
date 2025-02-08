@@ -23,40 +23,40 @@ const Footer2 = () => {
         <div className="border-t border-white mt-8 pt-4 flex flex-col justify-center items-center">
           <h3 className="text-lg font-bold mb-4 text-center">What we do</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 gap-x-6">
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/EIA-SIA-for-land-acquisition" className="hover:underline hover:text-red-600 text-center">
               EIA/SIA for Land Acquisition@Mines
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/rehabilitation-&-resettlement-of-mines" className="hover:underline hover:text-red-600 text-center">
               Rehabiliation & Resettlement
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/skill-training-for-mining-affected-youth" className="hover:underline hover:text-red-600 text-center">
               Skill Training for Mining affected Youth
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/enterprise-growth-in-mining-villages" className="hover:underline hover:text-red-600 text-center">
               Enterprise Growth in Mining Villages
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/reclamation-in-abandoned-mines" className="hover:underline hover:text-red-600 text-center">
               Reclamation in Abandoned Mines
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/just-transition-for-mining-workers" className="hover:underline hover:text-red-600 text-center">
               Just Transition for Mining Workers
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/nutrition-and-wellbeing-in-mining-villages" className="hover:underline hover:text-red-600 text-center">
               Nutrition & Wellbeing in Mining Villages
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/eco-mine-tourism" className="hover:underline hover:text-red-600 text-center">
               Eco-Mine Tourism
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/model-mining-village-in-making" className="hover:underline hover:text-red-600 text-center">
               Model Mining Village in Making
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/indegenous-community-empowerment" className="hover:underline hover:text-red-600 text-center">
               Indegenous Community Empowerment
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/waterbody-restoration-in-mines" className="hover:underline hover:text-red-600 text-center">
               Waterbody Restoration in Mines
             </Link>
-            <Link className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/connecting-remote-mining-habitations" className="hover:underline hover:text-red-600 text-center">
               Connecting Remote Mining Habitations
             </Link>
           </div>
@@ -108,13 +108,13 @@ const Footer2 = () => {
           </div>
 
           <div className="flex justify-center items-center space-x-4 mt-2 md:mt-0">
-            <a href="#" className="hover:underline hover:text-red-600">
+            <a href="/" className="hover:underline hover:text-red-600">
               Home
             </a>
-            <a href="#" className="hover:underline hover:text-red-600">
+            <a href="/whoweare/about" className="hover:underline hover:text-red-600">
               About Us
             </a>
-            <a href="#" className="hover:underline hover:text-red-600">
+            <a href="/contact-us" className="hover:underline hover:text-red-600">
               Contact Us
             </a>
             <a href="/careers" className="hover:underline hover:text-red-600">

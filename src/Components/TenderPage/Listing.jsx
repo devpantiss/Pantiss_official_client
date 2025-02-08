@@ -21,9 +21,9 @@ const TendersListing = () => {
   // };
 
   return (
-    <div className="bg-gray-100 p-8">
+    <div className="bg-white p-8">
       {/* Header */}
-      <div className="bg-white shadow flex justify-between items-center rounded-lg p-6 mb-8">
+      <div className="bg-white ring-1 ring-red-600 shadow flex justify-between items-center rounded-lg p-6 mb-8">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">Tender List</h1>
           <p className="text-gray-600 mt-2">
@@ -49,7 +49,7 @@ const TendersListing = () => {
         {tenders.map((tender) => (
           <div
             key={tender.id}
-            className="bg-white shadow rounded-lg p-6 flex flex-col"
+            className="bg-white ring-1 ring-red-600 shadow rounded-lg p-6 flex flex-col"
           >
             <div className="space-y-1">
               <h2 className="text-lg font-semibold text-gray-800">

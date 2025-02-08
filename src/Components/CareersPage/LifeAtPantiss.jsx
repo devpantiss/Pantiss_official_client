@@ -49,7 +49,8 @@ const LifeAtBRAC = () => {
         <div className="lg:col-span-2 relative shadow-lg rounded-lg overflow-hidden group">
           <Link to="/life-at-pantiss/people-at-pantiss">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390737/WhatsApp_Image_2024-12-28_at_6.28.04_PM_rscd9s.jpg"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007535/WhatsApp_Image_2025-01-15_at_7.50.27_PM_isreux.jpg"
+              // src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390737/WhatsApp_Image_2024-12-28_at_6.28.04_PM_rscd9s.jpg"
               alt="Zero Tolerance for Harassment"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />

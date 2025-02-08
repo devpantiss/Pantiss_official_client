@@ -60,14 +60,14 @@ const districts = {
       position: [20.8504, 86.3377],
       path: "/where-we-work/odisha/jajapur",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325283/WhatsApp_Image_2025-01-08_at_1.04.14_PM_nfgshn.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738227984/jajapur_kq8q03.jpg",
     },
     {
       name: "Jharsuguda",
       position: [21.8554, 84.0062],
       path: "/where-we-work/odisha/jharsuguda",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325281/WhatsApp_Image_2025-01-08_at_1.03.30_PM_fx0igb.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738228112/jharsuguda_b6v2ll.jpg",
     },
     {
       name: "Sundargarh",
@@ -88,7 +88,7 @@ const districts = {
       position: [19.9014, 83.1649],
       path: "/where-we-work/odisha/kalahandi",
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.49.04_PM_bs7fwk.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738228210/kalahandi_hobe6n.jpg",
     },
     // {
     //   name: "Kandhamal",
@@ -153,7 +153,15 @@ const districts = {
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737443051/Chennai_vkkosd.jpg", // Replace with actual image URL if needed
     },
   ],
-  Chhattisgarh: [],
+  Chhattisgarh: [
+    {
+      name: "Korba",
+      position: [22.3595, 82.7501],
+      path: "/where-we-work/Chhattisgarh/korba",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738228494/korba_wraof6.webp",
+    },
+  ],
 };
 
 const latestNews = {
@@ -414,7 +422,7 @@ const HeroBanner = () => {
                   <img
                     src={district.image}
                     alt={district.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-64 object-cover"
                   />
                   <div className="p-4 absolute bg-white/60 bottom-0">
                     <h3 className="text-lg lg:text-2xl text-red-600 font-bold">

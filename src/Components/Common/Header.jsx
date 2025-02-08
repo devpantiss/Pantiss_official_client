@@ -358,6 +358,7 @@ const Header = () => {
               {isWhatWeDoOpen && (
                 <div className="absolute mt-6 grid grid-cols-3 w-[1000px] text-black bg-red-600 border rounded shadow-lg z-20">
                   <Link
+                    to="/what-we-do/EIA-SIA-for-land-acquisition"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -368,6 +369,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/rehabilitation-&-resettlement-of-mines"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -378,6 +380,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/skill-training-for-mining-affected-youth"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -388,6 +391,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/enterprise-growth-in-mining-villages"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -398,6 +402,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/reclamation-in-abandoned-mines"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -408,6 +413,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/just-transition-for-mining-workers"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -418,6 +424,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/nutrition-and-wellbeing-in-mining-villages"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -428,6 +435,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/eco-mine-tourism"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -436,6 +444,7 @@ const Header = () => {
                     <span className="text-[18px]">Eco-Mine Tourism</span>
                   </Link>
                   <Link
+                    to="/what-we-do/model-mining-village-in-making"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -446,6 +455,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/indegenous-community-empowerment"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -456,6 +466,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/waterbody-restoration-in-mines"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white hover:rounded-md text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -466,6 +477,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/what-we-do/connecting-remote-mining-habitations"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
@@ -671,6 +683,7 @@ const Header = () => {
               {isWhatWeDoOpen && (
                 <div className="grid grid-cols-2 pl-6 mt-4 gap-y-4 gap-x-4">
                   <Link
+                    to="/what-we-do/EIA-SIA-for-land-acquisition"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -678,6 +691,7 @@ const Header = () => {
                     EIA/SIA for Land Acquisition@Mines
                   </Link>
                   <Link
+                    to="/what-we-do/rehabilitation-&-resettlement-of-mines"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -685,6 +699,7 @@ const Header = () => {
                     Rehabilation & Resettlement of Mines
                   </Link>
                   <Link
+                    to="/what-we-do/skill-training-for-mining-affected-youth"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -692,6 +707,7 @@ const Header = () => {
                     Skill Training for Mining affected Youth
                   </Link>
                   <Link
+                    to="/what-we-do/enterprise-growth-in-mining-villages"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -699,6 +715,7 @@ const Header = () => {
                     Enterprise Growth in Mining Villages
                   </Link>
                   <Link
+                    to="/what-we-do/reclamation-in-abandoned-mines"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -706,6 +723,7 @@ const Header = () => {
                     Reclamation in Abandoned Mines
                   </Link>
                   <Link
+                    to="/what-we-do/just-transition-for-mining-workers"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -713,6 +731,7 @@ const Header = () => {
                     Just Transition for Mining Workers
                   </Link>
                   <Link
+                    to="/what-we-do/nutrition-and-wellbeing-in-mining-villages"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -720,6 +739,7 @@ const Header = () => {
                     Nutrition & Wellbeing in Mining Villages
                   </Link>
                   <Link
+                    to="/what-we-do/eco-mine-tourism"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -727,6 +747,7 @@ const Header = () => {
                     Eco-Mine Tourism
                   </Link>
                   <Link
+                    to="/what-we-do/model-mining-village-in-making"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -734,6 +755,7 @@ const Header = () => {
                     Model Mining Village in Making
                   </Link>
                   <Link
+                    to="/what-we-do/indegenous-community-empowerment"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -741,6 +763,7 @@ const Header = () => {
                     Indegenous Community Empowerment
                   </Link>
                   <Link
+                    to="/what-we-do/waterbody-restoration-in-mines"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
@@ -748,6 +771,7 @@ const Header = () => {
                     Waterbody Restoration in Mines
                   </Link>
                   <Link
+                    to="/what-we-do/connecting-remote-mining-habitations"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >

@@ -24,12 +24,12 @@ const SdgHeader = () => {
 
         {/* Nav Links */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-pink-600 font-medium">Home</a>
-          <a href="#" className="text-pink-600 font-medium">SDGs at Halftime</a>
+          <a href="/" className="text-pink-600 font-medium">Home</a>
+          {/* <a href="#" className="text-pink-600 font-medium">SDGs at Halftime</a> */}
           {/* <a href="#" className="text-pink-600 font-medium">Bangladesh and SDGs</a> */}
-          <a href="#" className="text-pink-600 font-medium">SDGs and PANTISS</a>
-          <a href="#" className="text-pink-600 font-medium">Methodology</a>
-          <a href="#" className="text-pink-600 font-medium">Way Forward</a>
+          {/* <a href="#" className="text-pink-600 font-medium">SDGs and PANTISS</a> */}
+          {/* <a href="#" className="text-pink-600 font-medium">Methodology</a> */}
+          {/* <a href="#" className="text-pink-600 font-medium">Way Forward</a> */}
         </nav>
 
         {/* Hamburger Icon for mobile */}
@@ -49,11 +49,11 @@ const SdgHeader = () => {
         } md:hidden bg-white shadow-md p-4 space-y-4`}
       >
         <a href="#" className="block text-pink-600 font-medium">Home</a>
-        <a href="#" className="block text-pink-600 font-medium">SDGs at Halftime</a>
+        {/* <a href="#" className="block text-pink-600 font-medium">SDGs at Halftime</a> */}
         {/* <a href="#" className="block text-pink-600 font-medium">Bangladesh and SDGs</a> */}
-        <a href="#" className="block text-pink-600 font-medium">SDGs and PANTISS</a>
-        <a href="#" className="block text-pink-600 font-medium">Methodology</a>
-        <a href="#" className="block text-pink-600 font-medium">Way Forward</a>
+        {/* <a href="#" className="block text-pink-600 font-medium">SDGs and PANTISS</a> */}
+        {/* <a href="#" className="block text-pink-600 font-medium">Methodology</a> */}
+        {/* <a href="#" className="block text-pink-600 font-medium">Way Forward</a> */}
       </div>
     </header>
   );

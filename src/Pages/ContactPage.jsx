@@ -1,11 +1,12 @@
 import React from "react";
+import Heading from "../Components/Common/Heading";
 
 const ContactPage = () => {
   return (
     <section className="bg-gray-50 py-8 px-6">
       <div className="container mx-auto max-w-4xl">
-        <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800">Contact us</h1>
+        <header className="text-center flex flex-col justify-center items-center mb-8">
+          <Heading text="CONTACT US" color="text-black" bgColor="bg-red-500" />
           <p className="text-sm text-gray-500 mt-1">
             Last modified on Friday, 17 January 2025
           </p>
@@ -13,7 +14,7 @@ const ContactPage = () => {
 
         <div>
           {/* Headquarters */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Headquarters
           </h2>
           <div className="mb-6">
@@ -91,7 +92,7 @@ const ContactPage = () => {
           </div>
 
           {/* Training Centers */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Training Centers
           </h2>
           <div className="space-y-6">

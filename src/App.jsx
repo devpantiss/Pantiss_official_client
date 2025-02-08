@@ -40,14 +40,27 @@ import Jharsuguda from "./Pages/WhereWeWorkPages/OdishaDistricts/Jharsuguda";
 import Sundargarh from "./Pages/WhereWeWorkPages/OdishaDistricts/Sundargarh";
 import Keonjhar from "./Pages/WhereWeWorkPages/OdishaDistricts/Keonjhar";
 import Kalahandi from "./Pages/WhereWeWorkPages/OdishaDistricts/Kalahandi";
-import Kandhamal from "./Pages/WhereWeWorkPages/OdishaDistricts/Kandhamal";
-import Mayurbhanj from "./Pages/WhereWeWorkPages/OdishaDistricts/Mayurbhanj";
+// import Kandhamal from "./Pages/WhereWeWorkPages/OdishaDistricts/Kandhamal";
+// import Mayurbhanj from "./Pages/WhereWeWorkPages/OdishaDistricts/Mayurbhanj";
 import Koderma from "./Pages/WhereWeWorkPages/JharkhandDistricts/Koderma";
 import Dhanbad from "./Pages/WhereWeWorkPages/JharkhandDistricts/Dhanbad";
 import Bokaro from "./Pages/WhereWeWorkPages/JharkhandDistricts/Bokaro";
 import Neyveli from "./Pages/WhereWeWorkPages/TamilNaduDistricts/Neyveli";
-import Guwati from "./Pages/WhereWeWorkPages/AssamDistricts/Guwati";
 import Dispur from "./Pages/WhereWeWorkPages/AssamDistricts/Dispur";
+import Korba from "./Pages/WhereWeWorkPages/Chhattisgarh/Korba";
+import Guwahati from "./Pages/WhereWeWorkPages/AssamDistricts/Guwahati";
+import EiaSia from "./Pages/WhatWeDo/EiaSia";
+import RehabilitationResettlementOfMines from "./Pages/WhatWeDo/RehabilitationResettlementOfMines";
+import SkillTrainingForMiningAffectedYouth from "./Pages/WhatWeDo/SkillTrainingForMiningAffectedYouth";
+import EnterpriseGrowthInMiningVillages from "./Pages/WhatWeDo/EnterpriseGrowthInMiningVillages";
+import ReclamationOfAbandonedMines from "./Pages/WhatWeDo/ReclamationOfAbandonedMines";
+import JustTransitionForMiningWorkers from "./Pages/WhatWeDo/JustTransitionForMiningWorkers";
+import Nutrition from "./Pages/WhatWeDo/Nutrition&WellbeingInMiningVillages";
+import EcoMineTourism from "./Pages/WhatWeDo/EcoMineTourism";
+import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMaking";
+import IndegenousCommunityEmpowerment from "./Pages/WhatWeDo/IndegenousCommunityEmpowerment";
+import WaterbodyRestorationInMines from "./Pages/WhatWeDo/WaterbodyRestorationInMines";
+import ConnectingRemoteMiningHabitations from "./Pages/WhatWeDo/ConnectingRemoteMiningHabitations";
 
 function App() {
   const location = useLocation();
@@ -171,11 +184,11 @@ function App() {
         />
         <Route path="/where-we-work/odisha/keonjhar" element={<Keonjhar />} />
         <Route path="/where-we-work/odisha/kalahandi" element={<Kalahandi />} />
-        <Route path="/where-we-work/odisha/kandhamal" element={<Kandhamal />} />
-        <Route
+        {/* <Route path="/where-we-work/odisha/kandhamal" element={<Kandhamal />} /> */}
+        {/* <Route
           path="/where-we-work/odisha/mayurbhanj"
           element={<Mayurbhanj />}
-        />
+        /> */}
 
 
         {/* Jharkhand Districts */}
@@ -186,10 +199,30 @@ function App() {
 
         {/* Tamilnadu Districts */}
         <Route path="/where-we-work/tamil-nadu/neyveli" element={<Neyveli />} />
+        
+        {/* Chhattisgarh */}
+        <Route path="/where-we-work/Chhattisgarh/korba" element={<Korba />} />
 
         {/* Assam Districts */}
-        <Route path="/where-we-work/assam/guwati" element={<Guwati />} />
+        <Route path="/where-we-work/assam/guwati" element={<Guwahati />} />
         <Route path="/where-we-work/assam/dispur" element={<Dispur />} />
+
+
+
+
+        {/* What-We-Do Routes */}
+        <Route path="/what-we-do/EIA-SIA-for-land-acquisition" element={<EiaSia />}/>
+        <Route path="/what-we-do/rehabilitation-&-resettlement-of-mines" element={<RehabilitationResettlementOfMines />}/>
+        <Route path="/what-we-do/skill-training-for-mining-affected-youth" element={<SkillTrainingForMiningAffectedYouth />}/>
+        <Route path="/what-we-do/enterprise-growth-in-mining-villages" element={<EnterpriseGrowthInMiningVillages />}/>
+        <Route path="/what-we-do/reclamation-in-abandoned-mines" element={<ReclamationOfAbandonedMines />}/>
+        <Route path="/what-we-do/just-transition-for-mining-workers" element={<JustTransitionForMiningWorkers />}/>
+        <Route path="/what-we-do/nutrition-and-wellbeing-in-mining-villages" element={<Nutrition />}/>
+        <Route path="/what-we-do/eco-mine-tourism" element={<EcoMineTourism />}/>
+        <Route path="/what-we-do/model-mining-village-in-making" element={<ModelMiningVillageInMaking />}/>
+        <Route path="/what-we-do/indegenous-community-empowerment" element={<IndegenousCommunityEmpowerment />}/>
+        <Route path="/what-we-do/waterbody-restoration-in-mines" element={<WaterbodyRestorationInMines />}/>
+        <Route path="/what-we-do/connecting-remote-mining-habitations" element={<ConnectingRemoteMiningHabitations />}/>
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>
