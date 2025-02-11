@@ -41,7 +41,7 @@ const DetailsKorba2 = () => {
   return (
     <div className="container mx-auto space-y-12 px-8">
       {/* Latest From Us */}
-      <section>
+      {/* <section>
         <Heading text="LATEST FROM US" color="text-black" bgColor="bg-red-600" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
@@ -93,7 +93,7 @@ const DetailsKorba2 = () => {
             Read More
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Photo Gallery with Slider */}
       <section>
