@@ -4,57 +4,60 @@ import Heading from "../Common/Heading";
 const Latest = () => {
   const articles = [
     {
-      date: "December 15, 2024",
-      title: "Development risks need urgent reimagining: Asif Saleh",
+      date: "January 25, 2025",
+      title: "Empowering Youth: Skilling Initiatives in Mining Regions",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/12/urgent-reimagining-fet-600x400.jpg",
+        "https://example.com/images/skilling-mining-youth.jpg",
     },
     {
-      date: "December 02, 2024",
-      title: "Fighting the white curse: Growing crops in salty soil",
+      date: "January 10, 2025",
+      title: "Women in Mining: Training for Sustainable Livelihoods",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/11/white-curse-fet-600x400.jpg",
+        "https://example.com/images/women-skilling-mining.jpg",
     },
     {
-      date: "November 23, 2024",
-      title:
-        "Heat poverty: Field notes from a slum during the hottest year on record",
+      date: "December 20, 2024",
+      title: "Alternative Livelihoods: Upskilling for a Greener Future",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/11/heatwave-fet-600x400.jpg",
-    },
-    {
-      date: "November 20, 2024",
-      title:
-        "How are people adapting to survive at the climate frontlines? On the ground with Asif Saleh",
-      image: "https://brac.net/images/news/2023/climate-frontlines.jpg",
-    },
-    {
-      date: "November 6, 2024",
-      title: "Story of Monowara Begum",
-      image: "https://brac.net/images/news/2023/monowara-business.jpg",
-    },
-    {
-      date: "October 12, 2023",
-      title: "BRAC SDG Contribution Voluntary Review 2023",
-      image: "https://brac.net/images/news/2023/brac-sdg.jpg",
-    },
-    {
-      date: "December 18, 2024",
-      title:
-        "Youth festival to celebrate youth empowerment and collective action",
-      image: "https://brac.net/images/news/2024/RHRN-youth-festival-home.jpg",
+        "https://example.com/images/alternative-livelihoods.jpg",
     },
     {
       date: "December 15, 2024",
-      title: "16 journalists honoured with 9th Migration Media Award",
+      title: "Technical Training for Miners: A Pathway to Safer Jobs",
       image:
-        "https://brac.net/images/news/2024/Migration-Media-Award-Winners-home.jpg",
+        "https://example.com/images/miner-technical-training.jpg",
     },
     {
-      date: "December 14, 2024",
-      title: "National dialogue: Reform pathways for health sector",
-      image: "https://brac.net/images/news/2024/UHC-Day-2024-home.jpg",
+      date: "December 5, 2024",
+      title: "Digital Literacy for Mining-Affected Communities",
+      image: "https://example.com/images/digital-literacy.jpg",
     },
+    {
+      date: "November 28, 2024",
+      title: "Skill Development Centres: Bridging the Employment Gap",
+      image: "https://example.com/images/skill-centre.jpg",
+    },
+    {
+      date: "November 18, 2024",
+      title: "Entrepreneurship Training for Mining-Affected Families",
+      image: "https://example.com/images/entrepreneurship-training.jpg",
+    },
+    {
+      date: "November 10, 2024",
+      title: "Green Jobs Training: Shifting Away from Mining Dependence",
+      image:
+        "https://example.com/images/green-jobs-training.jpg",
+    },
+    {
+      date: "February 5, 2025",
+      title: "Mining Skilling Initiatives in Kandhamal: A Path to Economic Growth",
+      image: "https://example.com/images/kandhamal-skilling.jpg",
+    },
+    {
+      date: "February 10, 2025",
+      title: "Rehabilitation and Resettlement Efforts in T Rampur",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994534/diverse-people-refugee-camps_uuu6by.jpg",
+    }
   ];
 
   return (

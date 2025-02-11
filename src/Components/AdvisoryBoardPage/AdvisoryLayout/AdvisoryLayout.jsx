@@ -60,7 +60,8 @@ const AdvisoryLayout = () => {
             id: "5",
             name: "Braja Kishore Nayak",
             designation: "Director (Financial Inclusion)",
-            img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+            img: 
+            "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
             org: "State Bank of India",
         },
         {

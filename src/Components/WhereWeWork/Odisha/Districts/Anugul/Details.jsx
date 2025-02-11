@@ -5,60 +5,79 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Education",
+    name: "Skilling",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">Skilling</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          In Anugul District, we provide specialized training programs such as
+          Excavator and HEMM (Heavy Earth Moving Machinery) Operator Training.
+          These programs equip individuals with industry-relevant skills to
+          enhance employability in the mining and construction sectors.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg"
+          alt="Skilling"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Mining Village Rehabilitation & Resettlement",
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
+          Mining Village Rehabilitation & Resettlement
         </h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          We work on rehabilitating and resettling mining-affected communities
+          in Anugul by ensuring access to housing, livelihood support, and
+          social services. Our approach focuses on inclusive development and
+          community engagement for long-term sustainability.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
+          alt="Mining Village Rehabilitation"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
+  // {
+  //   name: "Mine Reclamation",
+  //   content: (
+  //     <>
+  //       <h2 className="text-3xl font-bold mb-2">Mine Reclamation</h2>
+  //       <p className="text-gray-700">
+  //         Anugul District has seen extensive mining activity, and we focus on
+  //         reclaiming mined-out lands through afforestation, soil restoration,
+  //         and community-based ecological rehabilitation efforts.
+  //       </p>
+  //       <img
+  //         src="https://bracinternational.org/wp-content/uploads/2024/mine-reclamation.jpg"
+  //         alt="Mine Reclamation"
+  //         className="mt-4 rounded-lg shadow-lg"
+  //       />
+  //     </>
+  //   ),
+  // },
   {
-    name: "Ultra-Poor Graduation",
+    name: "Nutrition & Well-being in Mining Villages",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
+        <h2 className="text-3xl font-bold mb-2">
+          Nutrition & Well-being in Mining Villages
+        </h2>
         <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
+          We address malnutrition and health concerns in mining villages by
+          promoting access to nutritious food, clean water, and healthcare
+          services. Our initiatives include maternal health programs and school
+          nutrition schemes.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg"
+          alt="Nutrition & Well-being"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
@@ -71,11 +90,7 @@ const DetailsAnugul = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Heading
-        text="OUR WORK"
-        color="text-black"
-        bgColor="bg-red-600"
-      />
+      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
       {/* Desktop View */}
       <div className="hidden md:block">
         <Tab.Group>

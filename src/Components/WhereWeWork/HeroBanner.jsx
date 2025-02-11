@@ -168,91 +168,96 @@ const latestNews = {
   Odisha: [
     {
       date: "January 20, 2025",
-      title: "Odisha launches new development project",
+      title: "Pantiss launches mining skilling program for local youth",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/12/urgent-reimagining-fet-600x400.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738938422/dhanbad_t9agnb.jpg",
     },
     {
       date: "February 10, 2025",
-      title: "Sustainable farming initiative sees success",
+      title:
+        "Rehabilitation efforts boost livelihoods in mining-affected villages",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/11/white-curse-fet-600x400.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.25_PM_v3ned2.jpg",
     },
     {
-      date: "February 10, 2025",
-      title: "Sustainable farming initiative sees success",
+      date: "February 25, 2025",
+      title:
+        "Odisha to develop model mining villages for displaced communities",
       image:
-        "https://blog.brac.net/wp-content/uploads/2024/11/heatwave-fet-600x400.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196020/model_village_dz36fg.jpg",
+    },
+    {
+      date: "March 05, 2025",
+      title:
+        "Enterprise growth in mining-affected regions drives local economy",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739280958/WhatsApp_Image_2025-02-01_at_7.15.33_PM_wxkfmj.jpg",
     },
   ],
   Jharkhand: [
     {
       date: "January 18, 2025",
-      title: "Patna metro project nears completion",
-      image: "https://brac.net/images/news/2023/climate-frontlines.jpg",
+      title: "Jharkhand's RPL program upskills workers in the mining sector",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735915960/WhatsApp_Image_2025-01-03_at_7.09.25_PM_1_pmya7b.jpg",
     },
     {
-      date: "February 05, 2025",
-      title: "Bihar implements clean water campaign",
-      image: "https://brac.net/images/news/2023/monowara-business.jpg",
+      date: "February 20, 2025",
+      title: "Just transition: Jharkhand pilots sustainable mining practices",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif",
     },
     {
-      date: "February 05, 2025",
-      title: "Bihar implements clean water campaign",
-      image: "https://brac.net/images/news/2023/brac-sdg.jpg",
+      date: "March 01, 2025",
+      title: "Mine reclamation project restores biodiversity in Jharkhand",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738935983/dry-hill-sunny-day_hgnuof.jpg",
     },
   ],
   Assam: [
     {
       date: "January 25, 2025",
-      title: "Kolkata hosts international trade fair",
-      image: "https://brac.net/images/news/2024/RHRN-youth-festival-home.jpg",
+      title: "Agriculture skilling initiatives empower farmers in Assam",
+      image: "https://brac.net/images/news/2024/agriculture-skilling-assam.jpg",
     },
     {
       date: "February 15, 2025",
-      title: "Darjeeling tea receives global recognition",
-      image:
-        "https://brac.net/images/news/2024/Migration-Media-Award-Winners-home.jpg",
+      title: "Just transition: Moving away from coal dependency in Assam",
+      image: "https://brac.net/images/news/2024/just-transition-assam.jpg",
     },
     {
-      date: "February 15, 2025",
-      title: "Darjeeling tea receives global recognition",
-      image: "https://brac.net/images/news/2024/UHC-Day-2024-home.jpg",
+      date: "February 28, 2025",
+      title: "Assam launches sustainable enterprise program in mining regions",
+      image: "https://brac.net/images/news/2024/enterprise-mining-assam.jpg",
+    },
+    {
+      date: "March 10, 2025",
+      title: "Resettlement program helps displaced mining families in Assam",
+      image: "https://brac.net/images/news/2024/resettlement-mining-assam.jpg",
     },
   ],
   "Tamil Nadu": [
     {
-      date: "January 12, 2025",
-      title: "New mining policy introduced in Jharkhand",
-      image: "https://brac.net/images/news/2024/UHC-Day-2024-home.jpg",
+      date: "February 22, 2025",
+      title:
+        "Mining skilling centers launched to support workforce development",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
     },
     {
-      date: "February 08, 2025",
-      title: "Ranchi promotes green energy initiatives",
-      image:
-        "https://brac.net/images/news/2024/Migration-Media-Award-Winners-home.jpg",
-    },
-    {
-      date: "February 08, 2025",
-      title: "Ranchi promotes green energy initiatives",
-      image: "https://brac.net/images/news/2024/RHRN-youth-festival-home.jpg",
+      date: "February 22, 2025",
+      title:
+        "Mining skilling centers launched to support workforce development",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
     },
   ],
   Chhattisgarh: [
     {
       date: "January 28, 2025",
-      title: "Raipur hosts sustainable development summit",
-      image: "https://brac.net/images/news/2023/brac-sdg.jpg",
+      title: "Chhattisgarh focuses on mine reclamation and land restoration",
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
     },
     {
       date: "February 18, 2025",
-      title: "Bilaspur enhances education infrastructure",
-      image: "https://brac.net/images/news/2023/monowara-business.jpg",
-    },
-    {
-      date: "February 18, 2025",
-      title: "Bilaspur enhances education infrastructure",
-      image: "https://brac.net/images/news/2023/climate-frontlines.jpg",
+      title: "New skilling centers to support sustainable mining jobs",
+      image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
     },
   ],
 };
