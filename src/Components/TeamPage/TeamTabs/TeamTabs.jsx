@@ -13,7 +13,7 @@ const teamData = [
     name: "Mr. Stalin Nayak",
     title: "Founder & CEO",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294950/WhatsApp_Image_2025-02-11_at_10.58.44_PM_ie0jsf.jpg",
     department: "leadership",
   },
   {
@@ -43,7 +43,7 @@ const teamData = [
     name: "Mr. Dwarka Prasad",
     title: "Lead, Water, Sanitation, and Hygiene",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739299857/WhatsApp_Image_2025-02-12_at_12.17.30_AM_vs1erc.jpg",
     department: "leadership",
   },
   {
@@ -215,7 +215,7 @@ const TeamTabs = () => {
                 <img
                   src={member.image}
                   alt={`${member.name}`}
-                  className="w-full h-[400px] object-fit"
+                  className="w-full h-[400px] object-cover"
                 />
               </div>
 

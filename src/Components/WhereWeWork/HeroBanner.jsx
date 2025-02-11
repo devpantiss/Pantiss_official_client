@@ -214,22 +214,17 @@ const latestNews = {
     {
       date: "January 25, 2025",
       title: "Agriculture skilling initiatives empower farmers in Assam",
-      image: "https://brac.net/images/news/2024/agriculture-skilling-assam.jpg",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg",
     },
     {
       date: "February 15, 2025",
       title: "Just transition: Moving away from coal dependency in Assam",
-      image: "https://brac.net/images/news/2024/just-transition-assam.jpg",
-    },
-    {
-      date: "February 28, 2025",
-      title: "Assam launches sustainable enterprise program in mining regions",
-      image: "https://brac.net/images/news/2024/enterprise-mining-assam.jpg",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg",
     },
     {
       date: "March 10, 2025",
       title: "Resettlement program helps displaced mining families in Assam",
-      image: "https://brac.net/images/news/2024/resettlement-mining-assam.jpg",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994534/diverse-people-refugee-camps_uuu6by.jpg",
     },
   ],
   "Tamil Nadu": [
