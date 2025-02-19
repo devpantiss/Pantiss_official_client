@@ -5,60 +5,55 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Education",
+    name: "Skilling of Electricians",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">Skilling of Electricians</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          Our skilling program for electricians focuses on hands-on training,
+          safety protocols, and modern electrical techniques. Participants gain
+          certifications and job placements in industrial and residential
+          sectors.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://example.com/electrician-training.jpg"
+          alt="Skilling of Electricians"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Skilling of Mining Vehicle Operators",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
-        </h2>
+        <h2 className="text-3xl font-bold mb-2">Skilling of Mining Vehicle Operators</h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          This program provides specialized training in operating heavy mining
+          vehicles, ensuring safety and efficiency. It includes simulator-based
+          learning and on-site practical training.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
+          src="https://example.com/mining-vehicle-training.jpg"
+          alt="Skilling of Mining Vehicle Operators"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Ultra-Poor Graduation",
+    name: "Reclamation of Mining Land (Mango Orchard Plantation)",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
+        <h2 className="text-3xl font-bold mb-2">Reclamation of Mining Land (Mango Orchard Plantation)</h2>
         <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
+          Our initiative focuses on transforming degraded mining lands into
+          productive mango orchards. This supports environmental restoration,
+          biodiversity, and sustainable livelihoods for local communities.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://example.com/mango-orchard.jpg"
+          alt="Reclamation of Mining Land"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
@@ -71,11 +66,7 @@ const DetailsSundargarh = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Heading
-        text="OUR WORK"
-        color="text-black"
-        bgColor="bg-red-600"
-      />
+      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
       {/* Desktop View */}
       <div className="hidden md:block">
         <Tab.Group>

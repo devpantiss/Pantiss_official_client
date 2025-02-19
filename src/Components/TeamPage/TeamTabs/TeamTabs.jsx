@@ -141,14 +141,14 @@ const teamData = [
     name: "Ms. Jayashree Satpathy",
     title: "Associate Development Secretary to CEO",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Shreyash-Subudhi-e1670426713822.jpeg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739771766/WhatsApp_Image_2025-02-13_at_1.52.50_PM_1_npx2n9.jpg",
     department: "monitoring",
   },
   {
     name: "Mr. Priyanshu Kumar",
     title: "Trainee Development Secretary to CEO",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Nayak-e1670428129999.jpeg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739771766/WhatsApp_Image_2025-02-13_at_1.52.50_PM_h2o6vf.jpg",
     department: "monitoring",
   },
   {

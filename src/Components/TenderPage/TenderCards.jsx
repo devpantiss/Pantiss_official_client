@@ -34,10 +34,10 @@ const TenderSection = () => {
           NEW TENDER <br /> NOTICE
         </div>
       ),
-      total: 0,
+      total: 1,
       color: "bg-blue-500",
       items: [
-        { name: "Head Office", count: 0 },
+        { name: "Head Office", count: 1 },
         // { name: "H", count: 0 },
       ],
     },
