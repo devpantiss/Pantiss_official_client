@@ -5,60 +5,32 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Education",
+    name: "RPL Program",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">RPL Program</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          Our Recognition of Prior Learning (RPL) Program recognizes and validates the skills and knowledge individuals have gained through experience, rather than formal education. We provide assessment, certification, and upskilling opportunities to enhance employability and support career advancement across various sectors.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/56cff1ce-3f2c-477a-98b9-74fd979e24fc_j3m2x6.jpg" // Replace with actual image URL
+          alt="RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Mining Land Reclamation",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
-        </h2>
+        <h2 className="text-3xl font-bold mb-2">Mining Land Reclamation</h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          Our Mining Land Reclamation initiative focuses on restoring degraded mining areas to their natural or productive state. We employ sustainable practices, such as reforestation, soil restoration, and water management, to rehabilitate land, support biodiversity, and benefit local communities.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
-  },
-  {
-    name: "Ultra-Poor Graduation",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
-        <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
-        </p>
-        <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740391342/reclamation_lufvxk.jpg" // Replace with actual image URL
+          alt="Mining Land Reclamation"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>

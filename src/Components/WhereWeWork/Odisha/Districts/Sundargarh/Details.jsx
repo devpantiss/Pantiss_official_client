@@ -16,7 +16,7 @@ const tabs = [
           sectors.
         </p>
         <img
-          src="https://example.com/electrician-training.jpg"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387858/cdf465e2-d939-4b28-9d85-e43c30043ff3_paitjs.jpg"
           alt="Skilling of Electricians"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -34,7 +34,7 @@ const tabs = [
           learning and on-site practical training.
         </p>
         <img
-          src="https://example.com/mining-vehicle-training.jpg"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/7cf81b40-cb85-47b0-bc17-5ed47fa210ed_viwshh.jpg"
           alt="Skilling of Mining Vehicle Operators"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -52,7 +52,7 @@ const tabs = [
           biodiversity, and sustainable livelihoods for local communities.
         </p>
         <img
-          src="https://example.com/mango-orchard.jpg"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388190/AdobeStock_333360278_Preview_dlimzr.jpg"
           alt="Reclamation of Mining Land"
           className="mt-4 rounded-lg shadow-lg"
         />

@@ -18,7 +18,7 @@ const TendersListing = () => {
       startDate: "17th February 2025",
       deadline: "21st February 2025",
       link: "https://drive.google.com/file/d/1U2HOPDyqTk3IA01QjUByTpuCii17MN5P/view?usp=sharing",
-      isClosed: false,
+      isClosed: true,
     },
   ];
 

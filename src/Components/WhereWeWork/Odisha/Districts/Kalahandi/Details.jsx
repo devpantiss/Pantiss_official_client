@@ -5,60 +5,32 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Education",
+    name: "HEMM Mechanic Skilling",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">HEMM Mechanic Skilling</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          Our HEMM (Heavy Earth Moving Machinery) Mechanic Skilling program trains individuals in maintaining and repairing heavy machinery used in mining and construction. We provide hands-on training, technical knowledge, and certification to enhance employment opportunities and ensure operational efficiency in heavy equipment management.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388951/a9a42559-8f73-4b9c-ab85-15a03168ded5_ws6p9s.jpg" // Replace with actual image URL
+          alt="HEMM Mechanic Skilling"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Mining Land Reclamation by Making Ponds",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
-        </h2>
+        <h2 className="text-3xl font-bold mb-2">Mining Land Reclamation by Making Ponds</h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          Our mining land reclamation initiative focuses on restoring degraded mining areas by creating ponds for water conservation and biodiversity. This program promotes sustainable land use, supports local ecosystems, and provides resources for communities through innovative reclamation techniques.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
-  },
-  {
-    name: "Ultra-Poor Graduation",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
-        <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
-        </p>
-        <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg" // Replace with actual image URL
+          alt="Mining Land Reclamation by Making Ponds"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>

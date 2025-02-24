@@ -5,60 +5,32 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Education",
+    name: "Mining Vehicles Operator",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">Mining Vehicles Operator</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          Our Mining Vehicles Operator program trains individuals to operate heavy machinery used in mining operations, such as dump trucks, excavators, and bulldozers. We provide hands-on training, safety protocols, and certification to ensure efficient and safe operations in mining environments, enhancing employment opportunities and productivity.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450493/TNIE_import_2023_3_6_original_Illegalcoalmining_cthtx2.avif" // Replace with actual image URL
+          alt="Mining Vehicles Operator"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Plastic Waste Recycling Plant Construction",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
-        </h2>
+        <h2 className="text-3xl font-bold mb-2">Plastic Waste Recycling Plant Construction</h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          Our Plastic Waste Recycling Plant Construction initiative focuses on building sustainable facilities to recycle plastic waste, reducing environmental pollution and promoting a circular economy. We provide technical expertise, community engagement, and infrastructure development to create efficient recycling plants that benefit local economies and ecosystems.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
-  },
-  {
-    name: "Ultra-Poor Graduation",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
-        <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
-        </p>
-        <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389668/plastic_waste_anmisu.jpg" // Replace with actual image URL
+          alt="Plastic Waste Recycling Plant Construction"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>

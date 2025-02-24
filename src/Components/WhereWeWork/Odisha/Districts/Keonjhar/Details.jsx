@@ -4,61 +4,49 @@ import { ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
 const tabs = [
+  // {
+  //   name: "Skilling in Security Guard",
+  //   content: (
+  //     <>
+  //       <h2 className="text-3xl font-bold mb-2">Skilling in Security Guard</h2>
+  //       <p className="text-gray-700">
+  //         Our programs focus on training individuals in security guard skills, including safety protocols, surveillance techniques, and emergency response. We provide hands-on training and certification to ensure participants are well-prepared for roles in security management, enhancing community safety and employment opportunities.
+  //       </p>
+  //       <img
+  //         src="https://example.com/skilling-security-guard.jpg" // Replace with actual image URL
+  //         alt="Skilling in Security Guard"
+  //         className="mt-4 rounded-lg shadow-lg"
+  //       />
+  //     </>
+  //   ),
+  // },
   {
-    name: "Education",
+    name: "Skilling in Facility Management",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-2">Skilling in Facility Management</h2>
         <p className="text-gray-700">
-          We prioritise joyful learning and engage participatory approaches for
-          social-emotional learning, play, and character development. Our
-          community-driven network of programmes includes pre-primary, primary,
-          as well as accelerated learning for adolescents, especially girls who
-          have dropped out of or never attended school. We mobilise communities
-          in favour of girls’ education.
+          We offer comprehensive training in facility management, covering maintenance, operations, and safety standards for various facilities. This program equips participants with the skills to manage buildings, ensure operational efficiency, and maintain a safe environment for occupants.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/Education-AGE-pic.webp"
-          alt="Education"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388680/81fb4af3-7318-4950-81fb-78cd982cf86f_v00f1u.jpg" // Replace with actual image URL
+          alt="Skilling in Facility Management"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
   {
-    name: "Humanitarian-Development Nexus",
+    name: "Agricultural RPL Program",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">
-          Humanitarian-Development Nexus
-        </h2>
+        <h2 className="text-3xl font-bold mb-2">Agricultural RPL Program</h2>
         <p className="text-gray-700">
-          Content about the Humanitarian-Development Nexus goes here.
+          Our Agricultural Recognition of Prior Learning (RPL) program recognizes and enhances the skills of farmers and agricultural workers. We provide training, certification, and support to improve productivity, sustainability, and income generation in the agricultural sector.
         </p>
         <img
-          src="https://bracinternational.org/wp-content/uploads/2024/11/humanitarian-development-nexus.webp"
-          alt="Education"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
-  },
-  {
-    name: "Ultra-Poor Graduation",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">Ultra-Poor Graduation</h2>
-        <p className="text-gray-700">
-          Our flagship Ultra-Poor Graduation approach is a globally recognised
-          solution that offers holistic support to enable people to chart a
-          pathway out of extreme poverty. We implement community-based
-          protection systems targeting returnees and displaced people, as well
-          as host communities. We create conducive conditions for sustainable
-          reintegration and stronger resilience.
-        </p>
-        <img
-          src="https://bracinternational.org/wp-content/uploads/2024/09/UPG-Participant.webp"
-          alt="Ultra-Poor Graduation"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg" // Replace with actual image URL
+          alt="Agricultural RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
