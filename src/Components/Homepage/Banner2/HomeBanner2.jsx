@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const HomeBanner2 = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -14,7 +15,7 @@ const HomeBanner2 = () => {
         muted
         loop
         playsInline
-        preload="auto" // Preload video for better performance
+        preload="auto"
         onLoadedData={() => setVideoLoaded(true)}
       >
         <source
@@ -36,18 +37,51 @@ const HomeBanner2 = () => {
         <div className="text-center text-white">
           <h1 className="relative text-4xl md:text-6xl font-bold mb-4">
             Welcome to <br />{" "}
-            <span className="text-red-600">Pantiss Responsible Mining!</span>{" "}
+            <span className="text-red-600">
+              Pantiss{" "}
+              <TypeAnimation
+                sequence={[
+                  "Responsible Mining",
+                  3000, // Wait 3 seconds
+                  "Steelium",
+                  3000,
+                  "Aluminium",
+                  3000,
+                  "Energy Transition",
+                  3000,
+                ]}
+                wrapper="span"
+                speed={75} // Slower typing speed (default is 50, higher number = slower)
+                repeat={Infinity}
+                className="inline-block"
+              />
+            </span>{" "}
             <img
               className="absolute top-5 lg:top-10 w-10 lg:left-32 left-20"
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726395483/leaf_n7rkfr.png"
               alt="leaf"
-              loading="lazy" // Lazy loading for performance
+              loading="lazy"
             />
           </h1>
           <p className="text-xl md:text-2xl">
             Empowering Communities around{" "}
-            <span className="text-green-400">Mines</span> Across{" "}
-            <span className="text-green-400">Globe</span>.
+            <span className="text-green-400">
+              <TypeAnimation
+                sequence={[
+                  "Mines",
+                  3000,
+                  "Steel & Aluminium",
+                  6000,
+                  "Energy",
+                  3000,
+                ]}
+                wrapper="span"
+                speed={75} // Slower typing speed, matching the above
+                repeat={Infinity}
+                className="inline-block"
+              />
+            </span>{" "}
+            Across <span className="text-green-400">Globe</span>.
           </p>
         </div>
       </div>

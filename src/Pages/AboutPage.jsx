@@ -9,6 +9,7 @@ import Milestones from '../Components/AboutPage/Milestones/Milestones';
 import AwardsSlider from '../Components/AboutPage/Awards/AwardsSlider';
 import Certifications from '../Components/AboutPage/Certifications/Certifications';
 import PurposeSlider from '../Components/AboutPage/Purpose&Priorities/PurposeAndPriorities';
+import PolicyAndInitiative from "../Components/AboutPage/PolicyAndInitiative";
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
       <FoundersSection />
       <Goals />
       <PurposeSlider />
+      <PolicyAndInitiative />
       <Milestones />
       <AwardsSlider />
       <Certifications />

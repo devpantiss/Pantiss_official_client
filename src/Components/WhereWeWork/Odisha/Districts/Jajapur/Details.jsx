@@ -9,11 +9,8 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Skilling</h2>
-        <p className="text-gray-700">
-          In Jajapur District, we offer training programs for Electricians and
-          Security Guards. These skilling initiatives provide opportunities for
-          employment in industrial and mining areas, ensuring financial
-          stability for local youth.
+        <p className="text-gray-700 text-[18px]">
+          In Jajapur District, we are dedicated to empowering the local youth by offering meticulously designed training programs for professions such as Electricians and Security Guards. These skilling initiatives are tailored to meet the growing demands of the industrial and mining sectors prevalent in the region. By providing hands-on training, theoretical knowledge, and practical exposure, we ensure that participants acquire the expertise needed to secure stable and rewarding employment opportunities. Our goal is to enhance financial independence, uplift livelihoods, and contribute to the socio-economic development of the community, enabling the youth to build a brighter future while supporting the region's industrial growth.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_2000/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg"
@@ -29,10 +26,7 @@ const tabs = [
       <>
         <h2 className="text-3xl font-bold mb-2">Reclamation of Mining Land</h2>
         <p className="text-gray-700">
-          The mining-affected lands in Jajapur are being reclaimed through
-          sustainable practices such as guava plantation. This initiative helps
-          restore soil fertility, promotes biodiversity, and provides economic
-          benefits to local farmers.
+          In Jajapur District, we are actively engaged in restoring mining-affected lands through sustainable and innovative practices, with a particular focus on guava plantation initiatives. This reclamation effort goes beyond mere land recovery; it aims to rejuvenate the ecosystem by improving soil fertility, promoting biodiversity, and mitigating the environmental impact of past mining activities. By planting guava trees, we not only stabilize the soil but also create a renewable source of income for local farmers through fruit production, fostering economic resilience. Our approach integrates ecological restoration with community development, ensuring that the reclaimed land benefits both the environment and the people who depend on it for their livelihoods.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739283475/WhatsApp_Image_2025-02-11_at_7.45.05_PM_zd4iay.jpg"
@@ -64,7 +58,9 @@ const DetailsJajapur = () => {
                     }`
                   }
                 >
+                  <p className="text-[18px]">
                   {tab.name}
+                  </p>
                 </Tab>
               ))}
             </Tab.List>

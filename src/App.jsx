@@ -101,7 +101,7 @@ function App() {
         <Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
         <Route path="/whoweare/*" element={<WhoWeAre />} />
-        <Route path="/whatwedo/*" element={<WhatWeDo />} />
+        <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/careers/jobs" element={<JobsPage />} />{" "}
@@ -118,7 +118,7 @@ function App() {
         />
         <Route path="/fellowship" element={<Fellowship />} />
         <Route path="/summit" element={<SummitPage />} />
-        <Route path="/publications" element={<Publications />} />
+        <Route path="/impact" element={<Publications />} />
         {/* Life-at-pantiss */}
         <Route
           path="/life-at-pantiss/people-at-pantiss"

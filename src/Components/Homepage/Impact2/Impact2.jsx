@@ -42,7 +42,7 @@ const Impact2 = () => {
       {
         id: 5,
         value: 5,
-        label: "Abandoned Mines Reclamated",
+        label: "Abandoned Mines Reclaimed",
         videoUrl:
           "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4",
       },

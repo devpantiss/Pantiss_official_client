@@ -9,8 +9,8 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Skilling - Excavator Operator</h2>
-        <p className="text-gray-700">
-          In Korba, we provide specialized training for Excavator Operators. This program aims to equip individuals with the necessary technical skills and safety knowledge required for efficient operations in the mining and construction sectors.
+        <p className="text-gray-700 text-[18px]">
+          In Korba, our specialized training program for Excavator Operators is meticulously designed to empower individuals with the advanced technical skills and safety knowledge essential for thriving in the mining and construction sectors. This initiative provides hands-on experience operating heavy machinery, focusing on precision excavation techniques, equipment maintenance, and adherence to rigorous safety protocols. Participants undergo practical training in real-world scenarios, learning to navigate challenging terrains and optimize machine performance while minimizing risks. The program also includes modules on environmental considerations and operational efficiency, ensuring operators contribute to sustainable practices. Upon completion, trainees receive certifications that enhance their employability, opening doors to rewarding careers and supporting Korba’s industrial landscape by fostering a skilled workforce capable of driving productivity and safety.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325281/WhatsApp_Image_2025-01-08_at_1.03.30_PM_fx0igb.jpg"
@@ -25,8 +25,8 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Recognition of Prior Learning (RPL) Program</h2>
-        <p className="text-gray-700">
-          The RPL program in Korba is designed to assess and certify the skills of experienced workers in the mining and industrial sectors. This initiative provides formal recognition, improves job opportunities, and enhances career progression for skilled laborers.
+        <p className="text-gray-700 text-[18px]">
+          The Recognition of Prior Learning (RPL) program in Korba is a forward-thinking initiative tailored to assess, validate, and certify the skills of experienced workers in the mining and industrial sectors, recognizing their expertise gained through years of practical work rather than formal education. This program offers a structured evaluation process, followed by customized upskilling opportunities that address specific gaps and introduce modern techniques relevant to today’s industries. Participants benefit from expert-led assessments, hands-on workshops, and access to updated tools and methodologies, ensuring their skills align with current standards. Upon successful completion, individuals receive formal certifications that significantly improve their job prospects, facilitate career progression, and enhance their professional credibility. By bridging the gap between experience and recognition, this initiative strengthens Korba’s workforce, promoting economic growth and individual empowerment.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325286/WhatsApp_Image_2025-01-08_at_1.05.17_PM_hgvk7u.jpg"
@@ -53,7 +53,7 @@ const DetailsKorba = () => {
                 <Tab
                   key={index}
                   className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
+                    `block w-full py-2 px-4 text-left font-medium text-[18px] text-gray-700 hover:bg-gray-100 focus:outline-none ${
                       selected ? "bg-red-600 text-white" : ""
                     }`
                   }
@@ -77,7 +77,7 @@ const DetailsKorba = () => {
           <div key={index} className="border-b border-gray-200">
             <button
               onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-gray-700 focus:outline-none"
+              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-[18px] text-gray-700 focus:outline-none"
             >
               {tab.name}
               <ChevronDown

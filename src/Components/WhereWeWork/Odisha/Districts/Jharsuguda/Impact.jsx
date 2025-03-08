@@ -16,32 +16,33 @@ const ImpactJharsuguda = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 text-center">
           {/* Stat 1 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">17M</h3>
-            <p className="text-gray-600 text-sm mt-2">people reached</p>
+            <h3 className="text-black font-bold text-4xl">6K</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              dumper operators trained and certified
+            </p>
           </div>
 
           {/* Stat 2 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">29.3K</h3>
+            <h3 className="text-black font-bold text-4xl">8K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              learners accessed community-based education
+              indigenous community members empowered
             </p>
           </div>
 
           {/* Stat 3 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">7.5K</h3>
+            <h3 className="text-black font-bold text-4xl">10K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              MSMEs received technical and financial support
+              livelihoods supported through skilling and empowerment
             </p>
           </div>
 
           {/* Stat 4 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">3.4K</h3>
+            <h3 className="text-black font-bold text-4xl">12K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              solar panels provided to health facilities, mosques, MSMEs and
-              households
+              community members benefited from economic and social development
             </p>
           </div>
         </div>

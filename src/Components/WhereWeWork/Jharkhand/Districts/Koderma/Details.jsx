@@ -4,32 +4,16 @@ import { ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
 const tabs = [
-  // {
-  //   name: "Skilling in Security Guard",
-  //   content: (
-  //     <>
-  //       <h2 className="text-3xl font-bold mb-2">Skilling in Security Guard</h2>
-  //       <p className="text-gray-700">
-  //         Our programs focus on training individuals in security guard skills, including safety protocols, surveillance techniques, and emergency response. We provide hands-on training and certification to ensure participants are well-prepared for roles in security management, enhancing community safety and employment opportunities.
-  //       </p>
-  //       <img
-  //         src="https://example.com/skilling-security-guard.jpg" // Replace with actual image URL
-  //         alt="Skilling in Security Guard"
-  //         className="mt-4 rounded-lg shadow-lg"
-  //       />
-  //     </>
-  //   ),
-  // },
   {
     name: "Skilling in Facility Management",
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Skilling in Facility Management</h2>
-        <p className="text-gray-700">
-          We offer comprehensive training in facility management, covering maintenance, operations, and safety standards for various facilities. This program equips participants with the skills to manage buildings, ensure operational efficiency, and maintain a safe environment for occupants.
+        <p className="text-gray-700 text-[18px]">
+          Our skilling program in facility management in Koderma is a thorough training initiative designed to prepare individuals for managing the maintenance, operations, and safety of diverse facilities. The curriculum encompasses a wide range of topics, including building maintenance, HVAC system operations, electrical and plumbing repairs, and compliance with rigorous safety standards. Participants engage in practical, hands-on sessions and simulations that mirror real-world scenarios, enabling them to develop the technical and managerial skills needed to ensure operational efficiency. The program also focuses on fostering a safe and comfortable environment for occupants, covering aspects like waste management and emergency preparedness. By equipping trainees with these comprehensive abilities, we empower them to excel in roles across industrial, commercial, and residential settings, contributing to Koderma’s infrastructure development and community well-being.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388680/81fb4af3-7318-4950-81fb-78cd982cf86f_v00f1u.jpg" // Replace with actual image URL
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388680/81fb4af3-7318-4950-81fb-78cd982cf86f_v00f1u.jpg"
           alt="Skilling in Facility Management"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -41,11 +25,11 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Agricultural RPL Program</h2>
-        <p className="text-gray-700">
-          Our Agricultural Recognition of Prior Learning (RPL) program recognizes and enhances the skills of farmers and agricultural workers. We provide training, certification, and support to improve productivity, sustainability, and income generation in the agricultural sector.
+        <p className="text-gray-700 text-[18px]">
+          The Agricultural Recognition of Prior Learning (RPL) program in Koderma is an innovative effort to acknowledge and enhance the expertise of farmers and agricultural workers, building on their existing knowledge gained through years of hands-on experience. This initiative offers a blend of practical training, expert-led workshops, and modern agricultural techniques, such as sustainable farming practices, crop rotation, and integrated pest management. We assess participants’ prior skills and provide customized upskilling opportunities to improve productivity, adopt eco-friendly methods, and increase income potential. Upon completion, individuals receive certifications that validate their capabilities, enhancing their credibility and access to markets or financial support. By promoting sustainable agriculture and empowering rural communities, this program strengthens Koderma’s agrarian economy and supports long-term food security and environmental health.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg" // Replace with actual image URL
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg"
           alt="Agricultural RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -59,11 +43,7 @@ const DetailsKoderma = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Heading
-        text="OUR WORK"
-        color="text-black"
-        bgColor="bg-red-600"
-      />
+      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
       {/* Desktop View */}
       <div className="hidden md:block">
         <Tab.Group>
@@ -73,7 +53,7 @@ const DetailsKoderma = () => {
                 <Tab
                   key={index}
                   className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
+                    `block w-full py-2 px-4 text-left font-medium text-[18px] text-gray-700 hover:bg-gray-100 focus:outline-none ${
                       selected ? "bg-red-600 text-white" : ""
                     }`
                   }
@@ -97,7 +77,7 @@ const DetailsKoderma = () => {
           <div key={index} className="border-b border-gray-200">
             <button
               onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-gray-700 focus:outline-none"
+              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-[18px] text-gray-700 focus:outline-none"
             >
               {tab.name}
               <ChevronDown

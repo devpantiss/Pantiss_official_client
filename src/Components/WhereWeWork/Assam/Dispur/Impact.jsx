@@ -7,7 +7,7 @@ const ImpactDispur = () => {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <Heading
-          text="OUR IMPACT IN DISPUR"
+          text="OUR IMPACT IN DISPUR DISTRICT"
           color="text-black"
           bgColor="bg-red-600"
         />
@@ -16,32 +16,33 @@ const ImpactDispur = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 text-center">
           {/* Stat 1 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">17M</h3>
-            <p className="text-gray-600 text-sm mt-2">people reached</p>
+            <h3 className="text-black font-bold text-4xl">12K</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              individuals trained through skilling programs
+            </p>
           </div>
 
           {/* Stat 2 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">29.3K</h3>
+            <h3 className="text-black font-bold text-4xl">8.5K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              learners accessed community-based education
+              community members rehabilitated and resettled
             </p>
           </div>
 
           {/* Stat 3 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">7.5K</h3>
+            <h3 className="text-black font-bold text-4xl">15K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              MSMEs received technical and financial support
+              people benefited from nutrition and well-being initiatives
             </p>
           </div>
 
           {/* Stat 4 */}
           <div>
-            <h3 className="text-black font-bold text-4xl">3.4K</h3>
+            <h3 className="text-black font-bold text-4xl">2.1K</h3>
             <p className="text-gray-600 text-sm mt-2">
-              solar panels provided to health facilities, mosques, MSMEs and
-              households
+              households provided with clean water and healthcare access
             </p>
           </div>
         </div>

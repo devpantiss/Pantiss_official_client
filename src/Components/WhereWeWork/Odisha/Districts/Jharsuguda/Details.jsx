@@ -9,11 +9,8 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Skilling</h2>
-        <p className="text-gray-700">
-          In Jharsuguda, we provide specialized training programs for Dumper
-          Operators. This skilling initiative aims to equip individuals with
-          essential skills required for employment in the mining and logistics
-          sectors, ensuring sustainable livelihoods.
+        <p className="text-gray-700 text-[18px]">
+          In Jharsuguda, we offer comprehensive and specialized training programs specifically designed for Dumper Operators. This skilling initiative is carefully crafted to equip individuals with both the technical expertise and practical skills necessary for securing employment in the mining and logistics sectors. Our program includes hands-on training with modern equipment, safety protocols, and operational techniques, ensuring participants are well-prepared for real-world challenges. By fostering these abilities, we aim to create sustainable livelihoods, empower local communities, and contribute to the economic development of the region. This initiative also emphasizes career growth, offering participants opportunities to advance in their professions while supporting the industrial needs of Jharsuguda.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735301666/IMG_9085_tkrncl.jpg"
@@ -28,12 +25,8 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">Indigenous Community Empowerment</h2>
-        <p className="text-gray-700">
-          Our initiatives focus on empowering indigenous communities in
-          Jharsuguda by preserving cultural heritage, providing access to
-          education, and promoting sustainable economic opportunities. We work
-          towards social inclusion and self-sufficiency through various
-          community-driven programs.
+        <p className="text-gray-700 text-[18px]">
+          Our initiatives in Jharsuguda are deeply committed to empowering indigenous communities through a multifaceted approach that blends cultural preservation with modern development. We focus on safeguarding the rich cultural heritage of these communities by supporting traditional practices, languages, and crafts, while simultaneously providing access to quality education and vocational training. Our programs are designed to promote sustainable economic opportunities, such as eco-friendly entrepreneurship and agricultural innovation, tailored to the unique needs of the region. By collaborating with local leaders and organizations, we work toward social inclusion, ensuring that indigenous voices are heard and respected in decision-making processes. The goal is to foster self-sufficiency, build resilient communities, and create a harmonious balance between tradition and progress, uplifting the overall quality of life in Jharsuguda.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737442574/Chhattisgarh_j4drsy.jpg"
@@ -60,7 +53,7 @@ const DetailsJharsuguda = () => {
                 <Tab
                   key={index}
                   className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
+                    `block w-full py-2 px-4 text-left font-medium text-[18px] text-gray-700 hover:bg-gray-100 focus:outline-none ${
                       selected ? "bg-red-600 text-white" : ""
                     }`
                   }
@@ -84,7 +77,7 @@ const DetailsJharsuguda = () => {
           <div key={index} className="border-b border-gray-200">
             <button
               onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-gray-700 focus:outline-none"
+              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-[18px] text-gray-700 focus:outline-none"
             >
               {tab.name}
               <ChevronDown

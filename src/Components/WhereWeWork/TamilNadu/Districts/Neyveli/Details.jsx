@@ -1,83 +1,54 @@
-import React, { useState } from "react";
-import { Tab } from "@headlessui/react";
-import { ChevronDown } from "lucide-react";
+import React from "react";
 import Heading from "../../../../Common/Heading";
 
-const tabs = [
-  {
-    name: "Skilling - Mining Workers",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">Skilling - Mining Workers</h2>
-        <p className="text-gray-700">
-          In Neyveli, we offer specialized training programs for mining workers. These programs focus on enhancing technical skills, safety protocols, and operational efficiency in mining operations. Our goal is to improve employability and ensure workplace safety in the mining sector.
-        </p>
-        <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739285193/upskilling-workers_lcprfo.png"
-          alt="Skilling - Mining Workers"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
-  },
-];
-
-const DetailsNeyveli = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
+const ImpactNeyveli = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
-      {/* Desktop View */}
-      <div className="hidden md:block">
-        <Tab.Group>
-          <div className="flex">
-            <Tab.List className="w-1/4 border-r border-gray-200">
-              {tabs.map((tab, index) => (
-                <Tab
-                  key={index}
-                  className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
-                      selected ? "bg-red-600 text-white" : ""
-                    }`
-                  }
-                >
-                  {tab.name}
-                </Tab>
-              ))}
-            </Tab.List>
-            <Tab.Panels className="w-3/4 p-4">
-              {tabs.map((tab, index) => (
-                <Tab.Panel key={index}>{tab.content}</Tab.Panel>
-              ))}
-            </Tab.Panels>
-          </div>
-        </Tab.Group>
-      </div>
+    <div className="pb-6">
+      <div className="container mx-auto px-4">
+        {/* Section Title */}
+        <Heading
+          text="OUR IMPACT IN NEYVELI"
+          color="text-black"
+          bgColor="bg-red-600"
+        />
 
-      {/* Mobile View */}
-      <div className="md:hidden">
-        {tabs.map((tab, index) => (
-          <div key={index} className="border-b border-gray-200">
-            <button
-              onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-gray-700 focus:outline-none"
-            >
-              {tab.name}
-              <ChevronDown
-                className={`transform transition-transform duration-200 ${
-                  activeTab === index ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-            {activeTab === index && (
-              <div className="p-4 text-gray-700">{tab.content}</div>
-            )}
+        {/* Impact Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 text-center">
+          {/* Stat 1 */}
+          <div>
+            <h3 className="text-black font-bold text-4xl">8K</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              mining workers trained and certified
+            </p>
           </div>
-        ))}
+
+          {/* Stat 2 */}
+          <div>
+            <h3 className="text-black font-bold text-4xl">6.5K</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              individuals employed in mining sector
+            </p>
+          </div>
+
+          {/* Stat 3 */}
+          <div>
+            <h3 className="text-black font-bold text-4xl">100%</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              safety training compliance achieved
+            </p>
+          </div>
+
+          {/* Stat 4 */}
+          <div>
+            <h3 className="text-black font-bold text-4xl">12K</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              community members impacted through workforce development
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default DetailsNeyveli;
+export default ImpactNeyveli;

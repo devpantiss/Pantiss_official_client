@@ -10,10 +10,7 @@ const tabs = [
       <>
         <h2 className="text-3xl font-bold mb-2">Skilling</h2>
         <p className="text-gray-700">
-          In Anugul District, we provide specialized training programs such as
-          Excavator and HEMM (Heavy Earth Moving Machinery) Operator Training.
-          These programs equip individuals with industry-relevant skills to
-          enhance employability in the mining and construction sectors.
+          In Anugul District, we are committed to empowering individuals through our comprehensive and specialized training programs tailored to meet the demands of the modern workforce. Our initiatives include Excavator and HEMM (Heavy Earth Moving Machinery) Operator Training, designed to provide hands-on experience and technical expertise. These programs are meticulously crafted to equip participants with industry-relevant skills, ensuring they are well-prepared for employment opportunities in the thriving mining and construction sectors. By bridging the gap between local talent and industry needs, we aim to foster economic growth, enhance employability, and contribute to the sustainable development of the region.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg"
@@ -31,10 +28,7 @@ const tabs = [
           Mining Village Rehabilitation & Resettlement
         </h2>
         <p className="text-gray-700">
-          We work on rehabilitating and resettling mining-affected communities
-          in Anugul by ensuring access to housing, livelihood support, and
-          social services. Our approach focuses on inclusive development and
-          community engagement for long-term sustainability.
+          Our efforts in Anugul District extend to the rehabilitation and resettlement of communities impacted by mining activities, reflecting our deep commitment to social responsibility. We strive to ensure that affected families are provided with not just basic necessities but also opportunities for a dignified and sustainable future. This includes access to well-planned housing, robust livelihood support through skill development and employment opportunities, and essential social services such as education and healthcare. Our holistic approach emphasizes active community engagement, participatory decision-making, and long-term sustainability, ensuring that displaced populations can rebuild their lives with resilience and hope while maintaining their cultural and social fabric.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
@@ -50,9 +44,7 @@ const tabs = [
   //     <>
   //       <h2 className="text-3xl font-bold mb-2">Mine Reclamation</h2>
   //       <p className="text-gray-700">
-  //         Anugul District has seen extensive mining activity, and we focus on
-  //         reclaiming mined-out lands through afforestation, soil restoration,
-  //         and community-based ecological rehabilitation efforts.
+  //         Anugul District has witnessed significant mining activity over the years, leaving behind landscapes that require careful restoration. Our mine reclamation initiatives are dedicated to transforming these mined-out areas into thriving ecosystems once again. Through a combination of afforestation efforts, where we plant native species to restore biodiversity, and advanced soil restoration techniques to revive the land's fertility, we work tirelessly to heal the environment. Additionally, we involve local communities in these ecological rehabilitation efforts, fostering a sense of ownership and creating opportunities for sustainable livelihoods while ensuring the land is returned to a state that benefits both nature and people.
   //       </p>
   //       <img
   //         src="https://bracinternational.org/wp-content/uploads/2024/mine-reclamation.jpg"
@@ -70,10 +62,7 @@ const tabs = [
           Nutrition & Well-being in Mining Villages
         </h2>
         <p className="text-gray-700">
-          We address malnutrition and health concerns in mining villages by
-          promoting access to nutritious food, clean water, and healthcare
-          services. Our initiatives include maternal health programs and school
-          nutrition schemes.
+          In the mining villages of Anugul District, we recognize that health and well-being are foundational to thriving communities, which is why we have launched extensive programs to combat malnutrition and elevate living standards. Our initiatives focus on ensuring consistent access to nutritious food through community kitchens and agricultural support, clean and safe drinking water through infrastructure improvements, and comprehensive healthcare services tailored to the needs of rural populations. We place special emphasis on maternal health programs, providing prenatal and postnatal care to support healthy pregnancies, alongside school nutrition schemes that ensure children receive balanced meals to aid their physical and cognitive development. By addressing these critical areas, we aim to build healthier, stronger communities capable of overcoming the challenges posed by their environment.
         </p>
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg"

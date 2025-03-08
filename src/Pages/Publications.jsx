@@ -19,7 +19,6 @@ const Publications = () => {
         <CapacityDevelopment />
         <PopularSection />
         {/* <Cards /> */}
-
     </div>
   )
 }

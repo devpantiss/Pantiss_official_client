@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX, FiUser, FiFile } from "react-icons/fi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom"; // Add useNavigate
 import { AiOutlineDownCircle } from "react-icons/ai";
 import { TbDisabled } from "react-icons/tb";
 import {
@@ -18,6 +18,7 @@ import { FaPersonDigging } from "react-icons/fa6";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // Add useNavigate hook for programmatic navigation
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuOpen2, setIsMenuOpen2] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
   const [isCourseOpen, setIsCourseOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
-  const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false); // New state for dropdown
+  const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +60,7 @@ const Header = () => {
       setIsEventsOpen(false);
       setIsProfileOpen(false);
       setIsCourseOpen(false);
+      navigate("/what-we-do"); // Navigate to /what-we-do when clicked
     } else if (dropdown === "events") {
       setIsEventsOpen(!isEventsOpen);
       setIsAboutOpen(false);
@@ -86,7 +88,7 @@ const Header = () => {
     setIsEventsOpen(false);
     setIsCourseOpen(false);
     setIsProfileOpen(false);
-    setIsAccessibilityOpen(false); // Close accessibility dropdown when other dropdowns are closed
+    setIsAccessibilityOpen(false);
   };
 
   const handleOptionSelect = () => {
@@ -105,7 +107,7 @@ const Header = () => {
   };
 
   const toggleAccessibilityMenu = () => {
-    setIsAccessibilityOpen(!isAccessibilityOpen); // Toggle accessibility menu
+    setIsAccessibilityOpen(!isAccessibilityOpen);
   };
 
   return (
@@ -137,7 +139,7 @@ const Header = () => {
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[#2A675C]" : "text-[#2A675C]"
               } ${
-                isActive("/") ? "text-red-600 underline" : ""
+                isActive("/sdg-pantiss") ? "text-red-600 underline" : ""
               } transition duration-300`}
               onClick={handleOptionSelect}
             >
@@ -342,7 +344,8 @@ const Header = () => {
 
             {/* What we do */}
             <div className="relative group">
-              <button
+              <Link
+                to="/what-we-do"
                 onClick={() => toggleDropdown("whatWeDo")}
                 className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
                   isScrolled ? "text-[white]" : "text-[white]"
@@ -354,7 +357,7 @@ const Header = () => {
                     isWhatWeDoOpen ? "rotate-180" : ""
                   }`}
                 />
-              </button>
+              </Link>
               {isWhatWeDoOpen && (
                 <div className="absolute mt-6 grid grid-cols-3 w-[1000px] text-black bg-red-600 border rounded shadow-lg z-20">
                   <Link
@@ -462,7 +465,7 @@ const Header = () => {
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
-                      Indegenous Community Empowerment
+                      Indigenous Community Empowerment
                     </span>
                   </Link>
                   <Link
@@ -513,13 +516,13 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/publications"
+              to="/impact"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
               onClick={handleOptionSelect}
             >
-              Our Publications
+              Our Impact
             </Link>
           </nav>
 
@@ -529,7 +532,7 @@ const Header = () => {
               className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 mx-3 text-[18px] ring-2 ring-[white] rounded-md ${
                 isScrolled ? "text-[white]" : "text-[white]"
               } transition duration-300`}
-              onClick={toggleAccessibilityMenu} // Add click event to toggle dropdown
+              onClick={toggleAccessibilityMenu}
             >
               <TbDisabled className="text-[26px] font-open" /> Divyanjan
               Friendly
@@ -668,9 +671,10 @@ const Header = () => {
             </div>
 
             <div className="relative">
-              <button
+              <Link
+                to="/what-we-do"
                 onClick={() => toggleDropdown("whatWeDo")}
-                className="flex items-center mx-3 text-[18px] gap-x-2  text-[white]"
+                className="flex items-center mx-3 text-[18px] gap-x-2 text-[white]"
               >
                 <GrBriefcase />
                 What We Do
@@ -679,7 +683,7 @@ const Header = () => {
                     isWhatWeDoOpen ? "rotate-180" : ""
                   }`}
                 />
-              </button>
+              </Link>
               {isWhatWeDoOpen && (
                 <div className="grid grid-cols-2 pl-6 mt-4 gap-y-4 gap-x-4">
                   <Link
@@ -696,7 +700,7 @@ const Header = () => {
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Rehabilation & Resettlement of Mines
+                    Rehabilitation & Resettlement of Mines
                   </Link>
                   <Link
                     to="/what-we-do/skill-training-for-mining-affected-youth"
@@ -755,12 +759,12 @@ const Header = () => {
                     Model Mining Village in Making
                   </Link>
                   <Link
-                    to="/what-we-do/indegenous-community-empowerment"
+                    to="/what-we-do/indigenous-community-empowerment"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Indegenous Community Empowerment
+                    Indigenous Community Empowerment
                   </Link>
                   <Link
                     to="/what-we-do/waterbody-restoration-in-mines"
@@ -801,18 +805,18 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/publications"
+              to="/impact"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
               onClick={handleOptionSelect}
             >
               <FiFile />
-              Our Publications
+              Our Impact
             </Link>
 
             <div className="relative">
               <button
                 onClick={toggleAccessibilityMenu}
-                className="flex items-center mx-3 text-[18px] gap-x-2  text-[white]"
+                className="flex items-center mx-3 text-[18px] gap-x-2 text-[white]"
               >
                 <TbDisabled className="text-[26px] font-open" /> Divyanjan
                 Friendly
