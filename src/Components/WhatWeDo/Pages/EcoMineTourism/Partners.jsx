@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../../Common/Heading";
 
-const PartnersTourism = () => {
+const Partners = () => {
   return (
     <section className="container mx-auto mb-6">
       <Heading
@@ -29,4 +29,4 @@ const PartnersTourism = () => {
   );
 };
 
-export default PartnersTourism;
+export default Partners;

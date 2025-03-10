@@ -1,149 +1,89 @@
-// ChallengesRehab.js
 import React from "react";
 import Heading from "../../../Common/Heading";
-
-// Placeholder for icons (you can replace these with actual SVGs or image imports)
-const IconData = () => (
-  <svg
-    className="w-8 h-8 text-red-600"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M9 17v-6h6v6m-3-6v6m-6 0h12m-9-9h6m-9 0h6m-9 0v12m12-12v12"
-    />
-  </svg>
-);
-
-const IconCompliance = () => (
-  <svg
-    className="w-8 h-8 text-red-600"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M12 8v4m0 4h.01M4 4h16v16H4V4z"
-    />
-  </svg>
-);
-
-const IconCommunity = () => (
-  <svg
-    className="w-8 h-8 text-red-600"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M12 4.5c2.67 0 5.33 1.67 8 5s4 7 4 10.5H0c0-3.5 1.33-7 4-10.5S9.33 4.5 12 4.5z"
-    />
-  </svg>
-);
-
-const IconMonitoring = () => (
-  <svg
-    className="w-8 h-8 text-red-600"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M3 18v-6h6v6m6-6h6v6m-9-9v6m-6-6h12m-9-9h6m-9 0h6m-9 0v12m12-12v12"
-    />
-  </svg>
-);
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ChallengesRehab = () => {
-  const initiatives = [
+  const challenges = [
     {
-      challenge: "Data",
-      icon: <IconData />,
-      title: "Establishing Comprehensive Baseline Surveys",
-      description:
-        "Conduct thorough multi-seasonal environmental and social baseline surveys to address the lack of comprehensive data, enabling accurate EIA/SIA for mining land acquisition despite time constraints.",
-      focus:
-        "Focus on remote mining regions with limited historical data, expandable to other sites.",
+      imageUrl:
+        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-01.jpg",
+      stat: "over 50%",
+      description: "of global greenhouse gas emissions originate in Asia and the Pacific",
     },
     {
-      challenge: "Compliance",
-      icon: <IconCompliance />,
-      title: "Harmonizing Local and International Standards",
-      description:
-        "Develop a framework to align government-led land acquisition with international standards (e.g., IFC Performance Standards), ensuring compliance and reducing displacement conflicts in mining projects.",
-      focus:
-        "Applicable to regions with varying regulatory frameworks, scalable globally.",
+      imageUrl:
+        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-02.jpg",
+      stat: "25%",
+      description: "of annual global emissions come from coal-fired power plants",
     },
     {
-      challenge: "Engagement",
-      icon: <IconCommunity />,
-      title: "Enhancing Community Consultation Processes",
-      description:
-        "Implement robust consultation mechanisms to engage Indigenous and local communities, addressing resettlement, livelihood loss, and cultural impacts from mining land acquisition.",
-      focus:
-        "Targeted at mining areas with Indigenous populations, expandable to affected communities.",
-    },
-    {
-      challenge: "Monitoring",
-      icon: <IconMonitoring />,
-      title: "Implementing Long-Term Environmental Monitoring",
-      description:
-        "Establish a sustainable monitoring system with standardized indicators to track environmental degradation (e.g., water contamination, deforestation) from mining land acquisition over time.",
-      focus:
-        "Focused on remote mining sites with weak governance, expandable to all operations.",
+      imageUrl:
+        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-03.jpg",
+      stat: "90%",
+      description: "of young (<20 years) coal-fired power plants are in Asia",
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true, // To center the slides with equal spacing
+    centerPadding: "0", // No padding on sides
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-white text-white">
-      <div className="container mx-auto px-4">
-        {/* Title and Subtitle */}
-        <Heading text="CHALLENGES" color="text-black" bgColor="bg-red-500" />
+    <section className="bg-red-600 py-12 px-6">
+      <div className="container mx-auto max-w-7xl">
+        {/* Title and Description */}
+        <div className="text-center mb-10">
+          <Heading text="The Challenge" color="text-white" bgColor="bg-white" />
+          <p className="text-white text-lg text-left leading-relaxed">
+            The battle against climate change will be won or lost in Asia and the Pacific. If emissions from existing coal power plants are not addressed, the region will fail to meet the Paris Agreement targets.
+          </p>
+        </div>
 
-        <p className="text-lg md:text-xl text-black text-center lg:text-left mb-12">
-          Key challenges and solutions in EIA/SIA for land acquisition in mining
-          projects.
-        </p>
-
-        {/* Initiatives Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {initiatives.map((initiative, index) => (
-            <div
-              key={index}
-              className="bg-white border-4 border-red-600 text-black p-6 rounded-lg shadow-md flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex gap-x-3">
-                  <div className="mb-2 p-3 border-4 flex justify-center items-center rounded-md border-red-600">
-                    {initiative.icon}
-                  </div>
-                  <div className="mb-2 p-3 text-xl flex justify-center items-center font-bold rounded-md w-full text-white bg-red-600">
-                    {initiative.challenge}
-                  </div>
+        {/* Carousel */}
+        <div className="grid grid-cols-3">
+          {challenges.map((challenge, index) => (
+            <div key={index} className="px-2">
+              <div className="relative h-[450px] ring-2 ring-white overflow-hidden rounded-lg shadow-md">
+                <img
+                  src={challenge.imageUrl}
+                  alt={`Challenge ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 w-full text-red-600 bg-white p-4">
+                  <h4 className="text-3xl font-bold text-center">{challenge.stat}</h4>
+                  <p className="text-base text-center leading-tight">{challenge.description}</p>
                 </div>
-                <hr className="border-red-600"/>
-                <h3 className="text-xl font-semibold my-2">{initiative.title}</h3>
-                <p className="text-gray-700 mb-4">{initiative.description}</p>
               </div>
-              <hr className="border-red-600"/>
-              <p className="text-gray-600 italic my-2">{initiative.focus}</p>
             </div>
           ))}
         </div>

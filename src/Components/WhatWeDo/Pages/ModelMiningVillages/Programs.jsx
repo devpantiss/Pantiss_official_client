@@ -1,8 +1,8 @@
-// ProgramsModelVillage.js
+// Programs.js
 import React from "react";
 import Heading from "../../../Common/Heading";
 
-const ProgramsModelVillage = () => {
+const Programs = () => {
   const funds = [
     {
       image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Landbanking-Group_2500%C3%97704.jpg",
@@ -47,7 +47,7 @@ const ProgramsModelVillage = () => {
   ];
 
   return (
-    <section className="py-8 bg-gray-100">
+    <section className="py-8 bg-white">
       <div className="container mx-auto px-4">
         {/* Clear All Filters */}
         <div className="text-center mb-6">
@@ -80,7 +80,7 @@ const ProgramsModelVillage = () => {
               {/* Title and Line */}
               <div className="absolute bottom-4 left-4 right-4 text-white">
                 <hr className="border-t border-white/80 mb-2 w-8" />
-                <h3 className="text-base font-semibold leading-tight">
+                <h3 className="text-start text-4xl font-semibold leading-tight">
                   {fund.title}
                 </h3>
               </div>
@@ -92,4 +92,4 @@ const ProgramsModelVillage = () => {
   );
 };
 
-export default ProgramsModelVillage;
+export default Programs;

@@ -1,11 +1,11 @@
-// StoryRemote.js
+// Story.js
 import React, { useState, useCallback } from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const StoryRemote = () => {
+const Story = () => {
   const stories = [
     {
       image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
@@ -211,4 +211,4 @@ const StoryRemote = () => {
   );
 };
 
-export default StoryRemote;
+export default Story;

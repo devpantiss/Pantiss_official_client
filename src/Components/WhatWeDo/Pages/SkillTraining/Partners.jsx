@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../../Common/Heading";
 
-const PartnersSkillTraining = () => {
+const Partners = () => {
   return (
     <section className="container mx-auto mb-6">
       <Heading
@@ -29,4 +29,4 @@ const PartnersSkillTraining = () => {
   );
 };
 
-export default PartnersSkillTraining;
+export default Partners;

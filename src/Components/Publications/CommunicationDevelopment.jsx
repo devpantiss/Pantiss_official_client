@@ -5,33 +5,39 @@ import Heading from "../Common/Heading";
 const dashboards = [
   {
     title: "Results Dashboard",
-    description: "Track and analyze the outcomes of our initiatives in real-time.",
+    description:
+      "Track and analyze the outcomes of our initiatives in real-time. This dashboard provides detailed metrics, visualizations, and performance indicators to help stakeholders understand the impact of our programs across various regions and sectors.",
     date: "Updated: March 1, 2025",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.21_PM_x5eoxx.png",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.21_PM_x5eoxx.png",
     exploreUrl: "/dashboard/results", // Replace with actual dashboard URL
   },
   {
     title: "Partnerships Dashboard",
-    description: "Explore our network of collaborators and their contributions.",
+    description:
+      "Explore our network of collaborators and their contributions. This tool offers insights into partnership dynamics, joint projects, resource sharing, and the collective impact of our alliances on community development and innovation.",
     date: "Updated: February 15, 2025",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.47_PM_ymp42g.png",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.47_PM_ymp42g.png",
     exploreUrl: "/dashboard/partnerships", // Replace with actual dashboard URL
   },
   {
     title: "Key Result Stories Dashboard",
-    description: "Dive into impactful stories showcasing our key achievements.",
+    description:
+      "Dive into impactful stories showcasing our key achievements. This dashboard highlights success narratives, beneficiary testimonials, and data-driven outcomes that illustrate the transformative effects of our work over the past year.",
     date: "Updated: January 10, 2025",
-    imageUrl: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.35.54_PM_kziq55.png",
+    imageUrl:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.35.54_PM_kziq55.png",
     exploreUrl: "/dashboard/key-result-stories", // Replace with actual dashboard URL
   },
 ];
 
 const CommunicationDevelopment = () => {
   return (
-    <section className="bg-gray-50 py-12 px-6">
+    <section className="bg-white py-10 px-6">
       <div className="container mx-auto max-w-7xl">
         {/* Title */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <Heading text="DASHBOARDS" color="text-black" bgColor="bg-red-500" />
         </div>
 
@@ -40,37 +46,42 @@ const CommunicationDevelopment = () => {
           {dashboards.map((dashboard, index) => (
             <div
               key={index}
-              className="group bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[650px] flex flex-col"
             >
               {/* Image */}
-              <div className="relative overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={dashboard.imageUrl}
                   alt={dashboard.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300" />
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2">
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold text-gray-900 leading-tight line-clamp-2 group-hover:text-red-600 transition-colors duration-200">
                   {dashboard.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                <p className="text-gray-700 text-base line-clamp-5 mt-2">
                   {dashboard.description}
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500 text-sm">{dashboard.date}</span>
+                {/* Spacer to push the footer to the bottom */}
+                <div className="flex-grow" />
+                {/* Footer with Date and Button */}
+                <div className="flex items-center justify-between mt-4">
+                  <span className="text-gray-500 text-sm font-medium">
+                    {dashboard.date}
+                  </span>
                   <a
                     href={dashboard.exploreUrl}
-                    className="inline-flex items-center px-4 py-2 bg-red-500 text-white text-sm font-medium rounded-md hover:bg-red-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white text-sm font-semibold rounded-full shadow-md hover:from-red-600 hover:to-red-700 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-red-300"
                     aria-label={`Explore ${dashboard.title}`}
                   >
                     Explore
                     <svg
-                      className="ml-2 w-4 h-4"
+                      className="ml-2 w-5 h-5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
