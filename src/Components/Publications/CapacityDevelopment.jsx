@@ -46,7 +46,7 @@ const CapacityDevelopment = () => {
           {toolkitItems.map((item, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[650px] flex flex-col"
+              className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:ring-2 ring-red-600 hover:shadow-2xl hover:-translate-y-2 h-[650px] flex flex-col"
             >
               {/* Image */}
               <div className="relative h-56 overflow-hidden">

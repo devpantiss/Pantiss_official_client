@@ -42,8 +42,8 @@ const HomePage = () => {
       <OurPartners />
       <ReachSection />
       <Highlights />
-      <ActivityAndEvents />
       <Newsletter />
+      <ActivityAndEvents />
       <Careers />
     </div>
   );

@@ -61,7 +61,7 @@ const Latest = () => {
   ];
 
   return (
-    <div className="bg-white py-10 px-6">
+    <div className="bg-red-600 py-10 px-6">
       <div className="container mx-auto">
         {/* Section Title */}
         <div className="text-center">

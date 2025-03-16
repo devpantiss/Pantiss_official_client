@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick"; // Import the slider library
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Stories from "./Stories";
 
 const states = [
   {
@@ -190,41 +191,48 @@ const latestNews = {
       date: "March 05, 2025",
       title:
         "Enterprise growth in mining-affected regions drives local economy",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739280958/WhatsApp_Image_2025-02-01_at_7.15.33_PM_wxkfmj.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739280958/WhatsApp_Image_2025-02-01_at_7.15.33_PM_wxkfmj.jpg",
     },
   ],
   Jharkhand: [
     {
       date: "January 18, 2025",
       title: "Jharkhand's RPL program upskills workers in the mining sector",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735915960/WhatsApp_Image_2025-01-03_at_7.09.25_PM_1_pmya7b.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735915960/WhatsApp_Image_2025-01-03_at_7.09.25_PM_1_pmya7b.jpg",
     },
     {
       date: "February 20, 2025",
       title: "Just transition: Jharkhand pilots sustainable mining practices",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif",
     },
     {
       date: "March 01, 2025",
       title: "Mine reclamation project restores biodiversity in Jharkhand",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738935983/dry-hill-sunny-day_hgnuof.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738935983/dry-hill-sunny-day_hgnuof.jpg",
     },
   ],
   Assam: [
     {
       date: "January 25, 2025",
       title: "Agriculture skilling initiatives empower farmers in Assam",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg",
     },
     {
       date: "February 15, 2025",
       title: "Just transition: Moving away from coal dependency in Assam",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg",
     },
     {
       date: "March 10, 2025",
       title: "Resettlement program helps displaced mining families in Assam",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994534/diverse-people-refugee-camps_uuu6by.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738994534/diverse-people-refugee-camps_uuu6by.jpg",
     },
   ],
   "Tamil Nadu": [
@@ -232,13 +240,15 @@ const latestNews = {
       date: "February 22, 2025",
       title:
         "Mining skilling centers launched to support workforce development",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
     },
     {
       date: "February 22, 2025",
       title:
         "Mining skilling centers launched to support workforce development",
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195121/vocational_acvsf1.jpg",
     },
   ],
   Chhattisgarh: [
@@ -246,13 +256,13 @@ const latestNews = {
       date: "January 28, 2025",
       title: "Chhattisgarh focuses on mine reclamation and land restoration",
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
     },
     {
       date: "February 18, 2025",
       title: "New skilling centers to support sustainable mining jobs",
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg",
     },
   ],
 };
@@ -434,29 +444,31 @@ const HeroBanner = () => {
             ))}
           </div>
 
-          {/* Latest Section */}
-          <Heading text="Latest" color="text-black" bgColor="bg-red-600" />
-          <Slider {...sliderSettings} className="w-full px-8">
-            {latestNews[selectedState]?.map((news, index) => (
-              <div key={index} className="p-4">
-                <div className="bg-white shadow rounded-lg overflow-hidden">
-                  <img
-                    src={news.image}
-                    alt={news.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-gray-500">{news.date}</p>
-                    <h3 className="font-semibold text-lg">{news.title}</h3>
+          <div className="bg-red-600 p-6">
+            {/* Latest Section */}
+            <Heading text="Latest" color="text-white" bgColor="bg-white" />
+            <Slider {...sliderSettings} className="w-full px-8">
+              {latestNews[selectedState]?.map((news, index) => (
+                <div key={index} className="p-4">
+                  <div className="bg-white shadow rounded-lg overflow-hidden">
+                    <img
+                      src={news.image}
+                      alt={news.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-4">
+                      <p className="text-sm text-gray-500">{news.date}</p>
+                      <h3 className="font-semibold text-lg">{news.title}</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
 
           {/* Impact Section */}
           <Heading text="Impact" color="text-black" bgColor="bg-red-600" />
-          <div className="p-8 bg-gray-100 rounded-lg shadow-lg">
+          <div className="p-8 bg-gray-100 rounded-lg shadow-lg mb-16">
             <p className="text-lg text-gray-700 mb-4">
               {impactData[selectedState]?.description}
             </p>
@@ -473,6 +485,8 @@ const HeroBanner = () => {
           </div>
         </div>
       )}
+
+      <Stories />
     </div>
   );
 };

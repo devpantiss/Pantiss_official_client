@@ -26,7 +26,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 px-6 bg-white">
       <div className="container mx-auto text-center">
         {/* Title */}
         <Heading text="OUR EXPERTISE" color="text-black" bgColor="bg-red-600" />

@@ -1,154 +1,160 @@
 import React from "react";
 
 const ActivityAndEvents = () => {
-  const stakeholderEngagements = [
+  const pantissEvents = [
     {
-      country: "Philippines - Manila",
-      event:
-        "Third Stakeholder Engagement Meeting on the Philippines’ CIF ACT Investment Plan",
-      date: "12 Mar 2024",
-      materials: "Revised IP (Feb. 2024) Stakeholder Q&A",
+      event: "FarmGrow App Launch Workshop",
+      incharge: "Priya Sharma",
+      date: "15 Jan 2025",
+      venue: "New Delhi, India",
     },
     {
-      country: "Indonesia - Cirebon",
-      event:
-        "Stakeholder consultations on the early retirement of Cirebon-1 coal-fired power plant",
-      date: "26 Feb - 2 Mar 2024",
-      materials:
-        "Preliminary Just Transition Assessment - Summary (English and Bahasa Indonesia) Environmental and Social Compliance Audit Report - Consultation materials (English, Bahasa Indonesia)",
-    },
-  ];
-
-  const relatedResources = [
-    {
-      text: "Blog: Women Must Be at the Forefront of the Transition to a Low-Carbon Economy",
-      link: "#",
+      event: "Sustainable Farming Seminar",
+      incharge: "Rahul Patel",
+      date: "22 Feb 2025",
+      venue: "Mumbai, India",
     },
     {
-      text: "Expert: Why ADB’s Energy Transition Mechanism is prioritizing Safeguards and a Just Transition",
-      link: "#",
+      event: "Women Farmer Empowerment Meet",
+      incharge: "Anita Desai",
+      date: "10 Mar 2025",
+      venue: "Bangalore, India",
+    },
+    {
+      event: "Climate Resilience Training",
+      incharge: "Vikram Singh",
+      date: "18 Apr 2025",
+      venue: "Hyderabad, India",
+    },
+    {
+      event: "Microloan Access Forum",
+      incharge: "Meena Kumari",
+      date: "25 May 2025",
+      venue: "Chennai, India",
+    },
+    {
+      event: "Agri-Tech Innovation Expo",
+      incharge: "Suresh Nair",
+      date: "12 Jun 2025",
+      venue: "Pune, India",
+    },
+    {
+      event: "Rural Development Conference",
+      incharge: "Lakshmi Rao",
+      date: "20 Jul 2025",
+      venue: "Kolkata, India",
     },
   ];
 
   return (
     <section
-      className="relative bg-cover bg-center py-12 px-6"
+      className="relative bg-cover bg-center py-6 px-6"
       style={{
-        backgroundImage: `url(https://www.adb.org/sites/default/files/bg-just-transition.jpg)`,
+        backgroundImage: `url(https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741674138/mathew-schwartz-P63j18ITHfA-unsplash_oxbg8q.jpg)`,
       }}
     >
       {/* Overlay for readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
-      {/* Centered Content */}
-      <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="text-center text-white">
-          {/* Title and Description */}
-          <h2 className="text-3xl font-bold mb-4">
-            The Importance of Safeguards and a Just Transition
+      {/* Content */}
+      <div className="container mx-auto max-w-7xl relative z-10 flex flex-col lg:flex-row gap-8">
+        {/* Left Section */}
+        <div className="lg:w-1/3 w-full text-white flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
+          <h2 className="text-4xl font-bold tracking-tight md:text-6xl mb-6">
+            Pantiss Foundation Events
           </h2>
-          <p className="text-base leading-relaxed mb-10 max-w-2xl mx-auto">
-            ADB’s work on ETM will prioritize safeguards and a just transition,
-            including high level conversations to avoid adverse impacts on the
-            environment and people, and a commitment that the move toward
-            renewable and sustainable economies leave no community, industry, or
-            worker behind.
+          <p className="text-lg text-gray-200 max-w-md mb-6">
+            Discover upcoming events driving sustainable change and community empowerment.
           </p>
+          <button className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors">
+            View All Events
+          </button>
+        </div>
 
-          {/* Two-Column Layout */}
-          <div className="flex flex-col md:flex-row gap-8 justify-center">
-            {/* Right Column: Table, Resources, and Contact */}
-            <div className="w-full flex flex-col lg:flex-row lg:gap-x-6">
-              {/* Table: Key Stakeholder Engagement Activities */}
-              <div className="mb-8 lg:w-2/3">
-                <h3 className="text-xl font-bold">
-                  Key Stakeholder Engagement Activities
-                </h3>
-
-                <hr className="my-6 border-red-600"/>
-
-                <div className="overflow-x-auto bg-white bg-opacity-90 p-4 rounded-lg">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="bg-gray-100">
-                        <th className="p-3 text-gray-800 font-semibold text-sm">
-                          Country/Location
-                        </th>
-                        <th className="p-3 text-gray-800 font-semibold text-sm">
-                          Event
-                        </th>
-                        <th className="p-3 text-gray-800 font-semibold text-sm">
-                          Date
-                        </th>
-                        <th className="p-3 text-gray-800 font-semibold text-sm">
-                          Relevant Materials
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {stakeholderEngagements.map((engagement, index) => (
-                        <tr key={index} className="border-b border-gray-200">
-                          <td className="p-3 text-gray-600 text-sm">
-                            {engagement.country}
-                          </td>
-                          <td className="p-3 text-gray-600 text-sm">
-                            {engagement.event}
-                          </td>
-                          <td className="p-3 text-gray-600 text-sm">
-                            {engagement.date}
-                          </td>
-                          <td className="p-3 text-gray-600 text-sm">
-                            {engagement.materials}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div className="lg:w-1/3 mt-12">
-                {/* Related Resources */}
-                <div className="mb-8 bg-red-600 rouned-md p-4">
-                  <h3 className="text-lg font-bold text-white mb-4">
-                    Related Resources
-                  </h3>
-                  <ul className="space-y-2">
-                    {relatedResources.map((resource, index) => (
-                      <li key={index}>
-                        <a
-                          href={resource.link}
-                          className="text-white underline text-sm"
-                        >
-                          {resource.text}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Contact Us */}
-                <div className="bg-red-600 rounded-md p-4">
-                  <h3 className="text-lg font-bold text-white mb-4">
-                    Contact Us
-                  </h3>
-                  <p className="text-gray-200 text-sm">
-                    ADB welcomes your comments, feedback, and questions.
-                  </p>
-                </div>
-              </div>
-            </div>
+        {/* Table Container */}
+        <div className="lg:w-2/3 w-full bg-white bg-opacity-95 rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+          {/* Header with horizontal overflow */}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left min-w-[600px]">
+              <thead className="sticky top-0 bg-red-600 text-white z-10">
+                <tr>
+                  <th className="p-4 font-semibold text-md uppercase tracking-wide w-2/5">
+                    Event
+                  </th>
+                  <th className="p-4 font-semibold text-md uppercase tracking-wide w-1/5">
+                    Incharge
+                  </th>
+                  <th className="p-4 font-semibold text-md uppercase tracking-wide w-1/5">
+                    Date
+                  </th>
+                  <th className="p-4 font-semibold text-md uppercase tracking-wide w-1/5">
+                    Venue
+                  </th>
+                </tr>
+              </thead>
+            </table>
           </div>
 
-          {/* Footer */}
-          <div className="flex justify-between items-center mt-10">
-            <p className="text-gray-200 text-sm">Last update: 7 Mar 2024</p>
-            <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
-              Previous Activities
-            </button>
+          {/* Scrolling Content with horizontal overflow */}
+          <div className="max-h-[450px] overflow-y-hidden overflow-x-auto">
+            <div className="animate-scroll">
+              <table className="w-full text-left min-w-[600px]">
+                <tbody>
+                  {pantissEvents.concat(pantissEvents).map((event, index) => (
+                    <tr
+                      key={index}
+                      className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                    >
+                      <td className="p-4 text-md w-2/5">{event.event}</td>
+                      <td className="p-4 text-md w-1/5">{event.incharge}</td>
+                      <td className="p-4 text-md w-1/5">{event.date}</td>
+                      <td className="p-4 text-md w-1/5">{event.venue}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* CSS for design and scrolling */}
+      <style jsx>{`
+        /* Continuous scrolling animation */
+        .animate-scroll {
+          animation: scroll 25s linear infinite;
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
+        /* Pause animation on hover */
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
+
+        /* Ensure tables align */
+        table {
+          table-layout: fixed;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+          .lg\\:w-1/3 {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+          .lg\\:w-2/3 {
+            width: 100%;
+          }
+        }
+      `}</style>
     </section>
   );
 };

@@ -27,9 +27,9 @@ const ArticleSection2 = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-8 px-6">
+    <div className="bg-red-600 py-8 px-6">
       <div className="container mx-auto ">
-        <Heading text="BLOGS" color="text-black" bgColor="bg-red-500" />
+        <Heading text="BLOGS" color="text-white" bgColor="bg-white" />
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Articles Section */}
@@ -37,16 +37,16 @@ const ArticleSection2 = () => {
             {articles.map((article, index) => (
               <div
                 key={index}
-                className="flex flex-col lg:flex-row bg-white shadow-md rounded-lg overflow-hidden"
+                className="flex flex-col lg:flex-row bg-white ring-2 ring-white rounded-md shadow-md overflow-hidden"
               >
                 <img
                   src={article.image}
                   alt={article.title}
-                  className="lg:w-2/4 object-cover"
+                  className="lg:w-2/4 object-cover rounded-t-md"
                 />
                 <div className="p-4 flex flex-col justify-between">
-                  <h3 className="text-lg font-bold">{article.title}</h3>
-                  <p className="text-gray-600 text-sm">{article.description}</p>
+                  <h3 className="text-lg text-red-600 font-bold">{article.title}</h3>
+                  <p className="text-gray-800 text-sm">{article.description}</p>
                 </div>
               </div>
             ))}
@@ -67,7 +67,7 @@ const ArticleSection2 = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600"
+                className="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-500"
               >
                 Subscribe
               </button>

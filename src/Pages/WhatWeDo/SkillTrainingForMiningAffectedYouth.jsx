@@ -15,7 +15,7 @@ const SkillTrainingForMiningAffectedYouth = () => {
     <div>
       <BannerSkillTraining />
       <ChallengesSkillTraining />
-      <ChallengesResponseSkills />
+      {/* <ChallengesResponseSkills /> */}
       <SolutionsSkillTraining />
       <ProgramsSkillTraining />
       <ProjectMapListingSkills />

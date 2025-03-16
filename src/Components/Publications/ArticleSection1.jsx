@@ -32,39 +32,41 @@ const sideArticles = [
 
 const ArticleSection1 = () => {
   return (
-    <section className="bg-gray-100 py-8 px-6">
+    <section className="bg-red-600 py-8 px-6">
       <div className="container mx-auto">
-        <Heading text="NEWS" color="text-black" bgColor="bg-red-500" />
+        <Heading text="NEWS" color="text-white" bgColor="bg-white" />
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Featured Article */}
-          <div className="lg:w-1/2 flex flex-col">
+          <div className="lg:w-1/2 flex flex-col ring-2 ring-white bg-white rounded-md">
             <img
               src={featuredArticle.imageUrl}
               alt={featuredArticle.title}
               className="w-full h-full object-cover rounded-md"
             />
-            <div className="mt-4">
-              <h2 className="text-xl font-semibold">{featuredArticle.title}</h2>
-              <p className="text-gray-600 mt-2">
+            <div className="mt-4 p-4">
+              <h2 className="text-xl text-red-600 font-semibold">{featuredArticle.title}</h2>
+              <p className="text-gray-800 mt-2">
                 {featuredArticle.description}
               </p>
             </div>
           </div>
 
           {/* Side Articles */}
-          <div className="lg:w-1/2 flex flex-col gap-4">
+          <div className="lg:w-1/2 flex flex-col gap-4 ">
             {sideArticles.map((article, index) => (
               <div
                 key={index}
-                className="flex lg:flex-row flex-col gap-4 items-start"
+                className="flex lg:flex-row flex-col gap-4 ring-2 bg-white ring-white rounded-md items-start"
               >
                 <img
                   src={article.imageUrl}
                   alt={article.title}
                   className="h-full w-full lg:w-[300px] object-cover rounded-md"
                 />
-                <h3 className="text-md font-semibold">{article.title}</h3>
+                <div className="p-2">
+                <h3 className="text-md text-red-600 font-semibold">{article.title}</h3>
+                </div>
               </div>
             ))}
           </div>

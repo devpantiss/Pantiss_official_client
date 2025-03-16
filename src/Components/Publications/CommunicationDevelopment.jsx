@@ -38,7 +38,7 @@ const CommunicationDevelopment = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Title */}
         <div className="text-center mb-12">
-          <Heading text="DASHBOARDS" color="text-black" bgColor="bg-red-500" />
+          <Heading text="DASHBOARDS & DATA ANALYTICS" color="text-black" bgColor="bg-red-500" />
         </div>
 
         {/* Dashboard Cards */}
@@ -46,7 +46,7 @@ const CommunicationDevelopment = () => {
           {dashboards.map((dashboard, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[650px] flex flex-col"
+              className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:ring-2 ring-red-600 hover:shadow-2xl hover:-translate-y-2 h-[650px] flex flex-col"
             >
               {/* Image */}
               <div className="relative h-56 overflow-hidden">

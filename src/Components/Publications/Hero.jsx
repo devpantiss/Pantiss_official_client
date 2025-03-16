@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 const Hero = () => {
   const slides = [
     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736847193/vision-magazin-lAdf6NFyh5c-unsplash_hqap3j.jpg",
+    // Add more slides here if desired, e.g.:
+    // "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,49 +19,57 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className="relative h-[70vh] w-full overflow-hidden">
+    <div className="relative h-[100vh] w-full overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
           style={{
             backgroundImage: `url(${slide})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
-        ></div>
+          aria-hidden={index !== currentSlide}
+        />
       ))}
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold">OUR PUBLICATIONS </h1>
-        {/* <div className="mt-8 flex">
-          <input
-            type="text"
-            placeholder="Enter keyword(s) or location"
-            className="px-4 py-2 rounded-l-md focus:outline-none w-80"
-          />
-          <button className="bg-red-500 px-6 py-2 rounded-r-md text-white font-bold hover:bg-red-600">
-            Search Jobs
-          </button>
-        </div> */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30 flex flex-col items-center justify-center text-center text-white px-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 drop-shadow-lg">
+          Our Publications
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-100 max-w-3xl mx-auto mb-8 drop-shadow-md">
+          Discover insights and research driving sustainable agriculture and community empowerment.
+        </p>
+        <button
+          className="px-8 py-3 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+          onClick={() => console.log("Browse clicked")} // Replace with actual navigation
+        >
+          Browse Publications
+        </button>
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentSlide === index ? "bg-white" : "bg-gray-400"
-            }`}
-          ></button>
-        ))}
-      </div>
+      {slides.length > 1 && (
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                currentSlide === index
+                  ? "bg-red-600 scale-125"
+                  : "bg-gray-400 hover:bg-gray-300"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

@@ -81,16 +81,16 @@ const slides = [
 
 const Stories = () => {
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4 relative">
+    <section className="py-12 px-6">
+      <div className="container  px-4 mx-auto relative">
         {/* Header Text */}
         <Heading text="STORIES" color="text-black" bgColor="bg-red-500" />
 
 
         {/* Slider */}
-        <Slider {...settings}>
+        <Slider {...settings} className="flex justify-center items-center">
           {slides.map((slide, index) => (
-            <div key={index} className="px-2">
+            <div key={index} className="px-2 flex justify-center items-center">
               <div className="relative bg-white border border-gray-500 rounded-lg shadow-lg overflow-hidden h-[616px] w-[360px]">
                 {/* Image */}
                 <img
