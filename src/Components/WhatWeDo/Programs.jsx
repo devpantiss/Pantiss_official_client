@@ -5,47 +5,47 @@ import Heading from "../Common/Heading";
 const Programs = () => {
   const programs = [
     {
-      title: "Rehabilitation & Resettlement for Mines",
+      title: "Land Acquisition, Rehabilitation & Resettlement of Mines",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
       categories: ["Community Development", "Mining"],
       link: "/what-we-do/rehabilitation-&-resettlement-of-mines",
     },
     {
-      title: "TVET for Mining Affected Youth",
+      title: "Ore, Forge & Energy Skill Park",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278481/vocational_msprt8.jpg",
       categories: ["Education", "Youth Empowerment"],
       link: "/what-we-do/skill-training-for-mining-affected-youth",
     },
     {
-      title: "Reclamation of Abandoned Mines, Green Enterprises & Eco Tourism",
+      title: "Carp, Rice & Duck Livelihoods Park",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
       categories: ["Environment", "Eco Tourism"],
       link: "/what-we-do/reclamation-in-abandoned-mines",
     },
+    // {
+    //   title: "Just Transition for Mining Workers, Net Zero & Carbon Emission",
+    //   image:
+    //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
+    //   categories: ["Sustainability", "Workers"],
+    //   link: "/what-we-do/just-transition-for-mining-workers",
+    // },
     {
-      title: "Just Transition for Mining Workers, Net Zero & Carbon Emission",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
-      categories: ["Sustainability", "Workers"],
-      link: "/what-we-do/just-transition-for-mining-workers",
-    },
-    {
-      title: "Nutrition & Wellbeing in Mining Villages",
+      title: "NutriNest",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg",
       categories: ["Health", "Community"],
       link: "/what-we-do/nutrition-and-wellbeing-in-mining-villages",
     },
-    {
-      title: "Indigenous Community Empowerment",
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
-      categories: ["Indigenous Rights", "Empowerment"],
-      link: "/what-we-do/indegenous-community-empowerment",
-    },
+    // {
+    //   title: "Indigenous Community Empowerment",
+    //   image:
+    //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
+    //   categories: ["Indigenous Rights", "Empowerment"],
+    //   link: "/what-we-do/indegenous-community-empowerment",
+    // },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Programs = () => {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {programs.map((program, index) => (
             <Link
               key={index}
