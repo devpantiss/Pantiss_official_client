@@ -5,29 +5,29 @@ import Heading from "../../../Common/Heading";
 const Programs = () => {
   const funds = [
     {
-      image: "https://songshunsteel.com/wp-content/uploads/2023/12/steel-foundry.webp",
-      categories: ["Specialized Trades", "Manufacturing"],
-      title: "Scaffolding, Foundry & Forging",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/3df3643c-cf03-4323-8fce-d34d63d234ab_cymgyv.jpg",
+      categories: ["Mining Skills", "Sustainability"],
+      title: "Responsible Mining Operators",
     },
     {
       image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/8082f70f-bce4-4bf8-8b44-002e235642d6_wtpyvv.jpg",
-      categories: ["Mechanical Training", "Heavy Equipment"],
-      title: "Heavy Earth Moving Machinery Mechanics",
+      categories: ["Mechatronics", "Heavy Equipment"],
+      title: "Heavy Earth Moving Machinery Mechatronics Specialist",
     },
     {
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/3df3643c-cf03-4323-8fce-d34d63d234ab_cymgyv.jpg",
-      categories: ["Vehicle Operations", "Mining Skills"],
-      title: "Volvo & Caterpillar Haul Pack Operators",
+      image: "https://songshunsteel.com/wp-content/uploads/2023/12/steel-foundry.webp",
+      categories: ["Specialized Trades", "Manufacturing"],
+      title: "Foundry & Aluminium Forging",
     },
-    // {
-    //   image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg",
-    //   categories: ["Skills Assessment", "Industrial"],
-    //   title: "Recognition of Prior Learning of Mining & Industrial Workers",
-    // },
     {
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741953744/WhatsApp_Image_2025-03-03_at_10.47.43_PM_3_kqjs2j.jpg",
-      categories: ["Energy Sector", "Technical Training"],
-      title: "Power Generation, Transmission & Distribution",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742126668/matthew-henry-yETqkLnhsUI-unsplash_ayeg4b.jpg",
+      categories: ["Energy Sector", "Sustainability"],
+      title: "Energy Transition Supervisors",
+    },
+    {
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg",
+      categories: ["Education", "Mining & Shipping"],
+      title: "Pantiss School For Mines & Shipping",
     },
   ];
 
@@ -40,7 +40,7 @@ const Programs = () => {
         </div>
 
         {/* Grid Layout - All 5 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
           {funds.map((fund, index) => (
             <div
               key={index}

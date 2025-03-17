@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../../Common/Heading";
 
-const ImpactReclamation = () => {
+const ImpactSkills = () => {
   const impacts = [
     {
       stat: "27.2 MILLION TCO₂E/YEAR",
@@ -33,20 +33,18 @@ const ImpactReclamation = () => {
       {/* Content */}
       <div className="relative container mx-auto max-w-7xl px-6 text-center">
         {/* Title and Description */}
-        <div className="flex justify-center items-center">
         <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-600" />
-        </div>
 
-        <p className="text-lg text-white mb-10">
+        <p className="text-lg text-left text-white mb-10">
           Results delivered in 2023 from ADB projects.
         </p>
 
         {/* Impact Stats */}
-        <div className="flex flex-col md:flex-row bg-red-600 p-5 rounded-md justify-center items-center gap-8 mb-6">
+        <div className="flex flex-col md:flex-row p-5 rounded-md justify-center items-center gap-8 mb-6">
           {impacts.map((impact, index) => (
             <div
               key={index}
-              className="flex-1 max-w-sm text-center"
+              className="flex-1 max-w-sm text-center bg-red-600 p-5 h-[200px] flex flex-col justify-center items-center rounded-md"
             >
               <h3 className="text-4xl font-bold text-yellow-400 mb-2">
                 {impact.stat}
@@ -74,4 +72,4 @@ const ImpactReclamation = () => {
   );
 };
 
-export default ImpactReclamation;
+export default ImpactSkills;

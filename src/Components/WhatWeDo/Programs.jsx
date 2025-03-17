@@ -12,7 +12,7 @@ const Programs = () => {
       link: "/what-we-do/rehabilitation-&-resettlement-of-mines",
     },
     {
-      title: "Ore, Forge & Energy Skill Park",
+      title: "Mine, Steel & Power Skill Park",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278481/vocational_msprt8.jpg",
       categories: ["Education", "Youth Empowerment"],

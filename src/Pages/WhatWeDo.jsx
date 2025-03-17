@@ -5,6 +5,7 @@ import Expertise from '../Components/WhatWeDo/Expertise';
 import InnovationLabBanner from '../Components/WhatWeDo/InnovationLabBanner';
 import Programs from '../Components/WhatWeDo/Programs';
 import Stories from '../Components/WhatWeDo/Stories';
+import ModelMiningVillagesBanner from '../Components/WhatWeDo/ModelMiningVillagesBanner';
 
 
 const WhatWeDo = () => {
@@ -15,6 +16,7 @@ const WhatWeDo = () => {
       <Programs />
       <InnovationLabBanner />
       <WhatWeDoCards />
+      <ModelMiningVillagesBanner />
       <Stories/>
     </div>
   )

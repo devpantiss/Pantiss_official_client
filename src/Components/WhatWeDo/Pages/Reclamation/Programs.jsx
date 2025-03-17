@@ -5,57 +5,37 @@ import Heading from "../../../Common/Heading";
 const Programs = () => {
   const funds = [
     {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Landbanking-Group_2500%C3%97704.jpg",
-      categories: ["Forestry", "Africa"],
-      title: "The Landbanking Group",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
+      categories: ["Sustainable Fisheries", "South Asia"],
+      title: "Pondy Fish",
     },
     {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Growth-Next-Generation-Agriculture_2500%C3%97704.jpg",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742121303/anisa-wulan-asri-dSb8R7QAeLM-unsplash_izeerw.jpg",
       categories: ["Sustainable Agriculture", "Latin America"],
-      title: "Growth Next-Generation Agriculture (GAN)",
+      title: "Guavas AcreRise",
     },
     {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/InvestHER_2500x1200.jpg",
-      categories: ["Sustainable Agriculture", "Africa", "Latin America"],
-      title: "InvestHer Climate Resilience Bond",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742121408/469140771_122180940212172871_9167009505736437214_n_swg9us.jpg",
+      categories: ["Sustainable Textiles", "South Asia"],
+      title: "Tassar Fashion",
     },
     {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/SPV-for-Silvopasture-Scaling_2500x704.jpg",
-      categories: ["Sustainable Agriculture", "Latin America"],
-      title: "SPV for Silvopasture Scaling",
-    },
-    {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Sustana-Cooling-Impact-Fund_2500x704.jpg",
-      categories: ["Energy Efficiency", "South Asia"],
-      title: "CoolPac Capital India Fund",
-    },
-    {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/07/Tana-Market-2_2500x1200.jpg",
-      categories: ["Climate Resilience", "Africa", "Latin America"],
-      title: "Resilient Municipal Market Fund (ReMark)",
-    },
-    {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Regenera-Ventures-Fund_2500x704_v2.jpg",
-      categories: ["Climate Resilience", "Latin America"],
-      title: "Regenera Ventures Fund",
-    },
-    {
-      image: "https://www.climatefinancelab.org/wp-content/uploads/2024/03/Clean-Utilities-for-Affordable-Housing_2500x704-1.jpg",
-      categories: ["Buildings", "Africa"],
-      title: "Clean Utilities for Affordable Housing",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742121490/Koraput-Coffee-9-1024x680_rokvtn.jpg",
+      categories: ["Agribusiness", "Africa"],
+      title: "Tribey Coffee",
     },
   ];
 
   return (
     <section className="py-8 bg-white">
       <div className="container mx-auto px-4">
-        {/* Clear All Filters */}
+        {/* Heading */}
         <div className="text-center mb-6">
-        <Heading text="PROGRAMS" color="text-black" bgColor="bg-red-500" />
+          <Heading text="PROGRAMS" color="text-black" bgColor="bg-red-500" />
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {funds.map((fund, index) => (
             <div
               key={index}

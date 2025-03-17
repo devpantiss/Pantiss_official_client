@@ -16,13 +16,15 @@ const teamData = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294950/WhatsApp_Image_2025-02-11_at_10.58.44_PM_ie0jsf.jpg",
     department: "leadership",
   },
+
+  // Finance
   {
     name: "Mrs. Indumati Nanda",
     title:
       "Lead Administration, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739263437/WhatsApp_Image_2025-02-11_at_12.58.56_PM_wu6mfq.jpg",
-    department: "leadership",
+    department: "finance",
   },
   {
     name: "Mr. Deepan Digal",
@@ -30,42 +32,7 @@ const teamData = [
       "Lead, Grants Management, Global Resource moilization and Partnership",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739187165/WhatsApp_Image_2025-02-10_at_3.32.06_PM_qd2kgs.jpg",
-    department: "leadership",
-  },
-  {
-    name: "Mr. Rahul Nayak",
-    title: "Lead, Education, Skills Development, and Migration",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739263524/WhatsApp_Image_2025-02-10_at_5.55.18_PM_vuyo98.jpg",
-    department: "leadership",
-  },
-  {
-    name: "Mr. Dwarka Prasad",
-    title: "Lead, Water, Sanitation, and Hygiene",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739299857/WhatsApp_Image_2025-02-12_at_12.17.30_AM_vs1erc.jpg",
-    department: "leadership",
-  },
-  {
-    name: "Ms. Padmini Kumari Bisoyi",
-    title: "Lead, Monitoring, Evaluation, Accountability & Learning",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739187165/WhatsApp_Image_2025-02-10_at_1.17.52_PM_npxltv.jpg",
-    department: "leadership",
-  },
-  {
-    name: "Ms. Rishita Beura",
-    title: "Executive Assistant to CEO",
-    image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Rishita-Beura-e1670426885700.jpeg",
-    department: "foundersOffice",
-  },
-  {
-    name: "Mr. Mantu Nayak",
-    title: "Personal Assistance to CEO",
-    image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Mantu-Nayak-e1670426980487.jpeg",
-    department: "foundersOffice",
+    department: "finance",
   },
   {
     name: "Mr. Basant Ku. Sahoo",
@@ -82,31 +49,33 @@ const teamData = [
     department: "finance",
   },
   {
-    name: "Mr. Amiya Pradhan",
-    title: "Co-Lead, Social Media Management",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739263631/WhatsApp_Image_2025-02-11_at_1.40.55_PM_lqz3jq.jpg",
-    department: "finance",
-  },
-  {
     name: "Ms. Manasi Behera",
     title: "Associate, Social Compliance and Safeguarding",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,h_800/v1739187166/WhatsApp_Image_2025-02-10_at_3.30.34_PM_t8vzmk.jpg",
     department: "finance",
   },
+
+  // Project Management
+  {
+    name: "Mr. Rahul Nayak",
+    title: "Lead, Education, Skills Development, and Migration",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739263524/WhatsApp_Image_2025-02-10_at_5.55.18_PM_vuyo98.jpg",
+    department: "projectManagement",
+  },
+  {
+    name: "Mr. Dwarka Prasad",
+    title: "Lead, Water, Sanitation, and Hygiene",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739299857/WhatsApp_Image_2025-02-12_at_12.17.30_AM_vs1erc.jpg",
+    department: "projectManagement",
+  },
   {
     name: "Mr. Gangadhar Bej",
     title: "Co-Lead, Enterprises and Ultra Poor Graduation",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739187165/WhatsApp_Image_2025-02-10_at_3.28.17_PM_yfq0dp.jpg",
-    department: "projectManagement",
-  },
-  {
-    name: "Mr. Ashish Kumar Mishra",
-    title: "Co-Lead, Capacity Building and Knowledge management",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739264129/WhatsApp_Image_2025-02-11_at_2.23.03_PM_1_no2bgc.jpg",
     department: "projectManagement",
   },
   {
@@ -117,24 +86,26 @@ const teamData = [
     department: "projectManagement",
   },
   {
-    name: "Mr. Rituraj Tarei",
-    title: "Co-Lead, Product designing and Social Innovation",
-    image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jpg",
-    department: "projectManagement",
-  },
-  {
     name: "Mr. Mukesh Singh",
     title: "Lead, Construction and Maintenance Department",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739260253/WhatsApp_Image_2025-02-11_at_1.07.34_PM_k1d0j9.jpg",
     department: "projectManagement",
   },
+
+  // Monitoring
   {
     name: "Mr. Braja Kishore Nayak",
     title: "Lead, Internal Auditor",
     image:
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+    department: "monitoring",
+  },
+  {
+    name: "Ms. Padmini Kumari Bisoyi",
+    title: "Lead, Monitoring, Evaluation, Accountability & Learning",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739187165/WhatsApp_Image_2025-02-10_at_1.17.52_PM_npxltv.jpg",
     department: "monitoring",
   },
   {
@@ -152,10 +123,10 @@ const teamData = [
     department: "monitoring",
   },
   {
-    name: "Mr. Bhuleshwar Mandal",
-    title: "Asst. Manager, MIS",
+    name: "Ms. Pandia",
+    title: "Co-Lead, MIS",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739771767/WhatsApp_Image_2025-02-13_at_1.52.50_PM_h2o6vf.jp",
     department: "monitoring",
   },
   {
@@ -164,6 +135,80 @@ const teamData = [
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Chhatrapati-Sibaji-Jena-.jpeg",
     department: "monitoring",
+  },
+
+  // Knowledgement
+  {
+    name: "Mr. Ashish Kumar Mishra",
+    title: "Co-Lead, Capacity Building and Knowledge management",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739264129/WhatsApp_Image_2025-02-11_at_2.23.03_PM_1_no2bgc.jpg",
+    department: "knowledge",
+  },
+  {
+    name: "Mr. Rituraj Tarei",
+    title: "Co-Lead, Product designing and Social Innovation",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jpg",
+    department: "knowledge",
+  },
+  {
+    name: "Ms. Swasti",
+    title: "Data Research & Analyst",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jp",
+    department: "knowledge",
+  },
+  {
+    name: "Mr. Yagnesh Kumar Nanda",
+    title: "Trainer, (Electrician)",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jp",
+    department: "knowledge",
+  },
+  {
+    name: "Mr. Bikram Keshari Gouda",
+    title: "Trainer, (HEMM Mechanics)",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jp",
+    department: "knowledge",
+  },
+
+  // Founders Office
+  {
+    name: "Mr. Gautam Samanta",
+    title: "Asst. Manager, MIS",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+    department: "foundersOffice",
+  },
+  {
+    name: "Mr. Mantu Nayak",
+    title: "Personal Assistance to CEO",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Mantu-Nayak-e1670426980487.jpeg",
+    department: "foundersOffice",
+  },
+  {
+    name: "Ms. Rishita Beura",
+    title: "Executive Assistant to CEO",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Rishita-Beura-e1670426885700.jpeg",
+    department: "foundersOffice",
+  },
+  {
+    name: "Mr. Bhuleshwar Mandal",
+    title: "Asst. Manager, MIS",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+    department: "foundersOffice",
+  },
+  {
+    name: "Mr. Gandhi Beura",
+    title: "Asst. Manager, MIS",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+    department: "foundersOffice",
   },
 ];
 
@@ -179,27 +224,37 @@ const TeamTabs = () => {
     (member) => member.department === activeTab
   );
 
+  // Define tab options
+  const tabs = [
+    { label: "Leadership", key: "leadership" },
+    { label: "Finance, HR & Communication", key: "finance" },
+    { label: "Project Management", key: "projectManagement" },
+    { label: "Monitoring, Evaluation & Compliances", key: "monitoring" },
+    { label: "Knowledge Management & Analytics", key: "knowledge" },
+    { label: "Founders Office", key: "foundersOffice" },
+  ];
+
   return (
     <div className="w-full max-w-5xl mx-auto py-10">
       {/* Tab Navigation */}
-      <div className="flex justify-start md:justify-center overflow-x-auto mb-8 space-x-2 py-2 px-2">
-        {[
-          { label: "Leadership", key: "leadership" },
-          { label: "Finance, HR & Communication", key: "finance" },
-          { label: "Project Management", key: "projectManagement" },
-          { label: "Monitoring, Evaluation & Compliances", key: "monitoring" },
-          { label: "Founders Office", key: "foundersOffice" },
-        ].map((tab) => (
-          <button
-            key={tab.key}
-            className={`px-4 py-2 font-semibold whitespace-nowrap ${
-              activeTab === tab.key ? "bg-red-500 text-white" : "bg-gray-200"
-            }`}
-            onClick={() => handleTabClick(tab.key)}
-          >
-            {tab.label}
-          </button>
-        ))}
+      <div className="relative mb-8">
+        <div className="flex overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 pb-2">
+          <div className="flex space-x-2">
+            {tabs.map((tab) => (
+              <button
+                key={tab.key}
+                className={`px-4 py-2 font-semibold whitespace-nowrap rounded-md transition-colors duration-200 ${
+                  activeTab === tab.key
+                    ? "bg-red-500 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
+                onClick={() => handleTabClick(tab.key)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Tab Content */}
@@ -232,13 +287,6 @@ const TeamTabs = () => {
           ))}
         </div>
       </div>
-
-      {/* Team Location Buttons */}
-      {/* <div className="flex justify-center space-x-4 mt-8">
-                <button className="bg-red-500 text-white px-4 py-2 rounded-md">Pantiss Odisha Team</button>
-                <button className="bg-red-500 text-white px-4 py-2 rounded-md">Pantiss Jharkhand Team</button>
-                <button className="bg-red-500 text-white px-4 py-2 rounded-md">Pantiss Chhattisgarh Team</button>
-            </div> */}
     </div>
   );
 };

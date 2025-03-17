@@ -2,7 +2,7 @@ import React from 'react'
 import BannerRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/BannerEia'
 import ChallengesRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/ChallengesEia'
 import PartnersRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/Partners'
-import ChallengesResponseRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/ChallengesResponse'
+// import ChallengesResponseRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/ChallengesResponse'
 import Solutions from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/Solutions'
 import Programs from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/Programs'
 import ProjectMapListingRehab from '../../Components/WhatWeDo/Pages/RehabilitationAndResettlement/ProjectMapListing'
@@ -15,7 +15,7 @@ const RehabilitationResettlementOfMines = () => {
     <div>
       <BannerRehab />
       <ChallengesRehab />
-      <ChallengesResponseRehab />
+      {/* <ChallengesResponseRehab /> */}
       <Solutions />
       <Programs />
       <ProjectMapListingRehab />

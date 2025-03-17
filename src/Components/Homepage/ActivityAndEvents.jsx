@@ -4,45 +4,33 @@ const ActivityAndEvents = () => {
   const pantissEvents = [
     {
       event: "FarmGrow App Launch Workshop",
-      incharge: "Priya Sharma",
+      client: "AgriTech Solutions",
       date: "15 Jan 2025",
       venue: "New Delhi, India",
     },
     {
       event: "Sustainable Farming Seminar",
-      incharge: "Rahul Patel",
+      client: "GreenFields Co.",
       date: "22 Feb 2025",
       venue: "Mumbai, India",
     },
     {
       event: "Women Farmer Empowerment Meet",
-      incharge: "Anita Desai",
+      client: "Empower Rural NGO",
       date: "10 Mar 2025",
       venue: "Bangalore, India",
     },
     {
       event: "Climate Resilience Training",
-      incharge: "Vikram Singh",
+      client: "EcoFuture Foundation",
       date: "18 Apr 2025",
       venue: "Hyderabad, India",
     },
     {
-      event: "Microloan Access Forum",
-      incharge: "Meena Kumari",
-      date: "25 May 2025",
-      venue: "Chennai, India",
-    },
-    {
       event: "Agri-Tech Innovation Expo",
-      incharge: "Suresh Nair",
+      client: "TechFarm Innovations",
       date: "12 Jun 2025",
       venue: "Pune, India",
-    },
-    {
-      event: "Rural Development Conference",
-      incharge: "Lakshmi Rao",
-      date: "20 Jul 2025",
-      venue: "Kolkata, India",
     },
   ];
 
@@ -82,7 +70,7 @@ const ActivityAndEvents = () => {
                     Event
                   </th>
                   <th className="p-4 font-semibold text-md uppercase tracking-wide w-1/5">
-                    Incharge
+                    Client
                   </th>
                   <th className="p-4 font-semibold text-md uppercase tracking-wide w-1/5">
                     Date
@@ -106,7 +94,7 @@ const ActivityAndEvents = () => {
                       className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
                     >
                       <td className="p-4 text-md w-2/5">{event.event}</td>
-                      <td className="p-4 text-md w-1/5">{event.incharge}</td>
+                      <td className="p-4 text-md w-1/5">{event.client}</td>
                       <td className="p-4 text-md w-1/5">{event.date}</td>
                       <td className="p-4 text-md w-1/5">{event.venue}</td>
                     </tr>
@@ -122,7 +110,7 @@ const ActivityAndEvents = () => {
       <style jsx>{`
         /* Continuous scrolling animation */
         .animate-scroll {
-          animation: scroll 25s linear infinite;
+          animation: scroll 20s linear infinite;
         }
 
         @keyframes scroll {

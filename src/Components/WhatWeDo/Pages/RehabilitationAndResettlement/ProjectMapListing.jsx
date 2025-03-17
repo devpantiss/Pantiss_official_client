@@ -6,38 +6,38 @@ const ProjectMapListingRehab = () => {
     {
       number: "38272-045",
       name: "Uttarakhand Integrated and Resilient Urban Development Project—Additional Financing",
-      adaptation: 43,
-      mitigation: 79,
+      client: "Government of Uttarakhand",
+      totalImpact: "150,000",
     },
     {
       number: "40540-016",
       name: "Dhaka-Northwest Corridor Road Project, Phase 2",
-      adaptation: 0,
-      mitigation: 0,
+      client: "Roads and Highways Department, Bangladesh",
+      totalImpact: "200,000",
     },
     {
       number: "40540-019",
       name: "South Asia Subregional Economic Cooperation Dhaka-Northwest Corridor Road Project, Phase 2 (Tranche 3)",
-      adaptation: 39,
-      mitigation: 21,
+      client: "Roads and Highways Department, Bangladesh",
+      totalImpact: "180,000",
     },
     {
       number: "42007-021",
       name: "Small and Medium-Sized Enterprises Development Program (Subprogram 2)",
-      adaptation: 0,
-      mitigation: 0,
+      client: "Ministry of Finance",
+      totalImpact: "50,000",
     },
     {
       number: "42687-032",
       name: "Promoting Smart and Integrated Urban Planning for Livability and Cultural Economy in Rajasthan",
-      adaptation: 0,
-      mitigation: 45,
+      client: "Government of Rajasthan",
+      totalImpact: "75,000",
     },
     {
       number: "42527-034",
       name: "Rajasthan Secondary Towns Development Sector Project Additional Financing",
-      adaptation: 78,
-      mitigation: 0,
+      client: "Government of Rajasthan",
+      totalImpact: "120,000",
     },
   ];
 
@@ -88,10 +88,10 @@ const ProjectMapListingRehab = () => {
                     Project Name
                   </th>
                   <th className="border-b border-gray-300 px-4 py-3 text-left text-sm font-semibold text-white uppercase">
-                    Adaptation Finance ($ million)
+                    Client
                   </th>
                   <th className="border-b border-gray-300 px-4 py-3 text-left text-sm font-semibold text-white uppercase">
-                    Mitigation Finance ($ million)
+                    Total Impact (Beneficiaries in Numbers)
                   </th>
                 </tr>
               </thead>
@@ -108,10 +108,10 @@ const ProjectMapListingRehab = () => {
                       {project.name}
                     </td>
                     <td className="border-b border-gray-300 px-4 py-3 text-sm text-black">
-                      {project.adaptation}
+                      {project.client}
                     </td>
                     <td className="border-b border-gray-300 px-4 py-3 text-sm text-black">
-                      {project.mitigation}
+                      {project.totalImpact}
                     </td>
                   </tr>
                 ))}

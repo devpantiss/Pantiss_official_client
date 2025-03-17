@@ -5,7 +5,7 @@ import SolutionsNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWell
 import ProgramsNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/Programs'
 import StoryNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/Story'
 import PartnersNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/Partners'
-import ChallengesResponseNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/ChallengesResponse'
+// import ChallengesResponseNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/ChallengesResponse'
 import ProjectMapListingNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/ProjectMapListing'
 import VideoSectionNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/VideoSection'
 import ImpactNutrition from '../../Components/WhatWeDo/Pages/NutritionAndWellbeing/Impact'
@@ -15,7 +15,7 @@ const Nutrition = () => {
     <div>
       <BannerNutrition />
       <ChallengesNutrition />
-      <ChallengesResponseNutrition />
+      {/* <ChallengesResponseNutrition /> */}
       <SolutionsNutrition />
       <ProgramsNutrition />
       <ProjectMapListingNutrition />

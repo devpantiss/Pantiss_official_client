@@ -23,11 +23,11 @@ const BannerEia = () => {
       <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-6 md:space-y-8 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-tight">
-            <span className="block text-red-500">Rehabilitation & Resettlement</span>
-            <span className="block mt-2">of Mines</span>
+            <span className="block text-red-500">Land Acquisition, Rehabilitation</span>
+            <span className="block mt-2">& Resettlement of Mines</span>
           </h1>
           <p className="text-white/90 text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
-            We support communities affected by mining through comprehensive rehabilitation and resettlement programs, ensuring fair compensation, sustainable livelihoods, and restored environments for a thriving future.
+            We support communities affected by mining through comprehensive land acquisition, rehabilitation, and resettlement programs, ensuring fair compensation, sustainable livelihoods, and restored environments for a thriving future.
           </p>
           <a
             href="#learn-more"

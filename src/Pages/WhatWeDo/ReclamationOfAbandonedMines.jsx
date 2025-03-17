@@ -5,17 +5,17 @@ import SolutionsReclamation from '../../Components/WhatWeDo/Pages/Reclamation/So
 import ProgramsReclamation from '../../Components/WhatWeDo/Pages/Reclamation/Programs'
 import StoryReclamation from '../../Components/WhatWeDo/Pages/Reclamation/Story'
 import PartnersReclamation from '../../Components/WhatWeDo/Pages/Reclamation/Partners'
-import ChallengesResponseReclamation from '../../Components/WhatWeDo/Pages/Reclamation/ChallengesResponse'
+// import ChallengesResponseReclamation from '../../Components/WhatWeDo/Pages/Reclamation/ChallengesResponse'
 import ProjectMapListingReclamation from '../../Components/WhatWeDo/Pages/Reclamation/ProjectMapListing'
-import VideoSectionReclamation from '../../Components/WhatWeDo/Pages/Reclamation/VideoSection'
 import ImpactReclamation from '../../Components/WhatWeDo/Pages/Reclamation/Impact'
+import VideoSectionReclamation from '../../Components/WhatWeDo/Pages/Reclamation/VideoSection'
 
 const ReclamationOfAbandonedMines = () => {
   return (
     <div>
       <BannerReclamation />
       <ChallengesReclamation />
-      <ChallengesResponseReclamation />
+      {/* <ChallengesResponseReclamation /> */}
       <SolutionsReclamation />
       <ProgramsReclamation />
       <ProjectMapListingReclamation />

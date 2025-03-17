@@ -23,17 +23,17 @@ const BannerReclamation = () => {
       <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-6 md:space-y-8 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-tight">
-            <span className="block text-red-500">EIA/SIA</span>
-            <span className="block mt-2">For Land Acquisition at Mines</span>
+            <span className="block text-red-500">Carp, Duck and Rice</span>
+            <span className="block mt-2">Livelihood Park</span>
           </h1>
           <p className="text-white/90 text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
-            We conduct Environmental and Social Impact Assessments (EIA/SIA) to ensure responsible land acquisition for mining operations, balancing development needs with environmental stewardship and community well-being.
+            A sustainable ecosystem integrating carp farming, duck rearing, and rice cultivation to empower communities with resilient livelihoods and promote ecological harmony.
           </p>
           <a
             href="#learn-more"
             className="inline-flex items-center px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-red-600 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-red-300"
           >
-            Explore Our Process
+            Discover the Park
             <svg
               className="ml-2 w-5 h-5"
               fill="none"
