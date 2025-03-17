@@ -8,23 +8,45 @@ const ChallengesReclamation = () => {
   const challenges = [
     {
       imageUrl:
-        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-01.jpg",
-      stat: "Over 50%",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742227403/Agri_Land_India4-768x512_sx19fv.jpg",
+      stat: "60%",
       description:
-        "of global greenhouse gas emissions originate in Asia and the Pacific",
+        "of farmers lack access to real-time data for farm competency assessment",
     },
     {
       imageUrl:
-        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-02.jpg",
-      stat: "25%",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742227837/download_1_ajabxc.jpg",
+      stat: "45%",
       description:
-        "of annual global emissions come from coal-fired power plants",
+        "of rural farmers report insufficient training in modern farm business practices",
     },
     {
       imageUrl:
-        "https://www.adb.org/sites/default/files/page/752686/images/img-etm-challenge-03.jpg",
-      stat: "90%",
-      description: "of young (<20 years) coal-fired power plants are in Asia",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742227631/iStock-1313328141-min-min-min-min-min-2-1-1-scaled_kftr9q.jpg",
+      stat: "70%",
+      description:
+        "of harvested produce faces losses due to poor market linkage and logistics",
+    },
+    {
+      imageUrl:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742227742/smartfarming_qlwsmn.webp",
+      stat: "55%",
+      description:
+        "of reclaimed farmland lacks smart farming technology integration",
+    },
+    {
+      imageUrl:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122479/Skill-development-and-entrepreneurship-promotion-in-the-agriculture-sector_bys2rt.jpg",
+      stat: "65%",
+      description:
+        "of community agents lack resources for effective remote training",
+    },
+    {
+      imageUrl:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742228015/images_2_vyldga.jpg",
+      stat: "50%",
+      description:
+        "of farmers face delays in accessing cold storage and post-harvest solutions",
     },
   ];
 
@@ -34,10 +56,10 @@ const ChallengesReclamation = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true, // Enable arrows for better navigation
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: false, // Disable centerMode for a cleaner grid-like layout
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1024, // lg
@@ -56,7 +78,7 @@ const ChallengesReclamation = () => {
     ],
     customPaging: () => (
       <button className="w-2 h-2 bg-gray-400 rounded-full mx-1 focus:outline-none focus:ring-2 focus:ring-red-500" />
-    ), // Custom dots for better styling
+    ),
   };
 
   return (
@@ -70,9 +92,7 @@ const ChallengesReclamation = () => {
             bgColor="bg-red-600"
           />
           <p className="text-gray-700 text-lg leading-relaxed text-center lg:text-left mt-4">
-            The battle against climate change will be won or lost in Asia and
-            the Pacific. If emissions from existing coal power plants are not
-            addressed, the region will fail to meet the Paris Agreement targets.
+            Reclaiming agricultural potential and ensuring market success face significant obstacles. Inadequate data, limited training, and poor logistics hinder farmers’ ability to thrive in modern agricultural ecosystems.
           </p>
         </div>
 
@@ -80,7 +100,7 @@ const ChallengesReclamation = () => {
         <Slider {...settings} className="relative">
           {challenges.map((challenge, index) => (
             <div key={index} className="px-4">
-              <div className="group relative h-[350px] bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="group relative h-[350px] hover:ring-2 hover:ring-red-600 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
                 {/* Image */}
                 <div className="h-[250px] w-full">
                   <img

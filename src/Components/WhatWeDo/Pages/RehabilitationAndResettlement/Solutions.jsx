@@ -8,7 +8,7 @@ const Solutions = () => {
   const solutions = [
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122359/a-woman-farmer-with-digital-tablet-on-a-potato-field-smart-farming-and-precision-agriculture-4-0-modern-agricultural-technology-and-data-management-to-industry-farm-photo_w5f8tt.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742216965/GIS-companies-in-Bangalore_mqw2sl.jpg",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "GIS Hamlies",
       description:
@@ -34,7 +34,7 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122479/Skill-development-and-entrepreneurship-promotion-in-the-agriculture-sector_bys2rt.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "Resettlement Gram Sabha",
       description:
@@ -56,7 +56,7 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122851/Pngtree_portfolio_displays_and_mobile_apps_8471028_m9g1ah.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217298/5878303_ru2f7m.jpg",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "R & R Governance",
       description:
