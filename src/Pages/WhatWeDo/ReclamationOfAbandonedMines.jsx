@@ -19,8 +19,8 @@ const ReclamationOfAbandonedMines = () => {
       <SolutionsReclamation />
       <ProgramsReclamation />
       <ProjectMapListingReclamation />
-      <VideoSectionReclamation />
       <ImpactReclamation />
+      <VideoSectionReclamation />
       <StoryReclamation />
       <PartnersReclamation />
     </div>

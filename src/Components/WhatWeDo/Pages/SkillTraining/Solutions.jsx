@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../../Common/Heading";
 import { FaNetworkWired, FaBus, FaDatabase, FaMapMarkedAlt } from "react-icons/fa"; // Skill Mobilizers Connect
-import { FaUserCheck, FaShuttleVan, FaChartBar } from "react-icons/fa"; // Skill Candor (Fixed FaVanShuttle -> FaShuttleVan)
+import { FaUserCheck, FaShuttleVan, FaChartBar } from "react-icons/fa"; // Skill Candor
 import { FaBuilding, FaVrCardboard, FaTruck, FaChartLine } from "react-icons/fa"; // Skill Cafe
 import { FaMobileAlt, FaIndustry, FaUsers } from "react-icons/fa"; // Blue Collars Foundry
 
@@ -9,7 +9,7 @@ const Solutions = () => {
   const solutions = [
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/56cff1ce-3f2c-477a-98b9-74fd979e24fc_j3m2x6.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316572/freepik__make-a-image-showing-an-mobile-phone-inside-which-__18030_xe1ihz.jpg",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "Skill Mobilizers Connect",
       description:
@@ -35,7 +35,7 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.16_PM_wlhbfn.jpg",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316784/freepik__the-style-is-candid-image-photography-with-natural__18031_exrhs0.jpg",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "Skill Candor",
       description:
@@ -47,7 +47,7 @@ const Solutions = () => {
         },
         {
           text: "Real time Counselling Vans",
-          icon: <FaShuttleVan className="w-6 h-6" />, // Corrected icon
+          icon: <FaShuttleVan className="w-6 h-6" />,
         },
         {
           text: "Psychometric Assessment Dashboard",
@@ -122,7 +122,8 @@ const Solutions = () => {
           />
         </div>
 
-        <p className="text-white text-lg text-left leading-relaxed mb-10">
+        {/* Introductory Paragraph */}
+        <p className="text-white text-lg text-left leading-relaxed mb-12">
           Our in-house solutions are designed to empower businesses with
           innovative, tailored tools that streamline operations and drive
           growth. Developed by our expert team, these solutions integrate
@@ -133,92 +134,60 @@ const Solutions = () => {
           without relying on third-party vendors.
         </p>
 
-        {/* Grid of Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {solutions.map((solution, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-stretch bg-white rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg"
-            >
-              {/* Odd Card: Image Left, Text Right */}
-              {index % 2 === 0 ? (
-                <>
-                  <div className="md:w-1/2 relative">
-                    <img
-                      src={solution.imageUrl}
-                      alt={`${solution.stat} illustration`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.src = solution.fallbackImage;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-10" />
-                  </div>
-                  <div className="md:w-1/2 p-6 flex flex-col justify-between">
-                    <div>
-                      <h4 className="text-2xl font-bold text-red-700 mb-3 bg-red-100 inline-block px-3 py-1 rounded-md">
-                        {solution.stat}
-                      </h4>
-                      <p className="text-gray-700 text-base leading-relaxed mb-4">
-                        {solution.description}
-                      </p>
-                      <ul className="space-y-3 pl-0">
-                        {solution.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
-                              {detail.icon}
-                            </span>
-                            <span className="text-gray-700 text-base leading-relaxed">
-                              {detail.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                /* Even Card: Text Left, Image Right */
-                <>
-                  <div className="md:w-1/2 p-6 flex flex-col justify-between">
-                    <div>
-                      <h4 className="text-2xl font-bold text-red-700 mb-3 bg-red-100 inline-block px-3 py-1 rounded-md">
-                        {solution.stat}
-                      </h4>
-                      <p className="text-gray-700 text-base leading-relaxed mb-4">
-                        {solution.description}
-                      </p>
-                      <ul className="space-y-3 pl-0">
-                        {solution.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
-                              {detail.icon}
-                            </span>
-                            <span className="text-gray-700 text-base leading-relaxed">
-                              {detail.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 relative">
-                    <img
-                      src={solution.imageUrl}
-                      alt={`${solution.stat} illustration`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.src = solution.fallbackImage;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-10" />
-                  </div>
-                </>
-              )}
-            </div>
-          ))}
+        {/* Single Row with Alternating Layout */}
+        <div className="space-y-12">
+          {solutions.map((solution, index) => {
+            const isEven = index % 2 === 0;
+            return (
+              <div
+                key={index}
+                className="group flex flex-col bg-white rounded-md md:flex-row items-center gap-8 transition-all duration-300 hover:shadow-xl"
+              >
+                {/* Image Section */}
+                <div
+                  className={`w-full md:w-1/2 h-[400px] rounded-lg overflow-hidden shadow-md ${
+                    isEven ? "order-1" : "order-2"
+                  }`}
+                >
+                  <img
+                    src={solution.imageUrl}
+                    alt={solution.stat}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.target.src = solution.fallbackImage; // Fallback image
+                    }}
+                  />
+                </div>
+
+                {/* Text Section */}
+                <div
+                  className={`w-full md:w-1/2 p-6 ${
+                    isEven ? "order-2" : "order-1"
+                  }`}
+                >
+                  <h4 className="text-3xl font-bold text-red-600 mb-3">
+                    {solution.stat}
+                  </h4>
+                  <p className="text-base text-gray-700 leading-relaxed mb-4">
+                    {solution.description}
+                  </p>
+                  <ul className="space-y-3 pl-0">
+                    {solution.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
+                          {detail.icon}
+                        </span>
+                        <span className="text-gray-700 text-base leading-relaxed">
+                          {detail.text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -6,11 +6,11 @@ const AdvisorCard = ({ imageUrl, name, title, organization, text }) => {
     return (
         <div className="bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
             {/* Image Section */}
-            <div className="h-56 z-10 w-full overflow-hidden">
+            <div className="h-[300px] z-10 w-full overflow-hidden">
                 <img
                     src={imageUrl}
                     alt={`${name}`}
-                    className="w-full h-56 object-cover"
+                    className="w-full h-full object-cover"
                 />
             </div>
 

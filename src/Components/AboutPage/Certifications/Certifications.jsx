@@ -98,14 +98,14 @@ const Certifications = () => {
     <div className="bg-white py-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Title Section */}
-        <div className="flex justify-center items-center">
+        <div className="flex ">
           <Heading
             text="Certifications"
             color="text-black"
             bgColor="bg-red-600"
           />
         </div>
-        <p className="text-center text-lg text-gray-500 mb-4 max-w-3xl mx-auto">
+        <p className="text-left text-lg text-gray-500 mb-4 max-w-3xl">
           Our certifications and accreditations are a testament to our
           commitment to meet international standards of quality.
         </p>

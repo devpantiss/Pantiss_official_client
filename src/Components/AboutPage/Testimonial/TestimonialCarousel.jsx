@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import Heading from "../../Common/Heading";
 
 const TestimonialSlider = () => {
   const sliderRef = useRef(null);
@@ -103,6 +104,10 @@ const TestimonialSlider = () => {
         >
           <FaChevronLeft />
         </button>
+
+        <div>
+        <Heading text="TESTIMONIES" color="text-black" bgColor="bg-red-600" />
+        </div>
 
         <Slider {...settings} ref={sliderRef}>
           {testimonials.map((testimonial, index) => (

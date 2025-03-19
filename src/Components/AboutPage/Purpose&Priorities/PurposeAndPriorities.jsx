@@ -80,12 +80,15 @@ const PurposeSlider = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-white py-8">
-      <Heading
-        text="Purpose and Ethics"
-        color="text-black"
-        bgColor="bg-red-600"
-      />
+    <div className="flex flex-col bg-white py-8">
+      <div className="mx-auto flex justify-start max-w-7xl">
+        <Heading
+          text="PURPOSE AND ETHICS"
+          color="text-black"
+          bgColor="bg-red-600"
+        />
+      </div>
+
       <div className="w-full max-w-8xl mx-auto">
         <Slider {...settings}>
           {slides.map((slide, index) => (

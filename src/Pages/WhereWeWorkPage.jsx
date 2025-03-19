@@ -9,7 +9,7 @@ import HeroBanner from '../Components/WhereWeWork/HeroBanner'
 
 const WhereWeWorkPage = () => {
   return (
-    <div>
+    <>
       <HeroBanner />
       {/* <Banner /> */}
       {/* <Banner2 /> */}
@@ -17,7 +17,7 @@ const WhereWeWorkPage = () => {
       {/* <WhoWeAre /> */}
       {/* <ProjectsOverview /> */}
       {/* <Latest /> */}
-    </div>
+    </>
   )
 }
 

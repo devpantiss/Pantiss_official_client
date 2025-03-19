@@ -22,10 +22,10 @@ const ImpactNutrition = () => {
     <section className="relative bg-red-600 py-12">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg')`, // Replace with actual image URL
-          opacity: 0.6, // Blue overlay effect
+          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742311255/jacopo-maiarelli--gOUx23DNks-unsplash_d3kcqu.jpg')`, // Replace with actual image URL
+          // opacity: 0.6, // Blue overlay effect
         }}
         aria-hidden="true"
       />

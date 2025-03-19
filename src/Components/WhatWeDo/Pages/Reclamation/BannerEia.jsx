@@ -6,7 +6,7 @@ const BannerReclamation = () => {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735208301/banner_video_efhq8v.mp4"
+          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222753/reclamation_ux6few.mp4"
           autoPlay
           loop
           muted

@@ -22,10 +22,10 @@ const ImpactSkills = () => {
     <section className="relative bg-red-600 py-12">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg')`, // Replace with actual image URL
-          opacity: 0.6, // Blue overlay effect
+          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742311163/premium_photo-1661900547591-80ee79e20d1c_waller.avif')`, // Replace with actual image URL
+          // opacity: 0.6, // Blue overlay effect
         }}
         aria-hidden="true"
       />

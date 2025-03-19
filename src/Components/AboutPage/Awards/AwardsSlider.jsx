@@ -95,14 +95,15 @@ const AwardsSlider = () => {
 
   return (
     <div className="relative px-10 bg-black">
-      <div className="flex justify-center items-center">
-        <Heading text="Awards" color="text-white" bgColor="bg-red-600" />
-      </div>
-      <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
+      <div className="flex flex-col mx-auto max-w-7xl">
+        <Heading text="AWARDS" color="text-white" bgColor="bg-red-600" />
+        <p className="text-left text-white text-lg mb-12 max-w-3xl">
         Our commitment to quality and reliability has brought us many awards and
         accolades. We see these awards as the manifestation of the strong
         reputation we have worked so hard to build.
       </p>
+      </div>
+      
       <Slider {...settings} className="h-[450px] pt-6">
         {awardsData.map((award, index) => (
           <div key={index}>

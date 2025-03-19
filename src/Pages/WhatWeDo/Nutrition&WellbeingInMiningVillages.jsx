@@ -19,8 +19,8 @@ const Nutrition = () => {
       <SolutionsNutrition />
       <ProgramsNutrition />
       <ProjectMapListingNutrition />
-      <VideoSectionNutrition />
       <ImpactNutrition />
+      <VideoSectionNutrition />
       <StoryNutrition />
       <PartnersNutrition />
     </div>

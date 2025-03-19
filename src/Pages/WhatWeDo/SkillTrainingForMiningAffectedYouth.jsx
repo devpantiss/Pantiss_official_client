@@ -19,8 +19,8 @@ const SkillTrainingForMiningAffectedYouth = () => {
       <SolutionsSkillTraining />
       <ProgramsSkillTraining />
       <ProjectMapListingSkills />
-      <VideoSectionSkills />
       <ImpactSkills />
+      <VideoSectionSkills />
       <StorySkillTraining />
       <PartnersSkillTraining />
     </div>

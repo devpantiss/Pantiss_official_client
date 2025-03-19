@@ -71,7 +71,7 @@ const Programs = () => {
               }}
             >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/70 group-hover:bg-transparent transition-all duration-300 ease-in-out"></div>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-300 ease-in-out"></div>
 
               {/* Categories */}
               <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">

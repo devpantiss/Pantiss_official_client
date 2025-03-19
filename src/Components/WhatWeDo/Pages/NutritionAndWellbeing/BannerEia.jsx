@@ -6,7 +6,7 @@ const BannerNutrition = () => {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735208301/banner_video_efhq8v.mp4"
+          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735222160/health_1_ko85fg.mp4"
           autoPlay
           loop
           muted

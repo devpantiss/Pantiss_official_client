@@ -16,7 +16,6 @@ const teamData = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294950/WhatsApp_Image_2025-02-11_at_10.58.44_PM_ie0jsf.jpg",
     department: "leadership",
   },
-
   // Finance
   {
     name: "Mrs. Indumati Nanda",
@@ -55,7 +54,6 @@ const teamData = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,h_800/v1739187166/WhatsApp_Image_2025-02-10_at_3.30.34_PM_t8vzmk.jpg",
     department: "finance",
   },
-
   // Project Management
   {
     name: "Mr. Rahul Nayak",
@@ -80,7 +78,7 @@ const teamData = [
   },
   {
     name: "Mr. Aditya Kumar Sahu",
-    title: "Co-Lead, Social Engineering And ICT (Software)",
+    title: "Co-Lead, Software Development (Social Impact & ICT)",
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_2700/v1739259904/IMG_20241107_112012980_HDR_pfmjkt.jpg",
     department: "projectManagement",
@@ -92,7 +90,6 @@ const teamData = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739260253/WhatsApp_Image_2025-02-11_at_1.07.34_PM_k1d0j9.jpg",
     department: "projectManagement",
   },
-
   // Monitoring
   {
     name: "Mr. Braja Kishore Nayak",
@@ -136,8 +133,7 @@ const teamData = [
       "https://pantiss.com/wp-content/uploads/2022/12/Chhatrapati-Sibaji-Jena-.jpeg",
     department: "monitoring",
   },
-
-  // Knowledgement
+  // Knowledge
   {
     name: "Mr. Ashish Kumar Mishra",
     title: "Co-Lead, Capacity Building and Knowledge management",
@@ -173,7 +169,6 @@ const teamData = [
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739274160/WhatsApp_Image_2025-02-11_at_5.11.00_PM_x6jwuo.jp",
     department: "knowledge",
   },
-
   // Founders Office
   {
     name: "Mr. Gautam Samanta",
@@ -234,6 +229,22 @@ const TeamTabs = () => {
     { label: "Founders Office", key: "foundersOffice" },
   ];
 
+  // Function to split title at the first comma and add a line break
+  const formatTitle = (title) => {
+    const [firstPart, ...rest] = title.split(",");
+    return (
+      <>
+        {firstPart}
+        {rest.length > 0 && (
+          <>
+            <br />
+            {rest.join(",")}
+          </>
+        )}
+      </>
+    );
+  };
+
   return (
     <div className="w-full max-w-5xl mx-auto py-10">
       {/* Tab Navigation */}
@@ -266,21 +277,21 @@ const TeamTabs = () => {
               className="bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
             >
               {/* Image Section */}
-              <div className="h- z-10 w-full overflow-hidden">
+              <div className="h-[400px] w-full overflow-hidden">
                 <img
                   src={member.image}
                   alt={`${member.name}`}
-                  className="w-full h-[400px] object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="p-4 z-20 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600">
+              <div className="p-4 group-hover:bg-white group-hover:ring-1 group-hover:ring-red-600 bg-red-600">
                 <h3 className="font-bold text-lg group-hover:text-red-600 text-white">
                   {member.name}
                 </h3>
-                <p className="text-sm group-hover:text-red-600 text-white">
-                  {member.title}
+                <p className="text-sm group-hover:text-red-600 text-white leading-relaxed">
+                  {formatTitle(member.title)}
                 </p>
               </div>
             </div>

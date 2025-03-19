@@ -4,81 +4,32 @@ import Heading from "../../Common/Heading";
 import { Link } from "react-router-dom";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
-// Dummy data for the cards with gradients
+// Updated card data with only four specific cards
 const cardData = [
   {
-    title: "EIA/SIA for Land Acquisition@Mines",
+    title: "Land Acquisition, Rehabilitation & Resettlement of Mines",
     link: "/whatwedo/social-development",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg", // Updated to reflect land acquisition/rehabilitation
     gradient: "from-red-700 via-red-500 to-red-300",
   },
   {
-    title: "Rehabilitation & Resettlement of Mines",
-    link: "/whatwedo/social-enterprises",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+    title: "Mines, Steel & Power Skill Park",
+    link: "/whatwedo/pantiss-mine-x-sim",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278481/vocational_msprt8.jpg", // Vocational training image fits skill park
     gradient: "from-blue-700 via-blue-500 to-blue-300",
   },
   {
-    title: "Skill Training for Mining-Affected Youth",
-    link: "/whatwedo/pantiss-mine-x-sim",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278481/vocational_msprt8.jpg",
+    title: "Carp, Rice & Duck Livelihood Park",
+    link: "/whatwedo/rural-development",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg", // Model village image as a placeholder; replace with specific livelihood park image if available
     gradient: "from-green-700 via-green-500 to-green-300",
   },
   {
-    title: "Enterprise Growth in Mining Villages",
+    title: "NutriNest",
     link: "/whatwedo/health-initiatives",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735280030/SHG-cover_zx4b1p.jpg",
-    gradient: "from-purple-700 via-purple-500 to-purple-300",
-  },
-  {
-    title: "Reclamation in Abandoned Mines",
-    link: "/whatwedo/education",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
-    gradient: "from-yellow-700 via-yellow-500 to-yellow-300",
-  },
-  {
-    title: "Just Transition for Mining Workers",
-    link: "/whatwedo/environment",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195397/just_transition_wpoeik.jpg",
-    gradient: "from-teal-700 via-teal-500 to-teal-300",
-  },
-  {
-    title: "Nutrition and Wellbeing in Mining Villages",
-    link: "/whatwedo/women-empowerment",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg", // Nutrition-related image fits NutriNest
     gradient: "from-orange-700 via-orange-500 to-orange-300",
   },
-  {
-    title: "Eco-Mine Tourism",
-    link: "/whatwedo/child-welfare",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195893/eco-mine_dvtcgq.avif",
-    gradient: "from-green-700 via-green-500 to-green-300",
-  },
-  {
-    title: "Model Mining Village in Making",
-    link: "/whatwedo/rural-development",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196020/model_village_dz36fg.jpg",
-    gradient: "from-purple-700 via-purple-500 to-purple-300",
-  },
-  {
-    title: "Indigenous Community Empowerment",
-    link: "/whatwedo/disaster-relief",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196099/indegenous_tribals_u4lgnd.jpg",
-    gradient: "from-pink-700 via-pink-500 to-pink-300",
-  },
-  {
-    title: "Waterbody Restoration in Mines",
-    link: "/whatwedo/food-security",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735196479/aditya-shrivastava-yYPcqVU6IEI-unsplash_adkc8e.jpg",
-    gradient: "from-rose-700 via-rose-500 to-rose-300",
-  },
-  {
-    title: "Connecting Remote Mining Habitations",
-    link: "/whatwedo/wash",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735278741/diego-jimenez-A-NVHPka9Rk-unsplash_dzcoco.jpg",
-    gradient: "from-amber-700 via-amber-500 to-amber-300",
-  },
-  // Add more cards with unique gradients as needed
 ];
 
 const NewsCard = React.memo(({ card }) => (
@@ -107,11 +58,11 @@ const NewsCard = React.memo(({ card }) => (
 const NewsCardSection = () => {
   const sliderRef = useRef(null);
 
-  // Slider settings
+  // Slider settings updated to show all 4 cards at once on larger screens
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // Show all 4 cards
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000, // Slightly longer duration
@@ -120,22 +71,22 @@ const NewsCardSection = () => {
     dots: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Medium screens (e.g., tablets)
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Show 2 cards
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 768, // Small screens (e.g., mobile)
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 card
         },
       },
     ],
   };
 
   return (
-    <section className="mx-auto py-8 px-10 mb-4">
+    <section className="mx-auto max-w-8xl py-8 px-10 mb-4">
       <Heading text="WHAT WE DO" color="text-[black]" bgColor="bg-red-600" />
       <div className="py-4 flex justify-center items-center relative">
         {/* Custom Previous Button */}

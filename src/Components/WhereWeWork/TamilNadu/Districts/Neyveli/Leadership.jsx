@@ -26,7 +26,7 @@ const leadershipTeam = [
 
 const LeadershipNeyveli = () => {
   return (
-    <section className="bg-gray-50 py-12 px-6">
+    <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
         <Heading
           text="OUR LEADERSHIP"

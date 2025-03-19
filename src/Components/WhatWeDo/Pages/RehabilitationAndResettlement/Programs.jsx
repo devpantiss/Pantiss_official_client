@@ -63,7 +63,7 @@ const Programs = () => {
               style={{ backgroundImage: `url(${fund.image})` }}
             >
               {/* Overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/20"></div>
 
               {/* Categories */}
               <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">

@@ -34,7 +34,7 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742315554/people-gathered-together-village-meeting-society-work-society-meeting-village-206808403_pbrdkv.webp",
       fallbackImage: "https://via.placeholder.com/600x400",
       stat: "Resettlement Gram Sabha",
       description:
@@ -94,98 +94,65 @@ const Solutions = () => {
           />
         </div>
 
-        <p className="text-white text-lg text-left leading-relaxed mb-10">
+        {/* Introductory Paragraph */}
+        <p className="text-white text-lg text-left leading-relaxed mb-12">
           Our in-house solutions are designed to empower rehabilitation and resettlement efforts with innovative, tailored tools that streamline operations and ensure compliance. Developed by our expert team, these solutions integrate advanced GIS technology, community engagement platforms, and governance frameworks, offering scalability and efficiency to address the unique challenges of mining-affected communities.
         </p>
 
-        {/* Grid of Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-12">
-          {solutions.map((solution, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row items-stretch bg-white rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg ${
-                index === 2 ? "md:col-span-2 md:max-w-3xl md:mx-auto" : ""
-              }`}
-            >
-              {/* Odd Card (or first card): Image Left, Text Right */}
-              {index % 2 === 0 && index !== 2 ? (
-                <>
-                  <div className="md:w-1/2 relative">
-                    <img
-                      src={solution.imageUrl}
-                      alt={`${solution.stat} illustration`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.src = solution.fallbackImage;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-10" />
-                  </div>
-                  <div className="md:w-1/2 p-6 flex flex-col justify-between">
-                    <div>
-                      <h4 className="text-2xl font-bold text-red-700 mb-3 bg-red-100 inline-block px-3 py-1 rounded-md">
-                        {solution.stat}
-                      </h4>
-                      <p className="text-gray-700 text-base leading-relaxed mb-4">
-                        {solution.description}
-                      </p>
-                      <ul className="space-y-3 pl-0">
-                        {solution.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
-                              {detail.icon}
-                            </span>
-                            <span className="text-gray-700 text-base leading-relaxed">
-                              {detail.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                /* Even Card (or third card): Text Left, Image Right */
-                <>
-                  <div className="md:w-1/2 p-6 flex flex-col justify-between">
-                    <div>
-                      <h4 className="text-2xl font-bold text-red-700 mb-3 bg-red-100 inline-block px-3 py-1 rounded-md">
-                        {solution.stat}
-                      </h4>
-                      <p className="text-gray-700 text-base leading-relaxed mb-4">
-                        {solution.description}
-                      </p>
-                      <ul className="space-y-3 pl-0">
-                        {solution.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
-                              {detail.icon}
-                            </span>
-                            <span className="text-gray-700 text-base leading-relaxed">
-                              {detail.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 relative">
-                    <img
-                      src={solution.imageUrl}
-                      alt={`${solution.stat} illustration`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.src = solution.fallbackImage;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-10" />
-                  </div>
-                </>
-              )}
-            </div>
-          ))}
+        {/* Single Row with Alternating Layout */}
+        <div className="space-y-12">
+          {solutions.map((solution, index) => {
+            const isEven = index % 2 === 0;
+            return (
+              <div
+                key={index}
+                className="group flex flex-col bg-white rounded-md md:flex-row items-center gap-8 transition-all duration-300 hover:shadow-xl"
+              >
+                {/* Image Section */}
+                <div
+                  className={`w-full md:w-1/2 h-[400px] rounded-lg overflow-hidden shadow-md ${
+                    isEven ? "order-1" : "order-2"
+                  }`}
+                >
+                  <img
+                    src={solution.imageUrl}
+                    alt={solution.stat}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.target.src = solution.fallbackImage; // Fallback image
+                    }}
+                  />
+                </div>
+
+                {/* Text Section */}
+                <div
+                  className={`w-full md:w-1/2 p-6 ${
+                    isEven ? "order-2" : "order-1"
+                  }`}
+                >
+                  <h4 className="text-3xl font-bold text-red-600 mb-3">
+                    {solution.stat}
+                  </h4>
+                  <p className="text-base text-gray-700 leading-relaxed mb-4">
+                    {solution.description}
+                  </p>
+                  <ul className="space-y-3 pl-0">
+                    {solution.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="inline-flex items-center justify-center w-8 h-8 mr-3 bg-red-500 text-white rounded-full flex-shrink-0">
+                          {detail.icon}
+                        </span>
+                        <span className="text-gray-700 text-base leading-relaxed">
+                          {detail.text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

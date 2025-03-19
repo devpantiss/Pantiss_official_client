@@ -19,8 +19,8 @@ const RehabilitationResettlementOfMines = () => {
       <Solutions />
       <Programs />
       <ProjectMapListingRehab />
-      <VideoSectionRehab />
       <ImpactRehab />
+      <VideoSectionRehab />
       <StoryRehab />
       <PartnersRehab />
     </div>

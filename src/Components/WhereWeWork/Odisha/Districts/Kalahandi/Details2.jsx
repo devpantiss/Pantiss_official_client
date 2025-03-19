@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../../../../Common/Heading";
 
-const DetailsKalahandi2 = () => {
+const Details2 = () => {
   const galleryImages = [
     "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0705-400x400.webp",
     "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0682-400x400.webp",
@@ -39,9 +39,9 @@ const DetailsKalahandi2 = () => {
   };
 
   return (
-    <div className="container mx-auto space-y-12 px-8">
+    <div className="">
       {/* Latest From Us */}
-      <section>
+      {/* <section>
         <Heading text="LATEST FROM US" color="text-black" bgColor="bg-red-600" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
@@ -93,46 +93,54 @@ const DetailsKalahandi2 = () => {
             Read More
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Photo Gallery with Slider */}
-      <section>
-        <Heading text="PHOTO GALLERY" color="text-black" bgColor="bg-red-600" />
-        <Slider {...sliderSettings} className="mt-6">
-          {galleryImages.map((image, index) => (
-            <div key={index} className="px-2">
-              <img
-                src={image}
-                alt={`Gallery ${index + 1}`}
-                className="rounded-lg w-full h-64 object-cover"
-              />
-            </div>
-          ))}
-        </Slider>
+      <section className="bg-red-600 p-6">
+        <div className="mx-auto max-w-7xl">
+          <Heading text="PHOTO GALLERY" color="text-white" bgColor="bg-white" />
+          <Slider {...sliderSettings} className="mt-6">
+            {galleryImages.map((image, index) => (
+              <div key={index} className="px-2">
+                <img
+                  src={image}
+                  alt={`Gallery ${index + 1}`}
+                  className="rounded-lg w-full h-64 object-cover"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </section>
 
       {/* Donors & Partners */}
-      <section>
-        <Heading text="DONORS & PARTNERS" color="text-black" bgColor="bg-red-600" />
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-          {[
-            "https://bracinternational.org/wp-content/uploads/2024/09/GAC-Logo.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/UNDP-logo-orignal.webp",
-            "https://bracinternational.org/wp-content/uploads/2024/09/UNWOMEN-logo.webp",
-            "https://bracinternational.org/wp-content/uploads/2025/01/usaid-logo.webp",
-            "https://bracinternational.org/wp-content/uploads/2025/01/WDIO-logo.webp",
-          ].map((logo, index) => (
-            <img
-              key={index}
-              src={logo}
-              alt={`Donor ${index + 1}`}
-              className="w-full h-22 object-contain"
-            />
-          ))}
+      <section className="p-6">
+        <div className="mx-auto max-w-7xl">
+          <Heading
+            text="DONORS & PARTNERS"
+            color="text-black"
+            bgColor="bg-red-600"
+          />
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {[
+              "https://bracinternational.org/wp-content/uploads/2024/09/GAC-Logo.webp",
+              "https://bracinternational.org/wp-content/uploads/2024/09/UNDP-logo-orignal.webp",
+              "https://bracinternational.org/wp-content/uploads/2024/09/UNWOMEN-logo.webp",
+              "https://bracinternational.org/wp-content/uploads/2025/01/usaid-logo.webp",
+              "https://bracinternational.org/wp-content/uploads/2025/01/WDIO-logo.webp",
+            ].map((logo, index) => (
+              <img
+                key={index}
+                src={logo}
+                alt={`Donor ${index + 1}`}
+                className="w-full h-22 object-contain"
+              />
+            ))}
+          </div>
         </div>
       </section>
     </div>
   );
 };
 
-export default DetailsKalahandi2;
+export default Details2;

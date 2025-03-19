@@ -8,8 +8,8 @@ const FeaturedPublicationBanner2 = () => {
       ref={bannerRef}
       className="relative bg-cover bg-center h-[320px] flex justify-center items-center text-white overflow-hidden shadow-lg"
       style={{
-        backgroundImage: `url(https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RGFzaGJvYXJkfGVufDB8MHwwfHx8Mg%3D%3D)`, // Replace with analytics-themed image if available
-        backgroundAttachment: "fixed", // Fixed background
+        backgroundImage: `url(https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1wYWN0JTIwYXNzZXNzbWVudHxlbnwwfHwwfHx8Mg%3D%3D)`, // Updated to an impact assessment-themed image
+        backgroundAttachment: "fixed", // Fixed background for parallax effect
         backgroundRepeat: "no-repeat", // No repetition
         backgroundSize: "cover", // Full coverage
         backgroundPosition: "center", // Initial centering
@@ -23,14 +23,14 @@ const FeaturedPublicationBanner2 = () => {
       <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl justify-between w-full p-6">
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-6xl font-semibold mb-2">
-            Data Analytics & Dashboard
+            Impact Assessment Report
           </h2>
           <p className="text-md md:text-lg text-gray-200 mb-4">
-            Empowering decisions with real-time insights on farming trends and community impact.
+            Evaluating our initiatives' transformative effects on communities and environments.
           </p>
         </div>
         <button className="px-6 py-2 bg-red-600 rounded-md text-white font-medium hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 md:ml-4">
-          Explore Dashboard
+          View Report
         </button>
       </div>
     </div>
