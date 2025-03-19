@@ -60,7 +60,7 @@ const ActivityAndEvents = () => {
         </div>
 
         {/* Table Container */}
-        <div className="lg:w-2/3 w-full bg-white bg-opacity-95 rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+        <div className="lg:w-2/3 w-full bg-white bg-opacity-95 rounded-xl shadow-2xl overflow-hidden border border-gray-200 events-table-container">
           {/* Header with horizontal overflow */}
           <div className="overflow-x-auto">
             <table className="w-full text-left min-w-[600px]">
@@ -106,14 +106,13 @@ const ActivityAndEvents = () => {
         </div>
       </div>
 
-      {/* CSS for design and scrolling */}
-      <style jsx>{`
-        /* Continuous scrolling animation */
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
+      {/* Scoped CSS */}
+      <style>{`
+        .events-table-container .animate-scroll {
+          animation: scroll-events 20s linear infinite;
         }
 
-        @keyframes scroll {
+        @keyframes scroll-events {
           0% {
             transform: translateY(0);
           }
@@ -122,23 +121,20 @@ const ActivityAndEvents = () => {
           }
         }
 
-        /* Pause animation on hover */
-        .animate-scroll:hover {
+        .events-table-container .animate-scroll:hover {
           animation-play-state: paused;
         }
 
-        /* Ensure tables align */
-        table {
+        .events-table-container table {
           table-layout: fixed;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 1024px) {
-          .lg\\:w-1/3 {
+          .lg\\:w-1\\/3 {
             width: 100%;
             margin-bottom: 2rem;
           }
-          .lg\\:w-2/3 {
+          .lg\\:w-2\\/3 {
             width: 100%;
           }
         }

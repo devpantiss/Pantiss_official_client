@@ -39,7 +39,6 @@ const OurPartners = () => {
     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045062/undp-logo-blue_wrebhi.svg",
   ];
 
-  // Debugging to ensure component mounts correctly
   useEffect(() => {
     console.log("OurPartners component mounted");
   }, []);
@@ -49,10 +48,9 @@ const OurPartners = () => {
       <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-red-600" />
 
       <div className="relative my-12 w-full">
-        {/* Central Dotted Line */}
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-[3px] h-[480px] border-l-[3px] border-dashed border-red-600 z-0"></div>
 
-        {/* Section for Government Partners */}
+        {/* Government Partners */}
         <div className="relative flex justify-center items-center pb-24">
           <div className="w-full relative">
             <div className="flex flex-col items-center justify-center">
@@ -68,15 +66,17 @@ const OurPartners = () => {
             <Marquee
               gradient={false}
               speed={50}
-              className="w-full h-24 overflow-hidden"
+              direction="left"
               pauseOnHover={true}
+              onInit={() => console.log("Marquee Initialized - Government")}
+              onMount={() => console.log("Marquee Mounted - Government")}
             >
               {governmentPartners.map((logo, index) => (
-                <div key={index} className="flex justify-center items-center mx-6">
+                <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>
                   <img
                     src={logo}
                     alt={`Government Partner ${index + 1}`}
-                    className="h-20 w-48 object-contain"
+                    style={{ width: "100%", height: "100%", objectFit: "contain" }}
                     onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
                   />
                 </div>
@@ -85,7 +85,7 @@ const OurPartners = () => {
           </div>
         </div>
 
-        {/* Section for Corporate Partners */}
+        {/* Corporate Partners */}
         <div className="relative flex justify-center items-center py-24">
           <div className="w-full relative z-10">
             <div className="flex flex-col items-center justify-center">
@@ -101,15 +101,17 @@ const OurPartners = () => {
             <Marquee
               gradient={false}
               speed={50}
-              className="w-full h-24 overflow-hidden"
+              direction="right"
               pauseOnHover={true}
+              onInit={() => console.log("Marquee Initialized - Corporate")}
+              onMount={() => console.log("Marquee Mounted - Corporate")}
             >
               {corporatePartners.map((logo, index) => (
-                <div key={index} className="flex justify-center items-center mx-6">
+                <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>
                   <img
                     src={logo}
                     alt={`Corporate Partner ${index + 1}`}
-                    className="h-20 w-48 object-contain"
+                    style={{ width: "100%", height: "100%", objectFit: "contain" }}
                     onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
                   />
                 </div>
@@ -118,7 +120,7 @@ const OurPartners = () => {
           </div>
         </div>
 
-        {/* Section for Multilateral Partners */}
+        {/* Multilateral Partners */}
         <div className="relative flex justify-center items-center pt-24">
           <div className="w-full relative z-10">
             <div className="flex flex-col items-center justify-center">
@@ -134,15 +136,17 @@ const OurPartners = () => {
             <Marquee
               gradient={false}
               speed={50}
-              className="w-full h-24 overflow-hidden"
+              direction="left"
               pauseOnHover={true}
+              onInit={() => console.log("Marquee Initialized - Multilaterals")}
+              onMount={() => console.log("Marquee Mounted - Multilaterals")}
             >
               {multilateralPartners.map((logo, index) => (
-                <div key={index} className="flex justify-center items-center mx-6">
+                <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>
                   <img
                     src={logo}
                     alt={`Multilateral Partner ${index + 1}`}
-                    className="h-20 w-48 object-contain"
+                    style={{ width: "100%", height: "100%", objectFit: "contain" }}
                     onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
                   />
                 </div>

@@ -94,22 +94,20 @@ html {
   }
 
 
-/* In a file like custom.css */
-@layer utilities {
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
-  }
+/* Add this to your global CSS file */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-  .animate-marquee:hover {
-    animation-play-state: paused;
-  }
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

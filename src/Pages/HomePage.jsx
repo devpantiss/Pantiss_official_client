@@ -30,14 +30,14 @@ const HomePage = () => {
       <AdvisoryBoard />
       <Projects />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
         <SummitBanner />
-      </Suspense>
+      {/* </Suspense> */}
       <AsSeenOn />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
         <Impact2 />
-      </Suspense>
+      {/* </Suspense> */}
 
       <OurPartners />
       <ReachSection />
