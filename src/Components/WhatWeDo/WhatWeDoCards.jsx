@@ -1,11 +1,8 @@
 import React from "react";
 import Heading from "../../Components/Common/Heading";
 import { MdEventAvailable, MdCampaign } from "react-icons/md";
-import { SiStorybook, SiGooglepodcasts } from "react-icons/si";
+import { SiStorybook,  } from "react-icons/si";
 import { HiNewspaper } from "react-icons/hi2";
-import { HiDocumentReport } from "react-icons/hi";
-import { FaAward } from "react-icons/fa6";
-import { FaBlog } from "react-icons/fa";
 
 const WhatWeDoCards = () => {
   const categoryIcons = {

@@ -1,7 +1,8 @@
 import React from "react";
 import Heading from "../../Common/Heading";
 import { MdEventAvailable, MdCampaign } from "react-icons/md";
-import { SiStorybook, SiGooglepodcasts } from "react-icons/si";
+import { FaMicrophoneAlt } from "react-icons/fa";
+import { SiStorybook } from "react-icons/si";
 import { HiNewspaper } from "react-icons/hi2";
 import { HiDocumentReport } from "react-icons/hi";
 import { FaAward } from "react-icons/fa6";
@@ -12,7 +13,7 @@ const Highlights = () => {
     Events: <MdEventAvailable className="inline-block mr-2 text-xl" />,
     Stories: <SiStorybook className="inline-block mr-2 text-xl" />,
     Campaigns: <MdCampaign className="inline-block mr-2 text-xl" />,
-    Podcasts: <SiGooglepodcasts className="inline-block mr-2 text-xl" />,
+    Podcasts: <FaMicrophoneAlt className="inline-block mr-2 text-xl" />,
     News: <HiNewspaper className="inline-block mr-2 text-xl" />,
     Reports: <HiDocumentReport className="inline-block mr-2 text-xl" />,
     Awards: <FaAward className="inline-block mr-2 text-xl" />,

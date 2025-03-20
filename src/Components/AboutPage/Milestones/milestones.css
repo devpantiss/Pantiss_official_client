@@ -1,34 +1,48 @@
- /* //milestone */    
- .custom-dots {
+/* milestones.css */
+.custom-dots {
+    background-color: white;
     display: flex !important;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    margin-top: 40px;/* Adds space between the years */
+    gap: 60px; /* Space between years */
+    margin-top: 40px; /* Space above the dots */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
 }
 
+/* Style the active year */
 .custom-dots li.slick-active button {
-    color: red; 
+    color: #ff0000; /* Red for active year */
     font-size: 22px;
-    font-weight: bold; /* Make the active year bold */
+    font-weight: bold; /* Bold for active year */
 }
 
+/* Style all year buttons */
 .custom-dots li button {
-    color: red;
+    /* display: none; */
+    background-color: transparent;
+    color: #ff0000; /* Red for all years */
     font-size: 18px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth transition for hover/active */
     border: none;
-    background: transparent;
     cursor: pointer;
 }
 
-/* Dots styling */
+/* Remove the default gray dots entirely */
+.custom-dots li::before {
+    content: none !important; /* Remove the pseudo-element content */
+    display: none !important; /* Ensure it’s hidden */
+}
+
+/* Ensure li elements don’t interfere with layout */
 .custom-dots li {
     position: relative;
+    width: auto; /* Fit the text naturally */
+    height: auto; /* Fit the text naturally */
+    margin: 0; /* Remove default margins */
 }
 
-
-
-.custom-dots li.slick-active::before {
-    background-color: #ff0000; /* Active dot color */
-}
+.slick-dots.custom-dots li button::before {
+    content: none !important;
+    display: none !important;
+  }

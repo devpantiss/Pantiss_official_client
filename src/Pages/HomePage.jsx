@@ -12,7 +12,6 @@ import Newsletter from "../Components/Homepage/NewsLetter/NewsLetter";
 import SDGBanner from "../Components/Homepage/SDGSection/SDGBanner";
 import ActivityAndEvents from "../Components/Homepage/ActivityAndEvents";
 
-
 // Lazy load other components
 const Impact2 = lazy(() => import("../Components/Homepage/Impact2/Impact2"));
 const SummitBanner = lazy(() =>
@@ -22,23 +21,15 @@ const SummitBanner = lazy(() =>
 const HomePage = () => {
   return (
     <div>
-      {/* Directly render HomeBanner2 */}
       <HomeBanner2 />
 
       <WhatWeDo />
       <SDGBanner />
       <AdvisoryBoard />
       <Projects />
-
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
-        <SummitBanner />
-      {/* </Suspense> */}
+      <SummitBanner />
       <AsSeenOn />
-
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
-        <Impact2 />
-      {/* </Suspense> */}
-
+      <Impact2 />
       <OurPartners />
       <ReachSection />
       <Highlights />

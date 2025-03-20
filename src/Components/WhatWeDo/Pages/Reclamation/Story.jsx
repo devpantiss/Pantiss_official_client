@@ -1,4 +1,3 @@
-// Story.js
 import React, { useState, useCallback } from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
@@ -8,18 +7,27 @@ import "slick-carousel/slick/slick-theme.css";
 const Story = () => {
   const stories = [
     {
-      image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
-      text: "Children need champions. Get involved, speak out, volunteer, or become a donor and give every child a fair chance to succeed.",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122359/a-woman-farmer-with-digital-tablet-on-a-potato-field-smart-farming-and-precision-agriculture-4-0-modern-agricultural-technology-and-data-management-to-industry-farm-photo_w5f8tt.jpg",
+      text: "My family relied on unpredictable farming in Odisha until the Digit Farm Bench Marking program brought smart tools to our village. With their farm analytics and network support, I learned to optimize our crops using data insights. Now, our yields have doubled, and I can sell directly to buyers, ensuring a steady income for my children’s education.",
+      name: "Sarita Behera",
+      occupation: "Smart Farmer",
       bgColor: "bg-orange-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1627634771521-9754fe2bc49b",
-      text: "Communities thrive with education. Support initiatives that provide schools and resources.",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742121303/anisa-wulan-asri-dSb8R7QAeLM-unsplash_izeerw.jpg",
+      text: "Growing guavas was just a dream until the Guavas AcreRise program came to our tribal community in Odisha. They trained me through the Farm Business School’s online platform to manage my orchard and connect with markets. Today, I run a thriving guava farm that supports my family and inspires other women in my village.",
+      name: "Manjula Naik",
+      occupation: "Guava Farmer",
       bgColor: "bg-blue-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcmluZyUyMHNvbHV0aW9uc3xlbnwwfDB8MHx8fDA%3D",
-      text: "Health for all begins with you. Donate to ensure children receive vaccines and clean water.",
+      image:
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122851/Pngtree_portfolio_displays_and_mobile_apps_8471028_m9g1ah.jpg",
+      text: "Selling our fish was a struggle until the Harvest To Market solution linked us to buyers through their online store. As part of the Pondy Fish program, I learned to manage fisheries sustainably with cold storage support. Now, my income is stable, and my sons can focus on their studies instead of labor.",
+      name: "Biren Munda",
+      occupation: "Fisherman",
       bgColor: "bg-green-500",
     },
   ];
@@ -28,20 +36,22 @@ const Story = () => {
 
   const settings = {
     dots: false,
-    infinite: true, // Ensures the slider loops indefinitely
-    speed: 1000, // Transition speed
+    infinite: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Enables automatic sliding
-    autoplaySpeed: 5000, // 5 seconds per slide
+    autoplay: true,
+    autoplaySpeed: 5000,
     beforeChange: useCallback((oldIndex, newIndex) => {
       setCurrentIndex(newIndex);
     }, []),
-    afterChange: useCallback((newIndex) => {
-      // Optional: Ensures state stays in sync after looping
-      setCurrentIndex(newIndex % stories.length);
-    }, [stories.length]),
+    afterChange: useCallback(
+      (newIndex) => {
+        setCurrentIndex(newIndex % stories.length);
+      },
+      [stories.length]
+    ),
     customPaging: (i) => (
       <button
         className="w-3 h-3 mx-1 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300"
@@ -49,12 +59,13 @@ const Story = () => {
       />
     ),
     dotsClass: "slick-dots custom-dots",
-    pauseOnHover: false, // Ensures loop continues even on hover
-    pauseOnDotsHover: false, // Ensures loop continues when hovering dots
-    pauseOnFocus: false, // Ensures loop continues when focused
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    pauseOnFocus: false,
   };
 
-  const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
+  const fallbackImage =
+    "https://via.placeholder.com/800x600?text=Fallback+Image";
 
   return (
     <section className="story-section relative overflow-hidden w-full">
@@ -134,6 +145,46 @@ const Story = () => {
             transform: translateY(0);
           }
 
+          /* Quote and attribution styling */
+          .story-quote {
+            position: relative;
+            padding: 0 1rem;
+          }
+
+          .story-quote::before,
+          .story-quote::after {
+            content: '"';
+            font-size: 2rem;
+            font-family: Georgia, serif;
+            color: #ffffff;
+            position: absolute;
+            line-height: 1;
+          }
+
+          .story-quote::before {
+            top: -0.5rem;
+            left: 0;
+          }
+
+          .story-quote::after {
+            bottom: -1rem;
+            right: 0;
+          }
+
+          .story-attribution {
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1.125rem;
+            color: #ffffff;
+          }
+
+          .story-attribution span {
+            display: block;
+            font-weight: normal;
+            font-size: 1rem;
+            opacity: 0.9;
+          }
+
           /* Desktop styles */
           @media (min-width: 768px) {
             .story-section {
@@ -192,16 +243,13 @@ const Story = () => {
                   color="text-white"
                   bgColor="bg-red-500"
                 />
-                <p className="text-base md:text-lg mb-6 leading-relaxed max-w-prose">
+                <p className="story-quote text-base md:text-lg mb-6 leading-relaxed max-w-prose">
                   {story.text}
                 </p>
-                <a
-                  href="#"
-                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                  aria-label="Join UNICEF"
-                >
-                  Join UNICEF
-                </a>
+                <div className="story-attribution">
+                  {story.name}
+                  <span>{story.occupation}</span>
+                </div>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-// Story.js
 import React, { useState, useCallback } from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
@@ -8,18 +7,24 @@ import "slick-carousel/slick/slick-theme.css";
 const Story = () => {
   const stories = [
     {
-      image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
-      text: "Children need champions. Get involved, speak out, volunteer, or become a donor and give every child a fair chance to succeed.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/3df3643c-cf03-4323-8fce-d34d63d234ab_cymgyv.jpg",
+      text: "For years, my family struggled to find steady work in Odisha’s mining belt, but the Responsible Mining Operators program changed everything. Through hands-on training, I gained skills that landed me a job at a local mine. Now, I earn a stable income to support my wife and three children, and our village has access to better resources. This program gave me pride and a purpose—I’m no longer just a laborer but a skilled worker contributing to my community’s growth.",
+      name: "Raghunath Majhi",
+      occupation: "Mining Operator",
       bgColor: "bg-orange-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1627634771521-9754fe2bc49b",
-      text: "Communities thrive with education. Support initiatives that provide schools and resources.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316784/freepik__the-style-is-candid-image-photography-with-natural__18031_exrhs0.jpg",
+      text: "The Skill Candor program brought a counseling van to our doorstep in a small tribal village in Odisha, something I never imagined. They assessed my abilities and guided me toward a career in mechatronics for heavy machinery. With their support, I trained to become a specialist and now work on massive excavators, earning respect and a wage that helps my family build a better home. This program showed me that even a woman from a remote village can dream big.",
+      name: "Sunita Pradhan",
+      occupation: "Mechatronics Specialist",
       bgColor: "bg-blue-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcmluZyUyMHNvbHV0aW9uc3xlbnwwfDB8MHx8fDA%3D",
-      text: "Health for all begins with you. Donate to ensure children receive vaccines and clean water.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/7cf81b40-cb85-47b0-bc17-5ed47fa210ed_viwshh.jpg",
+      text: "As a tribal farmer from Odisha’s industrial corridor, the Skill Cafe turned my life around by offering workshops at a Center of Excellence near my village. I learned advanced techniques in foundry work using simulators and real equipment like Volvo haulpacks. After completing the training, I joined a local manufacturing unit, tripling my income and teaching my brothers what I learned, lifting our whole family. This solution didn’t just give me a job—it gave us hope for a sustainable future.",
+      name: "Laxman Kisku",
+      occupation: "Foundry Worker",
       bgColor: "bg-green-500",
     },
   ];
@@ -28,18 +33,17 @@ const Story = () => {
 
   const settings = {
     dots: false,
-    infinite: true, // Ensures the slider loops indefinitely
-    speed: 1000, // Transition speed
+    infinite: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Enables automatic sliding
-    autoplaySpeed: 5000, // 5 seconds per slide
+    autoplay: true,
+    autoplaySpeed: 5000,
     beforeChange: useCallback((oldIndex, newIndex) => {
       setCurrentIndex(newIndex);
     }, []),
     afterChange: useCallback((newIndex) => {
-      // Optional: Ensures state stays in sync after looping
       setCurrentIndex(newIndex % stories.length);
     }, [stories.length]),
     customPaging: (i) => (
@@ -49,9 +53,9 @@ const Story = () => {
       />
     ),
     dotsClass: "slick-dots custom-dots",
-    pauseOnHover: false, // Ensures loop continues even on hover
-    pauseOnDotsHover: false, // Ensures loop continues when hovering dots
-    pauseOnFocus: false, // Ensures loop continues when focused
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    pauseOnFocus: false,
   };
 
   const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
@@ -134,6 +138,46 @@ const Story = () => {
             transform: translateY(0);
           }
 
+          /* Quote and attribution styling */
+          .story-quote {
+            position: relative;
+            padding: 0 1rem;
+          }
+
+          .story-quote::before,
+          .story-quote::after {
+            content: '"';
+            font-size: 2rem;
+            font-family: Georgia, serif; /* A serif font for classic quote styling */
+            color: #ffffff;
+            position: absolute;
+            line-height: 1;
+          }
+
+          .story-quote::before {
+            top: -0.5rem;
+            left: 0;
+          }
+
+          .story-quote::after {
+            bottom: -1rem;
+            right: 0;
+          }
+
+          .story-attribution {
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1.125rem; /* 18px */
+            color: #ffffff;
+          }
+
+          .story-attribution span {
+            display: block;
+            font-weight: normal;
+            font-size: 1rem; /* 16px */
+            opacity: 0.9;
+          }
+
           /* Desktop styles */
           @media (min-width: 768px) {
             .story-section {
@@ -192,16 +236,20 @@ const Story = () => {
                   color="text-white"
                   bgColor="bg-red-500"
                 />
-                <p className="text-base md:text-lg mb-6 leading-relaxed max-w-prose">
+                <p className="story-quote text-base md:text-lg mb-6 leading-relaxed max-w-prose">
                   {story.text}
                 </p>
-                <a
+                <div className="story-attribution">
+                  {story.name}
+                  <span>{story.occupation}</span>
+                </div>
+                {/* <a
                   href="#"
-                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                  aria-label="Join UNICEF"
+                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 mt-4"
+                  aria-label="Join Us"
                 >
-                  Join UNICEF
-                </a>
+                  Join Us
+                </a> */}
               </div>
             </div>
           </div>

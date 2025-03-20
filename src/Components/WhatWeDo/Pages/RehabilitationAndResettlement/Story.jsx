@@ -1,4 +1,3 @@
-// StoryRehab.js
 import React, { useState, useCallback } from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
@@ -8,18 +7,24 @@ import "slick-carousel/slick/slick-theme.css";
 const StoryRehab = () => {
   const stories = [
     {
-      image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
-      text: "Children need champions. Get involved, speak out, volunteer, or become a donor and give every child a fair chance to succeed.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742216965/GIS-companies-in-Bangalore_mqw2sl.jpg",
+      text: "Our village in Odisha was displaced by mining, but the GIS Hamlies platform gave us a new start. Using maps and drones, they planned a resettlement site that suits our needs. Now, I live in a home with clean water and a school nearby, all thanks to their spatial analysis.",
+      name: "Jagan Sethi",
+      occupation: "Resettled Farmer",
       bgColor: "bg-orange-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1627634771521-9754fe2bc49b",
-      text: "Communities thrive with education. Support initiatives that provide schools and resources.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742315554/people-gathered-together-village-meeting-society-work-society-meeting-village-206808403_pbrdkv.webp",
+      text: "The Resettlement Gram Sabha brought our community together after years of uncertainty. Through village meetings and a dashboard, we chose our new land and got support for building homes. I now have a house and a small shop, giving my family stability.",
+      name: "Lalita Majhi",
+      occupation: "Shopkeeper",
       bgColor: "bg-blue-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcmluZyUyMHNvbHV0aW9uc3xlbnwwfDB8MHx8fDA%3D",
-      text: "Health for all begins with you. Donate to ensure children receive vaccines and clean water.",
+      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217298/5878303_ru2f7m.jpg",
+      text: "Mining took our land, but the R & R Governance framework ensured fairness. With audits and committees, they rebuilt our lives with proper compensation and a new village. I work as a community overseer now, making sure everyone benefits.",
+      name: "Mohan Kisan",
+      occupation: "Community Overseer",
       bgColor: "bg-green-500",
     },
   ];
@@ -28,18 +33,17 @@ const StoryRehab = () => {
 
   const settings = {
     dots: false,
-    infinite: true, // Ensures the slider loops indefinitely
-    speed: 1000, // Transition speed
+    infinite: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Enables automatic sliding
-    autoplaySpeed: 5000, // 5 seconds per slide
+    autoplay: true,
+    autoplaySpeed: 5000,
     beforeChange: useCallback((oldIndex, newIndex) => {
       setCurrentIndex(newIndex);
     }, []),
     afterChange: useCallback((newIndex) => {
-      // Optional: Ensures state stays in sync after looping
       setCurrentIndex(newIndex % stories.length);
     }, [stories.length]),
     customPaging: (i) => (
@@ -49,9 +53,9 @@ const StoryRehab = () => {
       />
     ),
     dotsClass: "slick-dots custom-dots",
-    pauseOnHover: false, // Ensures loop continues even on hover
-    pauseOnDotsHover: false, // Ensures loop continues when hovering dots
-    pauseOnFocus: false, // Ensures loop continues when focused
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    pauseOnFocus: false,
   };
 
   const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
@@ -134,6 +138,46 @@ const StoryRehab = () => {
             transform: translateY(0);
           }
 
+          /* Quote and attribution styling */
+          .story-quote {
+            position: relative;
+            padding: 0 1rem;
+          }
+
+          .story-quote::before,
+          .story-quote::after {
+            content: '"';
+            font-size: 2rem;
+            font-family: Georgia, serif;
+            color: #ffffff;
+            position: absolute;
+            line-height: 1;
+          }
+
+          .story-quote::before {
+            top: -0.5rem;
+            left: 0;
+          }
+
+          .story-quote::after {
+            bottom: -1rem;
+            right: 0;
+          }
+
+          .story-attribution {
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1.125rem;
+            color: #ffffff;
+          }
+
+          .story-attribution span {
+            display: block;
+            font-weight: normal;
+            font-size: 1rem;
+            opacity: 0.9;
+          }
+
           /* Desktop styles */
           @media (min-width: 768px) {
             .story-section {
@@ -192,15 +236,19 @@ const StoryRehab = () => {
                   color="text-white"
                   bgColor="bg-red-500"
                 />
-                <p className="text-base md:text-lg mb-6 leading-relaxed max-w-prose">
+                <p className="story-quote text-base md:text-lg mb-6 leading-relaxed max-w-prose">
                   {story.text}
                 </p>
+                <div className="story-attribution">
+                  {story.name}
+                  <span>{story.occupation}</span>
+                </div>
                 <a
                   href="#"
-                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                  aria-label="Join UNICEF"
+                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 mt-4"
+                  aria-label="Join Us"
                 >
-                  Join UNICEF
+                  Join Us
                 </a>
               </div>
             </div>

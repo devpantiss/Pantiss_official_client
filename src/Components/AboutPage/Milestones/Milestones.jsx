@@ -91,11 +91,9 @@ const Milestones = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: (i) => (
-      <button className="text-lg -mx-3 text-gray-600 hover:text-red-600 transition-all duration-300 z-50">
-        {milestonesData[i].year}
-      </button>
+      <button>{milestonesData[i].year}</button> // Simple button with year
     ),
-    dotsClass: "slick-dots custom-dots", // custom layout for dots
+    dotsClass: "slick-dots custom-dots", // Apply custom class
     prevArrow: <PreviousArrow />,
     nextArrow: <NextArrow />,
   };
@@ -103,7 +101,7 @@ const Milestones = () => {
   return (
     <div className="flex flex-col container pb-12 mb-6 mx-auto">
       <Heading text="MILESTONES" color="text-black" bgColor="bg-red-600" />
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center">
         <Slider {...settings} className="w-[380px] lg:w-[1200px]">
           {milestonesData.map((milestone, index) => (
             <div
