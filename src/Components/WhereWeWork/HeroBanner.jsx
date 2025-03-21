@@ -338,7 +338,7 @@ const HeroBanner = () => {
       />
       {selectedState && (
         <div className="mt-8 w-full">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-7xl px-6">
             <Heading
               text="WHERE WE WORK!"
               color="text-black"

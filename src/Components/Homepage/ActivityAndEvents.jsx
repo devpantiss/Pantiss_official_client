@@ -82,7 +82,7 @@ const ActivityAndEvents = () => {
           </div>
 
           {/* Scrolling Content */}
-          <div className="max-h-[450px] overflow-y-auto overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+          <div className="max-h-[450px] overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
             <table className="w-full text-left min-w-[600px] table-fixed">
               <tbody className="animate-scroll">
                 {eventRows.map((event, index) => (

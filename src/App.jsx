@@ -211,18 +211,20 @@ function App() {
 
 
         {/* What-We-Do Routes */}
-        <Route path="/what-we-do/EIA-SIA-for-land-acquisition" element={<EiaSia />}/>
-        <Route path="/what-we-do/rehabilitation-&-resettlement-of-mines" element={<RehabilitationResettlementOfMines />}/>
-        <Route path="/what-we-do/skill-training-for-mining-affected-youth" element={<SkillTrainingForMiningAffectedYouth />}/>
-        <Route path="/what-we-do/enterprise-growth-in-mining-villages" element={<EnterpriseGrowthInMiningVillages />}/>
-        <Route path="/what-we-do/reclamation-in-abandoned-mines" element={<ReclamationOfAbandonedMines />}/>
-        <Route path="/what-we-do/just-transition-for-mining-workers" element={<JustTransitionForMiningWorkers />}/>
-        <Route path="/what-we-do/nutrition-and-wellbeing-in-mining-villages" element={<Nutrition />}/>
-        <Route path="/what-we-do/eco-mine-tourism" element={<EcoMineTourism />}/>
+        <Route path="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines" element={<RehabilitationResettlementOfMines />}/>
+        <Route path="/what-we-do/mine-steel-&-power-skill-park" element={<SkillTrainingForMiningAffectedYouth />}/>
+        <Route path="/what-we-do/carp-rice-&-duck-livelihood-park" element={<ReclamationOfAbandonedMines />}/>
+        <Route path="/what-we-do/nutrinest" element={<Nutrition />}/>
+
         <Route path="/what-we-do/model-mining-village-in-making" element={<ModelMiningVillageInMaking />}/>
-        <Route path="/what-we-do/indegenous-community-empowerment" element={<IndegenousCommunityEmpowerment />}/>
-        <Route path="/what-we-do/waterbody-restoration-in-mines" element={<WaterbodyRestorationInMines />}/>
-        <Route path="/what-we-do/connecting-remote-mining-habitations" element={<ConnectingRemoteMiningHabitations />}/>
+
+        {/* <Route path="/what-we-do/EIA-SIA-for-land-acquisition" element={<EiaSia />}/> */}
+        {/* <Route path="/what-we-do/enterprise-growth-in-mining-villages" element={<EnterpriseGrowthInMiningVillages />}/> */}
+        {/* <Route path="/what-we-do/just-transition-for-mining-workers" element={<JustTransitionForMiningWorkers />}/> */}
+        {/* <Route path="/what-we-do/eco-mine-tourism" element={<EcoMineTourism />}/> */}
+        {/* <Route path="/what-we-do/indegenous-community-empowerment" element={<IndegenousCommunityEmpowerment />}/> */}
+        {/* <Route path="/what-we-do/waterbody-restoration-in-mines" element={<WaterbodyRestorationInMines />}/> */}
+        {/* <Route path="/what-we-do/connecting-remote-mining-habitations" element={<ConnectingRemoteMiningHabitations />}/> */}
       </Routes>
       {!hideHeaderFooter && <Footer2 />}
     </div>

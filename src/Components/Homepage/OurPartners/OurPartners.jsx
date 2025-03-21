@@ -39,9 +39,6 @@ const OurPartners = () => {
     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045062/undp-logo-blue_wrebhi.svg",
   ];
 
-  useEffect(() => {
-    console.log("OurPartners component mounted");
-  }, []);
 
   return (
     <div className="bg-white flex flex-col justify-center items-center container mx-auto py-14 px-12">
@@ -67,9 +64,6 @@ const OurPartners = () => {
               gradient={false}
               speed={50}
               direction="left"
-              pauseOnHover={true}
-              onInit={() => console.log("Marquee Initialized - Government")}
-              onMount={() => console.log("Marquee Mounted - Government")}
             >
               {governmentPartners.map((logo, index) => (
                 <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>
@@ -102,9 +96,6 @@ const OurPartners = () => {
               gradient={false}
               speed={50}
               direction="right"
-              pauseOnHover={true}
-              onInit={() => console.log("Marquee Initialized - Corporate")}
-              onMount={() => console.log("Marquee Mounted - Corporate")}
             >
               {corporatePartners.map((logo, index) => (
                 <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>
@@ -137,9 +128,6 @@ const OurPartners = () => {
               gradient={false}
               speed={50}
               direction="left"
-              pauseOnHover={true}
-              onInit={() => console.log("Marquee Initialized - Multilaterals")}
-              onMount={() => console.log("Marquee Mounted - Multilaterals")}
             >
               {multilateralPartners.map((logo, index) => (
                 <div key={index} className="mx-6" style={{ width: "200px", height: "80px" }}>

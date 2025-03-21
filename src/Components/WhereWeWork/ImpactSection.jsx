@@ -11,7 +11,7 @@ const ImpactSection = ({ impact }) => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 p-8">
-          <Heading text="Impact" color="text-white" bgColor="bg-red-600" />
+          <Heading text="IMPACT" color="text-white" bgColor="bg-red-600" />
           <div className="bg-transparent rounded-lg mb-16">
             <p className="text-lg text-gray-100 mb-4">{impact?.description}</p>
             <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 text-center">

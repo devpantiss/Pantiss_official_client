@@ -26,22 +26,22 @@ const Footer2 = () => {
             <Link to="/what-we-do/EIA-SIA-for-land-acquisition" className="hover:underline hover:text-red-600 text-center">
               EIA/SIA for Land Acquisition@Mines
             </Link>
-            <Link to="/what-we-do/rehabilitation-&-resettlement-of-mines" className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines" className="hover:underline hover:text-red-600 text-center">
               Rehabiliation & Resettlement
             </Link>
-            <Link to="/what-we-do/skill-training-for-mining-affected-youth" className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/mine-steel-&-power-skill-park" className="hover:underline hover:text-red-600 text-center">
               Skill Training for Mining affected Youth
             </Link>
             <Link to="/what-we-do/enterprise-growth-in-mining-villages" className="hover:underline hover:text-red-600 text-center">
               Enterprise Growth in Mining Villages
             </Link>
-            <Link to="/what-we-do/reclamation-in-abandoned-mines" className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/carp-rice-&-duck-livelihood-park" className="hover:underline hover:text-red-600 text-center">
               Reclamation in Abandoned Mines
             </Link>
             <Link to="/what-we-do/just-transition-for-mining-workers" className="hover:underline hover:text-red-600 text-center">
               Just Transition for Mining Workers
             </Link>
-            <Link to="/what-we-do/nutrition-and-wellbeing-in-mining-villages" className="hover:underline hover:text-red-600 text-center">
+            <Link to="/what-we-do/nutrinest" className="hover:underline hover:text-red-600 text-center">
               Nutrition & Wellbeing in Mining Villages
             </Link>
             <Link to="/what-we-do/eco-mine-tourism" className="hover:underline hover:text-red-600 text-center">

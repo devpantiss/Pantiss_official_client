@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-// import JobsListing from "../Components/CareersPage/JobsListing";
 import LifeAtPantiss from "../Components/CareersPage/LifeAtPantiss";
 import ProgrammeSection from "../Components/CareersPage/ProgrammeSection";
 import Hero from "../Components/CareersPage/Hero";
@@ -27,8 +26,8 @@ const CareersPage = () => {
         <LifeAtPantiss />
       </div>
       <CareersCategory />
-      <ProgrammeSection />
       <BenefitsPantiss />
+      <ProgrammeSection />
       <TestimonialSlider />
       {/* <JobsListing /> */}
     </div>

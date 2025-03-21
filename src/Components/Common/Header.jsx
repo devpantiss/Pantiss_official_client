@@ -359,8 +359,8 @@ const Header = () => {
                 />
               </Link>
               {isWhatWeDoOpen && (
-                <div className="absolute mt-6 grid grid-cols-3 w-[1000px] text-black bg-red-600 border rounded shadow-lg z-20">
-                  <Link
+                <div className="absolute mt-6 grid grid-cols-1 w-[500px] text-black bg-red-600 border rounded shadow-lg z-20">
+                  {/* <Link
                     to="/what-we-do/EIA-SIA-for-land-acquisition"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -370,30 +370,30 @@ const Header = () => {
                     <span className="text-[18px]">
                       EIA/SIA for Land Acquisition@Mines
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/rehabilitation-&-resettlement-of-mines"
+                    to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
-                      Rehabilitation & Resettlement of Mines
+                      Land Acquisition, Rehabilitation & Resettlement of Mines
                     </span>
                   </Link>
                   <Link
-                    to="/what-we-do/skill-training-for-mining-affected-youth"
+                    to="/what-we-do/mine-steel-&-power-skill-park"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
-                      Skill Training for Mining affected Youth
+                      Mine, Steel & Power Skill Park{" "}
                     </span>
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/enterprise-growth-in-mining-villages"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -403,19 +403,19 @@ const Header = () => {
                     <span className="text-[18px]">
                       Enterprise Growth in Mining Villages
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/reclamation-in-abandoned-mines"
+                    to="/what-we-do/carp-rice-&-duck-livelihood-park"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">
-                      Reclamation in Abandoned Mines
+                      Carp, Rice & Duck Livelihood Park{" "}
                     </span>
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/just-transition-for-mining-workers"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -425,19 +425,17 @@ const Header = () => {
                     <span className="text-[18px]">
                       Just Transition for Mining Workers
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/nutrition-and-wellbeing-in-mining-villages"
+                    to="/what-we-do/nutrinest"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
                   >
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Nutrition & Wellbeing in Mining Villages
-                    </span>
+                    <span className="text-[18px]">NutriNest </span>
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/eco-mine-tourism"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -445,8 +443,8 @@ const Header = () => {
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Eco-Mine Tourism</span>
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/model-mining-village-in-making"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -456,8 +454,8 @@ const Header = () => {
                     <span className="text-[18px]">
                       Model Mining Village in Making
                     </span>
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/indegenous-community-empowerment"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -467,8 +465,8 @@ const Header = () => {
                     <span className="text-[18px]">
                       Indigenous Community Empowerment
                     </span>
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/waterbody-restoration-in-mines"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white hover:rounded-md text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -478,8 +476,8 @@ const Header = () => {
                     <span className="text-[18px]">
                       Waterbody Restoration in Mines
                     </span>
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/connecting-remote-mining-habitations"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -489,7 +487,7 @@ const Header = () => {
                     <span className="text-[18px]">
                       Connecting Remote Mining Habitations
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               )}
             </div>
@@ -686,102 +684,102 @@ const Header = () => {
               </Link>
               {isWhatWeDoOpen && (
                 <div className="grid grid-cols-2 pl-6 mt-4 gap-y-4 gap-x-4">
-                  <Link
+                  {/* <Link
                     to="/what-we-do/EIA-SIA-for-land-acquisition"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     EIA/SIA for Land Acquisition@Mines
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/rehabilitation-&-resettlement-of-mines"
+                    to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Rehabilitation & Resettlement of Mines
+                    Land Acquisition, Rehabilitation & Resettlement of Mines
                   </Link>
                   <Link
-                    to="/what-we-do/skill-training-for-mining-affected-youth"
+                    to="/what-we-do/mine-steel-&-power-skill-park"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Skill Training for Mining affected Youth
+                    Mine, Steel & Power Skill Park{" "}
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/enterprise-growth-in-mining-villages"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Enterprise Growth in Mining Villages
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/reclamation-in-abandoned-mines"
+                    to="/what-we-do/carp-rice-&-duck-livelihood-park"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Reclamation in Abandoned Mines
+                    Carp, Rice & Duck Livelihood Park{" "}
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/just-transition-for-mining-workers"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Just Transition for Mining Workers
-                  </Link>
+                  </Link> */}
                   <Link
-                    to="/what-we-do/nutrition-and-wellbeing-in-mining-villages"
+                    to="/what-we-do/nutrinest"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
-                    Nutrition & Wellbeing in Mining Villages
+                    NutriNest
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/what-we-do/eco-mine-tourism"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Eco-Mine Tourism
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/model-mining-village-in-making"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Model Mining Village in Making
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/indigenous-community-empowerment"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Indigenous Community Empowerment
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/waterbody-restoration-in-mines"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Waterbody Restoration in Mines
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     to="/what-we-do/connecting-remote-mining-habitations"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
                   >
                     <BiRightArrow />
                     Connecting Remote Mining Habitations
-                  </Link>
+                  </Link> */}
                 </div>
               )}
             </div>

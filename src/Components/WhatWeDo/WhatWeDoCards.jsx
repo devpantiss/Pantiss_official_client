@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../Components/Common/Heading";
 import { MdEventAvailable, MdCampaign } from "react-icons/md";
-import { SiStorybook,  } from "react-icons/si";
+import { SiStorybook } from "react-icons/si";
 import { HiNewspaper } from "react-icons/hi2";
 
 const WhatWeDoCards = () => {
@@ -9,11 +9,11 @@ const WhatWeDoCards = () => {
     Events: <MdEventAvailable className="inline-block mr-2 text-xl" />,
     Stories: <SiStorybook className="inline-block mr-2 text-xl" />,
     Campaigns: <MdCampaign className="inline-block mr-2 text-xl" />,
-    // Podcasts: <SiGooglepodcasts className="inline-block mr-2 text-xl" />,
     News: <HiNewspaper className="inline-block mr-2 text-xl" />,
     // Reports: <HiDocumentReport className="inline-block mr-2 text-xl" />,
     // Awards: <FaAward className="inline-block mr-2 text-xl" />,
     // Blogs: <FaBlog className="inline-block mr-2 text-xl" />,
+    // Podcasts: <SiGooglepodcasts className="inline-block mr-2 text-xl" />,
   };
 
   const newsItems = [
