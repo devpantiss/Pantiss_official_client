@@ -282,7 +282,7 @@ const impactData = {
   },
   Jharkhand: {
     description:
-      "Bihar has transformed its rural areas with modern infrastructure and clean water initiatives.",
+      "Jharkhand has transformed its rural areas with modern infrastructure and clean water initiatives.",
     stats: [
       { label: "Families Impacted", value: "40,000+" },
       { label: "Projects Completed", value: "150+" },
@@ -292,7 +292,7 @@ const impactData = {
   },
   Assam: {
     description:
-      "West Bengal has strengthened its economy through trade and renewable energy projects.",
+      "Assam has strengthened its economy through trade and renewable energy projects.",
     stats: [
       { label: "Families Impacted", value: "30,000+" },
       { label: "Projects Completed", value: "120+" },
@@ -302,7 +302,7 @@ const impactData = {
   },
   "Tamil Nadu": {
     description:
-      "Jharkhand has achieved milestones in mining safety and green energy development.",
+      "Tamil Nadu has achieved milestones in mining safety and green energy development.",
     stats: [
       { label: "Families Impacted", value: "35,000+" },
       { label: "Projects Completed", value: "100+" },
