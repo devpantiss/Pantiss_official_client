@@ -4,40 +4,40 @@ import Heading from "../../../Common/Heading";
 const ProjectMapListingReclamation = () => {
   const projects = [
     {
-      number: "38272-045",
-      name: "Uttarakhand Integrated and Resilient Urban Development Project—Additional Financing",
-      client: "Government of Uttarakhand",
-      totalImpact: "150,000",
+      number: "ODI-001-24",
+      name: "Pondy Fish: Sustainable Fisheries Development in Coastal Odisha",
+      client: "Odisha Fisheries Department",
+      totalImpact: "3,000",
     },
     {
-      number: "40540-016",
-      name: "Dhaka-Northwest Corridor Road Project, Phase 2",
-      client: "Roads and Highways Department, Bangladesh",
-      totalImpact: "200,000",
+      number: "ODI-002-24",
+      name: "Tassar Fashion: Empowering Textile Communities in Koraput",
+      client: "Odisha Handloom and Textiles Department",
+      totalImpact: "1,000",
     },
     {
-      number: "40540-019",
-      name: "South Asia Subregional Economic Cooperation Dhaka-Northwest Corridor Road Project, Phase 2 (Tranche 3)",
-      client: "Roads and Highways Department, Bangladesh",
-      totalImpact: "180,000",
+      number: "ODI-003-24",
+      name: "Tribey Coffee: Agribusiness Expansion in Koraput Hills",
+      client: "Odisha Agricultural Marketing Board",
+      totalImpact: "1200",
     },
     {
-      number: "42007-021",
-      name: "Small and Medium-Sized Enterprises Development Program (Subprogram 2)",
-      client: "Ministry of Finance",
-      totalImpact: "50,000",
+      number: "ODI-004-24",
+      name: "Digit Farm Bench Marking: Smart Farming Initiative in Western Odisha",
+      client: "Odisha Department of Agriculture",
+      totalImpact: "1,900",
     },
     {
-      number: "42687-032",
-      name: "Promoting Smart and Integrated Urban Planning for Livability and Cultural Economy in Rajasthan",
-      client: "Government of Rajasthan",
-      totalImpact: "75,000",
+      number: "ODI-005-24",
+      name: "Farm Business School: Agricultural Entrepreneurship in Rural Odisha",
+      client: "Odisha Skill Development Authority",
+      totalImpact: "900",
     },
     {
-      number: "42527-034",
-      name: "Rajasthan Secondary Towns Development Sector Project Additional Financing",
-      client: "Government of Rajasthan",
-      totalImpact: "120,000",
+      number: "ODI-006-24",
+      name: "Harvest To Market: Linking Farmers to Markets in Eastern Odisha",
+      client: "Odisha Rural Development Department",
+      totalImpact: "1,500",
     },
   ];
 
@@ -49,10 +49,10 @@ const ProjectMapListingReclamation = () => {
           <Heading text="PROJECTS" color="text-white" bgColor="bg-white" />
 
           <p className="text-white text-sm leading-relaxed">
-            In 2023, ADB committed $10,746.56 million in climate finance. Of
-            this total, $6,168.50 million is expected to contribute to climate
-            change mitigation and $4,578.06 million to climate change
-            adaptation.
+            In 2024, Pantiss committed $5,230.75 million to sustainable
+            agriculture and rural development in Odisha. Of this total,
+            $3,150.20 million is expected to enhance farmer livelihoods and
+            $2,080.55 million to improve market access and sustainability.
           </p>
         </div>
 
@@ -133,12 +133,17 @@ const ProjectMapListingReclamation = () => {
                 aria-label="Filter by Member Country"
               >
                 <option>All</option>
+                <option>Odisha</option>
               </select>
               <select
                 className="border border-gray-500 w-full rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 aria-label="Filter by Sector"
               >
                 <option>All</option>
+                <option>Sustainable Agriculture</option>
+                <option>Fisheries</option>
+                <option>Textiles</option>
+                <option>Agribusiness</option>
               </select>
             </div>
           </div>
@@ -147,7 +152,7 @@ const ProjectMapListingReclamation = () => {
         {/* Source */}
         <div className="mt-6">
           <p className="text-white text-xs">
-            Source: Asian Development Bank estimates (March 2024)
+            Source: Pantiss Odisha Project Estimates (March 2025)
           </p>
         </div>
       </div>

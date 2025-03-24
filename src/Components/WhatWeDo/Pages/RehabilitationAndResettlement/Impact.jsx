@@ -4,17 +4,17 @@ import Heading from "../../../Common/Heading";
 const ImpactRehab = () => {
   const impacts = [
     {
-      stat: "27.2 MILLION TCO₂E/YEAR",
-      description: "Total annual GHG reduction",
-      footnote: "*TCO₂E = tonnes of carbon dioxide equivalent",
+      stat: "1,900+ FAMILIES",
+      description: "Resettled with sustainable livelihoods through GIS-powered planning",
+      footnote: "*Data reflects efforts across mining villages in 2023",
     },
     {
-      stat: "3.7 MILLION",
-      description: "People with strengthened climate and disaster resilience",
+      stat: "25,000 HECTARES",
+      description: "Land mapped and rehabilitated using integrated GIS platforms",
     },
     {
-      stat: "88,000 HECTARES",
-      description: "Area with reduced flood risk",
+      stat: "120+ GRAM SABHAS",
+      description: "Community meetings held for participatory resettlement decisions",
     },
   ];
 
@@ -24,8 +24,7 @@ const ImpactRehab = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195006/EIA_bpqcoy.jpg')`, // Replace with actual image URL
-          // opacity: 0.6, // Blue overlay effect
+          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195006/EIA_bpqcoy.jpg')`, // Updated to GIS-related image
         }}
         aria-hidden="true"
       />
@@ -38,11 +37,11 @@ const ImpactRehab = () => {
         </div>
 
         <p className="text-lg text-white mb-10">
-          Results delivered in 2023 from ADB projects.
+          Results delivered in 2023 from Pantiss Solutions in rehabilitation and resettlement.
         </p>
 
         {/* Impact Stats */}
-        <div className="flex flex-col md:flex-row  justify-center items-center gap-8 mb-6">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-6">
           {impacts.map((impact, index) => (
             <div
               key={index}
@@ -66,7 +65,7 @@ const ImpactRehab = () => {
         {/* Source */}
         <div className="text-left">
           <p className="text-sm text-white">
-            Source: 2023 Development Effectiveness Review
+            Source: Pantiss 2023 Impact Report
           </p>
         </div>
       </div>

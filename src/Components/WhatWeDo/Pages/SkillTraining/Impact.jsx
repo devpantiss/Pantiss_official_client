@@ -4,17 +4,17 @@ import Heading from "../../../Common/Heading";
 const ImpactSkills = () => {
   const impacts = [
     {
-      stat: "27.2 MILLION TCO₂E/YEAR",
-      description: "Total annual GHG reduction",
-      footnote: "*TCO₂E = tonnes of carbon dioxide equivalent",
+      stat: "5,000",
+      description: "Skilled workers mobilized and connected to opportunities",
+      footnote: "*Estimated impact across platforms like Skill Mobilizers Connect",
     },
     {
-      stat: "3.7 MILLION",
-      description: "People with strengthened climate and disaster resilience",
+      stat: "3000+",
+      description: "Individuals trained in specialized trades and technologies",
     },
     {
-      stat: "88,000 HECTARES",
-      description: "Area with reduced flood risk",
+      stat: "4000 JOBS",
+      description: "Created through industry partnerships and programs",
     },
   ];
 
@@ -24,8 +24,8 @@ const ImpactSkills = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg')`, // Replace with actual image URL
-          // opacity: 0.6, // Blue overlay effect
+          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg')`, // Updated to a relevant image from Solutions
+          // opacity: 0.6, // Subtle overlay effect
         }}
         aria-hidden="true"
       />
@@ -36,7 +36,7 @@ const ImpactSkills = () => {
         <Heading text="OUR IMPACT" color="text-white" bgColor="bg-red-600" />
 
         <p className="text-lg text-left text-white mb-10">
-          Results delivered in 2023 from ADB projects.
+          Results delivered in 2024 from Pantiss solutions and programs.
         </p>
 
         {/* Impact Stats */}
@@ -64,7 +64,7 @@ const ImpactSkills = () => {
         {/* Source */}
         <div className="text-left">
           <p className="text-sm text-white">
-            Source: 2023 Development Effectiveness Review
+            Source: Pantiss 2024 Impact Report
           </p>
         </div>
       </div>
