@@ -3,7 +3,7 @@ import HeroBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Boka
 import ImpactBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Impact'
 import DetailsBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Details'
 import DetailsBokaro2 from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Details2'
-import LeadershipBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Leadership'
+// import LeadershipBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Leadership'
 
 const Bokaro = () => {
   return (
@@ -12,7 +12,7 @@ const Bokaro = () => {
       <ImpactBokaro />
       <DetailsBokaro />
       <DetailsBokaro2 />
-      <LeadershipBokaro />
+      {/* <LeadershipBokaro /> */}
     </div>
   )
 }

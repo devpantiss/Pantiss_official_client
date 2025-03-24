@@ -3,7 +3,7 @@ import HeroNeyveli from '../../../Components/WhereWeWork/TamilNadu/Districts/Ney
 import ImpactNeyveli from '../../../Components/WhereWeWork/TamilNadu/Districts/Neyveli/Impact'
 import DetailsNeyveli from '../../../Components/WhereWeWork/TamilNadu/Districts/Neyveli/Details'
 import DetailsNeyveli2 from '../../../Components/WhereWeWork/TamilNadu/Districts/Neyveli/Details2'
-import LeadershipNeyveli from '../../../Components/WhereWeWork/TamilNadu/Districts/Neyveli/Leadership'
+// import LeadershipNeyveli from '../../../Components/WhereWeWork/TamilNadu/Districts/Neyveli/Leadership'
 
 const Neyveli = () => {
   return (
@@ -12,7 +12,7 @@ const Neyveli = () => {
       <ImpactNeyveli />
       <DetailsNeyveli />
       <DetailsNeyveli2 />
-      <LeadershipNeyveli />
+      {/* <LeadershipNeyveli /> */}
     </div>
   )
 }

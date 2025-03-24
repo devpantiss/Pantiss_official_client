@@ -8,27 +8,27 @@ import "slick-carousel/slick/slick-theme.css";
 const stories = [
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1740387857/3df3643c-cf03-4323-8fce-d34d63d234ab_cymgyv.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388951/a9a42559-8f73-4b9c-ab85-15a03168ded5_ws6p9s.jpg",
     text: "Transforming lives in Keonjhar by training local youth in sustainable mining practices, creating employment opportunities in Odisha’s iron ore heartland.",
-    bgColor: "bg-red-600",
+    bgColor: "bg-white",
   },
   {
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1742126668/matthew-henry-yETqkLnhsUI-unsplash_ayeg4b.jpg",
     text: "Restoring degraded lands in Sundargarh with renewable energy projects, empowering mining villages with solar-powered livelihoods.",
-    bgColor: "bg-green-600",
+    bgColor: "bg-white",
   },
   {
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg",
     text: "Upskilling women and tribal communities in Sukinda’s chromite belt, fostering economic resilience through vocational education.",
-    bgColor: "bg-blue-600",
+    bgColor: "bg-white",
   },
   {
     image:
       "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
     text: "Reviving water resources in Jharsuguda’s coal mining areas with community-led watershed management, ensuring sustainable agriculture.",
-    bgColor: "bg-yellow-600",
+    bgColor: "bg-white",
   },
 ];
 
@@ -67,7 +67,7 @@ const Stories = memo(() => {
   const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
 
   return (
-    <section className="story-section relative overflow-hidden w-full">
+    <section className="story-section mb-4 relative overflow-hidden w-full">
       <style>
         {`
           .story-section {
@@ -192,19 +192,19 @@ const Stories = memo(() => {
               </div>
 
               <div
-                className={`text-section flex flex-col justify-center items-start p-6 md:p-12 text-white ${story.bgColor}`}
+                className={`text-section ring-2 ring-red-600 flex flex-col justify-center items-start p-6 md:p-12 text-white ${story.bgColor}`}
               >
                 <Heading
                   text="WHERE WE WORK"
-                  color="text-white"
+                  color="text-black"
                   bgColor="bg-red-600"
                 />
-                <p className="text-base md:text-lg mb-6 leading-relaxed max-w-prose">
+                <p className="text-base md:text-lg mb-6 text-black leading-relaxed max-w-prose">
                   {story.text}
                 </p>
                 <a
                   href="#"
-                  className="bg-white text-red-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+                  className="bg-white text-red-600 ring-2 ring-red-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
                   aria-label="Learn More About Our Work"
                 >
                   Learn More

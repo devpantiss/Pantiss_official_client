@@ -3,7 +3,7 @@ import HeroKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Ko
 import ImpactKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Impact'
 import DetailsKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details'
 import DetailsKorba2 from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details2'
-import LeadershipKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Leadership'
+// import LeadershipKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Leadership'
 
 const Korba = () => {
   return (
@@ -12,7 +12,7 @@ const Korba = () => {
         <ImpactKorba />
         <DetailsKorba />
         <DetailsKorba2 />
-        <LeadershipKorba />
+        {/* <LeadershipKorba /> */}
     </div>
   )
 }

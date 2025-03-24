@@ -3,7 +3,7 @@ import HeroGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/HeroAnugu
 import ImpactGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Impact'
 import DetailsGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Details'
 import DetailsGuwahati2 from '../../../Components/WhereWeWork/Assam/Guwati/Details2'
-import LeadershipGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Leadership'
+// import LeadershipGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Leadership'
 
 const Guwahati = () => {
   return (
@@ -12,7 +12,7 @@ const Guwahati = () => {
         <ImpactGuwahati />
         <DetailsGuwahati />
         <DetailsGuwahati2 />
-        <LeadershipGuwahati />
+        {/* <LeadershipGuwahati /> */}
     </div>
   )
 }

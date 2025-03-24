@@ -28,11 +28,12 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0705-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0682-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/Kandahar-Myankoh-Check-Dam-after-construction-1-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/MSME-ABADEI-1-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/DSC00496-400x400.webp",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/02e5eaed-e5d1-4067-b7e8-ca16c15e5304_npoanm.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450493/TNIE_import_2023_3_6_original_Illegalcoalmining_cthtx2.avif",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816871/cd939ec7-2ea0-43fc-835d-cfe2fa8bfb73_va2bwv.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816870/286ada51-f3cf-4fcf-b501-b56f2ad10397_kzckw0.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816869/8ab7f18d-dcf0-49bc-b1c2-0fe81e8d99c3_dwgynm.jpg",
 ];
 
 // Memoized GalleryImage component
@@ -87,7 +88,7 @@ const Details2 = () => {
       {/* Photo Gallery with Slider */}
       <section className="bg-red-600 p-6">
         <div className="mx-auto max-w-7xl">
-          <div className="flex justify-center mb-6">
+          <div className="flex mb-6">
             <Heading text="PHOTO GALLERY" color="text-white" bgColor="bg-white" />
           </div>
           <div className="relative">
@@ -103,7 +104,7 @@ const Details2 = () => {
       {/* Donors & Partners */}
       <section className="p-6">
         <div className="mx-auto max-w-7xl">
-          <div className="flex justify-center mb-6">
+          <div className="flex mb-6">
             <Heading
               text="DONORS & PARTNERS"
               color="text-black"

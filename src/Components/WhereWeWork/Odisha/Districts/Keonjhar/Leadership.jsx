@@ -4,36 +4,28 @@ import Heading from "../../../../Common/Heading";
 const leadershipTeam = [
   {
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738229838/vecteezy_hand-drawnman-avatar-profile-icon-for-social-networks__n8j5bp.jpg",
-    name: "John Doe",
-    designation: "CEO, Pantiss Foundation",
-  },
-  {
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_151423707_HDR_rj7i83.jpg",
-    name: "Jane Smith",
-    designation: "COO, Pantiss Foundation",
+    name: "Rahul Kumar Nayak",
   },
   {
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738229838/vecteezy_hand-drawnman-avatar-profile-icon-for-social-networks__n8j5bp.jpg",
-    name: "Michael Johnson",
-    designation: "Head of Operations",
+    name: "Abhinaraj Nayak",
   },
   {
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_151423707_HDR_rj7i83.jpg",
-    name: "Emily Davis",
-    designation: "Director, Community Engagement",
+    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738229838/vecteezy_hand-drawnman-avatar-profile-icon-for-social-networks__n8j5bp.jpg",
+    name: "Saroj Nanda",
   },
 ];
 
-const LeadershipKeonjhar = () => {
+const Leadership = () => {
   return (
     <section className="py-12 px-6">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <Heading
           text="OUR LEADERSHIP"
           color="text-black"
           bgColor="bg-red-600"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {leadershipTeam.map((leader, index) => (
             <div
               key={index}
@@ -53,9 +45,6 @@ const LeadershipKeonjhar = () => {
                 <h3 className="font-bold text-lg group-hover:text-red-600 text-white">
                   {leader.name}
                 </h3>
-                <p className="text-sm group-hover:text-red-600 text-white">
-                  {leader.designation}
-                </p>
               </div>
             </div>
           ))}
@@ -65,4 +54,4 @@ const LeadershipKeonjhar = () => {
   );
 };
 
-export default LeadershipKeonjhar;
+export default Leadership;

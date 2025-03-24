@@ -28,11 +28,11 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0705-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/IMG_0682-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/Kandahar-Myankoh-Check-Dam-after-construction-1-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/MSME-ABADEI-1-400x400.webp",
-  "https://bracinternational.org/wp-content/uploads/2024/09/DSC00496-400x400.webp",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/56cff1ce-3f2c-477a-98b9-74fd979e24fc_j3m2x6.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742815930/2d91ccb0-6b3a-41da-92c2-daaa93bcaea5_vlv5q9.jpg",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742315554/people-gathered-together-village-meeting-society-work-society-meeting-village-206808403_pbrdkv.webp",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316048/gettyimages-1500323282-612x612_lfyl2d.jpg",
+  // "https://bracinternational.org/wp-content/uploads/2024/09/DSC00496-400x400.webp",
 ];
 
 // Memoized GalleryImage component
@@ -87,7 +87,7 @@ const Details2 = () => {
       {/* Photo Gallery with Slider */}
       <section className="bg-red-600 p-6">
         <div className="mx-auto max-w-7xl">
-          <div className="flex justify-center mb-6">
+          <div className="flex mb-6">
             <Heading text="PHOTO GALLERY" color="text-white" bgColor="bg-white" />
           </div>
           <div className="relative">
@@ -103,7 +103,7 @@ const Details2 = () => {
       {/* Donors & Partners */}
       <section className="p-6">
         <div className="mx-auto max-w-7xl">
-          <div className="flex justify-center mb-6">
+          <div className="flex mb-6">
             <Heading
               text="DONORS & PARTNERS"
               color="text-black"

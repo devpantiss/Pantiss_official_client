@@ -3,7 +3,7 @@ import HeroDhanbad from '../../../Components/WhereWeWork/Jharkhand/Districts/Dha
 import ImpactDhanbad from '../../../Components/WhereWeWork/Jharkhand/Districts/Dhanbad/Impact'
 import DetailsDhanbad from '../../../Components/WhereWeWork/Jharkhand/Districts/Dhanbad/Details'
 import DetailsDhanbad2 from '../../../Components/WhereWeWork/Jharkhand/Districts/Dhanbad/Details2'
-import LeadershipDhanbad from '../../../Components/WhereWeWork/Jharkhand/Districts/Dhanbad/Leadership'
+// import LeadershipDhanbad from '../../../Components/WhereWeWork/Jharkhand/Districts/Dhanbad/Leadership'
 
 const Dhanbad = () => {
   return (
@@ -12,7 +12,7 @@ const Dhanbad = () => {
       <ImpactDhanbad />
       <DetailsDhanbad />
       <DetailsDhanbad2 />
-      <LeadershipDhanbad />
+      {/* <LeadershipDhanbad /> */}
     </div>
   )
 }
