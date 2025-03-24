@@ -39,7 +39,9 @@ const NewsCard = memo(({ item }) => (
       <div className="p-4 flex flex-col flex-grow">
         <p className="text-sm text-gray-500">{item.date}</p>
         <h3 className="font-semibold text-lg mt-2">{item.title}</h3>
-        <p className="text-gray-600 text-sm mt-2 flex-grow">{item.description}</p>
+        <p className="text-gray-600 text-sm mt-2 flex-grow">
+          {item.description}
+        </p>
       </div>
     </div>
   </div>
@@ -86,6 +88,14 @@ const NewsSlider = ({ news }) => {
               <NewsCard key={item.id || item.title} item={item} />
             ))}
           </Slider>
+
+          <style>
+            {`
+            .custom-dots {
+display:none;
+            }
+            `}
+          </style>
         </div>
       </div>
     </div>

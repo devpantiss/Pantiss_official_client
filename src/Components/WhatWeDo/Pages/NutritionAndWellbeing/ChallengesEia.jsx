@@ -111,7 +111,7 @@ const ChallengesTransition = () => {
         </Slider>
 
         {/* Scoped CSS for Dots */}
-        <style jsx>{`
+        <style>{`
           .custom-dots {
             background-color: transparent;
             position: absolute;

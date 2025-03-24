@@ -4,22 +4,31 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Memoized static stories data
+// Memoized static stories data relevant to "Where We Work" in Odisha
 const stories = [
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735301666/IMG_9085_tkrncl.jpg",
-    text: "Empowering women in mining communities through vocational training and skill development, transforming lives in Sukinda’s chromite mines.",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1740387857/3df3643c-cf03-4323-8fce-d34d63d234ab_cymgyv.jpg",
+    text: "Transforming lives in Keonjhar by training local youth in sustainable mining practices, creating employment opportunities in Odisha’s iron ore heartland.",
     bgColor: "bg-red-600",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735193655/billy-albert-5lNKe_pE3oA-unsplash_xcpi6h.jpg",
-    text: "Revitalizing abandoned mines into sustainable aquaculture sites, providing livelihoods for families in Odisha’s mining periphery.",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1742126668/matthew-henry-yETqkLnhsUI-unsplash_ayeg4b.jpg",
+    text: "Restoring degraded lands in Sundargarh with renewable energy projects, empowering mining villages with solar-powered livelihoods.",
     bgColor: "bg-green-600",
   },
   {
-    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735278481/vocational_msprt8.jpg",
-    text: "Building unemployment-free blocks in Keonjhar by training youth for jobs in mining and steel industries.",
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg",
+    text: "Upskilling women and tribal communities in Sukinda’s chromite belt, fostering economic resilience through vocational education.",
     bgColor: "bg-blue-600",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
+    text: "Reviving water resources in Jharsuguda’s coal mining areas with community-led watershed management, ensuring sustainable agriculture.",
+    bgColor: "bg-yellow-600",
   },
 ];
 
@@ -29,7 +38,7 @@ const Stories = memo(() => {
 
   // Memoized slider settings
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
@@ -38,7 +47,10 @@ const Stories = memo(() => {
     autoplay: true,
     autoplaySpeed: 5000,
     beforeChange: useCallback((_, newIndex) => setCurrentIndex(newIndex), []),
-    afterChange: useCallback((newIndex) => setCurrentIndex(newIndex % stories.length), [stories.length]),
+    afterChange: useCallback(
+      (newIndex) => setCurrentIndex(newIndex % stories.length),
+      [stories.length]
+    ),
     customPaging: (i) => (
       <button
         className="w-3 h-3 mx-1 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300"
@@ -167,7 +179,7 @@ const Stories = memo(() => {
                   backgroundImage: `url(${story.image || fallbackImage})`,
                 }}
               >
-                <img
+                {/* <img
                   src={story.image}
                   alt={`Story ${index + 1}`}
                   className="hidden"
@@ -176,16 +188,16 @@ const Stories = memo(() => {
                     e.target.parentElement.style.backgroundImage = `url(${fallbackImage})`;
                   }}
                   loading="lazy"
-                />
+                /> */}
               </div>
 
               <div
                 className={`text-section flex flex-col justify-center items-start p-6 md:p-12 text-white ${story.bgColor}`}
               >
                 <Heading
-                  text="STORIES"
+                  text="WHERE WE WORK"
                   color="text-white"
-                  bgColor="bg-red-500"
+                  bgColor="bg-red-600"
                 />
                 <p className="text-base md:text-lg mb-6 leading-relaxed max-w-prose">
                   {story.text}
@@ -193,9 +205,9 @@ const Stories = memo(() => {
                 <a
                   href="#"
                   className="bg-white text-red-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
-                  aria-label="Support Our Mission"
+                  aria-label="Learn More About Our Work"
                 >
-                  Support Our Mission
+                  Learn More
                 </a>
               </div>
             </div>

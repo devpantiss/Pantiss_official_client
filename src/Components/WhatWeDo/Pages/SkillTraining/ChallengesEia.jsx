@@ -127,7 +127,7 @@ const ChallengesSkills = () => {
         </Slider>
 
         {/* Scoped CSS for Dots */}
-        <style jsx>{`
+        <style>{`
           .custom-dots {
             position: absolute;
             bottom: -40px;

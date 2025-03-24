@@ -243,13 +243,13 @@ const StoryRehab = () => {
                   {story.name}
                   <span>{story.occupation}</span>
                 </div>
-                <a
+                {/* <a
                   href="#"
                   className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 mt-4"
                   aria-label="Join Us"
                 >
                   Join Us
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

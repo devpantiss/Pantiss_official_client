@@ -3,14 +3,13 @@ import Marquee from "react-fast-marquee"; // We'll use this for the scrolling ef
 
 const Exhibitors = () => {
   const multilateralPartners = [
-    "https://indiacsrsummit.in/uploaded_files/f15d935fdcd3f27ceda4d000070257eb.jpeg",
-    "https://indiacsrsummit.in/uploaded_files/573e22af9ba527e5ed727676d73687af.png",
-    "https://indiacsrsummit.in/uploaded_files/0334da765d56eee831c40d21a33a5cae.png",
-    "https://indiacsrsummit.in/uploaded_files/bcb2c78c0665387959f378822254cf95.jpg",
-    "https://indiacsrsummit.in/uploaded_files/ac2fd29688164f66e1c6bdee9154b269.png",
-    "https://indiacsrsummit.in/uploaded_files/0bebb0d4cf8f18c095cab664b135d65c.png",
-    "https://indiacsrsummit.in/uploaded_files/be3eed1f8970f4f2c531d77cb32a176c.png",
-    "https://indiacsrsummit.in/uploaded_files/4af0c9921d09f3ffcfaaaf336d74169a.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/Tata_Steel_Logo_gyv6rz.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/OMDC-LOGO_mmqphd.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810049/vedanta_etndaz.jpg",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/nalco_duykau.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810047/Caterpillar_dbmnvu.png",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/OMC_cxiiuz.webp",
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810047/jspl_ok6nsj.jpg",
   ];
 
   return (
