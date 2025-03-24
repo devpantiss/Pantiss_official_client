@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Heading from "../Common/Heading";
 
 // Memoized static career areas data
 const careerAreas = [
@@ -48,7 +49,7 @@ const careerAreas = [
 const PrevArrow = memo(({ onClick }) => (
   <button
     onClick={onClick}
-    className="z-10 absolute top-1/2 left-0 lg:-left-12 transform -translate-y-1/2 text-4xl lg:text-5xl text-white ring-2  ring-white hover:bg-white hover:ring-2 hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
+    className="z-10 absolute top-1/2 left-0 sm:-left-8 lg:-left-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
   >
     <FaChevronLeft />
   </button>
@@ -58,7 +59,7 @@ PrevArrow.displayName = "PrevArrow";
 const NextArrow = memo(({ onClick }) => (
   <button
     onClick={onClick}
-    className="z-10 absolute top-1/2 right-0 lg:-right-12 transform -translate-y-1/2 text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-2 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
+    className="z-10 absolute top-1/2 right-0 sm:-right-8 lg:-right-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
   >
     <FaChevronRight />
   </button>
@@ -67,20 +68,22 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized CareerCard component
 const CareerCard = memo(({ area, onClick }) => (
-  <div className="px-4">
+  <div className="px-2 sm:px-4">
     <div onClick={() => onClick(area.title)} className="cursor-pointer">
-      <div className="relative w-64 h-64 mx-auto overflow-hidden">
+      <div className="relative w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 mx-auto overflow-hidden">
         <img
           src={area.img}
           alt={area.title}
           className="w-full h-full shadow-lg rounded-full object-cover"
           loading="lazy"
         />
-        <span className="absolute top-4 right-2 bg-red-500 ring-2 ring-white text-white w-10 h-10 flex items-center justify-center text-sm font-bold rounded-full">
+        <span className="absolute top-2 sm:top-4 right-1 sm:right-2 bg-red-500 ring-2 ring-white text-white w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full">
           {area.count}
         </span>
       </div>
-      <h3 className="mt-4 text-lg text-white font-semibold">{area.title}</h3>
+      <h3 className="mt-2 sm:mt-4 text-base sm:text-lg text-white font-semibold text-center">
+        {area.title}
+      </h3>
     </div>
   </div>
 ));
@@ -99,22 +102,32 @@ const CareersCategory = () => {
       arrows: true,
       dots: false,
       autoplay: true,
-      autoplaySpeed: 3000, // Adjusted for smoother transitions
+      autoplaySpeed: 3000,
       pauseOnHover: true,
       prevArrow: <PrevArrow />,
       nextArrow: <NextArrow />,
-      lazyLoad: "ondemand", // Load images on demand
+      lazyLoad: "ondemand",
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1280, // xl screens
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
+            slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 768,
+          breakpoint: 1024, // lg screens
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 640, // sm screens
           settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true, // Keep arrows for mobile usability
           },
         },
       ],
@@ -127,30 +140,36 @@ const CareersCategory = () => {
   };
 
   return (
-    <section className="bg-red-600 px-4 sm:px-8 py-12 flex flex-col justify-center items-center text-center">
-      <h2 className="text-3xl text-white font-bold">
-        WHAT CAREER AREA INTERESTS YOU?
-      </h2>
-      <p className="mt-4 text-gray-100 max-w-2xl">
-        Discover how you can be a part of that change by choosing a career path
-        that interests you the most.
-      </p>
+    <section className="bg-red-600 px-4 sm:px-8 py-12 flex flex-col">
+      <div className="mx-auto lg:max-w-7xl max-w-3xl w-full">
+        <Heading
+          text="WHAT CAREER AREA INTERESTS YOU?"
+          color="text-white"
+          bgColor="bg-white"
+        />
+        <p className="mt-4 text-gray-100 text-sm sm:text-base text-center sm:text-left">
+          Discover how you can be a part of that change by choosing a career path
+          that interests you the most.
+        </p>
 
-      <div className="max-w-7xl mt-8 relative w-full">
-        <Slider {...settings}>
-          {careerAreas.map((area) => (
-            <CareerCard
-              key={area.title}
-              area={area}
-              onClick={handleCardClick}
-            />
-          ))}
-        </Slider>
+        <div className="mt-8 relative">
+          <Slider {...settings}>
+            {careerAreas.map((area) => (
+              <CareerCard
+                key={area.title}
+                area={area}
+                onClick={handleCardClick}
+              />
+            ))}
+          </Slider>
+        </div>
+
+        <div className="flex justify-center mt-6">
+          <button className="px-4 py-2 rounded-md bg-white text-red-600 hover:bg-red-700 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link to="/careers/jobs">View All Jobs</Link>
+          </button>
+        </div>
       </div>
-
-      <button className="mt-6 px-4 py-2 rounded-md bg-white text-red-600 hover:bg-red-700 hover:text-white transition-colors">
-        <Link to="/careers/jobs">View All Jobs</Link>
-      </button>
     </section>
   );
 };

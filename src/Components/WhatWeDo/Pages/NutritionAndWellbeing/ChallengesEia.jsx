@@ -34,10 +34,10 @@ const ChallengesTransition = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true, // Enable arrows for better navigation
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: false, // Disable centerMode for a cleaner grid-like layout
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1024, // lg
@@ -54,9 +54,13 @@ const ChallengesTransition = () => {
         },
       },
     ],
-    customPaging: () => (
-      <button className="w-2 h-2 bg-gray-400 rounded-full mx-1 focus:outline-none focus:ring-2 focus:ring-red-500" />
-    ), // Custom dots for better styling
+    customPaging: (i) => (
+      <button
+        className="w-4 h-4 bg-red-600 rounded-full mx-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 hover:bg-red-700"
+        aria-label={`Go to slide ${i + 1}`}
+      />
+    ),
+    dotsClass: "slick-dots custom-dots",
   };
 
   return (
@@ -79,7 +83,7 @@ const ChallengesTransition = () => {
         {/* Carousel */}
         <Slider {...settings} className="relative">
           {challenges.map((challenge, index) => (
-            <div key={index} className="px-4">
+            <div key={index} className="p-4">
               <div className="group relative h-[350px] bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
                 {/* Image */}
                 <div className="h-[250px] w-full">
@@ -105,6 +109,46 @@ const ChallengesTransition = () => {
             </div>
           ))}
         </Slider>
+
+        {/* Scoped CSS for Dots */}
+        <style jsx>{`
+          .custom-dots {
+            background-color: transparent;
+            position: absolute;
+            bottom: -50px !important;
+            display: flex !important;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+
+          .custom-dots li {
+            margin: 0 4px;
+          }
+
+          .custom-dots li button {
+            width: 16px; /* Larger size: 4rem = 16px */
+            height: 16px;
+            background-color: #dc2626; /* bg-red-600 for inactive dots */
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+          }
+
+          .custom-dots li button:hover {
+            background-color: #ef4444; /* bg-red-500 on hover */
+            opacity: 1;
+          }
+
+          .custom-dots li.slick-active button {
+            background-color: #ffffff; /* bg-white for active dot */
+            box-shadow: 0 0 0 2px #dc2626; /* ring-2 ring-red-600 */
+            opacity: 1;
+            transform: scale(1.1); /* Slightly larger for emphasis */
+          }
+        `}</style>
       </div>
     </section>
   );

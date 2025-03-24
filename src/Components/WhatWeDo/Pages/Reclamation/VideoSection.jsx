@@ -1,27 +1,16 @@
-import React, { useState } from "react";
+import React, { memo, useState, useCallback } from "react";
 import ReactPlayer from "react-player/youtube";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../../../Common/Heading";
 
-const VideoSectionReclamation = () => {
+const VideoSectionReclamation = memo(() => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const videoData = [
-    // {
-    //   url: "https://www.youtube.com/watch?v=RWtT0EfhNsE",
-    //   title: "Why ADB is Asia and the Pacific’s Climate Bank",
-    //   description:
-    //     "Discover how ADB leads climate action in Asia and the Pacific, mobilizing finance and expertise to support sustainable development. As the region’s climate bank, ADB has set ambitious targets, achieving $100 billion in climate investments by 2019—11 years ahead of schedule.",
-    //   highlights: [
-    //     "Achieved $100 billion climate investment target in 2019.",
-    //     "Implemented a climate risk screening framework for all projects.",
-    //     "Accredited by the Green Climate Fund in 2015.",
-    //   ],
-    // },
     {
-      url: "https://youtu.be/W14alojbmVU?si=Vd2HNx2rs99bc8FD", // Placeholder
+      url: "https://youtu.be/W14alojbmVU?si=Vd2HNx2rs99bc8FD",
       title: "Pondy Fish: Sustainable Aquaculture",
       description:
         "The Pondy Fish program promotes sustainable aquaculture in Puducherry, enhancing local livelihoods while preserving marine ecosystems. Through innovative fish farming techniques, it reduces environmental impact and supports coastal communities with resilient food systems.",
@@ -32,7 +21,7 @@ const VideoSectionReclamation = () => {
       ],
     },
     {
-      url: "https://youtu.be/16W61cQyujM?si=JUwW8c8puadGrvgp", // Placeholder
+      url: "https://youtu.be/16W61cQyujM?si=JUwW8c8puadGrvgp",
       title: "Guava's AcreRise: Agroforestry Innovation",
       description:
         "Guava's AcreRise transforms degraded lands into thriving agroforestry systems, focusing on guava cultivation. This initiative boosts biodiversity, sequesters carbon, and empowers farmers with sustainable income sources across rural landscapes.",
@@ -43,7 +32,7 @@ const VideoSectionReclamation = () => {
       ],
     },
     {
-      url: "https://youtu.be/T0nJbbtbLL8?si=CpTy0r-Z4Fn2u8CA", // Placeholder
+      url: "https://youtu.be/T0nJbbtbLL8?si=CpTy0r-Z4Fn2u8CA",
       title: "Tassar Fashion: Ethical Textile Futures",
       description:
         "Tassar Fashion champions sustainable silk production using tassar silk from wild silkworms. By supporting tribal artisans and eco-friendly practices, it blends tradition with modern fashion, reducing the carbon footprint of the textile industry.",
@@ -54,7 +43,7 @@ const VideoSectionReclamation = () => {
       ],
     },
     {
-      url: "https://youtu.be/O7GW-Vc8GUk?si=iWLdGScUWx6Vu03i", // Placeholder
+      url: "https://youtu.be/O7GW-Vc8GUk?si=iWLdGScUWx6Vu03i",
       title: "Tribey Coffee: Community-Driven Cultivation",
       description:
         "Tribey Coffee empowers indigenous communities through shade-grown coffee farming. This program enhances soil health, preserves forests, and provides fair trade opportunities, delivering premium coffee with a positive social and environmental impact.",
@@ -74,19 +63,24 @@ const VideoSectionReclamation = () => {
     slidesToScroll: 1,
     arrows: true,
     autoplay: false,
-    afterChange: (current) => setActiveSlide(current),
-    customPaging: () => (
-      <button className="w-2 h-2 bg-gray-400 rounded-full mx-1 focus:outline-none focus:ring-2 focus:ring-red-500" />
+    afterChange: useCallback((current) => setActiveSlide(current), []),
+    customPaging: (i) => (
+      <button
+        className="w-4 h-4 bg-red-600 rounded-full mx-2 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 hover:bg-red-700 will-change-transform"
+        aria-label={`Go to slide ${i + 1}`}
+      />
     ),
+    dotsClass: "slick-dots custom-dots",
+    lazyLoad: "ondemand", // Lazy load slides
   };
 
   return (
     <section className="bg-white py-12 px-6 mb-8 relative">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+        className="absolute inset-0 bg-cover bg-center opacity-10 pointer-events-none"
         style={{
-          backgroundImage: `url('https://via.placeholder.com/1920x600')`, // Replace with actual image
+          backgroundImage: `url('https://via.placeholder.com/1920x600')`,
         }}
         aria-hidden="true"
       />
@@ -110,26 +104,31 @@ const VideoSectionReclamation = () => {
                     url={video.url}
                     width="100%"
                     height="450px"
-                    playing={false}
+                    playing={activeSlide === index} // Play only active slide
                     controls={true}
-                    className="rounded-xl shadow-md"
+                    light={true} // Show thumbnail until clicked
+                    className="rounded-xl shadow-md will-change-transform"
                     config={{
                       youtube: {
-                        playerVars: { modestbranding: 1 },
+                        playerVars: {
+                          modestbranding: 1,
+                          rel: 0,
+                          showinfo: 0,
+                        },
                       },
                     }}
                   />
                 </div>
               ))}
             </Slider>
-            <h2 className="text-xl font-semibold text-gray-800 text-center">
+            <h2 className="text-xl mt-[-20px] font-semibold text-gray-800 text-center">
               {videoData[activeSlide].title}
             </h2>
           </div>
 
           {/* Right Column: Dynamic Text */}
           <div className="md:w-1/2">
-            <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:shadow-lg">
+            <div className="bg-white rounded-xl p-6 shadow-md transition-shadow duration-300 hover:shadow-lg">
               <h3 className="text-2xl font-bold text-red-600 mb-4">
                 {videoData[activeSlide].title}
               </h3>
@@ -169,9 +168,50 @@ const VideoSectionReclamation = () => {
             </div>
           </div>
         </div>
+
+        {/* Scoped CSS for Dots */}
+        <style jsx>{`
+          .custom-dots {
+            position: absolute;
+            bottom: -60px !important;
+            display: flex !important;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+
+          .custom-dots li {
+            margin: 0 4px;
+          }
+
+          .custom-dots li button {
+            width: 16px;
+            height: 16px;
+            background-color: #dc2626;
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+          }
+
+          .custom-dots li button:hover {
+            background-color: #ef4444;
+            opacity: 1;
+          }
+
+          .custom-dots li.slick-active button {
+            background-color: #ffffff;
+            box-shadow: 0 0 0 2px #dc2626;
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        `}</style>
       </div>
     </section>
   );
-};
+});
+
+VideoSectionReclamation.displayName = "VideoSectionReclamation";
 
 export default VideoSectionReclamation;

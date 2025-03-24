@@ -12,13 +12,13 @@ const CustomArrow = ({ className, style, onClick, direction }) => {
   return (
     <button
       className={`${className} absolute top-1/2 ${isPrev ? "left-2" : "right-2"} transform -translate-y-1/2 h-12 w-12 bg-red-600 text-white rounded-full flex items-center justify-center cursor-pointer z-20 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-700`}
-      style={{ ...style, display: "block" }} // Ensure display is block
+      style={{ ...style, display: "block" }}
       onClick={onClick}
       aria-label={ariaLabel}
       type="button"
     >
       {isPrev ? (
-        <span className="text-2xl">&lt;</span> // Using HTML entity with proper styling
+        <span className="text-2xl">&lt;</span>
       ) : (
         <span className="text-2xl">&gt;</span>
       )}
@@ -35,7 +35,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-  arrows: true, // Keep arrows enabled for custom arrows
+  arrows: true,
   prevArrow: <CustomArrow direction="prev" />,
   nextArrow: <CustomArrow direction="next" />,
   responsive: [
@@ -54,27 +54,27 @@ const settings = {
   ],
 };
 
-// Slider data
+// Updated slider data based on mining-related stories
 const slides = [
   {
     image: "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Hemlata-Alone.jpg",
-    name: "Hemitla",
+    name: "Sunita Behera",
     description:
-      "Meet Hemitla Kushwaha. Hemitla shares her story of working with FPCs and FPOs to increase financial resilience and access to part time work. Grameen Foundation partners with Farmer Produced Organizations (FPOs) and increases access to microloans, less expensive agricultural products, and to create opportunities for women to enter their local economies.",
+      "Sunita, a woman miner from Sukinda, transformed her life through vocational training with Pantiss. Now a leader in her chromite mining community, she inspires others to build financial resilience and access new opportunities.",
     link: "#",
   },
   {
-    image: "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Mandeepa-2.jpeg",
-    name: "Mandeepa",
-    description:
-      "Meet Mandeepa Patel, a farmer who is leading the way in sustainable agriculture practices and inspiring change in her community while boosting productivity and income. Grameen Foundation partners with local organizations to ensure women like Mandeepa can access their full potential and power.",
-    link: "#",
+    "image": "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Mandeepa-2.jpeg",
+    "name": "Laxmi Sahoo",
+    "description": 
+      "Laxmi transformed an abandoned mine in Odisha into a flourishing aquaculture site with Pantiss’ guidance. Her inspiring journey highlights sustainable livelihoods, empowering her family and community with a steady income.",
+    "link": "#"
   },
   {
-    name: "Ayisha and Fuseini",
     image: "https://grameenfoundation.org/images/_716x488_crop_center-center_none/ayisha2.png",
+    name: "Priya Naik",
     description:
-      "Fuseini used to rely on a male agent to conduct mobile money transactions. But now, she can turn to new Grameen Agent Ayisha, a trusted woman and neighbor, for advice and counsel in addition to digital financial services.",
+      "Priya, a youth from Keonjhar, gained skills through Pantiss’ training programs and secured a job in the mining industry. Her journey reflects our mission to create unemployment-free blocks in mining regions.",
     link: "#",
   },
 ];
@@ -82,10 +82,9 @@ const slides = [
 const Stories = () => {
   return (
     <section className="py-12 px-6">
-      <div className="container  px-4 mx-auto relative">
+      <div className="container px-4 mx-auto relative">
         {/* Header Text */}
         <Heading text="STORIES" color="text-black" bgColor="bg-red-500" />
-
 
         {/* Slider */}
         <Slider {...settings} className="flex justify-center items-center">
@@ -98,8 +97,9 @@ const Stories = () => {
                   alt={slide.name}
                   className="w-full h-64 object-cover"
                   onError={(e) => {
-                    e.target.src = "https://via.placeholder.com/300x400"; // Fallback image
+                    e.target.src = "https://via.placeholder.com/300x400";
                   }}
+                  loading="lazy"
                 />
                 {/* Content */}
                 <div className="p-6 flex flex-col justify-between h-[calc(100%-256px)]">
@@ -125,13 +125,12 @@ const Stories = () => {
           ))}
         </Slider>
 
-        {/* CSS to hide default arrows if they persist */}
+        {/* CSS to hide default arrows */}
         <style jsx>{`
           .slick-arrow.slick-prev,
           .slick-arrow.slick-next {
             display: none !important;
           }
-          /* Ensure custom arrows are not hidden by slider content */
           .slick-slider {
             position: relative;
           }

@@ -15,7 +15,7 @@ const ChallengesSkills = () => {
     },
     {
       imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
       stat: "40%",
       description:
         "of displaced communities face delays in resettlement due to inadequate Gram Sabha approvals",
@@ -76,9 +76,13 @@ const ChallengesSkills = () => {
         },
       },
     ],
-    customPaging: () => (
-      <button className="w-2 h-2 bg-gray-400 rounded-full mx-1 focus:outline-none focus:ring-2 focus:ring-red-500" />
+    customPaging: (i) => (
+      <button
+        className="w-4 h-4 bg-red-600 rounded-full mx-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 hover:bg-red-700"
+        aria-label={`Go to slide ${i + 1}`}
+      />
     ),
+    dotsClass: "slick-dots custom-dots",
   };
 
   return (
@@ -92,14 +96,18 @@ const ChallengesSkills = () => {
             bgColor="bg-red-600"
           />
           <p className="text-gray-700 text-lg leading-relaxed text-center lg:text-left mt-4">
-            Land acquisition, rehabilitation, and resettlement of mining-affected communities face multifaceted challenges. From inadequate spatial planning and community engagement to governance gaps and funding delays, these issues threaten equitable and sustainable outcomes.
+            Land acquisition, rehabilitation, and resettlement of
+            mining-affected communities face multifaceted challenges. From
+            inadequate spatial planning and community engagement to governance
+            gaps and funding delays, these issues threaten equitable and
+            sustainable outcomes.
           </p>
         </div>
 
         {/* Carousel */}
         <Slider {...settings} className="relative">
           {challenges.map((challenge, index) => (
-            <div key={index} className="px-4">
+            <div key={index} className="p-4">
               <div className="group relative h-[350px] hover:ring-2 hover:ring-red-600 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
                 {/* Image */}
                 <div className="h-[250px] w-full">
@@ -125,6 +133,46 @@ const ChallengesSkills = () => {
             </div>
           ))}
         </Slider>
+
+        {/* Scoped CSS for Dots */}
+        <style>{`
+          .custom-dots {
+            background-color: transparent;
+            position: absolute;
+            bottom: -40px !important;
+            display: flex !important;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+
+          .custom-dots li {
+            margin: 0 4px;
+          }
+
+          .custom-dots li button {
+            width: 16px; /* Larger size: 4rem = 16px */
+            height: 16px;
+            background-color: #dc2626; /* bg-red-600 for inactive dots */
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+          }
+
+          .custom-dots li button:hover {
+            background-color: #ef4444; /* bg-red-500 on hover */
+            opacity: 1;
+          }
+
+          .custom-dots li.slick-active button {
+            background-color: #ffffff; /* bg-white for active dot */
+            box-shadow: 0 0 0 2px #dc2626; /* ring-2 ring-red-600 */
+            opacity: 1;
+            transform: scale(1.1); /* Slightly larger for emphasis */
+          }
+        `}</style>
       </div>
     </section>
   );

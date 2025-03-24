@@ -4,40 +4,40 @@ import Heading from "../../../Common/Heading";
 const ProjectMapListingSkills = () => {
   const projects = [
     {
-      number: "38272-045",
-      name: "Uttarakhand Integrated and Resilient Urban Development Project—Additional Financing",
-      client: "Government of Uttarakhand",
-      totalImpact: "150,000",
+      number: "SKL-001-2024",
+      name: "Skilling in Bokaro Steel Plant",
+      client: "Steel Authority of India Limited (SAIL)",
+      totalImpact: "1,000",
     },
     {
-      number: "40540-016",
-      name: "Dhaka-Northwest Corridor Road Project, Phase 2",
-      client: "Roads and Highways Department, Bangladesh",
-      totalImpact: "200,000",
+      number: "DMFT-KJR-002-2025",
+      name: "DMFT Keonjhar Skilling Initiative",
+      client: "District Mineral Foundation Trust, Keonjhar",
+      totalImpact: "2,500",
     },
     {
-      number: "40540-019",
-      name: "South Asia Subregional Economic Cooperation Dhaka-Northwest Corridor Road Project, Phase 2 (Tranche 3)",
-      client: "Roads and Highways Department, Bangladesh",
-      totalImpact: "180,000",
+      number: "NLCIL-003-2025",
+      name: "NLCIL Mining Skills Development Program",
+      client: "NLC India Limited",
+      totalImpact: "2,500",
     },
     {
-      number: "42007-021",
-      name: "Small and Medium-Sized Enterprises Development Program (Subprogram 2)",
-      client: "Ministry of Finance",
-      totalImpact: "50,000",
+      number: "DAKSH-004-2024",
+      name: "Daksh Phase 2: Vocational Training for Youth",
+      client: "Government of India (MSDE)",
+      totalImpact: "3,000",
     },
     {
-      number: "42687-032",
-      name: "Promoting Smart and Integrated Urban Planning for Livability and Cultural Economy in Rajasthan",
-      client: "Government of Rajasthan",
-      totalImpact: "75,000",
+      number: "DMFT-KLD-005-2024",
+      name: "DMFT Kalahandi Skill Development Project",
+      client: "District Mineral Foundation Trust, Kalahandi",
+      totalImpact: "300",
     },
     {
-      number: "42527-034",
-      name: "Rajasthan Secondary Towns Development Sector Project Additional Financing",
-      client: "Government of Rajasthan",
-      totalImpact: "120,000",
+      number: "NUA-ANG-006-2025",
+      name: "Nua Odisha Anugul Skilling Project",
+      client: "Government of Odisha",
+      totalImpact: "1,200",
     },
   ];
 
@@ -49,10 +49,7 @@ const ProjectMapListingSkills = () => {
           <Heading text="PROJECTS" color="text-white" bgColor="bg-white" />
 
           <p className="text-white text-sm leading-relaxed">
-            In 2023, ADB committed $10,746.56 million in climate finance. Of
-            this total, $6,168.50 million is expected to contribute to climate
-            change mitigation and $4,578.06 million to climate change
-            adaptation.
+            In 2024, various skilling initiatives in India’s mining and industrial sectors aimed to empower communities with sustainable livelihoods. These programs collectively target thousands of beneficiaries, enhancing skills and employability.
           </p>
         </div>
 
@@ -147,7 +144,7 @@ const ProjectMapListingSkills = () => {
         {/* Source */}
         <div className="mt-6">
           <p className="text-white text-xs">
-            Source: Asian Development Bank estimates (March 2024)
+            Source: Estimates based on skilling initiatives data (March 2025)
           </p>
         </div>
       </div>

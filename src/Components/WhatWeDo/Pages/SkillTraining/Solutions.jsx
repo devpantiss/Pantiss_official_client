@@ -10,7 +10,7 @@ const Solutions = () => {
     {
       imageUrl:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316572/freepik__make-a-image-showing-an-mobile-phone-inside-which-__18030_xe1ihz.jpg",
-      fallbackImage: "https://via.placeholder.com/600x400",
+      fallbackImage: "https://via.placeholder.com/600x400?text=Image+Not+Found",
       stat: "Skill Mobilizers Connect",
       description:
         "A platform linking skilled workers with industry opportunities, fostering workforce mobility and collaboration.",
@@ -36,17 +36,17 @@ const Solutions = () => {
     {
       imageUrl:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742316784/freepik__the-style-is-candid-image-photography-with-natural__18031_exrhs0.jpg",
-      fallbackImage: "https://via.placeholder.com/600x400",
+      fallbackImage: "https://via.placeholder.com/600x400?text=Image+Not+Found",
       stat: "Skill Candor",
       description:
         "Transparent skill assessment and development programs to empower individuals with clear career pathways.",
       details: [
         {
-          text: "Indias First Certified Skill Counsellor Network",
+          text: "India’s First Certified Skill Counsellor Network",
           icon: <FaUserCheck className="w-6 h-6" />,
         },
         {
-          text: "Real time Counselling Vans",
+          text: "Real-time Counselling Vans",
           icon: <FaShuttleVan className="w-6 h-6" />,
         },
         {
@@ -58,28 +58,28 @@ const Solutions = () => {
     {
       imageUrl:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/7cf81b40-cb85-47b0-bc17-5ed47fa210ed_viwshh.jpg",
-      fallbackImage: "https://via.placeholder.com/600x400",
+      fallbackImage: "https://via.placeholder.com/600x400?text=Image+Not+Found",
       stat: "Skill Cafe",
       description:
         "Interactive workshops and networking hubs to brew skills and innovation for industrial professionals.",
       details: [
         {
           text:
-            "State of the art, fully residential Center of Excellence at mining & Industrial Corridors.",
+            "State-of-the-art, fully residential Center of Excellence at mining & industrial corridors",
           icon: <FaBuilding className="w-6 h-6" />,
         },
         {
           text:
-            "Futuristic Japanese A/R, V/R & Australian Simulators Customised as per Coal & Chromite Mines.",
+            "Futuristic Japanese A/R, V/R & Australian simulators customized as per coal & chromite mines",
           icon: <FaVrCardboard className="w-6 h-6" />,
         },
         {
           text:
-            "Hands on Training in Company owned Volvo & Caterpillar Haulpacks & Excavators.",
+            "Hands-on training in company-owned Volvo & Caterpillar haulpacks & excavators",
           icon: <FaTruck className="w-6 h-6" />,
         },
         {
-          text: "Learning & Performance Metrics & Analytics",
+          text: "Learning & performance metrics & analytics",
           icon: <FaChartLine className="w-6 h-6" />,
         },
       ],
@@ -87,23 +87,23 @@ const Solutions = () => {
     {
       imageUrl:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742126787/E-FvYHdVIAYEXa9_efneu2.webp",
-      fallbackImage: "https://via.placeholder.com/600x400",
+      fallbackImage: "https://via.placeholder.com/600x400?text=Image+Not+Found",
       stat: "Blue Collars Foundry",
       description:
         "Specialized training and support for blue-collar workers in foundry operations and manufacturing trades.",
       details: [
         {
           text:
-            "Mobile App based Job Search Engine, Exclusive for Operators in Mining, Steel & Power Industry.",
+            "Mobile app-based job search engine, exclusive for operators in mining, steel & power industry",
           icon: <FaMobileAlt className="w-6 h-6" />,
         },
         {
           text:
-            "The Largest Repository of Manufacturing Industries & Nano Contractors.",
+            "The largest repository of manufacturing industries & nano contractors",
           icon: <FaIndustry className="w-6 h-6" />,
         },
         {
-          text: "A Web Portal for Alumni Engagement & Support",
+          text: "A web portal for alumni engagement & support",
           icon: <FaUsers className="w-6 h-6" />,
         },
       ],
@@ -141,12 +141,12 @@ const Solutions = () => {
             return (
               <div
                 key={index}
-                className="group flex flex-col bg-white rounded-md md:flex-row items-center gap-8 transition-all duration-300 hover:shadow-xl"
+                className="group flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:ring-2 hover:ring-red-600"
               >
                 {/* Image Section */}
                 <div
-                  className={`w-full md:w-1/2 h-[400px] rounded-lg overflow-hidden shadow-md ${
-                    isEven ? "order-1" : "order-2"
+                  className={`w-full md:w-1/2 h-[400px] rounded-t-xl md:rounded-t-none md:rounded-l-xl overflow-hidden shadow-md ${
+                    isEven ? "order-1" : "order-2 md:rounded-r-xl"
                   }`}
                 >
                   <img
@@ -154,9 +154,7 @@ const Solutions = () => {
                     alt={solution.stat}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
-                    onError={(e) => {
-                      e.target.src = solution.fallbackImage; // Fallback image
-                    }}
+                    onError={(e) => (e.target.src = solution.fallbackImage)}
                   />
                 </div>
 
@@ -169,7 +167,7 @@ const Solutions = () => {
                   <h4 className="text-3xl font-bold text-red-600 mb-3">
                     {solution.stat}
                   </h4>
-                  <p className="text-base text-gray-700 leading-relaxed mb-4">
+                  <p className="text-gray-700 text-base leading-relaxed mb-4">
                     {solution.description}
                   </p>
                   <ul className="space-y-3 pl-0">

@@ -21,7 +21,7 @@ const rowStructure = [2, 3, 2, 3, 2];
 const shouldHavePlus = [1, 2, 6];
 
 // Memoized StatCard component
-const StatCard = memo(({ stat, isEvenRow }) => (
+const StatCard = memo(({ stat, isEvenRow, inView }) => (
   <div
     className={`flex flex-col md:flex-row ${isEvenRow ? "" : "md:flex-row-reverse"} items-center bg-red-600 text-white rounded-lg shadow-lg overflow-hidden`}
   >
@@ -33,24 +33,29 @@ const StatCard = memo(({ stat, isEvenRow }) => (
         loop
         playsInline
         src={stat.videoUrl}
-        preload="metadata" // Optimize video loading
+        preload="metadata"
       />
     </div>
     <div className="p-4 text-center w-full md:w-1/2">
-      <CountUp
-        start={0}
-        end={stat.value}
-        duration={2}
-        className="text-4xl font-bold"
-        useEasing
-        redraw={false} // Prevent unnecessary redraws
-      >
-        {({ countUpRef, start }) => (
-          <span ref={countUpRef} onAnimationEnd={start} />
+      <div className="flex justify-center items-center">
+        {inView ? (
+          <CountUp
+            start={0}
+            end={stat.value}
+            duration={2}
+            useEasing
+            redraw={false}
+          >
+            {({ countUpRef }) => (
+              <span ref={countUpRef} className="text-4xl font-bold" />
+            )}
+          </CountUp>
+        ) : (
+          <span className="text-4xl font-bold">0</span>
         )}
-      </CountUp>
-      {shouldHavePlus.includes(stat.id) && <span className="text-4xl font-bold">+</span>}
-      {stat.unit && <span className="text-4xl font-bold">{` ${stat.unit}`}</span>}
+        {shouldHavePlus.includes(stat.id) && <span className="text-4xl font-bold">+</span>}
+        {stat.unit && <span className="text-4xl font-bold">{` ${stat.unit}`}</span>}
+      </div>
       <p className="text-md mt-2">{stat.label}</p>
     </div>
   </div>
@@ -67,7 +72,7 @@ const Impact2 = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.disconnect(); // Disconnect once in view
+          observer.disconnect();
         }
       },
       { threshold: 0.1, rootMargin: "0px 0px -20% 0px" }
@@ -95,12 +100,12 @@ const Impact2 = () => {
           className={`grid grid-cols-1 md:grid-cols-${cardsInRow} gap-4 mb-6`}
         >
           {rowStats.map((stat) => (
-            <StatCard key={stat.id} stat={stat} isEvenRow={isEvenRow} />
+            <StatCard key={stat.id} stat={stat} isEvenRow={isEvenRow} inView={inView} />
           ))}
         </div>
       );
     });
-  }, []); // No dependencies since data is static and inView is handled by CountUp
+  }, [inView]); // Dependency on inView to re-render when visibility changes
 
   return (
     <div className="bg-black px-4 sm:px-10">

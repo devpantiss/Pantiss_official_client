@@ -1,35 +1,29 @@
-import React, { useState, useEffect, useMemo, memo } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { TypeAnimation } from "react-type-animation";
+
+// Memoized animation sequences
+const titleSequence = [
+  "Responsible Mining",
+  3000,
+  "Steelium",
+  3000,
+  "Aluminium",
+  3000,
+  "Energy Transition",
+  3000,
+];
+
+const subtitleSequence = [
+  "Mines",
+  3000,
+  "Steel & Aluminium",
+  6000,
+  "Energy",
+  3000,
+];
 
 const HomeBanner2 = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
-
-  // Memoized animation sequences
-  const titleSequence = useMemo(
-    () => [
-      "Responsible Mining",
-      3000,
-      "Steelium",
-      3000,
-      "Aluminium",
-      3000,
-      "Energy Transition",
-      3000,
-    ],
-    []
-  );
-
-  const subtitleSequence = useMemo(
-    () => [
-      "Mines",
-      3000,
-      "Steel & Aluminium",
-      6000,
-      "Energy",
-      3000,
-    ],
-    []
-  );
 
   // Video load handler
   useEffect(() => {
@@ -44,7 +38,15 @@ const HomeBanner2 = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden pt-32">
+    <div
+      className="relative w-full h-screen bg-red-600 overflow-hidden pt-32"
+      style={{
+        backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Video Background */}
       <video
         className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ${
@@ -54,7 +56,7 @@ const HomeBanner2 = () => {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata" // Optimize video loading
       >
         <source
           src="https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4"
@@ -64,13 +66,6 @@ const HomeBanner2 = () => {
 
       {/* Translucent Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 flex items-center justify-center">
-        {/* Fallback Loader */}
-        {/* {!videoLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black">
-            <p className="text-white text-sm animate-pulse">Loading video...</p>
-          </div>
-        )} */}
-
         {/* Content */}
         <div className="text-center text-white px-4">
           <h1 className="relative text-4xl md:text-6xl font-bold mb-4">

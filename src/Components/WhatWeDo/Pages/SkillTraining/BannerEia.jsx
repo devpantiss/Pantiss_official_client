@@ -1,19 +1,32 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 
-const BannerSkills = () => {
+const BannerSkills = memo(() => {
+  // Memoize static video attributes to avoid re-computation
+  const videoAttributes = useMemo(
+    () => ({
+      src: "https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4",
+      poster: "https://via.placeholder.com/1920x1080?text=Video+Loading",
+    }),
+    []
+  );
+
   return (
-    <section className="relative w-full h-[70vh] md:h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300">
+    <section
+      className="relative w-full h-[70vh] md:h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300"
+      aria-label="Skill Training Banner"
+    >
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
         <video
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735223596/Rehab_1_kvwix1.mp4"
+          src={videoAttributes.src}
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-70 will-change-transform"
+          poster={videoAttributes.poster}
+          preload="metadata"
           aria-hidden="true"
-          poster="https://via.placeholder.com/1920x1080?text=Video+Loading" // Fallback image
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-gray-900/20" />
@@ -27,11 +40,15 @@ const BannerSkills = () => {
             <span className="block mt-2">for Mining Affected Youth</span>
           </h1>
           <p className="text-white/90 text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
-            We empower mining-affected youth with skill training programs, equipping them with vocational expertise, job-ready skills, and opportunities for sustainable livelihoods to build a brighter future.
+            We empower mining-affected youth with skill training programs,
+            equipping them with vocational expertise, job-ready skills, and
+            opportunities for sustainable livelihoods to build a brighter
+            future.
           </p>
           <a
             href="#learn-more"
             className="inline-flex items-center px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-red-600 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-red-300"
+            aria-label="Explore Our Programs"
           >
             Explore Our Programs
             <svg
@@ -52,23 +69,20 @@ const BannerSkills = () => {
         </div>
       </div>
 
-      {/* Optional Scroll Indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-white/80 rounded-full flex items-start justify-center p-2 animate-bounce">
+        <div
+          className="w-6 h-10 border-2 border-white/80 rounded-full flex items-start justify-center p-2 animate-bounce"
+          aria-hidden="true"
+        >
           <div className="w-1 h-3 bg-white rounded-full" />
         </div>
       </div>
     </section>
   );
-};
+});
+
+// Add display name for better debugging
+BannerSkills.displayName = "BannerSkills";
 
 export default BannerSkills;
-
-// Optional: Add this to your global CSS or a CSS module for the animation
-// @keyframes fade-in {
-//   from { opacity: 0; transform: translateY(20px); }
-//   to { opacity: 1; transform: translateY(0); }
-// }
-// .animate-fade-in {
-//   animation: fade-in 1s ease-out forwards;
-// }

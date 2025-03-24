@@ -1,47 +1,44 @@
-// Stories.js
-import React, { useState, useCallback } from "react";
+import React, { memo, useState, useCallback } from "react";
 import Heading from "../../Components/Common/Heading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Stories = () => {
-  const stories = [
-    {
-      image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
-      text: "Children need champions. Get involved, speak out, volunteer, or become a donor and give every child a fair chance to succeed.",
-      bgColor: "bg-orange-500",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1627634771521-9754fe2bc49b",
-      text: "Communities thrive with education. Support initiatives that provide schools and resources.",
-      bgColor: "bg-blue-500",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcmluZyUyMHNvbHV0aW9uc3xlbnwwfDB8MHx8fDA%3D",
-      text: "Health for all begins with you. Donate to ensure children receive vaccines and clean water.",
-      bgColor: "bg-green-500",
-    },
-  ];
+// Memoized static stories data
+const stories = [
+  {
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735301666/IMG_9085_tkrncl.jpg",
+    text: "Empowering women in mining communities through vocational training and skill development, transforming lives in Sukinda’s chromite mines.",
+    bgColor: "bg-red-600",
+  },
+  {
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735193655/billy-albert-5lNKe_pE3oA-unsplash_xcpi6h.jpg",
+    text: "Revitalizing abandoned mines into sustainable aquaculture sites, providing livelihoods for families in Odisha’s mining periphery.",
+    bgColor: "bg-green-600",
+  },
+  {
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1735278481/vocational_msprt8.jpg",
+    text: "Building unemployment-free blocks in Keonjhar by training youth for jobs in mining and steel industries.",
+    bgColor: "bg-blue-600",
+  },
+];
 
+// Memoized Stories component
+const Stories = memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Memoized slider settings
   const settings = {
-    dots: false,
-    infinite: true, // Ensures the slider loops indefinitely
-    speed: 1000, // Transition speed
+    dots: true,
+    infinite: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Enables automatic sliding
-    autoplaySpeed: 5000, // 5 seconds per slide
-    beforeChange: useCallback((oldIndex, newIndex) => {
-      setCurrentIndex(newIndex);
-    }, []),
-    afterChange: useCallback((newIndex) => {
-      // Optional: Ensures state stays in sync after looping
-      setCurrentIndex(newIndex % stories.length);
-    }, [stories.length]),
+    autoplay: true,
+    autoplaySpeed: 5000,
+    beforeChange: useCallback((_, newIndex) => setCurrentIndex(newIndex), []),
+    afterChange: useCallback((newIndex) => setCurrentIndex(newIndex % stories.length), [stories.length]),
     customPaging: (i) => (
       <button
         className="w-3 h-3 mx-1 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300"
@@ -49,9 +46,10 @@ const Stories = () => {
       />
     ),
     dotsClass: "slick-dots custom-dots",
-    pauseOnHover: false, // Ensures loop continues even on hover
-    pauseOnDotsHover: false, // Ensures loop continues when hovering dots
-    pauseOnFocus: false, // Ensures loop continues when focused
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    pauseOnFocus: false,
+    lazyLoad: "ondemand", // Optimize image loading
   };
 
   const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
@@ -60,9 +58,8 @@ const Stories = () => {
     <section className="story-section relative overflow-hidden w-full">
       <style>
         {`
-          /* Base styles */
           .story-section {
-            height: 900px; /* Mobile height */
+            height: 900px;
             width: 100%;
             position: relative;
           }
@@ -94,7 +91,7 @@ const Stories = () => {
           }
 
           .slide-container {
-            height: 900px; /* Mobile height */
+            height: 900px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -103,7 +100,7 @@ const Stories = () => {
 
           .image-section {
             width: 100%;
-            height: 450px; /* Half of mobile height */
+            height: 450px;
             background-size: cover;
             background-position: center;
             will-change: transform;
@@ -112,12 +109,11 @@ const Stories = () => {
 
           .text-section {
             width: 100%;
-            height: 450px; /* Half of mobile height */
+            height: 450px;
             will-change: transform;
             transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
           }
 
-          /* Animation states */
           .slide-container .image-section {
             transform: translateY(-100%);
           }
@@ -134,25 +130,24 @@ const Stories = () => {
             transform: translateY(0);
           }
 
-          /* Desktop styles */
           @media (min-width: 768px) {
             .story-section {
-              height: 600px; /* Desktop height */
+              height: 600px;
             }
 
             .slide-container {
-              height: 600px; /* Desktop height */
+              height: 600px;
               flex-direction: row;
             }
 
             .image-section {
               width: 50%;
-              height: 600px; /* Full desktop height */
+              height: 600px;
             }
 
             .text-section {
               width: 50%;
-              height: 600px; /* Full desktop height */
+              height: 600px;
             }
           }
         `}
@@ -197,10 +192,10 @@ const Stories = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                  aria-label="Join UNICEF"
+                  className="bg-white text-red-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+                  aria-label="Support Our Mission"
                 >
-                  Join UNICEF
+                  Support Our Mission
                 </a>
               </div>
             </div>
@@ -209,6 +204,8 @@ const Stories = () => {
       </Slider>
     </section>
   );
-};
+});
+
+Stories.displayName = "Stories";
 
 export default Stories;
