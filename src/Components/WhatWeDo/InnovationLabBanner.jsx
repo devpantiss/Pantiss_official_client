@@ -21,7 +21,7 @@ const BannerContent = memo(() => (
 
     {/* Button */}
     <Link
-      to="/innovation-lab"
+      to="/what-we-do/innovation-lab"
       className="bg-white text-blue-600 px-6 py-2 rounded font-semibold hover:bg-gray-200 transition-colors duration-300 ease-in-out"
     >
       VISIT THE INNOVATION LAB →
