@@ -61,6 +61,7 @@ import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMak
 import IndegenousCommunityEmpowerment from "./Pages/WhatWeDo/IndegenousCommunityEmpowerment";
 import WaterbodyRestorationInMines from "./Pages/WhatWeDo/WaterbodyRestorationInMines";
 import ConnectingRemoteMiningHabitations from "./Pages/WhatWeDo/ConnectingRemoteMiningHabitations";
+import InnovationLabPage from "./Pages/InnovationLabPage";
 
 function App() {
   const location = useLocation();
@@ -217,6 +218,9 @@ function App() {
         <Route path="/what-we-do/nutrinest" element={<Nutrition />}/>
 
         <Route path="/what-we-do/model-mining-village-in-making" element={<ModelMiningVillageInMaking />}/>
+
+
+        <Route path="/what-we-do/innovation-lab" element={<InnovationLabPage />}/>
 
         {/* <Route path="/what-we-do/EIA-SIA-for-land-acquisition" element={<EiaSia />}/> */}
         {/* <Route path="/what-we-do/enterprise-growth-in-mining-villages" element={<EnterpriseGrowthInMiningVillages />}/> */}
