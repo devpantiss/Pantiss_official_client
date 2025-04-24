@@ -80,7 +80,7 @@ const teamData = [
     name: "Mr. Aditya Kumar Sahu",
     title: "Co-Lead, Software Development (Social Impact & ICT)",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_2700/v1739259904/IMG_20241107_112012980_HDR_pfmjkt.jpg",
+      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1744797244/WhatsApp_Image_2025-04-16_at_11.57.56_AM_liyoub.jpg",
     department: "projectManagement",
   },
   {
@@ -171,13 +171,6 @@ const teamData = [
   },
   // Founders Office
   {
-    name: "Mr. Gautam Samanta",
-    title: "Asst. Manager, MIS",
-    image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
-    department: "foundersOffice",
-  },
-  {
     name: "Mr. Mantu Nayak",
     title: "Personal Assistance to CEO",
     image:
@@ -185,21 +178,35 @@ const teamData = [
     department: "foundersOffice",
   },
   {
-    name: "Ms. Rishita Beura",
+    name: "Mr. Kishore",
     title: "Executive Assistant to CEO",
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Rishita-Beura-e1670426885700.jpeg",
     department: "foundersOffice",
   },
   {
-    name: "Mr. Bhuleshwar Mandal",
+    name: "Mr. Gautam Samanta",
     title: "Asst. Manager, MIS",
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
     department: "foundersOffice",
   },
   {
+    name: "Ms. Lucky Dandia",
+    title: "-",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+    department: "foundersOffice",
+  },
+  {
     name: "Mr. Gandhi Beura",
+    title: "Asst. Manager, MIS",
+    image:
+      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+    department: "foundersOffice",
+  },
+  {
+    name: "Ms. Prajna Paramita Jena",
     title: "Asst. Manager, MIS",
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
@@ -222,11 +229,11 @@ const TeamTabs = () => {
   // Define tab options
   const tabs = [
     { label: "Leadership", key: "leadership" },
-    { label: "Finance, HR & Communication", key: "finance" },
+    { label: "Founders Office", key: "foundersOffice" },
     { label: "Project Management", key: "projectManagement" },
     { label: "Monitoring, Evaluation & Compliances", key: "monitoring" },
+    { label: "Finance, HR & Communication", key: "finance" },
     { label: "Knowledge Management & Analytics", key: "knowledge" },
-    { label: "Founders Office", key: "foundersOffice" },
   ];
 
   // Function to split title at the first comma and add a line break
@@ -249,8 +256,9 @@ const TeamTabs = () => {
     <div className="w-full max-w-5xl mx-auto py-10">
       {/* Tab Navigation */}
       <div className="relative mb-8">
-        <div className="flex overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 pb-2">
-          <div className="flex space-x-2">
+        {/* Mobile view: scrollable tabs */}
+        <div className="flex md:hidden overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 pb-2">
+          <div className="flex space-x-2 px-8">
             {tabs.map((tab) => (
               <button
                 key={tab.key}
@@ -265,6 +273,38 @@ const TeamTabs = () => {
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Desktop view: two rows of 3 buttons */}
+        <div className="hidden md:grid grid-cols-3 gap-2">
+          {tabs.slice(0, 3).map((tab) => (
+            <button
+              key={tab.key}
+              className={`px-4 py-2 font-semibold whitespace-nowrap rounded-md transition-colors duration-200 ${
+                activeTab === tab.key
+                  ? "bg-red-500 text-white"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}
+              onClick={() => handleTabClick(tab.key)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+        <div className="hidden md:grid grid-cols-3 gap-2 mt-2">
+          {tabs.slice(3, 6).map((tab) => (
+            <button
+              key={tab.key}
+              className={`px-4 py-2 font-semibold whitespace-nowrap rounded-md transition-colors duration-200 ${
+                activeTab === tab.key
+                  ? "bg-red-500 text-white"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}
+              onClick={() => handleTabClick(tab.key)}
+            >
+              {tab.label}
+            </button>
+          ))}
         </div>
       </div>
 

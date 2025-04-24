@@ -14,50 +14,38 @@ const Footer2 = () => {
   return (
     <footer className="relative bg-black text-white pb-8">
       <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736516332/Untitled_design_10_euwrpe.png"
-          alt="img"
-          className="w-full"
-        />
+        src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736516332/Untitled_design_10_euwrpe.png"
+        alt="img"
+        className="w-full"
+      />
       <div className="container mx-auto px-4">
         {/* What We Do Section */}
         <div className="border-t border-white mt-8 pt-4 flex flex-col justify-center items-center">
           <h3 className="text-lg font-bold mb-4 text-center">What we do</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 gap-x-6">
-            <Link to="/what-we-do/EIA-SIA-for-land-acquisition" className="hover:underline hover:text-red-600 text-center">
-              EIA/SIA for Land Acquisition@Mines
+            <Link
+              to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines"
+              className="hover:underline hover:text-red-600 text-center"
+            >
+              Land Acquisition, Rehabilitation & Resettlement of Mines{" "}
             </Link>
-            <Link to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines" className="hover:underline hover:text-red-600 text-center">
-              Rehabiliation & Resettlement
+            <Link
+              to="/what-we-do/mine-steel-&-power-skill-park"
+              className="hover:underline hover:text-red-600 text-center"
+            >
+              Mines, Steel & Power Skill Park{" "}
             </Link>
-            <Link to="/what-we-do/mine-steel-&-power-skill-park" className="hover:underline hover:text-red-600 text-center">
-              Skill Training for Mining affected Youth
+            <Link
+              to="/what-we-do/carp-rice-&-duck-livelihood-park"
+              className="hover:underline hover:text-red-600 text-center"
+            >
+              Carp, Rice & Duck Livelihood Park{" "}
             </Link>
-            <Link to="/what-we-do/enterprise-growth-in-mining-villages" className="hover:underline hover:text-red-600 text-center">
-              Enterprise Growth in Mining Villages
-            </Link>
-            <Link to="/what-we-do/carp-rice-&-duck-livelihood-park" className="hover:underline hover:text-red-600 text-center">
-              Reclamation in Abandoned Mines
-            </Link>
-            <Link to="/what-we-do/just-transition-for-mining-workers" className="hover:underline hover:text-red-600 text-center">
-              Just Transition for Mining Workers
-            </Link>
-            <Link to="/what-we-do/nutrinest" className="hover:underline hover:text-red-600 text-center">
-              Nutrition & Wellbeing in Mining Villages
-            </Link>
-            <Link to="/what-we-do/eco-mine-tourism" className="hover:underline hover:text-red-600 text-center">
-              Eco-Mine Tourism
-            </Link>
-            <Link to="/what-we-do/model-mining-village-in-making" className="hover:underline hover:text-red-600 text-center">
-              Model Mining Village in Making
-            </Link>
-            <Link to="/what-we-do/indegenous-community-empowerment" className="hover:underline hover:text-red-600 text-center">
-              Indegenous Community Empowerment
-            </Link>
-            <Link to="/what-we-do/waterbody-restoration-in-mines" className="hover:underline hover:text-red-600 text-center">
-              Waterbody Restoration in Mines
-            </Link>
-            <Link to="/what-we-do/connecting-remote-mining-habitations" className="hover:underline hover:text-red-600 text-center">
-              Connecting Remote Mining Habitations
+            <Link
+              to="/what-we-do/nutrinest"
+              className="hover:underline hover:text-red-600 text-center"
+            >
+              NutriNest{" "}
             </Link>
           </div>
         </div>
@@ -111,10 +99,16 @@ const Footer2 = () => {
             <a href="/" className="hover:underline hover:text-red-600">
               Home
             </a>
-            <a href="/whoweare/about" className="hover:underline hover:text-red-600">
+            <a
+              href="/whoweare/about"
+              className="hover:underline hover:text-red-600"
+            >
               About Us
             </a>
-            <a href="/contact-us" className="hover:underline hover:text-red-600">
+            <a
+              href="/contact-us"
+              className="hover:underline hover:text-red-600"
+            >
               Contact Us
             </a>
             <a href="/careers" className="hover:underline hover:text-red-600">

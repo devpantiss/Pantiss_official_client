@@ -10,25 +10,25 @@ import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 const cardData = [
   {
     title: "Land Acquisition, Rehabilitation & Resettlement of Mines",
-    link: "/whatwedo/social-development",
+    link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195006/EIA_bpqcoy.jpg",
     gradient: "from-red-700 via-red-500 to-red-300",
   },
   {
     title: "Mines, Steel & Power Skill Park",
-    link: "/whatwedo/pantiss-mine-x-sim",
+    link: "/what-we-do/mine-steel-&-power-skill-park",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735278481/vocational_msprt8.jpg",
     gradient: "from-blue-700 via-blue-500 to-blue-300",
   },
   {
     title: "Carp, Rice & Duck Livelihood Park",
-    link: "/whatwedo/rural-development",
+    link: "/what-we-do/carp-rice-&-duck-livelihood-park",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
     gradient: "from-green-700 via-green-500 to-green-300",
   },
   {
     title: "NutriNest",
-    link: "/whatwedo/health-initiatives",
+    link: "/what-we-do/nutrinest",
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195440/nutrition_jnxshz.jpg",
     gradient: "from-orange-700 via-orange-500 to-orange-300",
   },
@@ -66,7 +66,7 @@ const NewsCardSection = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Show 3 cards by default for better spacing
+    slidesToShow: 4, // Show 3 cards by default for better spacing
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -91,8 +91,8 @@ const NewsCardSection = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl py-8 px-4 sm:px-10 mb-4">
-      <div className="flex mb-6">
+    <section className="py-8 px-4 sm:px-10 mb-4">
+      <div className="flex mb-6 mx-auto justify-center max-w-7xl">
         <Heading text="WHAT WE DO" color="text-black" bgColor="bg-red-600" />
       </div>
       <div className="relative flex justify-center items-center">
@@ -108,7 +108,7 @@ const NewsCardSection = () => {
         <Slider
           {...settings}
           ref={sliderRef}
-          className="w-full max-w-7xl"
+          className="w-full max-w-8xl"
         >
           {cardData.map((card) => (
             <NewsCard key={card.title} card={card} />
