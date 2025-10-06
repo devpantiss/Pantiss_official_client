@@ -38,21 +38,19 @@ const StatCard = memo(({ stat, isEvenRow, inView }) => (
     </div>
     <div className="p-4 text-center w-full md:w-1/2">
       <div className="flex justify-center items-center">
-        {inView ? (
-          <CountUp
-            start={0}
-            end={stat.value}
-            duration={2}
-            useEasing
-            redraw={false}
-          >
-            {({ countUpRef }) => (
-              <span ref={countUpRef} className="text-4xl font-bold" />
-            )}
-          </CountUp>
-        ) : (
-          <span className="text-4xl font-bold">0</span>
-        )}
+        <CountUp
+          start={0}
+          end={stat.value}
+          duration={2}
+          useEasing
+          enableScrollSpy
+          scrollSpyOnce
+          redraw
+        >
+          {({ countUpRef }) => (
+            <span ref={countUpRef} className="text-4xl font-bold" />
+          )}
+        </CountUp>
         {shouldHavePlus.includes(stat.id) && <span className="text-4xl font-bold">+</span>}
         {stat.unit && <span className="text-4xl font-bold">{` ${stat.unit}`}</span>}
       </div>
