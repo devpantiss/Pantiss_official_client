@@ -11,6 +11,7 @@ import Highlights from "../Components/Homepage/Highlights/Highlights";
 import Newsletter from "../Components/Homepage/NewsLetter/NewsLetter";
 import SDGBanner from "../Components/Homepage/SDGSection/SDGBanner";
 import ActivityAndEvents from "../Components/Homepage/ActivityAndEvents";
+import Socials from "../Components/Homepage/Socials/Socials";
 
 // Lazy load other components
 const Impact2 = lazy(() => import("../Components/Homepage/Impact2/Impact2"));
@@ -35,6 +36,7 @@ const HomePage = () => {
       <Highlights />
       <Newsletter />
       <ActivityAndEvents />
+      <Socials />
       <Careers />
     </div>
   );
