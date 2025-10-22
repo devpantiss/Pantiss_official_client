@@ -23,7 +23,7 @@ const FeaturedPublicationBanner2 = () => {
       <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl justify-between w-full p-6">
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-6xl font-semibold mb-2">
-            Impact Assessment Report
+             Our Programs Impact Assessment Report
           </h2>
           <p className="text-md md:text-lg text-gray-200 mb-4">
             Evaluating our initiatives' transformative effects on communities and environments.

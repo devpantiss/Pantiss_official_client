@@ -3,7 +3,7 @@ import Map from "./Map";
 
 const Row1 = () => {
   const partnersData = [
-    { name: "UNICEF", value: 355 },
+    { name: "Pantiss", value: 355 },
     { name: "NSDC", value: 224 },
     { name: "Tata Power", value: 189 },
     { name: "ASCI", value: 171 },

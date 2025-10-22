@@ -1,50 +1,48 @@
 import React, { useState, useEffect, memo } from "react";
 import { TypeAnimation } from "react-type-animation";
 
-// Memoized animation sequences
-const titleSequence = [
-  "Responsible Mining",
-  3000,
-  "Steelium",
-  3000,
-  "Aluminium",
-  3000,
-  "Energy Transition",
-  3000,
-];
-
-const subtitleSequence = [
-  "Mines",
-  3000,
-  "Steel & Aluminium",
-  6000,
-  "Energy",
-  3000,
+const syncedPairs = [
+  ["Responsible Mining", "Mines"],
+  ["Steel & Aluminium", "Steel & Aluminium"],
+  ["Energy & Power", "Power"],
 ];
 
 const HomeBanner2 = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [pairIndex, setPairIndex] = useState(0);
+  const [animationKey, setAnimationKey] = useState(0);
 
-  // Video load handler
+  // Preload video
   useEffect(() => {
     const video = document.createElement("video");
-    video.src = "https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4";
+    video.src =
+      "https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4";
     video.onloadeddata = () => setVideoLoaded(true);
-    video.onerror = () => setVideoLoaded(true); // Fallback in case of error
+    video.onerror = () => setVideoLoaded(true);
     return () => {
       video.onloadeddata = null;
       video.onerror = null;
     };
   }, []);
 
+  // Cycle through animations
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setPairIndex((prev) => (prev + 1) % syncedPairs.length);
+      setAnimationKey((prev) => prev + 1); // Forces TypeAnimation to restart in sync
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const [titleText, subtitleText] = syncedPairs[pairIndex];
+
   return (
     <div
-      className="relative w-full h-screen bg-red-600 overflow-hidden pt-32"
+      className="relative w-full h-screen overflow-hidden pt-32"
       style={{
         backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Video Background */}
@@ -56,7 +54,7 @@ const HomeBanner2 = () => {
         muted
         loop
         playsInline
-        preload="metadata" // Optimize video loading
+        preload="metadata"
       >
         <source
           src="https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4"
@@ -64,20 +62,19 @@ const HomeBanner2 = () => {
         />
       </video>
 
-      {/* Translucent Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/30 flex items-center justify-center">
-        {/* Content */}
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
         <div className="text-center text-white px-4">
           <h1 className="relative text-4xl md:text-6xl font-bold mb-4">
             Welcome to <br />
             <span className="text-red-600">
               Pantiss{" "}
               <TypeAnimation
-                sequence={titleSequence}
+                key={animationKey}
+                sequence={[titleText]}
                 wrapper="span"
                 speed={75}
-                repeat={Infinity}
-                className="inline-block"
+                cursor={false}
               />
             </span>
             <img
@@ -91,11 +88,11 @@ const HomeBanner2 = () => {
             Empowering Communities around{" "}
             <span className="text-green-400">
               <TypeAnimation
-                sequence={subtitleSequence}
+                key={animationKey + "-subtitle"}
+                sequence={[subtitleText]}
                 wrapper="span"
                 speed={75}
-                repeat={Infinity}
-                className="inline-block"
+                cursor={false}
               />
             </span>{" "}
             Across <span className="text-green-400">Globe</span>.

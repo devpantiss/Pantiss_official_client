@@ -15,7 +15,7 @@ const TeamBanner1 = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Mr. Stalin Nayak
           </h2>
-          <h3 className="text-xl font-medium mb-2">Founder & Chairperson</h3>
+          <h3 className="text-xl font-medium mb-2">Founder & CEO</h3>
           <p className="text-gray-700 mb-6">
             Stalin Nayak, a principal advisor to CSR of Tata Sons, Odisha, has 3
             years of experience working with tribal Naxalites. He holds degrees

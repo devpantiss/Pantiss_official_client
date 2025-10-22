@@ -11,7 +11,7 @@ const completedProjects = [
   {
     id: 2,
     description: "Odisha WASHPreneur Fellowship Program",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/UNICEF_bgidzk.png",
+    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/Pantiss_bgidzk.png",
     isReadMore: false,
   },
   {

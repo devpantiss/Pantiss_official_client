@@ -3,7 +3,7 @@ import React from "react";
 const Row3 = () => {
   const data = [
     {
-      partnerName: "UNICEF",
+      partnerName: "Pantiss",
       partnerType: "International Organization",
       numberOfResults: 25,
       resultLevels: "Global",

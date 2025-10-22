@@ -1,11 +1,14 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
 
+// Get current year dynamically (e.g., 2025 → '25)
+const currentYear = new Date().getFullYear().toString().slice(-2);
+
 // Memoized LeftContent component
 const LeftContent = memo(() => (
   <div className="relative flex flex-col items-center">
     <span className="text-4xl font-bold mb-2 z-50">
-      Mining Villages Summit-'24
+      Mining Villages Summit-'{currentYear}
     </span>
     <p>Niyamgiri</p>
     <img
@@ -31,7 +34,7 @@ LeftContent.displayName = "LeftContent";
 const RightContent = memo(() => (
   <div className="relative flex flex-col items-center">
     <span className="text-4xl font-bold">
-      PANTISS MINING FELLOWSHIP-'24
+      PANTISS MINING FELLOWSHIP-'{currentYear}
     </span>
     <img
       src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_50/v1726138831/Screenshot_2024-09-12_162917-removebg-preview_i4rukm.png"
@@ -58,7 +61,7 @@ RightContent.displayName = "RightContent";
 
 const SummitBanner = () => {
   return (
-    <div className="relative w-full lg:h-[600px] h-[700px]">
+    <div className="relative w-full lg:h-[500px] h-[700px]">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -67,7 +70,7 @@ const SummitBanner = () => {
         muted
         loop
         playsInline
-        preload="metadata" // Optimize video loading
+        preload="metadata"
       />
 
       {/* Dark overlay for the video */}

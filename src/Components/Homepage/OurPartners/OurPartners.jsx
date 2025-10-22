@@ -31,7 +31,7 @@ const corporatePartners = [
 ];
 
 const multilateralPartners = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041153/UNICEF_bgidzk.png",
+  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041153/Pantiss_bgidzk.png",
   "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041138/GIZ_bsb7es.png",
   "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045063/United_Nations_Environment_Programme_Logo.svg_rp7oev.png",
   "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045063/UNIDO_Logo.svg_khx62n.png",

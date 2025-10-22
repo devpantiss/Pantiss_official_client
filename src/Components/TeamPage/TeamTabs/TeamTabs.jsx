@@ -6,7 +6,7 @@ const teamData = [
     name: "Dr. Sanjaya Pradhan",
     title: "Principal Advisor",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759947969/cc297831-f331-4ac3-ba10-5ab3856b01c1_fusziy.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg",
     department: "leadership",
   },
   {
@@ -20,7 +20,7 @@ const teamData = [
     name: "Mrs. Indumati Nanda",
     title:
       "Lead Administration, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
-    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760007000/0e6193c8-789c-473b-a490-b1a3977a848b_cs9clk.png",
+    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
     department: "finance",
   },
   {
@@ -28,28 +28,28 @@ const teamData = [
     title:
       "Lead, Grants Management, Global Resource moilization and Partnership",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759943135/dcd315c1-4d8b-4594-a354-e10fe8011144_c1zdli.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618716/deepan_2_pliefj.jpg",
     department: "finance",
   },
   {
     name: "Mr. Basant Ku. Sahoo",
     title: "Lead, People, Culture and Communications",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760003772/9fd1c4b4-a9c4-4356-ab90-606b8c9e0a91_isapwh.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618334/basanta_2_adg0rh.jpg",
     department: "finance",
   },
   {
     name: "Ms. Purnima Tarei",
     title: "Financial Controller",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760003774/e9f533bf-4dd0-4a47-9f77-3978e8d27793_qukdgt.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619119/poonam_2_mzxtry.jpg",
     department: "finance",
   },
   {
     name: "Mr. Bhuleshwar Mandal",
-    title: "Associate, Social Compliance and Safeguarding",
+    title: "Associate, Grants and Finance Documentation",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759943839/51e2e5c6-ff06-4f07-89e9-392db715f27d_oxl7si.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618948/mondol_2_mmbbbu.jpg",
     department: "finance",
   },
   {
@@ -92,70 +92,70 @@ const teamData = [
   },
   {
     name: "Mr. Jitendra Barik",
-    title: "Lead, Placements Cell",
+    title: "Lead, Placements & Industry Engagement",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759923436/ca8120c3-f598-4ca1-a4ac-4f2743c2661c_kxmusm.png",
     department: "projectManagement",
   },
   {
     name: "Mr. Alok Chandra Das",
-    title: "Center Director, Jharsuguda",
-    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760006607/eb2d5f20-6ec2-4cba-bc88-87e2cefa4fa4_lfkmoh.png",
+    title: "Lead, Entrepreneurship Initiatives",
+    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619653/Alok_2_wvhyt2.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Sudarshan Barik",
-    title: "Chief Mobilizer, Jajpur Center",
+    title: "Co-Lead, Grassroots Engagement",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759923511/f7efbb71-06f4-4c7e-b615-c3597a38a995_fhxbak.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619794/Sudarshan_2_geimdd.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Jabis Ranjan Sahu",
-    title: "MIS Coordinator, Jajpur Center",
+    title: "Co-Lead, MIS & Data Management",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096847/jabis_2_n06hpe.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Titan Sahoo",
-    title: "MIS Coordinator, Jajpur Center",
-    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760007165/fb183982-a074-4abf-b551-ad6f732c0f75_qovvrv.png",
+    title: "Center Manager, Kalahandi",
+    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619899/titan_2_bdytme.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Sudipto Kumar Behera",
-    title: "Lead, Livelihood Division",
+    title: "Lead, Skill & Livelihood Initiatives",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760004380/15f252c1-84e4-4862-9697-a2574627d9d1_wxo3cv.png",
     department: "projectManagement",
   },
   {
-    name: "Mr. Bikun Pradhan",
-    title: "Lead, Livelihood Division",
+    name: "Ms. Padmini Kumari Bisoyi",
+    title: "Co-Lead, Placements & Industry Engagement",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759998419/8b326100-c1bc-471e-81d0-48d6991b18f4_wysij9.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620118/Padmini_2_d1jkc5.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Manoj Panda",
-    title: "Lead, Livelihood Division",
+    title: "Lead, Skill & Nutrition Initiatives",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759924080/7d5e512a-34ca-4e5f-b1da-3db5e235c494_fnczln.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620253/manoj_2_enavbz.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Soumyashree Debabrata Jena",
-    title: "Lead, Livelihood Division",
+    title: "Co-Lead, MIS & Data MAnagement",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759998420/ad9aac63-9bc1-4b7d-9ec4-a6f5d66f9ff5_bpprzn.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620361/Soumya_2_xlasuk.jpg",
     department: "projectManagement",
   },
   {
     name: "Mr. Braja Kishore Nayak",
     title: "Lead, Internal Auditor",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759943702/6868ccf4-278a-4061-9675-717ef1176ca8_go7pns.png",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619425/braja_2_l7wbb8.jpg",
     department: "monitoring",
   },
   {
@@ -165,25 +165,12 @@ const teamData = [
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760094963/WhatsApp_Image_2025-10-09_at_6.51.34_PM_jyqzas.jpg",
     department: "monitoring",
   },
-  {
-    name: "Ms. Padmini Kumari Bisoyi",
-    title: "Co-Lead, Monitoring, Evaluation, Accountability & Learning",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759945381/d67ce149-a4ef-4d96-8de9-9893abf1ae8f_rchpc7.png",
-    department: "monitoring",
-  },
+
   {
     name: "Ms. Jayashree Satpathy",
     title: "Associate Development Secretary to CEO",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759945232/035f6b35-4e09-488f-a9b7-85dcc629abd0_y6puhn.png",
-    department: "monitoring",
-  },
-  {
-    name: "Mr. Chhatrapati Shivaji Jena",
-    title: "Head, Legal & Compliance",
-    image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Chhatrapati-Sibaji-Jena-.jpeg",
     department: "monitoring",
   },
   {
@@ -201,37 +188,37 @@ const teamData = [
   },
   {
     name: "Mr. Yagnesh Kumar Nanda",
-    title: "Trainer, (Electrician)",
+    title: "Lead-Trainer, (Welder)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096329/yagnesh_2_lmjxag.jpg",
     department: "knowledge",
   },
   {
     name: "Mr. Bikram Keshari Gouda",
-    title: "Trainer, (HEMM Mechanics)",
+    title: "Lead-Trainer, (Excavator Operator)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096195/bikram_2_ufeeka.jpg",
     department: "knowledge",
   },
   {
     name: "Mr. Tushar Ranjan Ojha",
-    title: "Data Research & Analyst",
+    title: "Lead-Trainer, (Solar & EV Tech)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760095938/tushar_2_apsaoi.jpg",
     department: "knowledge",
   },
   {
     name: "Mr. Jalandhar Mohanty",
-    title: "Data Research & Analyst",
+    title: "Lead-Trainer, (Practical Trainer, Dumper/Tipper Operator)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760095558/jalandhar_2_1_b8x99s.jpg",
     department: "knowledge",
   },
   {
     name: "Mr. Bikun Pradhan",
-    title: "Data Research & Analyst",
+    title: "Lead-Trainer, (Electrical Trainer)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760095802/bikun_2_iaf6sc.jpg",
     department: "knowledge",
   },
   {
     name: "Mr. Trupti Ranjan Samal",
-    title: "Data Research & Analyst",
+    title: "Lead-Trainer, (HEMM Mechanic)",
     image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760095697/trupti_ranjan_2_v74nbw.jpg",
     department: "knowledge",
   },
@@ -244,21 +231,21 @@ const teamData = [
   },
   {
     name: "Mr. Gautam Samanta",
-    title: "Asst. Manager, MIS",
+    title: "Administrative Assistant",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760705394/IMG-20251016-WA0075_2_n7sbx9.jpg",
     department: "foundersOffice",
   },
   {
     name: "Ms. Lucky Dandia",
-    title: "-",
+    title: "Office Attendant",
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
     department: "foundersOffice",
   },
   {
     name: "Mr. Gandhi Beura",
-    title: "Asst. Manager, MIS",
+    title: "Executive Chauffeur",
     image:
       "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
     department: "foundersOffice",

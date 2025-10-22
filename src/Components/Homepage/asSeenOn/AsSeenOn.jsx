@@ -107,8 +107,8 @@ const AsSeenOn = () => {
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/1200px-UNICEF_Logo_g3gwyz.png"
-              alt="Unicef"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/1200px-Pantiss_Logo_g3gwyz.png"
+              alt="Pantiss"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>

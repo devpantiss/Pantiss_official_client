@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import HomeBanner2 from "../Components/Homepage/Banner2/HomeBanner2"; // Normal import
-import WhatWeDo from "../Components/Homepage/WhatWeDo/WhatWeDo";
+// import WhatWeDo2 from "../Components/Homepage/WhatWeDo/WhatWeDo";
 import AdvisoryBoard from "../Components/Homepage/AdvisoryBoard/AdvisoryBoard";
 import Projects from "../Components/Homepage/Projects/Projects";
 import AsSeenOn from "../Components/Homepage/asSeenOn/AsSeenOn";
@@ -12,6 +12,7 @@ import Newsletter from "../Components/Homepage/NewsLetter/NewsLetter";
 import SDGBanner from "../Components/Homepage/SDGSection/SDGBanner";
 import ActivityAndEvents from "../Components/Homepage/ActivityAndEvents";
 import Socials from "../Components/Homepage/Socials/Socials";
+import WhatWeDo from "../Components/Homepage/WhatWeDo";
 
 // Lazy load other components
 const Impact2 = lazy(() => import("../Components/Homepage/Impact2/Impact2"));
@@ -23,8 +24,8 @@ const HomePage = () => {
   return (
     <div>
       <HomeBanner2 />
-
       <WhatWeDo />
+      {/* <WhatWeDo2 /> */}
       <SDGBanner />
       <AdvisoryBoard />
       <Projects />

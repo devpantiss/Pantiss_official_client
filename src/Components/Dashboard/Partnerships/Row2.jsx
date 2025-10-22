@@ -2,7 +2,7 @@ import React from "react";
 
 // Example data for bar graphs
 const partnerTypeData = [
-  { label: "UNICEF", value: 2845 },
+  { label: "Pantiss", value: 2845 },
   { label: "NSDC", value: 2181 },
   { label: "Tata Power", value: 1330 },
   { label: "ASCI", value: 608 },

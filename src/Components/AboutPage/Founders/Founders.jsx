@@ -4,7 +4,7 @@ import Heading from '../../Common/Heading';
 const founders = [
   {
     name: 'Mr. Stalin Nayak',
-    title: 'Director & Chairperson',
+    title: 'Founder & CEO',
     image: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg', // Replace with your image URL
   },
   {

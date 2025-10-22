@@ -22,7 +22,7 @@ const FeaturedPublicationBanner = () => {
       ref={bannerRef}
       className="relative bg-cover bg-center h-[320px] flex items-center justify-center text-white overflow-hidden shadow-lg"
       style={{
-        backgroundImage: `url(https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg)`,
+        backgroundImage: `url(https://res.cloudinary.com/djtzx6wo7/image/upload/v1760712379/sourajit-hazra-b-O15p8xTns-unsplash_c4eyqj.jpg)`,
         backgroundAttachment: "fixed", // Fixed background
         backgroundRepeat: "no-repeat", // Prevent repetition
         backgroundSize: "cover", // Ensure full coverage
@@ -36,14 +36,14 @@ const FeaturedPublicationBanner = () => {
       <div className="relative z-10 flex flex-col md:flex-row max-w-7xl items-center justify-between w-full p-6">
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-6xl font-semibold mb-2">
-            2025 Sustainable Farming Report
+            2025 Model Mining Villages Report
           </h2>
           <p className="text-md md:text-lg text-gray-200 mb-4">
             Dive into our latest findings on innovative farming solutions for a greener future.
           </p>
         </div>
         <button className="px-6 py-2 bg-red-600 rounded-md text-white font-medium hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 md:ml-4">
-          Download Now
+          Coming Soon
         </button>
       </div>
     </div>

@@ -77,7 +77,7 @@ const WhatWeDoCards = () => {
     //   category: "Podcasts",
     //   title: "Just Transition: A Conversation with Shipra Saxena",
     //   description:
-    //     "Join us in this insightful podcast with Shipra Saxena, WASH and CCES Specialist at UNICEF, as we explore the concept of just transition. Discover how sustainable practices and community-centered approaches can drive equitable solutions for climate resilience and environmental justice.",
+    //     "Join us in this insightful podcast with Shipra Saxena, WASH and CCES Specialist at Pantiss, as we explore the concept of just transition. Discover how sustainable practices and community-centered approaches can drive equitable solutions for climate resilience and environmental justice.",
     //   imageUrl:
     //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192862/podcast_qpq54k.jpg",
     //   linkText: "View More",
