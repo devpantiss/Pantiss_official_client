@@ -14,6 +14,26 @@ const careerAreas = [
     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735309951/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_svzntu.jpg",
   },
   {
+    title: "Project Management & Implementation",
+    count: 6,
+    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119059/octavian-dan-craciun-b21Ty33CqVs-unsplash_isrzcv.jpg",
+  },
+  {
+    title: "Finance, Grants & Procurement",
+    count: 0,
+    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119222/towfiqu-barbhuiya-nApaSgkzaxg-unsplash_mnkkge.jpg",
+  },
+  {
+    title: "Human Resources & Administration",
+    count: 0,
+    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119331/cytonn-photography-n95VMLxqM2I-unsplash_zx5zfg.jpg",
+  },
+  {
+    title: "Business Development & Partnerships",
+    count: 1,
+    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119393/kaleidico-26MJGnCM0Wc-unsplash_klnlaa.jpg",
+  },
+  {
     title: "Social Enterprise",
     count: 2,
     img: "https://careers.brac.net/category/3.png?c_scale,w_300",

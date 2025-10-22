@@ -57,10 +57,10 @@ const settings = {
 // Updated slider data based on mining-related stories
 const slides = [
   {
-    image: "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Hemlata-Alone.jpg",
-    name: "Sunita Behera",
+    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761126488/Screenshot_2025-10-22_150223_kq5qro.png",
+    name: "Manoj Patra",
     description:
-      "Sunita, a woman miner from Sukinda, transformed her life through vocational training with Pantiss. Now a leader in her chromite mining community, she inspires others to build financial resilience and access new opportunities.",
+      "Manoj, a young man from Sukinda, joined our vocational training program and became a certified Mining Dumper Operator. Today, he proudly works in the mines, Getting a stable livelihood with skilled Work.",
     link: "#",
   },
   {
@@ -71,10 +71,10 @@ const slides = [
     "link": "#"
   },
   {
-    image: "https://grameenfoundation.org/images/_716x488_crop_center-center_none/ayisha2.png",
+    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761124239/Women-in-leadership-img_bhmw8w.jpg",
     name: "Priya Naik",
     description:
-      "Priya, a youth from Keonjhar, gained skills through Pantiss’ training programs and secured a job in the mining industry. Her journey reflects our mission to create unemployment-free blocks in mining regions.",
+      "Priya, a self-help group (SHG) member from Jajpur, transformed her life through Pantiss’ training and support. She now manages a small-scale phenyl manufacturing unit with her group, earning a sustainable livelihood and inspiring other women in her community to become self-reliant.",
     link: "#",
   },
 ];

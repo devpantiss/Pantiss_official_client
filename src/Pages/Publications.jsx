@@ -22,7 +22,7 @@ const Publications = () => {
       <ArticleSection2 />
       <FeaturedPublicationBanner />
       <CapacityDevelopment />
-      <StoryBanner />
+      {/* <StoryBanner /> */}
       {/* <PopularSection /> */}
       {/* <Cards /> */}
     </div>

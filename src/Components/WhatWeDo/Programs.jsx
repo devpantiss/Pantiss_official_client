@@ -5,32 +5,46 @@ import Heading from "../Common/Heading";
 // Memoized static programs data
 const programs = [
   {
-    title: "Land Acquisition, Rehabilitation & Resettlement of Mines",
+    title: "Planning, Policy & Governance (PPG)",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735195058/Rehabilitation_ejgaqn.webp",
-    categories: ["Community Development", "Mining"],
-    link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708443/Adobe_Express_-_file_afc9wt.jpg",
+    categories: ["GIS/Drone Survey", "Digital Dashboard", "Social Audit"],
+    link: "#",
   },
   {
-    title: "Mine, Steel & Power Skill Park",
+    title: "TVET (Technical, Vocational, Educational Training)",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735278481/vocational_msprt8.jpg",
-    categories: ["Education", "Youth Empowerment"],
+    "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708752/GMC10092024_162547_pnvm7v.jpg",
+    categories: ["Skill on Wheels", "Center of Excellence", "Global Placements"],
     link: "/what-we-do/mine-steel-&-power-skill-park",
   },
   {
-    title: "Carp, Rice & Duck Livelihoods Park",
+    title: "Livelihood & Entrepreneurship",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735195281/WhatsApp_Image_2024-12-26_at_12.10.50_PM_nqiwwh.jpg",
-    categories: ["Environment", "Eco Tourism"],
+    "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708960/amol-sonar-1KntWz6Hpgc-unsplash_adnjcu.jpg",
+    categories: ["Agricultural Revival", "Animal Husbandary", "Enterprise Incubation"],
     link: "/what-we-do/carp-rice-&-duck-livelihood-park",
   },
   {
-    title: "NutriNest",
+    title: "Health & Nutrition",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735195440/nutrition_jnxshz.jpg",
-    categories: ["Health", "Community"],
+    "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709193/health_c5sfne.jpg",
+    categories: ["Mobile Health Unit", "Health Screening", "Malnutrition Management"],
     link: "/what-we-do/nutrinest",
+  },
+  {
+    title: "Water & Sanitation",
+    image:
+    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734154553/Screenshot_2024-12-14_at_10.50.28_AM_srv3cm.png",
+    categories: ["Safe Drinking Water", "Toilets", "Waste-Disposal"],
+    link: "#",
+  },
+  {
+    title: "Environment & Ecology",
+    image:
+    "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709502/Pngtree_forest_planet_earth_with_trees_15794029_aii5vc.jpg",
+    categories: ["Safe Drinking Water", "Toilets", "Waste-Disposal"],
+    link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
   },
 ];
 
@@ -85,7 +99,7 @@ const Programs = () => {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {programList.map((program) => (
             <ProgramCard key={program.link} program={program} />
           ))}

@@ -113,8 +113,7 @@ const teamData = [
   {
     name: "Mr. Jabis Ranjan Sahu",
     title: "Co-Lead, MIS & Data Management",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096847/jabis_2_n06hpe.jpg",
+    image:"https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096847/jabis_2_n06hpe.jpg",
     department: "projectManagement",
   },
   {
@@ -124,7 +123,7 @@ const teamData = [
     department: "projectManagement",
   },
   {
-    name: "Mr. Sudipto Kumar Behera",
+    name: "Mr. Sudipta Kumar Behera",
     title: "Lead, Skill & Livelihood Initiatives",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760004380/15f252c1-84e4-4862-9697-a2574627d9d1_wxo3cv.png",
@@ -133,8 +132,7 @@ const teamData = [
   {
     name: "Ms. Padmini Kumari Bisoyi",
     title: "Co-Lead, Placements & Industry Engagement",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620118/Padmini_2_d1jkc5.jpg",
+    image:"https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620118/Padmini_2_d1jkc5.jpg",
     department: "projectManagement",
   },
   {
@@ -146,7 +144,7 @@ const teamData = [
   },
   {
     name: "Mr. Soumyashree Debabrata Jena",
-    title: "Co-Lead, MIS & Data MAnagement",
+    title: "Co-Lead, MIS & Data Management",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620361/Soumya_2_xlasuk.jpg",
     department: "projectManagement",
@@ -247,7 +245,7 @@ const teamData = [
     name: "Mr. Gandhi Beura",
     title: "Executive Chauffeur",
     image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761141736/f293abce-5c3f-4fa3-80b4-b3cc2794450a_2_eb4gde.jpg",
     department: "foundersOffice",
   },
 ];

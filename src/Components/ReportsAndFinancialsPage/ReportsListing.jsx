@@ -4,41 +4,41 @@ import Heading from "../Common/Heading";
 
 const reportsData = [
   {
-    title: "Annual Reports",
-    items: [
-      { label: "Annual Report 2021-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_1" },
-      { label: "Annual Report 2020-21", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2" },
-      { label: "Annual Report 2019-20", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_3" },
-      { label: "Annual Report 2018-19", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_4" },
-      { label: "Annual Report 2017-18", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_5" },
-    ],
-  },
-  {
     title: "Audited Statements",
     items: [
-      { label: "Audited FY 2021-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_6" },
-      { label: "Audited FY 2020-21", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_7" },
-      { label: "Audited FY 2019-20", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_8" },
-      { label: "Audited FY 2018-19", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_9" },
-      { label: "Audited FY 2017-18", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_10" },
-    ],
-  },
-  {
-    title: "FCRA Reports (FC6 & FC4)",
-    items: [
-      { label: "FC6 Q1 FY 21-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_11" },
-      { label: "FC6 Q2 FY 21-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_12" },
-      { label: "FC6 Q3 FY 21-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_13" },
-      { label: "FC6 Q4 FY 21-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
-      { label: "FC4 FY 21-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_15" },
+      { label: "Audited FY 2025-24", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_7" },
+      { label: "Audited FY 2024-23", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_8" },
+      { label: "Audited FY 2023-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_9" },
+      { label: "Audited FY 2022-21", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_10" },
     ],
   },
   {
     title: "Corporate Governance",
     items: [
-      { label: "Board of Directors FY 2021-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_16" },
-      { label: "Governance Policy FY 2021-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_17" },
-      { label: "Board Meeting Minutes 2021-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      { label: "Board of Directors", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_16" },
+      { label: "Governance Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_17" },
+      { label: "Board Meeting Minutes 2024-25", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      { label: "Code of Conduct for Employees & Board", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      { label: "Conflict of Interest Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+    ],
+  },
+  {
+    title: "Policies & Compliances",
+    items: [
+      { label: "HR Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_11" },
+      { label: "Finance & Procurement", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_12" },
+      { label: "POSH Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_13" },
+      { label: "Anti-Bribery & Anti-Corruption Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
+      { label: "Data Protetion & Privacy Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_15" },
+    ],
+  },
+  {
+    title: "Statutory & Registration Docs",
+    items: [
+      { label: "Certificate of Incorporation", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_11" },
+      { label: "PAN & TAN", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_12" },
+      { label: "GST Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_13" },
+      { label: "CSR-1 Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
     ],
   },
 ];

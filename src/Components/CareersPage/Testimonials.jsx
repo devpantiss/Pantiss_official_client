@@ -8,47 +8,36 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389221/dwarka_kfaln7.png", // Replace with actual image URLs
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/c_auto,h_550,w_400/dc6111f1-1097-47e1-bafc-e24ccc2d9098_dmckxl.jpg",
       quote:
-        "As the General Manager (Operations) at Pantiss Foundation, I am proud to be part of an organization that is transforming lives through its impactful initiatives. Our commitment to innovation, excellence, and community empowerment drives everything we do. At Pantiss Foundation, every day presents an opportunity to make a meaningful difference, and I am honored to lead a team of passionate individuals dedicated to creating sustainable change.",
-      name: "Dwarka Prasad Bisoyi",
-      title: "General Manager (Operations)",
+        "As the Lead for Water, Sanitation, and Hygiene at Pantiss Foundation, I am committed to ensuring that every community we serve has access to safe water, proper sanitation, and hygienic living conditions. Our work goes beyond infrastructure — it’s about restoring dignity, promoting health, and empowering people to build cleaner, safer futures. Each project is a step toward a healthier, more equitable society.",
+      name: "Mr. Dwarka Prasad Bisoyi",
+      title: "Lead, Water, Sanitation, and Hygiene",
       location: "Bhubaneswar, Odisha",
     },
     {
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389222/rahul_sir_rpw5o7.png",
+      image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760097567/rahul_2_bct1yz.jpg",
       quote:
-        "Being the Associate Vice President of Operations at Pantiss Foundation has been an incredibly fulfilling experience. Here, we work with passionate individuals to create meaningful impact and drive sustainable change. The collaborative culture empowers growth, innovation, and a shared purpose. If you're looking to make a difference, Pantiss Foundation is the place to be.",
-      name: "Rahul Nayak",
-      title: "Associate Vice President (Operations)",
+        "As the Lead for Education, Skills Development, and Migration at Pantiss Foundation, I’ve witnessed how targeted skilling and education can transform lives and communities. Our mission is to empower youth and migrant workers with the right opportunities, bridging the gap between potential and employment. At Pantiss, every initiative we take moves us closer to an inclusive and self-reliant Odisha.",
+      name: "Mr. Rahul Nayak",
+      title: "Lead, Education, Skills Development, and Migration",
       location: "Bhubaneswar, Odisha",
     },
     {
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735389221/padmini_rue0ch.png", // Replace with another image URL
+      image:"https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620118/Padmini_2_d1jkc5.jpg",
       quote:
-        "Being a part of Pantiss Foundation has been an incredible journey of driving impactful change. As the General Manager (Industry Engagement), I’ve had the privilege to collaborate with diverse industries, creating meaningful partnerships that empower communities and promote sustainable development. At Pantiss, we are not just building careers; we are shaping futures and transforming lives. It’s truly fulfilling to be part of an organization that aligns business with purpose.",
-      name: "Padmini Kumari Bisoyi",
-      title: "General Manager (Industry Engagement)",
-      location: "Bhubaneswar, Odisha",
+        "As the Co-Lead for Placements and Industry Engagement at Pantiss Foundation, I’ve had the opportunity to bridge the gap between skilled talent and meaningful employment. By fostering strong partnerships with industries, we’re not only enhancing livelihood opportunities but also strengthening community resilience. At Pantiss, we believe in creating pathways where every skill leads to a sustainable future.",
+        name: "Ms. Padmini Kumari Bisoyi",
+        title: "Co-Lead, Placements & Industry Engagement",
+        location: "Bhubaneswar, Odisha",
     },
     {
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_151423707_HDR_rj7i83.jpg", // Replace with another image URL
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760005985/57d13a34-2e55-4da8-8a33-ed03e9943eb6_l6djf9.png",
       quote:
-        "As an Assistant Manager in Human Resources at Pantiss Foundation, I’ve had the privilege of working alongside a passionate and dedicated team committed to making a difference in the community. The foundation's inclusive culture, emphasis on growth, and dedication to sustainability provide a rewarding environment for personal and professional development. Every day presents new opportunities to contribute to meaningful change, and I’m proud to be part of an organization that genuinely cares about its people and the communities we serve.",
+        "As an Associate in Social Compliance and Safeguarding at Pantiss Foundation, I take pride in ensuring that our programs uphold the highest standards of ethics, safety, and inclusivity. Every initiative we undertake is guided by the principles of dignity and protection for all. It’s inspiring to work in an environment that not only drives social impact but also prioritizes the well-being and rights of every individual we serve.",
       name: "Manasi Behera",
-      title: "Assistant Manager (Human Resource) ",
-      location: "Bhubaneswar, Odisha",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735390293/IMG_20241107_131503164_HDR_g0slxs.jpg", // Replace with another image URL
-      quote:
-        "As an Assistant Manager in Knowledge Management at Pantiss Foundation, I am proud to be part of an organization that is truly committed to creating lasting social impact. The foundation's dynamic approach to development and its focus on empowering communities through sustainable initiatives have been incredibly inspiring. Here, I have had the opportunity to work alongside passionate individuals who are dedicated to fostering growth and innovation. It’s a place where my skills are valued, and I’m continuously encouraged to learn and grow, both personally and professionally. Joining Pantiss has been a rewarding experience, and I’m excited about the future we are building together.",
-      name: "Monalisha Nayak",
-      title: "Assistant Manager (Knowledge Management)",
+      title: "Associate, Social Compliance and Safeguarding",
       location: "Bhubaneswar, Odisha",
     },
   ];
@@ -104,8 +93,8 @@ const TestimonialSlider = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="rounded-md w-full h-full object-contain"
-                  />
+                    className="rounded-md object-cover w-[400px] h-[500px] shadow-lg"
+                    />
                 </div>
 
                 {/* Quote Section */}

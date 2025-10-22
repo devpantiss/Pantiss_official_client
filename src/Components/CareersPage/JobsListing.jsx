@@ -18,7 +18,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Lead and manage overall project operations, ensuring timely delivery, quality standards, and budget compliance.",
           "Supervise teams implementing precision farming, aquaculture, and livelihood programs. Promote advanced farming and fishery practices, and support women-led enterprises like nurseries and seed production",
@@ -36,7 +36,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Provide technical guidance for high-density orchards, irrigation, and modern crop management.",
           "Support Producer Groups in crop diversification and adoption of improved technologies.",
@@ -56,7 +56,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Lead and monitor all aquaculture interventions including farm pond excavation and group-based fish farming.",
           "Provide technical support on pond management, stocking, feeding & harvesting.",
@@ -78,7 +78,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Facilitate and support community and women-led livelihood enterprises.",
           "Promote gender equity, inclusion, and participation of women entrepreneurs.",
@@ -98,7 +98,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Facilitate and support community and women-led livelihood enterprises.",
           "Promote gender equity, inclusion, and participation of women entrepreneurs.",
@@ -118,7 +118,7 @@ const jobsData = [
         location: "Guma, Gajapati, Odisha",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Provide field-level support to farmers and fishers in adopting improved practices.",
           "Conduct training, awareness sessions, and mobilization activities in villages.",
@@ -154,7 +154,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Lead strategic business partnerships and expansion for social enterprise units.",
           "Identify new funding and collaboration opportunities.",
@@ -178,7 +178,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Coordinate and monitor impact-driven social enterprise projects.",
           "Work closely with local communities and beneficiaries.",
@@ -202,7 +202,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Design and deliver high-quality vocational training programs.",
           "Conduct assessments and monitor trainees’ performance.",
@@ -220,7 +220,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Deliver technical skill-based training modules to trainees.",
           "Maintain training records and ensure compliance with standards.",
@@ -244,7 +244,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Develop and maintain modern web applications using React and Node.js.",
           "Collaborate with designers and product managers to deliver scalable features.",
@@ -262,7 +262,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Design and implement software solutions for development projects.",
           "Collaborate with cross-functional teams for system integration.",
@@ -286,7 +286,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Supervise construction activities ensuring design specifications are met.",
           "Monitor material usage and coordinate with contractors.",
@@ -304,7 +304,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Design, analyze, and plan structural components for civil projects.",
           "Perform load calculations and prepare technical documentation.",
@@ -328,7 +328,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Conduct research and data analysis to support advocacy campaigns.",
           "Develop policy briefs and thematic reports.",
@@ -346,7 +346,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Plan and execute advocacy campaigns on key social issues.",
           "Coordinate with NGOs, media, and policymakers.",
@@ -370,7 +370,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Ensure compliance with donor, CSR, and legal frameworks.",
           "Conduct internal audits and maintain documentation.",
@@ -388,7 +388,7 @@ const jobsData = [
         location: "Bhubaneswar, India",
         type: "Full-time",
         salaryRange: "As per market standards",
-        googleFormLink: "https://forms.gle/K41ZaUS2tyD25UjA8",
+        googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSevRPEIr2eaa02uQLxOrqW6eMUy0pOQ25DDIZ2OYdqgBMglxw/viewform",
         description: [
           "Perform financial and process audits for ongoing projects.",
           "Review records and identify operational inefficiencies.",
