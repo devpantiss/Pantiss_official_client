@@ -6,10 +6,9 @@ const reportsData = [
   {
     title: "Audited Statements",
     items: [
-      { label: "Audited FY 2025-24", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_7" },
-      { label: "Audited FY 2024-23", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_8" },
-      { label: "Audited FY 2023-22", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_9" },
-      { label: "Audited FY 2022-21", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_10" },
+      { label: "Audited FY 2024-23", link: "https://drive.google.com/file/d/1mOVRqzLB0BAeLQ_a-CCgJq6BLvhlBsGW/view?usp=drive_link" },
+      { label: "Audited FY 2023-22", link: "https://drive.google.com/file/d/1OHAgBFjyP_DFOfZDXnPetOzwgVOOSR8o/view?usp=drive_link" },
+      { label: "Audited FY 2022-21", link: "https://drive.google.com/file/d/1REPYaIq4LZvKOsz0PfkTQg6AZEtyJlQu/view?usp=drive_link" },
     ],
   },
   {
@@ -25,19 +24,19 @@ const reportsData = [
   {
     title: "Policies & Compliances",
     items: [
-      { label: "HR Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_11" },
-      { label: "Finance & Procurement", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_12" },
-      { label: "POSH Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_13" },
-      { label: "Anti-Bribery & Anti-Corruption Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
-      { label: "Data Protetion & Privacy Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_15" },
+      { label: "Training & Development Policy", link: "https://drive.google.com/file/d/16tFOFbVxE6eEuzw3lhQR5nfbHYXkLD78/view?usp=sharing" },
+      { label: "POSH Policy", link: "https://drive.google.com/file/d/1hQGwwlIQn4iPo1QRs_qX9Kvy6-rsf126/view?usp=sharing" },
+      { label: "Anti Fraud-Fraud Prevention Policy", link: "https://drive.google.com/file/d/1xoYzUgiEwXAC6fB0l3u9V6dPCv9Mkp8D/view?usp=drive_link" },
+      { label: "Data Record Storage Policy", link: "https://drive.google.com/file/d/1Hh7SVG6bKJrs6u359xx2gONIF1kwZ8Wn/view?usp=sharing" },
     ],
   },
   {
     title: "Statutory & Registration Docs",
     items: [
-      { label: "Certificate of Incorporation", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_11" },
-      { label: "PAN & TAN", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_12" },
-      { label: "GST Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_13" },
+      { label: "Certificate of Incorporation", link: "https://drive.google.com/file/d/1uXczQBNSQvhZwVOHiTo3CjAcDlR7hwXx/view?usp=sharing" },
+      { label: "TAN", link: "https://drive.google.com/file/d/1sEUuK9eoISnD3EeW17Low0_NYYmKV2Sv/view?usp=sharing" },
+      { label: "PAN", link: "https://drive.google.com/file/d/1uZklWGfc1fPaKgHX52NwnDAG3fzHHCg7/view?usp=sharing" },
+      { label: "GST Registration", link: "https://drive.google.com/file/d/1Uann1BNBEqBqfqXEAxph1_f2qDscq6UX/view?usp=sharing" },
       { label: "CSR-1 Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
     ],
   },
