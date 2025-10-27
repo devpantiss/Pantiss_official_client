@@ -342,7 +342,7 @@ const TeamTabs = () => {
           key={index}
           className="bg-red-600 group hover:ring-1 hover:ring-red-600 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
         >
-          <div className="h-[400px] w-full overflow-hidden">
+          <div className="h-[500px] w-full overflow-hidden">
             <img
               src={member.image}
               alt={member.name}

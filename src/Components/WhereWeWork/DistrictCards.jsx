@@ -1,53 +1,95 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const DistrictCards = ({ districts }) => {
+  const navigate = useNavigate();
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
+  const handleNavigation = (district) => {
+    navigate(district.path);
+  };
+
   return (
     <section className="relative py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Left Button */}
+        <button
+          ref={prevRef}
+          className="absolute left-44 z-10 top-1/2 transform -translate-y-1/2 bg-red-600 text-white hover:bg-white hover:text-red-600 hover:ring-2 hover:ring-red-600 p-3 rounded-full"
+        >
+          <FaChevronLeft className="text-[30px] lg:text-[50px]" />
+        </button>
+
+        {/* Right Button */}
+        <button
+          ref={nextRef}
+          className="absolute right-44 z-10 top-1/2 transform -translate-y-1/2 bg-red-600 text-white hover:bg-white hover:text-red-600 hover:ring-2 hover:ring-red-600 p-3 rounded-full"
+        >
+          <FaChevronRight className="text-[30px] lg:text-[50px]" />
+        </button>
+
+        {/* ✅ Swiper Slider */}
+        <Swiper
+          modules={[Autoplay, Navigation]}
+          spaceBetween={30}
+          centeredSlides={true}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="mySwiper"
+        >
           {districts?.map((district, i) => (
-            <motion.div
-              key={district.name}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Link
-                to={district.path}
-                className="group relative block overflow-hidden rounded-2xl ring-4 ring-red-500 shadow-lg hover:shadow-2xl transition-all duration-500"
+            <SwiperSlide key={district.name}>
+              <div
+                onClick={() => handleNavigation(district)}
+                className="relative h-[380px] bg-cover bg-center rounded-xl shadow-lg cursor-pointer overflow-hidden group"
+                style={{ backgroundImage: `url(${district.image})` }}
               >
-                {/* Background Image */}
-                <img
-                  src={district.image}
-                  alt={district.name}
-                  className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-100 transition-all duration-500" />
-
-                {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl md:text-2xl font-bold text-green-500 drop-shadow-md mb-1">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-all duration-500 flex flex-col justify-end p-6 text-white">
+                  <h3 className="text-2xl font-bold text-green-400 drop-shadow-lg">
                     {district.name}
                   </h3>
-                  <div className="h-[2px] w-12 bg-green-500 mb-3 group-hover:w-20 transition-all duration-500" />
+
+                  <div className="h-[2px] w-14 bg-green-500 my-2 group-hover:w-24 transition-all duration-500" />
+
                   <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-all duration-500">
                     Discover training, initiatives, and industrial programs in{" "}
                     {district.name}.
                   </p>
                 </div>
 
-                {/* Accent Border */}
-                <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-green-500/50 transition-all duration-500" />
-              </Link>
-            </motion.div>
+                {/* Accent border */}
+                <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-green-500/60 transition-all duration-500" />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
+
       </div>
     </section>
   );
