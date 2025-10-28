@@ -122,7 +122,7 @@ const Header = () => {
           <div className="glow-container">
             <Link onClick={toggleMenu}>
               <img
-                src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png"
+                src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761651882/logo_ympfzx.png"
                 alt="Company Logo"
                 className="h-[60px] w-auto glow-effect"
               />

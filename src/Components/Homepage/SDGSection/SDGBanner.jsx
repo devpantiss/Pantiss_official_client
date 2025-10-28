@@ -3,23 +3,23 @@ import SDGSectionLogo from "./SDGSecction"; // Fixed typo in import
 
 // Memoized SDG image URLs
 const imageUrls = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725875000/Goal_1_ztbv1x.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874995/Goal_2_gzyhxw.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874995/Goal_3_orzwqd.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874989/Goal_4_kjq5if.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874989/Goal_5_e3jnf4.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874983/Goal_6_j3mbwk.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874976/Goal_7_enj3as.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874978/Goal_8_saoq0b.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874967/Goal_9_c0uud3.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874965/Goal_10_s6xraq.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874961/Goal_11_gw4ilj.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874966/Goal_12_jhbwva.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874960/Goal_13_bprlxz.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874953/Goal_14_dork5r.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874951/Goal_15_lfbqkj.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874944/Goal_16_feir8f.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_80/v1725874944/Goal_17_ngnox2.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656284/SDG_01_rxwvon.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656275/SDG_02_l8bt0n.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656299/SDG_03_kr8gwk.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656291/SDG_04_slrhvg.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656275/SDG_05_msbd9c.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656280/SDG_06_cmitwh.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656282/SDG_07_wbgukq.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656307/SDG_08_pvmxfh.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656273/SDG_09_rcwqkn.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656274/SDG_10_cybbhy.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656281/SDG_11_axpzxi.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656322/SDG_12_fawheu.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656288/SDG_13_qiv6hs.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656275/SDG_14_apixtw.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656274/SDG_15_fqppcu.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656294/SDG_16_a4nifb.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761656303/SDG_17_lfrele.jpg",
 ];
 
 const SDGBanner = () => {
@@ -50,9 +50,9 @@ const SDGBanner = () => {
           {imageGrid}
         </div>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1726063410/Screenshot_2024-09-11_193152-removebg-preview_gcwboe.png"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761657381/sdg_white_upqy1s.svg"
           alt="SDG Section Visual"
-          className="max-w-full max-h-full"
+          className="w-[300px] h-full"
           loading="lazy"
         />
       </div>

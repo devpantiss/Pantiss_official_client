@@ -5,55 +5,55 @@ const completedProjects = [
   {
     id: 1,
     description: "Redeployment & retrenchment of VRS Opted & Abandoned Mines.",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041139/HEVY_INDUSTRY_GOVT_OF_INDIA_ecsdwi.jpg",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664376/Ministry_of_Heavy_Industries_India.svg_sus4as.png",
     isReadMore: false,
   },
   {
     id: 2,
     description: "Odisha WASHPreneur Fellowship Program",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/Pantiss_bgidzk.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664221/UNICEF_caiufq.png",
     isReadMore: false,
   },
   {
     id: 3,
     description:
       "Scopping study for unemployment-free blocks in mining regions of Keonjhar district",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041137/CYSD_iqdqgu.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664586/CYSD_mcveio.png",
     isReadMore: false,
   },
   {
     id: 4,
     description:
       "A plan on construction and demolition Waste Management, Bhubaneswar",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664386/GIZ_b5rco1.png",
     isReadMore: false,
   },
   {
     id: 5,
     description:
       "A study an alternative livelihoods of household in unprofitable mines",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041152/TERI_yd4rjq.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664562/TERI_l0nuzq.png",
     isReadMore: false,
   },
   {
     id: 6,
     description:
       "Detailed project report on migration in mining district of India during COVID",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041141/GOVT_OF_INDIA_ynsdha.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664487/Ministry_of_Skill_Development_and_Entrepreneurship.svg_b7gmeo.png",
     isReadMore: false,
   },
   {
     id: 7,
     description:
       "Capacity Building of Woman Miners in Chromites mines of Sukinda region, Jajpur",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041151/TATA_STEEL_hoirtn.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664557/TATA_STEEL_jzidbx.png",
     isReadMore: false,
   },
   {
     id: 8,
     description:
       "A survey on household dependency on coal mining in Odisha, Jharkhand, Chhattisgarh",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041143/mining_cov8j7.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664424/mining_y6bnbb.png",
     isReadMore: false,
   },
   {
@@ -69,53 +69,53 @@ const ongoingProjects = [
     id: 1,
     description:
       "Development of miners and operators in periphery of mining area.",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041148/SCMS_phfkhs.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664215/NSDC_wncifn.png",
     isReadMore: false,
   },
   {
     id: 2,
     description:
       "Entrepreneurship, livelihoods & Skilling of Safai Karmachari's in facilities of mining led institutions.",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041149/RCPSDC_vnbt3g.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664221/UNICEF_caiufq.png",
     isReadMore: false,
   },
   {
     id: 3,
     description:
       "Scopping study for unemployment-free blocks in mining regions of Keonjhar district",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041137/CYSD_iqdqgu.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664449/JINDAL_STEEL_cunmka.png",
     isReadMore: false,
   },
   {
     id: 4,
     description:
       "Social Impact Assessment of CSR intervention in mining affected district",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041150/TATA_POWER_uayv1g.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664461/partner_1_ylni6y.png",
     isReadMore: false,
   },
   {
     id: 5,
     description: "All Women Mines Training Program",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041141/JINDAL_STEEL_wpau1m.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664467/partner-3_kia2rg.png",
     isReadMore: false,
   },
   {
     id: 6,
     description: "Developing Abandon Mines in to Inland aquaculture sites",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664386/GIZ_b5rco1.png",
     isReadMore: false,
   },
   {
     id: 7,
     description: "Safely Managed water and sanitation",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041144/NITCON_dxhlde.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761664226/UNIDO_Logo.svg_xshdt5.png",
     isReadMore: false,
   },
   {
     id: 8,
     description:
       "Recruitment , Train deployment of Youth in Mining , iron & steel Industries",
-    logo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041145/NSDC_luqbyd.png",
+    logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761665275/SCMS-removebg-preview_kzrfaz.png",
     isReadMore: false,
   },
   {

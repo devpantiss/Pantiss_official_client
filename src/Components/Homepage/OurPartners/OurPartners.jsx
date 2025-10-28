@@ -4,39 +4,36 @@ import Heading from "../../Common/Heading";
 
 // Memoized static partner data
 const governmentPartners = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042390/Ministry_of_Heavy_Industries_India.svg_fhp1cc.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042392/ombadc_rmdidp.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042389/Ministry_of_Coal_India.svg_fyx0tc.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041145/NSDC_luqbyd.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042390/Ministry_of_Mines_India.svg_hpnvzl.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042395/IISSSc_zizo9i.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042391/Ministry_of_Skill_Development_and_Entrepreneurship.svg_sbogu0.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042394/logo_1_gmmcfc.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042396/scms_arwl5f.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042585/Screenshot_2024-12-24_at_5.37.59_PM_eyqoun.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042586/Screenshot_2024-12-24_at_5.35.44_PM_c0akgs.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681337/Ministry_of_Mines_India.svg_u1zqcn.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681341/RCPSDC_ag2fwu.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681333/Ministry_of_Skill_Development_and_Entrepreneurship.svg_umc1vh.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681346/NBCFDC_timjzi.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681328/Ministry_of_Coal_India.svg_ae47la.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681316/IISSSC_kpuz8u.jpg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681324/GOVT_OF_INDIA_axryim.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681320/SCMS_ehl7t2.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681308/Ministry_of_Heavy_Industries_India.svg_qpply8.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681310/NSDC_uhnrq9.png",
 ];
 
 const corporatePartners = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735042701/asci_xexfdv.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041141/JINDAL_STEEL_wpau1m.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041151/TATA_STEEL_hoirtn.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041150/TATA_POWER_uayv1g.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735043985/Coal_India_Logo.svg_wwns1e.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735043985/Adani_2012_logo_tt0z21.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735044118/mcl_kjvbs7.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735044295/NLC_India_Limited.svg_ks2rjp.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735044515/Tata_Chemicals_Limited_-_Logo.svg_s5e9qn.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735044527/pngwing.com_bt3ngg.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682066/adani_a61rst.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682094/TATA_Communication_xfp9ha.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682070/asci_n9mk9g.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682110/TATA_Power_ylzpdt.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682074/JINDAL_STEEL_enmfkd.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682114/TATA_STEEL_abtxt4.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682079/mcl_dxroe8.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682088/NLC_mlmpb7.png",
 ];
 
 const multilateralPartners = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041153/Pantiss_bgidzk.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735041138/GIZ_bsb7es.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045063/United_Nations_Environment_Programme_Logo.svg_rp7oev.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045063/UNIDO_Logo.svg_khx62n.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045063/International_Labour_Organization_Logo.svg_fukuuq.png",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1735045062/undp-logo-blue_wrebhi.svg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682341/undp-logo-blue_tnhdpg.svg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682345/GIZ_fh9cts.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682350/UNICEF_ujpduu.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682357/ILO_w4mb5n.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682365/UNIDO_Logo.svg_vu7hvv.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682371/United_Nations_Environment_Programme_Logo.svg_bmaypr.png",
 ];
 
 // Memoized PartnerSection component

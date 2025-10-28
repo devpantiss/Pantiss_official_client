@@ -58,60 +58,60 @@ const AsSeenOn = () => {
         <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
           <div className="px-2">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/330px-DTE_pic_hrwr2q.jpg"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668385/Downtoearth_nsy9ca.avif"
               alt="Down To Earth"
               className="lg:h-36 h-[50px] w-full object-contain" // Set height and use object-contain for proper fit
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/CBC_logo.svg_ixkcmg.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668439/CBC_qqdn5c.png"
               alt="CBC"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055539/the-telegraph-logo-vector-removebg-preview_ovbazt.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668393/The_Telegraph_logo_nxu2ai.png"
               alt="The Telegraph"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/pngwing.com_7_ixeqav.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668397/ToI_n89wlc.png"
               alt="TOI"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055079/Thomson_Reuters_logo.svg_hrphwf.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/c_crop,w_350,h_100/v1761668354/thomson-reuters-vector-logo_jwukea.png"
               alt="Thomson Reuters"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/iForest-Global-Black-Logo-and-Text_kvvqjw.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668385/iforest_podgw2.png"
               alt="IForest"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/Orissapost_qczf45.png"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668389/orissa_post_dyy8gq.png"
               alt="OrissaPost"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
-          <div className="px-4">
+          {/* <div className="px-4">
             <img
               src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726055080/1200px-Pantiss_Logo_g3gwyz.png"
               alt="Pantiss"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>

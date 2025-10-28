@@ -16,7 +16,7 @@ const HomeBanner2 = () => {
   useEffect(() => {
     const video = document.createElement("video");
     video.src =
-      "https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4";
+      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761651868/banner_video_rmhjdl.mp4";
     video.onloadeddata = () => setVideoLoaded(true);
     video.onerror = () => setVideoLoaded(true);
     return () => {
@@ -57,7 +57,7 @@ const HomeBanner2 = () => {
         preload="metadata"
       >
         <source
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1280,q_auto:good/v1735208301/banner_video_efhq8v.mp4"
+          src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761651868/banner_video_rmhjdl.mp4"
           type="video/mp4"
         />
       </video>
@@ -78,8 +78,8 @@ const HomeBanner2 = () => {
               />
             </span>
             <img
-              className="absolute top-5 lg:top-10 w-10 lg:left-32 left-20"
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_40/v1726395483/leaf_n7rkfr.png"
+              className="absolute top-5 lg:top-12 w-6 lg:left-[134px] left-24"
+              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761652633/leaf_akt5fn.png"
               alt="leaf"
               loading="lazy"
             />

@@ -10,35 +10,35 @@ const advisoryData = [
     id: "1",
     name: "Prof. Dr. Narayan Chandra Nayak",
     designation: "HoD, School of Humanities & Social Sciences",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_128/v1735040837/Dr.Narayan_Nayak_jarvun.png",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662555/Dr.Narayan_Nayak_ud6a2q.png",
     org: "IIT, Kharagpur",
   },
   {
     id: "4",
     name: "Prof. Bipin Jojo",
     designation: "Dean, School of Social Sciences",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_128/v1735040836/Bipin_jojo_q8kbv1.png",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662535/Bipin_jojo_ubk4th.png",
     org: "TISS-Mumbai",
   },
   {
     id: "5",
     name: "Braja Kishore Nayak",
     designation: "Director (Financial Inclusion)",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_128/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662541/Braja_Kishore_nayak_pvse2q.jpg",
     org: "State Bank of India",
   },
   {
     id: "6",
     name: "Prof. Dr. S. Sivaraju",
     designation: "Chairperson, Center of Excellence, CSR",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_128/v1735040837/S.Sivaraju_saemh5.png",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662574/S.Sivaraju_jpyath.png",
     org: "TISS-Mumbai",
   },
   {
     id: "7",
     name: "Prof. Dr. Ashutosh Pradhan",
     designation: "HoD, School of Social Work",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_128/v1735040836/Ashutosh_Pradhan_yjq9pf.png",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662531/Ashutosh_Pradhan_cnm6ni.png",
     org: "Central University, Himachal Pradesh",
   },
 ];
@@ -101,7 +101,7 @@ const EventsSlider = () => {
       className="relative py-12 bg-fixed bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_1200,q_auto:good/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg')",
+          "url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761661267/sebastian-pichler-ly2T4vul_SE-unsplash_2_kyhc7n.jpg')",
       }}
     >
       {/* Overlay */}

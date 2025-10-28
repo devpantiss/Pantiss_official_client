@@ -29,7 +29,7 @@ const newsItems = [
     description:
       "Pantiss proudly participated in COP 29 in Baku, Azerbaijan, presenting innovative strategies for a just transition in communities impacted by abandoned mines.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192166/events_2_e7pyqc.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682532/events_2_ffil28.jpg",
     linkText: "View More",
   },
   {
@@ -38,7 +38,7 @@ const newsItems = [
     description:
       "Providing a safe and nurturing environment, the Youth Tribal Dormitories initiative supports education and skill development for tribal youth.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192516/tribal_Youth_dormitories_radqjp.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682551/tribal_Youth_dormitories_my8hdo.jpg",
     linkText: "View More",
   },
   {
@@ -47,7 +47,7 @@ const newsItems = [
     description:
       "The Mining Skill Development Program was successfully inaugurated in T. Rampur, empowering local youth with industry-relevant skills.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192305/news_vftigf.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682541/news_kbx9xy.jpg",
     linkText: "View More",
   },
   {
@@ -56,7 +56,7 @@ const newsItems = [
     description:
       "Recognized by the India Book of Records for organizing the largest handwashing event at a single location, promoting hygiene awareness.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735191971/Awards_bbpnu5.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682521/Awards_stpf2y.jpg",
     linkText: "View More",
   },
   {
@@ -65,7 +65,7 @@ const newsItems = [
     description:
       "In the heart of the Sukinda Chromite region, tribal women are redefining the mining industry through skill-building and empowerment.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192753/blogs_copltg.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682527/blogs_ykinl0.jpg",
     linkText: "View More",
   },
   {
@@ -74,7 +74,7 @@ const newsItems = [
     description:
       "The 'Skill on Wheels' campaign empowers rural communities with mobile training units, bridging technology and opportunity in the Eastern Ghats.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735193450/WhatsApp_Image_2024-12-26_at_11.39.49_AM_hzpigw.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761683113/WhatsApp_Image_2024-12-26_at_11.39.49_AM_rxsswk.jpg",
     linkText: "View More",
   },
   {
@@ -83,7 +83,7 @@ const newsItems = [
     description:
       "An insightful podcast with Shipra Saxena, exploring just transition and sustainable practices for climate resilience and environmental justice.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192862/podcast_qpq54k.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682546/podcast_orimnz.jpg",
     linkText: "View More",
   },
   {
@@ -92,7 +92,7 @@ const newsItems = [
     description:
       "A study exploring skill gaps in mining-affected communities of Odisha, Jharkhand, and Chhattisgarh, identifying opportunities for growth.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735193655/billy-albert-5lNKe_pE3oA-unsplash_xcpi6h.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761683001/billy-albert-5lNKe_pE3oA-unsplash_efftes.jpg",
     linkText: "View More",
   },
 ];

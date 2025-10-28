@@ -11,12 +11,12 @@ const LeftContent = memo(() => (
       Mining Villages Summit-'{currentYear}
     </span>
     <p>Niyamgiri</p>
-    <img
+    {/* <img
       src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1726143053/Screenshot_2024-09-12_174007-removebg-preview_d7s8vj.png"
       alt="Summit Logo"
       className="absolute -top-5 -left-[50px] z-10 lg:-top-6 lg:left-1 h-20 w-40"
       loading="lazy"
-    />
+    /> */}
     <p className="text-[14px] leading-tight lg:w-[500px] text-center">
       The Mining Villages Summit, India is a forum that brings together stakeholders to discuss sustainable development and upliftment of mining-affected communities.
     </p>
@@ -37,9 +37,9 @@ const RightContent = memo(() => (
       PANTISS MINING FELLOWSHIP-'{currentYear}
     </span>
     <img
-      src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_50/v1726138831/Screenshot_2024-09-12_162917-removebg-preview_i4rukm.png"
+      src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761666956/graduation-hat_uqthh5.png"
       alt="Fellowship Logo"
-      className="absolute -top-6 left-14 z-10 lg:-top-6 lg:-left-6 h-12 w-12"
+      className="absolute -rotate-45 -top-5 -left-5 -z-10 lg:-top-5 lg:-left-6 h-12 w-12"
       loading="lazy"
     />
     <div className="flex gap-x-4">
@@ -65,7 +65,7 @@ const SummitBanner = () => {
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://res.cloudinary.com/dgtc2fvgu/video/upload/c_scale,w_1200,q_auto:good/v1726137056/niyamgiri_j8uqux.mp4"
+        src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761666463/14189975_1920_1080_50fps_n1mfta.mp4"
         autoPlay
         muted
         loop
