@@ -58,7 +58,7 @@ const DashHeader = () => {
     <div className="bg-black border-b-2 border-red-600 p-4">
       <div className="flex flex-col lg:flex-row lg:justify-between">
         <div className="mb-4 w-[200px]">
-          <img src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png" alt="Logo" />
+          <img src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761651882/logo_ympfzx.png" alt="Logo" />
         </div>
         <div className="py-6 px-0 lg:px-4">
           <h1 className="text-3xl text-white">{getHeaderContent()}</h1>

@@ -22,7 +22,7 @@ const FoundersSection = () => {
         {/* Right Section */}
         <div className="lg:w-2/3 w-full flex flex-col lg:flex-row gap-y-8 gap-x-6">
           <img
-            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294950/WhatsApp_Image_2025-02-11_at_10.58.44_PM_ie0jsf.jpg"
+            src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg"
             alt="Mr. Stalin Nayak"
             className="h-auto max-h-[550px] w-full lg:w-[68%] rounded-lg object-cover shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           />

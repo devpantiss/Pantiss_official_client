@@ -3,25 +3,36 @@ import React from "react";
 const MeetTheLeaders = () => {
   const leaders = [
     {
-      name: "Dr. Marian Beatrice Davies",
-      role: "Director of Educational Development, Pantiss Foundation",
+      name: "Mr. Stalin Nayak",
+      role: "Founder & CEO",
       description:
-        "Dr. Marian emphasizes impactful development through compassion, knowledge-sharing, and fostering opportunities for marginalized communities.",
-      image: "path_to_image_1", // Replace with actual image path
+        "A visionary leader driving organizational growth with innovation, strategic direction, and a strong mission focus to uplift communities through sustainable development.",
+      image:
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg",
     },
     {
-      name: "Sanhita Jana Sattarah",
-      role: "Field Programme Head, Communications at Pantiss Foundation",
+      name: "Dr. Sanjaya Pradhan",
+      role: "Principal Advisor (Risk Management & Global Representation)",
       description:
-        "Sanhita advocates for inclusiveness and amplifies local voices through strategic and effective communication methods.",
-      image: "path_to_image_2", // Replace with actual image path
+        "Expertly oversees organizational risk frameworks and global partnerships, ensuring credibility, sustainability, and strategic representation at international platforms.",
+      image:
+        "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg",
     },
     {
-      name: "Meghna Rahman",
-      role: "Sub-district Development Coordinator, Pantiss Foundation",
+      name: "Mr. Deepan Digal",
+      role: "Chief Business Officer",
       description:
-        "Meghna focuses on inclusiveness, bringing communities together, and creating tailored solutions for local challenges.",
-      image: "path_to_image_3", // Replace with actual image path
+        "Leads business strategy and expansion, fostering collaborations, operational excellence, and innovative solutions for scalable impact.",
+      image:
+        "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618716/deepan_2_pliefj.jpg",
+    },
+    {
+      name: "Mrs. Indumati Nanda",
+      role: "Chief Strategy Officer",
+      description:
+        "Drives strategic planning, organizational development, and long-term growth by aligning mission goals with impactful community-centered initiatives.",
+      image:
+        "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
     },
   ];
 
@@ -68,7 +79,7 @@ const MeetTheLeaders = () => {
                 <img
                   src={leader.image}
                   alt={leader.name}
-                  className="w-full h-64 object-cover lg:h-full"
+                  className="w-full h-[350px] object-cover lg:h-full"
                 />
               </div>
 

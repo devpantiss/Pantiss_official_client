@@ -6,7 +6,7 @@ import Heading from "../Common/Heading";
 const cardData = [
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735192753/blogs_copltg.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761740136/blogs_oulxwa.jpg",
     text: "Valuing inclusiveness and diversity",
     path: "/life-at-pantiss/inclusiveness-and-diversity",
   },
@@ -18,13 +18,13 @@ const cardData = [
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1729517840/smartworks-coworking-Uz8THWPXwhI-unsplash_j8ospq.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761740271/smartworks-coworking-Uz8THWPXwhI-unsplash_cb6pab.jpg",
     text: "Meet the leaders",
     path: "/life-at-pantiss/meet-the-leaders",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1726530883/WhatsApp_Image_2024-09-08_at_18.49.58_a572e0ed_gstqo0.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761740478/marcel-strauss-fzqxoFJytiE-unsplash_ftv7eh.jpg",
     text: "Investing in mental health",
     path: "/life-at-pantiss/investing-in-mental-health",
   },
@@ -63,7 +63,7 @@ const LifeAtPantiss = () => {
   const largeCard = useMemo(
     () => ({
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1737007535/WhatsApp_Image_2025-01-15_at_7.50.27_PM_isreux.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761740582/WhatsApp_Image_2024-12-28_at_6.28.04_PM_swufs2.jpg",
       text: "People at Pantiss",
       path: "/life-at-pantiss/people-at-pantiss",
     }),

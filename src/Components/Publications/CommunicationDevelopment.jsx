@@ -9,7 +9,7 @@ const dashboards = [
       "Track and analyze the outcomes of our initiatives in real-time. This dashboard provides detailed metrics, visualizations, and performance indicators to help stakeholders understand the impact of our programs across various regions and sectors.",
     date: "Updated: March 1, 2025",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.21_PM_x5eoxx.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761737339/Screenshot_2025-10-29_at_4.57.11_PM_a8cizg.png",
     exploreUrl: "/dashboard/results", // Replace with actual dashboard URL
   },
   {
@@ -18,7 +18,7 @@ const dashboards = [
       "Explore our network of collaborators and their contributions. This tool offers insights into partnership dynamics, joint projects, resource sharing, and the collective impact of our alliances on community development and innovation.",
     date: "Updated: February 15, 2025",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.36.47_PM_ymp42g.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761737339/Screenshot_2025-10-29_at_4.57.59_PM_rnrt2m.png",
     exploreUrl: "/dashboard/partnerships", // Replace with actual dashboard URL
   },
   {
@@ -27,7 +27,7 @@ const dashboards = [
       "Dive into impactful stories showcasing our key achievements. This dashboard highlights success narratives, beneficiary testimonials, and data-driven outcomes that illustrate the transformative effects of our work over the past year.",
     date: "Updated: January 10, 2025",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1741338479/Screenshot_2025-03-07_at_2.35.54_PM_kziq55.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761737343/Screenshot_2025-10-29_at_4.58.19_PM_y4b55n.png",
     exploreUrl: "/dashboard/key-result-stories", // Replace with actual dashboard URL
   },
 ];

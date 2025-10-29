@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   const slides = [
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736847193/vision-magazin-lAdf6NFyh5c-unsplash_hqap3j.jpg",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761737479/vision-magazin-lAdf6NFyh5c-unsplash_1_nejnze.jpg",
     // Add more slides here if desired, e.g.:
     // "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
   ];

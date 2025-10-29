@@ -40,7 +40,7 @@ const AboutProgram = () => {
         </p>
 
         {/* Image Slider */}
-        <div className="max-w-4xl mx-auto">
+        {/* <div className="max-w-4xl mx-auto">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index} className="px-2">
@@ -52,7 +52,7 @@ const AboutProgram = () => {
               </div>
             ))}
           </Slider>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const teamData = [
     name: "Mr. Stalin Nayak",
     title: "Founder & CEO",
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294950/WhatsApp_Image_2025-02-11_at_10.58.44_PM_ie0jsf.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg",
     department: "leadership",
   },
   {

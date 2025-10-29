@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 const cardData = [
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735392592/pexels-lalesh-167964_fgtnus.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745475/pexels-lalesh-167964_wzo43t.jpg",
     text: "Tution Assistance",
     path: "/benefits-at-pantiss/tution-assistance",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1735392306/pexels-william-fortunato-6392819_speall.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745529/pexels-william-fortunato-6392819_fgmuiv.jpg",
     text: "Parenting Benefits",
     path: "/benefits-at-pantiss/parenting-benefits",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1736148776/Screenshot_2025-01-06_at_1.02.25_PM_dzgfly.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745669/markus-frieauff-IJ0KiXl4uys-unsplash_vrjbwr.jpg",
     text: "Health Insurance",
     path: "/benefits-at-pantiss/health-insurance",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_400/v1736151874/Screenshot_2025-01-06_at_1.54.11_PM_mdvxxy.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745777/anaclara-vardiero-NjrenDTlyeU-unsplash_aj5rpa.jpg",
     text: "Retirement Programmes",
     path: "/benefits-at-pantiss/retirement-programmes",
   },
@@ -54,7 +54,7 @@ const BenefitsPantiss = () => {
   const largeCard = useMemo(
     () => ({
       image:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/e_improve/v1735392458/WhatsApp_Image_2024-12-28_at_6.56.50_PM_r6gleo.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761769438/IMG_20241120_122703579_HDR_vmypeg.jpg",
       text: "Career Development",
       path: "/benefits-at-pantiss/career-development",
     }),

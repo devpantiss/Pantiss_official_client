@@ -140,7 +140,7 @@ const ContactPage = () => {
     <section
       className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-fixed relative"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742227403/Agri_Land_India4-768x512_sx19fv.jpg')`,
+        backgroundImage: `url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761739517/markus-winkler-48CkLuEGgWU-unsplash_d9ils5.jpg')`,
       }}
     >
       <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>

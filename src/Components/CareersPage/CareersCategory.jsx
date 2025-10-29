@@ -11,7 +11,7 @@ const careerAreas = [
   {
     title: "M&E",
     count: 0,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735309951/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_svzntu.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761744325/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_whomtc.jpg",
   },
   {
     title: "Project Management & Implementation",
@@ -41,27 +41,27 @@ const careerAreas = [
   {
     title: "Technical, Vocational Education and Training",
     count: 2,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735301666/IMG_9085_tkrncl.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745242/IMG_9085_tkrncl_1_1_cc29gu.jpg",
   },
   {
     title: "ICT Development",
     count: 4,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735309804/nick-morrison-FHnnjk1Yj7Y-unsplash_hwknl4.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745281/nick-morrison-FHnnjk1Yj7Y-unsplash_nso1rp.jpg",
   },
   {
     title: "Civil Engineering",
     count: 2,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735278481/vocational_msprt8.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745317/vocational_x4fu5b.jpg",
   },
   {
     title: "Research and Advocacy",
     count: 2,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1735309955/nima-van-ghavim-Q9C0SMrg4gU-unsplash_hrvtzq.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745351/nima-van-ghavim-Q9C0SMrg4gU-unsplash_euuspx.jpg",
   },
   {
     title: "Development Compliance",
     count: 2,
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_300/v1736749059/compliance_l5dhmw.jpg",
+    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745402/How-to-Build-Trust-in-Controls-With-Centralized-Compliance_lsa3jk.jpg",
   },
 ];
 

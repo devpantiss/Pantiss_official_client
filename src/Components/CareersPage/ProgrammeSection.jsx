@@ -44,7 +44,7 @@ const StudentsAndGraduatesSection = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex justify-center">
           <img
-            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735301666/IMG_9085_tkrncl.jpg" // Replace with the actual image URL
+            src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761745242/IMG_9085_tkrncl_1_1_cc29gu.jpg" // Replace with the actual image URL
             alt="Student or Recent Graduate"
             className="rounded-lg shadow-lg w-3/4 lg:w-full object-cover"
           />
