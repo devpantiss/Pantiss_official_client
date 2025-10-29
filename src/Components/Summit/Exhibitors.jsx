@@ -2,14 +2,16 @@ import React from "react";
 import Marquee from "react-fast-marquee"; // We'll use this for the scrolling effect
 
 const Exhibitors = () => {
+  
   const multilateralPartners = [
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/Tata_Steel_Logo_gyv6rz.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/OMDC-LOGO_mmqphd.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810049/vedanta_etndaz.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/nalco_duykau.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810047/Caterpillar_dbmnvu.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810048/OMC_cxiiuz.webp",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742810047/jspl_ok6nsj.jpg",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682066/adani_a61rst.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682094/TATA_Communication_xfp9ha.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682070/asci_n9mk9g.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682110/TATA_Power_ylzpdt.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682074/JINDAL_STEEL_enmfkd.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682114/TATA_STEEL_abtxt4.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682079/mcl_dxroe8.png",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682088/NLC_mlmpb7.png",
   ];
 
   return (

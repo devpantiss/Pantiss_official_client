@@ -30,13 +30,13 @@ const TabsSection = () => {
   ];
 
   const miningImages = [
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007535/WhatsApp_Image_2025-01-15_at_7.50.27_PM_isreux.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.45.13_PM_rudz4r.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.49.04_PM_bs7fwk.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.25_PM_v3ned2.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.48.31_PM_gon918.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.31_PM_gms50c.jpg",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737008646/WhatsApp_Image_2025-01-16_at_11.52.30_AM_fnv3iz.jpg"
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761735382/sourajit-hazra-b-O15p8xTns-unsplash_1_uftn1g.jpg",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761733769/praniket-desai-kxZUe3M024I-unsplash_ij07nc.jpg",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761686540/tribal_fkr859.avif",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761683965/alexander-van-steenberge-g8oC_P2Tzf4-unsplash_zbj6vr.jpg",
+    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682541/news_kbx9xy.jpg",
+    // "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737007534/WhatsApp_Image_2025-01-15_at_7.39.31_PM_gms50c.jpg",
+    // "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737008646/WhatsApp_Image_2025-01-16_at_11.52.30_AM_fnv3iz.jpg"
   ];
 
   // Slider settings for React Slick

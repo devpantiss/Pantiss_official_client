@@ -32,7 +32,7 @@ const AdvisoryLayout = () => {
             id: "1",
             name: "Prof. Dr. Narayan Chandra Nayak",
             designation: "HoD, School of Humanities & Social Sciences",
-            img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/Dr.Narayan_Nayak_jarvun.png",
+            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730334/Dr.Narayan_Nayak_nwqqsr.png",
             org: "IIT, Kharagpur",
         },
         // {
@@ -53,29 +53,29 @@ const AdvisoryLayout = () => {
             id: "4",
             name: "Prof. Bipin Jojo",
             designation: "Dean, School of Social Sciences",
-            img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Bipin_jojo_q8kbv1.png",
+            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730273/Bipin_jojo_bwcp5e.png",
             org: "TISS-Mumbai",
         },
-        {
-            id: "5",
-            name: "Braja Kishore Nayak",
-            designation: "Director (Financial Inclusion)",
-            img: 
-            "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
-            org: "State Bank of India",
-        },
+        // {
+        //     id: "5",
+        //     name: "Braja Kishore Nayak",
+        //     designation: "Director (Financial Inclusion)",
+        //     img: 
+        //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+        //     org: "State Bank of India",
+        // },
         {
             id: "6",
             name: "Prof. Dr. S. Sivaraju",
             designation: "Chairperson, Center of Excellence, CSR",
-            img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/S.Sivaraju_saemh5.png",
+            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730347/S.Sivaraju_bfpfhy.png",
             org: "TISS-Mumbai",
         },
         {
             id: "7",
             name: "Prof. Dr. Ashutosh Pradhan",
             designation: "HoD, School of Social Work",
-            img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Ashutosh_Pradhan_yjq9pf.png",
+            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730262/Ashutosh_Pradhan_p8hpnp.png",
             org: "Central University, Himachal Pradesh",
         }
     ];

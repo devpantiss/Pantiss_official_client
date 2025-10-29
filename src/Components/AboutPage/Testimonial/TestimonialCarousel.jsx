@@ -9,7 +9,7 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/keerti_bhusan_fhupvr.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729715/keerti_bhusan_stdb2i.jpg",
       quote:
       "PANTISS have dared to dream about a truly empowered rural India. The Pantiss Foundation is their ambitious endeavour to actualise that dream by creating and executing a holistic and sustainable model of development of rural India. Their approach of connecting rural India with not just urban India but also the world is truly exciting.",
       name: "Dr. Kirti Bhushan Pradhan",
@@ -18,7 +18,7 @@ const TestimonialSlider = () => {
     },
     {
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199413/Shabaz_khan_a3q0mi.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729745/Shabaz_khan_la7sfc.jpg",
       quote:
       "My main responsibilities include contributing to the operational planning for the implementation of the CSC project, coordinating and managing partnerships with state and city level government authorities, stakeholders, and national and international implementation partners.",
       name: "Shabaz Khan",
@@ -27,7 +27,7 @@ const TestimonialSlider = () => {
     },
     {
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199409/omm_nqvhsp.webp",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729684/omm_zfw3fg.webp",
       quote:
       "I have known PANTISS on both a personal and professional level and over the years have come to understand the passion that drives them. To do what they do, with no regard for applause or reward is something you don’t see very often. I support them wholeheartedly and wish them every success.",
       name: "Omm Priyadarshi",
@@ -36,7 +36,7 @@ const TestimonialSlider = () => {
     },
     {
       image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735199410/aprajita_gocchikar_zxrm3y.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729694/aprajita_gocchikar_n3piin.jpg",
       quote:
       "The work strategy they brought to the field or community is very much impressive. I am very delighted with PANTISS foundation’s continuous and a great focus on rural development or empowerment. I appreciate their selfless motivation and mission of transforming the lives of 1 million rural India in the next 5 years. I am inspiring their mission and wish them a great achievement.",
       name: "Mrs Aparajita Gocchikar",

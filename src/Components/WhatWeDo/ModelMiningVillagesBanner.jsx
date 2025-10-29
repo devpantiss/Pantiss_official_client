@@ -6,7 +6,7 @@ const ModelMiningVillagesBanner = () => {
     <section
       className="relative w-full py-16 md:py-24 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738924847/jharsuguda_zlzcyq.avif')`,
+        backgroundImage: `url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761733769/praniket-desai-kxZUe3M024I-unsplash_ij07nc.jpg')`,
       }}
     >
       {/* Overlay for Text Contrast */}
@@ -31,7 +31,7 @@ const ModelMiningVillagesBanner = () => {
         {/* Right Section: Logo and Tagline */}
         <div className="md:w-1/2 flex flex-col items-center md:items-center text-center">
           <img
-            src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1727680521/pantiss_logo_kuiof0.png"
+            src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761651882/logo_ympfzx.png"
             alt="Pantiss Logo"
             className="h-24 md:h-28 mb-6"
             loading="lazy"

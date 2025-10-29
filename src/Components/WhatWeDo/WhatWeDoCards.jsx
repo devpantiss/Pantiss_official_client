@@ -24,7 +24,7 @@ const WhatWeDoCards = () => {
       description:
         "Pantiss proudly participated in COP 29 in Baku, Azerbaijan, presenting innovative strategies for a just transition in communities impacted by abandoned mines. The event highlighted sustainable solutions to rehabilitate mining-affected areas while fostering economic opportunities and environmental restoration.",
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192166/events_2_e7pyqc.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682532/events_2_ffil28.jpg",
       linkText: "View More",
     },
     {
@@ -33,7 +33,7 @@ const WhatWeDoCards = () => {
       description:
         "Providing a safe and nurturing environment, the Youth Tribal Dormitories initiative supports education and skill development for tribal youth. These dormitories serve as a foundation for holistic growth, bridging opportunities and empowering the next generation to thrive.",
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192516/tribal_Youth_dormitories_radqjp.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682551/tribal_Youth_dormitories_my8hdo.jpg",
       linkText: "View More",
     },
     {
@@ -42,7 +42,7 @@ const WhatWeDoCards = () => {
       description:
         "The Mining Skill Development Program was successfully inaugurated in T. Rampur, empowering local youth with industry-relevant skills. This initiative aims to create sustainable livelihoods while fostering growth and self-reliance in mining-affected communities.",
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_700/v1735192305/news_vftigf.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682541/news_kbx9xy.jpg",
       linkText: "View More",
     },
     // {
@@ -70,7 +70,7 @@ const WhatWeDoCards = () => {
       description:
         "Bringing cutting-edge mining skills to the hinterlands of the Eastern Ghats, the 'Skill on Wheels' campaign empowers rural communities with mobile training units. This initiative bridges the gap between technology and opportunity, paving the way for a skilled and sustainable mining workforce.",
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735193450/WhatsApp_Image_2024-12-26_at_11.39.49_AM_hzpigw.jpg",
+        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761683113/WhatsApp_Image_2024-12-26_at_11.39.49_AM_rxsswk.jpg",
       linkText: "View More",
     },
     // {

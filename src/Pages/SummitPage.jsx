@@ -28,7 +28,7 @@ const SummitPage = () => {
       <EventSchedule />
       <Speakers />
       <Highlights />
-      <Gallery />
+      {/* <Gallery /> */}
     </div>
   );
 };

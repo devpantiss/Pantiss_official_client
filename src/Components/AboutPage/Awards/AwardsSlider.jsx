@@ -12,8 +12,8 @@ const awardsData = [
     title: "Star Performer Award",
     description: "#Beat_Plastic_Polution Initiative",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736231881/switch_on_foundation_y8gdr1.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761725434/GIU_AMA_199-06_ohmupk.png",
+      orgLogo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723963/c1e1380ffdd93941850639161032c834_do4ghj.png",
   },
   {
     year: "2022",
@@ -21,8 +21,8 @@ const awardsData = [
     description:
       "Youth Wes Leadership Award",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736232331/IIT_Madras_Logo.svg-removebg-preview_caneim.png"
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761725434/GIU_AMA_199-06_ohmupk.png",
+      orgLogo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723956/pngegg_3_bcfxvx.png"
   },
   {
     year: "2023",
@@ -30,8 +30,8 @@ const awardsData = [
     description:
       "Hrlping and safeguarding Migrants.",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736232659/Screenshot_2025-01-07_at_12.19.42_PM-removebg-preview_fpgnkb.png"
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761725434/GIU_AMA_199-06_ohmupk.png",
+      orgLogo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723948/kutumb_rrini4.jpg"
   },
   {
     year: "2023",
@@ -39,8 +39,8 @@ const awardsData = [
     description:
       "Striving Towards Making a Difference in Rural Odisha, Odisha Livlihood Mission",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1726221454/aw-p_jtm73o.webp",
-      orgLogo: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736231879/OLM_vffnrt.png"
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761725434/GIU_AMA_199-06_ohmupk.png",
+      orgLogo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761724428/olm_1_ow2qdb.png"
   },
 ];
 
@@ -104,19 +104,20 @@ const AwardsSlider = () => {
       </p>
       </div>
       
-      <Slider {...settings} className="h-[450px] pt-6">
+      <Slider {...settings} className="h-[450px]">
         {awardsData.map((award, index) => (
-          <div key={index}>
+          <div key={index} className="pb-16 pt-0">
             <div
               className="relative flex flex-col justify-center items-center text-center py-10 w-full h-[300px] px-12"
-              style={{
-                backgroundImage: `url(${award.imageUrl})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-              }}
+              // style={{
+              //   backgroundImage: `url(${award.imageUrl})`,
+              //   backgroundRepeat: "no-repeat",
+              //   backgroundSize: "contain",
+              //   backgroundPosition: "center",
+              // }}
             >
-              {/* <img
+                <img className="h-[350px] top-10 absolute z-50 mt-6" src={award.imageUrl}/>
+                {/* <img
                 src={award.imageUrl}
                 alt={award.title}
                 className="absolute -top-32 lg:right-[50px] right-[38px] mx-auto w-[350px] lg:w-[450px] h-[450px] my-4 object-contain"

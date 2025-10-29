@@ -14,7 +14,7 @@ const AboutBanner = () => {
         loop 
         playsInline
       >
-        <source src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1726137056/niyamgiri_j8uqux.mp4" />
+        <source src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761684857/WhatsApp_Video_2025-10-29_at_2.22.41_AM_pdhy39.mp4" />
       </video>
 
       {/* Translucent Black Overlay */}

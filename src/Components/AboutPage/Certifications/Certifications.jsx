@@ -6,16 +6,16 @@ import "./certifications.css";
 // Sample data for certifications
 const certificationsData = [
   {
-    title: "ISO 9000-2",
+    title: "ISO 9002",
     description: "Quality Assured",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376311/wp3715556-quality-control-wallpapers_ybhqe5.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729175/AdobeStock_636819188_Preview_fjxys3.jpg",
   },
   {
     title: "NSDC (National Skill Development Council)",
     description: "Industry Engagement Partner",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735377105/construction_1_k63jtq.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729202/hector-reyes-WRo7RQFpamA-unsplash_oyoxxb.jpg",
   },
   {
     title:
@@ -26,9 +26,9 @@ const certificationsData = [
   },
   {
     title: "SCMS (Skill Council for Mining Sector)",
-    description: "Authorized Training Partner)",
+    description: "Authorized Training Partner",
     imageUrl:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735376736/vladimir-patkachakov-Mx6Xmf_nbRk-unsplash_ej5umt.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729210/matthew-de-livera-4Gf51uY0YQE-unsplash_j3ih5t.jpg",
   },
   {
     title: "Indian Iron and Steel Sector Skill Council",
@@ -37,10 +37,10 @@ const certificationsData = [
       "https://www.man-es.com/images/default-source/default-album/iron-and-steel-applications-process-industry.jpg?sfvrsn=9667eca1_4",
   },
   {
-    title: "Indian Iron and Steel Sector Skill Council",
+    title: "Agriculture Skill Council of India",
     description: "Authorized Training Partner",
     imageUrl:
-      "https://www.trivenigroup.com/performence_image/ptb-certifications-img-1.webp",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729200/foto-murthy-lXVWulsnNQE-unsplash_evbtha.jpg",
   },
 ];
 

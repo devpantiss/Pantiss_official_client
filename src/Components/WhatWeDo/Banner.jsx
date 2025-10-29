@@ -2,11 +2,11 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="relative w-full h-[70vh] md:h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300">
+    <section className="relative w-full h-[70vh] md:h-screen overflow-hidden bg-gradient-to-br from-red-600 via-green-600 to-red-400">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1742369429/WhatsApp_Video_2025-03-19_at_12-VEED_qo9hv6.mp4"
+          src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761732286/WhatsApp_Video_2025-03-19_at_12-VEED_bxerlj.mp4"
           autoPlay
           loop
           muted

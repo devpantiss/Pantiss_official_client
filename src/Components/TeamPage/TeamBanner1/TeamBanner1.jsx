@@ -4,8 +4,8 @@ const TeamBanner1 = () => {
   return (
     <div
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center
-    lg:bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735217111/STALIN_SIR_S_PIC_2_j0cepz.jpg')] 
-    bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735398605/New_SIr_Pic01_cwi3po.jpg')]"
+    lg:bg-[url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761729551/STALIN_SIR_S_PIC_1_mper5p.jpg')] 
+    bg-[url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761729552/Sir_Potrait_Pic_wgxvnd.jpg')]"
     >
       {" "}
       {/* Add the URL to your background image */}

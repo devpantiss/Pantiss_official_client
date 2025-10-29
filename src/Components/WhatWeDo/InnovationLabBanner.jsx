@@ -6,8 +6,8 @@ const BannerContent = memo(() => (
   <div className="flex flex-col items-center gap-y-8 text-center">
     {/* UNIDO Logo */}
     <img
-      src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_200/v1727680521/pantiss_logo_kuiof0.png"
-      alt="UNIDO Logo"
+      src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761651882/logo_ympfzx.png"
+      alt="Pantiss Logo"
       className="h-32"
       loading="lazy"
     />
@@ -35,7 +35,7 @@ const InnovationLabBanner = () => {
     <section
       className="w-full py-12 flex"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_1200,q_auto:good/v1741175253/ramon-salinero-vEE00Hx5d0Q-unsplash_tpvfkz.jpg')`,
+        backgroundImage: `url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761733163/ramon-salinero-vEE00Hx5d0Q-unsplash_1_xnhkbk.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

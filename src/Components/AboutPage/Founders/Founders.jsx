@@ -5,12 +5,12 @@ const founders = [
   {
     name: 'Mr. Stalin Nayak',
     title: 'Founder & CEO',
-    image: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040843/stalin_sir_wbrcxh.jpg', // Replace with your image URL
+    image: 'https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg', // Replace with your image URL
   },
   {
     name: 'Dr. Sanjay Pradhan',
     title: 'Principal Advisor',
-    image: 'https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040837/Sanjay_sir_b5cld1.jpg', // Replace with your image URL
+    image: 'https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg', // Replace with your image URL
   }
 ];
 

@@ -31,14 +31,14 @@ const Donors = () => {
 //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735044527/pngwing.com_bt3ngg.png"
 //   ];
 
-  const multilateralPartners = [
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041153/Pantiss_bgidzk.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735041138/GIZ_bsb7es.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/United_Nations_Environment_Programme_Logo.svg_rp7oev.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/UNIDO_Logo.svg_khx62n.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045063/International_Labour_Organization_Logo.svg_fukuuq.png",
-    "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735045062/undp-logo-blue_wrebhi.svg"
-  ];
+const multilateralPartners = [
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682341/undp-logo-blue_tnhdpg.svg",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682345/GIZ_fh9cts.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682350/UNICEF_ujpduu.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682357/ILO_w4mb5n.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682365/UNIDO_Logo.svg_vu7hvv.png",
+  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682371/United_Nations_Environment_Programme_Logo.svg_bmaypr.png",
+];
 
   return (
     <div className="bg-white flex flex-col justify-center items-center container mx-auto py-6 px-12">
