@@ -6,7 +6,7 @@ const HeroKorba = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738939569/korba_ochtrv.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761914370/korba_cmy2er.jpg"
           alt="Empowering Communities in Korba"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

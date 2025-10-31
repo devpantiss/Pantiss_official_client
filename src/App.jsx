@@ -205,7 +205,7 @@ function App() {
         <Route path="/where-we-work/Chhattisgarh/korba" element={<Korba />} />
 
         {/* Assam Districts */}
-        <Route path="/where-we-work/assam/guwati" element={<Guwahati />} />
+        <Route path="/where-we-work/assam/guwahati" element={<Guwahati />} />
         <Route path="/where-we-work/assam/dispur" element={<Dispur />} />
 
 

@@ -4,7 +4,7 @@ import Heading from "../../../../Common/Heading";
 const Impact = () => {
   return (
     <div
-      className="p-6 bg-red-600 bg-[url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742122359/a-woman-farmer-with-digital-tablet-on-a-potato-field-smart-farming-and-precision-agriculture-4-0-modern-agricultural-technology-and-data-management-to-industry-farm-photo_w5f8tt.jpg')] bg-cover bg-center bg-fixed relative"
+      className="p-6 bg-red-600 bg-[url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761815486/karl-callwood-kdIFXVmEA2I-unsplash_uc5yxr.jpg')] bg-cover bg-center bg-fixed relative"
       style={{ backgroundAttachment: "fixed" }} // Ensures parallax effect
     >
       {/* Overlay for readability */}

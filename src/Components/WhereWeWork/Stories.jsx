@@ -8,25 +8,25 @@ import "slick-carousel/slick/slick-theme.css";
 const stories = [
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388951/a9a42559-8f73-4b9c-ab85-15a03168ded5_ws6p9s.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815148/GMC10092024_162547_jhwc3q.jpg",
     text: "Transforming lives in Keonjhar by training local youth in sustainable mining practices, creating employment opportunities in Odisha’s iron ore heartland.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1742126668/matthew-henry-yETqkLnhsUI-unsplash_ayeg4b.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814993/matthew-henry-yETqkLnhsUI-unsplash_u7sm9z.jpg",
     text: "Restoring degraded lands in Sundargarh with renewable energy projects, empowering mining villages with solar-powered livelihoods.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1739283474/WhatsApp_Image_2025-02-11_at_7.45.14_PM_zual7i.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813875/GMC06072025_170825_qsx9f7.jpg",
     text: "Upskilling women and tribal communities in Sukinda’s chromite belt, fostering economic resilience through vocational education.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_800/v1740389052/AdobeStock_574000874_Preview_y3iqiv.jpg",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815054/AdobeStock_574000874_Preview_md91z2.jpg",
     text: "Reviving water resources in Jharsuguda’s coal mining areas with community-led watershed management, ensuring sustainable agriculture.",
     bgColor: "bg-white",
   },

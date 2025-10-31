@@ -8,18 +8,71 @@ const tabs = [
     name: "Skilling",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Skilling</h2>
-        <p className="text-gray-700">
-          In Anugul District, we are committed to empowering individuals through our comprehensive and specialized training programs tailored to meet the demands of the modern workforce. Our initiatives include Excavator and HEMM (Heavy Earth Moving Machinery) Operator Training, designed to provide hands-on experience and technical expertise. These programs are meticulously crafted to equip participants with industry-relevant skills, ensuring they are well-prepared for employment opportunities in the thriving mining and construction sectors. By bridging the gap between local talent and industry needs, we aim to foster economic growth, enhance employability, and contribute to the sustainable development of the region.
+        <h2 className="text-3xl font-bold mb-4">Skilling</h2>
+        <p className="text-gray-700 mb-6">
+          In Anugul District, we are committed to empowering individuals through
+          comprehensive and specialized training programs tailored to meet the
+          demands of the modern workforce. Our initiatives include a range of
+          technical and vocational programs designed to provide hands-on
+          experience and industry-relevant skills. These programs are conducted
+          in collaboration with reputed partners like <b>SCMS, MCL,</b> and{" "}
+          <b>Nitcon</b>, ensuring strong industry linkages and placement
+          opportunities. Through these initiatives, we aim to foster economic
+          growth, enhance employability, and contribute to the sustainable
+          development of the region.
         </p>
-        <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg"
-          alt="Skilling"
-          className="mt-4 rounded-lg shadow-lg"
-        />
+
+        {/* Training Programs List */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              title: "HEMM Mechanic Training",
+              subtitle: "Under Nua Odisha (with SCMS)",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+            },
+            {
+              title: "Industrial Welder Training",
+              subtitle: "Under Saksham (with MCL & Nitcon)",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819859/WhatsApp_Image_2025-10-30_at_3.30.06_PM_mhnoko.jpg",
+            },
+            {
+              title: "Industrial Electrician Training",
+              subtitle: "Under Saksham (with MCL & Nitcon)",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819854/images_5_w5lly4.jpg",
+            },
+            {
+              title: "Dumper Operator Training",
+              subtitle: "Under Saksham (with MCL & Nitcon)",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819881/WhatsApp_Image_2025-10-30_at_3.38.18_PM_avyast.jpg",
+            },
+            {
+              title: "Excavator Operator Training",
+              subtitle: "Under Saksham (with MCL & Nitcon)",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg",
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-red-600 mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 font-medium">{item.subtitle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </>
     ),
   },
+
   {
     name: "Mining Village Rehabilitation & Resettlement",
     content: (
@@ -28,32 +81,28 @@ const tabs = [
           Mining Village Rehabilitation & Resettlement
         </h2>
         <p className="text-gray-700">
-          Our efforts in Anugul District extend to the rehabilitation and resettlement of communities impacted by mining activities, reflecting our deep commitment to social responsibility. We strive to ensure that affected families are provided with not just basic necessities but also opportunities for a dignified and sustainable future. This includes access to well-planned housing, robust livelihood support through skill development and employment opportunities, and essential social services such as education and healthcare. Our holistic approach emphasizes active community engagement, participatory decision-making, and long-term sustainability, ensuring that displaced populations can rebuild their lives with resilience and hope while maintaining their cultural and social fabric.
+          Our efforts in Anugul District extend to the rehabilitation and
+          resettlement of communities impacted by mining activities, reflecting
+          our deep commitment to social responsibility. We strive to ensure that
+          affected families are provided with not just basic necessities but
+          also opportunities for a dignified and sustainable future. This
+          includes access to well-planned housing, robust livelihood support
+          through skill development and employment opportunities, and essential
+          social services such as education and healthcare. Our holistic
+          approach emphasizes active community engagement, participatory
+          decision-making, and long-term sustainability, ensuring that displaced
+          populations can rebuild their lives with resilience and hope while
+          maintaining their cultural and social fabric.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761813824/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg"
           alt="Mining Village Rehabilitation"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>
     ),
   },
-  // {
-  //   name: "Mine Reclamation",
-  //   content: (
-  //     <>
-  //       <h2 className="text-3xl font-bold mb-2">Mine Reclamation</h2>
-  //       <p className="text-gray-700">
-  //         Anugul District has witnessed significant mining activity over the years, leaving behind landscapes that require careful restoration. Our mine reclamation initiatives are dedicated to transforming these mined-out areas into thriving ecosystems once again. Through a combination of afforestation efforts, where we plant native species to restore biodiversity, and advanced soil restoration techniques to revive the land's fertility, we work tirelessly to heal the environment. Additionally, we involve local communities in these ecological rehabilitation efforts, fostering a sense of ownership and creating opportunities for sustainable livelihoods while ensuring the land is returned to a state that benefits both nature and people.
-  //       </p>
-  //       <img
-  //         src="https://bracinternational.org/wp-content/uploads/2024/mine-reclamation.jpg"
-  //         alt="Mine Reclamation"
-  //         className="mt-4 rounded-lg shadow-lg"
-  //       />
-  //     </>
-  //   ),
-  // },
+
   {
     name: "Nutrition & Well-being in Mining Villages",
     content: (
@@ -62,10 +111,17 @@ const tabs = [
           Nutrition & Well-being in Mining Villages
         </h2>
         <p className="text-gray-700">
-          In the mining villages of Anugul District, we recognize that health and well-being are foundational to thriving communities, which is why we have launched extensive programs to combat malnutrition and elevate living standards. Our initiatives focus on ensuring consistent access to nutritious food through community kitchens and agricultural support, clean and safe drinking water through infrastructure improvements, and comprehensive healthcare services tailored to the needs of rural populations. We place special emphasis on maternal health programs, providing prenatal and postnatal care to support healthy pregnancies, alongside school nutrition schemes that ensure children receive balanced meals to aid their physical and cognitive development. By addressing these critical areas, we aim to build healthier, stronger communities capable of overcoming the challenges posed by their environment.
+          In the mining villages of Anugul District, we recognize that health
+          and well-being are foundational to thriving communities. Our
+          initiatives focus on ensuring access to nutritious food, clean
+          drinking water, and healthcare services. We prioritize maternal health
+          programs, prenatal and postnatal care, and school nutrition schemes
+          that ensure children receive balanced meals. Through these integrated
+          interventions, we aim to build healthier, stronger communities capable
+          of overcoming the challenges posed by their environment.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761813698/PIC-13_fdngmf.jpg"
           alt="Nutrition & Well-being"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -80,6 +136,7 @@ const DetailsAnugul = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
+
       {/* Desktop View */}
       <div className="hidden md:block">
         <Tab.Group>
@@ -98,6 +155,7 @@ const DetailsAnugul = () => {
                 </Tab>
               ))}
             </Tab.List>
+
             <Tab.Panels className="w-3/4 p-4">
               {tabs.map((tab, index) => (
                 <Tab.Panel key={index}>{tab.content}</Tab.Panel>

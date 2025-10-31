@@ -6,7 +6,7 @@ const HeroJajapur = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737030424/WhatsApp_Image_2025-01-14_at_7.28.55_PM_g9y35l.jpg"
+          src="https://jajpurbusiness.com/wp-content/uploads/2025/05/image-3-1536x864.png"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

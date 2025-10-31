@@ -13,7 +13,7 @@ const tabs = [
           Our skilling program in facility management in Koderma is a thorough training initiative designed to prepare individuals for managing the maintenance, operations, and safety of diverse facilities. The curriculum encompasses a wide range of topics, including building maintenance, HVAC system operations, electrical and plumbing repairs, and compliance with rigorous safety standards. Participants engage in practical, hands-on sessions and simulations that mirror real-world scenarios, enabling them to develop the technical and managerial skills needed to ensure operational efficiency. The program also focuses on fostering a safe and comfortable environment for occupants, covering aspects like waste management and emergency preparedness. By equipping trainees with these comprehensive abilities, we empower them to excel in roles across industrial, commercial, and residential settings, contributing to Koderma’s infrastructure development and community well-being.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740388680/81fb4af3-7318-4950-81fb-78cd982cf86f_v00f1u.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg"
           alt="Skilling in Facility Management"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -29,7 +29,7 @@ const tabs = [
           The Agricultural Recognition of Prior Learning (RPL) program in Koderma is an innovative effort to acknowledge and enhance the expertise of farmers and agricultural workers, building on their existing knowledge gained through years of hands-on experience. This initiative offers a blend of practical training, expert-led workshops, and modern agricultural techniques, such as sustainable farming practices, crop rotation, and integrated pest management. We assess participants’ prior skills and provide customized upskilling opportunities to improve productivity, adopt eco-friendly methods, and increase income potential. Upon completion, individuals receive certifications that validate their capabilities, enhancing their credibility and access to markets or financial support. By promoting sustainable agriculture and empowering rural communities, this program strengthens Koderma’s agrarian economy and supports long-term food security and environmental health.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739292358/crops-growing-in-thailand_uc3ttv.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761834809/collab-media-syktLyfonaI-unsplash_h2kvz7.jpg"
           alt="Agricultural RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />

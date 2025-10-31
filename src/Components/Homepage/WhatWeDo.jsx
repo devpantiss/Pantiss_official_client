@@ -73,7 +73,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "https://circular-economy.mowash.com",
     backgroundImage:
-      "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734154553/Screenshot_2024-12-14_at_10.50.28_AM_srv3cm.png",
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761732864/Sanitation_workers_fnmuqr.jpg",
   },
   {
     id: 6,

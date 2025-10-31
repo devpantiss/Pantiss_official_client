@@ -6,7 +6,7 @@ const HeroAnugul = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325296/WhatsApp_Image_2025-01-08_at_12.57.41_PM_kkfzkb.jpg"
+          src="https://odishatourism.gov.in/content/dam/tourism/home/discover/major-cities/angul/banner_angul.jpg"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

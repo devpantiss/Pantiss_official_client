@@ -13,7 +13,7 @@ const tabs = [
           Our Mining Vehicles Operator program in Bokaro is a comprehensive training initiative designed to equip individuals with the skills needed to operate heavy machinery essential to mining operations, such as dump trucks, excavators, and bulldozers. The program offers an immersive learning experience that includes hands-on training with real equipment, in-depth instruction on safety protocols, and operational techniques tailored to the demanding conditions of mining environments. Participants learn to navigate complex terrains, perform routine maintenance checks, and adhere to industry-standard safety measures to minimize risks. Upon completion, trainees receive certifications that enhance their employability, opening doors to lucrative careers in the mining sector. This initiative not only boosts individual productivity but also supports Bokaro’s industrial growth by producing a skilled workforce capable of driving efficient and safe mining operations.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450493/TNIE_import_2023_3_6_original_Illegalcoalmining_cthtx2.avif"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761819881/WhatsApp_Image_2025-10-30_at_3.38.18_PM_avyast.jpg"
           alt="Mining Vehicles Operator"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -29,7 +29,7 @@ const tabs = [
           Our Plastic Waste Recycling Plant Construction initiative in Bokaro is a forward-thinking project aimed at addressing environmental challenges by establishing sustainable facilities to recycle plastic waste. This program focuses on reducing pollution and promoting a circular economy through the development of advanced recycling infrastructure. We bring together technical expertise, innovative design, and community engagement to construct plants that efficiently process plastic waste into reusable materials. The initiative includes training local workers in recycling technologies, fostering environmental awareness, and collaborating with stakeholders to ensure long-term success. By transforming waste into valuable resources, these plants benefit local ecosystems, reduce landfill dependency, and create economic opportunities through job creation and material markets. This effort reflects our commitment to sustainability and enhancing the quality of life in Bokaro.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740389668/plastic_waste_anmisu.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761895733/AdobeStock_55775771_Preview_zaohly.jpg"
           alt="Plastic Waste Recycling Plant Construction"
           className="mt-4 rounded-lg shadow-lg"
         />

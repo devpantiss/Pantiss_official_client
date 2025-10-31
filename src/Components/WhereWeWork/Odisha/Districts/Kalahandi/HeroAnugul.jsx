@@ -6,7 +6,7 @@ const HeroKalahandi = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738936685/Kalahandi__Odisha__India_-_panoramio__1_wh4m4z.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761844548/jp-sheard-K6Ud3t3uJTc-unsplash_ht0rkw.jpg"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

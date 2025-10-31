@@ -13,7 +13,7 @@ const tabs = [
           In Korba, our specialized training program for Excavator Operators is meticulously designed to empower individuals with the advanced technical skills and safety knowledge essential for thriving in the mining and construction sectors. This initiative provides hands-on experience operating heavy machinery, focusing on precision excavation techniques, equipment maintenance, and adherence to rigorous safety protocols. Participants undergo practical training in real-world scenarios, learning to navigate challenging terrains and optimize machine performance while minimizing risks. The program also includes modules on environmental considerations and operational efficiency, ensuring operators contribute to sustainable practices. Upon completion, trainees receive certifications that enhance their employability, opening doors to rewarding careers and supporting Korba’s industrial landscape by fostering a skilled workforce capable of driving productivity and safety.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325281/WhatsApp_Image_2025-01-08_at_1.03.30_PM_fx0igb.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg"
           alt="Skilling - Excavator Operator"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -29,7 +29,7 @@ const tabs = [
           The Recognition of Prior Learning (RPL) program in Korba is a forward-thinking initiative tailored to assess, validate, and certify the skills of experienced workers in the mining and industrial sectors, recognizing their expertise gained through years of practical work rather than formal education. This program offers a structured evaluation process, followed by customized upskilling opportunities that address specific gaps and introduce modern techniques relevant to today’s industries. Participants benefit from expert-led assessments, hands-on workshops, and access to updated tools and methodologies, ensuring their skills align with current standards. Upon successful completion, individuals receive formal certifications that significantly improve their job prospects, facilitate career progression, and enhance their professional credibility. By bridging the gap between experience and recognition, this initiative strengthens Korba’s workforce, promoting economic growth and individual empowerment.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736325286/WhatsApp_Image_2025-01-08_at_1.05.17_PM_hgvk7u.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761914537/workers_rjwzq5.jpg"
           alt="RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />

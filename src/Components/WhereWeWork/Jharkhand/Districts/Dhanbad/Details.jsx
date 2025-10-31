@@ -13,7 +13,7 @@ const tabs = [
           Our Recognition of Prior Learning (RPL) Program in Dhanbad is a transformative effort designed to validate and enhance the skills and knowledge individuals have acquired through practical experience rather than traditional classroom education. This initiative offers a structured assessment process that evaluates participants’ existing competencies across various trades and industries, followed by tailored upskilling sessions to bridge any gaps. Participants benefit from expert guidance, practical workshops, and access to modern tools, ensuring they are equipped to meet current market demands. Upon completion, individuals receive industry-recognized certifications that significantly boost their employability and open pathways to career advancement. By acknowledging informal learning and fostering professional growth, this program supports a wide range of sectors in Dhanbad, contributing to both individual success and regional economic development.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740387857/56cff1ce-3f2c-477a-98b9-74fd979e24fc_j3m2x6.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761813688/istockphoto-1125843699-612x612_hlzyea.jpg"
           alt="RPL Program"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -29,7 +29,7 @@ const tabs = [
           Our Mining Land Reclamation initiative in Dhanbad is a comprehensive approach to restoring degraded mining areas, transforming them into productive or natural landscapes that benefit both the environment and local communities. This program employs sustainable practices such as reforestation, soil stabilization, and advanced water management techniques to rehabilitate land affected by mining activities. We work closely with environmental experts and local stakeholders to replenish biodiversity, prevent erosion, and improve soil fertility, ensuring long-term ecological recovery. Beyond restoration, the initiative creates opportunities for community use, such as agroforestry or recreational spaces, fostering sustainable livelihoods and enhancing quality of life. By integrating scientific methods with community needs, this effort underscores our commitment to environmental stewardship and supports Dhanbad’s transition toward a greener, more resilient future.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1740391342/reclamation_lufvxk.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761913215/pexels-tamba09-952846_wcxtnc.jpg"
           alt="Mining Land Reclamation"
           className="mt-4 rounded-lg shadow-lg"
         />

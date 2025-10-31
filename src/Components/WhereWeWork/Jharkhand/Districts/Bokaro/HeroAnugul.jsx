@@ -6,7 +6,7 @@ const HeroBokaro = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738937627/bokaro_qiwlsf.jpg"
+          src="https://pbs.twimg.com/media/DCr1SaFXsAAlVZf.jpg"
           alt="Bokaro Steel City"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

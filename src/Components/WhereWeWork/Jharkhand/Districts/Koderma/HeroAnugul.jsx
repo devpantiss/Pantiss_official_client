@@ -6,7 +6,7 @@ const HeroKoderma = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738938810/koderma_sao0st.jpg"
+          src="https://www.samco.in/knowledge-center/wp-content/uploads/cache/2025/03/Power-Mech-Share-Price-Rises-6_-After-Securing-%E2%82%B9579-Crore-BHEL-Order/850566405.webp"
           alt="Koderma Landscape"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

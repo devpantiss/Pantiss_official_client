@@ -6,7 +6,7 @@ const HeroSundargarh = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738925316/Sarafgarh-Dam-Sundargarh_dskqf9.webp"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761841346/pexels-pok-rie-33563-1188532_pzfnru.jpg"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

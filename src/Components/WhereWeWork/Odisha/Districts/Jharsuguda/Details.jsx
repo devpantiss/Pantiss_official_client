@@ -5,18 +5,49 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Skilling - Dumper Operator",
+    name: "Skilling",
     content: (
       <>
-        <h2 className="text-3xl font-bold mb-2">Skilling</h2>
-        <p className="text-gray-700 text-[18px]">
-          In Jharsuguda, we offer comprehensive and specialized training programs specifically designed for Dumper Operators. This skilling initiative is carefully crafted to equip individuals with both the technical expertise and practical skills necessary for securing employment in the mining and logistics sectors. Our program includes hands-on training with modern equipment, safety protocols, and operational techniques, ensuring participants are well-prepared for real-world challenges. By fostering these abilities, we aim to create sustainable livelihoods, empower local communities, and contribute to the economic development of the region. This initiative also emphasizes career growth, offering participants opportunities to advance in their professions while supporting the industrial needs of Jharsuguda.
+        <h2 className="text-3xl font-bold mb-6">Skilling Initiatives in Jharsuguda</h2>
+        <p className="text-gray-700 text-[18px] mb-6">
+          Under the <b>District Mineral Foundation (DMF)</b> and <b>Skill Council for Mining Sector (SCMS)</b>,
+          our skilling initiatives in Jharsuguda focus on developing a technically competent workforce
+          through job-oriented training programs. The training integrates theory, practical exposure,
+          and hands-on sessions conducted in collaboration with industry experts.
         </p>
-        <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735301666/IMG_9085_tkrncl.jpg"
-          alt="Skilling - Dumper Operator"
-          className="mt-4 rounded-lg shadow-lg"
-        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          {[
+            {
+              title: "Industrial Electrician (Hirma)",
+              desc: "Focused on electrical installation, troubleshooting, and maintenance for industrial systems at Hirma. Participants gain hands-on skills to meet modern industrial demands.",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819854/images_5_w5lly4.jpg",
+            },
+            {
+              title: "Dumper Operator (Malda)",
+              desc: "Comprehensive training in the operation, safety, and maintenance of dump trucks used in mining and material handling at Malda.",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819881/WhatsApp_Image_2025-10-30_at_3.38.18_PM_avyast.jpg",
+            },
+            {
+              title: "Excavator Operator (Malda)",
+              desc: "Practical and simulation-based training in handling and maintaining excavators for mining and construction operations at Malda.",
+              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg",
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-4 transition"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="rounded-xl mb-3 w-full h-48 object-cover"
+              />
+              <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
+              <p className="text-gray-600 text-[16px]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </>
     ),
   },
@@ -26,10 +57,14 @@ const tabs = [
       <>
         <h2 className="text-3xl font-bold mb-2">Indigenous Community Empowerment</h2>
         <p className="text-gray-700 text-[18px]">
-          Our initiatives in Jharsuguda are deeply committed to empowering indigenous communities through a multifaceted approach that blends cultural preservation with modern development. We focus on safeguarding the rich cultural heritage of these communities by supporting traditional practices, languages, and crafts, while simultaneously providing access to quality education and vocational training. Our programs are designed to promote sustainable economic opportunities, such as eco-friendly entrepreneurship and agricultural innovation, tailored to the unique needs of the region. By collaborating with local leaders and organizations, we work toward social inclusion, ensuring that indigenous voices are heard and respected in decision-making processes. The goal is to foster self-sufficiency, build resilient communities, and create a harmonious balance between tradition and progress, uplifting the overall quality of life in Jharsuguda.
+          Our initiatives in Jharsuguda are deeply committed to empowering indigenous communities
+          through cultural preservation and sustainable development. We promote access to education,
+          skill development, and livelihood generation while respecting traditional knowledge and
+          social inclusion. This holistic approach ensures communities grow economically while
+          retaining their unique identity.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737442574/Chhattisgarh_j4drsy.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761840260/odisha-2368219_1280_hspude.jpg"
           alt="Indigenous Community Empowerment"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -44,6 +79,7 @@ const DetailsJharsuguda = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
+
       {/* Desktop View */}
       <div className="hidden md:block">
         <Tab.Group>
@@ -53,7 +89,7 @@ const DetailsJharsuguda = () => {
                 <Tab
                   key={index}
                   className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-[18px] text-gray-700 hover:bg-gray-100 focus:outline-none ${
+                    `block w-full py-3 px-4 text-left font-medium text-[18px] text-gray-700 hover:bg-gray-100 focus:outline-none ${
                       selected ? "bg-red-600 text-white" : ""
                     }`
                   }
@@ -62,7 +98,7 @@ const DetailsJharsuguda = () => {
                 </Tab>
               ))}
             </Tab.List>
-            <Tab.Panels className="w-3/4 p-4">
+            <Tab.Panels className="w-3/4 p-6">
               {tabs.map((tab, index) => (
                 <Tab.Panel key={index}>{tab.content}</Tab.Panel>
               ))}
@@ -77,7 +113,7 @@ const DetailsJharsuguda = () => {
           <div key={index} className="border-b border-gray-200">
             <button
               onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-[18px] text-gray-700 focus:outline-none"
+              className="w-full flex justify-between items-center py-3 px-4 text-left font-medium text-[18px] text-gray-700 focus:outline-none"
             >
               {tab.name}
               <ChevronDown

@@ -6,7 +6,7 @@ const HeroKeonjhar = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738935983/dry-hill-sunny-day_hgnuof.jpg"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/4d/e1/f0/gundichaghai-waterfall.jpg?w=600&h=400&s=1"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

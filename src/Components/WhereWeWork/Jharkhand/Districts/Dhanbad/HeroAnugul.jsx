@@ -6,7 +6,7 @@ const HeroDhanbad = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738938422/dhanbad_t9agnb.jpg"
+          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761912985/pexels-vikashkr50-17971796_p3mknd.jpg"
           alt="Dhanbad Mining City"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
