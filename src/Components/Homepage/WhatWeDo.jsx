@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { useNavigate } from "react-router-dom"; // ✅ For internal navigation
+import { useNavigate } from "react-router-dom";
 import Heading from "../../Components/Common/Heading";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -18,8 +18,8 @@ const slides = [
       { text: "Digital Dashboard" },
       { text: "Social Audit" },
     ],
-    buttons: [{ text: "Explore", link: "https://users.mowash.in" }],
-    buttonLink: "#",
+    buttonText: "Explore",
+    buttonLink: "https://users.mowash.in",
     backgroundImage:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708443/Adobe_Express_-_file_afc9wt.jpg",
   },
@@ -94,14 +94,20 @@ const slides = [
 const WhatWeDo = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  const navigate = useNavigate(); // ✅ For internal routing
+  const navigate = useNavigate();
 
   const handleButtonClick = (slide) => {
-    if ([2, 3, 4, 6].includes(slide.id)) {
-      // Internal navigation
+    if (slide.id === 2) {
+      // ✅ Open Pantiss Skill Universe in new tab
+      window.open("https://pantiss-skill-universe.vercel.app/", "_blank");
+    } else if (slide.id === 5) {
+      // ✅ Open Mowash in new tab
+      window.open("https://www.mowash.in", "_blank");
+    } else if ([3, 4, 6].includes(slide.id)) {
+      // Internal navigation for these
       navigate(slide.buttonLink);
     } else {
-      // External link
+      // Default (external links)
       window.open(slide.buttonLink, "_blank");
     }
   };
@@ -112,7 +118,11 @@ const WhatWeDo = () => {
         <div className="flex justify-center items-center">
           <div className="text-center max-w-4xl flex flex-col justify-center items-center">
             <div className="flex mx-auto justify-center max-w-7xl">
-              <Heading text="WHAT WE DO" color="text-black" bgColor="bg-red-600" />
+              <Heading
+                text="WHAT WE DO"
+                color="text-black"
+                bgColor="bg-red-600"
+              />
             </div>
           </div>
         </div>
