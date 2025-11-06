@@ -4,16 +4,23 @@ const teamData = [
   // Leadership
   {
     name: "Dr. Sanjaya Pradhan",
-    title: "Principal Advisor (Risk Management & Global Representation)",
+    title: "Director cum Principal Advisor (Risk Management & Global Representation)",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg",
     department: "leadership",
   },
   {
     name: "Mr. Stalin Nayak",
-    title: "Founder & CEO",
+    title: "Director cum CEO",
     image:
       "https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg",
+    department: "leadership",
+  },
+  {
+    name: "Mrs. Indumati Nanda",
+    title: "Director cum Chief Strategy Officer",
+    image:
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
     department: "leadership",
   },
   {
@@ -23,13 +30,7 @@ const teamData = [
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618716/deepan_2_pliefj.jpg",
     department: "leadership",
   },
-  {
-    name: "Mrs. Indumati Nanda",
-    title: "Chief Strategy Officer",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
-    department: "leadership",
-  },
+  
 
   // Finance
   {
