@@ -4,16 +4,23 @@ const teamData = [
   // Leadership
   {
     name: "Dr. Sanjaya Pradhan",
-    title: "Principal Advisor (Risk Management & Global Representation)",
+    title: "Director cum Principal Advisor (Risk Management & Global Representation)",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg",
     department: "leadership",
   },
   {
     name: "Mr. Stalin Nayak",
-    title: "Founder & CEO",
+    title: "Director cum CEO",
     image:
       "https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg",
+    department: "leadership",
+  },
+  {
+    name: "Mrs. Indumati Nanda",
+    title: "Director cum Chief Strategy Officer",
+    image:
+      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
     department: "leadership",
   },
   {
@@ -24,12 +31,13 @@ const teamData = [
     department: "leadership",
   },
   {
-    name: "Mrs. Indumati Nanda",
-    title: "Chief Strategy Officer",
+    name: "Ms. Sushree Gayatri Jena",
+    title: "Chief Operations Officer",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760618509/indumaam_2_ilh3gq.jpg",
+      "https://res.cloudinary.com/dcbtjeyde/image/upload/v1764220150/WhatsApp_Image_2025-11-25_at_9.34.16_PM_exneju.jpg",
     department: "leadership",
   },
+  
 
   // Finance
   {
@@ -162,13 +170,6 @@ const teamData = [
     title: "Lead, Social Compliance & Safeguarding",
     image:
       "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619425/braja_2_l7wbb8.jpg",
-    department: "monitoring",
-  },
-  {
-    name: "Ms. Sushree Gayatri Jena",
-    title: "Lead, Monitoring, Evaluation, Accountability & Learning",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760094963/WhatsApp_Image_2025-10-09_at_6.51.34_PM_jyqzas.jpg",
     department: "monitoring",
   },
   {
