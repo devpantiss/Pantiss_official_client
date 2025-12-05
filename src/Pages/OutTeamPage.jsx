@@ -9,7 +9,7 @@ const OutTeamPage = () => {
     <div>
       <TeamBanner1 />
       <ImpactBanner
-        backgroundVideo="https://res.cloudinary.com/djtzx6wo7/video/upload/v1761574973/3129785-uhd_3840_2160_25fps_ggzbsq.mp4"
+        backgroundVideo="/assets/videos/Teams_Impact.mp4"
         headline="Empowering Change"
         subHeadline="Building impact through innovation and community action."
         cta={{ text: "Explore More", onClick: () => alert("CTA clicked!") }}
