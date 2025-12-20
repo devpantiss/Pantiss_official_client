@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heroanugul = () => {
+const HeroAngul = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
@@ -39,4 +39,4 @@ const Heroanugul = () => {
   );
 };
 
-export default Heroanugul;
+export default HeroAngul;

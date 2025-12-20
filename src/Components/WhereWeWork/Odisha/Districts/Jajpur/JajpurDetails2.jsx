@@ -47,7 +47,7 @@ const GalleryImage = memo(({ image, index }) => (
 ));
 GalleryImage.displayName = "GalleryImage";
 
-const Details2 = () => {
+const JajpurDetails2 = () => {
   // Memoized slider settings
   const sliderSettings = useMemo(
     () => ({
@@ -132,4 +132,4 @@ const Details2 = () => {
   );
 };
 
-export default memo(Details2);
+export default memo(JajpurDetails2);

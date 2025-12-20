@@ -34,7 +34,6 @@ import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
 import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
 import Assam from "./Pages/WhereWeWorkPages/Assam";
 import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
-import Jajapur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajapur";
 import Jharsuguda from "./Pages/WhereWeWorkPages/OdishaDistricts/Jharsuguda";
 import Sundargarh from "./Pages/WhereWeWorkPages/OdishaDistricts/Sundargarh";
 import Keonjhar from "./Pages/WhereWeWorkPages/OdishaDistricts/Keonjhar";
@@ -62,6 +61,7 @@ import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMak
 // import ConnectingRemoteMiningHabitations from "./Pages/WhatWeDo/ConnectingRemoteMiningHabitations";
 import InnovationLabPage from "./Pages/InnovationLabPage";
 import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
+import Jajpur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajpur";
 
 function App() {
   const location = useLocation();
@@ -174,7 +174,7 @@ function App() {
 
         {/* Odisha Districts */}
         <Route path="/where-we-work/odisha/angul" element={<Anugul />} />
-        <Route path="/where-we-work/odisha/jajapur" element={<Jajapur />} />
+        <Route path="/where-we-work/odisha/jajpur" element={<Jajpur />} />
         <Route
           path="/where-we-work/odisha/jharsuguda"
           element={<Jharsuguda />}

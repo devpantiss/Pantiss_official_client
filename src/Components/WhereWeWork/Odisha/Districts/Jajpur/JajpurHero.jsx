@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroJajapur = () => {
+const JajpurHero = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
@@ -42,4 +42,4 @@ const HeroJajapur = () => {
   );
 };
 
-export default HeroJajapur;
+export default JajpurHero;

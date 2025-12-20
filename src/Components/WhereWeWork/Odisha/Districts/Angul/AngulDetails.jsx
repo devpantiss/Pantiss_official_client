@@ -130,7 +130,7 @@ const tabs = [
   },
 ];
 
-const Detailsanugul = () => {
+const AngulDetails = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
@@ -190,4 +190,4 @@ const Detailsanugul = () => {
   );
 };
 
-export default Detailsanugul;
+export default AngulDetails;

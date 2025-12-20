@@ -48,7 +48,7 @@ const GalleryImage = memo(({ image, index }) => (
 ));
 GalleryImage.displayName = "GalleryImage";
 
-const Details2 = () => {
+const AngulDetails2 = () => {
   // Memoized slider settings
   const sliderSettings = useMemo(
     () => ({
@@ -133,4 +133,4 @@ const Details2 = () => {
   );
 };
 
-export default memo(Details2);
+export default memo(AngulDetails2);

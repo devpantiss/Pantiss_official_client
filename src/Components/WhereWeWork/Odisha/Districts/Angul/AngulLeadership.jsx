@@ -16,7 +16,7 @@ const leadershipTeam = [
   },
 ];
 
-const Leadership = () => {
+const AngulLeadership = () => {
   return (
     <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -51,4 +51,4 @@ const Leadership = () => {
   );
 };
 
-export default Leadership;
+export default AngulLeadership;

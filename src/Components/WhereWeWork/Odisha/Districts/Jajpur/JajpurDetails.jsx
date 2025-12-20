@@ -130,7 +130,7 @@ const tabs = [
   },
 ];
 
-const DetailsJajapur = () => {
+const JajpurDetails = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
@@ -190,4 +190,4 @@ const DetailsJajapur = () => {
   );
 };
 
-export default DetailsJajapur;
+export default JajpurDetails;

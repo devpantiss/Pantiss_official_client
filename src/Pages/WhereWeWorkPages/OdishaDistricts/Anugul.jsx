@@ -1,11 +1,11 @@
 import React from "react";
-import Heroanugul from "../../../Components/WhereWeWork/Odisha/Districts/anugul/Heroanugul";
-import Impact from "../../../Components/WhereWeWork/Odisha/Districts/anugul/Impact";
-import Detailsanugul from "../../../Components/WhereWeWork/Odisha/Districts/anugul/Details";
-import Details2 from "../../../Components/WhereWeWork/Odisha/Districts/anugul/Details2";
-import Leadership from "../../../Components/WhereWeWork/Odisha/Districts/anugul/Leadership";
 import ClientsMarquee from "../../../Components/Common/ClientsMarquee";
-import AngulReports from "../../../Components/WhereWeWork/Odisha/Districts/Anugul/AngulReports";
+import HeroAngul from "../../../Components/WhereWeWork/Odisha/Districts/Angul/HeroAngul";
+import AngulImpact from "../../../Components/WhereWeWork/Odisha/Districts/Angul/AngulImpact";
+import AngulDetails from "../../../Components/WhereWeWork/Odisha/Districts/Angul/AngulDetails";
+import AngulDetails2 from "../../../Components/WhereWeWork/Odisha/Districts/Angul/AngulDetails2";
+import AngulReports from "../../../Components/WhereWeWork/Odisha/Districts/Angul/AngulReports";
+import AngulLeadership from "../../../Components/WhereWeWork/Odisha/Districts/Angul/AngulLeadership";
 
 const Anugul = () => {
   const keonjharClients = [
@@ -19,17 +19,17 @@ const Anugul = () => {
 
   return (
     <div>
-      <Heroanugul />
-      <Impact />
-      <Detailsanugul />
+      <HeroAngul />
+      <AngulImpact />
+      <AngulDetails />
       <ClientsMarquee
         district="CLIENTS"
         clients={keonjharClients}
         speed={30}
       />
-      <Details2 />
+      <AngulDetails2 />
       <AngulReports />
-      <Leadership />
+      <AngulLeadership />
     </div>
   );
 };
