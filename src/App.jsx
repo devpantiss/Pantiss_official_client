@@ -61,7 +61,7 @@ import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMak
 // import WaterbodyRestorationInMines from "./Pages/WhatWeDo/WaterbodyRestorationInMines";
 // import ConnectingRemoteMiningHabitations from "./Pages/WhatWeDo/ConnectingRemoteMiningHabitations";
 import InnovationLabPage from "./Pages/InnovationLabPage";
-import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/anugul";
+import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
 
 function App() {
   const location = useLocation();
