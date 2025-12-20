@@ -13,7 +13,7 @@ const ImpactJajapur = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}
         <Heading
-          text="OUR IMPACT IN JAJAPUR"
+          text="OUR IMPACT IN JAJPUR"
           color="text-white" // Changed to white for contrast against dark overlay
           bgColor="bg-red-600"
         />

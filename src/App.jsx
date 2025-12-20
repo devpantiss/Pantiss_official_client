@@ -34,7 +34,7 @@ import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
 import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
 import Assam from "./Pages/WhereWeWorkPages/Assam";
 import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
-import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
+import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/anugul";
 import Jajapur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajapur";
 import Jharsuguda from "./Pages/WhereWeWorkPages/OdishaDistricts/Jharsuguda";
 import Sundargarh from "./Pages/WhereWeWorkPages/OdishaDistricts/Sundargarh";
@@ -173,7 +173,7 @@ function App() {
 
 
         {/* Odisha Districts */}
-        <Route path="/where-we-work/odisha/anugul" element={<Anugul />} />
+        <Route path="/where-we-work/odisha/angul" element={<Anugul />} />
         <Route path="/where-we-work/odisha/jajapur" element={<Jajapur />} />
         <Route
           path="/where-we-work/odisha/jharsuguda"

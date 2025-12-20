@@ -47,14 +47,14 @@ const states = [
 const districts = {
   Odisha: [
     {
-      name: "Anugul",
-      path: "/where-we-work/odisha/anugul",
+      name: "Angul",
+      path: "/where-we-work/odisha/angul",
       image:
         "https://placenameswallah.com/wp-content/uploads/2022/03/gallery_Nalco_steelPlant.jpg",
       tags: ["Mining Skill Hub", "Youth Empowerment", "Green Jobs"],
     },
     {
-      name: "Jajapur",
+      name: "Jajpur",
       path: "/where-we-work/odisha/jajapur",
       image:
         "https://jcdnimz.net.in/portals/0/banner_2_1.jpg",

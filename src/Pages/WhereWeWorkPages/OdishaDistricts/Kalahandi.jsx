@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/HeroAnugul'
+import HeroKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Heroanugul'
 import ImpactKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Impact'
 import DetailsKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Details'
 import DetailsKalahandi2 from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Details2'

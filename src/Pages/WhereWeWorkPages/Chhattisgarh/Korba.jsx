@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/HeroAnugul'
+import HeroKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Heroanugul'
 import ImpactKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Impact'
 import DetailsKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details'
 import DetailsKorba2 from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details2'

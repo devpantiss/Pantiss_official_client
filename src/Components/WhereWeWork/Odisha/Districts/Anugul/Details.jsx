@@ -5,12 +5,12 @@ import Heading from "../../../../Common/Heading";
 
 const tabs = [
   {
-    name: "Skilling",
+    name: "TVET",
     content: (
       <>
         <h2 className="text-3xl font-bold mb-4">Skilling</h2>
         <p className="text-gray-700 mb-6">
-          In Anugul District, we are committed to empowering individuals through
+          In angul District, we are committed to empowering individuals through
           comprehensive and specialized training programs tailored to meet the
           demands of the modern workforce. Our initiatives include a range of
           technical and vocational programs designed to provide hands-on
@@ -74,14 +74,14 @@ const tabs = [
   },
 
   {
-    name: "Mining Village Rehabilitation & Resettlement",
+    name: "Environment & Ecology",
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">
           Mining Village Rehabilitation & Resettlement
         </h2>
         <p className="text-gray-700">
-          Our efforts in Anugul District extend to the rehabilitation and
+          Our efforts in angul District extend to the rehabilitation and
           resettlement of communities impacted by mining activities, reflecting
           our deep commitment to social responsibility. We strive to ensure that
           affected families are provided with not just basic necessities but
@@ -104,14 +104,14 @@ const tabs = [
   },
 
   {
-    name: "Nutrition & Well-being in Mining Villages",
+    name: "Health & Nutrition",
     content: (
       <>
         <h2 className="text-3xl font-bold mb-2">
           Nutrition & Well-being in Mining Villages
         </h2>
         <p className="text-gray-700">
-          In the mining villages of Anugul District, we recognize that health
+          In the mining villages of angul District, we recognize that health
           and well-being are foundational to thriving communities. Our
           initiatives focus on ensuring access to nutritious food, clean
           drinking water, and healthcare services. We prioritize maternal health
@@ -130,7 +130,7 @@ const tabs = [
   },
 ];
 
-const DetailsAnugul = () => {
+const Detailsanugul = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
@@ -190,4 +190,4 @@ const DetailsAnugul = () => {
   );
 };
 
-export default DetailsAnugul;
+export default Detailsanugul;

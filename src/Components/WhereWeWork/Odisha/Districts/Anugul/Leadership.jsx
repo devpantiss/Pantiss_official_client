@@ -20,7 +20,7 @@ const Leadership = () => {
   return (
     <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
-        <Heading text="OUR LEADERSHIP" color="text-black" bgColor="bg-red-600" />
+        <Heading text="OUR TEAM" color="text-black" bgColor="bg-red-600" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {leadershipTeam.map((leader, index) => (

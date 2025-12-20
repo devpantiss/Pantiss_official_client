@@ -190,7 +190,7 @@ const Impact2 = () => {
         <div className="container mx-auto">{renderGrid}</div>
         <div className="flex items-center justify-center mt-6 space-x-4">
           <img
-            src="https://res.cloudinary.com/djtzx6wo7/image/upload/v1756890438/19362653-removebg-preview_gudzua.png"
+            src="/assets/homepage/dash_image_1.png"
             alt="Advanced Dashboard GIF"
             className="w-36 h-36 lg:block hidden object-cover animate-bounce-slow"
             loading="lazy"
@@ -204,7 +204,7 @@ const Impact2 = () => {
           </Link>
 
           <img
-            src="https://res.cloudinary.com/djtzx6wo7/image/upload/v1756890439/4421964-removebg-preview_nu0dk9.png"
+            src="/assets/homepage/dash_image_2.png"
             alt="Advanced Dashboard GIF"
             className="w-40 h-40 lg:block hidden object-cover animate-bounce-slow"
             loading="lazy"

@@ -4,6 +4,14 @@ import Heading from "../Common/Heading";
 
 const reportsData = [
   {
+    title: "Annual Reports",
+    items: [
+      { label: "Annual Reports FY 2024-23", link: "https://drive.google.com/file/d/1mOVRqzLB0BAeLQ_a-CCgJq6BLvhlBsGW/view?usp=drive_link" },
+      { label: "Annual Reports FY 2023-22", link: "https://drive.google.com/file/d/1OHAgBFjyP_DFOfZDXnPetOzwgVOOSR8o/view?usp=drive_link" },
+      { label: "Annual Reports FY 2022-21", link: "https://drive.google.com/file/d/1REPYaIq4LZvKOsz0PfkTQg6AZEtyJlQu/view?usp=drive_link" },
+    ],
+  },
+  {
     title: "Audited Statements",
     items: [
       { label: "Audited FY 2024-23", link: "https://drive.google.com/file/d/1mOVRqzLB0BAeLQ_a-CCgJq6BLvhlBsGW/view?usp=drive_link" },
@@ -16,20 +24,20 @@ const reportsData = [
     items: [
       { label: "Board of Directors", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_16" },
       { label: "Governance Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_17" },
-      { label: "Board Meeting Minutes 2024-25", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
-      { label: "Code of Conduct for Employees & Board", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
-      { label: "Conflict of Interest Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      // { label: "Board Meeting Minutes 2024-25", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      // { label: "Code of Conduct for Employees & Board", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
+      // { label: "Conflict of Interest Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
     ],
   },
-  {
-    title: "Policies & Compliances",
-    items: [
-      { label: "Training & Development Policy", link: "https://drive.google.com/file/d/16tFOFbVxE6eEuzw3lhQR5nfbHYXkLD78/view?usp=sharing" },
-      { label: "POSH Policy", link: "https://drive.google.com/file/d/1hQGwwlIQn4iPo1QRs_qX9Kvy6-rsf126/view?usp=sharing" },
-      { label: "Anti Fraud-Fraud Prevention Policy", link: "https://drive.google.com/file/d/1xoYzUgiEwXAC6fB0l3u9V6dPCv9Mkp8D/view?usp=drive_link" },
-      { label: "Data Record Storage Policy", link: "https://drive.google.com/file/d/1Hh7SVG6bKJrs6u359xx2gONIF1kwZ8Wn/view?usp=sharing" },
-    ],
-  },
+  // {
+  //   title: "Policies & Compliances",
+  //   items: [
+  //     { label: "Training & Development Policy", link: "https://drive.google.com/file/d/16tFOFbVxE6eEuzw3lhQR5nfbHYXkLD78/view?usp=sharing" },
+  //     { label: "POSH Policy", link: "https://drive.google.com/file/d/1hQGwwlIQn4iPo1QRs_qX9Kvy6-rsf126/view?usp=sharing" },
+  //     { label: "Anti Fraud-Fraud Prevention Policy", link: "https://drive.google.com/file/d/1xoYzUgiEwXAC6fB0l3u9V6dPCv9Mkp8D/view?usp=drive_link" },
+  //     { label: "Data Record Storage Policy", link: "https://drive.google.com/file/d/1Hh7SVG6bKJrs6u359xx2gONIF1kwZ8Wn/view?usp=sharing" },
+  //   ],
+  // },
   {
     title: "Statutory & Registration Docs",
     items: [

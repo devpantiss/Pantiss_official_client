@@ -16,7 +16,7 @@ const customMarker = new L.DivIcon({
 // Define the locations (latitude, longitude, and details)
 const locations = [
   {
-    name: "Angul, Odisha",
+    name: "angul, Odisha",
     coords: [20.8409, 85.0977],
     details: "An industrial and mining hub in Odisha.",
   },

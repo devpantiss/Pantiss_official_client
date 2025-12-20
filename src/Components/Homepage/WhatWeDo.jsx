@@ -21,7 +21,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "https://users.mowash.in",
     backgroundImage:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708443/Adobe_Express_-_file_afc9wt.jpg",
+      "/assets/homepage/whatwedo/Governance.jpeg",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/mine-steel-&-power-skill-park",
     backgroundImage:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708752/GMC10092024_162547_pnvm7v.jpg",
+    "/assets/homepage/whatwedo/TVET.jpg",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/carp-rice-&-duck-livelihood-park",
     backgroundImage:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708960/amol-sonar-1KntWz6Hpgc-unsplash_adnjcu.jpg",
+    "/assets/homepage/whatwedo/livelihood.jpg",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/nutrinest",
     backgroundImage:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709193/health_c5sfne.jpg",
+    "/assets/homepage/whatwedo/nutrition.jpeg",
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "https://circular-economy.mowash.com",
     backgroundImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761732864/Sanitation_workers_fnmuqr.jpg",
+    "/assets/homepage/whatwedo/Sanitation_workers.jpg",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const slides = [
     buttonLink:
       "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
     backgroundImage:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709502/Pngtree_forest_planet_earth_with_trees_15794029_aii5vc.jpg",
+    "/assets/homepage/whatwedo/environment.jpeg",
   },
 ];
 

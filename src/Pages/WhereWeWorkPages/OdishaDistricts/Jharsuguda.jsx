@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroJharsuguda from '../../../Components/WhereWeWork/Odisha/Districts/Jharsuguda/HeroAnugul'
+import HeroJharsuguda from '../../../Components/WhereWeWork/Odisha/Districts/Jharsuguda/Heroanugul'
 import ImpactJharsuguda from '../../../Components/WhereWeWork/Odisha/Districts/Jharsuguda/Impact'
 import DetailsJharsuguda from '../../../Components/WhereWeWork/Odisha/Districts/Jharsuguda/Details'
 import DetailsJharsuguda2 from '../../../Components/WhereWeWork/Odisha/Districts/Jharsuguda/Details2'

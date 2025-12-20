@@ -25,7 +25,7 @@ const customMarker = new L.DivIcon({
 
 // Define locations with memoization
 const locations = [
-  { name: "Angul, Odisha", coords: [20.8409, 85.0977], details: "An industrial and mining hub in Odisha." },
+  { name: "angul, Odisha", coords: [20.8409, 85.0977], details: "An industrial and mining hub in Odisha." },
   { name: "Jajapur, Odisha", coords: [20.8378, 86.3377], details: "Known for its chromite deposits." },
   { name: "Jharsuguda, Odisha", coords: [21.8569, 84.0063], details: "A growing industrial area in Odisha." },
   { name: "Sundargarh, Odisha", coords: [22.1167, 84.0306], details: "An important area for iron ore mining." },

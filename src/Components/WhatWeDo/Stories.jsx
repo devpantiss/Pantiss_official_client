@@ -4,156 +4,118 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../Common/Heading";
 
-// Reusable Arrow Component
-const CustomArrow = ({ className, style, onClick, direction }) => {
-  const isPrev = direction === "prev";
-  const ariaLabel = isPrev ? "Previous slide" : "Next slide";
-
-  return (
-    <button
-      className={`${className} absolute top-1/2 ${isPrev ? "left-2" : "right-2"} transform -translate-y-1/2 h-12 w-12 bg-red-600 text-white rounded-full flex items-center justify-center cursor-pointer z-20 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-700`}
-      style={{ ...style, display: "block" }}
-      onClick={onClick}
-      aria-label={ariaLabel}
-      type="button"
-    >
-      {isPrev ? (
-        <span className="text-2xl">&lt;</span>
-      ) : (
-        <span className="text-2xl">&gt;</span>
-      )}
-    </button>
-  );
-};
+// Custom Arrow
+const Arrow = ({ onClick, direction }) => (
+  <button
+    onClick={onClick}
+    aria-label={direction === "prev" ? "Previous" : "Next"}
+    className={`absolute top-1/2 z-20 -translate-y-1/2 
+      ${direction === "prev" ? "-left-6" : "-right-6"}
+      h-12 w-12 rounded-full bg-white shadow-lg flex items-center justify-center
+      hover:bg-gray-100 transition`}
+  >
+    <span className="text-xl text-gray-700">
+      {direction === "prev" ? "←" : "→"}
+    </span>
+  </button>
+);
 
 // Slider settings
 const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
+  speed: 600,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  autoplay: false, // more editorial, less promo
   arrows: true,
-  prevArrow: <CustomArrow direction="prev" />,
-  nextArrow: <CustomArrow direction="next" />,
+  prevArrow: <Arrow direction="prev" />,
+  nextArrow: <Arrow direction="next" />,
   responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
+    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    { breakpoint: 640, settings: { slidesToShow: 1 } },
   ],
 };
 
-// Updated slider data based on mining-related stories
 const slides = [
   {
-    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761126488/Screenshot_2025-10-22_150223_kq5qro.png",
+    image:
+      "/assets/sambit_barik.png",
     name: "Manoj Patra",
     description:
-      "Manoj, a young man from Sukinda, joined our vocational training program and became a certified Mining Dumper Operator. Today, he proudly works in the mines, Getting a stable livelihood with skilled Work.",
+      "Manoj, a young man from Sukinda, joined our vocational training programme and is now a skilled HMM mechanic. Today, he maintains and repairs heavy mining machinery, earning a stable livelihood through certified technical expertise.",
     link: "#",
   },
   {
-    "image": "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Mandeepa-2.jpeg",
-    "name": "Laxmi Sahoo",
-    "description": 
-      "Laxmi transformed an abandoned mine in Odisha into a flourishing aquaculture site with Pantiss’ guidance. Her inspiring journey highlights sustainable livelihoods, empowering her family and community with a steady income.",
-    "link": "#"
+    image:
+      "https://grameenfoundation.org/images/_716x488_crop_center-center_none/Mandeepa-2.jpeg",
+    name: "Laxmi Sahoo",
+    description:
+      "Laxmi transformed an abandoned mine in Odisha into a flourishing aquaculture site with Pantiss’ guidance, creating a sustainable income for her family.",
+    link: "#",
   },
   {
-    image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761124239/Women-in-leadership-img_bhmw8w.jpg",
+    image:
+      "/assets/laxmi_sahoo.jpg",
     name: "Priya Naik",
     description:
-      "Priya, a self-help group (SHG) member from Jajpur, transformed her life through Pantiss’ training and support. She now manages a small-scale phenyl manufacturing unit with her group, earning a sustainable livelihood and inspiring other women in her community to become self-reliant.",
+      "An SHG member from Jajpur, Priya was trained as an electrician through Pantiss’ skilling programme. Today, she works confidently in her trade, earning a stable livelihood and inspiring other young women in her community to step into non-traditional roles.",
     link: "#",
   },
 ];
 
 const Stories = () => {
   return (
-    <section className="py-12 px-6">
-      <div className="container px-4 mx-auto relative">
-        {/* Header Text */}
-        <Heading text="STORIES" color="text-black" bgColor="bg-red-500" />
+    <section className="py-20 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-6 relative">
+        {/* Heading */}
+        <div className="mb-12 text-center">
+          <Heading text="STORIES" color="text-black" bgColor="bg-red-500" />
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Real stories of transformation from communities we work with
+          </p>
+        </div>
 
         {/* Slider */}
-        <Slider {...settings} className="flex justify-center items-center">
+        <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="px-2 flex justify-center items-center">
-              <div className="relative bg-white border border-gray-500 rounded-lg shadow-lg overflow-hidden h-[616px] w-[360px]">
+            <div key={index} className="px-4 py-4">
+              <article className="group bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden h-full flex flex-col">
                 {/* Image */}
-                <img
-                  src={slide.image}
-                  alt={slide.name}
-                  className="w-full h-64 object-cover"
-                  onError={(e) => {
-                    e.target.src = "https://via.placeholder.com/300x400";
-                  }}
-                  loading="lazy"
-                />
-                {/* Content */}
-                <div className="p-6 flex flex-col justify-between h-[calc(100%-256px)]">
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-green-700 mb-2">
-                      {slide.name}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {slide.description}
-                    </p>
-                  </div>
-                  <div className="text-center mt-4">
-                    <a
-                      href={slide.link}
-                      className="text-blue-600 hover:underline text-base font-medium"
-                    >
-                      LEARN MORE
-                    </a>
-                  </div>
+                <div className="relative h-64 overflow-hidden">
+                  <img
+                    src={slide.image}
+                    alt={slide.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
-              </div>
+
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {slide.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {slide.description}
+                  </p>
+
+                  <a
+                    href={slide.link}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-green-700 hover:underline"
+                  >
+                    Read full story
+                    <span aria-hidden>→</span>
+                  </a>
+                </div>
+              </article>
             </div>
           ))}
         </Slider>
-
-        {/* CSS to hide default arrows */}
-        <style jsx>{`
-          .slick-arrow.slick-prev,
-          .slick-arrow.slick-next {
-            display: none !important;
-          }
-          .slick-slider {
-            position: relative;
-          }
-        `}</style>
       </div>
     </section>
   );
 };
-
-// Optional: Basic Error Boundary
-class ErrorBoundary extends React.Component {
-  state = { hasError: false };
-
-  static getDerivedStateFromError(error) {
-    return { hasError: true };
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <h2>Something went wrong. Please try again later.</h2>;
-    }
-    return this.props.children;
-  }
-}
 
 export default Stories;

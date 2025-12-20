@@ -11,7 +11,7 @@ const cardData = [
   {
     title: "Land Acquisition, Rehabilitation & Resettlement of Mines",
     link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
-    img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195006/EIA_bpqcoy.jpg",
+    img: "/assets/homepage/whatwedo/EIA.jpg",
     gradient: "from-red-700 via-red-500 to-red-300",
   },
   {

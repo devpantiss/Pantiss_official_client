@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroJajapur from '../../../Components/WhereWeWork/Odisha/Districts/Jajapur/HeroAnugul'
+import HeroJajapur from '../../../Components/WhereWeWork/Odisha/Districts/Jajapur/Heroanugul'
 import DetailsJajapur from '../../../Components/WhereWeWork/Odisha/Districts/Jajapur/Details'
 import ImpactJajapur from '../../../Components/WhereWeWork/Odisha/Districts/Jajapur/Impact'
 import DetailsJajapur2 from '../../../Components/WhereWeWork/Odisha/Districts/Jajapur/Details2'

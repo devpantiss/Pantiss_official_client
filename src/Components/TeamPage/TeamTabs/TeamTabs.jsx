@@ -4,30 +4,34 @@ const teamData = [
   // Leadership
   {
     name: "Dr. Sanjaya Pradhan",
-    title: "Director cum Principal Advisor (Risk Management & Global Representation)",
-    image:
-      "/assets/teams/sanjay.png",
-    department: "leadership",
+    title:
+      "Director cum Principal Advisor (Risk Management & Global Representation)",
+    image: "/assets/teams/sanjay.png",
+    department: "founders",
   },
   {
     name: "Mr. Stalin Nayak",
-    title: "Director cum CEO",
-    image:
-      "/assets/teams/stalinsir.jpg",
+    title: "President cum CEO",
+    image: "/assets/teams/stalinsir.jpg",
+    department: "founders",
+  },
+
+  {
+    name: "Mr. Braja Kishore Nayak",
+    title: "Chief Finance Officer",
+    image: "/assets/teams/braja.png",
     department: "leadership",
   },
   {
     name: "Mrs. Indumati Nanda",
     title: "Director cum Chief Strategy Officer",
-    image:
-      "/assets/teams/indumaam.png",
+    image: "/assets/teams/indumaam.png",
     department: "leadership",
   },
   {
     name: "Mr. Deepan Digal",
     title: "Chief Business Officer",
-    image:
-      "/assets/teams/deepan.png",
+    image: "/assets/teams/deepan.png",
     department: "leadership",
   },
   {
@@ -37,31 +41,33 @@ const teamData = [
       "https://res.cloudinary.com/dcbtjeyde/image/upload/v1764220150/WhatsApp_Image_2025-11-25_at_9.34.16_PM_exneju.jpg",
     department: "leadership",
   },
-  
+  {
+    name: "Mr. Kunal Anand",
+    title: "Chief Technology Officer",
+    image: "/",
+    department: "leadership",
+  },
 
   // Finance
   {
     name: "Mr. Deepan Digal",
     title:
       "Lead, Grants Management, Global Resource moilization and Partnership",
-    image:
-    "/assets/teams/deepan.png",
+    image: "/assets/teams/deepan.png",
     department: "finance",
     subDept: "Finance",
   },
   {
     name: "Ms. Purnima Tarei",
     title: "Co-Lead, Finance & Accounting",
-    image:
-    "/assets/teams/poonam.png",
+    image: "/assets/teams/poonam.png",
     department: "finance",
     subDept: "Finance",
   },
   {
     name: "Mr. Bhuleshwar Mandal",
     title: "Associate, Procurement & Facilities",
-    image:
-    "/assets/teams/mondol.png",
+    image: "/assets/teams/mondol.png",
     department: "finance",
     subDept: "Finance",
   },
@@ -70,16 +76,7 @@ const teamData = [
   {
     name: "Mr. Basant Ku. Sahoo",
     title: "Lead, People, Culture and Inclusion",
-    image:
-    "/assets/teams/basanta.png",
-    department: "finance",
-    subDept: "Human Resources",
-  },
-  {
-    name: "Ms. Manasi Behera",
-    title: "Associate, Recruitment, Learning & Performance",
-    image:
-    "/assets/teams/manasi.jpeg",
+    image: "/assets/teams/basanta.png",
     department: "finance",
     subDept: "Human Resources",
   },
@@ -87,8 +84,14 @@ const teamData = [
     name: "Ms. Padmini Kumari Bisoyi",
     title:
       "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
-    image:
-    "/assets/teams/Padmini.png",
+    image: "/assets/teams/Padmini.png",
+    department: "finance",
+    subDept: "Human Resources",
+  },
+  {
+    name: "Ms. Manasi Behera",
+    title: "Associate, Recruitment, Learning & Performance",
+    image: "/assets/teams/manasi.jpeg",
     department: "finance",
     subDept: "Human Resources",
   },
@@ -97,24 +100,21 @@ const teamData = [
   {
     name: "Mr. Jitendra Barik",
     title: "Lead, Media & Public Relations",
-    image:
-    "/assets/teams/jiteendra.png",
+    image: "/assets/teams/jiteendra.png",
     department: "finance",
     subDept: "Communication",
   },
   {
     name: "Mr. Jabis Ranjan Sahu",
     title: "Co-Lead, Digital Communications",
-    image:
-    "/assets/teams/jabis.png",
+    image: "/assets/teams/jabis.png",
     department: "finance",
     subDept: "Communication",
   },
   {
     name: "Mr. Soumyashree Debabrata Jena",
     title: "Associate, Events & Campaigns",
-    image:
-    "/assets/teams/soumya.png",
+    image: "/assets/teams/soumya.png",
     department: "finance",
     subDept: "Communication",
   },
@@ -123,22 +123,19 @@ const teamData = [
   {
     name: "Mr. Alok Chandra Das",
     title: "Lead, (Planning, Policy & Governance)",
-    image:
-    "/assets/teams/alok.png",
+    image: "/assets/teams/alok.png",
     department: "projectManagement",
   },
   {
     name: "Mr. Rahul Nayak",
     title: "Lead, (Technical, Vocational & Educational Training)",
-    image:
-    "/assets/teams/rahul.png",
+    image: "/assets/teams/rahul.png",
     department: "projectManagement",
   },
   {
     name: "Mr. Gangadhar Bej",
     title: "Co-Lead, (Ultra Poor Graduation (Livelihood & Enterprise))",
-    image:
-    "/assets/teams/gangadhar.png",
+    image: "/assets/teams/gangadhar.png",
     department: "projectManagement",
   },
   {
@@ -151,33 +148,28 @@ const teamData = [
   {
     name: "Mr. Dwarka Prasad",
     title: "Lead, (Water & Sanitation)",
-    image:
-    "/assets/teams/dwarka.png",
+    image: "/assets/teams/dwarka.png",
     department: "projectManagement",
   },
   {
     name: "Mr. Manoj Panda",
     title: "Lead, (Environment & Ecology)",
-    image:
-    "/assets/teams/manoj.png",
+    image: "/assets/teams/manoj.png",
     department: "projectManagement",
   },
 
-
   // Monitoring, Evaluation & Compliance
   {
-    name: "Mr. Braja Kishore Nayak",
-    title: "Lead, Social Compliance & Safeguarding",
-    image:
-    "/assets/teams/braja.png",
+    name: "Mr. Yagnesh Kumar Nanda",
+    title: "Lead, Training Compliance",
+    image: "/assets/teams/yagnesh.png",
     department: "monitoring",
   },
   {
     name: "Ms. Padmini Kumari Bisoyi",
     title:
       "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
-    image:
-    "/assets/teams/Padmini.png",
+    image: "/assets/teams/Padmini.png",
     department: "monitoring",
   },
   {
@@ -192,87 +184,75 @@ const teamData = [
   {
     name: "Mr. Ashish Kumar Mishra",
     title: "Lead, Capacity Building and Knowledge management",
-    image:
-    "/assets/teams/ashish.png",
+    image: "/assets/teams/ashish.png",
     department: "knowledge",
   },
   {
     name: "Mr. Aditya Kumar Sahu",
     title: "Lead, Software Development & Data Analytics",
-    image:
-    "/assets/teams/aditya.png",
+    image: "/assets/teams/aditya.png",
     department: "knowledge",
   },
   {
     name: "Mr. Rituraj Tarei",
     title: "Lead, Innovation & Social Good",
-    image:
-    "/assets/teams/rituraj.png",
+    image: "/assets/teams/rituraj.png",
     department: "knowledge",
   },
 
   // Regional/State Operations
   {
     name: "Mr. Jalandhar Mohanty",
-    title: "Lead, Anugul",
-    image:
-    "/assets/teams/jalandhar.png",
+    title: "Lead, Jharsuguda",
+    image: "/assets/teams/jalandhar.png",
+    department: "region",
+  },
+  {
+    name: "Mrs. Sabita Garnayak",
+    title: "Lead, angul",
+    image: "/assets/teams/jalandhar.png",
     department: "region",
   },
   {
     name: "Mr. Mukesh Singh",
     title: "Lead, Bokaro",
-    image:
-    "/assets/teams/mukessh.png",
+    image: "/assets/teams/mukessh.png",
     department: "region",
   },
   {
     name: "Mr. Titan Sahoo",
-    title: "Lead, Koderma",
-    image:
-    "/assets/teams/titan.png",
+    title: "Lead, Kalahandi",
+    image: "/assets/teams/titan.png",
     department: "region",
   },
   {
     name: "Mr. Tushar Ranjan Ojha",
     title: "Lead, Dhanbad",
-    image:
-    "/assets/teams/tushar.png",
+    image: "/assets/teams/tushar.png",
     department: "region",
   },
   {
     name: "Mr. Sudarshan Barik",
     title: "Lead, Jajapur",
-    image:
-    "/assets/teams/sudarshan.png",
+    image: "/assets/teams/sudarshan.png",
     department: "region",
   },
   {
     name: "Mr. Bikun Pradhan",
     title: "Lead, Jharsuguda",
-    image:
-    "/assets/teams/bikun.png",
+    image: "/assets/teams/bikun.png",
     department: "region",
   },
   {
     name: "Mr. Bikram Keshari Gouda",
     title: "Lead, Sundargarh",
-    image:
-    "/assets/teams/bikram.png",
+    image: "/assets/teams/bikram.png",
     department: "region",
   },
   {
     name: "Mr. Trupti Ranjan Samal",
     title: "Lead, Keonjhar",
-    image:
-    "/assets/teams/trupti.png",
-    department: "region",
-  },
-  {
-    name: "Mr. Yagnesh Kumar Nanda",
-    title: "Lead, Kalahandi",
-    image:
-    "/assets/teams/yagnesh.png",
+    image: "/assets/teams/trupti.png",
     department: "region",
   },
 
@@ -287,8 +267,7 @@ const teamData = [
   {
     name: "Mr. Gautam Samanta",
     title: "Administrative Assistant",
-    image:
-    "/assets/teams/gautam.jpg",
+    image: "/assets/teams/gautam.jpg",
     department: "foundersOffice",
   },
   {
@@ -301,16 +280,16 @@ const teamData = [
   {
     name: "Mr. Gandhi Beura",
     title: "Executive Chauffeur",
-    image:
-    "/assets/teams/gandhi.png",
+    image: "/assets/teams/gandhi.png",
     department: "foundersOffice",
   },
 ];
 
 const TeamTabs = () => {
-  const [activeTab, setActiveTab] = useState("leadership");
+  const [activeTab, setActiveTab] = useState("founders");
 
   const tabs = [
+    { label: "Founders", key: "founders" },
     { label: "Leadership & Strategy", key: "leadership" },
     { label: "Founders Office", key: "foundersOffice" },
     { label: "Project Management", key: "projectManagement" },
@@ -396,7 +375,7 @@ const TeamTabs = () => {
 
   const renderRegion = () => {
     const odishaDistricts = [
-      "Anugul",
+      "angul",
       "Jajapur",
       "Jharsuguda",
       "Sundargarh",
@@ -415,15 +394,11 @@ const TeamTabs = () => {
     return (
       <div className="space-y-8">
         <div>
-          <h2 className="text-2xl font-bold text-red-600 mb-4">
-            Odisha Districts
-          </h2>
+          <h2 className="text-2xl font-bold text-red-600 mb-4">Odisha</h2>
           <TeamGrid members={odisha} />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-red-600 mb-4">
-            Jharkhand Districts
-          </h2>
+          <h2 className="text-2xl font-bold text-red-600 mb-4">Jharkhand</h2>
           <TeamGrid members={jharkhand} />
         </div>
       </div>

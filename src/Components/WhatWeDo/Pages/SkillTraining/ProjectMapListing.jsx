@@ -35,7 +35,7 @@ const ProjectMapListingSkills = () => {
     },
     {
       number: "NUA-ANG-006-2025",
-      name: "Nua Odisha Anugul Skilling Project",
+      name: "Nua Odisha angul Skilling Project",
       client: "Government of Odisha",
       totalImpact: "1,200",
     },

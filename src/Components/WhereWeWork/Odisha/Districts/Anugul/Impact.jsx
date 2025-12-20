@@ -13,7 +13,7 @@ const Impact = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}
         <Heading
-          text="OUR IMPACT IN ANUGUL"
+          text="OUR IMPACT IN ANGUL"
           color="text-white"
           bgColor="bg-white"
         />

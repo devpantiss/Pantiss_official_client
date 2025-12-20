@@ -14,7 +14,7 @@ const tabs = [
           Under the partnership between the{" "}
           <b>District Mineral Foundation (DMF)</b> and the{" "}
           <b>Skill Council for Mining Sector (SCMS)</b>, structured skill
-          development initiatives have been launched in Jajapur district to
+          development initiatives have been launched in Jajpur district to
           empower local youth for mining and allied industries. The program
           focuses on hands-on, industry-relevant training to enhance
           employability and sustainable livelihoods.
@@ -71,12 +71,12 @@ const tabs = [
     content: (
       <>
         <h2 className="text-3xl font-bold mb-6">
-          GIS-Based Household Survey in Jajapur
+          GIS-Based Household Survey in Jajpur
         </h2>
         <p className="text-gray-700 text-[18px] mb-4">
           A large-scale <b>GIS-enabled household survey</b> was conducted across
           two blocks of
-          <b> Jajapur District</b>, covering more than <b>45,000 households</b>.
+          <b> Jajpur District</b>, covering more than <b>45,000 households</b>.
           The initiative aims to create a data-driven framework for social and
           economic planning.
         </p>
@@ -96,7 +96,7 @@ const tabs = [
 
         <img
           src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761837250/sourajit-hazra-b-O15p8xTns-unsplash_2_hu2xiu.jpg"
-          alt="GIS Survey Jajapur"
+          alt="GIS Survey Jajpur"
           className="mt-4 rounded-lg shadow-lg"
         />
       </>

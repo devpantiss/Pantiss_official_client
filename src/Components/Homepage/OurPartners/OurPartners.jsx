@@ -75,7 +75,7 @@ PartnerSection.displayName = "PartnerSection";
 
 const OurPartners = () => {
   return (
-    <div className="bg-white flex flex-col justify-center items-center container mx-auto py-14 px-4 sm:px-12">
+    <div className="bg-white flex flex-col justify-center items-center">
       <div className="flex justify-center mb-6">
         <Heading text="OUR PARTNERS" color="text-black" bgColor="bg-red-600" />
       </div>

@@ -27,9 +27,9 @@ const Locations = () => {
 
   const states = [
     {
-      name: "Anugul",
+      name: "angul",
       position: [20.8371, 85.1511],
-      path: "/where-we-work/anugul",
+      path: "/where-we-work/angul",
       image:
         "https://media-cdn.tripadvisor.com/media/photo-s/08/42/ff/85/satkosia-gorge-wildlife.jpg",
     },

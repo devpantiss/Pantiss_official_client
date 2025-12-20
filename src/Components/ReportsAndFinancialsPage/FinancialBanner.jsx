@@ -11,10 +11,11 @@ const FinancialBanner = () => {
     >
       {/* Text Overlay */}
       <div className="bg-black bg-opacity-50 p-4 text-center rounded-lg">
-        <h1 className="text-white text-3xl md:text-5xl font-bold">EXPENSES.</h1>
-        <h2 className="text-white text-2xl md:text-4xl font-light mt-2">
+        <h1 className="text-white text-3xl md:text-5xl font-bold">
+          {" "}
           REPORTS & FINANCIALS
-        </h2>
+        </h1>
+        {/* <h2 className="text-white text-2xl md:text-4xl font-light mt-2"></h2> */}
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ const Row3 = () => {
       results: 20,
     },
     {
-      name: "Talcher, Angul, Odisha",
+      name: "Talcher, angul, Odisha",
       results: 18,
     },
     {

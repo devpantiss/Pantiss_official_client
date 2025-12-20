@@ -6,46 +6,56 @@ import Heading from "../Common/Heading";
 const programs = [
   {
     title: "Planning, Policy & Governance (PPG)",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708443/Adobe_Express_-_file_afc9wt.jpg",
+    image: "/assets/homepage/whatwedo/Governance.jpeg",
     categories: ["GIS/Drone Survey", "Digital Dashboard", "Social Audit"],
     link: "#",
   },
   {
     title: "TVET (Technical, Vocational, Educational Training)",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708752/GMC10092024_162547_pnvm7v.jpg",
-    categories: ["Skill on Wheels", "Center of Excellence", "Global Placements"],
+    image: "/assets/homepage/whatwedo/TVET.jpg",
+    categories: [
+      "Skill on Wheels",
+      "Center of Excellence",
+      "Global Placements",
+    ],
     link: "https://pantiss-skill-universe.vercel.app",
     external: true,
   },
   {
     title: "Livelihood & Entrepreneurship",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760708960/amol-sonar-1KntWz6Hpgc-unsplash_adnjcu.jpg",
-    categories: ["Agricultural Revival", "Animal Husbandary", "Enterprise Incubation"],
+    image: "/assets/homepage/whatwedo/livelihood.jpg",
+    categories: [
+      "Agricultural Revival",
+      "Animal Husbandary",
+      "Enterprise Incubation",
+    ],
     link: "/what-we-do/carp-rice-&-duck-livelihood-park",
   },
   {
     title: "Health & Nutrition",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709193/health_c5sfne.jpg",
-    categories: ["Mobile Health Unit", "Health Screening", "Malnutrition Management"],
+    image: "/assets/homepage/whatwedo/nutrition.jpeg",
+    categories: [
+      "Mobile Health Unit",
+      "Health Screening",
+      "Malnutrition Management",
+    ],
     link: "/what-we-do/nutrinest",
   },
   {
     title: "Water & Sanitation",
-    image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761732864/Sanitation_workers_fnmuqr.jpg",
+    image: "/assets/homepage/whatwedo/Sanitation_workers.jpg",
     categories: ["Safe Drinking Water", "Toilets", "Waste-Disposal"],
     link: "https://mowash.in",
     external: true,
   },
   {
     title: "Environment & Ecology",
-    image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760709502/Pngtree_forest_planet_earth_with_trees_15794029_aii5vc.jpg",
-    categories: ["Abandoned Mines Reclamation", "Air Monitoring Stations", "Mine Water Treatment"],
+    image: "/assets/homepage/whatwedo/environment.jpeg",
+    categories: [
+      "Abandoned Mines Reclamation",
+      "Air Monitoring Stations",
+      "Mine Water Treatment",
+    ],
     link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
   },
 ];

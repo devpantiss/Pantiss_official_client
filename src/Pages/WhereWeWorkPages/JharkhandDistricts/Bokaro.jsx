@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/HeroAnugul'
+import HeroBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Heroanugul'
 import ImpactBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Impact'
 import DetailsBokaro from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Details'
 import DetailsBokaro2 from '../../../Components/WhereWeWork/Jharkhand/Districts/Bokaro/Details2'

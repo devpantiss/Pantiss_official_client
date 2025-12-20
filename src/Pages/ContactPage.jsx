@@ -57,7 +57,7 @@ const ContactPage = () => {
   ];
 
   const districtOffices = [
-    { name: "Anugul", address: ["Industrial Area", "Anugul, Odisha"], tel: "+91 8345672345", email: "anugul@pantissfoundation.org" },
+    { name: "angul", address: ["Industrial Area", "angul, Odisha"], tel: "+91 8345672345", email: "angul@pantissfoundation.org" },
     { name: "Jajpur", address: ["NH-5", "Near Tata Steel Plant, Jajpur, Odisha"], tel: "+91 8445673456", email: "jajpur@pantissfoundation.org" },
     { name: "Keonjhar", address: ["College Road", "Keonjhar, Odisha"], tel: "+91 8545674567", email: "keonjhar@pantissfoundation.org" },
     { name: "Kalahandi", address: ["Main Road", "Bhawanipatna, Kalahandi, Odisha"], tel: "+91 8245671234", email: "kalahandi@pantissfoundation.org" },
@@ -66,8 +66,8 @@ const ContactPage = () => {
   ];
 
   const centerOfExcellence = {
-    name: "Center of Excellence - Angul",
-    address: ["Plot No. 45", "Industrial Area, Angul, Odisha - 759122"],
+    name: "Center of Excellence - angul",
+    address: ["Plot No. 45", "Industrial Area, angul, Odisha - 759122"],
     tel: "+91 9345678902",
     email: "coe.angul@pantissfoundation.org",
   };
@@ -158,7 +158,7 @@ const ContactPage = () => {
               { id: "headquarters", label: "Headquarters" },
               { id: "regional", label: "Regional Offices" },
               { id: "district", label: "District Offices" },
-              { id: "coe", label: "Center of Excellence (Angul)" },
+              { id: "coe", label: "Center of Excellence (anugul)" },
               { id: "guest", label: "Guest Houses" },
             ].map((tab) => (
               <button

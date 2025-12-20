@@ -44,7 +44,7 @@ const Map = () => {
       results: 20,
     },
     {
-      name: "Talcher, Angul, Odisha",
+      name: "Talcher, anugul, Odisha",
       coords: [20.9497, 85.2335],
       details: "A significant coal mining and industrial area.",
       results: 18,
