@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Heroanugul'
 import ImpactKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Impact'
 import DetailsKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details'
 import DetailsKorba2 from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Details2'
+import HeroKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/HeroKorba'
 // import LeadershipKorba from '../../../Components/WhereWeWork/Chhattisgarh/Districts/Korba/Leadership'
 
 const Korba = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroSundargarh = () => {
+const SundargarhHero = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
@@ -42,4 +42,4 @@ const HeroSundargarh = () => {
   );
 };
 
-export default HeroSundargarh;
+export default SundargarhHero;

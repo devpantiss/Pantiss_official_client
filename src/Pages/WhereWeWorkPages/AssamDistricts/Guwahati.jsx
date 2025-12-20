@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Heroanugul'
 import ImpactGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Impact'
 import DetailsGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Details'
 import DetailsGuwahati2 from '../../../Components/WhereWeWork/Assam/Guwati/Details2'
+import HeroGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/HeroGuwati'
 // import LeadershipGuwahati from '../../../Components/WhereWeWork/Assam/Guwati/Leadership'
 
 const Guwahati = () => {
