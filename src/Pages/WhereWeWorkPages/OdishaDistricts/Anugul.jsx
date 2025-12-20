@@ -7,7 +7,7 @@ import Leadership from "../../../Components/WhereWeWork/Odisha/Districts/anugul/
 import ClientsMarquee from "../../../Components/Common/ClientsMarquee";
 import AngulReports from "../../../Components/WhereWeWork/Odisha/Districts/Anugul/AngulReports";
 
-const anugul = () => {
+const Anugul = () => {
   const keonjharClients = [
     { name: "NSDC", logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681310/NSDC_uhnrq9.png" },
     { name: "SCMS", logo: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681320/SCMS_ehl7t2.png" },
@@ -34,4 +34,4 @@ const anugul = () => {
   );
 };
 
-export default anugul;
+export default Anugul;

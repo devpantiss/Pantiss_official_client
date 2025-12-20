@@ -34,7 +34,6 @@ import Chattisgarh from "./Pages/WhereWeWorkPages/Chattisgarh";
 import Jharkhand from "./Pages/WhereWeWorkPages/Jharkhand";
 import Assam from "./Pages/WhereWeWorkPages/Assam";
 import TamilNadu from "./Pages/WhereWeWorkPages/TamilNadu";
-import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
 import Jajapur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajapur";
 import Jharsuguda from "./Pages/WhereWeWorkPages/OdishaDistricts/Jharsuguda";
 import Sundargarh from "./Pages/WhereWeWorkPages/OdishaDistricts/Sundargarh";
@@ -62,6 +61,7 @@ import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMak
 // import WaterbodyRestorationInMines from "./Pages/WhatWeDo/WaterbodyRestorationInMines";
 // import ConnectingRemoteMiningHabitations from "./Pages/WhatWeDo/ConnectingRemoteMiningHabitations";
 import InnovationLabPage from "./Pages/InnovationLabPage";
+import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/anugul";
 
 function App() {
   const location = useLocation();
