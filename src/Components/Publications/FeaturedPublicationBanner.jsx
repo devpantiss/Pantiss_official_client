@@ -22,7 +22,7 @@ const FeaturedPublicationBanner = () => {
       ref={bannerRef}
       className="relative bg-cover bg-center h-[320px] flex items-center justify-center text-white overflow-hidden shadow-lg"
       style={{
-        backgroundImage: `url(https://res.cloudinary.com/djtzx6wo7/image/upload/v1760712379/sourajit-hazra-b-O15p8xTns-unsplash_c4eyqj.jpg)`,
+        backgroundImage: `url(/assets/publications/mining_villages_summit.jpg)`,
         backgroundAttachment: "fixed", // Fixed background
         backgroundRepeat: "no-repeat", // Prevent repetition
         backgroundSize: "cover", // Ensure full coverage

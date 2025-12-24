@@ -9,6 +9,8 @@ import CapacityDevelopment from "../Components/Publications/CapacityDevelopment"
 import StoryBanner from "../Components/Publications/StoryBanner";
 import FeaturedPublicationBanner from "../Components/Publications/FeaturedPublicationBanner";
 import FeaturedPublicationBanner2 from "../Components/Publications/FeaturedPublicationBanner2";
+import PodcastBanner from "../Components/Publications/PodcastBanner";
+import PodcastsSection from "../Components/Publications/PadcastsSection";
 // import PopularSection from '../Components/Publications/Populars'
 
 const Publications = () => {
@@ -22,6 +24,8 @@ const Publications = () => {
       <ArticleSection2 />
       <FeaturedPublicationBanner />
       <CapacityDevelopment />
+      <PodcastBanner />
+      <PodcastsSection />
       {/* <StoryBanner /> */}
       {/* <PopularSection /> */}
       {/* <Cards /> */}

@@ -53,7 +53,7 @@ const VidSection = () => {
           <p className="text-sm uppercase tracking-wide text-gray-300">
             Grab the report
           </p>
-          <h3 className="text-xl font-semibold mt-1">
+          <h3 className="text-3xl font-semibold mt-1">
             Research & Insights
           </h3>
         </div>
@@ -66,7 +66,7 @@ const VidSection = () => {
                 key={`${report.id}-${index}`}
                 className="flex gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition"
               >
-                <div className="w-20 h-28 rounded-md overflow-hidden flex-shrink-0">
+                <div className="w-[180px] h-[320px] rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={report.image}
                     alt={report.title}
@@ -95,11 +95,11 @@ const VidSection = () => {
             transform: translateY(0%);
           }
           100% {
-            transform: translateY(-50%);
+            transform: translateY(-260%);
           }
         }
         .animate-vertical-marquee {
-          animation: vertical-marquee 18s linear infinite;
+          animation: vertical-marquee 10s linear infinite;
         }
       `}</style>
     </section>
