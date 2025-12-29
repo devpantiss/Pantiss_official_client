@@ -4,6 +4,7 @@ import DetailsKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/K
 import DetailsKalahandi2 from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Details2'
 import LeadershipKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/Leadership'
 import HeroKalahandi from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/HeroKalahandi'
+import KalahandiReports from '../../../Components/WhereWeWork/Odisha/Districts/Kalahandi/KalahandiReports'
 
 const Kalahandi = () => {
   return (
@@ -12,6 +13,7 @@ const Kalahandi = () => {
       <ImpactKalahandi />
       <DetailsKalahandi />
       <DetailsKalahandi2 />
+      <KalahandiReports />
       <LeadershipKalahandi />
     </div>
   )

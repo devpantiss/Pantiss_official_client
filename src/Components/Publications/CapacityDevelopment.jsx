@@ -100,6 +100,24 @@ const CapacityDevelopment = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex justify-center items-center mt-8">
+          <button
+            className="
+              px-6 py-3
+              bg-red-600
+              border border-white/30
+              rounded-lg
+              text-white font-medium
+              hover:bg-white/20
+              hover:text-red-600
+              transition-colors
+              focus:outline-none focus:ring-2 focus:ring-red-600
+            "
+          >
+            View More
+          </button>
+        </div>
       </div>
     </section>
   );

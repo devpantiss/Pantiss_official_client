@@ -1,153 +1,120 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
-import { ChevronDown } from "lucide-react";
+import {
+  Users,
+  Briefcase,
+  Home,
+  HeartPulse,
+} from "lucide-react";
 import Heading from "../../../../Common/Heading";
+
+/* --------------------------------
+   DATA
+-------------------------------- */
 
 const tabs = [
   {
     name: "TVET",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-4">Skilling</h2>
-        <p className="text-gray-700 mb-6">
-          In angul District, we are committed to empowering individuals through
-          comprehensive and specialized training programs tailored to meet the
-          demands of the modern workforce. Our initiatives include a range of
-          technical and vocational programs designed to provide hands-on
-          experience and industry-relevant skills. These programs are conducted
-          in collaboration with reputed partners like <b>SCMS, MCL,</b> and{" "}
-          <b>Nitcon</b>, ensuring strong industry linkages and placement
-          opportunities. Through these initiatives, we aim to foster economic
-          growth, enhance employability, and contribute to the sustainable
-          development of the region.
-        </p>
-
-        {/* Training Programs List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[
-            {
-              title: "HEMM Mechanic Training",
-              subtitle: "Under Nua Odisha (with SCMS)",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
-            },
-            {
-              title: "Industrial Welder Training",
-              subtitle: "Under Saksham (with MCL & Nitcon)",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819859/WhatsApp_Image_2025-10-30_at_3.30.06_PM_mhnoko.jpg",
-            },
-            {
-              title: "Industrial Electrician Training",
-              subtitle: "Under Saksham (with MCL & Nitcon)",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819854/images_5_w5lly4.jpg",
-            },
-            {
-              title: "Dumper Operator Training",
-              subtitle: "Under Saksham (with MCL & Nitcon)",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819881/WhatsApp_Image_2025-10-30_at_3.38.18_PM_avyast.jpg",
-            },
-            {
-              title: "Excavator Operator Training",
-              subtitle: "Under Saksham (with MCL & Nitcon)",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg",
-            },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-red-600 mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-gray-700 font-medium">{item.subtitle}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+    shortDescription:
+      "Industry-aligned technical and vocational education programs designed to improve employability and income stability among youth.",
+    projects: [
+      "Nua Odisha Skill Development Program",
+      "Skill On Wheels",
+    ],
+    clients: [
+      {
+        name: "OSDA",
+        logo: "https://digitall.skillodisha.gov.in/Application/uploadDocuments/Logo/LogoH20181206_110122.png",
+      },
+      {
+        name: "TPCODL",
+        logo: "https://www.tpcentralodisha.com/images/group_company_logo1.jpg",
+      },
+    ],
+    impacts: [
+      { value: "1,200+", label: "Youth Trained", icon: Users },
+      { value: "78%", label: "Placement Rate", icon: Briefcase },
+      { value: "₹3.2 LPA", label: "Average Package", icon: Briefcase },
+      { value: "60%", label: "Local Employment", icon: Home },
+    ],
   },
-
   {
     name: "Environment & Ecology",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">
-          Mining Village Rehabilitation & Resettlement
-        </h2>
-        <p className="text-gray-700">
-          Our efforts in angul District extend to the rehabilitation and
-          resettlement of communities impacted by mining activities, reflecting
-          our deep commitment to social responsibility. We strive to ensure that
-          affected families are provided with not just basic necessities but
-          also opportunities for a dignified and sustainable future. This
-          includes access to well-planned housing, robust livelihood support
-          through skill development and employment opportunities, and essential
-          social services such as education and healthcare. Our holistic
-          approach emphasizes active community engagement, participatory
-          decision-making, and long-term sustainability, ensuring that displaced
-          populations can rebuild their lives with resilience and hope while
-          maintaining their cultural and social fabric.
-        </p>
-        <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761813824/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg"
-          alt="Mining Village Rehabilitation"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813824/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg",
+    shortDescription:
+      "Rehabilitation, resettlement, and ecological restoration programs for mining-affected communities.",
+    projects: [
+      "Village Rehabilitation",
+      "Resettlement Colonies",
+      "Afforestation Drives",
+      "Water Resource Management",
+    ],
+    clients: [
+      {
+        name: "MCL",
+        logo: "https://upload.wikimedia.org/wikipedia/en/3/3e/Mahanadi_Coalfields_Limited_logo.png",
+      },
+    ],
+    impacts: [
+      { value: "18+", label: "Villages Rehabilitated", icon: Home },
+      { value: "2,500+", label: "Families Resettled", icon: Users },
+      { value: "120+ Ha", label: "Green Cover Created", icon: Home },
+    ],
   },
-
   {
     name: "Health & Nutrition",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">
-          Nutrition & Well-being in Mining Villages
-        </h2>
-        <p className="text-gray-700">
-          In the mining villages of angul District, we recognize that health
-          and well-being are foundational to thriving communities. Our
-          initiatives focus on ensuring access to nutritious food, clean
-          drinking water, and healthcare services. We prioritize maternal health
-          programs, prenatal and postnatal care, and school nutrition schemes
-          that ensure children receive balanced meals. Through these integrated
-          interventions, we aim to build healthier, stronger communities capable
-          of overcoming the challenges posed by their environment.
-        </p>
-        <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761813698/PIC-13_fdngmf.jpg"
-          alt="Nutrition & Well-being"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813698/PIC-13_fdngmf.jpg",
+    shortDescription:
+      "Community health, nutrition, and well-being initiatives for women, children, and vulnerable populations.",
+    projects: [
+      "Maternal Health Program",
+      "School Nutrition Support",
+      "Health Camps",
+      "Safe Drinking Water",
+    ],
+    clients: [
+      {
+        name: "District Health Dept",
+        logo: "https://dummyimage.com/200x100/000/fff&text=Health+Dept",
+      },
+    ],
+    impacts: [
+      { value: "9,000+", label: "Beneficiaries Reached", icon: Users },
+      { value: "3,200+", label: "Women & Children Supported", icon: HeartPulse },
+      { value: "150+", label: "Health Camps Conducted", icon: HeartPulse },
+    ],
   },
 ];
 
+/* --------------------------------
+   COMPONENT
+-------------------------------- */
+
 const AngulDetails = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [accordion, setAccordion] = useState("projects");
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-4">
+        <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
 
-      {/* Desktop View */}
-      <div className="hidden md:block">
         <Tab.Group>
-          <div className="flex">
-            <Tab.List className="w-1/4 border-r border-gray-200">
-              {tabs.map((tab, index) => (
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-[1fr_auto_3fr] gap-10">
+
+            {/* LEFT NAV */}
+            <Tab.List className="space-y-3">
+              {tabs.map((tab) => (
                 <Tab
-                  key={index}
+                  key={tab.name}
                   className={({ selected }) =>
-                    `block w-full py-2 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
-                      selected ? "bg-red-600 text-white" : ""
+                    `w-full text-left px-5 py-4 font-medium transition ${
+                      selected
+                        ? "bg-red-600 text-white shadow"
+                        : "bg-white hover:bg-gray-100"
                     }`
                   }
                 >
@@ -156,37 +123,142 @@ const AngulDetails = () => {
               ))}
             </Tab.List>
 
-            <Tab.Panels className="w-3/4 p-4">
-              {tabs.map((tab, index) => (
-                <Tab.Panel key={index}>{tab.content}</Tab.Panel>
+            {/* DIVIDER */}
+            <div className="hidden lg:flex justify-center">
+              <div className="w-[2px] bg-red-600/80 rounded-full h-full" />
+            </div>
+
+            {/* RIGHT CONTENT */}
+            <Tab.Panels>
+              {tabs.map((tab) => (
+                <Tab.Panel key={tab.name} className="space-y-10">
+
+                  {/* Hero */}
+                  <img
+                    src={tab.heroImage}
+                    alt={tab.name}
+                    className="w-full h-80 object-cover shadow"
+                  />
+
+                  {/* Summary */}
+                  <p className="text-gray-700 max-w-3xl text-lg">
+                    {tab.shortDescription}
+                  </p>
+
+                  {/* Accordion */}
+                  <div className="bg-white shadow border">
+                    <div className="flex border-b">
+                      <button
+                        onClick={() => setAccordion("projects")}
+                        className={`flex-1 py-4 font-medium ${
+                          accordion === "projects"
+                            ? "bg-red-600 text-white"
+                            : "hover:bg-gray-100"
+                        }`}
+                      >
+                        Projects
+                      </button>
+                      <button
+                        onClick={() => setAccordion("clients")}
+                        className={`flex-1 py-4 font-medium ${
+                          accordion === "clients"
+                            ? "bg-red-600 text-white"
+                            : "hover:bg-gray-100"
+                        }`}
+                      >
+                        Clients
+                      </button>
+                    </div>
+
+                    <div className="p-6">
+                      {/* PROJECTS */}
+                      {accordion === "projects" && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                          {tab.projects.map((project, index) => (
+                            <div
+                              key={index}
+                              className="group relative bg-gradient-to-br from-white to-gray-50
+                                         border p-6 shadow-sm hover:shadow-lg
+                                         transition-all duration-300"
+                            >
+                              <span className="absolute top-0 left-0 h-full w-1 bg-red-600 opacity-0 group-hover:opacity-100 transition" />
+
+                              <div className="w-12 h-12 flex items-center justify-center bg-red-50 mb-4">
+                                <Briefcase className="w-6 h-6 text-red-600" />
+                              </div>
+
+                              <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                                {project}
+                              </h4>
+
+                              <p className="text-sm text-gray-600 leading-relaxed">
+                                A focused initiative delivering measurable outcomes
+                                through structured execution and community participation.
+                              </p>
+
+                              <div className="mt-4 text-sm font-medium text-red-600 opacity-0 group-hover:opacity-100 transition">
+                                View details →
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* CLIENTS */}
+                      {accordion === "clients" && (
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                          {tab.clients.map((client) => (
+                            <div
+                              key={client.name}
+                              className="flex items-center justify-center bg-gray-50 p-4 border hover:shadow transition"
+                            >
+                              <img
+                                src={client.logo}
+                                alt={client.name}
+                                className="h-14 object-contain grayscale hover:grayscale-0 transition"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* IMPACT */}
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-6">
+                      Program Impact
+                    </h3>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                      {tab.impacts.map((impact, i) => {
+                        const Icon = impact.icon;
+                        return (
+                          <div
+                            key={i}
+                            className="bg-white p-6 shadow border text-center"
+                          >
+                            <Icon className="w-6 h-6 text-red-600 mx-auto mb-3" />
+                            <div className="text-3xl font-bold text-gray-900">
+                              {impact.value}
+                            </div>
+                            <div className="text-sm text-gray-600 mt-1">
+                              {impact.label}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                </Tab.Panel>
               ))}
             </Tab.Panels>
+
           </div>
         </Tab.Group>
       </div>
-
-      {/* Mobile View */}
-      <div className="md:hidden">
-        {tabs.map((tab, index) => (
-          <div key={index} className="border-b border-gray-200">
-            <button
-              onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-2 px-4 text-left font-medium text-gray-700 focus:outline-none"
-            >
-              {tab.name}
-              <ChevronDown
-                className={`transform transition-transform duration-200 ${
-                  activeTab === index ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-            {activeTab === index && (
-              <div className="p-4 text-gray-700">{tab.content}</div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

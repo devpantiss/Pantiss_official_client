@@ -1,192 +1,292 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
+import { Users, Briefcase, Home } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
+/* --------------------------------
+   DATA
+-------------------------------- */
+
 const tabs = [
   {
-    name: "Skilling with DMF & SCMS",
     tab_name: "Skilling",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-6">Skilling with DMF & SCMS</h2>
-        <p className="text-gray-700 text-[18px] mb-6">
-          Under the partnership between the{" "}
-          <b>District Mineral Foundation (DMF)</b> and the{" "}
-          <b>Skill Council for Mining Sector (SCMS)</b>, structured skill
-          development initiatives have been launched in Jajpur district to
-          empower local youth for mining and allied industries. The program
-          focuses on hands-on, industry-relevant training to enhance
-          employability and sustainable livelihoods.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {[
-            {
-              title: "HEMM Mechanic",
-              desc: "Comprehensive training on maintenance and repair of Heavy Earth Moving Machinery used in mines and construction.",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
-            },
-            {
-              title: "Industrial Welder",
-              desc: "Advanced welding techniques and fabrication for industrial equipment, mining infrastructure, and heavy machinery.",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819859/WhatsApp_Image_2025-10-30_at_3.30.06_PM_mhnoko.jpg",
-            },
-            {
-              title: "Industrial Electrician",
-              desc: "Training in installation, maintenance, and troubleshooting of electrical systems in industrial and mining environments.",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819854/images_5_w5lly4.jpg",
-            },
-            {
-              title: "Excavator Operator",
-              desc: "Hands-on training for operating excavators efficiently and safely in mining and construction operations.",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg",
-            },
-            {
-              title: "Dumper Operator",
-              desc: "Skill development for operating dump trucks safely and effectively in mining and infrastructure sectors.",
-              img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819881/WhatsApp_Image_2025-10-30_at_3.38.18_PM_avyast.jpg",
-            },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-4 transition"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="rounded-xl mb-3 w-full h-40 object-cover"
-              />
-              <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-[16px]">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+    description:
+      "Under the partnership between District Mineral Foundation (DMF) and Skill Council for Mining Sector (SCMS), structured skill development initiatives empower youth for mining and allied industries in Jajpur district.",
+    projects: [
+      "Nua Odisha Skill Development Program",
+      "Skill On Wheels",
+    ],
+    clients: [
+      {
+        name: "DMF Jajpur",
+        logo: "https://dummyimage.com/200x100/000/fff&text=DMF+Jajpur",
+      },
+      {
+        name: "SCMS",
+        logo: "https://dummyimage.com/200x100/000/fff&text=SCMS",
+      },
+    ],
+    impacts: [
+      { value: "1,500+", label: "Youth Trained", icon: Users },
+      { value: "72%", label: "Placement Rate", icon: Briefcase },
+      { value: "5+", label: "Trades Offered", icon: Home },
+    ],
   },
+
   {
-    name: "GIS Survey in Jajapur",
     tab_name: "GIS Survey",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-6">
-          GIS-Based Household Survey in Jajpur
-        </h2>
-        <p className="text-gray-700 text-[18px] mb-4">
-          A large-scale <b>GIS-enabled household survey</b> was conducted across
-          two blocks of
-          <b> Jajpur District</b>, covering more than <b>45,000 households</b>.
-          The initiative aims to create a data-driven framework for social and
-          economic planning.
-        </p>
-
-        <p className="text-gray-700 text-[18px] mb-4">
-          Using advanced geospatial mapping technology, the survey gathered data
-          on demographics, livelihoods, health, education, sanitation, and
-          resource availability. This initiative supports evidence-based
-          decision-making for local governance and resource allocation.
-        </p>
-
-        <p className="text-gray-700 text-[18px] mb-4">
-          The GIS survey outcomes are being used to identify developmental
-          priorities, monitor program implementation, and enhance transparency
-          through data visualization.
-        </p>
-
-        <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761837250/sourajit-hazra-b-O15p8xTns-unsplash_2_hu2xiu.jpg"
-          alt="GIS Survey Jajpur"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761837250/sourajit-hazra-b-O15p8xTns-unsplash_2_hu2xiu.jpg",
+    description:
+      "A GIS-enabled household survey covering more than 45,000 households across two blocks of Jajpur district, enabling data-driven planning and governance.",
+    projects: [
+      "Household Mapping",
+      "Demographic Profiling",
+      "Livelihood & Asset Mapping",
+      "Infrastructure & Services Mapping",
+    ],
+    clients: [
+      {
+        name: "District Administration, Jajpur",
+        logo: "https://dummyimage.com/200x100/000/fff&text=District+Admin",
+      },
+    ],
+    impacts: [
+      { value: "45,000+", label: "Households Surveyed", icon: Users },
+      { value: "2", label: "Blocks Covered", icon: Home },
+      { value: "100%", label: "GIS Tagged Data", icon: Briefcase },
+    ],
   },
+
   {
-    name: "RPL on Fisheries with NEFDB",
     tab_name: "RPL",
-    content: (
-      <>
-        <h2 className="text-3xl font-bold mb-2">RPL on Fisheries with NEFDB</h2>
-        <p className="text-gray-700 text-[18px]">
-          In partnership with the{" "}
-          <b>National Fisheries Development Board (NEFDB)</b>, the Recognition
-          of Prior Learning (RPL) program identifies and certifies the existing
-          skills of fish farmers and workers involved in aquaculture and inland
-          fisheries.
-        </p>
-        <p className="text-gray-700 text-[18px] mt-4">
-          It focuses on best aquaculture practices, water quality management,
-          feed formulation, and sustainable fish breeding, ensuring skill
-          validation and empowerment of fishery workers.
-        </p>
-        <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761815054/AdobeStock_574000874_Preview_md91z2.jpg"
-          alt="RPL on Fisheries NEFDB"
-          className="mt-4 rounded-lg shadow-lg"
-        />
-      </>
-    ),
+    heroImage:
+      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815054/AdobeStock_574000874_Preview_md91z2.jpg",
+    description:
+      "Recognition of Prior Learning (RPL) in fisheries validates the existing skills of fish farmers and aquaculture workers in partnership with NEFDB.",
+    projects: [
+      "Skill Assessment",
+      "Worker Certification",
+      "Best Aquaculture Practices",
+      "Sustainable Fisheries Training",
+    ],
+    clients: [
+      {
+        name: "NEFDB",
+        logo: "https://dummyimage.com/200x100/000/fff&text=NEFDB",
+      },
+    ],
+    impacts: [
+      { value: "800+", label: "Workers Certified", icon: Users },
+      { value: "6+", label: "Fishing Clusters Covered", icon: Home },
+      { value: "90%", label: "Skill Validation Rate", icon: Briefcase },
+    ],
   },
 ];
 
+/* --------------------------------
+   COMPONENT
+-------------------------------- */
+
 const JajpurDetails = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [accordion, setAccordion] = useState("projects");
+  const [activeMobile, setActiveMobile] = useState(-1);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-4">
+        <Heading text="OUR WORK" color="text-black" bgColor="bg-red-600" />
 
-      {/* Desktop View */}
-      <div className="hidden md:block">
-        <Tab.Group>
-          <div className="flex">
-            <Tab.List className="w-1/4 border-r border-gray-200">
-              {tabs.map((tab, index) => (
-                <Tab
-                  key={index}
-                  className={({ selected }) =>
-                    `block w-full py-3 px-4 text-left font-medium text-gray-700 hover:bg-gray-100 focus:outline-none ${
-                      selected ? "bg-red-600 text-white" : ""
-                    }`
-                  }
-                >
-                  <p className="text-[18px]">{tab.tab_name}</p>
-                </Tab>
-              ))}
-            </Tab.List>
+        {/* DESKTOP */}
+        <div className="hidden md:block">
+          <Tab.Group>
+            <div className="mt-12 grid grid-cols-[1fr_auto_3fr] gap-10">
 
-            <Tab.Panels className="w-3/4 p-6">
-              {tabs.map((tab, index) => (
-                <Tab.Panel key={index}>{tab.content}</Tab.Panel>
-              ))}
-            </Tab.Panels>
-          </div>
-        </Tab.Group>
+              {/* LEFT NAV */}
+              <Tab.List className="space-y-3">
+                {tabs.map((tab, index) => (
+                  <Tab
+                    key={index}
+                    className={({ selected }) =>
+                      `w-full text-left px-5 py-4 font-medium rounded-lg transition ${
+                        selected
+                          ? "bg-red-600 text-white shadow"
+                          : "bg-white hover:bg-gray-100"
+                      }`
+                    }
+                  >
+                    {tab.tab_name}
+                  </Tab>
+                ))}
+              </Tab.List>
+
+              {/* DIVIDER */}
+              <div className="flex justify-center">
+                <div className="w-[2px] bg-red-600/80 rounded-full h-full" />
+              </div>
+
+              {/* RIGHT CONTENT */}
+              <Tab.Panels>
+                {tabs.map((tab, index) => (
+                  <Tab.Panel key={index} className="space-y-10">
+
+                    {/* HERO */}
+                    <img
+                      src={tab.heroImage}
+                      alt={tab.tab_name}
+                      className="w-full h-80 object-cover rounded-xl shadow"
+                    />
+
+                    {/* DESCRIPTION */}
+                    <p className="text-lg text-gray-700 max-w-3xl">
+                      {tab.description}
+                    </p>
+
+                    {/* PROJECTS / CLIENTS */}
+                    <div className="bg-white border rounded-lg shadow">
+
+                      {/* SWITCH */}
+                      <div className="flex">
+                        <button
+                          onClick={() => setAccordion("projects")}
+                          className={`flex-1 py-4 font-semibold ${
+                            accordion === "projects"
+                              ? "bg-red-600 text-white"
+                              : "hover:bg-gray-50"
+                          }`}
+                        >
+                          Projects
+                        </button>
+                        <button
+                          onClick={() => setAccordion("clients")}
+                          className={`flex-1 py-4 font-semibold border-l ${
+                            accordion === "clients"
+                              ? "bg-red-600 text-white"
+                              : "hover:bg-gray-50"
+                          }`}
+                        >
+                          Clients
+                        </button>
+                      </div>
+
+                      {/* CONTENT */}
+                      <div className="p-6">
+                        {accordion === "projects" && (
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {tab.projects.map((project, i) => (
+                              <div
+                                key={i}
+                                className="relative bg-white border rounded-lg p-6 shadow-sm"
+                              >
+                                <span className="absolute top-0 left-0 h-full w-1 bg-red-600 rounded-l-lg" />
+                                <div className="w-10 h-10 bg-red-50 flex items-center justify-center rounded mb-4">
+                                  <Briefcase className="w-5 h-5 text-red-600" />
+                                </div>
+                                <h4 className="font-semibold mb-2">
+                                  {project}
+                                </h4>
+                                <p className="text-sm text-gray-600">
+                                  A focused initiative delivering measurable
+                                  outcomes through structured execution.
+                                </p>
+                                <div className="mt-4 text-sm text-red-600 font-medium">
+                                  View details →
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+
+                        {accordion === "clients" && (
+                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                            {tab.clients.map((client) => (
+                              <div
+                                key={client.name}
+                                className="flex items-center justify-center bg-gray-50 border rounded-lg p-6"
+                              >
+                                <img
+                                  src={client.logo}
+                                  alt={client.name}
+                                  className="h-14 object-contain grayscale hover:grayscale-0 transition"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* IMPACT */}
+                    <div>
+                      <h3 className="text-2xl font-semibold mb-6">
+                        Program Impact
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {tab.impacts.map((impact, i) => {
+                          const Icon = impact.icon;
+                          return (
+                            <div
+                              key={i}
+                              className="bg-white border rounded-xl p-6 text-center shadow"
+                            >
+                              <Icon className="w-6 h-6 text-red-600 mx-auto mb-3" />
+                              <div className="text-3xl font-bold">
+                                {impact.value}
+                              </div>
+                              <div className="text-sm text-gray-600 mt-1">
+                                {impact.label}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                  </Tab.Panel>
+                ))}
+              </Tab.Panels>
+
+            </div>
+          </Tab.Group>
+        </div>
+
+        {/* MOBILE */}
+        <div className="md:hidden mt-10">
+          {tabs.map((tab, index) => (
+            <div key={index} className="border-b">
+              <button
+                onClick={() =>
+                  setActiveMobile(activeMobile === index ? -1 : index)
+                }
+                className="w-full flex justify-between items-center py-4 font-medium"
+              >
+                {tab.tab_name}
+                <ChevronDown
+                  className={`transition-transform ${
+                    activeMobile === index ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {activeMobile === index && (
+                <div className="space-y-6 pb-6">
+                  <img
+                    src={tab.heroImage}
+                    alt={tab.tab_name}
+                    className="rounded-xl shadow"
+                  />
+                  <p className="text-gray-700">{tab.description}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
       </div>
-
-      {/* Mobile View */}
-      <div className="md:hidden">
-        {tabs.map((tab, index) => (
-          <div key={index} className="border-b border-gray-200">
-            <button
-              onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-              className="w-full flex justify-between items-center py-3 px-4 text-left font-medium text-gray-700 focus:outline-none"
-            >
-              {tab.tab_name}
-              <ChevronDown
-                className={`transform transition-transform duration-200 ${
-                  activeTab === index ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-            {activeTab === index && (
-              <div className="p-4 text-gray-700">{tab.content}</div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

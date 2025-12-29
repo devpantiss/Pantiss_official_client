@@ -4,6 +4,7 @@ import DetailsKeonjhar from '../../../Components/WhereWeWork/Odisha/Districts/Ke
 import DetailsKeonjhar2 from '../../../Components/WhereWeWork/Odisha/Districts/Keonjhar/Details2'
 import LeadershipKeonjhar from '../../../Components/WhereWeWork/Odisha/Districts/Keonjhar/Leadership'
 import HeroKeonjhar from '../../../Components/WhereWeWork/Odisha/Districts/Keonjhar/HeroKeonjhar'
+import KeonjharReports from '../../../Components/WhereWeWork/Odisha/Districts/Keonjhar/KeonjharReports'
 
 const Keonjhar = () => {
   return (
@@ -12,6 +13,7 @@ const Keonjhar = () => {
       <ImpactKeonjhar />
       <DetailsKeonjhar />
       <DetailsKeonjhar2 />
+      <KeonjharReports />
       <LeadershipKeonjhar />
     </div>
   )

@@ -103,7 +103,7 @@ const Details2 = () => {
       </section>
 
       {/* Donors & Partners */}
-      <section className="p-6">
+      {/* <section className="p-6">
         <div className="mx-auto max-w-7xl">
           <div className="flex mb-6">
             <Heading
@@ -130,7 +130,7 @@ const Details2 = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -3,15 +3,15 @@ import Heading from "../../../../Common/Heading";
 
 const leadershipTeam = [
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760095558/jalandhar_2_1_b8x99s.jpg",
+    img: "/assets/teams/jalandhar.png",
     name: "Mr. Jalandhar Mohanty",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760097548/a2298662-3356-4d17-a214-232b403e00d4_2_vmhfeu.jpg",
+    img: "/assets/teams/gangadhar.png",
     name: "Mr. Gangadhar Bej",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096656/rituraj_3_i1wfve.jpg",
+    img: "/assets/teams/rituraj.png",
     name: "Mr. Rituraj Tarei",
   },
 ];

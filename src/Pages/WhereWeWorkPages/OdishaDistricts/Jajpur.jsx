@@ -4,6 +4,7 @@ import JajpurImpact from '../../../Components/WhereWeWork/Odisha/Districts/Jajpu
 import JajpurDetails from '../../../Components/WhereWeWork/Odisha/Districts/Jajpur/JajpurDetails'
 import JajpurDetails2 from '../../../Components/WhereWeWork/Odisha/Districts/Jajpur/JajpurDetails2'
 import JajpurLeadership from '../../../Components/WhereWeWork/Odisha/Districts/Jajpur/JajpurLeadership'
+import JajpurReports from '../../../Components/WhereWeWork/Odisha/Districts/Jajpur/JajpurReports'
 
 const Jajpur = () => {
   return (
@@ -12,6 +13,7 @@ const Jajpur = () => {
       <JajpurImpact />
       <JajpurDetails />
       <JajpurDetails2 />
+      <JajpurReports />
       <JajpurLeadership />
     </div>
   )

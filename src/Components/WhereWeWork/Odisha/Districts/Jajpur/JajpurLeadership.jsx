@@ -3,15 +3,15 @@ import Heading from "../../../../Common/Heading";
 
 const leadershipTeam = [
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759942178/dc6111f1-1097-47e1-bafc-e24ccc2d9098_dmckxl.png",
+    img: "/assets/teams/dwarka.png",
     name: "Mr. Dwarka Prasad",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619653/Alok_2_wvhyt2.jpg",
+    img: "/assets/teams/alok.png",
     name: "Mr. Alok Chandra Das",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619794/Sudarshan_2_geimdd.jpg",
+    img: "/assets/teams/sudarshan.png",
     name: "Mr. Sudarshan Barik",
   },
 ];
@@ -21,7 +21,7 @@ const JajpurLeadership = () => {
     <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
         <Heading
-          text="OUR LEADERSHIP"
+          text="OUR TEAM"
           color="text-black"
           bgColor="bg-red-600"
         />

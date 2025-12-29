@@ -3,15 +3,15 @@ import Heading from "../../../../Common/Heading";
 
 const leadershipTeam = [
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620253/manoj_2_enavbz.jpg",
+    img: "/assets/teams/manoj.png",
     name: "Mr. Manoj Panda",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760096195/bikram_2_ufeeka.jpg",
+    img: "/assets/teams/bikram.png",
     name: "Mr. Bikram Keshari Gouda",
   },
   {
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619899/titan_2_bdytme.jpg",
+    img: "/assets/teams/titan.png",
     name: "Mr. Titan Sahoo",
   },
 ];
@@ -20,7 +20,7 @@ const Leadership = () => {
   return (
     <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
-        <Heading text="OUR LEADERSHIP" color="text-black" bgColor="bg-red-600" />
+        <Heading text="OUR TEAM" color="text-black" bgColor="bg-red-600" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {leadershipTeam.map((leader, index) => (
