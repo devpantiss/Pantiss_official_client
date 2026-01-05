@@ -11,57 +11,57 @@ const careerAreas = [
   {
     title: "M&E",
     count: 0,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761744325/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_whomtc.jpg",
+    img: "/assets/careers/M&E.jpg",
   },
   {
     title: "Project Management & Implementation",
     count: 6,
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119059/octavian-dan-craciun-b21Ty33CqVs-unsplash_isrzcv.jpg",
+    img: "/assets/careers/project_management.jpg",
   },
   {
     title: "Finance, Grants & Procurement",
     count: 0,
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119222/towfiqu-barbhuiya-nApaSgkzaxg-unsplash_mnkkge.jpg",
+    img: "/assets/careers/finance.jpg",
   },
   {
     title: "Human Resources & Administration",
     count: 0,
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119331/cytonn-photography-n95VMLxqM2I-unsplash_zx5zfg.jpg",
+    img: "/assets/careers/hr.jpg",
   },
   {
     title: "Business Development & Partnerships",
     count: 1,
-    img: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1761119393/kaleidico-26MJGnCM0Wc-unsplash_klnlaa.jpg",
+    img: "/assets/careers/business_development.jpg",
   },
   {
     title: "Social Enterprise",
     count: 2,
-    img: "https://careers.brac.net/category/3.png?c_scale,w_300",
+    img: "/assets/careers/social_enterprise.png",
   },
   {
     title: "Technical, Vocational Education and Training",
     count: 2,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745242/IMG_9085_tkrncl_1_1_cc29gu.jpg",
+    img: "/assets/careers/tvet.jpg",
   },
   {
     title: "ICT Development",
     count: 4,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745281/nick-morrison-FHnnjk1Yj7Y-unsplash_nso1rp.jpg",
+    img: "/assets/careers/ICT.jpg",
   },
   {
     title: "Civil Engineering",
     count: 2,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745317/vocational_x4fu5b.jpg",
+    img: "/assets/careers/vocational.JPG",
   },
   {
     title: "Research and Advocacy",
     count: 2,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745351/nima-van-ghavim-Q9C0SMrg4gU-unsplash_euuspx.jpg",
+    img: "/assets/careers/research&advocacy.jpg",
   },
   {
     title: "Development Compliance",
     count: 2,
-    img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745402/How-to-Build-Trust-in-Controls-With-Centralized-Compliance_lsa3jk.jpg",
+    img: "/assets/careers/compliance.jpg",
   },
 ];
 

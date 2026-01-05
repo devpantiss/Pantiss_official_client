@@ -33,13 +33,13 @@ const PodcastBanner = () => {
         </div>
 
         {/* CTA */}
-        <button
+        {/* <button
           className="px-6 py-2 bg-red-600 rounded-md text-white font-medium
                      hover:bg-red-700 transition-colors
                      focus:outline-none focus:ring-2 focus:ring-red-500 md:ml-4"
         >
           Listen Now
-        </button>
+        </button> */}
       </div>
     </div>
   );

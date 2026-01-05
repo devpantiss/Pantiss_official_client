@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
-import { Users, Briefcase, Home } from "lucide-react";
-import { ChevronDown } from "lucide-react";
+import { Users, Briefcase, Home, ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
 /* --------------------------------
@@ -16,8 +15,8 @@ const tabs = [
     description:
       "Under the partnership between District Mineral Foundation (DMF) and Skill Council for Mining Sector (SCMS), structured skill development initiatives empower youth for mining and allied industries in Jajpur district.",
     projects: [
-      "Nua Odisha Skill Development Program",
-      "Skill On Wheels",
+      { title: "Nua Odisha Skill Development Program" },
+      { title: "Skill On Wheels" },
     ],
     clients: [
       {
@@ -43,10 +42,10 @@ const tabs = [
     description:
       "A GIS-enabled household survey covering more than 45,000 households across two blocks of Jajpur district, enabling data-driven planning and governance.",
     projects: [
-      "Household Mapping",
-      "Demographic Profiling",
-      "Livelihood & Asset Mapping",
-      "Infrastructure & Services Mapping",
+      { title: "Household Mapping" },
+      { title: "Demographic Profiling" },
+      { title: "Livelihood & Asset Mapping" },
+      { title: "Infrastructure & Services Mapping" },
     ],
     clients: [
       {
@@ -68,10 +67,10 @@ const tabs = [
     description:
       "Recognition of Prior Learning (RPL) in fisheries validates the existing skills of fish farmers and aquaculture workers in partnership with NEFDB.",
     projects: [
-      "Skill Assessment",
-      "Worker Certification",
-      "Best Aquaculture Practices",
-      "Sustainable Fisheries Training",
+      { title: "Skill Assessment" },
+      { title: "Worker Certification" },
+      { title: "Best Aquaculture Practices" },
+      { title: "Sustainable Fisheries Training" },
     ],
     clients: [
       {
@@ -92,7 +91,7 @@ const tabs = [
 -------------------------------- */
 
 const JajpurDetails = () => {
-  const [accordion, setAccordion] = useState("projects");
+  const [activeView, setActiveView] = useState("projects");
   const [activeMobile, setActiveMobile] = useState(-1);
 
   return (
@@ -131,7 +130,7 @@ const JajpurDetails = () => {
               {/* RIGHT CONTENT */}
               <Tab.Panels>
                 {tabs.map((tab, index) => (
-                  <Tab.Panel key={index} className="space-y-10">
+                  <Tab.Panel key={index} className="space-y-12">
 
                     {/* HERO */}
                     <img
@@ -145,78 +144,71 @@ const JajpurDetails = () => {
                       {tab.description}
                     </p>
 
-                    {/* PROJECTS / CLIENTS */}
-                    <div className="bg-white border rounded-lg shadow">
+                    {/* PROJECT / CLIENT SWITCH */}
+                    <div className="flex gap-4">
+                      <button
+                        onClick={() => setActiveView("projects")}
+                        className={`px-6 py-3 font-semibold transition ${
+                          activeView === "projects"
+                            ? "bg-red-600 text-white shadow"
+                            : "bg-white border hover:bg-gray-100"
+                        }`}
+                      >
+                        Projects
+                      </button>
 
-                      {/* SWITCH */}
-                      <div className="flex">
-                        <button
-                          onClick={() => setAccordion("projects")}
-                          className={`flex-1 py-4 font-semibold ${
-                            accordion === "projects"
-                              ? "bg-red-600 text-white"
-                              : "hover:bg-gray-50"
-                          }`}
-                        >
-                          Projects
-                        </button>
-                        <button
-                          onClick={() => setAccordion("clients")}
-                          className={`flex-1 py-4 font-semibold border-l ${
-                            accordion === "clients"
-                              ? "bg-red-600 text-white"
-                              : "hover:bg-gray-50"
-                          }`}
-                        >
-                          Clients
-                        </button>
-                      </div>
+                      {/* <button
+                        onClick={() => setActiveView("clients")}
+                        className={`px-6 py-3 font-semibold transition ${
+                          activeView === "clients"
+                            ? "bg-red-600 text-white shadow"
+                            : "bg-white border hover:bg-gray-100"
+                        }`}
+                      >
+                        Clients
+                      </button> */}
+                    </div>
 
-                      {/* CONTENT */}
-                      <div className="p-6">
-                        {accordion === "projects" && (
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {tab.projects.map((project, i) => (
-                              <div
-                                key={i}
-                                className="relative bg-white border rounded-lg p-6 shadow-sm"
-                              >
-                                <span className="absolute top-0 left-0 h-full w-1 bg-red-600 rounded-l-lg" />
-                                <div className="w-10 h-10 bg-red-50 flex items-center justify-center rounded mb-4">
-                                  <Briefcase className="w-5 h-5 text-red-600" />
-                                </div>
-                                <h4 className="font-semibold mb-2">
-                                  {project}
-                                </h4>
-                                <p className="text-sm text-gray-600">
-                                  A focused initiative delivering measurable
-                                  outcomes through structured execution.
-                                </p>
-                                <div className="mt-4 text-sm text-red-600 font-medium">
-                                  View details →
-                                </div>
-                              </div>
-                            ))}
+                    {/* CARD GRID */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                      {/* PROJECT CARDS */}
+                      {activeView === "projects" &&
+                        tab.projects.map((project, i) => (
+                          <div
+                            key={i}
+                            className="bg-white p-8 border rounded-xl shadow-sm
+                                       hover:shadow-xl hover:-translate-y-1
+                                       transition-all duration-300
+                                       flex flex-col items-center text-center"
+                          >
+                            <div className="w-12 h-12 bg-red-50 flex items-center justify-center rounded mb-5">
+                              <Briefcase className="w-6 h-6 text-red-600" />
+                            </div>
+
+                            <h4 className="text-lg font-semibold text-gray-900 leading-snug">
+                              {project.title}
+                            </h4>
                           </div>
-                        )}
+                        ))}
 
-                        {accordion === "clients" && (
-                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                            {tab.clients.map((client) => (
-                              <div
-                                key={client.name}
-                                className="flex items-center justify-center bg-gray-50 border rounded-lg p-6"
-                              >
-                                <img
-                                  src={client.logo}
-                                  alt={client.name}
-                                  className="h-14 object-contain grayscale hover:grayscale-0 transition"
-                                />
-                              </div>
-                            ))}
+                      {/* CLIENT CARDS */}
+                      {activeView === "clients" &&
+                        tab.clients.map((client) => (
+                          <div
+                            key={client.name}
+                            className="bg-white p-8 border rounded-xl shadow-sm
+                                       hover:shadow-xl hover:-translate-y-1
+                                       transition-all duration-300
+                                       flex items-center justify-center"
+                          >
+                            <img
+                              src={client.logo}
+                              alt={client.name}
+                              className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                            />
                           </div>
-                        )}
-                      </div>
+                        ))}
                     </div>
 
                     {/* IMPACT */}
@@ -224,6 +216,7 @@ const JajpurDetails = () => {
                       <h3 className="text-2xl font-semibold mb-6">
                         Program Impact
                       </h3>
+
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {tab.impacts.map((impact, i) => {
                           const Icon = impact.icon;

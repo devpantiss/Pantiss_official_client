@@ -28,12 +28,12 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/02e5eaed-e5d1-4067-b7e8-ca16c15e5304_npoanm.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1739294514/cls-open-pit-mining_pbeseo.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737450493/TNIE_import_2023_3_6_original_Illegalcoalmining_cthtx2.avif",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816871/cd939ec7-2ea0-43fc-835d-cfe2fa8bfb73_va2bwv.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816870/286ada51-f3cf-4fcf-b501-b56f2ad10397_kzckw0.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816869/8ab7f18d-dcf0-49bc-b1c2-0fe81e8d99c3_dwgynm.jpg",
+  // "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/02e5eaed-e5d1-4067-b7e8-ca16c15e5304_npoanm.jpg",
+  "/assets/gallery/Gallery_13.webp",
+  "/assets/gallery/Gallery_14.avif",
+  "/assets/gallery/Gallery_15.jpg",
+  "/assets/gallery/Gallery_16.JPG",
+  "/assets/gallery/Gallery_17.JPG",
 ];
 
 // Memoized GalleryImage component

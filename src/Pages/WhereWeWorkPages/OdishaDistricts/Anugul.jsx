@@ -22,11 +22,11 @@ const Anugul = () => {
       <HeroAngul />
       <AngulImpact />
       <AngulDetails />
-      {/* <ClientsMarquee
+      <ClientsMarquee
         district="CLIENTS"
         clients={keonjharClients}
         speed={30}
-      /> */}
+      />
       <AngulDetails2 />
       <AngulReports />
       <AngulLeadership />

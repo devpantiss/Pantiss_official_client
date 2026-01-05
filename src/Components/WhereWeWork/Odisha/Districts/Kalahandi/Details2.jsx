@@ -28,13 +28,11 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820299/fish-farm-pond-beautiful-village-with-lots-bamboo-coconut-trees_223811-21_eq0fku.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820291/64e92b9a-d148-4907-9455-37185e8ae66a_fmnvg4.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820290/77fa4648-d847-4c4a-81df-8054b0082324_op7skq.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820289/18d16c25-a950-428b-8147-f2b8aeb4b123_y9k4yo.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820289/60cd3ceb-cde6-4a69-a587-1ad4eb974454_vqef6t.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820282/7cf81b40-cb85-47b0-bc17-5ed47fa210ed_2_ltergg.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742820278/2cf04226-46c3-4820-90e4-61a001350d8b_l1cetk.jpg",
+  "/assets/gallery/Gallery_18.jpg",
+  "/assets/gallery/Gallery_19.jpg",
+  "/assets/gallery/Gallery_20.jpg",
+  "/assets/gallery/Gallery_21.jpg",
+  "/assets/gallery/Gallery_22.jpg",
 ];
 
 // Memoized GalleryImage component

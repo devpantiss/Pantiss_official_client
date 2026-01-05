@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
-import {
-  Users,
-  Briefcase,
-  Home,
-  HeartPulse,
-} from "lucide-react";
+import { Users, Briefcase, Home, HeartPulse } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
 /* --------------------------------
@@ -20,8 +15,14 @@ const tabs = [
     shortDescription:
       "Industry-aligned technical and vocational education programs designed to improve employability and income stability among youth.",
     projects: [
-      "Nua Odisha Skill Development Program",
-      "Skill On Wheels",
+      {
+        title: "Nua Odisha Skill Development Program",
+        logo: "https://digitall.skillodisha.gov.in/Application/uploadDocuments/Logo/LogoH20181206_110122.png",
+      },
+      {
+        title: "Skill On Wheels",
+        logo: "https://www.tpcentralodisha.com/images/group_company_logo1.jpg",
+      },
     ],
     clients: [
       {
@@ -40,6 +41,7 @@ const tabs = [
       { value: "60%", label: "Local Employment", icon: Home },
     ],
   },
+
   {
     name: "Environment & Ecology",
     heroImage:
@@ -47,10 +49,14 @@ const tabs = [
     shortDescription:
       "Rehabilitation, resettlement, and ecological restoration programs for mining-affected communities.",
     projects: [
-      "Village Rehabilitation",
-      "Resettlement Colonies",
-      "Afforestation Drives",
-      "Water Resource Management",
+      {
+        title: "Village Rehabilitation Program",
+        logo: "https://upload.wikimedia.org/wikipedia/en/3/3e/Mahanadi_Coalfields_Limited_logo.png",
+      },
+      {
+        title: "Afforestation & Ecological Restoration",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/6/63/Tree_icon.png",
+      },
     ],
     clients: [
       {
@@ -64,6 +70,7 @@ const tabs = [
       { value: "120+ Ha", label: "Green Cover Created", icon: Home },
     ],
   },
+
   {
     name: "Health & Nutrition",
     heroImage:
@@ -71,14 +78,18 @@ const tabs = [
     shortDescription:
       "Community health, nutrition, and well-being initiatives for women, children, and vulnerable populations.",
     projects: [
-      "Maternal Health Program",
-      "School Nutrition Support",
-      "Health Camps",
-      "Safe Drinking Water",
+      {
+        title: "Maternal Health & Nutrition Program",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/0b/UNICEF_Logo.png",
+      },
+      {
+        title: "Safe Drinking Water Initiative",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Water_drop_icon.svg",
+      },
     ],
     clients: [
       {
-        name: "District Health Dept",
+        name: "District Health Department",
         logo: "https://dummyimage.com/200x100/000/fff&text=Health+Dept",
       },
     ],
@@ -95,7 +106,7 @@ const tabs = [
 -------------------------------- */
 
 const AngulDetails = () => {
-  const [accordion, setAccordion] = useState("projects");
+  const [activeView, setActiveView] = useState("projects");
 
   return (
     <section className="bg-gray-50 py-16">
@@ -131,97 +142,87 @@ const AngulDetails = () => {
             {/* RIGHT CONTENT */}
             <Tab.Panels>
               {tabs.map((tab) => (
-                <Tab.Panel key={tab.name} className="space-y-10">
+                <Tab.Panel key={tab.name} className="space-y-12">
 
-                  {/* Hero */}
+                  {/* HERO */}
                   <img
                     src={tab.heroImage}
                     alt={tab.name}
                     className="w-full h-80 object-cover shadow"
                   />
 
-                  {/* Summary */}
+                  {/* SUMMARY */}
                   <p className="text-gray-700 max-w-3xl text-lg">
                     {tab.shortDescription}
                   </p>
 
-                  {/* Accordion */}
-                  <div className="bg-white shadow border">
-                    <div className="flex border-b">
-                      <button
-                        onClick={() => setAccordion("projects")}
-                        className={`flex-1 py-4 font-medium ${
-                          accordion === "projects"
-                            ? "bg-red-600 text-white"
-                            : "hover:bg-gray-100"
-                        }`}
-                      >
-                        Projects
-                      </button>
-                      <button
-                        onClick={() => setAccordion("clients")}
-                        className={`flex-1 py-4 font-medium ${
-                          accordion === "clients"
-                            ? "bg-red-600 text-white"
-                            : "hover:bg-gray-100"
-                        }`}
-                      >
-                        Clients
-                      </button>
-                    </div>
+                  {/* PROJECT / CLIENT TOGGLE */}
+                  <div className="flex gap-4">
+                    <button
+                      onClick={() => setActiveView("projects")}
+                      className={`px-6 py-3 font-medium transition ${
+                        activeView === "projects"
+                          ? "bg-red-600 text-white shadow"
+                          : "bg-white border hover:bg-gray-100"
+                      }`}
+                    >
+                      Projects
+                    </button>
 
-                    <div className="p-6">
-                      {/* PROJECTS */}
-                      {accordion === "projects" && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                          {tab.projects.map((project, index) => (
-                            <div
-                              key={index}
-                              className="group relative bg-gradient-to-br from-white to-gray-50
-                                         border p-6 shadow-sm hover:shadow-lg
-                                         transition-all duration-300"
-                            >
-                              <span className="absolute top-0 left-0 h-full w-1 bg-red-600 opacity-0 group-hover:opacity-100 transition" />
+                    {/* <button
+                      onClick={() => setActiveView("clients")}
+                      className={`px-6 py-3 font-medium transition ${
+                        activeView === "clients"
+                          ? "bg-red-600 text-white shadow"
+                          : "bg-white border hover:bg-gray-100"
+                      }`}
+                    >
+                      Clients
+                    </button> */}
+                  </div>
 
-                              <div className="w-12 h-12 flex items-center justify-center bg-red-50 mb-4">
-                                <Briefcase className="w-6 h-6 text-red-600" />
-                              </div>
+                  {/* CARD GRID */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                              <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                                {project}
-                              </h4>
+                    {/* PROJECT CARDS */}
+                    {activeView === "projects" &&
+                      tab.projects.map((project, index) => (
+                        <div
+                          key={index}
+                          className="bg-white p-8 border shadow-sm hover:shadow-xl
+                                     hover:-translate-y-1 transition-all duration-300
+                                     flex flex-col items-center text-center rounded-xl"
+                        >
+                          {project.logo && (
+                            <img
+                              src={project.logo}
+                              alt={project.title}
+                              className="h-14 mb-6 object-contain"
+                            />
+                          )}
 
-                              <p className="text-sm text-gray-600 leading-relaxed">
-                                A focused initiative delivering measurable outcomes
-                                through structured execution and community participation.
-                              </p>
-
-                              <div className="mt-4 text-sm font-medium text-red-600 opacity-0 group-hover:opacity-100 transition">
-                                View details →
-                              </div>
-                            </div>
-                          ))}
+                          <h4 className="text-lg font-semibold text-gray-900 leading-snug">
+                            {project.title}
+                          </h4>
                         </div>
-                      )}
+                      ))}
 
-                      {/* CLIENTS */}
-                      {accordion === "clients" && (
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                          {tab.clients.map((client) => (
-                            <div
-                              key={client.name}
-                              className="flex items-center justify-center bg-gray-50 p-4 border hover:shadow transition"
-                            >
-                              <img
-                                src={client.logo}
-                                alt={client.name}
-                                className="h-14 object-contain grayscale hover:grayscale-0 transition"
-                              />
-                            </div>
-                          ))}
+                    {/* CLIENT CARDS */}
+                    {activeView === "clients" &&
+                      tab.clients.map((client) => (
+                        <div
+                          key={client.name}
+                          className="bg-white p-8 border shadow-sm hover:shadow-xl
+                                     hover:-translate-y-1 transition-all duration-300
+                                     flex items-center justify-center rounded-xl"
+                        >
+                          <img
+                            src={client.logo}
+                            alt={client.name}
+                            className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                          />
                         </div>
-                      )}
-                    </div>
+                      ))}
                   </div>
 
                   {/* IMPACT */}
@@ -236,7 +237,7 @@ const AngulDetails = () => {
                         return (
                           <div
                             key={i}
-                            className="bg-white p-6 shadow border text-center"
+                            className="bg-white p-6 shadow border text-center rounded-xl"
                           >
                             <Icon className="w-6 h-6 text-red-600 mx-auto mb-3" />
                             <div className="text-3xl font-bold text-gray-900">

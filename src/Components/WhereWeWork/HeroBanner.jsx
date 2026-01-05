@@ -55,7 +55,7 @@ const districts = {
     },
     {
       name: "Jajpur",
-      path: "/where-we-work/odisha/jajapur",
+      path: "/where-we-work/odisha/jajpur",
       image:
         "https://jcdnimz.net.in/portals/0/banner_2_1.jpg",
       tags: ["Industrial Growth", "Skill on Wheels", "Women Workforce"],

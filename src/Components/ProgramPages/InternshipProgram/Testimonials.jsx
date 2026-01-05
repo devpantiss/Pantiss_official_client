@@ -7,37 +7,36 @@ const TestimonialSlider = () => {
 
   const testimonials = [
     {
-      image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/c_auto,h_550,w_400/dc6111f1-1097-47e1-bafc-e24ccc2d9098_dmckxl.jpg",
+      image: "/assets/teams/dwarka.png",
       quote:
         "As the Lead for Water, Sanitation, and Hygiene at Pantiss Foundation, I am committed to ensuring that every community we serve has access to safe water, proper sanitation, and hygienic living conditions. Our work goes beyond infrastructure — it’s about restoring dignity, promoting health, and empowering people to build cleaner, safer futures. Each project is a step toward a healthier, more equitable society.",
       name: "Mr. Dwarka Prasad Bisoyi",
-      title: "Lead, Water, Sanitation, and Hygiene",
+      title: "Lead, (Water & Sanitation)",
       location: "Bhubaneswar, Odisha",
     },
     {
-      image: "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760097567/rahul_2_bct1yz.jpg",
+      image: "/assets/teams/rahul.png",
       quote:
         "As the Lead for Education, Skills Development, and Migration at Pantiss Foundation, I’ve witnessed how targeted skilling and education can transform lives and communities. Our mission is to empower youth and migrant workers with the right opportunities, bridging the gap between potential and employment. At Pantiss, every initiative we take moves us closer to an inclusive and self-reliant Odisha.",
       name: "Mr. Rahul Nayak",
-      title: "Lead, Education, Skills Development, and Migration",
+      title: "Lead, (Technical, Vocational & Educational Training)",
       location: "Bhubaneswar, Odisha",
     },
     {
-      image:"https://res.cloudinary.com/djtzx6wo7/image/upload/v1760620118/Padmini_2_d1jkc5.jpg",
+      image: "/assets/teams/Padmini.png",
       quote:
         "As the Co-Lead for Placements and Industry Engagement at Pantiss Foundation, I’ve had the opportunity to bridge the gap between skilled talent and meaningful employment. By fostering strong partnerships with industries, we’re not only enhancing livelihood opportunities but also strengthening community resilience. At Pantiss, we believe in creating pathways where every skill leads to a sustainable future.",
-        name: "Ms. Padmini Kumari Bisoyi",
-        title: "Co-Lead, Placements & Industry Engagement",
-        location: "Bhubaneswar, Odisha",
+      name: "Ms. Padmini Kumari Bisoyi",
+      title:
+        "Co-Lead, (Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity)",
+      location: "Bhubaneswar, Odisha",
     },
     {
-      image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760005985/57d13a34-2e55-4da8-8a33-ed03e9943eb6_l6djf9.png",
+      image: "/assets/teams/manasi.jpeg",
       quote:
         "As an Associate in Social Compliance and Safeguarding at Pantiss Foundation, I take pride in ensuring that our programs uphold the highest standards of ethics, safety, and inclusivity. Every initiative we undertake is guided by the principles of dignity and protection for all. It’s inspiring to work in an environment that not only drives social impact but also prioritizes the well-being and rights of every individual we serve.",
       name: "Manasi Behera",
-      title: "Associate, Social Compliance and Safeguarding",
+      title: "Associate, (Social Compliance and Safeguarding)",
       location: "Bhubaneswar, Odisha",
     },
   ];
@@ -94,7 +93,7 @@ const TestimonialSlider = () => {
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="rounded-md object-cover w-[400px] h-[500px] shadow-lg"
-                    />
+                  />
                 </div>
 
                 {/* Quote Section */}

@@ -27,7 +27,7 @@ const FoundersSection = () => {
             className="h-auto max-h-[550px] w-full lg:w-[68%] rounded-lg object-cover shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           />
           <img
-            src="https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg"
+            src="/assets/teams/sanjay.png"
             alt="Dr. Sanjay Pradhan"
             className="h-auto max-h-[550px] w-full lg:w-[68%] rounded-lg object-cover shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           />

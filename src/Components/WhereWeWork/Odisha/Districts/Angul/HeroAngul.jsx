@@ -6,7 +6,7 @@ const HeroAngul = () => {
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://odishatourism.gov.in/content/dam/tourism/home/discover/major-cities/anugul/banner_anugul.jpg"
+          src="/assets/districthero/angul_hero.png"
           alt="Empowering Women"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />

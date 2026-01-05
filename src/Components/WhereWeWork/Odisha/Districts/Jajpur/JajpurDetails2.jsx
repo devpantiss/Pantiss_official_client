@@ -28,10 +28,10 @@ NextArrow.displayName = "NextArrow";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/2cf04226-46c3-4820-90e4-61a001350d8b_jkt1vh.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/6afa0d6c-2a16-4e83-a77e-9af97ca85d6b_tnvgzs.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816193/0c4863a1-7276-4c92-9a4d-7104862739ad_bxjgvv.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816194/02e5eaed-e5d1-4067-b7e8-ca16c15e5304_npoanm.jpg",
+  "/assets/gallery/Gallery_9.JPG",
+  "/assets/gallery/Gallery_10.JPG",
+  "/assets/gallery/Gallery_11.JPG",
+  "/assets/gallery/Gallery_12.JPG",
 ];
 
 // Memoized GalleryImage component

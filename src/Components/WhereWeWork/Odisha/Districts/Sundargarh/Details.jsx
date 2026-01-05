@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
-import { Users, Briefcase, Home } from "lucide-react";
-import { ChevronDown } from "lucide-react";
+import { Users, Briefcase, Home, ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
 
 /* --------------------------------
@@ -16,9 +15,9 @@ const tabs = [
     description:
       "Under the District Mineral Foundation (DMF) and Skill Council for Mining Sector (SCMS), skilling initiatives in Sundargarh focus on building a technically competent workforce through industry-aligned, job-oriented training programs.",
     projects: [
-      "Industrial Electrician – Hirma",
-      "Dumper Operator – Malda",
-      "Excavator Operator – Malda",
+      { title: "Industrial Electrician – Hirma" },
+      { title: "Dumper Operator – Malda" },
+      { title: "Excavator Operator – Malda" },
     ],
     clients: [
       {
@@ -44,10 +43,10 @@ const tabs = [
     description:
       "Initiatives in Sundargarh are deeply committed to empowering indigenous communities through cultural preservation, inclusive development, livelihood generation, and access to education while respecting traditional knowledge systems.",
     projects: [
-      "Community Skill Development",
-      "Traditional Livelihood Support",
-      "Education & Awareness Programs",
-      "Women Self-Help Group Strengthening",
+      { title: "Community Skill Development" },
+      { title: "Traditional Livelihood Support" },
+      { title: "Education & Awareness Programs" },
+      { title: "Women Self-Help Group Strengthening" },
     ],
     clients: [
       {
@@ -68,7 +67,7 @@ const tabs = [
 -------------------------------- */
 
 const DetailsSundargarh = () => {
-  const [accordion, setAccordion] = useState("projects");
+  const [activeView, setActiveView] = useState("projects");
   const [activeMobile, setActiveMobile] = useState(-1);
 
   return (
@@ -107,7 +106,7 @@ const DetailsSundargarh = () => {
               {/* RIGHT CONTENT */}
               <Tab.Panels>
                 {tabs.map((tab, index) => (
-                  <Tab.Panel key={index} className="space-y-10">
+                  <Tab.Panel key={index} className="space-y-12">
 
                     {/* HERO */}
                     <img
@@ -121,85 +120,79 @@ const DetailsSundargarh = () => {
                       {tab.description}
                     </p>
 
-                    {/* PROJECTS / CLIENTS */}
-                    <div className="bg-white border rounded-lg shadow">
+                    {/* PROJECT / CLIENT SWITCH */}
+                    <div className="flex gap-4">
+                      <button
+                        onClick={() => setActiveView("projects")}
+                        className={`px-6 py-3 font-semibold transition ${
+                          activeView === "projects"
+                            ? "bg-red-600 text-white shadow"
+                            : "bg-white border hover:bg-gray-100"
+                        }`}
+                      >
+                        Projects
+                      </button>
 
-                      {/* SWITCH */}
-                      <div className="flex">
-                        <button
-                          onClick={() => setAccordion("projects")}
-                          className={`flex-1 py-4 font-semibold ${
-                            accordion === "projects"
-                              ? "bg-red-600 text-white"
-                              : "hover:bg-gray-50"
-                          }`}
-                        >
-                          Projects
-                        </button>
-                        <button
-                          onClick={() => setAccordion("clients")}
-                          className={`flex-1 py-4 font-semibold border-l ${
-                            accordion === "clients"
-                              ? "bg-red-600 text-white"
-                              : "hover:bg-gray-50"
-                          }`}
-                        >
-                          Clients
-                        </button>
-                      </div>
-
-                      {/* CONTENT */}
-                      <div className="p-6">
-                        {accordion === "projects" && (
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {tab.projects.map((project, i) => (
-                              <div
-                                key={i}
-                                className="relative bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition"
-                              >
-                                <span className="absolute top-0 left-0 h-full w-1 bg-red-600 rounded-l-lg" />
-                                <div className="w-10 h-10 bg-red-50 flex items-center justify-center rounded mb-4">
-                                  <Briefcase className="w-5 h-5 text-red-600" />
-                                </div>
-                                <h4 className="font-semibold mb-2">
-                                  {project}
-                                </h4>
-                                <p className="text-sm text-gray-600">
-                                  Structured training initiative designed to
-                                  enhance employability and workforce readiness.
-                                </p>
-                                <div className="mt-4 text-sm text-red-600 font-medium">
-                                  View details →
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-
-                        {accordion === "clients" && (
-                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                            {tab.clients.map((client) => (
-                              <div
-                                key={client.name}
-                                className="flex items-center justify-center bg-gray-50 border rounded-lg p-6 hover:shadow transition"
-                              >
-                                <img
-                                  src={client.logo}
-                                  alt={client.name}
-                                  className="h-14 object-contain grayscale hover:grayscale-0 transition"
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
+                      {/* <button
+                        onClick={() => setActiveView("clients")}
+                        className={`px-6 py-3 font-semibold transition ${
+                          activeView === "clients"
+                            ? "bg-red-600 text-white shadow"
+                            : "bg-white border hover:bg-gray-100"
+                        }`}
+                      >
+                        Clients
+                      </button> */}
                     </div>
 
-                    {/* IMPACT */}
+                    {/* CARD GRID */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                      {/* PROJECT CARDS */}
+                      {activeView === "projects" &&
+                        tab.projects.map((project, i) => (
+                          <div
+                            key={i}
+                            className="bg-white p-8 border rounded-xl shadow-sm
+                                       hover:shadow-xl hover:-translate-y-1
+                                       transition-all duration-300
+                                       flex flex-col items-center text-center"
+                          >
+                            <div className="w-12 h-12 bg-red-50 flex items-center justify-center rounded mb-5">
+                              <Briefcase className="w-6 h-6 text-red-600" />
+                            </div>
+
+                            <h4 className="text-lg font-semibold text-gray-900 leading-snug">
+                              {project.title}
+                            </h4>
+                          </div>
+                        ))}
+
+                      {/* CLIENT CARDS */}
+                      {activeView === "clients" &&
+                        tab.clients.map((client) => (
+                          <div
+                            key={client.name}
+                            className="bg-white p-8 border rounded-xl shadow-sm
+                                       hover:shadow-xl hover:-translate-y-1
+                                       transition-all duration-300
+                                       flex items-center justify-center"
+                          >
+                            <img
+                              src={client.logo}
+                              alt={client.name}
+                              className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                            />
+                          </div>
+                        ))}
+                    </div>
+
+                    {/* PROGRAM IMPACT */}
                     <div>
                       <h3 className="text-2xl font-semibold mb-6">
                         Program Impact
                       </h3>
+
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {tab.impacts.map((impact, i) => {
                           const Icon = impact.icon;

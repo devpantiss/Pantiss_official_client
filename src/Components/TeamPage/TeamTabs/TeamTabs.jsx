@@ -18,8 +18,14 @@ const teamData = [
 
   {
     name: "Mr. Braja Kishore Nayak",
-    title: "Chief Finance Officer",
+    title: "Chief Business Officer",
     image: "/assets/teams/braja.png",
+    department: "leadership",
+  },
+  {
+    name: "Mr. Deepan Digal",
+    title: "Chief Operations Officer",
+    image: "/assets/teams/deepan.png",
     department: "leadership",
   },
   {
@@ -29,18 +35,12 @@ const teamData = [
     department: "leadership",
   },
   {
-    name: "Mr. Deepan Digal",
-    title: "Chief Business Officer",
-    image: "/assets/teams/deepan.png",
+    name: "Mr. Priya Ranjan Das",
+    title: "Chief Finance Officer",
+    image: "/assets/teams/priyaranjan.png",
     department: "leadership",
   },
-  {
-    name: "Ms. Sushree Gayatri Jena",
-    title: "Chief Operations Officer",
-    image:
-      "https://res.cloudinary.com/dcbtjeyde/image/upload/v1764220150/WhatsApp_Image_2025-11-25_at_9.34.16_PM_exneju.jpg",
-    department: "leadership",
-  },
+  
   {
     name: "Mr. Kunal Anand",
     title: "Chief Technology Officer",
@@ -50,10 +50,9 @@ const teamData = [
 
   // Finance
   {
-    name: "Mr. Deepan Digal",
-    title:
-      "Lead, Grants Management, Global Resource moilization and Partnership",
-    image: "/assets/teams/deepan.png",
+    name: "Mr. Priya Ranjan Das",
+    title: "Chief Finance Officer",
+    image: "/assets/teams/priyaranjan.png",
     department: "finance",
     subDept: "Finance",
   },
@@ -142,7 +141,7 @@ const teamData = [
     name: "Mr. Sudipta Kumar Behera",
     title: "Lead, (Health & Nutrition)",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1760004380/15f252c1-84e4-4862-9697-a2574627d9d1_wxo3cv.png",
+      "/assets/teams/sudipta.png",
     department: "projectManagement",
   },
   {
@@ -174,9 +173,9 @@ const teamData = [
   },
   {
     name: "Ms. Jayashree Satpathy",
-    title: "Lead, Legal Compliance",
+    title: "Associate, Legal Compliance",
     image:
-      "https://res.cloudinary.com/djtzx6wo7/image/upload/v1759945232/035f6b35-4e09-488f-a9b7-85dcc629abd0_y6puhn.png",
+    "/assets/teams/jayashree.png",
     department: "monitoring",
   },
 
@@ -207,12 +206,12 @@ const teamData = [
     image: "/assets/teams/jalandhar.png",
     department: "region",
   },
-  {
-    name: "Mrs. Sabita Garnayak",
-    title: "Lead, angul",
-    image: "/assets/teams/jalandhar.png",
-    department: "region",
-  },
+  // {
+  //   name: "Mrs. Sabita Garnayak",
+  //   title: "Lead, angul",
+  //   image: "/assets/teams/jalandhar.png",
+  //   department: "region",
+  // },
   {
     name: "Mr. Mukesh Singh",
     title: "Lead, Bokaro",
@@ -271,13 +270,6 @@ const teamData = [
     department: "foundersOffice",
   },
   {
-    name: "Ms. Lucky Dandia",
-    title: "Office Attendant",
-    image:
-      "https://pantiss.com/wp-content/uploads/2022/12/Madhusmita-Khatua-e1670428211489.jpeg",
-    department: "foundersOffice",
-  },
-  {
     name: "Mr. Gandhi Beura",
     title: "Executive Chauffeur",
     image: "/assets/teams/gandhi.png",
@@ -290,8 +282,8 @@ const TeamTabs = () => {
 
   const tabs = [
     { label: "Founders", key: "founders" },
-    { label: "Leadership & Strategy", key: "leadership" },
     { label: "Founders Office", key: "foundersOffice" },
+    { label: "Leadership & Strategy", key: "leadership" },
     { label: "Project Management", key: "projectManagement" },
     { label: "Monitoring, Evaluation & Compliances", key: "monitoring" },
     { label: "Finance, HR & Communication", key: "finance" },
