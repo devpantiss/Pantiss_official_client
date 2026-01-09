@@ -11,6 +11,7 @@ import FeaturedPublicationBanner from "../Components/Publications/FeaturedPublic
 import FeaturedPublicationBanner2 from "../Components/Publications/FeaturedPublicationBanner2";
 import PodcastBanner from "../Components/Publications/PodcastBanner";
 import PodcastsSection from "../Components/Publications/PadcastsSection";
+import FactSheetsSection from "../Components/Publications/FactSheetsSection";
 // import PopularSection from '../Components/Publications/Populars'
 
 const Publications = () => {
@@ -26,6 +27,7 @@ const Publications = () => {
       <CapacityDevelopment />
       <PodcastBanner />
       <PodcastsSection />
+      <FactSheetsSection />
       {/* <StoryBanner /> */}
       {/* <PopularSection /> */}
       {/* <Cards /> */}

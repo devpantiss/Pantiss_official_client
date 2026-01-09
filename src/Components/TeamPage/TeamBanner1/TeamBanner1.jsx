@@ -17,12 +17,21 @@ const TeamBanner1 = () => {
           </h2>
           <h3 className="text-xl font-medium mb-2">Founder & CEO</h3>
           <p className="text-gray-700 mb-6">
-            Stalin Nayak, a principal advisor to CSR of Tata Sons, Odisha, has 3
-            years of experience working with tribal Naxalites. He holds degrees
-            in Engineering, Robotics, Social Work, and Tribal Development from
-            top institutions. Specializing in right-wing social sciences, his
-            expertise includes Panchayati Raj, advocacy, and grassroots
-            policymaking.
+            Mr. Stalin Nayak is a dedicated professional with a strong academic
+            and field grounding in engineering and social development. He is an
+            alumnus of Outr Bhubaneswar, where he completed his Bachelor’s in
+            Electrical & Electronics Engineering (EEE), and further strengthened
+            his commitment to social change with a Master’s in Social Work and
+            PGDM in Tribal Development from TISS (Tata Institute of Social
+            Sciences). Over the years, Mr. Nayak has built a diverse career
+            spanning government and social sectors. He has worked in the
+            government domain with ORMAS, focusing on inclusive development
+            initiatives. Alongside, he has been an active social sector
+            entrepreneur, driving programs and interventions aimed at improving
+            the lives of mining-affected communities. His work reflects a blend
+            of technical insight and deep-rooted empathy for marginalized
+            populations, making him a key contributor to sustainable development
+            and community empowerment.
           </p>
         </div>
       </div>

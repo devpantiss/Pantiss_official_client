@@ -30,7 +30,7 @@ const teamData = [
   },
   {
     name: "Mrs. Indumati Nanda",
-    title: "Director cum Chief Strategy Officer",
+    title: "Chief Strategy Officer",
     image: "/assets/teams/indumaam.png",
     department: "leadership",
   },

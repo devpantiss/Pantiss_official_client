@@ -6,6 +6,7 @@ const reportsData = [
   {
     title: "Annual Reports",
     items: [
+      { label: "Annual Reports FY 2025-24", link: "https://drive.google.com/file/d/1yuHR3GjGOilu2jqY1ngHyYje0TZqSYQF/view?usp=sharing" },
       { label: "Annual Reports FY 2024-23", link: "https://drive.google.com/file/d/1mOVRqzLB0BAeLQ_a-CCgJq6BLvhlBsGW/view?usp=drive_link" },
       { label: "Annual Reports FY 2023-22", link: "https://drive.google.com/file/d/1OHAgBFjyP_DFOfZDXnPetOzwgVOOSR8o/view?usp=drive_link" },
       { label: "Annual Reports FY 2022-21", link: "https://drive.google.com/file/d/1REPYaIq4LZvKOsz0PfkTQg6AZEtyJlQu/view?usp=drive_link" },
@@ -14,6 +15,7 @@ const reportsData = [
   {
     title: "Audited Statements",
     items: [
+      { label: "Audited FY 2025-24", link: "https://drive.google.com/file/d/1-rcqOBd34yg1AIOGUbO7PmVV06Q-bEXW/view?usp=sharing" },
       { label: "Audited FY 2024-23", link: "https://drive.google.com/file/d/1mOVRqzLB0BAeLQ_a-CCgJq6BLvhlBsGW/view?usp=drive_link" },
       { label: "Audited FY 2023-22", link: "https://drive.google.com/file/d/1OHAgBFjyP_DFOfZDXnPetOzwgVOOSR8o/view?usp=drive_link" },
       { label: "Audited FY 2022-21", link: "https://drive.google.com/file/d/1REPYaIq4LZvKOsz0PfkTQg6AZEtyJlQu/view?usp=drive_link" },
@@ -46,6 +48,8 @@ const reportsData = [
       { label: "PAN", link: "https://drive.google.com/file/d/1uZklWGfc1fPaKgHX52NwnDAG3fzHHCg7/view?usp=sharing" },
       { label: "GST Registration", link: "https://drive.google.com/file/d/1Uann1BNBEqBqfqXEAxph1_f2qDscq6UX/view?usp=sharing" },
       { label: "CSR-1 Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
+      { label: "12A", link: "https://drive.google.com/file/d/1J_3pOAIRtRSz3fGSJHMCRwDMW5QCn6Uf/view?usp=sharing" },
+      { label: "80G", link: "https://drive.google.com/file/d/1V0aCBBJCtRVkpxSDoYVA1M0BZU3iKqVs/view?usp=sharing" },
     ],
   },
 ];
