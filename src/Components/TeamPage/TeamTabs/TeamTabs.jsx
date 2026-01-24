@@ -79,14 +79,14 @@ const teamData = [
     department: "finance",
     subDept: "Human Resources",
   },
-  {
-    name: "Ms. Padmini Kumari Bisoyi",
-    title:
-      "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
-    image: "/assets/teams/Padmini.png",
-    department: "finance",
-    subDept: "Human Resources",
-  },
+  // {
+  //   name: "Ms. Padmini Kumari Bisoyi",
+  //   title:
+  //     "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
+  //   image: "/assets/teams/Padmini.png",
+  //   department: "finance",
+  //   subDept: "Human Resources",
+  // },
   {
     name: "Ms. Manasi Behera",
     title: "Associate, Recruitment, Learning & Performance",
@@ -96,13 +96,13 @@ const teamData = [
   },
 
   // Communication
-  {
-    name: "Mr. Jitendra Barik",
-    title: "Lead, Media & Public Relations",
-    image: "/assets/teams/jiteendra.png",
-    department: "finance",
-    subDept: "Communication",
-  },
+  // {
+  //   name: "Mr. Jitendra Barik",
+  //   title: "Lead, Media & Public Relations",
+  //   image: "/assets/teams/jiteendra.png",
+  //   department: "finance",
+  //   subDept: "Communication",
+  // },
   {
     name: "Mr. Jabis Ranjan Sahu",
     title: "Co-Lead, Digital Communications",
@@ -164,13 +164,13 @@ const teamData = [
     image: "/assets/teams/yagnesh.png",
     department: "monitoring",
   },
-  {
-    name: "Ms. Padmini Kumari Bisoyi",
-    title:
-      "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
-    image: "/assets/teams/Padmini.png",
-    department: "monitoring",
-  },
+  // {
+  //   name: "Ms. Padmini Kumari Bisoyi",
+  //   title:
+  //     "Co-Lead, Protection from Sexual Exploitation and Abuse(PSEA), Gender Justice & Diversity",
+  //   image: "/assets/teams/Padmini.png",
+  //   department: "monitoring",
+  // },
   {
     name: "Ms. Jayashree Satpathy",
     title: "Associate, Legal Compliance",
