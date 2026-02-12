@@ -2,17 +2,23 @@ import React, { useState } from "react";
 
 const teamData = [
   // Leadership
-  {
-    name: "Dr. Sanjaya Pradhan",
-    title:
-      "Director cum Principal Advisor (Risk Management & Global Representation)",
-    image: "/assets/teams/sanjay.png",
+   {
+    name: "Mr. Stalin Nayak",
+    title: "Founder cum CEO",
+    image: "/assets/teams/stalinsir.jpg",
     department: "founders",
   },
   {
-    name: "Mr. Stalin Nayak",
-    title: "President cum CEO",
-    image: "/assets/teams/stalinsir.jpg",
+    name: "Dr. Sanjaya Pradhan",
+    title:
+      "Co-Founder cum Principal Advisor",
+    image: "/assets/teams/sanjay.png",
+    department: "founders",
+  },
+   {
+    name: "Mr. Kunal Anand",
+    title: "Co-Founder cum CTO",
+    image: "/assets/teams/kunal.png",
     department: "founders",
   },
 
@@ -38,13 +44,6 @@ const teamData = [
     name: "Mr. Priya Ranjan Das",
     title: "Chief Finance Officer",
     image: "/assets/teams/priyaranjan.png",
-    department: "leadership",
-  },
-  
-  {
-    name: "Mr. Kunal Anand",
-    title: "Chief Technology Officer",
-    image: "/",
     department: "leadership",
   },
 
