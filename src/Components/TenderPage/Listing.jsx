@@ -20,6 +20,15 @@ const TendersListing = () => {
       link: "https://drive.google.com/file/d/1U2HOPDyqTk3IA01QjUByTpuCii17MN5P/view?usp=sharing",
       isClosed: true,
     },
+    {
+      id: 3,
+      title: "Selection of an Agency for Data Analysis of Household Socio-Economic Dataset in Keonjhar District",
+      location: "Keonjhar, Odisha",
+      startDate: "15th February 2026",
+      deadline: "17th February 2026",
+      link: "https://drive.google.com/file/d/1rlE4MjMBv-u41YAt4X6_PJ-P3SHNAUoG/view?usp=sharing",
+      isClosed: false,
+    },
   ];
 
   return (
