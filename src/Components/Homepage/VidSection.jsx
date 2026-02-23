@@ -3,27 +3,27 @@ import React from "react";
 const reports = [
   {
     id: 1,
-    title: "The Climate Cost of Air Conditioning",
+    title: "Climate Resilient Livelihood Models",
     image:
-      "https://iforest.global/wp-content/uploads/2025/09/LRM-Report-cover-portrait.jpg",
+      "/Reports/Climate_resilient.jpg",
   },
   {
     id: 2,
-    title: "Energy Transition in Urban India",
+    title: "Future Workforce Needs in Mining Sector",
     image:
-      "https://iforest.global/wp-content/uploads/2025/12/Screenshot-2025-12-18-151602.png",
+      "/Reports/Future_workforce_needs.jpg",
   },
   {
     id: 3,
-    title: "Sustainable Cooling Solutions",
+    title: "Industry 4.0 Readiness of Vocational Training",
     image:
-      "https://iforest.global/wp-content/uploads/2025/11/Green-Steel-GHG-MRV-Report-cover.jpg",
+      "/Reports/Industry_4.jpg",
   },
   {
     id: 4,
-    title: "Decarbonising Urban Infrastructure",
+    title: "Livelihood Conditions in Mining Affected Communities",
     image:
-      "https://iforest.global/wp-content/uploads/2025/11/Climate-Action-Framework-Report_09102025-eversion_Page_01.jpg",
+      "/Reports/livelihood_conditions_in_mining_affected_community.jpg",
   },
 ];
 
@@ -66,7 +66,7 @@ const VidSection = () => {
                 key={`${report.id}-${index}`}
                 className="flex gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition"
               >
-                <div className="w-[180px] h-[320px] rounded-md overflow-hidden flex-shrink-0">
+                <div className="w-[230px] h-[330px] rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={report.image}
                     alt={report.title}

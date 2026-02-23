@@ -6,7 +6,7 @@ import ArticleSection1 from "../Components/Publications/ArticleSection1";
 import CommunicationDevelopment from "../Components/Publications/CommunicationDevelopment";
 import ArticleSection2 from "../Components/Publications/ArticleSection2";
 import CapacityDevelopment from "../Components/Publications/CapacityDevelopment";
-import StoryBanner from "../Components/Publications/StoryBanner";
+// import StoryBanner from "../Components/Publications/StoryBanner";
 import FeaturedPublicationBanner from "../Components/Publications/FeaturedPublicationBanner";
 import FeaturedPublicationBanner2 from "../Components/Publications/FeaturedPublicationBanner2";
 import PodcastBanner from "../Components/Publications/PodcastBanner";
@@ -22,7 +22,7 @@ const Publications = () => {
       <ArticleSection1 />
       <FeaturedPublicationBanner2 />
       <SocialImpact />
-      <ArticleSection2 />
+      {/* <ArticleSection2 /> */}
       <FeaturedPublicationBanner />
       <CapacityDevelopment />
       <PodcastBanner />
