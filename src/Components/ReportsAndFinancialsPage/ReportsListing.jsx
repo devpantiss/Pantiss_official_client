@@ -26,27 +26,14 @@ const reportsData = [
     items: [
       { label: "Board of Directors", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_16" },
       { label: "Governance Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_17" },
-      // { label: "Board Meeting Minutes 2024-25", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
-      // { label: "Code of Conduct for Employees & Board", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
-      // { label: "Conflict of Interest Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_18" },
     ],
   },
-  // {
-  //   title: "Policies & Compliances",
-  //   items: [
-  //     { label: "Training & Development Policy", link: "https://drive.google.com/file/d/16tFOFbVxE6eEuzw3lhQR5nfbHYXkLD78/view?usp=sharing" },
-  //     { label: "POSH Policy", link: "https://drive.google.com/file/d/1hQGwwlIQn4iPo1QRs_qX9Kvy6-rsf126/view?usp=sharing" },
-  //     { label: "Anti Fraud-Fraud Prevention Policy", link: "https://drive.google.com/file/d/1xoYzUgiEwXAC6fB0l3u9V6dPCv9Mkp8D/view?usp=drive_link" },
-  //     { label: "Data Record Storage Policy", link: "https://drive.google.com/file/d/1Hh7SVG6bKJrs6u359xx2gONIF1kwZ8Wn/view?usp=sharing" },
-  //   ],
-  // },
   {
     title: "Statutory & Registration Docs",
     items: [
       { label: "Certificate of Incorporation", link: "https://drive.google.com/file/d/1uXczQBNSQvhZwVOHiTo3CjAcDlR7hwXx/view?usp=sharing" },
       { label: "TAN", link: "https://drive.google.com/file/d/1sEUuK9eoISnD3EeW17Low0_NYYmKV2Sv/view?usp=sharing" },
       { label: "PAN", link: "https://drive.google.com/file/d/1uZklWGfc1fPaKgHX52NwnDAG3fzHHCg7/view?usp=sharing" },
-      { label: "GST Registration", link: "https://drive.google.com/file/d/1Uann1BNBEqBqfqXEAxph1_f2qDscq6UX/view?usp=sharing" },
       { label: "CSR-1 Registration", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_14" },
       { label: "12A", link: "https://drive.google.com/file/d/1J_3pOAIRtRSz3fGSJHMCRwDMW5QCn6Uf/view?usp=sharing" },
       { label: "80G", link: "https://drive.google.com/file/d/1V0aCBBJCtRVkpxSDoYVA1M0BZU3iKqVs/view?usp=sharing" },
@@ -54,20 +41,45 @@ const reportsData = [
   },
 ];
 
-const ReportButton = ({ label, link }) => (
-  <a
-    href={link}
-    download
-    className="flex items-center gap-3 py-2 px-4 rounded-md text-white bg-gradient-to-r from-red-500 to-orange-500 hover:shadow-lg transition-all"
-  >
-    <TbFileReport className="w-6 h-6" />
-    <span className="font-semibold">{label}</span>
-  </a>
-);
+const ReportButton = ({ label, link, disabled }) => {
+  const handleClick = (e) => {
+    if (disabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  };
+
+  return (
+    <a
+      href={link}
+      download={!disabled}
+      onClick={handleClick}
+      className={`
+        flex items-center gap-3 py-2 px-4 rounded-md
+        font-semibold transition-all
+        ${
+          disabled
+            ? "bg-gray-300 text-gray-600 cursor-not-allowed opacity-70"
+            : "text-white bg-gradient-to-r from-red-500 to-orange-500 hover:shadow-lg"
+        }
+      `}
+    >
+      <TbFileReport className="w-6 h-6" />
+      <span>{label}</span>
+
+      {disabled && (
+        <span className="ml-auto text-xs font-medium">
+          Coming Soon
+        </span>
+      )}
+    </a>
+  );
+};
 
 const ReportsListing = () => {
   return (
     <div className="max-w-8xl mx-auto lg:px-24 px-10 py-10">
+
       <div className="text-center mb-10">
         <Heading
           text="REPORTS & FINANCIALS"
@@ -77,19 +89,39 @@ const ReportsListing = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {reportsData.map((category) => (
-          <div key={category.title} className="bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-4">
-              {category.title}
-            </h2>
-            <div className="space-y-3">
-              {category.items.map((item) => (
-                <ReportButton key={item.label} label={item.label} link={item.link} />
-              ))}
+
+        {reportsData.map((category) => {
+
+          const isDisabledCategory =
+            category.title === "Audited Statements";
+
+          return (
+            <div
+              key={category.title}
+              className="bg-white shadow-lg rounded-lg p-6"
+            >
+              <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-4">
+                {category.title}
+              </h2>
+
+              <div className="space-y-3">
+
+                {category.items.map((item) => (
+                  <ReportButton
+                    key={item.label}
+                    label={item.label}
+                    link={item.link}
+                    disabled={isDisabledCategory}
+                  />
+                ))}
+
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
+
       </div>
+
     </div>
   );
 };

@@ -4,13 +4,13 @@ import Heading from '../../Common/Heading';
 const founders = [
   {
     name: 'Mr. Stalin Nayak',
-    title: 'Founder & CEO',
+    title: 'Founder cum CEO',
     image: 'https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg', // Replace with your image URL
   },
   {
     name: 'Dr. Sanjay Pradhan',
-    title: 'Principal Advisor',
-    image: 'https://res.cloudinary.com/djtzx6wo7/image/upload/v1760619304/sanjay_sir_2_bulab3.jpg', // Replace with your image URL
+    title: 'Co-Founder cum Principal Advisor',
+    image: 'https://pantiss.com/assets/teams/sanjay.png', // Replace with your image URL
   }
 ];
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, memo } from "react";
 import Heading from "../Common/Heading";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -30,19 +30,65 @@ const articles = [
   },
 ];
 
+// Memoized list card
+const SideCard = memo(({ article, onClick }) => (
+  <motion.div
+    onClick={onClick}
+    whileHover={{ y: -4, scale: 1.02 }}
+    className="
+      flex gap-4
+      rounded-xl
+      overflow-hidden
+      cursor-pointer
+      bg-white/95
+      shadow-md
+      transition
+      will-change-transform
+    "
+  >
+    <div className="w-[160px] h-[110px] overflow-hidden">
+      <img
+        src={article.imageUrl}
+        alt={article.title}
+        loading="lazy"
+        decoding="async"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="p-4 flex flex-col justify-center">
+      <span className="text-xs text-red-600 font-semibold uppercase tracking-wide">
+        Insight • {article.date}
+      </span>
+
+      <h3 className="text-sm font-semibold text-gray-900 mt-1 leading-snug">
+        {article.title}
+      </h3>
+    </div>
+  </motion.div>
+));
+
 const ArticleSection1 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Auto rotate
+  // Auto rotate (pause when tab hidden)
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % articles.length);
+      if (!document.hidden) {
+        setActiveIndex((prev) => (prev + 1) % articles.length);
+      }
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   const activeArticle = articles[activeIndex];
+
+  // Memo side articles
+  const sideArticles = useMemo(
+    () => articles.filter((_, i) => i !== activeIndex),
+    [activeIndex]
+  );
 
   return (
     <section className="bg-red-600 py-16 px-6 overflow-hidden">
@@ -61,22 +107,28 @@ const ArticleSection1 = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
-                initial={{ opacity: 0, y: 40, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -40, scale: 0.98 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="relative rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.45)]"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.45 }}
+                className="
+                  relative
+                  rounded-2xl
+                  overflow-hidden
+                  shadow-xl
+                  will-change-transform
+                "
               >
                 <img
                   src={activeArticle.imageUrl}
                   alt={activeArticle.title}
-                  className="w-full h-[440px] object-cover"
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-[420px] object-cover"
                 />
 
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 
-                {/* Content */}
                 <div className="absolute bottom-6 left-6 right-6 text-white">
 
                   <span className="text-xs uppercase tracking-wide text-white/70">
@@ -107,55 +159,18 @@ const ArticleSection1 = () => {
 
           </div>
 
-          {/* RIGHT — VERTICAL LIST */}
+          {/* RIGHT — LIST */}
           <div className="lg:w-1/2 flex flex-col gap-5">
 
-            {articles.map((article, index) => {
-
-              const isActive = index === activeIndex;
-
-              if (isActive) return null;
-
-              return (
-                <motion.div
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  whileHover={{ y: -6, scale: 1.02 }}
-                  className={`
-                    flex gap-4
-                    rounded-xl
-                    overflow-hidden
-                    cursor-pointer
-                    backdrop-blur-md
-                    bg-white/95
-                    shadow-lg
-                    transition
-                  `}
-                >
-                  {/* Image */}
-                  <div className="w-[170px] h-[120px] overflow-hidden">
-                    <img
-                      src={article.imageUrl}
-                      alt={article.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-4 flex flex-col justify-center">
-
-                    <span className="text-xs text-red-600 font-semibold uppercase tracking-wide">
-                      Insight • {article.date}
-                    </span>
-
-                    <h3 className="text-sm font-semibold text-gray-900 mt-1 leading-snug">
-                      {article.title}
-                    </h3>
-
-                  </div>
-                </motion.div>
-              );
-            })}
+            {sideArticles.map((article, index) => (
+              <SideCard
+                key={index}
+                article={article}
+                onClick={() =>
+                  setActiveIndex(articles.indexOf(article))
+                }
+              />
+            ))}
 
           </div>
 

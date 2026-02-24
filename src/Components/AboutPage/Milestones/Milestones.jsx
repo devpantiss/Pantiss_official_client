@@ -12,7 +12,7 @@ const milestonesData = [
     title: (
       <>
         <span className="text-red-600">Rehabilitation</span> &{" "}
-        <span className="text-red-600">Resettlement</span>
+        <span className="text-red-600">Resettlement in Joda Manganese Region</span>
       </>
     ),
     description:
@@ -24,8 +24,8 @@ const milestonesData = [
     year: "2022",
     title: (
       <>
-        <span className="text-red-600">RPL</span> &{" "}
-        <span className="text-red-600">Mining Skill</span> Development Program
+        <span className="text-red-600">Mining Skill</span>{" "}
+        <span className="text-red-600">Development Program</span> {" "}in Talcher Coal Region
       </>
     ),
     description:
