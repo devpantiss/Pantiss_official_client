@@ -6,6 +6,7 @@ import PantissSdgPage from "./Pages/PantissSdgPage";
 import Header from "./Components/Common/Header";
 import WhoWeAre from "./Pages/WhoWeAre";
 import Footer2 from "./Components/Common/Footer2";
+import SeoManager from "./Components/Common/SeoManager";
 import CareersPage from "./Pages/CareersPage";
 import WhatWeDo from "./Pages/WhatWeDo";
 import Tenders from "./Pages/Tenders";
@@ -96,6 +97,7 @@ function App() {
 
   return (
     <div className="overflow-hidden">
+      <SeoManager />
       {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
