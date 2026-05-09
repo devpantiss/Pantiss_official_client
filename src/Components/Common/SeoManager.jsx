@@ -5,13 +5,18 @@ const SITE_URL = "https://www.pantiss.org";
 const SITE_NAME = "Pantiss Foundation";
 const DEFAULT_DESCRIPTION =
   "Pantiss Foundation works with mining-affected communities through livelihoods, skill development, social development, research, partnerships, and responsible transition programmes.";
+const DEFAULT_KEYWORDS =
+  "Pantiss Foundation, mining community development NGO, mining affected communities, livelihood programmes, skill development NGO India, CSR implementation partner, social development organisation";
 const DEFAULT_IMAGE =
   "https://res.cloudinary.com/dxzhnns58/image/upload/v1761652084/Untitled_design__3_-removebg-preview_ejr5lg.png";
 
 const routeMeta = {
   "/": {
-    title: "Pantiss Foundation | Mining Community Development Programmes",
-    description: DEFAULT_DESCRIPTION,
+    title: "Pantiss Foundation | Mining Community Development NGO in India",
+    description:
+      "Pantiss Foundation is a development organisation working with mining-affected communities through livelihood programmes, skill development, CSR partnerships, research, and social impact initiatives.",
+    keywords:
+      "Pantiss Foundation, mining community development NGO India, NGO for mining affected communities, CSR implementation partner India, livelihood programmes for mining communities, social development organisation India, skill development NGO",
   },
   "/sdg-pantiss": {
     title: "SDGs and Pantiss | Sustainable Development Initiatives",
@@ -19,14 +24,18 @@ const routeMeta = {
       "Explore Pantiss Foundation's sustainable development goals work, impact focus, and community-led progress.",
   },
   "/whoweare/about": {
-    title: "About Pantiss Foundation | Who We Are",
+    title: "About Pantiss Foundation | Mining Community Development NGO",
     description:
-      "Learn about Pantiss Foundation's mission, values, and work with mining-affected communities across India.",
+      "Learn about Pantiss Foundation's mission, values, and work as a development organisation supporting mining-affected communities across India.",
+    keywords:
+      "about Pantiss Foundation, Pantiss NGO, mining community development organisation, NGO working in mining areas, social impact organisation India, development organisation for mining communities",
   },
   "/whoweare/team": {
-    title: "Pantiss Foundation Team",
+    title: "Pantiss Foundation Team | Development Sector Professionals",
     description:
-      "Meet the Pantiss Foundation team leading community development, research, partnerships, and programme delivery.",
+      "Meet the Pantiss Foundation team leading community development, research, CSR partnerships, social impact programmes, and field delivery.",
+    keywords:
+      "Pantiss Foundation team, development sector professionals, NGO leadership team, social impact team India, CSR programme team, community development experts",
   },
   "/whoweare/advisory-board": {
     title: "Advisory Board | Pantiss Foundation",
@@ -39,14 +48,18 @@ const routeMeta = {
       "View Pantiss Foundation reports, financial information, publications, and programme documentation.",
   },
   "/what-we-do": {
-    title: "What We Do | Pantiss Foundation Programmes",
+    title: "What We Do | Mining Livelihood, Skill Development and CSR Programmes",
     description:
-      "Discover Pantiss Foundation programmes in skill development, rehabilitation, livelihoods, nutrition, innovation, and mining village transformation.",
+      "Discover Pantiss Foundation programmes in skill development, rehabilitation and resettlement, sustainable livelihoods, nutrition, innovation, and mining village transformation.",
+    keywords:
+      "mining community programmes, skill development for mining affected youth, rehabilitation and resettlement mining, sustainable livelihood programmes, CSR projects in mining areas, mining village development, social development programmes India",
   },
   "/careers": {
-    title: "Careers at Pantiss Foundation",
+    title: "Careers at Pantiss Foundation | NGO Jobs and Internships",
     description:
-      "Explore career opportunities, life at Pantiss, employee benefits, and programmes for professionals and interns.",
+      "Explore NGO career opportunities, internships, life at Pantiss, employee benefits, and development sector roles with Pantiss Foundation.",
+    keywords:
+      "Pantiss careers, NGO jobs India, development sector jobs, social impact careers, CSR jobs India, internships in NGO, careers at Pantiss Foundation",
   },
   "/careers/jobs": {
     title: "Jobs at Pantiss Foundation",
@@ -54,9 +67,11 @@ const routeMeta = {
       "Browse open job roles and application details for opportunities at Pantiss Foundation.",
   },
   "/contact-us": {
-    title: "Contact Pantiss Foundation",
+    title: "Contact Pantiss Foundation | NGO and CSR Partnership Enquiries",
     description:
-      "Contact Pantiss Foundation offices and teams for partnerships, programmes, careers, and general enquiries.",
+      "Contact Pantiss Foundation for CSR partnerships, development programmes, careers, tenders, field offices, and general enquiries.",
+    keywords:
+      "contact Pantiss Foundation, Pantiss Foundation office, CSR partnership enquiry, NGO contact India, development programme enquiry, Pantiss email, Pantiss careers contact",
   },
   "/tenders": {
     title: "Tenders | Pantiss Foundation",
@@ -64,9 +79,11 @@ const routeMeta = {
       "View active tenders, procurement notices, and submission details from Pantiss Foundation.",
   },
   "/where-we-work": {
-    title: "Where We Work | Pantiss Foundation",
+    title: "Where We Work | Mining Community Programmes Across India",
     description:
-      "Explore Pantiss Foundation's work across Odisha, Jharkhand, Chhattisgarh, Tamil Nadu, and Assam.",
+      "Explore Pantiss Foundation's mining community development work across Odisha, Jharkhand, Chhattisgarh, Tamil Nadu, and Assam.",
+    keywords:
+      "Pantiss where we work, NGO in Odisha, NGO in Jharkhand, NGO in Chhattisgarh, mining communities Odisha, mining communities Jharkhand, mining community development India, CSR implementation Odisha",
   },
   "/programmes/young-professionals": {
     title: "Young Professionals Programme | Pantiss Foundation",
@@ -346,6 +363,7 @@ const SeoManager = () => {
     const metadata = routeMeta[pathname] || {
       title: buildTitleFromPath(pathname),
       description: DEFAULT_DESCRIPTION,
+      keywords: DEFAULT_KEYWORDS,
     };
     const canonicalUrl = getCanonicalUrl(pathname);
 
@@ -353,6 +371,10 @@ const SeoManager = () => {
     setMeta('meta[name="description"]', {
       name: "description",
       content: metadata.description,
+    });
+    setMeta('meta[name="keywords"]', {
+      name: "keywords",
+      content: metadata.keywords || DEFAULT_KEYWORDS,
     });
     setMeta('meta[name="robots"]', {
       name: "robots",
