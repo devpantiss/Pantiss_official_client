@@ -10,28 +10,28 @@ const statsWithImages = [
     value: 38,
     label: "SIA, EIA in Opencast Mines",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761670555/EIA_vmog4e.mp4",
+      "/assets/homepage/Impact/EIA.mp4",
   },
   {
     id: 2,
     value: 800,
     label: "Rehabilitation & Resettlement",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761670715/model_village_xpz6i2.mp4",
+      "/assets/homepage/Impact/model_village.mp4",
   },
   {
     id: 3,
     value: 18000,
     label: "Trained and Assisted in Mining Skills",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761670771/Practical_VIdeo_1_ju40ch.mp4",
+      "/assets/homepage/Impact/Practical_VIdeo_1.mp4",
   },
   {
     id: 4,
     value: 20,
     label: "Revenue Generated from Established SHGs",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761670863/SHG_zgirig.mp4",
+      "/assets/homepage/Impact/SHG.mp4",
     unit: "Cr.+",
   },
   {
@@ -39,14 +39,14 @@ const statsWithImages = [
     value: 5,
     label: "Abandoned Mines Reclaimed",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761670906/Rehab_1_hkdwue.mp4",
+      "/assets/homepage/Impact/Rehab_1.mp4",
   },
   {
     id: 6,
     value: 12,
     label: "Electricity Produced Through Renewable Energy Sources",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761671110/renewable_cfufe4.mp4",
+      "/assets/homepage/Impact/renewable.mp4",
     unit: "MW",
   },
   {
@@ -54,28 +54,28 @@ const statsWithImages = [
     value: 7,
     label: "Model Mining Villages Created",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761671839/4440936-hd_1920_1080_25fps_glt4iu.mp4",
+      "/assets/homepage/Impact/4440936-hd_1920_1080_25fps.mp4",
   },
   {
     id: 8,
     value: 12,
     label: "Youth Tribal Dormitories Established",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761671211/Tribal_ootz3q.mp4",
+      "/assets/homepage/Impact/Tribal.mp4",
   },
   {
     id: 9,
     value: 60,
     label: "Children Healthcare centers Established",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761671436/health_1_ggcruk.mp4",
+      "/assets/homepage/Impact/health_1.mp4",
   },
   {
     id: 10,
     value: 43,
     label: "Lost Water Body Rejuvenated in Mining periphery",
     videoUrl:
-      "https://res.cloudinary.com/dxzhnns58/video/upload/v1761671465/reclamation_c9m6lm.mp4",
+      "/assets/homepage/Impact/reclamation.mp4",
   },
 ];
 

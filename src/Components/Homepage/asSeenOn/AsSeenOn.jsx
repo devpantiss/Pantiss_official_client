@@ -58,49 +58,49 @@ const AsSeenOn = () => {
         <Slider {...settings} className="gap-x-2"> {/* Added gap using Tailwind */}
           <div className="px-2">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668385/Downtoearth_nsy9ca.avif"
+              src="/assets/homepage/AsSeenOn/downtoearth.jpg"
               alt="Down To Earth"
               className="lg:h-36 h-[50px] w-full object-contain" // Set height and use object-contain for proper fit
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668439/CBC_qqdn5c.png"
+              src="/assets/homepage/AsSeenOn/cbc.png"
               alt="CBC"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668393/The_Telegraph_logo_nxu2ai.png"
+              src="/assets/homepage/AsSeenOn/The_Telegraph.webp"
               alt="The Telegraph"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668397/ToI_n89wlc.png"
+              src="/assets/homepage/AsSeenOn/toi.jpeg"
               alt="TOI"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/c_crop,w_350,h_100/v1761668354/thomson-reuters-vector-logo_jwukea.png"
+              src="/assets/homepage/AsSeenOn/thomson-reuters.png"
               alt="Thomson Reuters"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668385/iforest_podgw2.png"
+              src="/assets/homepage/AsSeenOn/iforest.png"
               alt="IForest"
               className="lg:h-36 h-[50px] w-full object-contain"
             />
           </div>
           <div className="px-4">
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761668389/orissa_post_dyy8gq.png"
+              src="/assets/homepage/AsSeenOn/orissapost.jpeg"
               alt="OrissaPost"
               className="lg:h-36 h-[50px] w-full object-contain"
             />

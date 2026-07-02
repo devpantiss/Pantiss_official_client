@@ -7,8 +7,7 @@ const DEFAULT_DESCRIPTION =
   "Pantiss Foundation works with mining-affected communities through livelihoods, skill development, social development, research, partnerships, and responsible transition programmes.";
 const DEFAULT_KEYWORDS =
   "Pantiss Foundation, mining community development NGO, mining affected communities, livelihood programmes, skill development NGO India, CSR implementation partner, social development organisation";
-const DEFAULT_IMAGE =
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761652084/Untitled_design__3_-removebg-preview_ejr5lg.png";
+const DEFAULT_IMAGE = SITE_URL + "/logo.png";
 
 const routeMeta = {
   "/": {

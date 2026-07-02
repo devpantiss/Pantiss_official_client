@@ -45,7 +45,7 @@ const ActivityAndEvents = memo(() => {
     <section
       className="relative bg-cover bg-center py-6 px-6"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761683965/alexander-van-steenberge-g8oC_P2Tzf4-unsplash_zbj6vr.jpg')`,
+        backgroundImage: `url('/assets/homepage/mountains.jpg')`,
       }}
     >
       {/* Overlay for readability */}

@@ -4,36 +4,36 @@ import Heading from "../../Common/Heading";
 
 // Memoized static partner data
 const governmentPartners = [
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681337/Ministry_of_Mines_India.svg_u1zqcn.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681341/RCPSDC_ag2fwu.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681333/Ministry_of_Skill_Development_and_Entrepreneurship.svg_umc1vh.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681346/NBCFDC_timjzi.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681328/Ministry_of_Coal_India.svg_ae47la.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681316/IISSSC_kpuz8u.jpg",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681324/GOVT_OF_INDIA_axryim.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681320/SCMS_ehl7t2.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681308/Ministry_of_Heavy_Industries_India.svg_qpply8.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761681310/NSDC_uhnrq9.png",
+  "/assets/homepage/Partners/Ministry_of_Mines_India.svg.png",
+  "/assets/homepage/Partners/RCPSDC.png",
+  "/assets/homepage/Partners/Ministry_of_Skill_Development_and_Entrepreneurship.svg.png",
+  "/assets/homepage/Partners/NBCFDC.png",
+  "/assets/homepage/Partners/Ministry_of_Coal_India.svg.png",
+  "/assets/homepage/Partners/IISSSC.jpg",
+  "/assets/homepage/Partners/GOVT_OF_INDIA.png",
+  "/assets/homepage/Partners/SCMS.png",
+  "/assets/homepage/Partners/Ministry_of_Heavy_Industries_India.svg.png",
+  "/assets/homepage/Partners/NSDC.png",
 ];
 
 const corporatePartners = [
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682066/adani_a61rst.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682094/TATA_Communication_xfp9ha.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682070/asci_n9mk9g.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682110/TATA_Power_ylzpdt.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682074/JINDAL_STEEL_enmfkd.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682114/TATA_STEEL_abtxt4.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682079/mcl_dxroe8.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682088/NLC_mlmpb7.png",
+  "/assets/homepage/Partners/adani.png",
+  "/assets/homepage/Partners/TATA_Communication.png",
+  "/assets/homepage/Partners/asci.png",
+  "/assets/homepage/Partners/TATA_Power.png",
+  "/assets/homepage/Partners/JINDAL_STEEL.png",
+  "/assets/homepage/Partners/TATA_STEEL.png",
+  "/assets/homepage/Partners/mcl.png",
+  "/assets/homepage/Partners/NLC.png",
 ];
 
 const multilateralPartners = [
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682341/undp-logo-blue_tnhdpg.svg",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682345/GIZ_fh9cts.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682350/UNICEF_ujpduu.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682357/ILO_w4mb5n.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682365/UNIDO_Logo.svg_vu7hvv.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682371/United_Nations_Environment_Programme_Logo.svg_bmaypr.png",
+  "/assets/homepage/Partners/undp-logo-blue.svg",
+  "/assets/homepage/Partners/GIZ.png",
+  "/assets/homepage/Partners/UNICEF.png",
+  "/assets/homepage/Partners/ILO.png",
+  "/assets/homepage/Partners/UNIDO_Logo.svg.png",
+  "/assets/homepage/Partners/United_Nations_Environment_Programme_Logo.svg.png",
 ];
 
 // Memoized PartnerSection component

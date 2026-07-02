@@ -37,7 +37,7 @@ const RightContent = memo(() => (
       PANTISS MINING FELLOWSHIP-'{currentYear}
     </span>
     <img
-      src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761666956/graduation-hat_uqthh5.png"
+      src="/assets/homepage/Summit/graduation-hat.png"
       alt="Fellowship Logo"
       className="absolute -rotate-45 -top-5 -left-5 -z-10 lg:-top-5 lg:-left-6 h-12 w-12"
       loading="lazy"
@@ -65,7 +65,7 @@ const SummitBanner = () => {
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761666463/14189975_1920_1080_50fps_n1mfta.mp4"
+        src="/assets/homepage/Summit/14189975_1920_1080_50fps.mp4"
         autoPlay
         muted
         loop

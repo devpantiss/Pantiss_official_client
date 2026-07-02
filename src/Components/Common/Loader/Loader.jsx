@@ -11,7 +11,7 @@ const Loader = () => {
                     <div id="ring"></div>
                     <div id="ring"></div>
                     <div id="h3">
-                        <img src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761652084/Untitled_design__3_-removebg-preview_ejr5lg.png" width="120px" />
+                        <img src="/logo.png" width="120px" />
                     </div>
                 </div>
             </div>
