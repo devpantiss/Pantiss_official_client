@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   const slides = [
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761737479/vision-magazin-lAdf6NFyh5c-unsplash_1_nejnze.jpg",
+    "/assets/publications/publication_hero.jpg",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

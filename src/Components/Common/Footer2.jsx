@@ -43,7 +43,7 @@ const Footer2 = () => {
     <footer className="relative bg-black text-white pb-8">
       {/* Header Image */}
       <img
-        src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761652302/Untitled_design_3_copy_mj0zgx.png"
+        src="/assets/footer/footer_img.png"
         alt="Pantiss Footer Banner"
         className="w-full"
       />
@@ -87,7 +87,7 @@ const Footer2 = () => {
             <h3 className="text-lg font-bold mb-4 text-red-600">Contact Us</h3>
 
             <img
-              src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761651882/logo_ympfzx.png"
+              src="/assets/pantiss_logo.png"
               alt="Pantiss Logo"
               className="w-44 mx-auto md:mx-0 mb-4"
             />
