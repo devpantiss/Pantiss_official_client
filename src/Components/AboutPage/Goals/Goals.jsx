@@ -5,7 +5,7 @@ const Goals = () => {
     <div
       className="relative overflow-hidden bg-fixed bg-cover bg-center bg-black/50"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761686540/tribal_fkr859.avif')`,
+        backgroundImage: `url('/assets/about/tribal.avif')`,
         backgroundAttachment: "fixed",
       }}
     >

@@ -9,7 +9,7 @@ const Missions = () => {
                     <h2 className="text-4xl pl-3 font-bold text-left text-white -mb-2">Mission</h2>
 
                     <div className="w-[300px] h-[330px] flex flex-col justify-center items-left p-6 bg-white rounded-lg shadow-lg">
-                        <img className="w-16 h-16" src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761685878/mission_2_pifah2.png" alt="Icon" />
+                        <img className="w-16 h-16" src="/assets/about/mission_0.png" />
                         <p className="mt-2 text-left text-red-600">We're driven to fast-track the world’s journey toward sustainable development. Our mission is to inspire vibrant, healthier communities by bringing people together as a leading policy think tank and knowledge hub, championing development across India’s dynamic landscape.</p>
                     </div>
                 </div>
@@ -18,7 +18,7 @@ const Missions = () => {
                 <div className="mb-6">
                     <h2 className="text-4xl pl-3 font-bold text-left text-white -mb-2">Vision</h2>
                     <div className="w-[300px] h-[330px] flex flex-col justify-center items-left p-6 bg-white rounded-lg shadow-lg">
-                        <img className="w-16 h-16" src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761685551/shared-vision_hwasnk.png" />
+                        <img className="w-16 h-16" src="/assets/about/shared-vision.png" />
                         <p className="mt-2 text-left text-red-600">We envision a world where everyone has the right to a decent and equal place to live, empowered to shape their own communities and nations. A world where local opportunities ignite growth, drive meaningful impact, and foster a healthier, more vibrant future for all.</p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const Missions = () => {
                 <div className="mb-6">
                     <h2 className="text-4xl pl-3 font-bold text-left text-white -mb-2">Goal</h2>
                     <div className="w-[300px] h-[330px] flex flex-col items-left p-6 bg-white rounded-lg shadow-lg">
-                        <img className="w-16 h-16" src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761685547/mission_fksx0b.png" alt="Icon" />
+                        <img className="w-16 h-16" src="/assets/about/goal.png" />
                         <p className="mt-2 text-left text-red-600">We strive to deliver top-notch services, believing that our clients' success is our success. Our goal is to lead globally by connecting people, ensuring their right to survival, protection, development, and participation.</p>
                     </div>
                 </div>

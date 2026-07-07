@@ -8,28 +8,28 @@ const awardsData = [
     title: "Star Performer Award",
     description: "#Beat Plastic Pollution Initiative",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723963/c1e1380ffdd93941850639161032c834_do4ghj.png",
+      "/assets/about/awards/y4w.png",
   },
   {
     year: "2022",
     title: "WES Innovation Award",
     description: "Youth Leadership Award",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723956/pngegg_3_bcfxvx.png",
+      "/assets/about/awards/iit_madras.png",
   },
   {
     year: "2023",
     title: "Kutumb Migrants Savior",
     description: "Safeguarding migrants",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761723948/kutumb_rrini4.jpg",
+      "/assets/about/awards/kutumb.png",
   },
   {
     year: "2023",
     title: "Best Performer Award",
     description: "Odisha Livelihood Mission",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761724428/olm_1_ow2qdb.png",
+      "/assets/about/awards/olm.png",
   },
 ];
 

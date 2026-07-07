@@ -161,7 +161,7 @@ const latestNews = {
       description:
         "Pantiss, in collaboration with local authorities and industry experts, has launched an ambitious skilling program aimed at empowering the youth in mining communities across Odisha. The initiative offers comprehensive training in modern mining techniques, safety protocols, and equipment handling, targeting over 1,000 participants in its first year. By equipping young individuals with employable skills, the program seeks to reduce unemployment and foster sustainable development in regions heavily impacted by mining activities.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761769356/Theoryofchange_deta48.jpg",
+        "/assets/where/latest/Theoryofchange.jpg",
     },
     {
       date: "February 10, 2025",
@@ -170,7 +170,7 @@ const latestNews = {
       description:
         "In a significant push toward improving quality of life, rehabilitation efforts in Odisha’s mining-affected villages have yielded remarkable results. These programs, supported by government and NGO partnerships, have introduced vocational training, microfinance opportunities, and infrastructure development, benefiting over 2,500 families. New initiatives include the establishment of community centers and agricultural cooperatives, which are creating sustainable income sources and reducing dependency on mining-related jobs.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761811413/adil-edin-OXtsxcb9E2c-unsplash_frmhlq.jpg",
+        "/assets/where/latest/rehabilitation.jpg",
     },
     {
       date: "February 25, 2025",
@@ -179,7 +179,7 @@ const latestNews = {
       description:
         "The Odisha state government has announced an innovative plan to construct model mining villages designed to provide a sustainable future for communities displaced by mining operations. These villages will feature modern amenities such as solar-powered electricity, clean water systems, schools, and healthcare facilities. The project, set to begin in mid-2025, aims to resettle over 3,000 families while promoting environmental conservation and community-driven economic growth in the region.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761736121/model_village_mjlwam.jpg",
+        "/assets/where/latest/model_village.jpg",
     },
     {
       date: "March 05, 2025",
@@ -188,7 +188,7 @@ const latestNews = {
       description:
         "A surge in small business enterprises and cooperatives in Odisha’s mining-affected regions is revitalizing the local economy. Supported by government incentives and private investments, these ventures range from handicraft production to agro-processing units, employing hundreds of locals. This growth not only diversifies income sources but also reduces the economic vulnerability of communities previously reliant on mining, marking a significant step toward long-term prosperity and stability.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761812540/Women-in-leadership-img_pkmbjz.jpg",
+        "/assets/where/latest/enterprises.jpg",
     },
   ],
   Jharkhand: [
@@ -198,7 +198,7 @@ const latestNews = {
       description:
         "Jharkhand’s Recognition of Prior Learning (RPL) program has emerged as a game-changer for the state’s mining workforce. Targeting experienced but uncertified miners, the initiative has certified over 800 workers in its initial phase, providing them with formal qualifications in mining operations, safety standards, and machinery maintenance. This upskilling effort is enhancing employability, improving workplace safety, and aligning the workforce with modern industry demands.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813688/istockphoto-1125843699-612x612_hlzyea.jpg",
+        "/assets/where/latest/istockphoto-1125843699-612x612.jpg",
     },
     {
       date: "February 20, 2025",
@@ -206,7 +206,7 @@ const latestNews = {
       description:
         "As part of its commitment to a just transition, Jharkhand has launched pilot projects to implement sustainable mining practices across key districts. These initiatives focus on reducing carbon emissions, minimizing water pollution, and adopting eco-friendly extraction methods. Backed by international funding and technical expertise, the projects aim to balance economic benefits with environmental preservation, setting a precedent for sustainable resource management in India’s mining sector.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813314/mike-erskine-GKFsewk-hz0-unsplash_lgih44.jpg",
+        "/assets/where/latest/mike-erskine-GKFsewk-hz0-unsplash.jpg",
     },
     {
       date: "March 01, 2025",
@@ -214,7 +214,7 @@ const latestNews = {
       description:
         "A groundbreaking mine reclamation project in Jharkhand has successfully transformed several abandoned mining sites into flourishing green spaces. By planting native trees, restoring soil health, and creating water bodies, the initiative has revitalized ecosystems, supporting the return of local wildlife and plant species. Spanning over 500 hectares, this effort not only combats environmental degradation but also serves as a model for ecological restoration in mining-heavy regions.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813314/khanh-do-TL0PvYz_Nfk-unsplash_qrkmnl.jpg",
+        "/assets/where/latest/khanh-do-TL0PvYz_Nfk-unsplash.jpg",
     },
   ],
   Assam: [
@@ -224,7 +224,7 @@ const latestNews = {
       description:
         "Assam’s agriculture sector is witnessing a transformation through skilling initiatives designed to empower smallholder farmers. These programs, rolled out across rural districts, provide training in organic farming, crop diversification, and water management techniques. With over 1,200 farmers enrolled, the initiative has boosted agricultural yields, improved food security, and increased household incomes, strengthening the state’s rural economy amidst changing environmental challenges.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814803/steven-weeks-DUPFowqI6oI-unsplash_zldrnq.jpg",
+        "/assets/where/latest/steven-weeks-DUPFowqI6oI-unsplash.jpg",
     },
     {
       date: "February 15, 2025",
@@ -232,7 +232,7 @@ const latestNews = {
       description:
         "Assam is taking bold steps toward a just transition by reducing its historical dependency on coal through strategic investments in renewable energy and alternative livelihoods. Solar and wind energy projects are being prioritized, alongside training programs for coal workers to shift into green industries. This multi-pronged approach aims to preserve jobs, protect the environment, and build a resilient economy for future generations in the state.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814789/anders-j-hxUcl0nUsIY-unsplash_t6mnw9.jpg",
+        "/assets/where/latest/anders-j-hxUcl0nUsIY-unsplash.jpg",
     },
     {
       date: "March 10, 2025",
@@ -240,7 +240,7 @@ const latestNews = {
       description:
         "A newly launched resettlement program in Assam is providing hope to families displaced by mining activities in the state’s coal-rich areas. The initiative offers modern housing, access to education and healthcare, and vocational training to over 600 families. By integrating community input into the planning process, the program ensures sustainable livelihoods and social stability, addressing long-standing challenges faced by mining-affected populations.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814794/jp-sheard-K6Ud3t3uJTc-unsplash_gbq200.jpg",
+        "/assets/where/latest/jp-sheard-K6Ud3t3uJTc-unsplash.jpg",
     },
   ],
   "Tamil Nadu": [
@@ -269,7 +269,7 @@ const latestNews = {
       description:
         "Chhattisgarh is leading the way in mine reclamation with a comprehensive strategy to restore lands degraded by decades of mining. The state’s efforts include reforestation, soil stabilization, and water conservation projects, covering over 700 hectares. Supported by scientific research and community participation, this initiative is not only repairing ecosystems but also creating new opportunities for agriculture and eco-tourism in affected areas.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813824/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg",
+        "/assets/where/latest/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg",
     },
     {
       date: "February 18, 2025",

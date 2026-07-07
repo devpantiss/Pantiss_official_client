@@ -18,7 +18,7 @@ const milestonesData = [
     description:
       "We conducted an extensive Need Assessment Survey, Spatial Planning, and GIA Survey to facilitate the Rehabilitation and Resettlement (R&R) of 7,000 households across seven mines in the Chotanagpur Plateau. This initiative focused on understanding the unique needs of displaced families, planning sustainable resettlement strategies, and ensuring equitable access to resources and opportunities. Our efforts aimed to create holistic, inclusive solutions that address the social, economic, and infrastructural challenges faced by the affected communities, paving the way for a better quality of life and sustainable development in the region.",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761721743/2021_1_uwndfp.jpg",
+      "/assets/about/milestones/2021.jpg",
   },
   {
     year: "2022",
@@ -31,7 +31,7 @@ const milestonesData = [
     description:
       "We successfully mobilized, trained, and assessed 150 candidates as part of the Mining Skill Development Program in Jajpur, equipping them with essential skills to thrive in the mining sector. Additionally, we conducted Recognition of Prior Learning (RPL) sessions for 1,000 individuals in the mining industry, validating and enhancing their existing knowledge and expertise. These initiatives aim to uplift the workforce by creating opportunities for skill enhancement, certification, and improved employability in the mining sector, fostering both individual growth and regional development.",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761721734/2022_stq3rx.jpg",
+      "/assets/about/milestones/2022.jpg",
   },
   {
     year: "2023",
@@ -44,7 +44,7 @@ const milestonesData = [
     description:
       "We proudly celebrate the establishment of fisheries clusters within mining pits, a pioneering initiative transforming livelihoods for 300 families. By repurposing mining pits into sustainable aquaculture hubs, we’ve empowered communities with tools, training, and market access to enhance productivity and ensure environmental regeneration. This initiative not only promotes economic independence but also fosters long-term socio-economic development, turning ecological challenges into opportunities. Together, we’re building a resilient and self-reliant future for these families.",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761721751/2023_new_wgvhrv.jpg",
+      "/assets/about/milestones/2023.jpg",
   },
   {
     year: "2024",
@@ -58,7 +58,7 @@ const milestonesData = [
     description:
       "We take pride in transforming 350 acres of abandoned mining land in the Sukinda Chromite Region into thriving guava plantations. This initiative not only replenishes degraded land but also empowers local communities with sustainable livelihoods. By combining ecological restoration with economic growth, we are turning barren landscapes into green, productive ecosystems that promise a brighter, self-reliant future.",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761721731/2024_zakmqr.jpg",
+      "/assets/about/milestones/2024.jpg",
   },
 ];
 

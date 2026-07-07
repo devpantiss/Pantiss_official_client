@@ -6,7 +6,7 @@ const FinancialBanner = () => {
       className="w-full h-[500px] bg-cover bg-center flex items-center justify-center"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761730860/henrique-ferreira-VERqw7ouux4-unsplash_ctrxds.jpg')", // Replace with your image path
+          "url('/assets/reports/reports_banner.jpg')", // Replace with your image path
       }}
     >
       {/* Text Overlay */}

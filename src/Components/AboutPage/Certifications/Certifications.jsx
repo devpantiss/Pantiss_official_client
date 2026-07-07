@@ -9,13 +9,13 @@ const certificationsData = [
     title: "ISO 9002",
     description: "Quality Assured",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729175/AdobeStock_636819188_Preview_fjxys3.jpg",
+      "/assets/about/certification/ISO_9002.jpg",
   },
   {
     title: "NSDC (National Skill Development Council)",
     description: "Industry Engagement Partner",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729202/hector-reyes-WRo7RQFpamA-unsplash_oyoxxb.jpg",
+      "/assets/about/certification/skill.JPG",
   },
   {
     title:
@@ -28,7 +28,7 @@ const certificationsData = [
     title: "SCMS (Skill Council for Mining Sector)",
     description: "Authorized Training Partner",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729210/matthew-de-livera-4Gf51uY0YQE-unsplash_j3ih5t.jpg",
+      "/assets/about/certification/mining.jpg",
   },
   {
     title: "Indian Iron and Steel Sector Skill Council",
@@ -40,7 +40,7 @@ const certificationsData = [
     title: "Agriculture Skill Council of India",
     description: "Authorized Training Partner",
     imageUrl:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761729200/foto-murthy-lXVWulsnNQE-unsplash_evbtha.jpg",
+            "/assets/about/certification/aquaculture.jpg",
   },
 ];
 

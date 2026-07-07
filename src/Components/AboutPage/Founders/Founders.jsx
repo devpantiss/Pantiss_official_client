@@ -5,12 +5,12 @@ const founders = [
   {
     name: 'Mr. Stalin Nayak',
     title: 'Founder cum CEO',
-    image: 'https://res.cloudinary.com/dxzhnns58/image/upload/v1761685978/stalinsir_l53ura.jpg', // Replace with your image URL
+    image: '/assets/teams/stalinsir.jpg', // Replace with your image URL
   },
   {
     name: 'Dr. Sanjay Pradhan',
     title: 'Co-Founder cum Principal Advisor',
-    image: 'https://pantiss.com/assets/teams/sanjay.png', // Replace with your image URL
+    image: '/assets/teams/sanjay.png', // Replace with your image URL
   }
 ];
 
