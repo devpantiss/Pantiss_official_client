@@ -8,7 +8,7 @@ const Banner = () => {
         className="relative w-full h-[118vh] bg-cover flex justify-center items-center bg-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761686540/tribal_fkr859.avif')",
+            "url('/assets/summit/tribal.avif')",
         }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">

@@ -2,19 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 
 const galleryImages = [
   {
-    src: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+    src: "/assets/fellowship/gallery/just-transition.jpg",
     alt: "Fellows during field training",
   },
   {
-    src: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761840260/odisha-2368219_1280_hspude.jpg",
+    src: "/assets/fellowship/gallery/odisha-2368219_1280.jpg",
     alt: "Community engagement session",
   },
   {
-    src: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761840689/elderly-1213193_1280_enovzu.jpg",
+    src: "/assets/fellowship/gallery/elderly-1213193_1280.jpg",
     alt: "Indigenous livelihood interaction",
   },
   {
-    src: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761843805/pexels-cottonbro-4430323_mbxpdx.jpg",
+    src: "/assets/fellowship/gallery/pexels-cottonbro-4430323.jpg",
     alt: "Livelihood training workshop",
   },
 ];

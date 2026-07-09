@@ -232,7 +232,7 @@ const latestNews = {
       description:
         "Assam is taking bold steps toward a just transition by reducing its historical dependency on coal through strategic investments in renewable energy and alternative livelihoods. Solar and wind energy projects are being prioritized, alongside training programs for coal workers to shift into green industries. This multi-pronged approach aims to preserve jobs, protect the environment, and build a resilient economy for future generations in the state.",
       image:
-        "/assets/where/latest/anders-j-hxUcl0nUsIY-unsplash.jpg",
+        "/assets/where/latest/just-transition.jpg",
     },
     {
       date: "March 10, 2025",
@@ -251,7 +251,7 @@ const latestNews = {
       description:
         "Tamil Nadu has inaugurated a network of state-of-the-art mining skilling centers aimed at bolstering workforce development in the state’s mining sector. These facilities offer specialized courses in advanced mining technologies, occupational safety, and environmental management, catering to both new entrants and seasoned workers. With a capacity to train 1,500 individuals annually, the centers are poised to enhance productivity and safety standards across the industry.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813985/WhatsApp_Image_2025-09-03_at_7.27.27_PM_hnzywi.jpg",
+        "/assets/where/latest/Theoryofchange.jpg",
     },
     {
       date: "January 25, 2025",
@@ -259,7 +259,7 @@ const latestNews = {
       description:
         "Assam’s agriculture sector is witnessing a transformation through skilling initiatives designed to empower smallholder farmers. These programs, rolled out across rural districts, provide training in organic farming, crop diversification, and water management techniques. With over 1,200 farmers enrolled, the initiative has boosted agricultural yields, improved food security, and increased household incomes, strengthening the state’s rural economy amidst changing environmental challenges.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814803/steven-weeks-DUPFowqI6oI-unsplash_zldrnq.jpg",
+        "/assets/where/latest/steven-weeks-DUPFowqI6oI-unsplash.jpg",
     },
   ],
   Chhattisgarh: [
@@ -269,7 +269,7 @@ const latestNews = {
       description:
         "Chhattisgarh is leading the way in mine reclamation with a comprehensive strategy to restore lands degraded by decades of mining. The state’s efforts include reforestation, soil stabilization, and water conservation projects, covering over 700 hectares. Supported by scientific research and community participation, this initiative is not only repairing ecosystems but also creating new opportunities for agriculture and eco-tourism in affected areas.",
       image:
-        "/assets/where/latest/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg",
+        "/assets/where/latest/aditya-shrivastava-yYPcqVU6IEI-unsplash.jpg",
     },
     {
       date: "February 18, 2025",
@@ -277,7 +277,7 @@ const latestNews = {
       description:
         "Chhattisgarh has opened a series of advanced skilling centers to prepare workers for sustainable mining jobs that align with global environmental standards. These centers offer training in green mining technologies, renewable energy integration, and waste management, targeting over 900 participants in their first phase. The initiative reflects the state’s commitment to balancing economic growth with ecological responsibility in its mining sector.",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813875/GMC06072025_170825_qsx9f7.jpg",
+        "/assets/where/latest/Theoryofchange.jpg",
     },
   ],
 };

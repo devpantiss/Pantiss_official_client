@@ -32,12 +32,12 @@ const Donors = () => {
 //   ];
 
 const multilateralPartners = [
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682341/undp-logo-blue_tnhdpg.svg",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682345/GIZ_fh9cts.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682350/UNICEF_ujpduu.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682357/ILO_w4mb5n.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682365/UNIDO_Logo.svg_vu7hvv.png",
-  "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682371/United_Nations_Environment_Programme_Logo.svg_bmaypr.png",
+  "/assets/homepage/Partners/undp-logo-blue.svg",
+  "/assets/homepage/Partners/GIZ.png",
+  "/assets/homepage/Partners/UNICEF.png",
+  "/assets/homepage/Partners/ILO.png",
+  "/assets/homepage/Partners/UNIDO_Logo.svg.png",
+  "/assets/homepage/Partners/United_Nations_Environment_Programme_Logo.svg.png",
 ];
 
   return (

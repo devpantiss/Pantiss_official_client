@@ -6,7 +6,7 @@ const Banner = () => {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761732286/WhatsApp_Video_2025-03-19_at_12-VEED_bxerlj.mp4"
+          src="/assets/homepage/Report_banner.mp4"
           autoPlay
           loop
           muted

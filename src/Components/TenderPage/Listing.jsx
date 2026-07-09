@@ -9,7 +9,7 @@ const TendersListing = () => {
       startDate: "2nd July 2026",
       deadline: "8th July 2026",
       link: "https://drive.google.com/file/d/1Y6ncisTZbyEXvy2_qS_NqN27xA9PGF3r/view?usp=sharing",
-      isClosed: false,
+      isClosed: true,
     },
     {
       id: 2,

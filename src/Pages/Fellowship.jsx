@@ -18,7 +18,7 @@ const Fellowship = () => {
       <Stats />
       <VideoSection />
       <FellowshipVideo
-        src="https://res.cloudinary.com/dxzhnns58/video/upload/v1761738817/YTDown.com_YouTube_Exploring-Niyamgiri-Hills-with-_DRHBTUDU_Media_XMYa01jVc3A_001_1080p_accx9s_6b5ff7.mp4"
+        src="/assets/fellowship/fellowship_hero.mp4"
         onApplyClick={() => navigate("/apply")}
       />
       <ReachSection />

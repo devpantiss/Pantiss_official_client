@@ -10,19 +10,19 @@ const ProgrammesSection = () => {
       {
         title: "Curriculum",
         image:
-          "https://res.cloudinary.com/dxzhnns58/image/upload/v1761739107/tim-mossholder-WE_Kv_ZB1l0-unsplash_xqoxjt.jpg",
+          "/assets/fellowship/program/curriculum.jpg",
         link: "https://drive.google.com/file/d/1xyzCurriculum/view",
       },
       {
         title: "Structure",
         image:
-          "https://res.cloudinary.com/dxzhnns58/image/upload/v1761739127/scott-graham-5fNmWej4tAA-unsplash_xg4nus.jpg",
+          "/assets/fellowship/program/structure.jpg",
         link: "https://drive.google.com/file/d/1xyzStructure/view",
       },
       {
         title: "Academic Calendar",
         image:
-          "https://res.cloudinary.com/dxzhnns58/image/upload/v1761739136/estee-janssens-zni0zgb3bkQ-unsplash_fsenxr.jpg",
+          "/assets/fellowship/program/calender.jpg",
         link: "https://drive.google.com/file/d/1xyzAcademicCalendar/view",
       },
     ],

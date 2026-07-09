@@ -8,25 +8,25 @@ import "slick-carousel/slick/slick-theme.css";
 const stories = [
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815148/GMC10092024_162547_jhwc3q.jpg",
+      "/assets/where/slides/sustainable_mining.jpg",
     text: "Transforming lives in Keonjhar by training local youth in sustainable mining practices, creating employment opportunities in Odisha’s iron ore heartland.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761814993/matthew-henry-yETqkLnhsUI-unsplash_u7sm9z.jpg",
+      "/assets/where/slides/solar.jpg",
     text: "Restoring degraded lands in Sundargarh with renewable energy projects, empowering mining villages with solar-powered livelihoods.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813875/GMC06072025_170825_qsx9f7.jpg",
+      "/assets/where/slides/mine_work.jpeg",
     text: "Upskilling women and tribal communities in Sukinda’s chromite belt, fostering economic resilience through vocational education.",
     bgColor: "bg-white",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815054/AdobeStock_574000874_Preview_md91z2.jpg",
+      "/assets/where/slides/water.jpg",
     text: "Reviving water resources in Jharsuguda’s coal mining areas with community-led watershed management, ensuring sustainable agriculture.",
     bgColor: "bg-white",
   },

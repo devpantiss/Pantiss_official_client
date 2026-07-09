@@ -13,7 +13,7 @@ const Stats = () => {
       className="relative bg-fixed flex-col bg-center bg-cover h-full lg:h-[40vh] py-6 flex items-center"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761738977/hasnan-monir-HmIRvvtbvtY-unsplash_z1curl.jpg')",
+          "url('/assets/fellowship/fellow_impact_bg.jpg')",
       }}
     >
       <div className="z-50">

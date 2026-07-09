@@ -4,14 +4,14 @@ import Marquee from "react-fast-marquee"; // We'll use this for the scrolling ef
 const Exhibitors = () => {
   
   const multilateralPartners = [
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682066/adani_a61rst.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682094/TATA_Communication_xfp9ha.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682070/asci_n9mk9g.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682110/TATA_Power_ylzpdt.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682074/JINDAL_STEEL_enmfkd.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682114/TATA_STEEL_abtxt4.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682079/mcl_dxroe8.png",
-    "https://res.cloudinary.com/dxzhnns58/image/upload/v1761682088/NLC_mlmpb7.png",
+    "/assets/summit/exhibitors/adani.png",
+    "/assets/summit/exhibitors/TATA_Communication.png",
+    "/assets/summit/exhibitors/asci.png",
+    "/assets/summit/exhibitors/TATA_Power.png",
+    "/assets/summit/exhibitors/JINDAL_STEEL.png",
+    "/assets/summit/exhibitors/TATA_STEEL.png",
+    "/assets/summit/exhibitors/mcl.png",
+    "/assets/summit/exhibitors/nlc.png",
   ];
 
   return (

@@ -7,21 +7,21 @@ const Understand = () => {
       subtitle: "SEE",
       action: "Video",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761738211/Anil2_l40d5u.jpg",
+        "/assets/fellowship/fellow.jpg",
     },
     {
       title: "About our caring hosts",
       subtitle: "READ",
       action: "Hosts",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761738272/Read_j1q4ut.jpg",
+        "/assets/fellowship/hosts.jpg",
     },
     {
       title: "To our mentors who nurture",
       subtitle: "LISTEN",
       action: "Mentors",
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761738292/Continious-learning_hqlzm5.jpg",
+        "/assets/fellowship/mentor.jpg",
     },
   ];
 

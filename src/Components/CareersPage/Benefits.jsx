@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 const cardData = [
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745475/pexels-lalesh-167964_wzo43t.jpg",
+      "/assets/careers/benefits/pexels-lalesh-167964.jpg",
     text: "Tution Assistance",
     path: "/benefits-at-pantiss/tution-assistance",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745529/pexels-william-fortunato-6392819_fgmuiv.jpg",
+      "/assets/careers/benefits/pexels-william-fortunato-6392819.jpg",
     text: "Parenting Benefits",
     path: "/benefits-at-pantiss/parenting-benefits",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745669/markus-frieauff-IJ0KiXl4uys-unsplash_vrjbwr.jpg",
+      "/assets/careers/benefits/markus-frieauff-IJ0KiXl4uys-unsplash.jpg",
     text: "Health Insurance",
     path: "/benefits-at-pantiss/health-insurance",
   },
   {
     image:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761745777/anaclara-vardiero-NjrenDTlyeU-unsplash_aj5rpa.jpg",
+      "/assets/careers/benefits/retirement.jpg",
     text: "Retirement Programmes",
     path: "/benefits-at-pantiss/retirement-programmes",
   },
@@ -54,7 +54,7 @@ const BenefitsPantiss = () => {
   const largeCard = useMemo(
     () => ({
       image:
-        "https://res.cloudinary.com/dxzhnns58/image/upload/v1761769438/IMG_20241120_122703579_HDR_vmypeg.jpg",
+        "/assets/careers/benefits/IMG_20241120_122703579_HDR.jpg",
       text: "Career Development",
       path: "/benefits-at-pantiss/career-development",
     }),
