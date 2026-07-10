@@ -8,7 +8,7 @@ const Hero = () => {
         className="relative w-full h-[40vh] lg:h-[700px] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/dxzhnns58/image/upload/v1761772567/WhatsApp_Image_2025-10-24_at_1.13.48_PM_1_wbtjtc.jpg')",
+            "url('/assets/careers/internship.jpg')",
         }}
       >
         {/* Overlay for better readability */}
