@@ -8,7 +8,9 @@ const StudentsAndGraduatesSection = () => {
       link: "/programmes/young-professionals",
     },
     // { name: "Management Trainee Programme (MT)", link: "/mt" },
-    { name: "Internship Programme", link: "/programmes/internships" },
+    { name: "Internship Programme", 
+      link: "/programmes/internships" 
+    },
   ];
 
   return (
@@ -44,7 +46,7 @@ const StudentsAndGraduatesSection = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex justify-center">
           <img
-            src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761745242/IMG_9085_tkrncl_1_1_cc29gu.jpg" // Replace with the actual image URL
+            src="/assets/careers/IMG_9085.JPG" // Replace with the actual image URL
             alt="Student or Recent Graduate"
             className="rounded-lg shadow-lg w-3/4 lg:w-full object-cover"
           />
