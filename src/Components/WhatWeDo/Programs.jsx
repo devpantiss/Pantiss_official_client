@@ -18,7 +18,7 @@ const programs = [
       "Center of Excellence",
       "Global Placements",
     ],
-    link: "https://pantiss-skill-universe.netlify.app",
+    link: "https://pantiss-skill-universe-seven.vercel.app/",
     external: true,
   },
   {
