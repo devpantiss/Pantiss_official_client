@@ -133,7 +133,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center ml-[300px] justify-between w-full">
           <nav className="flex space-x-6">
             {/* HOME */}
-            <Link
+            {/* <Link
               to="/sdg-pantiss"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[#2A675C]" : "text-[#2A675C]"
                 } ${isActive("/sdg-pantiss") ? "text-red-600 underline" : ""
@@ -145,7 +145,7 @@ const Header = () => {
                 className="w-12 h-12"
               />
               SDG's & PANTISS
-            </Link>
+            </Link> */}
 
             {/* CAREER */}
             <Link
@@ -217,7 +217,7 @@ const Header = () => {
           className={`fixed top-[125px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${isMenuOpen2 ? "translate-x-0" : "translate-x-full"
             }`}
         >
-          <nav className="flex flex-col space-y-4 p-4">
+          {/* <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/sdg-pantiss"
               className="flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-red-600"
@@ -267,7 +267,7 @@ const Header = () => {
               <GrPhone />
               Contact
             </Link>
-          </nav>
+          </nav> */}
         </div>
       </div>
 
