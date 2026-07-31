@@ -29,7 +29,8 @@ const programs = [
       "Animal Husbandary",
       "Enterprise Incubation",
     ],
-    link: "/what-we-do/carp-rice-&-duck-livelihood-park",
+    link: "https://carp-duck-rice.vercel.app/",
+    external: true,
   },
   {
     title: "Health & Nutrition",
@@ -39,13 +40,14 @@ const programs = [
       "Health Screening",
       "Malnutrition Management",
     ],
-    link: "/what-we-do/nutrinest",
+    link: "https://nutri-nova-mu.vercel.app/",
+    external: true,
   },
   {
     title: "Water & Sanitation",
     image: "/assets/homepage/whatwedo/Sanitation_workers.jpg",
     categories: ["Safe Drinking Water", "Toilets", "Waste-Disposal"],
-    link: "https://mowash.in",
+    link: "https://admin-mowash.vercel.app/",
     external: true,
   },
   {

@@ -96,7 +96,7 @@ function App() {
   }
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-clip">
       <SeoManager />
       {!hideHeaderFooter && <Header />}
       <Routes>

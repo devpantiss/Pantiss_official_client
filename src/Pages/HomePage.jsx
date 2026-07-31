@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import { lazy } from "react";
 import HomeBanner2 from "../Components/Homepage/Banner2/HomeBanner2"; // Normal import
 // import WhatWeDo2 from "../Components/Homepage/WhatWeDo/WhatWeDo";
 // import AdvisoryBoard from "../Components/Homepage/AdvisoryBoard/AdvisoryBoard";
@@ -14,6 +14,8 @@ import ActivityAndEvents from "../Components/Homepage/ActivityAndEvents";
 import Socials from "../Components/Homepage/Socials/Socials";
 import WhatWeDo from "../Components/Homepage/WhatWeDo";
 import VidSection from "../Components/Homepage/VidSection";
+import MiningLifecycleStory from "../Components/Homepage/MiningLifecycle/MiningLifecycleStory";
+import LifecycleSolutionCards from "../Components/Homepage/MiningLifecycle/LifecycleSolutionCards";
 
 // Lazy load other components
 const Impact2 = lazy(() => import("../Components/Homepage/Impact2/Impact2"));
@@ -26,6 +28,8 @@ const HomePage = () => {
     <div>
       <HomeBanner2 />
       <WhatWeDo />
+      <MiningLifecycleStory />
+      <LifecycleSolutionCards />
       {/* <WhatWeDo2 /> */}
       <SDGBanner />
       <VidSection />

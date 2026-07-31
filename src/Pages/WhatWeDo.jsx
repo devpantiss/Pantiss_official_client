@@ -6,12 +6,14 @@ import InnovationLabBanner from '../Components/WhatWeDo/InnovationLabBanner';
 import Programs from '../Components/WhatWeDo/Programs';
 import Stories from '../Components/WhatWeDo/Stories';
 import ModelMiningVillagesBanner from '../Components/WhatWeDo/ModelMiningVillagesBanner';
+import MineLifecycleHorizontalScroll from '../Components/WhatWeDo/MineLifecycleHorizontalScroll';
 
 
 const WhatWeDo = () => {
   return (
     <div className=''>
       <BannerWhatWeDo />
+      <MineLifecycleHorizontalScroll />
       <Expertise />
       <Programs />
       <InnovationLabBanner />

@@ -112,9 +112,8 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full sticky z-50 backdrop-blur-sm shadow-md transition-colors duration-300 ${
-        isScrolled ? "bg-white" : "bg-[white]"
-      } ${isScrolled ? "text-white" : "text-black"}]`}
+      className={`w-full sticky z-50 backdrop-blur-sm shadow-md transition-colors duration-300 ${isScrolled ? "bg-white" : "bg-[white]"
+        } ${isScrolled ? "text-white" : "text-black"}]`}
     >
       <div className="py-2 px-2 lg:mx-[110px] flex gap-x-[400px] justify-between items-center">
         {/* Logo */}
@@ -136,11 +135,9 @@ const Header = () => {
             {/* HOME */}
             <Link
               to="/sdg-pantiss"
-              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-[#2A675C]" : "text-[#2A675C]"
-              } ${
-                isActive("/sdg-pantiss") ? "text-red-600 underline" : ""
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[#2A675C]" : "text-[#2A675C]"
+                } ${isActive("/sdg-pantiss") ? "text-red-600 underline" : ""
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               <img
@@ -153,20 +150,29 @@ const Header = () => {
             {/* CAREER */}
             <Link
               to="/careers"
-              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
-                isScrolled ? "text-red-600" : "text-red-600"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Career
             </Link>
 
+            {/* ERP */}
+            <Link
+              to="https://pantiss-erp.vercel.app/"
+              target="_blank"
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
+                } transition duration-300`}
+              onClick={handleOptionSelect}
+            >
+              ERP
+            </Link>
+
             {/* TENDERS & EOI */}
             <Link
               to="/tenders"
-              className={`relative flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-red-600" : "text-red-600"
-              } transition duration-300`}
+              className={`relative flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Tenders
@@ -178,9 +184,8 @@ const Header = () => {
             {/* Fellowship */}
             <Link
               to="/fellowship"
-              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-red-600" : "text-red-600"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Fellowship
@@ -189,9 +194,8 @@ const Header = () => {
             {/* CONTACT */}
             <Link
               to="/contact-us"
-              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-red-600" : "text-red-600"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Contact
@@ -202,18 +206,16 @@ const Header = () => {
         {/*sub-Navbar Hamburger Menu */}
         <button
           onClick={toggleMenu2}
-          className={`lg:hidden ${
-            isScrolled ? "text-red-600" : "text-red-600"
-          } focus:outline-none`}
+          className={`lg:hidden ${isScrolled ? "text-red-600" : "text-red-600"
+            } focus:outline-none`}
         >
           {isMenuOpen2 ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
         {/* sub-Navbar Mobile Navigation */}
         <div
-          className={`fixed top-[125px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${
-            isMenuOpen2 ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed top-[125px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${isMenuOpen2 ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
             <Link
@@ -276,11 +278,9 @@ const Header = () => {
             {/* HOME */}
             <Link
               to="/"
-              className={`cursor-pointer flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-[white]" : "text-[white]"
-              } ${
-                isActive("/") ? "text-[white] underline" : ""
-              } transition duration-300`}
+              className={`cursor-pointer flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
+                } ${isActive("/") ? "text-[white] underline" : ""
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Home
@@ -290,15 +290,13 @@ const Header = () => {
             <div className="relative group">
               <button
                 onClick={() => toggleDropdown("about")}
-                className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                  isScrolled ? "text-[white]" : "text-[white]"
-                } transition duration-300`}
+                className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
+                  } transition duration-300`}
               >
                 Who We are
                 <AiOutlineDownCircle
-                  className={`ml-1 text-[26px] transition-transform duration-300 ease-in-out ${
-                    isAboutOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 text-[26px] transition-transform duration-300 ease-in-out ${isAboutOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {isAboutOpen && (
@@ -343,161 +341,20 @@ const Header = () => {
             </div>
 
             {/* What we do */}
-            <div className="relative group">
-              <Link
-                to="/what-we-do"
-                onClick={() => toggleDropdown("whatWeDo")}
-                className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
-                  isScrolled ? "text-[white]" : "text-[white]"
+            <Link
+              to="/what-we-do"
+              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
                 } transition duration-300`}
-              >
-                What We Do
-                <AiOutlineDownCircle
-                  className={`ml-1 text-[26px] transition-transform duration-300 ease-in-out ${
-                    isWhatWeDoOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </Link>
-              {isWhatWeDoOpen && (
-                <div className="absolute mt-6 grid grid-cols-1 w-[500px] text-black bg-red-600 border rounded shadow-lg z-20">
-                  {/* <Link
-                    to="/what-we-do/EIA-SIA-for-land-acquisition"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      EIA/SIA for Land Acquisition@Mines
-                    </span>
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Land Acquisition, Rehabilitation & Resettlement of Mines
-                    </span>
-                  </Link>
-                  <Link
-                    to="/what-we-do/mine-steel-&-power-skill-park"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Mine, Steel & Power Skill Park{" "}
-                    </span>
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/enterprise-growth-in-mining-villages"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Enterprise Growth in Mining Villages
-                    </span>
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/carp-rice-&-duck-livelihood-park"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Carp, Rice & Duck Livelihood Park{" "}
-                    </span>
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/just-transition-for-mining-workers"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Just Transition for Mining Workers
-                    </span>
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/nutrinest"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">NutriNest </span>
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/eco-mine-tourism"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">Eco-Mine Tourism</span>
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/model-mining-village-in-making"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Model Mining Village in Making
-                    </span>
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/indegenous-community-empowerment"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Indigenous Community Empowerment
-                    </span>
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/waterbody-restoration-in-mines"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white hover:rounded-md text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Waterbody Restoration in Mines
-                    </span>
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/connecting-remote-mining-habitations"
-                    className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
-                    onClick={handleOptionSelect}
-                  >
-                    {" "}
-                    <FaPersonDigging className="text-[28px]" />
-                    <span className="text-[18px]">
-                      Connecting Remote Mining Habitations
-                    </span>
-                  </Link> */}
-                </div>
-              )}
-            </div>
+              onClick={handleOptionSelect}
+            >
+              What We Do
+            </Link>
 
             {/* Where we work */}
             <Link
               to="/where-we-work"
-              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${
-                isScrolled ? "text-[white]" : "text-[white]"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Where We Work
@@ -505,9 +362,8 @@ const Header = () => {
 
             <Link
               to="/summit"
-              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-[white]" : "text-[white]"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Summit
@@ -515,9 +371,8 @@ const Header = () => {
 
             <Link
               to="/impact"
-              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${
-                isScrolled ? "text-[white]" : "text-[white]"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
+                } transition duration-300`}
               onClick={handleOptionSelect}
             >
               Our Impact
@@ -527,9 +382,8 @@ const Header = () => {
           {/* Disability key */}
           <div className="flex justify-between gap-x-8 relative">
             <Link
-              className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 mx-3 text-[18px] ring-2 ring-[white] rounded-md ${
-                isScrolled ? "text-[white]" : "text-[white]"
-              } transition duration-300`}
+              className={`flex items-center gap-x-2 hover:bg-white hover:text-red-600 font-open font-bold px-3 py-2 mx-3 text-[18px] ring-2 ring-[white] rounded-md ${isScrolled ? "text-[white]" : "text-[white]"
+                } transition duration-300`}
               onClick={toggleAccessibilityMenu}
             >
               <TbDisabled className="text-[26px] font-open" /> Divyanjan
@@ -589,18 +443,16 @@ const Header = () => {
         {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
-          className={`lg:hidden ${
-            isScrolled ? "text-white" : "text-white"
-          } focus:outline-none`}
+          className={`lg:hidden ${isScrolled ? "text-white" : "text-white"
+            } focus:outline-none`}
         >
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed top-[125px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed top-[125px] lg:hidden right-0 w-full h-screen bg-red-600 text-white flex flex-col z-99 items-left justify-start transition-transform duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           <nav className="flex flex-col space-y-4 p-4">
             <Link
@@ -621,9 +473,8 @@ const Header = () => {
                 <GrHelpBook />
                 Who We are
                 <AiOutlineDownCircle
-                  className={`ml-1 transition-transform duration-300 ease-in-out ${
-                    isAboutOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 transition-transform duration-300 ease-in-out ${isAboutOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {isAboutOpen && (
@@ -668,121 +519,14 @@ const Header = () => {
               )}
             </div>
 
-            <div className="relative">
-              <Link
-                to="/what-we-do"
-                onClick={() => toggleDropdown("whatWeDo")}
-                className="flex items-center mx-3 text-[18px] gap-x-2 text-[white]"
-              >
-                <GrBriefcase />
-                What We Do
-                <AiOutlineDownCircle
-                  className={`ml-1 transition-transform duration-300 ease-in-out ${
-                    isWhatWeDoOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </Link>
-              {isWhatWeDoOpen && (
-                <div className="grid grid-cols-2 pl-6 mt-4 gap-y-4 gap-x-4">
-                  {/* <Link
-                    to="/what-we-do/EIA-SIA-for-land-acquisition"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    EIA/SIA for Land Acquisition@Mines
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Land Acquisition, Rehabilitation & Resettlement of Mines
-                  </Link>
-                  <Link
-                    to="/what-we-do/mine-steel-&-power-skill-park"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Mine, Steel & Power Skill Park{" "}
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/enterprise-growth-in-mining-villages"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Enterprise Growth in Mining Villages
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/carp-rice-&-duck-livelihood-park"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Carp, Rice & Duck Livelihood Park{" "}
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/just-transition-for-mining-workers"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Just Transition for Mining Workers
-                  </Link> */}
-                  <Link
-                    to="/what-we-do/nutrinest"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    NutriNest
-                  </Link>
-                  {/* <Link
-                    to="/what-we-do/eco-mine-tourism"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Eco-Mine Tourism
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/model-mining-village-in-making"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Model Mining Village in Making
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/indigenous-community-empowerment"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Indigenous Community Empowerment
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/waterbody-restoration-in-mines"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Waterbody Restoration in Mines
-                  </Link> */}
-                  {/* <Link
-                    to="/what-we-do/connecting-remote-mining-habitations"
-                    className="hover:underline flex gap-x-2 text-[white]"
-                    onClick={handleOptionSelect}
-                  >
-                    <BiRightArrow />
-                    Connecting Remote Mining Habitations
-                  </Link> */}
-                </div>
-              )}
-            </div>
+            <Link
+              to="/what-we-do"
+              className="flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white]"
+              onClick={handleOptionSelect}
+            >
+              <GrBriefcase />
+              What We Do
+            </Link>
 
             <Link
               to="/where-we-work"
@@ -819,9 +563,8 @@ const Header = () => {
                 <TbDisabled className="text-[26px] font-open" /> Divyanjan
                 Friendly
                 <AiOutlineDownCircle
-                  className={`ml-1 transition-transform duration-300 ease-in-out ${
-                    isAccessibilityOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 transition-transform duration-300 ease-in-out ${isAccessibilityOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
