@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const teamData = [
   // Leadership
-   {
+  {
     name: "Mr. Stalin Nayak",
     title: "Founder cum CEO",
     image: "/assets/teams/stalinsir.jpg",
@@ -15,7 +15,7 @@ const teamData = [
     image: "/assets/teams/sanjay.png",
     department: "founders",
   },
-   {
+  {
     name: "Mr. Kunal Anand",
     title: "Co-Founder cum CTO",
     image: "/assets/teams/kunal.png",
@@ -24,19 +24,19 @@ const teamData = [
 
   {
     name: "Mr. Braja Kishore Nayak",
-    title: "Chief Business Officer",
+    title: "Chief Financial Adsvisor",
     image: "/assets/teams/braja.png",
     department: "leadership",
   },
   {
     name: "Mr. Deepan Digal",
-    title: "Chief Operations Officer",
+    title: "Deputy CEO",
     image: "/assets/teams/deepan.png",
     department: "leadership",
   },
   {
     name: "Mrs. Indumati Nanda",
-    title: "Chief Strategy Officer",
+    title: "Additional CEO",
     image: "/assets/teams/indumaam.png",
     department: "leadership",
   },
@@ -149,12 +149,12 @@ const teamData = [
     image: "/assets/teams/dwarka.png",
     department: "projectManagement",
   },
-  {
-    name: "Mr. Manoj Panda",
-    title: "Lead, (Environment & Ecology)",
-    image: "/assets/teams/manoj.png",
-    department: "projectManagement",
-  },
+  // {
+  //   name: "Mr. Manoj Panda",
+  //   title: "Lead, (Environment & Ecology)",
+  //   image: "/assets/teams/manoj.png",
+  //   department: "projectManagement",
+  // },
 
   // Monitoring, Evaluation & Compliance
   {
@@ -174,7 +174,7 @@ const teamData = [
     name: "Ms. Jayashree Satpathy",
     title: "Associate, Legal Compliance",
     image:
-    "/assets/teams/jayashree.png",
+      "/assets/teams/jayashree.png",
     department: "monitoring",
   },
 
@@ -410,11 +410,10 @@ const TeamTabs = () => {
           {tabs.map((tab) => (
             <button
               key={tab.key}
-              className={`px-4 py-2 font-semibold rounded-md transition-colors duration-200 ${
-                activeTab === tab.key
-                  ? "bg-red-500 text-white"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-4 py-2 font-semibold rounded-md transition-colors duration-200 ${activeTab === tab.key
+                ? "bg-red-500 text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               onClick={() => setActiveTab(tab.key)}
             >
               {tab.label}
