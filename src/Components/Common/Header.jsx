@@ -217,43 +217,41 @@ const Header = () => {
           className={`fixed top-[125px] right-0 w-full lg:hidden h-screen text-red-600 bg-white flex flex-col items-left justify-start transition-transform duration-500 ${isMenuOpen2 ? "translate-x-0" : "translate-x-full"
             }`}
         >
-          {/* <nav className="flex flex-col space-y-4 p-4">
-            <Link
-              to="/sdg-pantiss"
-              className="flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-red-600"
-              onClick={handleOptionSelect}
-            >
-              <img
-                src="https://i.postimg.cc/8zD4f1f8/vecteezy-sustainable-development-goals-logo-template-illustration-5412443-1-removebg-preview.png"
-                className="w-12 h-12"
-              />
-              SDG's & PANTISS
-            </Link>
-
+          <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/careers"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
-              onClick={handleOptionSelect}
+              onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrBriefcase />
               Career
             </Link>
 
             <Link
+              to="https://pantiss-erp.vercel.app/"
+              target="_blank"
+              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
+            >
+              <GrNotes />
+              ERP
+            </Link>
+
+            <Link
               to="/tenders"
               className="relative flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
-              onClick={handleOptionSelect}
+              onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrNotes />
               Tenders
-              <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
-              <span className="absolute -top-1 left-32 w-3 h-3 bg-red-600 rounded-full"></span>
+              <span className="absolute -top-1 left-24 w-3 h-3 bg-red-600 rounded-full animate-ping"></span>
+              <span className="absolute -top-1 left-24 w-3 h-3 bg-red-600 rounded-full"></span>
             </Link>
 
             <Link
               to="/fellowship"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
-              onClick={handleOptionSelect}
+              onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <FaGraduationCap />
               Fellowship
@@ -262,12 +260,12 @@ const Header = () => {
             <Link
               to="/contact-us"
               className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
-              onClick={handleOptionSelect}
+              onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrPhone />
               Contact
             </Link>
-          </nav> */}
+          </nav>
         </div>
       </div>
 

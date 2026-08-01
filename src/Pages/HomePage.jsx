@@ -27,9 +27,9 @@ const HomePage = () => {
   return (
     <div>
       <HomeBanner2 />
-      <WhatWeDo />
-      <MiningLifecycleStory />
+      {/* <MiningLifecycleStory /> */}
       <LifecycleSolutionCards />
+      <WhatWeDo />
       {/* <WhatWeDo2 /> */}
       <SDGBanner />
       <VidSection />

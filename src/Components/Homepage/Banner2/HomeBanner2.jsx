@@ -1,22 +1,12 @@
 import React, { useState, useEffect, memo } from "react";
-import { TypeAnimation } from "react-type-animation";
-
-const syncedPairs = [
-  ["Responsible Mining", "Mines"],
-  ["Steel & Aluminium", "Steel & Aluminium"],
-  ["Energy & Power", "Power"],
-];
 
 const HomeBanner2 = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const [pairIndex, setPairIndex] = useState(0);
-  const [animationKey, setAnimationKey] = useState(0);
 
   // Preload video
   useEffect(() => {
     const video = document.createElement("video");
-    video.src =
-      "/assets/homepage/Hero_banner_video.mp4";
+    video.src = "/assets/homepage/Hero_banner_video.mp4";
     video.onloadeddata = () => setVideoLoaded(true);
     video.onerror = () => setVideoLoaded(true);
     return () => {
@@ -24,17 +14,6 @@ const HomeBanner2 = () => {
       video.onerror = null;
     };
   }, []);
-
-  // Cycle through animations
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setPairIndex((prev) => (prev + 1) % syncedPairs.length);
-      setAnimationKey((prev) => prev + 1); // Forces TypeAnimation to restart in sync
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const [titleText, subtitleText] = syncedPairs[pairIndex];
 
   return (
     <div
@@ -67,16 +46,7 @@ const HomeBanner2 = () => {
         <div className="text-center text-white px-4">
           <h1 className="relative text-4xl md:text-6xl font-bold mb-4">
             Welcome to <br />
-            <span className="text-red-600">
-              Pantiss{" "}
-              <TypeAnimation
-                key={animationKey}
-                sequence={[titleText]}
-                wrapper="span"
-                speed={75}
-                cursor={false}
-              />
-            </span>
+            <span className="text-red-600">Pantiss Responsible Mining</span>
             <img
               className="absolute top-5 lg:top-12 w-6 lg:left-[134px] left-24"
               src="/assets/homepage/leaf.png"
@@ -84,18 +54,11 @@ const HomeBanner2 = () => {
               loading="lazy"
             />
           </h1>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Empowering Communities around{" "}
             <span className="text-green-400">
-              <TypeAnimation
-                key={animationKey + "-subtitle"}
-                sequence={[subtitleText]}
-                wrapper="span"
-                speed={75}
-                cursor={false}
-              />
-            </span>{" "}
-            Across <span className="text-green-400">Globe</span>.
+              Eastern Ghats & Chhotanahgpur Plateau
+            </span>
           </p>
         </div>
       </div>

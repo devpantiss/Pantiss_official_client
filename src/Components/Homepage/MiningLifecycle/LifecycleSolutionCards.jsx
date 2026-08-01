@@ -1,14 +1,17 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
   Droplets,
   Fish,
+  GraduationCap,
   HeartPulse,
   Leaf,
+  Lightbulb,
   MapPin,
   MoveHorizontal,
   School,
+  Sprout,
   Sun,
   TentTree,
   Tractor,
@@ -18,7 +21,9 @@ import {
 } from "lucide-react";
 import {
   AnimatePresence,
+  animate,
   motion,
+  useMotionValue,
   useReducedMotion,
   useScroll,
   useTransform,
@@ -87,12 +92,61 @@ const stories = [
 ];
 
 /* ═══════════════════════════════════════════════
+   SECTOR TAGS & VILLAGE DATA
+═══════════════════════════════════════════════ */
+
+const sectors = [
+  { label: "Skill", Icon: GraduationCap },
+  { label: "Livelihood", Icon: Sprout },
+  { label: "Entrepreneurship", Icon: Lightbulb },
+  { label: "Nutrition", Icon: HeartPulse },
+  { label: "Sanitation", Icon: Droplets },
+  { label: "Climate Change", Icon: Leaf },
+];
+
+const modelVillages = [
+  { name: "Kuarmunda", district: "Sundargarh" },
+  { name: "Banjari", district: "Jharsuguda" },
+  { name: "Lajkura", district: "Jharsuguda" },
+  { name: "Kiralaga", district: "Keonjhar" },
+  { name: "Jurudi", district: "Jajpur" },
+  { name: "Baragaon", district: "Angul" },
+  { name: "Rugudi", district: "Kalahandi" },
+  { name: "Kukuda", district: "Sundargarh" },
+  { name: "Tensa", district: "Sundargarh" },
+  { name: "Chamakpur", district: "Keonjhar" },
+  { name: "Deojhar", district: "Keonjhar" },
+  { name: "Balanda", district: "Angul" },
+  { name: "Ghantapada", district: "Jajpur" },
+  { name: "Gopalpur", district: "Sundargarh" },
+  { name: "Kinjirkela", district: "Sundargarh" },
+];
+
+const repurposedVillages = [
+  { name: "Talcher", district: "Angul" },
+  { name: "Lakhanpur", district: "Jharsuguda" },
+  { name: "Belpahar", district: "Jharsuguda" },
+  { name: "Rajgangpur", district: "Sundargarh" },
+  { name: "Barbil", district: "Keonjhar" },
+  { name: "Joda", district: "Keonjhar" },
+  { name: "Sukinda", district: "Jajpur" },
+  { name: "Kalinganagar", district: "Jajpur" },
+  { name: "Damanjodi", district: "Koraput" },
+  { name: "Biramitrapur", district: "Sundargarh" },
+  { name: "Therubali", district: "Rayagada" },
+  { name: "Vedanta Nagar", district: "Kalahandi" },
+  { name: "Tisco Colony", district: "Keonjhar" },
+  { name: "Rourkela Ind. Area", district: "Sundargarh" },
+  { name: "Choudwar", district: "Cuttack" },
+];
+
+/* ═══════════════════════════════════════════════
    AMBIENT BACKGROUND — drifting SVG contours
 ═══════════════════════════════════════════════ */
 
 /* eslint-disable react/prop-types */
 const AmbientBackground = ({ accent, reduceMotion }) => {
-  const color = accent === "green" ? "rgba(74,222,128,0.55)" : "rgba(248,113,113,0.55)";
+  const color = "rgba(255,255,255,0.55)";
   const paths = [
     "M-60 80 C180 20 350 160 560 80 S860 -20 1060 80",
     "M-60 180 C200 110 370 260 580 175 S870 70 1060 180",
@@ -118,12 +172,9 @@ const AmbientBackground = ({ accent, reduceMotion }) => {
       {/* Corner particle clusters */}
       {!reduceMotion && (
         <motion.div
-          className="absolute -right-12 -top-12 h-64 w-64 rounded-full opacity-[0.06]"
+          className="absolute -right-12 -top-12 h-64 w-64 rounded-full opacity-[0.08]"
           style={{
-            background:
-              accent === "green"
-                ? "radial-gradient(circle, #4ade80, transparent 70%)"
-                : "radial-gradient(circle, #f87171, transparent 70%)",
+            background: "radial-gradient(circle, rgba(255,255,255,0.9), transparent 70%)",
           }}
           animate={{ scale: [1, 1.18, 1], opacity: [0.06, 0.11, 0.06] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -144,11 +195,11 @@ const PRE_ROAD2_LENGTH = 240;
 const PRE_ROAD3_LENGTH = 240;
 
 const PreMiningSvg = ({ reveal }) => {
-  const gridOp    = prog(reveal, 10, 32);
-  const markerOp  = prog(reveal, 24, 44);
-  const roadP     = prog(reveal, 36, 66);
-  const pipeP     = prog(reveal, 53, 73);
-  const iconOp    = prog(reveal, 64, 84);
+  const gridOp = prog(reveal, 10, 32);
+  const markerOp = prog(reveal, 24, 44);
+  const roadP = prog(reveal, 36, 66);
+  const pipeP = prog(reveal, 53, 73);
+  const iconOp = prog(reveal, 64, 84);
 
   const surveyMarkers = [
     [195, 148], [392, 288], [618, 202], [512, 418], [758, 318],
@@ -309,13 +360,13 @@ const PreMiningSvg = ({ reveal }) => {
 ═══════════════════════════════════════════════ */
 
 const PostMiningSvg = ({ reveal }) => {
-  const pitOp   = prog(reveal,  5, 26);
-  const waterP  = prog(reveal, 18, 46);
-  const vegOp   = prog(reveal, 38, 60);
+  const pitOp = prog(reveal, 5, 26);
+  const waterP = prog(reveal, 18, 46);
+  const vegOp = prog(reveal, 38, 60);
   const treesOp = prog(reveal, 52, 72);
-  const ecoOp   = prog(reveal, 65, 86);
+  const ecoOp = prog(reveal, 65, 86);
 
-  const treePts = [[700,178],[742,224],[782,168],[822,198],[178,198],[220,168],[282,198]];
+  const treePts = [[700, 178], [742, 224], [782, 168], [822, 198], [178, 198], [220, 168], [282, 198]];
 
   return (
     <svg
@@ -366,8 +417,8 @@ const PostMiningSvg = ({ reveal }) => {
 
       {/* ── Layer 3: Vegetation — hairline boundary markers ── */}
       <g style={{ opacity: vegOp * 0.65 }}>
-        {[[202,202,38,24],[322,182,30,19],[682,162,42,27],[822,202,34,22],
-          [202,432,38,24],[852,402,32,20],[402,482,28,18]].map(([cx,cy,rx,ry],i) => (
+        {[[202, 202, 38, 24], [322, 182, 30, 19], [682, 162, 42, 27], [822, 202, 34, 22],
+        [202, 432, 38, 24], [852, 402, 32, 20], [402, 482, 28, 18]].map(([cx, cy, rx, ry], i) => (
           <ellipse key={i} cx={cx} cy={cy} rx={rx} ry={ry}
             fill="rgba(74,222,128,0.04)"
             stroke="rgba(74,222,128,0.28)" strokeWidth={0.7} strokeDasharray="4 5" />
@@ -468,17 +519,17 @@ const Hotspot = ({ item, accent, visible }) => {
    DRAG DIVIDER — glowing line + frosted handle
 ═══════════════════════════════════════════════ */
 
-const DragDivider = ({ reveal }) => (
-  <div
+const DragDivider = ({ left }) => (
+  <motion.div
     aria-hidden="true"
     className="pointer-events-none absolute inset-y-0 z-30 w-[1.5px] bg-white/88 shadow-[0_0_28px_4px_rgba(255,255,255,0.45)]"
-    style={{ left: `${reveal}%` }}
+    style={{ left }}
   >
     {/* Handle */}
     <span className="absolute left-1/2 top-1/2 grid h-14 w-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-white/52 bg-black/72 text-white shadow-2xl backdrop-blur-2xl">
       <MoveHorizontal className="h-5 w-5" />
     </span>
-  </div>
+  </motion.div>
 );
 
 /* ═══════════════════════════════════════════════
@@ -493,9 +544,7 @@ const StageLabel = ({ label, accent }) => (
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className={`text-sm font-semibold tracking-wide ${
-        accent === "green" ? "text-emerald-500" : "text-red-500"
-      }`}
+      className="text-sm font-semibold tracking-wide text-white"
     >
       {label}
     </motion.span>
@@ -523,9 +572,8 @@ const StageTimeline = ({ stages, activeIndex, accent, story, onStageClick }) => 
               key={stage}
               type="button"
               onClick={(e) => { e.stopPropagation(); onStageClick(i); }}
-              className={`relative min-w-0 flex-1 rounded-full px-2 py-2 text-[9px] font-medium uppercase tracking-[0.08em] transition-colors duration-200 sm:text-[10px] ${
-                isActive ? "text-white" : "text-white/38 hover:text-white/65"
-              }`}
+              className={`relative min-w-0 flex-1 rounded-full px-2 py-2 text-[9px] font-medium uppercase tracking-[0.08em] transition-colors duration-200 sm:text-[10px] ${isActive ? "text-white" : "text-white/38 hover:text-white/65"
+                }`}
             >
               {isActive && (
                 <motion.span
@@ -555,14 +603,125 @@ const StageTimeline = ({ stages, activeIndex, accent, story, onStageClick }) => 
 };
 
 /* ═══════════════════════════════════════════════
+   SECTOR TAGS — thematic focus area pills
+═══════════════════════════════════════════════ */
+
+const SectorTags = memo(({ reduceMotion, accent }) => {
+  const isGreen = accent === "green";
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: reduceMotion ? 0 : 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="mb-8 flex flex-wrap gap-3"
+    >
+      {sectors.map(({ label, Icon }) => (
+        <span
+          key={label}
+          className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-2.5 text-sm font-medium text-white shadow-sm backdrop-blur-md transition-all duration-200 hover:border-white/50 hover:bg-white/25"
+        >
+          <Icon className="h-4 w-4" />
+          {label}
+        </span>
+      ))}
+    </motion.div>
+  );
+});
+
+/* ═══════════════════════════════════════════════
+   VERTICAL MARQUEE — auto-scrolling village list
+═══════════════════════════════════════════════ */
+
+const VerticalMarquee = memo(({ villages, accent, title }) => {
+  const doubled = [...villages, ...villages];
+  const isGreen = accent === "green";
+
+  return (
+    <div className="flex h-full flex-col overflow-hidden border-l border-white/10">
+      {/* Header */}
+      <div className="shrink-0 border-b border-white/10 px-6 py-5">
+        <h4 className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
+          <MapPin className="h-3.5 w-3.5" />
+          {title}
+        </h4>
+        <p className="mt-1 text-[10px] text-white/35">Odisha, India</p>
+      </div>
+
+      {/* Scrolling content */}
+      <div className="relative flex-1 overflow-hidden">
+        <motion.div
+          animate={{ y: ["0%", "-50%"] }}
+          transition={{ y: { duration: 28, repeat: Infinity, ease: "linear" } }}
+          className="flex flex-col"
+        >
+          {doubled.map((village, i) => (
+            <div
+              key={`${village.name}-${i}`}
+              className="group flex items-center gap-4 border-b border-white/8 px-6 py-3.5 transition-colors duration-150 hover:bg-white/5"
+            >
+              <span
+                className={`h-1.5 w-1.5 shrink-0 rounded-full ${isGreen ? "bg-emerald-400" : "bg-white/50"}`}
+              />
+              <div className="min-w-0">
+                <p className="truncate text-[13px] font-medium text-white/90">
+                  {village.name}
+                </p>
+                <p className="text-[10px] text-white/40">{village.district} dist.</p>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Fade overlays */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-red-600 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-10 bg-gradient-to-t from-red-600 to-transparent" />
+      </div>
+    </div>
+  );
+});
+
+/* ═══════════════════════════════════════════════
    TRANSFORMATION STORY — one full story card
 ═══════════════════════════════════════════════ */
 
-const TransformationStory = ({ story, index, reduceMotion }) => {
+const TransformationStory = ({ story, index, reduceMotion, villages, reversed }) => {
   const sceneRef = useRef(null);
   const draggingRef = useRef(false);
-  const hintFiredRef = useRef(false);
+  const animRef = useRef(null);
+
+  /* ─ Motion value: clip-path + divider update directly in DOM, zero React re-renders ─ */
+  const revealMV = useMotionValue(50);
+  const clipPathMV = useTransform(revealMV, v => `inset(0 ${100 - v}% 0 0)`);
+  const dividerLeftMV = useTransform(revealMV, v => `${v}%`);
+
+  /* ─ Throttled React state — only for stage pills, hotspots, corner labels (~10fps) ─ */
   const [reveal, setReveal] = useState(50);
+  useEffect(() => {
+    let timer;
+    const unsub = revealMV.on('change', v => {
+      clearTimeout(timer);
+      timer = setTimeout(() => setReveal(v), 100);
+    });
+    return () => { unsub(); clearTimeout(timer); };
+  }, [revealMV]);
+
+  /* ─ Auto-animation: framer-motion animate() handles timing, no JS loop ─ */
+  const startAnim = useCallback(() => {
+    if (reduceMotion) return;
+    animRef.current?.stop();
+    animRef.current = animate(revealMV, [18, 82], {
+      duration: 10,
+      repeat: Infinity,
+      repeatType: 'mirror',
+      ease: 'easeInOut',
+    });
+  }, [reduceMotion, revealMV]);
+
+  useEffect(() => {
+    startAnim();
+    return () => animRef.current?.stop();
+  }, [startAnim]);
 
   /* Scroll parallax */
   const { scrollYProgress } = useScroll({
@@ -586,34 +745,34 @@ const TransformationStory = ({ story, index, reduceMotion }) => {
   const activeLabel = story.stages[activeIndex];
   const hotspotsVisible = reveal >= 55;
 
-  /* Auto-hint swing on first mount (index 0 only) */
-  useEffect(() => {
-    if (reduceMotion || hintFiredRef.current || index !== 0) return;
-    hintFiredRef.current = true;
-    const t1 = setTimeout(() => setReveal(74), 900);
-    const t2 = setTimeout(() => setReveal(50), 2100);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
-  }, [reduceMotion, index]);
 
-  /* Pointer drag */
+  /* ─ Pointer drag ─ */
   const setFromPointer = useCallback((event) => {
     const scene = sceneRef.current;
     if (!scene) return;
     const bounds = scene.getBoundingClientRect();
-    const value = ((event.clientX - bounds.left) / bounds.width) * 100;
-    setReveal(clamp(value, 0, 100));
-  }, []);
+    const value = clamp(((event.clientX - bounds.left) / bounds.width) * 100, 0, 100);
+    revealMV.set(value);
+    setReveal(value); // immediate update for stage label on drag
+  }, [revealMV]);
 
   const handlePointerDown = (e) => {
+    animRef.current?.stop(); // pause auto-animation while dragging
     draggingRef.current = true;
     e.currentTarget.setPointerCapture(e.pointerId);
     setFromPointer(e);
   };
   const handlePointerMove = (e) => { if (draggingRef.current) setFromPointer(e); };
-  const stopDragging = () => { draggingRef.current = false; };
+  const stopDragging = () => {
+    draggingRef.current = false;
+    startAnim(); // resume from current position
+  };
 
-  const handleStageClick = (i) =>
-    setReveal((i / (story.stages.length - 1)) * 100);
+  const handleStageClick = (i) => {
+    const val = (i / (story.stages.length - 1)) * 100;
+    revealMV.set(val);
+    setReveal(val);
+  };
 
   return (
     <motion.article
@@ -624,125 +783,140 @@ const TransformationStory = ({ story, index, reduceMotion }) => {
       className="relative"
     >
       {/* ── Story header ── */}
-      <div className="mb-6 flex flex-col gap-4 sm:mb-8 lg:flex-row lg:items-end lg:justify-between">
-        <div className="max-w-2xl">
-          <div className="mb-3 flex items-center gap-3">
-            <span
-              className={`font-mono text-[10px] tracking-[0.2em] ${
-                story.accent === "green" ? "text-emerald-600" : "text-red-600"
-              }`}
-            >
-              {story.number} / {story.eyebrow}
-            </span>
-            <span className="h-px w-10 bg-neutral-300" />
-          </div>
-          <h3 className="whitespace-pre-line text-3xl font-medium tracking-[-0.035em] text-neutral-950 sm:text-4xl lg:text-[2.65rem]">
-            {story.title}
-          </h3>
-        </div>
-
-        {/* Live stage indicator */}
-        <div className="flex items-center gap-2.5 text-sm text-neutral-500 lg:pb-1">
-          <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400">
-            Now viewing →
+      <div className="mb-6 flex flex-col items-center gap-3 px-4 text-center sm:mb-8 sm:px-6 lg:px-8">
+        <div className="flex items-center gap-2.5">
+          <span className="h-px w-8 bg-white/30" />
+          <span className="font-mono text-[10px] tracking-[0.2em] text-white/55">
+            {story.number} — {story.eyebrow}
           </span>
+          <span className="h-px w-8 bg-white/30" />
+        </div>
+        <h3 className="whitespace-pre-line text-3xl font-medium tracking-[-0.035em] text-white sm:text-4xl lg:text-[2.65rem]">
+          {story.title}
+        </h3>
+        {/* Live stage indicator */}
+        <div className="flex items-center gap-2 text-sm text-white/60">
+          <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
+            Now viewing
+          </span>
+          <span className="h-px w-4 bg-white/20" />
           <StageLabel label={activeLabel} accent={story.accent} />
         </div>
       </div>
 
-      {/* ── Scene canvas ── */}
-      <div
-        ref={sceneRef}
-        className="group/scene relative aspect-[16/10] min-h-[420px] touch-none select-none overflow-hidden rounded-[2rem] bg-neutral-900 shadow-[0_44px_110px_-52px_rgba(10,10,10,0.62)] sm:aspect-[16/9] lg:min-h-[600px]"
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={stopDragging}
-        onPointerCancel={stopDragging}
-        onDoubleClick={() => setReveal(reveal < 50 ? 100 : 0)}
-        role="img"
-        aria-label={`Interactive before‑after comparison: ${story.beforeLabel} vs ${story.afterLabel}`}
-      >
-        {/* Ambient background motion */}
-        <AmbientBackground accent={story.accent} reduceMotion={reduceMotion} />
+      {/* ── Sector Tags ── */}
+      <div className="mb-2 flex justify-center px-4 sm:px-6 lg:px-8">
+        <SectorTags reduceMotion={reduceMotion} accent={story.accent} />
+      </div>
 
-        {/* Before image — full bleed */}
-        <motion.img
-          src={story.beforeImage}
-          alt={story.beforeAlt}
-          loading={index === 0 ? "eager" : "lazy"}
-          decoding="async"
-          width={1536}
-          height={1024}
-          className="pointer-events-none absolute -inset-y-5 left-0 h-[calc(100%+2.5rem)] w-full object-cover"
-          style={{ y: imageY, scale: imageScale }}
-        />
+      {/* ── Split Content: Image + Village List ── */}
+      {/* Flex row: image drives height, marquee col stretches & fills absolutely */}
+      <div className={`flex flex-col lg:flex-row ${reversed ? "lg:flex-row-reverse" : ""}`}>
+        {/* Image — flex 2 */}
+        <div className="lg:flex-[2]">
+          <div
+            ref={sceneRef}
+            className="group/scene relative aspect-[16/10] touch-none select-none overflow-hidden bg-neutral-900 shadow-[0_44px_110px_-52px_rgba(10,10,10,0.62)] sm:aspect-[16/9]"
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={stopDragging}
+            onPointerCancel={stopDragging}
+            onDoubleClick={() => { const v = revealMV.get() < 50 ? 100 : 0; revealMV.set(v); setReveal(v); }}
+            role="img"
+            aria-label={`Interactive before‑after comparison: ${story.beforeLabel} vs ${story.afterLabel}`}
+          >
+            {/* Ambient background motion */}
+            <AmbientBackground accent={story.accent} reduceMotion={reduceMotion} />
 
-        {/* After image — clip‑path reveal */}
-        <div
-          className="absolute inset-0 overflow-hidden will-change-[clip-path]"
-          style={{ clipPath: `inset(0 ${100 - reveal}% 0 0)` }}
-        >
-          <motion.img
-            src={story.afterImage}
-            alt={story.afterAlt}
-            loading={index === 0 ? "eager" : "lazy"}
-            decoding="async"
-            width={1536}
-            height={1024}
-            className="pointer-events-none absolute -inset-y-5 left-0 h-[calc(100%+2.5rem)] w-full max-w-none object-cover"
-            style={{ y: imageY, scale: imageScale }}
-          />
-
-          {/* SVG storytelling overlay — tied to reveal% */}
-          {story.id === "pre-mining" ? (
-            <PreMiningSvg reveal={reveal} />
-          ) : (
-            <PostMiningSvg reveal={reveal} />
-          )}
-
-          {/* Interactive hotspots */}
-          {story.hotspots.map((hs) => (
-            <Hotspot
-              key={hs.label}
-              item={hs}
-              accent={story.accent}
-              visible={hotspotsVisible}
+            {/* Before image — full bleed */}
+            <motion.img
+              src={story.beforeImage}
+              alt={story.beforeAlt}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              width={1536}
+              height={1024}
+              className="pointer-events-none absolute -inset-y-5 left-0 h-[calc(100%+2.5rem)] w-full object-cover"
+              style={{ y: imageY, scale: imageScale }}
             />
-          ))}
+
+            {/* After image — clip‑path reveal — motion.div for zero-re-render updates */}
+            <motion.div
+              className="absolute inset-0 overflow-hidden will-change-[clip-path]"
+              style={{ clipPath: clipPathMV }}
+            >
+              <motion.img
+                src={story.afterImage}
+                alt={story.afterAlt}
+                loading={index === 0 ? "eager" : "lazy"}
+                decoding="async"
+                width={1536}
+                height={1024}
+                className="pointer-events-none absolute -inset-y-5 left-0 h-[calc(100%+2.5rem)] w-full max-w-none object-cover"
+                style={{ y: imageY, scale: imageScale }}
+              />
+
+              {/* SVG storytelling overlay — tied to reveal% */}
+              {story.id === "pre-mining" ? (
+                <PreMiningSvg reveal={reveal} />
+              ) : (
+                <PostMiningSvg reveal={reveal} />
+              )}
+
+              {/* Interactive hotspots */}
+              {story.hotspots.map((hs) => (
+                <Hotspot
+                  key={hs.label}
+                  item={hs}
+                  accent={story.accent}
+                  visible={hotspotsVisible}
+                />
+              ))}
+            </motion.div>
+
+            {/* Drag divider — driven by motion value, no re-render */}
+            <DragDivider left={dividerLeftMV} />
+
+            {/* Corner state labels */}
+            <div className="pointer-events-none absolute inset-x-0 top-0 z-30 flex justify-between p-4 sm:p-6">
+              <span
+                className={`rounded-full border border-white/14 bg-black/52 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md transition-opacity duration-500 ${reveal < 10 ? "opacity-100" : "opacity-72"
+                  }`}
+              >
+                {story.afterLabel}
+              </span>
+              <span
+                className={`rounded-full border border-white/14 bg-black/52 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md transition-opacity duration-500 ${reveal > 90 ? "opacity-100" : "opacity-72"
+                  }`}
+              >
+                {story.beforeLabel}
+              </span>
+            </div>
+
+            {/* Bottom gradient fade */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-28 bg-gradient-to-t from-black/78 to-transparent" />
+
+            {/* Stage timeline + CTA */}
+            <StageTimeline
+              stages={story.stages}
+              activeIndex={activeIndex}
+              accent={story.accent}
+              story={story}
+              onStageClick={handleStageClick}
+            />
+          </div>
         </div>
 
-        {/* Drag divider */}
-        <DragDivider reveal={reveal} />
-
-        {/* Corner state labels */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 flex justify-between p-4 sm:p-6">
-          <span
-            className={`rounded-full border border-white/14 bg-black/52 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md transition-opacity duration-500 ${
-              reveal < 10 ? "opacity-100" : "opacity-72"
-            }`}
-          >
-            {story.afterLabel}
-          </span>
-          <span
-            className={`rounded-full border border-white/14 bg-black/52 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md transition-opacity duration-500 ${
-              reveal > 90 ? "opacity-100" : "opacity-72"
-            }`}
-          >
-            {story.beforeLabel}
-          </span>
+        {/* Village list — flex 1, relative container; marquee fills absolutely so it never drives row height */}
+        <div className="h-[180px] overflow-hidden lg:relative lg:h-auto lg:flex-[1]">
+          <div className="h-full lg:absolute lg:inset-0 overflow-hidden">
+            <VerticalMarquee
+              villages={villages}
+              accent={story.accent}
+              title={reversed ? "Repurposed Mining Villages" : "Model Mining Villages"}
+            />
+          </div>
         </div>
-
-        {/* Bottom gradient fade */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-28 bg-gradient-to-t from-black/78 to-transparent" />
-
-        {/* Stage timeline + CTA */}
-        <StageTimeline
-          stages={story.stages}
-          activeIndex={activeIndex}
-          accent={story.accent}
-          story={story}
-          onStageClick={handleStageClick}
-        />
       </div>
     </motion.article>
   );
@@ -758,16 +932,16 @@ const LifecycleSolutionCards = () => {
 
   return (
     <section
-      className="relative overflow-hidden bg-neutral-50 py-20 sm:py-24 lg:py-32"
+      className="relative overflow-hidden bg-red-600 pb-6 sm:pb-8 lg:pb-10"
       aria-labelledby="lifecycle-solutions-heading"
     >
       {/* Subtle grid texture */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
-            "linear-gradient(#171717 1px, transparent 1px), linear-gradient(90deg, #171717 1px, transparent 1px)",
+            "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
           backgroundSize: "72px 72px",
           maskImage:
             "linear-gradient(to bottom, transparent, black 12%, black 88%, transparent)",
@@ -777,60 +951,64 @@ const LifecycleSolutionCards = () => {
       {/* Animated accent gradient sweep */}
       <motion.div
         aria-hidden="true"
-        className="absolute left-[-10%] top-[16%] h-px w-[120%] bg-gradient-to-r from-transparent via-red-300/60 to-transparent"
+        className="absolute left-[-10%] top-[16%] h-px w-[120%] bg-gradient-to-r from-transparent via-white/30 to-transparent"
         animate={reduceMotion ? undefined : { x: ["-4%", "4%", "-4%"] }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      <div className="relative">
         {/* ── Section header ── */}
         <motion.header
           initial={{ opacity: 0, y: reduceMotion ? 0 : 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.65 }}
           transition={{ duration: 0.72 }}
-          className="mb-16 grid gap-6 border-b border-neutral-200 pb-10 lg:mb-24 lg:grid-cols-[1fr_auto] lg:items-end"
+          className="mb-10 flex flex-col items-center bg-white px-4 pb-10 pt-8 text-center sm:px-6 sm:pt-10 lg:mb-14 lg:px-8 lg:pt-14"
         >
-          <div>
-            <div className="mb-5 flex items-center gap-3 text-red-600">
-              <MapPin aria-hidden="true" className="h-4 w-4" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.22em]">
-                Transformation, made visible
-              </span>
-            </div>
-            <h2
-              id="lifecycle-solutions-heading"
-              className="max-w-4xl text-4xl font-medium leading-[0.98] tracking-[-0.045em] text-neutral-950 sm:text-5xl lg:text-6xl"
-            >
-              One partner. Every stage of transformation.
-            </h2>
+          {/* Eyebrow — matches Heading component style */}
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-6 w-1 bg-red-600" />
+            <span className="text-sm font-semibold uppercase tracking-[0.22em] text-red-600">
+              Transformation, Made Visible
+            </span>
           </div>
 
-          <div className="flex items-center gap-3 text-xs text-neutral-500">
+          {/* Main heading */}
+          <h2
+            id="lifecycle-solutions-heading"
+            className="max-w-3xl text-4xl font-medium leading-[1.05] tracking-[-0.035em] text-neutral-950 sm:text-5xl lg:text-6xl"
+          >
+            One partner. Every stage of transformation.
+          </h2>
+
+          {/* Drag hint */}
+          <div className="mt-6 flex items-center gap-1.5 text-xs text-neutral-400">
             <MoveHorizontal aria-hidden="true" className="h-4 w-4" />
-            Drag to transform each landscape
+            Drag the slider to transform each landscape
           </div>
         </motion.header>
 
         {/* ── Stories ── */}
-        <div className="space-y-24 lg:space-y-36">
+        <div className="space-y-8 lg:space-y-12">
           {stories.map((story, i) => (
             <TransformationStory
               key={story.id}
               story={story}
               index={i}
               reduceMotion={reduceMotion}
+              villages={i === 0 ? modelVillages : repurposedVillages}
+              reversed={i === 1}
             />
           ))}
         </div>
 
         {/* ── Footer caption ── */}
-        <div className="mt-20 flex items-center justify-center gap-3 text-center text-xs uppercase tracking-[0.16em] text-neutral-400 lg:mt-28">
-          <House aria-hidden="true" className="h-4 w-4 text-red-500" />
+        <div className="mt-20 flex items-center justify-center gap-3 text-center text-xs uppercase tracking-[0.16em] text-white/50 lg:mt-28">
+          <House aria-hidden="true" className="h-4 w-4 text-white/70" />
           Communities before mining
-          <span className="h-px w-10 bg-neutral-300" />
+          <span className="h-px w-10 bg-white/30" />
           Landscapes beyond closure
-          <Leaf aria-hidden="true" className="h-4 w-4 text-green-600" />
+          <Leaf aria-hidden="true" className="h-4 w-4 text-white/70" />
         </div>
       </div>
     </section>
