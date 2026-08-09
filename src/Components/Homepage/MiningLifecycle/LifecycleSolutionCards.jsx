@@ -46,7 +46,7 @@ const stories = [
     id: "pre-mining",
     number: "01",
     eyebrow: "Before extraction",
-    title: "A village,\nplanned around people.",
+    title: "Model Mining Villages",
     beforeLabel: "Existing Village",
     afterLabel: "Model Mining Village",
     beforeImage: "/assets/homepage/mining-lifecycle/pre-village-before.jpg",
@@ -105,39 +105,39 @@ const sectors = [
 ];
 
 const modelVillages = [
-  { name: "Kuarmunda", district: "Sundargarh" },
-  { name: "Banjari", district: "Jharsuguda" },
-  { name: "Lajkura", district: "Jharsuguda" },
-  { name: "Kiralaga", district: "Keonjhar" },
-  { name: "Jurudi", district: "Jajpur" },
-  { name: "Baragaon", district: "Angul" },
-  { name: "Rugudi", district: "Kalahandi" },
-  { name: "Kukuda", district: "Sundargarh" },
-  { name: "Tensa", district: "Sundargarh" },
-  { name: "Chamakpur", district: "Keonjhar" },
-  { name: "Deojhar", district: "Keonjhar" },
-  { name: "Balanda", district: "Angul" },
-  { name: "Ghantapada", district: "Jajpur" },
-  { name: "Gopalpur", district: "Sundargarh" },
-  { name: "Kinjirkela", district: "Sundargarh" },
+  { name: "Kuarmunda", district: "Sundargarh", lat: 22.2963, lng: 84.2307 },
+  { name: "Banjari", district: "Jharsuguda", lat: 21.8637, lng: 83.9518 },
+  { name: "Lajkura", district: "Jharsuguda", lat: 21.8389, lng: 84.0068 },
+  { name: "Kiralaga", district: "Keonjhar", lat: 21.6370, lng: 85.5770 },
+  { name: "Jurudi", district: "Jajpur", lat: 21.0390, lng: 86.1630 },
+  { name: "Baragaon", district: "Angul", lat: 20.8440, lng: 85.1000 },
+  { name: "Rugudi", district: "Kalahandi", lat: 19.9230, lng: 83.1590 },
+  { name: "Kukuda", district: "Sundargarh", lat: 22.1740, lng: 84.0500 },
+  { name: "Tensa", district: "Sundargarh", lat: 22.1850, lng: 84.7950 },
+  { name: "Chamakpur", district: "Keonjhar", lat: 21.5810, lng: 85.5130 },
+  { name: "Deojhar", district: "Keonjhar", lat: 21.6280, lng: 85.6690 },
+  { name: "Balanda", district: "Angul", lat: 20.8540, lng: 85.0230 },
+  { name: "Ghantapada", district: "Jajpur", lat: 21.0520, lng: 86.2010 },
+  { name: "Gopalpur", district: "Sundargarh", lat: 22.2640, lng: 84.3070 },
+  { name: "Kinjirkela", district: "Sundargarh", lat: 22.0680, lng: 84.1210 },
 ];
 
 const repurposedVillages = [
-  { name: "Talcher", district: "Angul" },
-  { name: "Lakhanpur", district: "Jharsuguda" },
-  { name: "Belpahar", district: "Jharsuguda" },
-  { name: "Rajgangpur", district: "Sundargarh" },
-  { name: "Barbil", district: "Keonjhar" },
-  { name: "Joda", district: "Keonjhar" },
-  { name: "Sukinda", district: "Jajpur" },
-  { name: "Kalinganagar", district: "Jajpur" },
-  { name: "Damanjodi", district: "Koraput" },
-  { name: "Biramitrapur", district: "Sundargarh" },
-  { name: "Therubali", district: "Rayagada" },
-  { name: "Vedanta Nagar", district: "Kalahandi" },
-  { name: "Tisco Colony", district: "Keonjhar" },
-  { name: "Rourkela Ind. Area", district: "Sundargarh" },
-  { name: "Choudwar", district: "Cuttack" },
+  { name: "Talcher", district: "Angul", lat: 20.9540, lng: 85.2290 },
+  { name: "Lakhanpur", district: "Jharsuguda", lat: 21.8700, lng: 83.8870 },
+  { name: "Belpahar", district: "Jharsuguda", lat: 21.8380, lng: 83.8610 },
+  { name: "Rajgangpur", district: "Sundargarh", lat: 22.2010, lng: 84.0960 },
+  { name: "Barbil", district: "Keonjhar", lat: 22.1000, lng: 85.3870 },
+  { name: "Joda", district: "Keonjhar", lat: 22.1490, lng: 85.4130 },
+  { name: "Sukinda", district: "Jajpur", lat: 20.9730, lng: 85.9320 },
+  { name: "Kalinganagar", district: "Jajpur", lat: 20.9650, lng: 86.0740 },
+  { name: "Damanjodi", district: "Koraput", lat: 18.7200, lng: 82.9300 },
+  { name: "Biramitrapur", district: "Sundargarh", lat: 22.3870, lng: 84.7460 },
+  { name: "Therubali", district: "Rayagada", lat: 19.6810, lng: 83.9350 },
+  { name: "Vedanta Nagar", district: "Kalahandi", lat: 19.8490, lng: 83.3860 },
+  { name: "Tisco Colony", district: "Keonjhar", lat: 22.0730, lng: 85.3790 },
+  { name: "Rourkela Ind. Area", district: "Sundargarh", lat: 22.2605, lng: 84.8536 },
+  { name: "Choudwar", district: "Cuttack", lat: 20.5040, lng: 85.8070 },
 ];
 
 /* ═══════════════════════════════════════════════
@@ -664,10 +664,13 @@ const VerticalMarquee = memo(({ villages, accent, title }) => {
                 className={`h-1.5 w-1.5 shrink-0 rounded-full ${isGreen ? "bg-emerald-400" : "bg-white/50"}`}
               />
               <div className="min-w-0">
-                <p className="truncate text-[13px] font-medium text-white/90">
+                <p className="truncate text-base font-semibold text-white">
                   {village.name}
                 </p>
-                <p className="text-[10px] text-white/40">{village.district} dist.</p>
+                <p className="mt-0.5 text-[11px] text-white/80">{village.district} dist.</p>
+                <p className="text-[10px] font-mono text-white/70">
+                  {village.lat.toFixed(4)}° N, {village.lng.toFixed(4)}° E
+                </p>
               </div>
             </div>
           ))}
@@ -791,7 +794,7 @@ const TransformationStory = ({ story, index, reduceMotion, villages, reversed })
           </span>
           <span className="h-px w-8 bg-white/30" />
         </div>
-        <h3 className="whitespace-pre-line text-3xl font-medium tracking-[-0.035em] text-white sm:text-4xl lg:text-[2.65rem]">
+        <h3 className="whitespace-pre-line text-4xl font-medium tracking-[-0.035em] text-white sm:text-5xl lg:text-[3.5rem]">
           {story.title}
         </h3>
         {/* Live stage indicator */}
@@ -978,7 +981,7 @@ const LifecycleSolutionCards = () => {
             id="lifecycle-solutions-heading"
             className="max-w-3xl text-4xl font-medium leading-[1.05] tracking-[-0.035em] text-neutral-950 sm:text-5xl lg:text-6xl"
           >
-            One partner. Every stage of transformation.
+            OUR SOLUTIONS
           </h2>
 
           {/* Drag hint */}

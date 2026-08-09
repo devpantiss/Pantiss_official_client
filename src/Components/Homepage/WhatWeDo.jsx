@@ -19,7 +19,7 @@ const slides = [
       { text: "Social Audit" },
     ],
     buttonText: "Explore",
-    buttonLink: "https://users.mowash.in",
+    buttonLink: "https://x-social-force.vercel.app/",
     backgroundImage:
       "/assets/homepage/whatwedo/Governance.jpeg",
   },
@@ -34,7 +34,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/mine-steel-&-power-skill-park",
     backgroundImage:
-    "/assets/homepage/whatwedo/TVET.jpg",
+      "/assets/homepage/whatwedo/TVET.jpg",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/carp-rice-&-duck-livelihood-park",
     backgroundImage:
-    "/assets/homepage/whatwedo/livelihood.jpg",
+      "/assets/homepage/whatwedo/livelihood.jpg",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "/what-we-do/nutrinest",
     backgroundImage:
-    "/assets/homepage/whatwedo/nutrition.jpeg",
+      "/assets/homepage/whatwedo/nutrition.jpeg",
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const slides = [
     buttonText: "Explore",
     buttonLink: "https://circular-economy.mowash.com",
     backgroundImage:
-    "/assets/homepage/whatwedo/Sanitation_workers.jpg",
+      "/assets/homepage/whatwedo/Sanitation_workers.jpg",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const slides = [
     buttonLink:
       "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
     backgroundImage:
-    "/assets/homepage/whatwedo/environment.jpeg",
+      "/assets/homepage/whatwedo/environment.jpeg",
   },
 ];
 
