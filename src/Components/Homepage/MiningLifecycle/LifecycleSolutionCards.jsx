@@ -69,7 +69,7 @@ const stories = [
     id: "post-mining",
     number: "02",
     eyebrow: "Beyond closure",
-    title: "An exhausted mine,\nalive again.",
+    title: "Repurposed Village: In Abandoned Mines",
     beforeLabel: "Closed Mine",
     afterLabel: "Thriving Ecosystem",
     beforeImage: "/assets/homepage/mining-lifecycle/post-mine-before.jpg",
