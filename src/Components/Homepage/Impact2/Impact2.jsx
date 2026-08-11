@@ -122,7 +122,7 @@ const StatCard = memo(({ stat, isEvenRow, inView }) => (
           <span className="text-4xl font-bold">{` ${stat.unit}`}</span>
         )}
       </div>
-      <p className="text-md mt-2">{stat.label}</p>
+      <p className="text-lg mt-2">{stat.label}</p>
     </div>
   </div>
 ));

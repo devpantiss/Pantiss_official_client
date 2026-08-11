@@ -1,13 +1,13 @@
-import React from "react";
-
 const HeroKalahandi = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761844548/jp-sheard-K6Ud3t3uJTc-unsplash_ht0rkw.jpg"
-          alt="Empowering Women"
+          src="/assets/where/kalahandi-hero-banner-v2.jpg"
+          alt="Kalahandi agricultural landscape with farmers and trainees examining millet crops"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>

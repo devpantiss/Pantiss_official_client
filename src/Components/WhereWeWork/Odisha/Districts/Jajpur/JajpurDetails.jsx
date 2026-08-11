@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { Users, Briefcase, Home, ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
@@ -11,7 +11,7 @@ const tabs = [
   {
     tab_name: "Skilling",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+      "/assets/where/district-work/technical-skills-training.jpg",
     description:
       "Under the partnership between District Mineral Foundation (DMF) and Skill Council for Mining Sector (SCMS), structured skill development initiatives empower youth for mining and allied industries in Jajpur district.",
     projects: [
@@ -21,11 +21,11 @@ const tabs = [
     clients: [
       {
         name: "DMF Jajpur",
-        logo: "https://dummyimage.com/200x100/000/fff&text=DMF+Jajpur",
+        logo: "/assets/where/client-logos/dmf-odisha.png",
       },
       {
         name: "SCMS",
-        logo: "https://dummyimage.com/200x100/000/fff&text=SCMS",
+        logo: "/assets/where/client-logos/scms.png",
       },
     ],
     impacts: [
@@ -38,7 +38,7 @@ const tabs = [
   {
     tab_name: "GIS Survey",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761837250/sourajit-hazra-b-O15p8xTns-unsplash_2_hu2xiu.jpg",
+      "/assets/where/district-work/gis-household-survey.jpg",
     description:
       "A GIS-enabled household survey covering more than 45,000 households across two blocks of Jajpur district, enabling data-driven planning and governance.",
     projects: [
@@ -50,7 +50,7 @@ const tabs = [
     clients: [
       {
         name: "District Administration, Jajpur",
-        logo: "https://dummyimage.com/200x100/000/fff&text=District+Admin",
+        logo: "/assets/where/client-logos/odisha-government.png",
       },
     ],
     impacts: [
@@ -63,9 +63,9 @@ const tabs = [
   {
     tab_name: "RPL",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761815054/AdobeStock_574000874_Preview_md91z2.jpg",
+      "/assets/where/district-work/fisheries-rpl.jpg",
     description:
-      "Recognition of Prior Learning (RPL) in fisheries validates the existing skills of fish farmers and aquaculture workers in partnership with NEFDB.",
+      "Recognition of Prior Learning (RPL) in fisheries validates the existing skills of fish farmers and aquaculture workers in partnership with NFDB.",
     projects: [
       { title: "Skill Assessment" },
       { title: "Worker Certification" },
@@ -74,8 +74,8 @@ const tabs = [
     ],
     clients: [
       {
-        name: "NEFDB",
-        logo: "https://dummyimage.com/200x100/000/fff&text=NEFDB",
+        name: "NFDB",
+        logo: "/assets/where/client-logos/nfdb.svg",
       },
     ],
     impacts: [
@@ -157,7 +157,7 @@ const JajpurDetails = () => {
                         Projects
                       </button>
 
-                      {/* <button
+                      <button
                         onClick={() => setActiveView("clients")}
                         className={`px-6 py-3 font-semibold transition ${
                           activeView === "clients"
@@ -166,7 +166,7 @@ const JajpurDetails = () => {
                         }`}
                       >
                         Clients
-                      </button> */}
+                      </button>
                     </div>
 
                     {/* CARD GRID */}
@@ -197,16 +197,21 @@ const JajpurDetails = () => {
                         tab.clients.map((client) => (
                           <div
                             key={client.name}
-                            className="bg-white p-8 border rounded-xl shadow-sm
+                            className="group min-h-32 bg-white p-8 border rounded-xl shadow-sm
                                        hover:shadow-xl hover:-translate-y-1
                                        transition-all duration-300
-                                       flex items-center justify-center"
+                                       flex flex-col gap-4 items-center justify-center"
                           >
                             <img
                               src={client.logo}
                               alt={client.name}
-                              className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                              loading="lazy"
+                              decoding="async"
+                              className="h-16 w-full max-w-[220px] object-contain transition-transform duration-300 group-hover:scale-105"
                             />
+                            <span className="text-sm font-medium text-gray-700">
+                              {client.name}
+                            </span>
                           </div>
                         ))}
                     </div>
@@ -272,6 +277,30 @@ const JajpurDetails = () => {
                     className="rounded-xl shadow"
                   />
                   <p className="text-gray-700">{tab.description}</p>
+                  <div>
+                    <p className="mb-3 text-sm font-semibold text-gray-900">
+                      Clients
+                    </p>
+                    <div className="grid grid-cols-2 gap-3">
+                      {tab.clients.map((client) => (
+                        <div
+                          key={client.name}
+                          className="flex min-h-28 flex-col items-center justify-center gap-3 rounded-xl border bg-white p-4 text-center"
+                        >
+                          <img
+                            src={client.logo}
+                            alt={client.name}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-12 w-full object-contain"
+                          />
+                          <span className="text-xs font-medium text-gray-700">
+                            {client.name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

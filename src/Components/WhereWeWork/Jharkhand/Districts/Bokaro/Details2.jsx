@@ -1,136 +1,36 @@
-import React, { memo, useMemo } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Heading from "../../../../Common/Heading";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-// Memoized Arrow components
-const PrevArrow = memo(({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="z-10 absolute top-1/2 left-0 lg:-left-12 transform -translate-y-1/2 text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-2 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
-  >
-    <FaChevronLeft />
-  </button>
-));
-PrevArrow.displayName = "PrevArrow";
-
-const NextArrow = memo(({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="z-10 absolute top-1/2 right-0 lg:-right-12 transform -translate-y-1/2 text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-2 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
-  >
-    <FaChevronRight />
-  </button>
-));
-NextArrow.displayName = "NextArrow";
+import DistrictPhotoGallery from "../../../DistrictPhotoGallery";
 
 // Memoized gallery images
 const galleryImages = [
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742817274/daefd377-3245-4ced-ac7b-5451607c4014_msbs0c.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742817274/d8037069-59f1-4590-9104-086f084b693f_nnmksn.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742817275/f4641d62-f792-4838-bb0b-7c08ff63a8d4_ocmjoq.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816871/cd939ec7-2ea0-43fc-835d-cfe2fa8bfb73_va2bwv.jpg",
-  "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742816870/286ada51-f3cf-4fcf-b501-b56f2ad10397_kzckw0.jpg",
+  {
+    src: "/assets/where/bokaro-district-card-v2.jpg",
+    alt: "Technical trainees walking through a modern steel-industry facility",
+    caption: "Building an industry-ready workforce for Bokaro’s steel sector",
+  },
+  {
+    src: "/assets/where/district-work/technical-skills-training.jpg",
+    alt: "Young adults taking part in practical technical skills training",
+    caption: "Hands-on operator and industrial safety training",
+  },
+  {
+    src: "/assets/where/district-work/plastic-recycling.jpg",
+    alt: "Workers sorting recyclable plastic at a processing facility",
+    caption: "Circular-economy skills and plastic-waste management",
+  },
+  {
+    src: "/assets/where/district-work/mine-land-reclamation.jpg",
+    alt: "Community members working on green mine-land restoration",
+    caption: "Restoring industrial landscapes through community participation",
+  },
+  {
+    src: "/assets/where/district-work/gis-household-survey.jpg",
+    alt: "Field team conducting a digital household survey",
+    caption: "Evidence-led planning for mining-affected communities",
+  },
 ];
 
-// Memoized GalleryImage component
-const GalleryImage = memo(({ image, index }) => (
-  <div className="px-2">
-    <img
-      src={image}
-      alt={`Gallery ${index + 1}`}
-      className="rounded-lg w-full h-64 object-cover"
-      loading="lazy"
-    />
-  </div>
-));
-GalleryImage.displayName = "GalleryImage";
+const Details2 = () => (
+  <DistrictPhotoGallery district="BOKARO" images={galleryImages} />
+);
 
-const Details2 = () => {
-  // Memoized slider settings
-  const sliderSettings = useMemo(
-    () => ({
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000, // Adjusted for smoother transitions
-      pauseOnHover: true,
-      arrows: true,
-      prevArrow: <PrevArrow />,
-      nextArrow: <NextArrow />,
-      lazyLoad: "ondemand", // Load images on demand
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    }),
-    []
-  );
-
-  return (
-    <div>
-      {/* Photo Gallery with Slider */}
-      <section className="bg-red-600 p-6">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex mb-6">
-            <Heading text="PHOTO GALLERY" color="text-white" bgColor="bg-white" />
-          </div>
-          <div className="relative">
-            <Slider {...sliderSettings} className="mt-6">
-              {galleryImages.map((image, index) => (
-                <GalleryImage key={index} image={image} index={index} />
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </section>
-
-      {/* Donors & Partners */}
-      <section className="p-6">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex mb-6">
-            <Heading
-              text="DONORS & PARTNERS"
-              color="text-black"
-              bgColor="bg-red-600"
-            />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {[
-              "https://bracinternational.org/wp-content/uploads/2024/09/GAC-Logo.webp",
-              "https://bracinternational.org/wp-content/uploads/2024/09/UNDP-logo-orignal.webp",
-              "https://bracinternational.org/wp-content/uploads/2024/09/UNWOMEN-logo.webp",
-              "https://bracinternational.org/wp-content/uploads/2025/01/usaid-logo.webp",
-              "https://bracinternational.org/wp-content/uploads/2025/01/WDIO-logo.webp",
-            ].map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt={`Donor ${index + 1}`}
-                className="w-full h-22 object-contain"
-                loading="lazy"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default memo(Details2);
+export default Details2;

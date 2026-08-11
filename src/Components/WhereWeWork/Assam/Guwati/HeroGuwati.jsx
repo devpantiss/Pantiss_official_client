@@ -1,13 +1,13 @@
-import React from "react";
-
 const HeroGuwahati = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738940911/guwahati_wvqcck.jpg"
-          alt="Empowering Communities in Guwahati"
+          src="/assets/where/guwahati-hero-banner-v2.jpg"
+          alt="Guwahati riverfront and green hills with vocational trainees conducting fieldwork beside the Brahmaputra"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>

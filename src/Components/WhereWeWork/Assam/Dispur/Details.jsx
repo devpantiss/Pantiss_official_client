@@ -13,7 +13,7 @@ const tabs = [
           In Dispur District, our specialized skilling programs, such as Excavator and HEMM (Heavy Earth Moving Machinery) Operator Training, are meticulously crafted to equip individuals with industry-relevant technical skills critical for success in the mining and construction sectors. These programs offer hands-on training with advanced machinery, focusing on operational proficiency, safety protocols, and maintenance techniques to ensure participants can handle equipment like excavators and loaders with precision and care. The curriculum also incorporates environmental awareness and efficiency optimization, preparing trainees to contribute to sustainable practices. By providing certifications upon completion, we enhance employability, enabling participants to secure stable livelihoods while meeting the workforce demands of Dispur’s industrial landscape. This initiative reflects our commitment to fostering skill development and economic empowerment in the region.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg"
+          src="/assets/where/district-work/technical-skills-training.jpg"
           alt="Skilling"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -31,7 +31,7 @@ const tabs = [
           Our efforts in Dispur focus on the rehabilitation and resettlement of communities displaced or affected by mining activities, ensuring they thrive through inclusive and sustainable development. We provide comprehensive support, including access to modern housing equipped with essential amenities, tailored livelihood programs such as vocational training and micro-enterprise opportunities, and robust social services like education and healthcare. Our approach emphasizes deep community engagement, working closely with local leaders and residents to address their unique needs and aspirations. By fostering self-reliance and preserving cultural identities, we aim to create resilient communities that benefit from long-term stability and growth. This initiative underscores our dedication to balancing industrial progress with social responsibility in Dispur’s mining villages.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
+          src="/assets/where/district-work/rehabilitation-resettlement.jpg"
           alt="Mining Village Rehabilitation"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -49,7 +49,7 @@ const tabs = [
           In Dispur’s mining villages, we tackle malnutrition and health challenges by implementing targeted initiatives that promote access to nutritious food, clean water, and quality healthcare services. Our programs include establishing community kitchens and nutrition education campaigns to ensure families understand balanced diets, alongside infrastructure improvements like water purification systems to combat waterborne diseases. We also prioritize maternal health through prenatal and postnatal care programs, providing supplements and medical support to expectant and new mothers. For children, our school nutrition schemes supply meals fortified with essential vitamins, enhancing physical and cognitive development. By collaborating with local health workers and organizations, we foster a holistic approach to well-being, aiming to uplift living standards and build healthier, more resilient communities in Dispur’s mining-affected areas.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg"
+          src="/assets/where/district-work/health-nutrition.jpg"
           alt="Nutrition & Well-being"
           className="mt-4 rounded-lg shadow-lg"
         />

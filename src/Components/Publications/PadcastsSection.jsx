@@ -70,6 +70,23 @@ const VideoSectionWithPopup = () => {
             </button>
           ))}
         </div>
+
+        {/* View More */}
+        <div className="flex justify-center items-center mt-10">
+          <button
+            className="
+              px-6 py-3
+              bg-white
+              rounded-lg
+              text-red-600 font-medium
+              hover:bg-black hover:text-white
+              transition-colors
+              focus:outline-none focus:ring-2 focus:ring-white
+            "
+          >
+            View More
+          </button>
+        </div>
       </div>
 
       {/* Video Modal */}

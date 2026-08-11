@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { Users, Briefcase, Home, ChevronDown } from "lucide-react";
 import Heading from "../../../../Common/Heading";
@@ -11,7 +11,7 @@ const tabs = [
   {
     tab_name: "Skilling",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819867/WhatsApp_Image_2025-10-30_at_3.30.36_PM_viv2to.jpg",
+      "/assets/where/district-work/technical-skills-training.jpg",
     description:
       "Under the District Mineral Foundation (DMF) and Skill Council for Mining Sector (SCMS), skilling initiatives in Jharsuguda focus on building a technically competent workforce through job-oriented, industry-aligned training programs.",
     projects: [
@@ -22,11 +22,11 @@ const tabs = [
     clients: [
       {
         name: "DMF Jharsuguda",
-        logo: "https://dummyimage.com/200x100/000/fff&text=DMF+Jharsuguda",
+        logo: "/assets/where/client-logos/dmf-odisha.png",
       },
       {
         name: "SCMS",
-        logo: "https://dummyimage.com/200x100/000/fff&text=SCMS",
+        logo: "/assets/where/client-logos/scms.png",
       },
     ],
     impacts: [
@@ -39,7 +39,7 @@ const tabs = [
   {
     tab_name: "Indigenous Community",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761840260/odisha-2368219_1280_hspude.jpg",
+      "/assets/where/district-work/indigenous-community.jpg",
     description:
       "Jharsuguda-based initiatives focus on empowering indigenous communities through livelihood enhancement, cultural preservation, and inclusive development while respecting traditional knowledge systems.",
     projects: [
@@ -51,7 +51,7 @@ const tabs = [
     clients: [
       {
         name: "District Administration, Jharsuguda",
-        logo: "https://dummyimage.com/200x100/000/fff&text=District+Admin",
+        logo: "/assets/where/client-logos/odisha-government.png",
       },
     ],
     impacts: [
@@ -133,7 +133,7 @@ const DetailsJharsuguda = () => {
                         Projects
                       </button>
 
-                      {/* <button
+                      <button
                         onClick={() => setActiveView("clients")}
                         className={`px-6 py-3 font-semibold transition ${
                           activeView === "clients"
@@ -142,7 +142,7 @@ const DetailsJharsuguda = () => {
                         }`}
                       >
                         Clients
-                      </button> */}
+                      </button>
                     </div>
 
                     {/* CARD GRID */}
@@ -173,16 +173,21 @@ const DetailsJharsuguda = () => {
                         tab.clients.map((client) => (
                           <div
                             key={client.name}
-                            className="bg-white p-8 border rounded-xl shadow-sm
+                            className="group min-h-32 bg-white p-8 border rounded-xl shadow-sm
                                        hover:shadow-xl hover:-translate-y-1
                                        transition-all duration-300
-                                       flex items-center justify-center"
+                                       flex flex-col gap-4 items-center justify-center"
                           >
                             <img
                               src={client.logo}
                               alt={client.name}
-                              className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                              loading="lazy"
+                              decoding="async"
+                              className="h-16 w-full max-w-[220px] object-contain transition-transform duration-300 group-hover:scale-105"
                             />
+                            <span className="text-sm font-medium text-gray-700">
+                              {client.name}
+                            </span>
                           </div>
                         ))}
                     </div>
@@ -248,6 +253,30 @@ const DetailsJharsuguda = () => {
                     className="rounded-xl shadow"
                   />
                   <p className="text-gray-700">{tab.description}</p>
+                  <div>
+                    <p className="mb-3 text-sm font-semibold text-gray-900">
+                      Clients
+                    </p>
+                    <div className="grid grid-cols-2 gap-3">
+                      {tab.clients.map((client) => (
+                        <div
+                          key={client.name}
+                          className="flex min-h-28 flex-col items-center justify-center gap-3 rounded-xl border bg-white p-4 text-center"
+                        >
+                          <img
+                            src={client.logo}
+                            alt={client.name}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-12 w-full object-contain"
+                          />
+                          <span className="text-xs font-medium text-gray-700">
+                            {client.name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

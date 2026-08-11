@@ -13,7 +13,7 @@ const tabs = [
           In Neyveli, we are dedicated to empowering the local workforce through specialized training programs tailored to the lignite mining and power generation industries. Our initiatives include Lignite Mining Operator Training and Power Plant Technician Courses, offering practical skills and technical knowledge. These programs are designed to prepare participants for careers in Neyveli’s thriving energy sector, fostering employability and economic growth. By aligning training with the needs of NLC India Limited and related industries, we aim to bridge the skill gap, uplift the community, and contribute to the region’s sustainable industrial development.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735192753/blogs_copltg.jpg"
+          src="/assets/where/district-work/technical-skills-training.jpg"
           alt="Skilling in Neyveli"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -31,7 +31,7 @@ const tabs = [
           Our rehabilitation and resettlement efforts in Neyveli focus on supporting communities affected by lignite mining expansion, reflecting our commitment to social equity. We provide displaced families with modern housing, sustainable livelihood options through vocational training and micro-enterprise support, and access to essential services like education and healthcare. Working closely with local stakeholders, we ensure participatory planning and cultural preservation, helping families transition smoothly to new settlements. Our goal is to create resilient communities around Neyveli that thrive beyond mining, with a focus on long-term well-being and economic stability.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1736152387/sebastian-pichler-ly2T4vul_SE-unsplash_hdi8yl.jpg"
+          src="/assets/where/district-work/rehabilitation-resettlement.jpg"
           alt="Mining Village Rehabilitation in Neyveli"
           className="mt-4 rounded-lg shadow-lg"
         />
@@ -49,7 +49,7 @@ const tabs = [
           In Neyveli’s mining villages, we prioritize health and well-being to build stronger, more resilient communities impacted by industrial activities. Our programs ensure access to nutritious meals through community nutrition centers, safe drinking water via advanced purification systems, and comprehensive healthcare services tailored to rural needs. We emphasize maternal and child health with targeted nutrition schemes and regular health camps, alongside school feeding programs to support student growth and learning. By addressing these foundational needs, we aim to enhance the quality of life for Neyveli’s residents, fostering a healthier future for generations to come.
         </p>
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195440/nutrition_jnxshz.jpg"
+          src="/assets/where/district-work/health-nutrition.jpg"
           alt="Nutrition & Well-being in Neyveli"
           className="mt-4 rounded-lg shadow-lg"
         />

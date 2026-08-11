@@ -1,6 +1,16 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect } from "react";
 import Heading from "../Common/Heading";
 import { useLocation } from "react-router-dom";
+import {
+  ArrowUpRight,
+  BriefcaseBusiness,
+  ChevronLeft,
+  Clock3,
+  MapPin,
+  SearchX,
+  WalletCards,
+} from "lucide-react";
 
 const jobsData = [
   {
@@ -426,73 +436,192 @@ const jobsData = [
   },
 ];
 
+const careerCategoryConfig = [
+  {
+    category: "BD & Partnership",
+    source: "Business Development & Partnerships",
+    description:
+      "Build strategic relationships, unlock new opportunities and grow our social impact.",
+  },
+  {
+    category: "Project Management",
+    source: "Project Management & Implementation",
+    description:
+      "Lead programmes, coordinate field teams and turn development plans into measurable outcomes.",
+  },
+  {
+    category: "HR & Admin",
+    source: "Human Resources & Administration",
+    description:
+      "Support our people, culture and organisational operations across programmes and offices.",
+  },
+  {
+    category: "ICT Development",
+    source: "ICT Development",
+    description:
+      "Design and build reliable digital products that strengthen programme delivery and access.",
+  },
+  {
+    category: "Branding & Communication",
+    source: null,
+    description:
+      "Shape clear stories, campaigns and communication that connect communities with our mission.",
+  },
+  {
+    category: "Civil Engineering",
+    source: "Civil Engineering",
+    description:
+      "Plan and deliver safe, sustainable infrastructure for communities and project sites.",
+  },
+  {
+    category: "Research & Advocacy",
+    source: "Research and Advocacy",
+    description:
+      "Generate evidence, influence policy and advance practical solutions to development challenges.",
+  },
+];
+
+const visibleJobsData = careerCategoryConfig.map(
+  ({ category, source, description }) => {
+    const sourceCategory = jobsData.find((item) => item.category === source);
+
+    return {
+      category,
+      description,
+      jobs: (sourceCategory?.jobs ?? []).map((job) => ({ ...job, category })),
+    };
+  }
+);
+
 const JobCard = ({ job, onClick }) => {
   return (
-    <div
-      className="border rounded-lg p-4 shadow-md bg-white mb-4 cursor-pointer"
+    <button
+      type="button"
+      className="group flex h-full w-full flex-col rounded-2xl border border-neutral-200 bg-white p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 sm:p-6"
       onClick={onClick}
     >
-      <h3 className="text-lg font-semibold">{job.title}</h3>
-      <div className="text-sm text-gray-500 mb-2">{job.category}</div>
-      <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-600">{job.type}</span>
-        <span className="text-sm text-gray-600">{job.salaryRange}</span>
+      <div className="flex w-full items-start justify-between gap-4">
+        <div>
+          <span className="inline-flex rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700">
+            {job.category}
+          </span>
+          <h3 className="mt-4 text-xl font-semibold leading-snug text-neutral-950 transition group-hover:text-red-700">
+            {job.title}
+          </h3>
+        </div>
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-neutral-200 text-neutral-500 transition group-hover:border-red-600 group-hover:bg-red-600 group-hover:text-white">
+          <ArrowUpRight aria-hidden="true" size={19} />
+        </span>
       </div>
-      <div className="text-sm text-blue-500 mt-2">{job.location}</div>
-    </div>
+
+      {job.description?.[0] && (
+        <p className="mt-4 line-clamp-2 text-sm leading-6 text-neutral-600">
+          {job.description[0]}
+        </p>
+      )}
+
+      <div className="mt-6 grid gap-3 border-t border-neutral-100 pt-4 text-sm text-neutral-600 sm:grid-cols-2">
+        <span className="flex items-center gap-2">
+          <MapPin aria-hidden="true" className="text-red-600" size={17} />
+          {job.location}
+        </span>
+        <span className="flex items-center gap-2">
+          <Clock3 aria-hidden="true" className="text-red-600" size={17} />
+          {job.type}
+        </span>
+        <span className="flex items-center gap-2 sm:col-span-2">
+          <WalletCards
+            aria-hidden="true"
+            className="text-red-600"
+            size={17}
+          />
+          {job.salaryRange}
+        </span>
+      </div>
+    </button>
+  );
+};
+
+const DetailList = ({ title, items }) => {
+  if (!items?.length) return null;
+
+  return (
+    <section>
+      <h4 className="text-lg font-semibold text-neutral-950">{title}</h4>
+      <ul className="mt-3 space-y-2.5 text-neutral-700">
+        {items.map((point) => (
+          <li key={point} className="flex gap-3 leading-7">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 
 const JobDetails = ({ job, onApply, onBack }) => {
   return (
-    <div className="border rounded-lg p-6 shadow-md bg-white mb-4">
-      <h3 className="text-2xl font-bold mb-4">{job.title}</h3>
-      <p className="text-sm text-gray-600 mb-2">Category: {job.category}</p>
-      <p className="text-sm text-gray-600 mb-2">Location: {job.location}</p>
-      <p className="text-sm text-gray-600 mb-2">Type: {job.type}</p>
-      <p className="text-sm text-gray-600 mb-4">Salary: {job.salaryRange}</p>
-
-      {job.description && (
-        <>
-          <h4 className="text-lg font-semibold mb-2 text-gray-800">
-            Job Description:
-          </h4>
-          <ul className="list-disc list-inside text-gray-700 mb-4">
-            {job.description.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      {job.qualifications && (
-        <>
-          <h4 className="text-lg font-semibold mb-2 text-gray-800">
-            Qualifications:
-          </h4>
-          <ul className="list-disc list-inside text-gray-700 mb-6">
-            {job.qualifications.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      <div className="flex gap-3">
+    <article className="overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-xl shadow-neutral-200/60">
+      <header className="border-b border-neutral-200 bg-neutral-950 px-6 py-8 text-white sm:px-10 sm:py-10">
         <button
-          className="bg-blue-600 text-white px-4 py-2 rounded-md"
-          onClick={onApply}
-        >
-          Apply Now
-        </button>
-        <button
-          className="bg-gray-400 text-white px-4 py-2 rounded-md"
+          type="button"
           onClick={onBack}
+          className="inline-flex items-center gap-2 text-sm font-medium text-neutral-300 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
-          Back
+          <ChevronLeft aria-hidden="true" size={18} />
+          Back to all roles
         </button>
+        <span className="mt-8 inline-flex rounded-full bg-red-600 px-3 py-1 text-xs font-semibold">
+          {job.category}
+        </span>
+        <h3 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl">
+          {job.title}
+        </h3>
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-neutral-300">
+          <span className="flex items-center gap-2">
+            <MapPin aria-hidden="true" size={17} /> {job.location}
+          </span>
+          <span className="flex items-center gap-2">
+            <Clock3 aria-hidden="true" size={17} /> {job.type}
+          </span>
+          <span className="flex items-center gap-2">
+            <WalletCards aria-hidden="true" size={17} /> {job.salaryRange}
+          </span>
+        </div>
+      </header>
+
+      <div className="grid gap-10 px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="space-y-9">
+          <DetailList title="Role overview" items={job.description} />
+          <DetailList title="Qualifications" items={job.qualifications} />
+          <DetailList title="Experience" items={job.experience} />
+          <DetailList title="Skills" items={job.skills} />
+          <DetailList title="Benefits" items={job.benefits} />
+        </div>
+
+        <aside className="h-fit rounded-2xl border border-red-100 bg-red-50 p-5 lg:sticky lg:top-24">
+          <h4 className="font-semibold text-neutral-950">Interested in this role?</h4>
+          <p className="mt-2 text-sm leading-6 text-neutral-600">
+            Review the requirements, then submit your application through the
+            official application link.
+          </p>
+          <button
+            type="button"
+            className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-red-600 px-5 py-2.5 font-semibold text-white transition hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
+            onClick={onApply}
+          >
+            Apply now
+            <ArrowUpRight aria-hidden="true" size={18} />
+          </button>
+          {job.applyNote?.[0] && (
+            <p className="mt-4 text-xs leading-5 text-neutral-500">
+              {job.applyNote[0]}
+            </p>
+          )}
+        </aside>
       </div>
-    </div>
+    </article>
   );
 };
 
@@ -504,72 +633,137 @@ const JobsListing = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const category = params.get("category");
-    if (category) setFilter(category);
+    const isValidCategory = visibleJobsData.some(
+      (item) => item.category === category
+    );
+
+    setFilter(isValidCategory ? category : "All");
   }, [location.search]);
 
   const handleJobClick = (job) => setSelectedJob(job);
-  const handleApplyNow = () => selectedJob && window.open(selectedJob.googleFormLink, "_blank");
+  const handleApplyNow = () =>
+    selectedJob &&
+    window.open(selectedJob.googleFormLink, "_blank", "noopener,noreferrer");
   const handleBack = () => setSelectedJob(null);
-  const handleFilterChange = (e) => setFilter(e.target.value);
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
+    setSelectedJob(null);
+  };
 
   const filteredJobs =
     filter === "All"
-      ? jobsData
-      : jobsData.filter((category) => category.category === filter);
+      ? visibleJobsData
+      : visibleJobsData.filter((category) => category.category === filter);
+
+  const totalOpenings = visibleJobsData.reduce(
+    (total, category) => total + category.jobs.length,
+    0
+  );
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-10">
-      <div className="flex flex-col mb-6">
-        <div className="flex flex-initial justify-start items-center">
+    <main className="bg-neutral-50 py-12 sm:py-16">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="mb-10 flex flex-col gap-6 border-b border-neutral-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
           <Heading
             text="Start doing work that matters"
-            colors="text-white"
+            color="text-neutral-950"
             bgColor="bg-red-600"
           />
-        </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-x-6">
-          <p className="text-gray-600 mt-2">
+            <p className="mt-4 text-base leading-7 text-neutral-600 sm:text-lg">
             Our philosophy is simple — hire a team of diverse, passionate people
             and foster a culture that empowers you to do your best work.
           </p>
+            <p className="mt-3 text-sm font-medium text-neutral-500">
+              {totalOpenings} open {totalOpenings === 1 ? "position" : "positions"} across {visibleJobsData.length} career areas
+            </p>
+          </div>
+
+          <div className="w-full lg:w-72">
+            <label
+              htmlFor="career-category-filter"
+              className="mb-2 block text-sm font-semibold text-neutral-800"
+            >
+              Filter by career area
+            </label>
           <select
+              id="career-category-filter"
             value={filter}
             onChange={handleFilterChange}
-            className="border mt-5 lg:border-gray-300 pr-6 px-4 py-2 rounded-md text-gray-600"
+              className="min-h-11 w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-neutral-700 shadow-sm outline-none transition focus:border-red-600 focus:ring-2 focus:ring-red-600/20"
           >
-            <option value="All">All</option>
-            {jobsData.map((category) => (
+              <option value="All">All career areas</option>
+              {visibleJobsData.map((category) => (
               <option key={category.category} value={category.category}>
                 {category.category}
               </option>
             ))}
           </select>
+          </div>
         </div>
-      </div>
 
       {selectedJob ? (
         <JobDetails job={selectedJob} onApply={handleApplyNow} onBack={handleBack} />
       ) : (
-        filteredJobs.map((category) => (
-          <div key={category.category} className="mb-8">
-            <h2 className="text-xl font-bold">{category.category}</h2>
-            <p className="text-gray-500 mb-4">{category.description}</p>
+          <div className="space-y-8">
+            {filteredJobs.map((category, index) => (
+              <section
+                key={category.category}
+                aria-labelledby={`career-category-${index}`}
+                className="overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm"
+              >
+                <header className="flex flex-col gap-4 border-b border-neutral-200 bg-neutral-950 px-6 py-6 text-white sm:flex-row sm:items-center sm:justify-between sm:px-8">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-red-400">
+                      Career area {String(index + 1).padStart(2, "0")}
+                    </p>
+                    <h2
+                      id={`career-category-${index}`}
+                      className="mt-2 text-2xl font-semibold"
+                    >
+                      {category.category}
+                    </h2>
+                    <p className="mt-2 max-w-3xl text-sm leading-6 text-neutral-300">
+                      {category.description}
+                    </p>
+                  </div>
+                  <span className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold">
+                    <BriefcaseBusiness aria-hidden="true" size={17} />
+                    {category.jobs.length} open
+                  </span>
+                </header>
 
             {category.jobs.length > 0 ? (
-              <div className="grid md:grid-cols-2 gap-6">
-                {category.jobs.map((job, idx) => (
-                  <JobCard key={idx} job={job} onClick={() => handleJobClick(job)} />
+                  <div className="grid gap-5 p-5 md:grid-cols-2 sm:p-8">
+                    {category.jobs.map((job) => (
+                      <JobCard
+                        key={`${job.title}-${job.location}`}
+                        job={job}
+                        onClick={() => handleJobClick(job)}
+                      />
                 ))}
               </div>
             ) : (
-              <p className="text-gray-500 italic">
-                No active positions at the moment.
-              </p>
+                  <div className="flex items-center gap-4 px-6 py-8 text-neutral-500 sm:px-8">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-500">
+                      <SearchX aria-hidden="true" size={20} />
+                    </span>
+                    <div>
+                      <p className="font-medium text-neutral-800">
+                        No active positions right now
+                      </p>
+                      <p className="mt-1 text-sm">
+                        Please check back for future opportunities in this career area.
+                      </p>
+                    </div>
+                  </div>
             )}
+              </section>
+            ))}
           </div>
-        ))
       )}
-    </div>
+      </div>
+    </main>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MapSection from "./MapSection";
 import DistrictCards from "./DistrictCards";
 import NewsSlider from "./NewsSlider";
@@ -94,8 +94,7 @@ const districts = {
     {
       name: "Bokaro",
       path: "/where-we-work/jharkhand/bokaro",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bokaro_Steel_Plant_.jpg/1200px-Bokaro_Steel_Plant_.jpg",
+      image: "/assets/where/bokaro-district-card-v2.jpg",
       tags: ["Mining Safety", "Skill Centers", "Green Transition"],
     },
     {
@@ -338,7 +337,7 @@ const impactData = {
 const HeroBanner = () => {
   const [selectedState, setSelectedState] = useState("Odisha");
 
-  const handleStateClick = (stateName, position) => {
+  const handleStateClick = (stateName) => {
     setSelectedState(stateName);
   };
 

@@ -1,13 +1,13 @@
-import React from "react";
-
 const JharsugudaHero = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761838629/jharsuguda_vrjz3g.jpg"
-          alt="Empowering Women"
+          src="/assets/where/jharsuguda-hero-banner-v2.jpg"
+          alt="Jharsuguda industrial landscape with vocational trainees overlooking local industry"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>
@@ -23,7 +23,7 @@ const JharsugudaHero = () => {
           {/* Main Description */}
           <div className="mt-4">
             <p className="text-gray-800 text-xl font-bold">
-              Jharsuguda, Odisha, is a rapidly growing industrial hub known for its power plants and aluminum smelting units. The region plays a vital role in the state's industrial landscape, making it a prime location for skill development programs focused on industrial operations and workforce empowerment.
+              Jharsuguda, Odisha, is a rapidly growing industrial hub known for its power plants and aluminum smelting units. The region plays a vital role in the state’s industrial landscape, making it a prime location for skill development programs focused on industrial operations and workforce empowerment.
             </p>
           </div>
 

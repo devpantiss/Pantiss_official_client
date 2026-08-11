@@ -32,52 +32,37 @@ const AdvisoryLayout = () => {
             id: "1",
             name: "Prof. Dr. Narayan Chandra Nayak",
             designation: "HoD, School of Humanities & Social Sciences",
-            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730334/Dr.Narayan_Nayak_nwqqsr.png",
+            img: "/assets/about/advisory_board/Dr.Narayan_Nayak.png",
             org: "IIT, Kharagpur",
         },
-        // {
-        //     id: "2",
-        //     name: "Prof. Dr. Bhuputra Panda",
-        //     designation: "Additional Professor, IIPH",
-        //     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Bhuputra_svsb7e.png",
-        //     org: "Ministry of Health & Public Welfare",
-        // },
-        // {
-        //     id: "3",
-        //     name: "Shri Amarendra Khatua, IFS",
-        //     designation: "Former External Affairs Secretary",
-        //     img: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Amarendra_khatua_p2crrs.png",
-        //     org: "Govt. of India",
-        // },
         {
             id: "4",
             name: "Prof. Bipin Jojo",
             designation: "Dean, School of Social Sciences",
-            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730273/Bipin_jojo_bwcp5e.png",
+            img: "/assets/about/advisory_board/Bipin_jojo.png",
             org: "TISS-Mumbai",
         },
         // {
         //     id: "5",
         //     name: "Braja Kishore Nayak",
         //     designation: "Director (Financial Inclusion)",
-        //     img: 
-        //     "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735040836/Braja_Kishore_nayak_eqprwr.jpg",
+        //     img: "/assets/about/advisory_board/braja.png",
         //     org: "State Bank of India",
         // },
         {
             id: "6",
             name: "Prof. Dr. S. Sivaraju",
             designation: "Chairperson, Center of Excellence, CSR",
-            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730347/S.Sivaraju_bfpfhy.png",
+            img: "/assets/about/advisory_board/S.Sivaraju.png",
             org: "TISS-Mumbai",
         },
         {
             id: "7",
             name: "Prof. Dr. Ashutosh Pradhan",
             designation: "HoD, School of Social Work",
-            img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761730262/Ashutosh_Pradhan_p8hpnp.png",
+            img: "/assets/about/advisory_board/Ashutosh_Pradhan.png",
             org: "Central University, Himachal Pradesh",
-        }
+        },
     ];
 
     return (

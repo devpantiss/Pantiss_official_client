@@ -1,13 +1,13 @@
-import React from "react";
-
 const HeroNeyveli = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1737443051/Chennai_vkkosd.jpg"
-          alt="Empowering Communities in Neyveli"
+          src="/assets/where/neyveli-hero-banner-v2.jpg"
+          alt="Neyveli lignite mine and energy landscape with technical trainees reviewing a site plan"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>
@@ -23,7 +23,7 @@ const HeroNeyveli = () => {
           {/* Main Description */}
           <div className="mt-4">
             <p className="text-gray-800 text-xl font-bold">
-              Neyveli, located in Tamil Nadu, is renowned for its vast lignite mines and thermal power plants, making it a significant contributor to India’s energy production. The town's industrial landscape offers extensive opportunities for workforce development and sustainable innovations.
+              Neyveli, located in Tamil Nadu, is renowned for its vast lignite mines and thermal power plants, making it a significant contributor to India’s energy production. The town’s industrial landscape offers extensive opportunities for workforce development and sustainable innovations.
             </p>
           </div>
 

@@ -26,6 +26,10 @@ const reportsData = [
     items: [
       { label: "Board of Directors", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_16" },
       { label: "Governance Policy", link: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_17" },
+      { label: "Board of Directors", link: "#", disabled: true },
+      { label: "Corporate Governance Policy", link: "#", disabled: true },
+      { label: "Code of Conduct & Ethics", link: "#", disabled: true },
+      { label: "Whistleblower Policy", link: "#", disabled: true },
     ],
   },
   {
@@ -106,12 +110,12 @@ const ReportsListing = () => {
 
               <div className="space-y-3">
 
-                {category.items.map((item) => (
+                {category.items.map((item, idx) => (
                   <ReportButton
-                    key={item.label}
+                    key={`${item.label}-${idx}`}
                     label={item.label}
                     link={item.link}
-                    disabled={isDisabledCategory}
+                    disabled={isDisabledCategory || item.disabled}
                   />
                 ))}
 

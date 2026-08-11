@@ -1,13 +1,13 @@
-import React from "react";
-
 const SundargarhHero = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761841346/pexels-pok-rie-33563-1188532_pzfnru.jpg"
-          alt="Empowering Women"
+          src="/assets/where/sundargarh-hero-banner-v2.jpg"
+          alt="Sundargarh forest and mining landscape with vocational trainees reviewing a site plan"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>
@@ -23,7 +23,7 @@ const SundargarhHero = () => {
           {/* Main Description */}
           <div className="mt-4">
             <p className="text-gray-800 text-xl font-bold">
-              Sundargarh, Odisha, is a region known for its picturesque landscapes and thriving industrial sector, including mining and steel production. It plays a pivotal role in the state's economic development, making it a strategic location for workforce training and skill development.
+              Sundargarh, Odisha, is a region known for its picturesque landscapes and thriving industrial sector, including mining and steel production. It plays a pivotal role in the state’s economic development, making it a strategic location for workforce training and skill development.
             </p>
           </div>
 

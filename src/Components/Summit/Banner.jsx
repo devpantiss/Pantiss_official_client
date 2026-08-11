@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
   return (
     <section className="relative bg-gray-50">
@@ -15,17 +13,17 @@ const Banner = () => {
           {/* Content Box for Desktop View */}
           <div className="flex flex-col justify-start items-start bg-opacity-80 p-6 rounded shadow-md lg:block">
             <h1 className="text-5xl font-bold mb-4 text-white">
-              Asia's Largest Mining Villages Summit
+              Asia’s Largest Mining Villages Summit
             </h1>
             <p className="text-lg mb-6 text-white">Date: March 15, 2025</p>
-            <a
-              href="https://forms.gle/example-form-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded"
+            <button
+              type="button"
+              disabled
+              aria-label="Summit participation registration is coming soon"
+              className="inline-flex cursor-not-allowed items-center rounded-full border border-white/30 bg-white/15 px-6 py-3 font-semibold text-white shadow-lg backdrop-blur-sm"
             >
-              Participate
-            </a>
+              Participation Coming Soon
+            </button>
           </div>
           <div></div>
         </div>

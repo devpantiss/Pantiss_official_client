@@ -1,36 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Hero = () => {
-  const slides = [
-    "/assets/publications/publication_hero.jpg",
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
   return (
     <section className="relative h-[90vh] w-full overflow-hidden bg-black">
 
-      {/* Background Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-[1400ms] ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-          style={{
-            backgroundImage: `url(${slide})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-      ))}
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/assets/publications/publication_hero.mp4" type="video/mp4" />
+      </video>
 
       {/* Modern Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/40" />
@@ -107,35 +90,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white/20">
-        <div
-          className="h-full bg-red-600 transition-all duration-[6000ms] ease-linear"
-          style={{
-            width: `${((currentSlide + 1) / slides.length) * 100}%`,
-          }}
-        />
-      </div>
-
-      {/* Navigation Dots */}
-      {slides.length > 1 && (
-        <div className="absolute bottom-8 right-10 flex gap-3">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`
-                w-2.5 h-2.5 rounded-full transition-all
-                ${
-                  currentSlide === index
-                    ? "bg-red-500 scale-125"
-                    : "bg-white/40 hover:bg-white"
-                }
-              `}
-            />
-          ))}
-        </div>
-      )}
     </section>
   );
 };

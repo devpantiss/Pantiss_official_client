@@ -100,6 +100,23 @@ const CommunicationDevelopment = () => {
             </div>
           ))}
         </div>
+
+        {/* View More */}
+        <div className="flex justify-center items-center mt-8">
+          <button
+            className="
+              px-6 py-3
+              bg-red-600
+              rounded-lg
+              text-white font-medium
+              hover:bg-red-700
+              transition-colors
+              focus:outline-none focus:ring-2 focus:ring-red-600
+            "
+          >
+            View More
+          </button>
+        </div>
       </div>
     </section>
   );

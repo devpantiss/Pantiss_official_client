@@ -1,38 +1,33 @@
-import React from "react";
 import Slider from "react-slick";
 import Heading from "../../../../Common/Heading";
 
 const reports = [
   {
     id: 1,
-    title: "Skilling for Industrial Readiness in Mining Districts – Odisha Impact Report 2025",
-    cover:
-      "https://iforest.global/wp-content/uploads/dflip-thumbs/32591.jpeg?1766129118",
+    title: "Keonjhar District – Impact Assessment Report 2024-25",
+    cover: "/assets/reports/covers/keonjhar_cover.png",
     type: "REPORT",
     stacked: false,
   },
   {
     id: 2,
-    title: "Livelihood Transformation through Agriculture & Aquaculture – Pantiss DMF Initiatives",
-    cover:
-      "https://iforest.global/wp-content/uploads/dflip-thumbs/32498.jpeg?1765988154",
+    title: "Skilling for Industrial Readiness in Mining Districts – Odisha Impact Report 2025",
+    cover: "/assets/reports/covers/industrial-skilling-report-cover-v2.jpg",
     type: "REPORT",
     stacked: true,
   },
   {
     id: 3,
-    title:
-      "Recognition of Prior Learning (RPL) in Fisheries – Skill Certification Impact Report",
-    cover:
-      "https://iforest.global/wp-content/uploads/dflip-thumbs/31987.jpeg?1762944574",
+    title: "Livelihood Transformation through Agriculture & Aquaculture – Pantiss DMF Initiatives",
+    cover: "/assets/reports/covers/livelihood-transformation-report-cover-v2.jpg",
     type: "REPORT",
     stacked: false,
   },
   {
     id: 4,
-    title: "Community Development & Indigenous Livelihoods – Inclusive Growth Report",
-    cover:
-      "https://iforest.global/wp-content/uploads/dflip-thumbs/31983.jpeg?1762944357",
+    title:
+      "Recognition of Prior Learning (RPL) in Fisheries – Skill Certification Impact Report",
+    cover: "/assets/reports/covers/rpl-certification-report-cover-v2.jpg",
     type: "REPORT",
     stacked: false,
   },
@@ -97,7 +92,9 @@ const KeonjharReports = () => {
                       <img
                         src={report.cover}
                         alt={report.title}
-                        className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
+                        className="h-[400px] w-full bg-neutral-100 object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                       />
                     </div>
                   </div>

@@ -1,4 +1,5 @@
-import React, { memo, useMemo } from "react";
+/* eslint-disable react/prop-types */
+import { memo, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,47 +7,31 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Heading from "../Common/Heading";
 
-// Memoized static career areas data
 const careerAreas = [
   {
-    title: "M&E",
-    count: 0,
-    img: "/assets/careers/M&E.jpg",
+    title: "BD & Partnership",
+    count: 2,
+    img: "/assets/careers/business_development.jpg",
   },
   {
-    title: "Project Management & Implementation",
-    count: 6,
+    title: "Project Management",
+    count: 7,
     img: "/assets/careers/project_management.jpg",
   },
   {
-    title: "Finance, Grants & Procurement",
-    count: 0,
-    img: "/assets/careers/finance.jpg",
-  },
-  {
-    title: "Human Resources & Administration",
+    title: "HR & Admin",
     count: 0,
     img: "/assets/careers/hr.jpg",
   },
   {
-    title: "Business Development & Partnerships",
-    count: 1,
-    img: "/assets/careers/business_development.jpg",
-  },
-  {
-    title: "Social Enterprise",
-    count: 2,
-    img: "/assets/careers/social_enterprise.png",
-  },
-  {
-    title: "Technical, Vocational Education and Training",
-    count: 2,
-    img: "/assets/careers/tvet.jpg",
-  },
-  {
     title: "ICT Development",
-    count: 4,
+    count: 2,
     img: "/assets/careers/ICT.jpg",
+  },
+  {
+    title: "Branding & Communication",
+    count: 0,
+    img: "/assets/careers/M&E.jpg",
   },
   {
     title: "Civil Engineering",
@@ -54,21 +39,18 @@ const careerAreas = [
     img: "/assets/careers/vocational.JPG",
   },
   {
-    title: "Research and Advocacy",
+    title: "Research & Advocacy",
     count: 2,
     img: "/assets/careers/research&advocacy.jpg",
-  },
-  {
-    title: "Development Compliance",
-    count: 2,
-    img: "/assets/careers/compliance.jpg",
   },
 ];
 
 // Memoized Arrow components
 const PrevArrow = memo(({ onClick }) => (
   <button
+    type="button"
     onClick={onClick}
+    aria-label="Previous career area"
     className="z-10 absolute top-1/2 left-0 sm:-left-8 lg:-left-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
   >
     <FaChevronLeft />
@@ -78,7 +60,9 @@ PrevArrow.displayName = "PrevArrow";
 
 const NextArrow = memo(({ onClick }) => (
   <button
+    type="button"
     onClick={onClick}
+    aria-label="Next career area"
     className="z-10 absolute top-1/2 right-0 sm:-right-8 lg:-right-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
   >
     <FaChevronRight />
@@ -89,22 +73,31 @@ NextArrow.displayName = "NextArrow";
 // Memoized CareerCard component
 const CareerCard = memo(({ area, onClick }) => (
   <div className="px-2 sm:px-4">
-    <div onClick={() => onClick(area.title)} className="cursor-pointer">
+    <button
+      type="button"
+      onClick={() => onClick(area.title)}
+      className="group block w-full cursor-pointer rounded-2xl p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-red-600"
+      aria-label={`View ${area.count} open ${area.title} jobs`}
+    >
       <div className="relative w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 mx-auto overflow-hidden">
         <img
           src={area.img}
           alt={area.title}
-          className="w-full h-full shadow-lg rounded-full object-cover"
+          className="w-full h-full rounded-full object-cover shadow-xl ring-1 ring-white/30 transition duration-500 group-hover:scale-105"
           loading="lazy"
+          decoding="async"
         />
-        <span className="absolute top-2 sm:top-4 right-1 sm:right-2 bg-red-500 ring-2 ring-white text-white w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full">
+        <span className="absolute top-2 sm:top-4 right-1 sm:right-2 bg-white ring-2 ring-red-600 text-red-600 min-w-10 h-10 px-2 flex items-center justify-center text-sm font-bold rounded-full shadow-lg">
           {area.count}
         </span>
       </div>
-      <h3 className="mt-2 sm:mt-4 text-base sm:text-lg text-white font-semibold text-center">
+      <h3 className="mt-3 sm:mt-4 text-base sm:text-lg text-white font-semibold text-center transition group-hover:text-red-100">
         {area.title}
       </h3>
-    </div>
+      <p className="mt-1 text-center text-xs text-red-100">
+        {area.count === 1 ? "1 open position" : `${area.count} open positions`}
+      </p>
+    </button>
   </div>
 ));
 CareerCard.displayName = "CareerCard";
@@ -184,10 +177,13 @@ const CareersCategory = () => {
           </Slider>
         </div>
 
-        <div className="flex justify-center mt-6">
-          <button className="px-4 py-2 rounded-md bg-white text-red-600 hover:bg-red-700 hover:text-white transition-colors duration-300 ease-in-out">
-            <Link to="/careers/jobs">View All Jobs</Link>
-          </button>
+        <div className="flex justify-center mt-8">
+          <Link
+            to="/careers/jobs"
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-6 py-2.5 font-semibold text-red-600 shadow-lg transition hover:-translate-y-0.5 hover:bg-neutral-950 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-red-600"
+          >
+            View All Jobs
+          </Link>
         </div>
       </div>
     </section>

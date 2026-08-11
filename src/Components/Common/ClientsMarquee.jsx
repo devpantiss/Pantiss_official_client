@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Heading from "./Heading";
 
 const ClientsMarquee = ({
@@ -6,8 +6,28 @@ const ClientsMarquee = ({
   clients = [],
   speed = 25, // seconds (lower = faster)
 }) => {
+  const shouldAnimate = clients.length > 3;
+
+  const renderClient = (client, key, isDuplicate = false) => (
+    <div
+      key={key}
+      className="flex min-h-28 min-w-48 items-center justify-center rounded-2xl border border-neutral-200 bg-white px-7 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+      aria-hidden={isDuplicate || undefined}
+    >
+      {client.logo && (
+        <img
+          src={client.logo}
+          alt={isDuplicate ? "" : `${client.name} logo`}
+          className="h-16 w-36 object-contain sm:w-44"
+          loading="lazy"
+          decoding="async"
+        />
+      )}
+    </div>
+  );
+
   return (
-    <section className="w-full bg-neutral-50 py-8 overflow-hidden">
+    <section className="w-full overflow-hidden bg-neutral-50 py-10">
       {/* Heading */}
       <div className="mb-4 max-w-7xl mx-auto px-6">
         <Heading text={district} color="text-black" bgColor="bg-red-600" />
@@ -16,34 +36,34 @@ const ClientsMarquee = ({
         </h3> */}
       </div>
 
-      {/* Marquee */}
-      <div className="relative overflow-hidden group">
-        <div
-          className="flex w-max gap-10 animate-marquee group-hover:[animation-play-state:paused]"
-          style={{ animationDuration: `${speed}s` }}
-        >
-          {[...clients, ...clients].map((client, index) => (
-            <div
-              key={`${client.name}-${index}`}
-              className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm border border-neutral-200 hover:shadow-md transition"
-            >
-              {client.logo && (
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="h-20 w-auto object-contain"
-                />
-              )}
-              {/* <span className="text-sm font-medium text-neutral-700 whitespace-nowrap">
-                {client.name}
-              </span> */}
-            </div>
-          ))}
+      {shouldAnimate ? (
+        <div className="group relative overflow-hidden">
+          <div
+            className="animate-marquee flex w-max gap-8 motion-reduce:animate-none group-hover:[animation-play-state:paused]"
+            style={{ animationDuration: `${speed}s` }}
+          >
+            {clients.map((client) =>
+              renderClient(client, `primary-${client.name}`)
+            )}
+            {clients.map((client) =>
+              renderClient(client, `duplicate-${client.name}`, true)
+            )}
+          </div>
         </div>
-      </div>
+      ) : (
+        <div
+          className={`mx-auto grid grid-cols-1 justify-center gap-5 px-6 ${
+            clients.length === 1 ? "max-w-sm" : "max-w-3xl sm:grid-cols-2"
+          }`}
+        >
+          {clients.map((client) =>
+            renderClient(client, `static-${client.name}`)
+          )}
+        </div>
+      )}
 
       {/* Animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes marquee {
           0% {
             transform: translateX(0%);

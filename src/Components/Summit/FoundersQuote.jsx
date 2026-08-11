@@ -1,5 +1,3 @@
-import React from "react";
-
 const EventSection = () => {
   return (
     <section className="py-16 bg-white text-center">
@@ -30,10 +28,10 @@ const EventSection = () => {
 
         {/* Event Details */}
         <div className="text-gray-800 font-semibold text-xl mt-10">
-          See you in October in Niyamgiri
+          See you in November in Niyamgiri
         </div>
         <p className="text-gray-600 mt-2 text-lg">
-          16<sup>th</sup> - 17<sup>th</sup> and 18<sup>th</sup> October 2025
+          6<sup>th</sup> - 7<sup>th</sup> and 8<sup>th</sup> November 2026
         </p>
 
         {/* Download Button */}

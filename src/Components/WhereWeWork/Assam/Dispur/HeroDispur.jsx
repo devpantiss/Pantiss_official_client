@@ -1,13 +1,13 @@
-import React from "react";
-
 const HeroDispur = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1738941457/dispur_bzqcez.webp"
-          alt="Empowering Communities in Dispur"
+          src="/assets/where/dispur-hero-banner-v2.jpg"
+          alt="Green civic district in Dispur with trainees reviewing an urban development plan"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>

@@ -1,13 +1,13 @@
-import React from "react";
-
 const HeroKorba = () => {
   return (
     <div className="container mx-auto relative bg-white rounded-lg h-[750px] lg:h-[900px]">
       {/* Image Section */}
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dxzhnns58/image/upload/v1761914370/korba_cmy2er.jpg"
-          alt="Empowering Communities in Korba"
+          src="/assets/where/korba-hero-banner-v2.jpg"
+          alt="Korba energy and mining landscape with vocational trainees reviewing a site plan"
+          fetchPriority="high"
+          decoding="async"
           className="object-cover h-[400px] lg:h-[700px] w-full"
         />
       </div>
@@ -23,7 +23,7 @@ const HeroKorba = () => {
           {/* Main Description */}
           <div className="mt-4">
             <p className="text-gray-800 text-xl font-bold">
-              Korba, located in Chhattisgarh, is often referred to as the "Power Capital of India" due to its extensive coal-based thermal power plants and industrial operations. The region plays a significant role in India's energy sector and offers vast opportunities for workforce development.
+              Korba, located in Chhattisgarh, is often referred to as the “Power Capital of India” due to its extensive coal-based thermal power plants and industrial operations. The region plays a significant role in India’s energy sector and offers vast opportunities for workforce development.
             </p>
           </div>
 

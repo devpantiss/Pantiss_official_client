@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { Users, Briefcase, Home, HeartPulse } from "lucide-react";
 import Heading from "../../../../Common/Heading";
@@ -11,27 +11,27 @@ const tabs = [
   {
     name: "TVET",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761819875/WhatsApp_Image_2025-10-30_at_3.34.59_PM_tiduhn.jpg",
+      "/assets/where/district-work/technical-skills-training.jpg",
     shortDescription:
       "Industry-aligned technical and vocational education programs designed to improve employability and income stability among youth.",
     projects: [
       {
         title: "Nua Odisha Skill Development Program",
-        logo: "https://digitall.skillodisha.gov.in/Application/uploadDocuments/Logo/LogoH20181206_110122.png",
+        logo: "/assets/where/client-logos/osda.png",
       },
       {
         title: "Skill On Wheels",
-        logo: "https://www.tpcentralodisha.com/images/group_company_logo1.jpg",
+        logo: "/assets/where/client-logos/tpcodl.jpg",
       },
     ],
     clients: [
       {
         name: "OSDA",
-        logo: "https://digitall.skillodisha.gov.in/Application/uploadDocuments/Logo/LogoH20181206_110122.png",
+        logo: "/assets/where/client-logos/osda.png",
       },
       {
         name: "TPCODL",
-        logo: "https://www.tpcentralodisha.com/images/group_company_logo1.jpg",
+        logo: "/assets/where/client-logos/tpcodl.jpg",
       },
     ],
     impacts: [
@@ -45,13 +45,13 @@ const tabs = [
   {
     name: "Environment & Ecology",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813824/aditya-shrivastava-yYPcqVU6IEI-unsplash_rja5sb.jpg",
+      "/assets/where/district-work/mine-land-reclamation.jpg",
     shortDescription:
       "Rehabilitation, resettlement, and ecological restoration programs for mining-affected communities.",
     projects: [
       {
         title: "Village Rehabilitation Program",
-        logo: "https://upload.wikimedia.org/wikipedia/en/3/3e/Mahanadi_Coalfields_Limited_logo.png",
+        logo: "/assets/where/client-logos/mcl.png",
       },
       {
         title: "Afforestation & Ecological Restoration",
@@ -61,7 +61,7 @@ const tabs = [
     clients: [
       {
         name: "MCL",
-        logo: "https://upload.wikimedia.org/wikipedia/en/3/3e/Mahanadi_Coalfields_Limited_logo.png",
+        logo: "/assets/where/client-logos/mcl.png",
       },
     ],
     impacts: [
@@ -74,7 +74,7 @@ const tabs = [
   {
     name: "Health & Nutrition",
     heroImage:
-      "https://res.cloudinary.com/dxzhnns58/image/upload/v1761813698/PIC-13_fdngmf.jpg",
+      "/assets/where/district-work/health-nutrition.jpg",
     shortDescription:
       "Community health, nutrition, and well-being initiatives for women, children, and vulnerable populations.",
     projects: [
@@ -90,7 +90,7 @@ const tabs = [
     clients: [
       {
         name: "District Health Department",
-        logo: "https://dummyimage.com/200x100/000/fff&text=Health+Dept",
+        logo: "/assets/where/client-logos/odisha-government.png",
       },
     ],
     impacts: [
@@ -169,7 +169,7 @@ const AngulDetails = () => {
                       Projects
                     </button>
 
-                    {/* <button
+                    <button
                       onClick={() => setActiveView("clients")}
                       className={`px-6 py-3 font-medium transition ${
                         activeView === "clients"
@@ -178,7 +178,7 @@ const AngulDetails = () => {
                       }`}
                     >
                       Clients
-                    </button> */}
+                    </button>
                   </div>
 
                   {/* CARD GRID */}
@@ -212,15 +212,20 @@ const AngulDetails = () => {
                       tab.clients.map((client) => (
                         <div
                           key={client.name}
-                          className="bg-white p-8 border shadow-sm hover:shadow-xl
+                          className="group min-h-32 bg-white p-8 border shadow-sm hover:shadow-xl
                                      hover:-translate-y-1 transition-all duration-300
-                                     flex items-center justify-center rounded-xl"
+                                     flex flex-col gap-4 items-center justify-center rounded-xl"
                         >
                           <img
                             src={client.logo}
                             alt={client.name}
-                            className="h-16 object-contain grayscale hover:grayscale-0 transition"
+                            loading="lazy"
+                            decoding="async"
+                            className="h-16 w-full max-w-[220px] object-contain transition-transform duration-300 group-hover:scale-105"
                           />
+                          <span className="text-sm font-medium text-gray-700">
+                            {client.name}
+                          </span>
                         </div>
                       ))}
                   </div>
