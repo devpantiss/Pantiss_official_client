@@ -27,13 +27,13 @@ const advisoryData = [
     img: "/assets/about/advisory_board/braja.png",
     org: "State Bank of India",
   },
-  // {
-  //   id: "6",
-  //   name: "Prof. Dr. S. Sivaraju",
-  //   designation: "Chairperson, Center of Excellence, CSR",
-  //   img: "https://res.cloudinary.com/dxzhnns58/image/upload/v1761662574/S.Sivaraju_jpyath.png",
-  //   org: "TISS-Mumbai",
-  // },
+  {
+    id: "6",
+    name: "Prof. Dr. S. Sivaraju",
+    designation: "Chairperson, Center of Excellence, CSR",
+    img: "/assets/about/advisory_board/S.Sivaraju.png",
+    org: "TISS-Mumbai",
+  },
   {
     id: "7",
     name: "Prof. Dr. Ashutosh Pradhan",

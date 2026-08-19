@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   CalendarDays,
@@ -6,49 +7,9 @@ import {
   FileText,
   MapPin,
 } from "lucide-react";
+import { getTendersByStatus, tenders } from "../../data/tenders";
 
 const PREVIEW_LIMIT = 4;
-
-const tenders = [
-  {
-    id: 1,
-    title:
-      "Selection of an Agency for Village Survey & Household Survey data collection in Sundargarh District",
-    location: "Sundargarh, Odisha",
-    startDate: "2nd July 2026",
-    deadline: "8th July 2026",
-    link: "https://drive.google.com/file/d/1Y6ncisTZbyEXvy2_qS_NqN27xA9PGF3r/view?usp=sharing",
-    status: "closed",
-  },
-  {
-    id: 2,
-    title:
-      "Selection of an Agency for Data Analysis of Household Socio-Economic Dataset in Keonjhar District",
-    location: "Keonjhar, Odisha",
-    startDate: "15th February 2026",
-    deadline: "17th February 2026",
-    link: "https://drive.google.com/file/d/1rlE4MjMBv-u41YAt4X6_PJ-P3SHNAUoG/view?usp=sharing",
-    status: "closed",
-  },
-  {
-    id: 3,
-    title: "Social Media & Digital Marketing",
-    location: "Bhubaneswar, Odisha",
-    startDate: "17th February 2025",
-    deadline: "21st February 2025",
-    link: "https://drive.google.com/file/d/1U2HOPDyqTk3IA01QjUByTpuCii17MN5P/view?usp=sharing",
-    status: "closed",
-  },
-  {
-    id: 4,
-    title: "Construction of Plastic Waste Recycling Unit",
-    location: "Koderma, Jharkhand",
-    startDate: "23rd December 2024",
-    deadline: "31st December 2024",
-    link: "https://drive.google.com/file/d/1kDnAKkV-q2fIO3d-QmSxKPEd6Nr4QYnO/view?usp=sharing",
-    status: "closed",
-  },
-];
 
 const tabs = [
   { id: "open", label: "OPEN" },
@@ -116,18 +77,11 @@ const renderTenderCard = (tender) => {
 
 const TendersListing = () => {
   const [activeTab, setActiveTab] = useState("open");
-  const [showAll, setShowAll] = useState(false);
-
-  const filteredTenders = tenders.filter(
-    (tender) => tender.status === activeTab,
-  );
-  const visibleTenders = showAll
-    ? filteredTenders
-    : filteredTenders.slice(0, PREVIEW_LIMIT);
+  const filteredTenders = getTendersByStatus(activeTab);
+  const visibleTenders = filteredTenders.slice(0, PREVIEW_LIMIT);
 
   const changeTab = (tabId) => {
     setActiveTab(tabId);
-    setShowAll(false);
   };
 
   return (
@@ -213,19 +167,17 @@ const TendersListing = () => {
           )}
 
           <div className="mt-10 flex justify-center">
-            <button
-              type="button"
-              onClick={() => setShowAll(true)}
-              disabled={showAll || filteredTenders.length <= PREVIEW_LIMIT}
-              className="group inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-red-600 transition hover:bg-red-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 disabled:cursor-default disabled:opacity-70"
+            <Link
+              to="/tenders/all"
+              className="group inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-red-600 transition hover:bg-red-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
             >
-              View all {activeTab} tenders
+              View all tenders
               <ArrowRight
                 className="transition-transform group-hover:translate-x-1"
                 size={17}
                 aria-hidden="true"
               />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

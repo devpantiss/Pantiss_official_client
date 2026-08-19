@@ -1,9 +1,6 @@
 /* eslint-disable react/prop-types */
-import { memo, useMemo } from "react";
+import { memo, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Heading from "../Common/Heading";
 
@@ -11,68 +8,43 @@ const careerAreas = [
   {
     title: "BD & Partnership",
     count: 2,
-    img: "/assets/careers/business_development.jpg",
+    img: "/assets/careers/optimized/business-development.jpg",
   },
   {
     title: "Project Management",
     count: 7,
-    img: "/assets/careers/project_management.jpg",
+    img: "/assets/careers/optimized/project-management.jpg",
   },
   {
     title: "HR & Admin",
     count: 0,
-    img: "/assets/careers/hr.jpg",
+    img: "/assets/careers/optimized/hr.jpg",
   },
   {
     title: "ICT Development",
     count: 2,
-    img: "/assets/careers/ICT.jpg",
+    img: "/assets/careers/optimized/ict.jpg",
   },
   {
     title: "Branding & Communication",
     count: 0,
-    img: "/assets/careers/M&E.jpg",
+    img: "/assets/careers/optimized/branding-communication.jpg",
   },
   {
     title: "Civil Engineering",
     count: 2,
-    img: "/assets/careers/vocational.JPG",
+    img: "/assets/careers/optimized/civil-engineering.jpg",
   },
   {
     title: "Research & Advocacy",
     count: 2,
-    img: "/assets/careers/research&advocacy.jpg",
+    img: "/assets/careers/optimized/research-advocacy.jpg",
   },
 ];
 
-// Memoized Arrow components
-const PrevArrow = memo(({ onClick }) => (
-  <button
-    type="button"
-    onClick={onClick}
-    aria-label="Previous career area"
-    className="z-10 absolute top-1/2 left-0 sm:-left-8 lg:-left-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
-  >
-    <FaChevronLeft />
-  </button>
-));
-PrevArrow.displayName = "PrevArrow";
-
-const NextArrow = memo(({ onClick }) => (
-  <button
-    type="button"
-    onClick={onClick}
-    aria-label="Next career area"
-    className="z-10 absolute top-1/2 right-0 sm:-right-8 lg:-right-12 transform -translate-y-1/2 text-3xl sm:text-4xl lg:text-5xl text-white ring-2 ring-white hover:bg-white hover:text-red-600 hover:ring-red-600 rounded-full p-2 transition-all duration-300 ease-in-out"
-  >
-    <FaChevronRight />
-  </button>
-));
-NextArrow.displayName = "NextArrow";
-
 // Memoized CareerCard component
 const CareerCard = memo(({ area, onClick }) => (
-  <div className="px-2 sm:px-4">
+  <div className="w-[82vw] max-w-72 shrink-0 snap-start sm:w-64 lg:w-[calc(25%_-_1.125rem)] lg:max-w-none">
     <button
       type="button"
       onClick={() => onClick(area.title)}
@@ -104,52 +76,20 @@ CareerCard.displayName = "CareerCard";
 
 const CareersCategory = () => {
   const navigate = useNavigate();
-
-  // Memoized slider settings
-  const settings = useMemo(
-    () => ({
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      pauseOnHover: true,
-      prevArrow: <PrevArrow />,
-      nextArrow: <NextArrow />,
-      lazyLoad: "ondemand",
-      responsive: [
-        {
-          breakpoint: 1280, // xl screens
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 1024, // lg screens
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 640, // sm screens
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true, // Keep arrows for mobile usability
-          },
-        },
-      ],
-    }),
-    []
-  );
+  const carouselRef = useRef(null);
 
   const handleCardClick = (category) => {
     navigate(`/careers/jobs?category=${encodeURIComponent(category)}`);
+  };
+
+  const scrollCareerAreas = (direction) => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    carousel.scrollBy({
+      left: direction * carousel.clientWidth * 0.8,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -165,8 +105,20 @@ const CareersCategory = () => {
           that interests you the most.
         </p>
 
-        <div className="mt-8 relative">
-          <Slider {...settings}>
+        <div className="relative mt-8">
+          <button
+            type="button"
+            onClick={() => scrollCareerAreas(-1)}
+            aria-label="Previous career areas"
+            className="absolute left-0 top-1/2 z-10 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white text-red-600 shadow-lg transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-red-600 sm:-left-3"
+          >
+            <FaChevronLeft aria-hidden="true" />
+          </button>
+
+          <div
+            ref={carouselRef}
+            className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-12 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
             {careerAreas.map((area) => (
               <CareerCard
                 key={area.title}
@@ -174,7 +126,16 @@ const CareersCategory = () => {
                 onClick={handleCardClick}
               />
             ))}
-          </Slider>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => scrollCareerAreas(1)}
+            aria-label="Next career areas"
+            className="absolute right-0 top-1/2 z-10 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white text-red-600 shadow-lg transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-red-600 sm:-right-3"
+          >
+            <FaChevronRight aria-hidden="true" />
+          </button>
         </div>
 
         <div className="flex justify-center mt-8">

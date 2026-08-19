@@ -1,4 +1,5 @@
-import React, { memo, useMemo } from "react";
+/* eslint-disable react/prop-types */
+import { memo, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Heading from "../Common/Heading";
 
@@ -8,7 +9,8 @@ const programs = [
     title: "Planning, Policy & Governance (PPG)",
     image: "/assets/homepage/whatwedo/Governance.jpeg",
     categories: ["GIS/Drone Survey", "Digital Dashboard", "Social Audit"],
-    link: "#",
+    link: "https://x-social-force.vercel.app/",
+    external: true,
   },
   {
     title: "TVET (Technical, Vocational, Educational Training)",

@@ -53,6 +53,20 @@ const routeMeta = {
     keywords:
       "mining community programmes, skill development for mining affected youth, rehabilitation and resettlement mining, sustainable livelihood programmes, CSR projects in mining areas, mining village development, social development programmes India",
   },
+  "/solutions/model-mining-villages": {
+    title: "Model Mining Villages | Pantiss Foundation",
+    description:
+      "Explore Pantiss Foundation's integrated approach to community-led planning, resilient infrastructure, essential services, livelihoods, and governance in mining-affected villages.",
+    keywords:
+      "model mining villages, mining village development, community-led village planning, resilient rural infrastructure, mining affected communities India",
+  },
+  "/solutions/repurposed-mining-villages": {
+    title: "Repurposed Mining Villages | Pantiss Foundation",
+    description:
+      "Discover how Pantiss Foundation transforms restored post-mining land into safe villages, productive landscapes, community infrastructure, and local livelihoods.",
+    keywords:
+      "repurposed mining villages, post-mining land reuse, mine closure community development, abandoned mine restoration, post-mining livelihoods India",
+  },
   "/careers": {
     title: "Careers at Pantiss Foundation | NGO Jobs and Internships",
     description:
@@ -76,6 +90,11 @@ const routeMeta = {
     title: "Tenders | Pantiss Foundation",
     description:
       "View active tenders, procurement notices, and submission details from Pantiss Foundation.",
+  },
+  "/tenders/all": {
+    title: "All Tender Notices | Pantiss Foundation",
+    description:
+      "Browse open and closed Pantiss Foundation tenders in one procurement archive.",
   },
   "/where-we-work": {
     title: "Where We Work | Mining Community Programmes Across India",

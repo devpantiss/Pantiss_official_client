@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -14,23 +13,27 @@ const Footer2 = () => {
   const whatWeDo = [
     {
       title: "Planning, Policy & Governance (PPG)",
-      link: "#",
+      link: "https://x-social-force.vercel.app/",
+      external: true,
     },
     {
       title: "TVET (Technical, Vocational, Educational Training)",
-      link: "/what-we-do/mine-steel-&-power-skill-park",
+      link: "https://pantiss-skill-universe.vercel.app/",
+      external: true,
     },
     {
       title: "Livelihood & Entrepreneurship",
-      link: "/what-we-do/carp-rice-&-duck-livelihood-park",
+      link: "https://carp-duck-rice.vercel.app/",
+      external: true,
     },
     {
       title: "Health & Nutrition",
-      link: "/what-we-do/nutrinest",
+      link: "https://nutri-nova-mu.vercel.app/",
+      external: true,
     },
     {
       title: "Water & Sanitation",
-      link: "https://www.mowash.in", // 🌐 External link
+      link: "https://admin-mowash.vercel.app/",
       external: true,
     },
     {
@@ -56,10 +59,10 @@ const Footer2 = () => {
           </h3>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-6 text-center">
-            {whatWeDo.map((item, index) =>
+            {whatWeDo.map((item) =>
               item.external ? (
                 <a
-                  key={index}
+                  key={item.title}
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -69,7 +72,7 @@ const Footer2 = () => {
                 </a>
               ) : (
                 <Link
-                  key={index}
+                  key={item.title}
                   to={item.link}
                   className="hover:underline hover:text-red-600 transition-colors duration-300"
                 >

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +20,7 @@ const slides = [
     ],
     buttonText: "Explore",
     buttonLink: "https://x-social-force.vercel.app/",
+    external: true,
     backgroundImage:
       "/assets/homepage/whatwedo/Governance.jpeg",
   },
@@ -32,7 +33,8 @@ const slides = [
       { text: "Global Placements" },
     ],
     buttonText: "Explore",
-    buttonLink: "/what-we-do/mine-steel-&-power-skill-park",
+    buttonLink: "https://pantiss-skill-universe.vercel.app/",
+    external: true,
     backgroundImage:
       "/assets/homepage/whatwedo/TVET.jpg",
   },
@@ -45,7 +47,8 @@ const slides = [
       { text: "Enterprise Incubation" },
     ],
     buttonText: "Explore",
-    buttonLink: "/what-we-do/carp-rice-&-duck-livelihood-park",
+    buttonLink: "https://carp-duck-rice.vercel.app/",
+    external: true,
     backgroundImage:
       "/assets/homepage/whatwedo/livelihood.jpg",
   },
@@ -58,7 +61,8 @@ const slides = [
       { text: "Malnutrition Management" },
     ],
     buttonText: "Explore",
-    buttonLink: "/what-we-do/nutrinest",
+    buttonLink: "https://nutri-nova-mu.vercel.app/",
+    external: true,
     backgroundImage:
       "/assets/homepage/whatwedo/nutrition.jpeg",
   },
@@ -71,7 +75,8 @@ const slides = [
       { text: "Waste-Disposal" },
     ],
     buttonText: "Explore",
-    buttonLink: "https://circular-economy.mowash.com",
+    buttonLink: "https://admin-mowash.vercel.app/",
+    external: true,
     backgroundImage:
       "/assets/homepage/whatwedo/Sanitation_workers.jpg",
   },
@@ -97,19 +102,12 @@ const WhatWeDo = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = (slide) => {
-    if (slide.id === 2) {
-      // ✅ Open Pantiss Skill Universe in new tab
-      window.open("https://pantiss-skill-universe.vercel.app/", "_blank");
-    } else if (slide.id === 5) {
-      // ✅ Open Mowash in new tab
-      window.open("https://www.mowash.in", "_blank");
-    } else if ([3, 4, 6].includes(slide.id)) {
-      // Internal navigation for these
-      navigate(slide.buttonLink);
-    } else {
-      // Default (external links)
-      window.open(slide.buttonLink, "_blank");
+    if (slide.external) {
+      window.open(slide.buttonLink, "_blank", "noopener,noreferrer");
+      return;
     }
+
+    navigate(slide.buttonLink);
   };
 
   return (

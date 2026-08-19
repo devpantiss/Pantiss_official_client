@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
   Droplets,
-  Fish,
   GraduationCap,
   HeartPulse,
   Leaf,
@@ -13,10 +12,8 @@ import {
   School,
   Sprout,
   Sun,
-  TentTree,
   Tractor,
   Trees,
-  Waves,
   House,
 } from "lucide-react";
 import {
@@ -55,8 +52,8 @@ const stories = [
     afterAlt: "Village transformed with planned roads and services",
     accent: "red",
     stages: ["Raw Village", "GIS Survey", "Infrastructure", "Services", "Community"],
-    link: "/what-we-do/land-acquisition-rehabilitation-&-resettlement-of-mines",
-    cta: "Explore pre-mining",
+    link: "/solutions/model-mining-villages",
+    cta: "Explore Model Mining Villages",
     hotspots: [
       { label: "School", detail: "Education built close to every home.", x: 39, y: 38, Icon: School },
       { label: "Health Centre", detail: "Essential care within the community.", x: 57, y: 57, Icon: HeartPulse },
@@ -71,22 +68,22 @@ const stories = [
     eyebrow: "Beyond closure",
     title: "Repurposed Village: In Abandoned Mines",
     beforeLabel: "Closed Mine",
-    afterLabel: "Thriving Ecosystem",
+    afterLabel: "Thriving Village",
     beforeImage: "/assets/homepage/mining-lifecycle/post-mine-before.jpg",
-    afterImage: "/assets/homepage/mining-lifecycle/post-mine-after.jpg",
+    afterImage: "/assets/homepage/mining-lifecycle/post-mine-after-village.png",
     beforeAlt: "Aerial view of a closed open-cast mine",
-    afterAlt: "Mine restored as a lake and livelihood park",
+    afterAlt: "Former mine restored as a green rural village with homes, roads, and farmland",
     accent: "green",
-    stages: ["Closed Mine", "Water Returns", "Regrowth", "Ecosystem", "Livelihoods"],
-    link: "/what-we-do/carp-rice-&-duck-livelihood-park",
-    cta: "Explore post-mining",
+    stages: ["Closed Mine", "Land Restored", "Village Planned", "Community Built", "Livelihoods"],
+    link: "/solutions/repurposed-mining-villages",
+    cta: "Explore Repurposed Villages",
     hotspots: [
-      { label: "Mine Lake", detail: "Water habitat for fish and recreation.", x: 48, y: 61, Icon: Waves },
-      { label: "Fisheries", detail: "Productive waterbody creates local income.", x: 58, y: 67, Icon: Fish },
-      { label: "Native Forest", detail: "Revegetated benches restore biodiversity.", x: 70, y: 35, Icon: Trees },
-      { label: "Solar Power", detail: "Clean energy from stable reclaimed land.", x: 28, y: 34, Icon: Sun },
-      { label: "Agriculture", detail: "Restored soil becomes productive again.", x: 77, y: 57, Icon: Tractor },
-      { label: "Eco Trail", detail: "The landscape welcomes people back safely.", x: 87, y: 70, Icon: TentTree },
+      { label: "Village Homes", detail: "Safe, connected homes anchor the restored community.", x: 51, y: 62, Icon: House },
+      { label: "Community School", detail: "Education is placed within easy reach of every family.", x: 65, y: 70, Icon: School },
+      { label: "Green Belt", detail: "Native planting stabilizes the restored mine landscape.", x: 72, y: 39, Icon: Trees },
+      { label: "Solar Power", detail: "Clean energy supports essential village services.", x: 31, y: 24, Icon: Sun },
+      { label: "Village Farms", detail: "Cultivated plots create local food and livelihoods.", x: 42, y: 79, Icon: Tractor },
+      { label: "Access Roads", detail: "Connected roads link homes, services, and nearby markets.", x: 59, y: 58, Icon: MapPin },
     ],
   },
 ];
@@ -105,39 +102,39 @@ const sectors = [
 ];
 
 const modelVillages = [
-  { name: "Kuarmunda", district: "Sundargarh", lat: 22.2963, lng: 84.2307 },
-  { name: "Banjari", district: "Jharsuguda", lat: 21.8637, lng: 83.9518 },
-  { name: "Lajkura", district: "Jharsuguda", lat: 21.8389, lng: 84.0068 },
-  { name: "Kiralaga", district: "Keonjhar", lat: 21.6370, lng: 85.5770 },
-  { name: "Jurudi", district: "Jajpur", lat: 21.0390, lng: 86.1630 },
-  { name: "Baragaon", district: "Angul", lat: 20.8440, lng: 85.1000 },
-  { name: "Rugudi", district: "Kalahandi", lat: 19.9230, lng: 83.1590 },
-  { name: "Kukuda", district: "Sundargarh", lat: 22.1740, lng: 84.0500 },
-  { name: "Tensa", district: "Sundargarh", lat: 22.1850, lng: 84.7950 },
-  { name: "Chamakpur", district: "Keonjhar", lat: 21.5810, lng: 85.5130 },
-  { name: "Deojhar", district: "Keonjhar", lat: 21.6280, lng: 85.6690 },
-  { name: "Balanda", district: "Angul", lat: 20.8540, lng: 85.0230 },
-  { name: "Ghantapada", district: "Jajpur", lat: 21.0520, lng: 86.2010 },
-  { name: "Gopalpur", district: "Sundargarh", lat: 22.2640, lng: 84.3070 },
-  { name: "Kinjirkela", district: "Sundargarh", lat: 22.0680, lng: 84.1210 },
+  { name: "Kuarmunda", district: "Sundargarh", state: "Odisha", lat: 22.2963, lng: 84.2307 },
+  { name: "Banjari", district: "Jharsuguda", state: "Odisha", lat: 21.8637, lng: 83.9518 },
+  { name: "Kiralaga", district: "Keonjhar", state: "Odisha", lat: 21.6370, lng: 85.5770 },
+  { name: "Jurudi", district: "Jajpur", state: "Odisha", lat: 21.0390, lng: 86.1630 },
+  { name: "Tensa", district: "Sundargarh", state: "Odisha", lat: 22.1850, lng: 84.7950 },
+  { name: "Noamundi", district: "West Singhbhum", state: "Jharkhand", lat: 22.1609, lng: 85.5042 },
+  { name: "Gua", district: "West Singhbhum", state: "Jharkhand", lat: 22.2136, lng: 85.3877 },
+  { name: "Kiriburu", district: "West Singhbhum", state: "Jharkhand", lat: 22.1081, lng: 85.2920 },
+  { name: "Chiria", district: "West Singhbhum", state: "Jharkhand", lat: 22.3086, lng: 85.2738 },
+  { name: "Jadugora", district: "East Singhbhum", state: "Jharkhand", lat: 22.6574, lng: 86.3523 },
+  { name: "Bhansi", district: "Dantewada", state: "Chhattisgarh", lat: 18.6337, lng: 81.2605 },
+  { name: "Kirandul", district: "Dantewada", state: "Chhattisgarh", lat: 18.6360, lng: 81.2580 },
+  { name: "Bacheli", district: "Dantewada", state: "Chhattisgarh", lat: 18.7036, lng: 81.2491 },
+  { name: "Geedam", district: "Dantewada", state: "Chhattisgarh", lat: 18.9748, lng: 81.3987 },
+  { name: "Dalli-Rajhara", district: "Balod", state: "Chhattisgarh", lat: 20.5780, lng: 81.0810 },
 ];
 
 const repurposedVillages = [
-  { name: "Talcher", district: "Angul", lat: 20.9540, lng: 85.2290 },
-  { name: "Lakhanpur", district: "Jharsuguda", lat: 21.8700, lng: 83.8870 },
-  { name: "Belpahar", district: "Jharsuguda", lat: 21.8380, lng: 83.8610 },
-  { name: "Rajgangpur", district: "Sundargarh", lat: 22.2010, lng: 84.0960 },
-  { name: "Barbil", district: "Keonjhar", lat: 22.1000, lng: 85.3870 },
-  { name: "Joda", district: "Keonjhar", lat: 22.1490, lng: 85.4130 },
-  { name: "Sukinda", district: "Jajpur", lat: 20.9730, lng: 85.9320 },
-  { name: "Kalinganagar", district: "Jajpur", lat: 20.9650, lng: 86.0740 },
-  { name: "Damanjodi", district: "Koraput", lat: 18.7200, lng: 82.9300 },
-  { name: "Biramitrapur", district: "Sundargarh", lat: 22.3870, lng: 84.7460 },
-  { name: "Therubali", district: "Rayagada", lat: 19.6810, lng: 83.9350 },
-  { name: "Vedanta Nagar", district: "Kalahandi", lat: 19.8490, lng: 83.3860 },
-  { name: "Tisco Colony", district: "Keonjhar", lat: 22.0730, lng: 85.3790 },
-  { name: "Rourkela Ind. Area", district: "Sundargarh", lat: 22.2605, lng: 84.8536 },
-  { name: "Choudwar", district: "Cuttack", lat: 20.5040, lng: 85.8070 },
+  { name: "Talcher", district: "Angul", state: "Odisha", lat: 20.9540, lng: 85.2290 },
+  { name: "Lakhanpur", district: "Jharsuguda", state: "Odisha", lat: 21.8700, lng: 83.8870 },
+  { name: "Belpahar", district: "Jharsuguda", state: "Odisha", lat: 21.8380, lng: 83.8610 },
+  { name: "Rajgangpur", district: "Sundargarh", state: "Odisha", lat: 22.2010, lng: 84.0960 },
+  { name: "Sukinda", district: "Jajpur", state: "Odisha", lat: 20.9730, lng: 85.9320 },
+  { name: "Jharia", district: "Dhanbad", state: "Jharkhand", lat: 23.7426, lng: 86.4111 },
+  { name: "Rajrappa", district: "Ramgarh", state: "Jharkhand", lat: 23.6324, lng: 85.6993 },
+  { name: "Kandra", district: "Seraikela-Kharsawan", state: "Jharkhand", lat: 22.8505, lng: 86.0517 },
+  { name: "Ghatsila", district: "East Singhbhum", state: "Jharkhand", lat: 22.5853, lng: 86.4768 },
+  { name: "Chaibasa", district: "West Singhbhum", state: "Jharkhand", lat: 22.5474, lng: 85.8025 },
+  { name: "Dipka", district: "Korba", state: "Chhattisgarh", lat: 22.3567, lng: 82.5510 },
+  { name: "Kusmunda", district: "Korba", state: "Chhattisgarh", lat: 22.3376, lng: 82.6441 },
+  { name: "Gevra", district: "Korba", state: "Chhattisgarh", lat: 22.3342, lng: 82.6091 },
+  { name: "Chhal", district: "Raigarh", state: "Chhattisgarh", lat: 22.1157, lng: 83.1826 },
+  { name: "Korba", district: "Korba", state: "Chhattisgarh", lat: 22.3595, lng: 82.7501 },
 ];
 
 /* ═══════════════════════════════════════════════
@@ -145,7 +142,7 @@ const repurposedVillages = [
 ═══════════════════════════════════════════════ */
 
 /* eslint-disable react/prop-types */
-const AmbientBackground = ({ accent, reduceMotion }) => {
+const AmbientBackground = ({ reduceMotion }) => {
   const color = "rgba(255,255,255,0.55)";
   const paths = [
     "M-60 80 C180 20 350 160 560 80 S860 -20 1060 80",
@@ -356,117 +353,6 @@ const PreMiningSvg = ({ reveal }) => {
 };
 
 /* ═══════════════════════════════════════════════
-   POST‑MINING SVG OVERLAY
-═══════════════════════════════════════════════ */
-
-const PostMiningSvg = ({ reveal }) => {
-  const pitOp = prog(reveal, 5, 26);
-  const waterP = prog(reveal, 18, 46);
-  const vegOp = prog(reveal, 38, 60);
-  const treesOp = prog(reveal, 52, 72);
-  const ecoOp = prog(reveal, 65, 86);
-
-  const treePts = [[700, 178], [742, 224], [782, 168], [822, 198], [178, 198], [220, 168], [282, 198]];
-
-  return (
-    <svg
-      viewBox="0 0 1000 600"
-      className="pointer-events-none absolute inset-0 h-full w-full"
-      aria-hidden="true"
-    >
-      <defs>
-        {/* No heavy glow filter — keeping overlays crisp */}
-      </defs>
-
-      {/* ── Layer 1: Mine pit outline ── */}
-      <g style={{ opacity: pitOp }}>
-        <ellipse cx={500} cy={362} rx={182} ry={122}
-          fill="rgba(20,20,20,0.42)" stroke="rgba(160,160,160,0.72)"
-          strokeWidth={2.2} strokeDasharray="14 8" />
-        <ellipse cx={500} cy={362} rx={142} ry={92}
-          fill="none" stroke="rgba(130,130,130,0.45)" strokeWidth={1.2} />
-        <ellipse cx={500} cy={362} rx={102} ry={62}
-          fill="none" stroke="rgba(110,110,110,0.32)" strokeWidth={0.8} />
-        <text x={500} y={370} textAnchor="middle" fontSize={10}
-          fill="rgba(210,210,210,0.75)" fontFamily="monospace" letterSpacing="1">
-          MINE PIT
-        </text>
-      </g>
-
-      {/* ── Layer 2: Water returning — hairline concentric rings, no fill ── */}
-      <g>
-        {/* Ghost fill — barely perceptible, like a reflection */}
-        <ellipse
-          cx={500} cy={366}
-          rx={180 * waterP} ry={119 * waterP}
-          fill="rgba(186,230,254,0.06)"
-          style={{ opacity: waterP }}
-        />
-        {/* Precision ripple rings at fixed radii */}
-        {[148, 118, 88, 58, 30].map((r, i) => (
-          <ellipse
-            key={i}
-            cx={500} cy={366}
-            rx={r * waterP} ry={r * 0.655 * waterP}
-            fill="none"
-            stroke={`rgba(186,230,254,${(0.22 - i * 0.03) * waterP})`}
-            strokeWidth={0.75}
-          />
-        ))}
-      </g>
-
-      {/* ── Layer 3: Vegetation — hairline boundary markers ── */}
-      <g style={{ opacity: vegOp * 0.65 }}>
-        {[[202, 202, 38, 24], [322, 182, 30, 19], [682, 162, 42, 27], [822, 202, 34, 22],
-        [202, 432, 38, 24], [852, 402, 32, 20], [402, 482, 28, 18]].map(([cx, cy, rx, ry], i) => (
-          <ellipse key={i} cx={cx} cy={cy} rx={rx} ry={ry}
-            fill="rgba(74,222,128,0.04)"
-            stroke="rgba(74,222,128,0.28)" strokeWidth={0.7} strokeDasharray="4 5" />
-        ))}
-      </g>
-
-      {/* ── Layer 4: Canopy markers — minimal dot-and-ring ── */}
-      <g style={{ opacity: treesOp }}>
-        {treePts.map(([x, y], i) => (
-          <g key={i} transform={`translate(${x},${y})`}>
-            {/* Outer ring */}
-            <circle r={6} fill="none"
-              stroke="rgba(74,222,128,0.52)" strokeWidth={1} />
-            {/* Centre dot */}
-            <circle r={2.2} fill="rgba(74,222,128,0.6)" />
-          </g>
-        ))}
-      </g>
-
-      {/* ── Layer 5: Ecosystem labels — slim monospace pills ── */}
-      <g style={{ opacity: ecoOp }}>
-        {[
-          { x: 482, y: 320, label: "MINE LAKE" },
-          { x: 578, y: 408, label: "FISHERIES" },
-          { x: 702, y: 218, label: "FOREST" },
-          { x: 282, y: 218, label: "SOLAR" },
-          { x: 772, y: 372, label: "FARM" },
-          { x: 872, y: 432, label: "ECO TRAIL" },
-        ].map(({ x, y, label }) => {
-          const w = label.length * 5.6 + 16;
-          return (
-            <g key={label} transform={`translate(${x},${y})`}>
-              <rect x={-w / 2} y={-9} width={w} height={18} rx={9}
-                fill="rgba(8,8,8,0.62)" stroke="rgba(255,255,255,0.11)" strokeWidth={0.6} />
-              <text x={0} y={4.5} textAnchor="middle" fontSize={8}
-                fill="rgba(255,255,255,0.88)" fontFamily="ui-monospace,monospace"
-                fontWeight="500" letterSpacing="0.6">
-                {label}
-              </text>
-            </g>
-          );
-        })}
-      </g>
-    </svg>
-  );
-};
-
-/* ═══════════════════════════════════════════════
    HOTSPOT — glowing interactive pin + tooltip
 ═══════════════════════════════════════════════ */
 
@@ -536,7 +422,7 @@ const DragDivider = ({ left }) => (
    STAGE LABEL — animated text morph
 ═══════════════════════════════════════════════ */
 
-const StageLabel = ({ label, accent }) => (
+const StageLabel = ({ label }) => (
   <AnimatePresence mode="wait">
     <motion.span
       key={label}
@@ -606,8 +492,7 @@ const StageTimeline = ({ stages, activeIndex, accent, story, onStageClick }) => 
    SECTOR TAGS — thematic focus area pills
 ═══════════════════════════════════════════════ */
 
-const SectorTags = memo(({ reduceMotion, accent }) => {
-  const isGreen = accent === "green";
+const SectorTags = memo(function SectorTags({ reduceMotion }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: reduceMotion ? 0 : 16 }}
@@ -630,55 +515,75 @@ const SectorTags = memo(({ reduceMotion, accent }) => {
 });
 
 /* ═══════════════════════════════════════════════
-   VERTICAL MARQUEE — auto-scrolling village list
+   VILLAGE TABLE — structured regional village data
 ═══════════════════════════════════════════════ */
 
-const VerticalMarquee = memo(({ villages, accent, title }) => {
-  const doubled = [...villages, ...villages];
+const VillageTable = memo(function VillageTable({ villages, accent, title }) {
   const isGreen = accent === "green";
 
   return (
     <div className="flex h-full flex-col overflow-hidden border-l border-white/10">
       {/* Header */}
-      <div className="shrink-0 border-b border-white/10 px-6 py-5">
-        <h4 className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
-          <MapPin className="h-3.5 w-3.5" />
+      <div className="shrink-0 border-b border-white/10 px-5 py-4 sm:px-6 sm:py-5">
+        <h4 className="flex items-center gap-2.5 text-sm font-semibold uppercase tracking-[0.14em] text-white/80">
+          <MapPin className="h-4 w-4" aria-hidden="true" />
           {title}
         </h4>
-        <p className="mt-1 text-[10px] text-white/35">Odisha, India</p>
+        <p className="mt-1.5 text-sm text-white/60">
+          Odisha · Jharkhand · Chhattisgarh
+        </p>
       </div>
 
-      {/* Scrolling content */}
-      <div className="relative flex-1 overflow-hidden">
-        <motion.div
-          animate={{ y: ["0%", "-50%"] }}
-          transition={{ y: { duration: 28, repeat: Infinity, ease: "linear" } }}
-          className="flex flex-col"
-        >
-          {doubled.map((village, i) => (
-            <div
-              key={`${village.name}-${i}`}
-              className="group flex items-center gap-4 border-b border-white/8 px-6 py-3.5 transition-colors duration-150 hover:bg-white/5"
-            >
-              <span
-                className={`h-1.5 w-1.5 shrink-0 rounded-full ${isGreen ? "bg-emerald-400" : "bg-white/50"}`}
-              />
-              <div className="min-w-0">
-                <p className="truncate text-base font-semibold text-white">
-                  {village.name}
-                </p>
-                <p className="mt-0.5 text-[11px] text-white/80">{village.district} dist.</p>
-                <p className="text-[10px] font-mono text-white/70">
+      {/* The table scrolls in both directions on smaller viewports. */}
+      <div className="flex-1 overflow-auto [scrollbar-color:rgba(255,255,255,0.35)_transparent]">
+        <table className="w-full min-w-[680px] border-collapse text-left text-white">
+          <caption className="sr-only">
+            {title} with their district, coordinates, and state
+          </caption>
+          <thead className="sticky top-0 z-10 bg-red-700/95 backdrop-blur-md">
+            <tr className="border-b border-white/20">
+              {["Village name", "District", "Coordinates", "State"].map((heading) => (
+                <th
+                  key={heading}
+                  scope="col"
+                  className="whitespace-nowrap px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/75"
+                >
+                  {heading}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {villages.map((village) => (
+              <tr
+                key={`${village.state}-${village.name}`}
+                className="border-b border-white/10 transition-colors duration-150 hover:bg-white/10"
+              >
+                <th
+                  scope="row"
+                  className="px-5 py-4 text-base font-semibold sm:text-lg"
+                >
+                  <span className="flex items-center gap-3">
+                    <span
+                      aria-hidden="true"
+                      className={`h-2 w-2 shrink-0 rounded-full ${isGreen ? "bg-emerald-300" : "bg-white/70"}`}
+                    />
+                    {village.name}
+                  </span>
+                </th>
+                <td className="px-5 py-4 text-base text-white/90">
+                  {village.district}
+                </td>
+                <td className="whitespace-nowrap px-5 py-4 font-mono text-sm text-white/80">
                   {village.lat.toFixed(4)}° N, {village.lng.toFixed(4)}° E
-                </p>
-              </div>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* Fade overlays */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-red-600 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-10 bg-gradient-to-t from-red-600 to-transparent" />
+                </td>
+                <td className="px-5 py-4 text-base font-medium text-white/90">
+                  {village.state}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
@@ -803,13 +708,13 @@ const TransformationStory = ({ story, index, reduceMotion, villages, reversed })
             Now viewing
           </span>
           <span className="h-px w-4 bg-white/20" />
-          <StageLabel label={activeLabel} accent={story.accent} />
+          <StageLabel label={activeLabel} />
         </div>
       </div>
 
       {/* ── Sector Tags ── */}
       <div className="mb-2 flex justify-center px-4 sm:px-6 lg:px-8">
-        <SectorTags reduceMotion={reduceMotion} accent={story.accent} />
+        <SectorTags reduceMotion={reduceMotion} />
       </div>
 
       {/* ── Split Content: Image + Village List ── */}
@@ -829,7 +734,7 @@ const TransformationStory = ({ story, index, reduceMotion, villages, reversed })
             aria-label={`Interactive before‑after comparison: ${story.beforeLabel} vs ${story.afterLabel}`}
           >
             {/* Ambient background motion */}
-            <AmbientBackground accent={story.accent} reduceMotion={reduceMotion} />
+            <AmbientBackground reduceMotion={reduceMotion} />
 
             {/* Before image — full bleed */}
             <motion.img
@@ -860,11 +765,7 @@ const TransformationStory = ({ story, index, reduceMotion, villages, reversed })
               />
 
               {/* SVG storytelling overlay — tied to reveal% */}
-              {story.id === "pre-mining" ? (
-                <PreMiningSvg reveal={reveal} />
-              ) : (
-                <PostMiningSvg reveal={reveal} />
-              )}
+              {story.id === "pre-mining" && <PreMiningSvg reveal={reveal} />}
 
               {/* Interactive hotspots */}
               {story.hotspots.map((hs) => (
@@ -910,16 +811,31 @@ const TransformationStory = ({ story, index, reduceMotion, villages, reversed })
           </div>
         </div>
 
-        {/* Village list — flex 1, relative container; marquee fills absolutely so it never drives row height */}
-        <div className="h-[180px] overflow-hidden lg:relative lg:h-auto lg:flex-[1]">
-          <div className="h-full lg:absolute lg:inset-0 overflow-hidden">
-            <VerticalMarquee
+        {/* Village table — constrained to the image height on desktop */}
+        <div className="h-[360px] overflow-hidden lg:relative lg:h-auto lg:flex-[1]">
+          <div className="h-full overflow-hidden lg:absolute lg:inset-0">
+            <VillageTable
               villages={villages}
               accent={story.accent}
               title={reversed ? "Repurposed Mining Villages" : "Model Mining Villages"}
             />
           </div>
         </div>
+      </div>
+
+      {/* ── Dedicated solution page action ── */}
+      <div className="flex justify-center px-4 pt-7 sm:px-6 sm:pt-9 lg:px-8">
+        <Link
+          to={story.link}
+          aria-label={`${story.cta}: ${story.title}`}
+          className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-white/30 bg-white px-7 py-3 text-sm font-semibold text-red-600 shadow-[0_16px_40px_-18px_rgba(0,0,0,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-neutral-50 hover:shadow-[0_20px_48px_-18px_rgba(0,0,0,0.65)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-red-600"
+        >
+          Explore
+          <ArrowUpRight
+            aria-hidden="true"
+            className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          />
+        </Link>
       </div>
     </motion.article>
   );

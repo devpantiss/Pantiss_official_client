@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { FiMenu, FiX, FiUser, FiFile } from "react-icons/fi";
+import { useState, useEffect } from "react";
+import { FiMenu, FiX, FiFile } from "react-icons/fi";
 import { Link, useLocation, useNavigate } from "react-router-dom"; // Add useNavigate
 import { AiOutlineDownCircle } from "react-icons/ai";
 import { TbDisabled } from "react-icons/tb";
@@ -27,7 +27,6 @@ const Header = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isCourseOpen, setIsCourseOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isBannerVisible, setIsBannerVisible] = useState(true);
   const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
 
   useEffect(() => {
@@ -98,13 +97,17 @@ const Header = () => {
     }
   };
 
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
+  const isSectionActive = (...paths) =>
+    paths.some((path) =>
+      path === "/"
+        ? location.pathname === "/"
+        : location.pathname === path || location.pathname.startsWith(`${path}/`),
+    );
 
-  const hideBanner = () => {
-    setIsBannerVisible(false);
-  };
+  const activeMainNavClass =
+    "relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-white";
+  const activeSubNavClass =
+    "relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-red-600";
 
   const toggleAccessibilityMenu = () => {
     setIsAccessibilityOpen(!isAccessibilityOpen);
@@ -151,7 +154,7 @@ const Header = () => {
             <Link
               to="/careers"
               className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
-                } transition duration-300`}
+                } ${isSectionActive("/careers", "/life-at-pantiss", "/benefits-at-pantiss", "/programmes") ? activeSubNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Career
@@ -172,7 +175,7 @@ const Header = () => {
             <Link
               to="/tenders"
               className={`relative flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
-                } transition duration-300`}
+                } ${isSectionActive("/tenders") ? activeSubNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Tenders
@@ -185,7 +188,7 @@ const Header = () => {
             <Link
               to="/fellowship"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
-                } transition duration-300`}
+                } ${isSectionActive("/fellowship") ? activeSubNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Fellowship
@@ -195,7 +198,7 @@ const Header = () => {
             <Link
               to="/contact-us"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-red-600" : "text-red-600"
-                } transition duration-300`}
+                } ${isSectionActive("/contact-us") ? activeSubNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Contact
@@ -220,7 +223,7 @@ const Header = () => {
           <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/careers"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600 ${isSectionActive("/careers", "/life-at-pantiss", "/benefits-at-pantiss", "/programmes") ? activeSubNavClass : ""}`}
               onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrBriefcase />
@@ -239,7 +242,7 @@ const Header = () => {
 
             <Link
               to="/tenders"
-              className="relative flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              className={`relative flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600 ${isSectionActive("/tenders") ? activeSubNavClass : ""}`}
               onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrNotes />
@@ -250,7 +253,7 @@ const Header = () => {
 
             <Link
               to="/fellowship"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600 ${isSectionActive("/fellowship") ? activeSubNavClass : ""}`}
               onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <FaGraduationCap />
@@ -259,7 +262,7 @@ const Header = () => {
 
             <Link
               to="/contact-us"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-red-600 ${isSectionActive("/contact-us") ? activeSubNavClass : ""}`}
               onClick={() => { handleOptionSelect(); setIsMenuOpen2(false); }}
             >
               <GrPhone />
@@ -277,7 +280,7 @@ const Header = () => {
             <Link
               to="/"
               className={`cursor-pointer flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                } ${isActive("/") ? "text-[white] underline" : ""
+                } ${isSectionActive("/") ? activeMainNavClass : ""
                 } transition duration-300`}
               onClick={handleOptionSelect}
             >
@@ -289,7 +292,7 @@ const Header = () => {
               <button
                 onClick={() => toggleDropdown("about")}
                 className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                  } transition duration-300`}
+                  } ${isSectionActive("/whoweare") ? activeMainNavClass : ""} transition duration-300`}
               >
                 Who We are
                 <AiOutlineDownCircle
@@ -342,7 +345,7 @@ const Header = () => {
             <Link
               to="/what-we-do"
               className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                } transition duration-300`}
+                } ${isSectionActive("/what-we-do", "/solutions") ? activeMainNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               What We Do
@@ -352,7 +355,7 @@ const Header = () => {
             <Link
               to="/where-we-work"
               className={`flex items-center gap-x-2 font-bold font-open mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                } transition duration-300`}
+                } ${isSectionActive("/where-we-work") ? activeMainNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Where We Work
@@ -361,7 +364,7 @@ const Header = () => {
             <Link
               to="/summit"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                } transition duration-300`}
+                } ${isSectionActive("/summit") ? activeMainNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Summit
@@ -370,7 +373,7 @@ const Header = () => {
             <Link
               to="/impact"
               className={`flex items-center gap-x-2 font-open font-bold mx-3 text-[18px] ${isScrolled ? "text-[white]" : "text-[white]"
-                } transition duration-300`}
+                } ${isSectionActive("/impact") ? activeMainNavClass : ""} transition duration-300`}
               onClick={handleOptionSelect}
             >
               Our Impact
@@ -455,7 +458,7 @@ const Header = () => {
           <nav className="flex flex-col space-y-4 p-4">
             <Link
               to="/"
-              className="cursor-pointer flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white]"
+              className={`cursor-pointer flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white] ${isSectionActive("/") ? activeMainNavClass : ""}`}
               onClick={handleOptionSelect}
             >
               <GrHomeRounded />
@@ -466,7 +469,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("about")}
-                className="flex items-center mx-3 text-[18px] gap-x-2 text-[white]"
+                className={`flex items-center mx-3 text-[18px] gap-x-2 text-[white] ${isSectionActive("/whoweare") ? activeMainNavClass : ""}`}
               >
                 <GrHelpBook />
                 Who We are
@@ -519,7 +522,7 @@ const Header = () => {
 
             <Link
               to="/what-we-do"
-              className="flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white]"
+              className={`flex items-center mx-3 text-[18px] gap-x-2 hover:underline text-[white] ${isSectionActive("/what-we-do", "/solutions") ? activeMainNavClass : ""}`}
               onClick={handleOptionSelect}
             >
               <GrBriefcase />
@@ -528,7 +531,7 @@ const Header = () => {
 
             <Link
               to="/where-we-work"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white] ${isSectionActive("/where-we-work") ? activeMainNavClass : ""}`}
               onClick={handleOptionSelect}
             >
               <GrLocation />
@@ -537,7 +540,7 @@ const Header = () => {
 
             <Link
               to="/summit"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white] ${isSectionActive("/summit") ? activeMainNavClass : ""}`}
               onClick={handleOptionSelect}
             >
               <MdEventAvailable />
@@ -546,7 +549,7 @@ const Header = () => {
 
             <Link
               to="/impact"
-              className="flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white]"
+              className={`flex mx-3 text-[18px] items-center gap-x-2 hover:underline text-[white] ${isSectionActive("/impact") ? activeMainNavClass : ""}`}
               onClick={handleOptionSelect}
             >
               <FiFile />

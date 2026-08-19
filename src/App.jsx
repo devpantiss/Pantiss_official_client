@@ -10,6 +10,7 @@ import SeoManager from "./Components/Common/SeoManager";
 import CareersPage from "./Pages/CareersPage";
 import WhatWeDo from "./Pages/WhatWeDo";
 import Tenders from "./Pages/Tenders";
+import AllTenders from "./Pages/AllTenders";
 import Loader from "./Components/Common/Loader/Loader";
 import JobsPage from "./Pages/JobsPage";
 import YoungProfessionals from "./Pages/YoungProfessionals";
@@ -27,6 +28,7 @@ import TutionAssistance from "./Pages/benefits-at-pantiss/TutionAssistance";
 import ParentingBenefits from "./Pages/benefits-at-pantiss/ParentingBenefits";
 import HealthInsurance from "./Pages/benefits-at-pantiss/HealthInsurance";
 import RetirementProgrammes from "./Pages/benefits-at-pantiss/RetirementProgrammes";
+import EmployeeBenefitDetail from "./Pages/benefits-at-pantiss/EmployeeBenefitDetail";
 import Publications from "./Pages/Publications";
 import WhereWeWorkPage from "./Pages/WhereWeWorkPage";
 import Dashboard from "./Pages/Dashboard";
@@ -63,6 +65,8 @@ import ModelMiningVillageInMaking from "./Pages/WhatWeDo/ModelMiningVillageInMak
 import InnovationLabPage from "./Pages/InnovationLabPage";
 import Anugul from "./Pages/WhereWeWorkPages/OdishaDistricts/Anugul";
 import Jajpur from "./Pages/WhereWeWorkPages/OdishaDistricts/Jajpur";
+import ModelMiningVillagesSolution from "./Pages/Solutions/ModelMiningVillagesSolution";
+import RepurposedMiningVillagesSolution from "./Pages/Solutions/RepurposedMiningVillagesSolution";
 
 function App() {
   const location = useLocation();
@@ -105,11 +109,20 @@ function App() {
         <Route path="/sdg-pantiss" element={<PantissSdgPage />} />
         <Route path="/whoweare/*" element={<WhoWeAre />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
+        <Route
+          path="/solutions/model-mining-villages"
+          element={<ModelMiningVillagesSolution />}
+        />
+        <Route
+          path="/solutions/repurposed-mining-villages"
+          element={<RepurposedMiningVillagesSolution />}
+        />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/careers/jobs" element={<JobsPage />} />{" "}
         {/* Nested Route */}
         <Route path="/tenders" element={<Tenders />} />
+        <Route path="/tenders/all" element={<AllTenders />} />
         <Route path="/where-we-work" element={<WhereWeWorkPage />} />
         <Route
           path="/programmes/young-professionals"
@@ -163,6 +176,10 @@ function App() {
         <Route
           path="/benefits-at-pantiss/retirement-programmes"
           element={<RetirementProgrammes />}
+        />
+        <Route
+          path="/benefits-at-pantiss/:benefitSlug"
+          element={<EmployeeBenefitDetail />}
         />
 
 

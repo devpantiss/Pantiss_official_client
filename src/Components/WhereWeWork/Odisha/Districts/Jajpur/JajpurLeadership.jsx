@@ -1,5 +1,4 @@
-import React from "react";
-import Heading from "../../../../Common/Heading";
+import DistrictLeadershipHeader from "../../../Common/DistrictLeadershipHeader";
 
 const leadershipTeam = [
   {
@@ -20,11 +19,7 @@ const JajpurLeadership = () => {
   return (
     <section className="py-12 px-6">
       <div className="container mx-auto max-w-6xl">
-        <Heading
-          text="OUR TEAM"
-          color="text-black"
-          bgColor="bg-red-600"
-        />
+        <DistrictLeadershipHeader />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {leadershipTeam.map((leader, index) => (
