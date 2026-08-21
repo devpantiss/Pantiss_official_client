@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,21 +7,21 @@ import "slick-carousel/slick/slick-theme.css";
 const StoryRehab = () => {
   const stories = [
     {
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742216965/GIS-companies-in-Bangalore_mqw2sl.jpg",
+      image: "/assets/what-we-do/rehabilitation-resettlement/gis-land-planning.jpg",
       text: "Our village in Odisha was displaced by mining, but the GIS Hamlies platform gave us a new start. Using maps and drones, they planned a resettlement site that suits our needs. Now, I live in a home with clean water and a school nearby, all thanks to their spatial analysis.",
       name: "Jagan Sethi",
       occupation: "Resettled Farmer",
       bgColor: "bg-orange-500",
     },
     {
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742315554/people-gathered-together-village-meeting-society-work-society-meeting-village-206808403_pbrdkv.webp",
+      image: "/assets/what-we-do/rehabilitation-resettlement/community-consultation.jpg",
       text: "The Resettlement Gram Sabha brought our community together after years of uncertainty. Through village meetings and a dashboard, we chose our new land and got support for building homes. I now have a house and a small shop, giving my family stability.",
       name: "Lalita Majhi",
       occupation: "Shopkeeper",
       bgColor: "bg-blue-500",
     },
     {
-      image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217298/5878303_ru2f7m.jpg",
+      image: "/assets/what-we-do/rehabilitation-resettlement/livelihood-restoration.jpg",
       text: "Mining took our land, but the R & R Governance framework ensured fairness. With audits and committees, they rebuilt our lives with proper compensation and a new village. I work as a community overseer now, making sure everyone benefits.",
       name: "Mohan Kisan",
       occupation: "Community Overseer",
@@ -58,7 +58,7 @@ const StoryRehab = () => {
     pauseOnFocus: false,
   };
 
-  const fallbackImage = "https://via.placeholder.com/800x600?text=Fallback+Image";
+  const fallbackImage = "/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg";
 
   return (
     <section className="story-section relative overflow-hidden w-full">

@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../../../Common/Heading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,42 +7,42 @@ const ChallengesSkills = () => {
   const challenges = [
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742218195/360_F_655294964_M1URDBaNmeGHnFkFevrUCOqQjjN7yeaK_czxrzl.jpg",
+        "/assets/what-we-do/rehabilitation-resettlement/gis-land-planning.jpg",
       stat: "70%",
       description:
         "of mining-affected land lacks accurate GIS-based spatial mapping for rehabilitation",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735195058/Rehabilitation_ejgaqn.webp",
+        "/assets/what-we-do/rehabilitation-resettlement/community-consultation.jpg",
       stat: "40%",
       description:
         "of displaced communities face delays in resettlement due to inadequate Gram Sabha approvals",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217995/compliance_zajib2.avif",
+        "/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg",
       stat: "85%",
       description:
         "of R&R projects struggle with governance and compliance issues",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217875/lack_of_data_pwtaoq.webp",
+        "/assets/what-we-do/rehabilitation-resettlement/gis-land-planning.jpg",
       stat: "60%",
       description:
         "of environmental impact assessments (EIA) lack real-time data integration",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217653/lack_of_livelihood_z1sash.webp",
+        "/assets/what-we-do/rehabilitation-resettlement/livelihood-restoration.jpg",
       stat: "55%",
       description:
         "of mining-affected families report insufficient livelihood support post-resettlement",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217653/AdobeStock_447449733_Preview_hbr2ic.jpg",
+        "/assets/what-we-do/rehabilitation-resettlement/community-consultation.jpg",
       stat: "75%",
       description:
         "of rehabilitation projects face funding delays from multilateral stakeholders",
@@ -86,7 +85,7 @@ const ChallengesSkills = () => {
   };
 
   return (
-    <section className="bg-white py-12 px-6">
+    <section id="learn-more" className="bg-white py-12 px-6 scroll-mt-24">
       <div className="container mx-auto max-w-7xl">
         {/* Title and Description */}
         <div className="text-center mb-12">

@@ -1,4 +1,4 @@
-import React, { memo, useState, useCallback } from "react";
+import { memo, useState, useCallback } from "react";
 import ReactPlayer from "react-player/youtube";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -91,7 +91,7 @@ const VideoSectionSkills = memo(() => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 pointer-events-none"
         style={{
-          backgroundImage: `url('https://via.placeholder.com/1920x600')`,
+          backgroundImage: `url('/assets/what-we-do/rehabilitation-resettlement/gis-land-planning.jpg')`,
         }}
         aria-hidden="true"
       />
@@ -181,7 +181,7 @@ const VideoSectionSkills = memo(() => {
         </div>
 
         {/* Scoped CSS for Dots */}
-        <style jsx>{`
+        <style>{`
           .custom-dots {
             position: absolute;
             bottom: -60px !important;

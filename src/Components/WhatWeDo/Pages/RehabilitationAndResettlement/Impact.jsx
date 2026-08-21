@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../../../Common/Heading";
 
 const ImpactRehab = () => {
@@ -24,7 +23,7 @@ const ImpactRehab = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/c_scale,w_600/v1735195006/EIA_bpqcoy.jpg')`, // Updated to GIS-related image
+          backgroundImage: `url('/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg')`,
         }}
         aria-hidden="true"
       />

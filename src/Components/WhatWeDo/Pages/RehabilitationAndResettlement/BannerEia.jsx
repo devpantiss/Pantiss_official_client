@@ -1,19 +1,17 @@
-import React from "react";
-
 const BannerEia = () => {
   return (
     <section className="relative w-full h-[70vh] md:h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="https://res.cloudinary.com/dgtc2fvgu/video/upload/v1735221805/EIA_amget2.mp4"
+          src="/assets/homepage/Impact/Rehab_1.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover opacity-70"
           aria-hidden="true"
-          poster="https://via.placeholder.com/1920x1080?text=Video+Loading" // Fallback image
+          poster="/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-gray-900/20" />

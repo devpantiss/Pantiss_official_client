@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../../../Common/Heading";
 import { FaMapMarkedAlt, FaGlobe, FaDesktop, FaCamera } from "react-icons/fa"; // GIS Hamlies
 import { FaUsers, FaHandshake, FaChartBar } from "react-icons/fa"; // Resettlement Gram Sabha
@@ -8,8 +7,8 @@ const Solutions = () => {
   const solutions = [
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742216965/GIS-companies-in-Bangalore_mqw2sl.jpg",
-      fallbackImage: "https://via.placeholder.com/600x400",
+        "/assets/what-we-do/rehabilitation-resettlement/gis-land-planning.jpg",
+      fallbackImage: "/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg",
       stat: "GIS Hamlies",
       description:
         "A GIS-powered platform for spatial analysis and rehabilitation planning",
@@ -34,8 +33,8 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742315554/people-gathered-together-village-meeting-society-work-society-meeting-village-206808403_pbrdkv.webp",
-      fallbackImage: "https://via.placeholder.com/600x400",
+        "/assets/what-we-do/rehabilitation-resettlement/community-consultation.jpg",
+      fallbackImage: "/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg",
       stat: "Resettlement Gram Sabha",
       description:
         "Community-driven resettlement solutions with integrated dashboards",
@@ -56,8 +55,8 @@ const Solutions = () => {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1742217298/5878303_ru2f7m.jpg",
-      fallbackImage: "https://via.placeholder.com/600x400",
+        "/assets/what-we-do/rehabilitation-resettlement/livelihood-restoration.jpg",
+      fallbackImage: "/assets/what-we-do/rehabilitation-resettlement/rehabilitation-hero.jpg",
       stat: "R & R Governance",
       description:
         "Governance framework for rehabilitation and resettlement compliance",
