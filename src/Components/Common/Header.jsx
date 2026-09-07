@@ -310,7 +310,7 @@ const Header = () => {
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">About</span>
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/whoweare/team"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
                     onClick={handleOptionSelect}
@@ -318,7 +318,7 @@ const Header = () => {
                     {" "}
                     <FaPersonDigging className="text-[28px]" />
                     <span className="text-[18px]">Our Team</span>
-                  </Link>
+                  </Link> */}
                   {/* <Link
                     to="/whoweare/advisory-board"
                     className="flex gap-x-3 px-4 py-2 hover:bg-white text-[white] hover:text-red-600"
@@ -489,7 +489,7 @@ const Header = () => {
                     <BiRightArrow />
                     About
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/whoweare/team"
                     className="hover:underline flex gap-x-2 text-[white]"
                     onClick={handleOptionSelect}
@@ -497,7 +497,7 @@ const Header = () => {
                     {" "}
                     <BiRightArrow />
                     Our Team
-                  </Link>
+                  </Link> */}
                   {/* <Link
                     to="/whoweare/advisory-board"
                     className="hover:underline flex gap-x-2 text-[white]"
