@@ -4,6 +4,7 @@ import Results from "./DashPages/Results";
 import { Route, Routes } from "react-router-dom";
 import Partnerships from "./DashPages/Partnerships";
 import KeyStories from "./DashPages/KeyStories";
+import Monitoring from "./DashPages/Monitoring";
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,7 @@ const Dashboard = () => {
         <Route path="results" element={<Results />} />
         <Route path="partnerships" element={<Partnerships />} />
         <Route path="key-result-stories" element={<KeyStories />} />
+        <Route path="monitoring" element={<Monitoring />} />
         </Routes>
       </div>
     </div>

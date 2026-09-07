@@ -18,6 +18,11 @@ const DashHeader = () => {
       label: "Key result stories",
       path: "/dashboard/key-result-stories",
     },
+    {
+      id: "monitoring",
+      label: "Monitoring",
+      path: "/dashboard/monitoring",
+    },
     // { id: "genebanks", label: "Genebanks", path: "/dashboard/genebanks" },
     // {
     //   id: "glossary",
@@ -45,6 +50,8 @@ const DashHeader = () => {
         return "Partnerships";
       case "keyStories":
         return "Key Result Stories";
+      case "monitoring":
+        return "Monitoring";
     //   case "genebanks":
     //     return "Genebanks";
     //   case "glossary":
@@ -82,7 +89,8 @@ const DashHeader = () => {
         ))}
       </div>
 
-      {/* Filters Section */}
+      {/* Filters Section — hidden on Monitoring tab */}
+      {activeTab !== "monitoring" && (
       <div className="bg-black text-white p-6 mt-4 rounded-md shadow-md">
         <div className="grid grid-cols-3 lg:grid-cols-6 gap-4">
           <div>
@@ -194,6 +202,7 @@ const DashHeader = () => {
           </button>
         </div>
       </div>
+      )}
     </div>
   );
 };
