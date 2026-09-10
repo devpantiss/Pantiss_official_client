@@ -1,0 +1,45 @@
+.monitoring-access {
+  --monitoring-bg: #09090b;
+  --monitoring-surface: #18181b;
+  --monitoring-text: #fafafa;
+  --monitoring-muted: #a1a1aa;
+  --monitoring-border: #3f3f46;
+  --monitoring-primary: #b91c1c;
+  --monitoring-primary-hover: #991b1b;
+  --monitoring-on-primary: #ffffff;
+  --monitoring-error: #fca5a5;
+  --monitoring-focus: #f87171;
+  background: var(--monitoring-bg);
+  color: var(--monitoring-text);
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.monitoring-access__panel { display: grid; place-items: center; padding: 4rem 1.25rem; }
+.monitoring-access__card { width: 100%; max-width: 26rem; }
+.monitoring-access__icon { display: inline-flex; padding: 0.875rem; border: 1px solid var(--monitoring-border); border-radius: 1rem; background: var(--monitoring-surface); margin-bottom: 1.5rem; }
+.monitoring-access h2 { font-size: clamp(1.5rem, 4vw, 1.875rem); font-weight: 600; letter-spacing: -0.025em; }
+.monitoring-access p { color: var(--monitoring-muted); line-height: 1.6; margin-top: 0.75rem; font-size: 0.9375rem; }
+.monitoring-access form { display: flex; flex-direction: column; margin-top: 2rem; }
+.monitoring-access label { margin-bottom: 0.5rem; font-size: 0.875rem; font-weight: 500; }
+.monitoring-access input { width: 100%; min-height: 3rem; padding: 0.75rem 1rem; background: var(--monitoring-surface); border: 1px solid var(--monitoring-border); border-radius: 0.75rem; color: var(--monitoring-text); margin-bottom: 1.25rem; font-size: 1rem; }
+.monitoring-access input:focus-visible, .monitoring-access button:focus-visible { outline: 2px solid var(--monitoring-focus); outline-offset: 3px; }
+.monitoring-access button { min-height: 2.75rem; border-radius: 0.75rem; font-weight: 500; }
+.monitoring-access__submit { margin-top: 0.75rem; background: var(--monitoring-primary); color: var(--monitoring-on-primary); padding: 0.75rem 1rem; }
+.monitoring-access__submit:hover { background: var(--monitoring-primary-hover); }
+.monitoring-access__submit:disabled { opacity: 0.5; cursor: not-allowed; }
+.monitoring-access p.monitoring-access__error { color: var(--monitoring-error); margin: 0 0 0.5rem; }
+.monitoring-access__toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--monitoring-border); font-size: 0.875rem; }
+.monitoring-access__signout { display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid var(--monitoring-border); padding: 0.5rem 0.875rem; }
+.monitoring-access__signout:hover { background: var(--monitoring-surface); }
+
+@media (prefers-color-scheme: light) {
+  .monitoring-access {
+    --monitoring-bg: #fafafa;
+    --monitoring-surface: #ffffff;
+    --monitoring-text: #18181b;
+    --monitoring-muted: #52525b;
+    --monitoring-border: #d4d4d8;
+    --monitoring-error: #b91c1c;
+    --monitoring-focus: #b91c1c;
+  }
+}
