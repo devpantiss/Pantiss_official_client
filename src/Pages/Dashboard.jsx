@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Partnerships from "./DashPages/Partnerships";
 import KeyStories from "./DashPages/KeyStories";
 import MonitoringAccess from "../Components/Dashboard/MonitoringAccess";
+import DistrictDashAccess from "../Components/Dashboard/DistrictDashAccess";
 
 const Dashboard = () => {
   return (
@@ -12,10 +13,11 @@ const Dashboard = () => {
       <div className="container mx-auto ring-2 ring-red-600 rounded-md">
         <DashHeader />
         <Routes>
-        <Route path="results" element={<Results />} />
-        <Route path="partnerships" element={<Partnerships />} />
-        <Route path="key-result-stories" element={<KeyStories />} />
-        <Route path="monitoring" element={<MonitoringAccess />} />
+          <Route path="results" element={<Results />} />
+          <Route path="partnerships" element={<Partnerships />} />
+          <Route path="key-result-stories" element={<KeyStories />} />
+          <Route path="monitoring" element={<MonitoringAccess />} />
+          <Route path="district-dashboard" element={<DistrictDashAccess />} />
         </Routes>
       </div>
     </div>
@@ -23,3 +25,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+

@@ -23,6 +23,11 @@ const DashHeader = () => {
       label: "Monitoring",
       path: "/dashboard/monitoring",
     },
+    {
+      id: "districtDash",
+      label: "District Dashboard",
+      path: "/dashboard/district-dashboard",
+    },
     // { id: "genebanks", label: "Genebanks", path: "/dashboard/genebanks" },
     // {
     //   id: "glossary",
@@ -52,6 +57,8 @@ const DashHeader = () => {
         return "Key Result Stories";
       case "monitoring":
         return "Monitoring";
+      case "districtDash":
+        return "District Dashboard";
     //   case "genebanks":
     //     return "Genebanks";
     //   case "glossary":
@@ -90,7 +97,7 @@ const DashHeader = () => {
       </div>
 
       {/* Filters Section — hidden on Monitoring tab */}
-      {activeTab !== "monitoring" && (
+      {activeTab !== "monitoring" && activeTab !== "districtDash" && (
       <div className="bg-black text-white p-6 mt-4 rounded-md shadow-md">
         <div className="grid grid-cols-3 lg:grid-cols-6 gap-4">
           <div>
